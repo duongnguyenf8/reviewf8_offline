@@ -1,0 +1,9 @@
+{
+  "name": "tester",
+  "description": "Dương Test Bài học viên",
+  "main": "server/server.py",
+  "scripts": {
+    "start": "python server/server.py",
+    "vercel" : "python scripts/createList.py && vercel --prod"
+  }
+}

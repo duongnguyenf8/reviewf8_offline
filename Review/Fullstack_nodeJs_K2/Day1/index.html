@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+
+    <title>Duong - Review Day1_K2</title>
+  </head>
+  <body>
+    <h1 id="d-ng-test-b-i-h-c-vi-n">Dương test bài Học Viên</h1>
+    <h2 id="-nguy-n-minh-vi-t-k2-https-github-com-nguyenminhviettt-f8_k2-">
+      <a href="https://github.com/nguyenminhviettt/f8_K2"
+        >Nguyễn Minh Việt - K2</a
+      >
+    </h2>
+    <pre><code>Sớm nhất</span> *</code></pre>
+
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/nguyenminhviettt/f8_K2/blob/main/bai_01/index.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Sử dụng thẻ link để import font icons từ
+              <code>googleapis</code> tuy nhiên không thấy sử dụng ở đâu trong
+              code.
+            </p>
+            <ul>
+              <li>
+                Mà lại sử dụng một icon khác từ <code>flaticon</code>. Khiến cho
+                việc import font icons từ googleapis trở nên vô nghĩa.
+              </li>
+            </ul>
+            <pre><code class="lang-html">&lt;link
+  rel=<span class="hljs-string">"stylesheet"</span>
+  href=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"</span>
+/&gt;
+...
+&lt;<span class="hljs-selector-tag">img</span>
+  src=<span class="hljs-string">"https://cdn-icons-png.flaticon.com/512/2549/2549872.png"</span>
+  alt=<span class="hljs-string">""</span>
+  <span class="hljs-attribute">width</span>=<span class="hljs-string">"20px"</span>
+  <span class="hljs-attribute">height</span>=<span class="hljs-string">"20px"</span>
+/&gt;
+</code></pre>
+            <ul>
+              <li>
+                <p>
+                  Có thể sử dụng icon từ googleapis bằng cách xem hướng dẫn tại
+                  <a href="https://fonts.google.com/icons"
+                    >fonts.google.com/icons</a
+                  >.
+                </p>
+                <ul>
+                  <li>
+                    <p>VD:</p>
+                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-symbols-outlined"</span>&gt;</span> mail <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần title của trang web dùng để hiển thị tên của trang web cho
+              người dùng và các công cụ tìm kiếm. Nó cũng được sử dụng để đặt
+              tên cho tab trình duyệt.
+            </p>
+            <ul>
+              <li>
+                Nên quan tâm nhiều hơn vào phần title thay vì chỉ để là
+                <code>Document</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần input nhập email nên để
+              <code>type=&quot;email&quot;</code> để trình duyệt có thể kiểm tra
+              dữ liệu nhập vào có đúng là email hay không
+            </p>
+          </li>
+          <li>
+            <p>
+              Thẻ <code>br</code> chỉ được sử dụng để xuống dòng trong các đoạn
+              text.
+            </p>
+            <ul>
+              <li>
+                Việc sử dụng <code>br</code> để ngắt dòng và tạo khoảng cách
+                giữa các phần tử là không đúng.
+              </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span><span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ block để tạo khoảng cách giữa các phần tử
+                như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần thẻ input có một type là email sử dụng cho việc nhập email.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính <code>type=&quot;email&quot;</code> để
+                làm một input nhập email.
+              </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/nguyenminhviettt/f8_K2/blob/main/bai_02/index.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Nên quan tâm nhiều hơn vào phần title thay vì chỉ để là
+              <code>Document</code>.
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Sử dụng thẻ link để import font icons từ
+                  <code>googleapis</code> tuy nhiên không thấy sử dụng ở đâu
+                  trong code.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Mà lại sử dụng một icon khác từ <code>flaticon</code>. Khiến
+                  cho việc import font icons từ googleapis trở nên vô nghĩa.
+                </p>
+              </li>
+            </ul>
+            <pre><code class="lang-html">&lt;link
+  rel=<span class="hljs-string">"stylesheet"</span>
+  href=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"</span>
+/&gt;
+...
+&lt;<span class="hljs-selector-tag">img</span>
+  src=<span class="hljs-string">"https://cdn-icons-png.flaticon.com/512/2549/2549872.png"</span>
+  alt=<span class="hljs-string">""</span>
+  <span class="hljs-attribute">width</span>=<span class="hljs-string">"20px"</span>
+  <span class="hljs-attribute">height</span>=<span class="hljs-string">"20px"</span>
+/&gt;
+</code></pre>
+            <ul>
+              <li>
+                <p>
+                  Có thể sử dụng icon từ googleapis bằng cách xem hướng dẫn tại
+                  <a href="https://fonts.google.com/icons"
+                    >fonts.google.com/icons</a
+                  >.
+                </p>
+                <ul>
+                  <li>
+                    <p>VD:</p>
+                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-symbols-outlined"</span>&gt;</span> mail <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/nguyenminhviettt/f8_K2/blob/main/bai_03/index.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>Nên sử dụng các thẻ h1&gt;h2&gt;...h6 theo đúng thứ tự.</p>
+            <ul>
+              <li>Phần title chính của trang web nên là thẻ h1 thay vì h2</li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h2</span>&gt;
+</code></pre>
+          </li>
+          <li>
+            <p>Thẻ br chỉ được sử dụng để xuống dòng trong các đoạn text.</p>
+            <ul>
+              <li>
+                Việc sử dụng br để ngắt dòng và tạo khoảng cách giữa các phần tử
+                là không đúng.
+              </li>
+            </ul>
+            <pre><code class="lang-html">... <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+...
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ block để tạo khoảng cách giữa các phần tử
+                như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Các thẻ <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, và
+              <code>&lt;footer&gt;</code> được sử dụng để hiển thị text mà không
+              có nội dung bổ sung khác. Điều này có thể xem là không đúng theo
+              quy ước semantic của HTML.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ text-element như <code>&lt;p&gt;</code> để
+                hiển thị text. Được bao bọc vào trong các thẻ semantic như
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, và
+                <code>&lt;footer&gt;</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, cần chú ý thêm vào các
+          phần <code>title</code>, các thẻ sematic, ý nghĩa và quy định của các
+          thẻ như <code>br</code>, <code>heading-tag</code> để bài làm tốt hơn.
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="-o-n-duy-chinh-https-github-com-duychinh-f8-fullstack-ks2-tree-main-day-1-"
+    >
+      <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-1"
+        >Đoàn Duy Chinh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DuyChinh/f8-fullstack-KS2/blob/main/Day-1/exe1.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li><p>Nên sửa lại một chút ở phần input như sau:</p></li>
+        </ul>
+        <pre><code class="lang-html">&lt;input
+  style=<span class="hljs-string">"color: grey; display: block; margin-bottom: 15px; "</span>
+  <span class="hljs-built_in">type</span>=<span class="hljs-string">"text"</span>
+  <span class="hljs-built_in">value</span>=<span class="hljs-string">"Enter Email"</span>
+/&gt;
+</code></pre>
+        <ul>
+          <li>
+            <p>
+              Không nên sử dụng value mặc định cho input. Điều đó theo UX là
+              không hề tốt.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính placeholder để hiển thị text mặc định cho
+                input.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Không nên styled color cho input màu chìm quá so với màu của
+              background. Điều đó sẽ làm cho người dùng khó nhìn và không thể
+              hiểu được input đó là gì.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính color cho input tương phản hơn so với màu
+                của background.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Có thẻ tham khảo qua một vài trang để chọn màu tương phản và đưa
+              ra một số màu gợi ý nhu sau:
+            </p>
+            <ul>
+              <li><a href="https://colorhunt.co/">Color Hunt</a></li>
+              <li><a href="https://www.color-hex.com/">Color Hex</a></li>
+              <li><a href="https://www.colorhexa.com/">Color Hexa</a></li>
+              <li>
+                <a href="https://www.w3schools.com/colors/colors_picker.asp"
+                  >Color Picker</a
+                >
+              </li>
+              <li>
+                <a href="https://webaim.org/resources/contrastchecker/"
+                  >Color Contrast Checker</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Có một phần thẻ link tới stylesheet nhưng không có đường dẫn, có
+              vẻ như là một dòng code thừa. nên xóa đi
+            </p>
+          </li>
+        </ul>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> /&gt;</span>
+</code></pre>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DuyChinh/f8-fullstack-KS2/blob/main/Day-1/exe2.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt*</p></li>
+          <li>
+            <p>
+              Thông thường, chỉ nên sử dụng các tài nguyên icon có size
+              <code>[16,32,96,192,512]</code> để tránh việc tải các icon có size
+              lớn không cần thiết. khiến cho tăng kích thước của trang web và
+              giảm tốc độ tải trang đi đáng kể.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DuyChinh/f8-fullstack-KS2/blob/main/Day-1/exe3.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Vì chưa học Css nên có thể chấp nhận việc sử dụng thẻ h để tăng
+              kích thước của text.
+            </p>
+            <ul>
+              <li>
+                Tuy nhiên, nên sử dụng một thẻ p và style thuộc tính
+                <code>font-size</code> để tăng kích thước của text.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, tuy nhiên nên chú ý
+          thêm vào cách cấu trúc folder, nếu assets chỉ được sử cho bài 2 thì
+          nên gom nhóm bài 2 và folder assets. Việc làm này sẽ giúp cho việc
+          quản lý và tìm kiếm các file dễ dàng hơn.
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="-ti-n-a-t-k2-https-github-com-phamtiendat18-phamtiendat18-tree-main-day_01-"
+    >
+      <a href="https://github.com/phamtiendat18/phamtiendat18/tree/main/Day_01"
+        >Tiến Đạt - K2</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/phamtiendat18/phamtiendat18/blob/main/Day_01/ex01.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>Thẻ br chỉ được sử dụng để xuống dòng trong các đoạn text.</p>
+            <ul>
+              <li>
+                Việc sử dụng br để ngắt dòng và tạo khoảng cách giữa các phần tử
+                là không đúng.
+              </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span><span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ block để tạo khoảng cách giữa các phần tử
+                như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Việc sử dụng một ảnh với src là data/image và mã hóa base64 khá là
+              khó trong việc quản lý và tìm kiếm ảnh. Nên sử dụng một ảnh với
+              src là một đường dẫn tới ảnh.
+            </p>
+            <ul>
+              <li>VD:</li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"https://cdn-icons-png.flaticon.com/512/2549/2549872.png"</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/phamtiendat18/phamtiendat18/blob/main/Day_01/ex02.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt*</p></li>
+          <li>
+            <p>
+              Việc sử dụng một ảnh với src là data/image và mã hóa base64 khá là
+              khó trong việc quản lý và tìm kiếm ảnh. Nên sử dụng một ảnh với
+              src là một đường dẫn tới ảnh.
+            </p>
+            <ul>
+              <li>VD:</li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"icon..."</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/phamtiendat18/phamtiendat18/blob/main/Day_01/ex03.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Phần thẻ a có thuộc tính là href, thuộc tính này bắt buộc phải có
+              value. Nếu không có đường dẫn thì thường được khuyến nghị sử dụng
+              &quot;#&quot; làm value cho thuộc tính href
+            </p>
+            <ul>
+              <li>
+                Việc sử dụng value &quot;&quot; cho thuộc tính href không được
+                khuyến nghị, vì nó có thể gây nhầm lẫn hoặc tạo ra hiệu ứng
+                không mong muốn cho user. Thay vào đó, nên sử dụng &quot;#&quot;
+                để tạo ra một liên kết trống hợp lệ.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, tuy nhiên phần title
+          của một trang web là rất quan trọng, nó được sử dụng để hiển thị tên
+          của trang web cho người dùng và các công cụ tìm kiếm. Nên quan tâm
+          nhiều hơn vào phần title thay vì chỉ để là <code>Document</code>.
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="-b-i-quang-tr-ng-https-github-com-okazakitruong-bqtruong-f8-k2-offline-tree-main-day-201-"
+    >
+      <a
+        href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day%201"
+        >Bùi Quang Trưởng</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day%201/exe01.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt*</li>
+          <li>
+            Phần input có một type là email sử dụng cho việc nhập email.
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính <code>type=&quot;email&quot;</code> để
+                làm một input nhập email.
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day%201/exe02.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt*</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day%201/exe03.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Vì chưa học Css nên có thể chấp nhận việc sử dụng thẻ h để tăng
+              kích thước của text.
+            </p>
+            <ul>
+              <li>
+                Tuy nhiên, nên sử dụng một thẻ p và style thuộc tính
+                <code>font-size</code> để tăng kích thước của text.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, tuy nhiên nên chú ý
+          về:
+        </p>
+        <ul>
+          <li>
+            Tên folder không được viết sai chính tả <code>assest</code> =&gt;
+            <code>assets</code>
+          </li>
+          <li>
+            Tên folder, tên dự án không nên chứa ký tụ đặc biệt và dấu cách,
+            điều đó sẽ gây khó khăn trong việc quản lý và tìm kiếm các file.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-vi-t-ho-ngg-https-github-com-buiviethoang2211-f8-fullstack-k2-blob-main-day_1-index-html-"
+    >
+      <a
+        href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_1/index.html"
+        >Việt Hoàngg</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_1/index.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt*</li>
+          <li>
+            Phần <code>input</code> có một type là <code>email</code> sử dụng
+            cho việc nhập <code>email</code>.
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính <code>type=&quot;email&quot;</code> để
+                làm một <code>input</code> nhập <code>email</code>.
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_1/index.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt*</p></li>
+          <li>
+            <p>
+              Việc sử dụng ảnh với <code>src</code> là
+              <code>data/image</code> và mã hóa base64 khá là khó trong việc
+              quản lý và tìm kiếm ảnh. Nên sử dụng một ảnh với src là một đường
+              dẫn tới ảnh.
+            </p>
+            <ul>
+              <li>VD:</li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"icon..."</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_1/index.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm không tốt</p></li>
+          <li>
+            <p>Sử dụng 2 thẻ <code>h1</code> ở dùng 1 trang</p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Footer<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Chỉ nên sử dụng một thẻ <code>h1</code> trong một trang web để
+                tránh việc trình duyệt không hiểu được nội dung của trang web.
+              </li>
+              <li>
+                <p>
+                  Phần nội dung chính của trang web nên là thẻ
+                  <code>h1</code> thay vì chỉ là một thẻ <code>a</code>
+                </p>
+                <pre><code class="lang-html">&lt;a
+  href=<span class="hljs-string">"https://www.bing.com/search?pglt=43&amp;q=Vòng+Xoay+cao+tốc+34.500+tỷ+sụt+lún+quá+mức%2C+cần+300+ngày+khắc+phục&amp;aqs=edge..69i57.370j0j1&amp;FORM=ANCMS9&amp;PC=U531"</span>
+&gt;
+  Vòng Xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+&lt;/a&gt;
+</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Vì chưa học Css nên có thể chấp nhận việc sử dụng thẻ
+              <code>h</code> để tăng kích thước của text.
+            </p>
+            <ul>
+              <li>
+                Tuy nhiên, nên sử dụng một thẻ <code>p</code> và style thuộc
+                tính <code>font-size</code> để tăng kích thước của text.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, tuy nhiên nên chú ý
+          về:
+        </p>
+        <ul>
+          <li><code>src</code> của <code>img</code></li>
+          <li><code>type</code> của <code>input</code></li>
+          <li><code>semantic</code> của các thẻ</li>
+          <li>
+            Không nên viết tất cả bài tập vào một file html, nên tách ra thành
+            các file riêng biệt để dễ quản lý và tìm kiếm.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-duy-hi-u-nguy-n-https-github-com-hieuboss-f8-fullstack-k2-blob-main-lesson1-index-html-"
+    >
+      <a
+        href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/lesson1/index.html"
+        >Duy Hiếu Nguyễn</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/lesson1/index.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Phần <code>input</code> có một <code>type</code> là
+              <code>email</code> sử dụng cho việc nhập <code>email</code>.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính <code>type=&quot;email&quot;</code> để
+                làm một <code>input</code> nhập <code>email</code>.
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Thẻ <code>br</code> chỉ được sử dụng để xuống dòng trong các đoạn
+              text.
+            </p>
+            <ul>
+              <li>
+                Việc sử dụng <code>br</code> để ngắt dòng và tạo khoảng cách
+                giữa các phần tử là không đúng.
+              </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span><span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ <code>block</code> để tạo khoảng cách giữa
+                các phần tử như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/lesson1/index.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt*</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/lesson1/index.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>Sai chính tả <code>Havard</code> =&gt; <code>Harvard</code>.</p>
+          </li>
+          <li>
+            <p>
+              Phần <code>header</code>, <code>sidebar</code>,<code>footer</code>
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            <p>Phần title chính của trang web nên là thẻ h1 thay vì h2</p>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h2</span>&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, tuy nhiên nên chú ý
+        </p>
+        <ul>
+          <li>
+            Chính tả của các phần text quyết định rất lớn đến trải nghiệm người
+            dùng và độ chuyên nghiệp của trang web.
+          </li>
+          <li>
+            Các thuộc tính của các thẻ hay dùng như <code>type</code>,
+            <code>placeholder</code>, <code>href</code>...
+          </li>
+          <li>
+            <code>Semantic</code> của các thẻ cũng rất quan trọng vì nó giúp cho
+            dev, trình duyệt hiểu được nội dung của trang web.
+          </li>
+          <li>
+            Không nên viết tất cả bài tập vào một file html, nên tách ra thành
+            các file riêng biệt để dễ quản lý và tìm kiếm.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-10634-https-github-com-hieuboss-f8-fullstack-k2-blob-main-lesson1-index-html-"
+    >
+      <a
+        href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/lesson1/index.html"
+        >10634</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>Việc style như này là không thể chấp nhận được</p>
+        <ul>
+          <li>
+            Tất cả các <code>class</code>, <code>id</code> này đều chung một
+            style. Nên gom nhóm chúng để trong một <code>class</code> chung
+          </li>
+        </ul>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-id">#one</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+  <span class="hljs-selector-class">.two</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+  <span class="hljs-selector-class">.three</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+  <span class="hljs-selector-class">.four</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+  <span class="hljs-selector-class">.five</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+  <span class="hljs-selector-class">.six</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+  <span class="hljs-selector-class">.seven</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">25px</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-1/index.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Phần <code>input</code> có một <code>type</code> là
+              <code>email</code> sử dụng cho việc nhập <code>email</code>.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính <code>type=&quot;email&quot;</code> để
+                làm một input nhập <code>email</code>.
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Thẻ <code>br</code> chỉ được sử dụng để xuống dòng trong các đoạn
+              text.
+            </p>
+            <ul>
+              <li>
+                Việc sử dụng <code>br</code> để ngắt dòng và tạo khoảng cách
+                giữa các phần tử là không đúng.
+              </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ <code>block</code> để tạo khoảng cách giữa
+                các phần tử như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-1/index.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt*</p></li>
+          <li>
+            <p>Thẻ br chỉ được sử dụng để xuống dòng trong các đoạn text.</p>
+            <ul>
+              <li>
+                Việc sử dụng <code>br</code> để ngắt dòng và tạo khoảng cách
+                giữa các phần tử là không đúng.
+              </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
+<span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ <code>block</code> để tạo khoảng cách giữa
+                các phần tử như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Vì đây là title của từng item trong list, nên để là
+              <code>h2</code> thay vì bọc một thẻ inline là <code>b</code>
+            </p>
+            <pre><code class="lang-html"><span class="hljs-symbol">...</span>
+&lt;<span class="hljs-keyword">b&gt;UI/UX </span>Design&lt;/<span class="hljs-keyword">b&gt;
+</span><span class="hljs-symbol">...</span>
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Không nên sử dụng <code>img</code> với <code>src</code> là
+              <code>data/image</code> và mã hóa base64 khá là khó trong việc
+              quản lý và tìm kiếm ảnh. Nên sử dụng một ảnh với src là một đường
+              dẫn tới ảnh.
+            </p>
+            <ul>
+              <li>VD:</li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"icon..."</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-1/index.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Phần <code>header</code>, <code>sidebar</code>,<code>footer</code>
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Phần title chính của trang web nên là thẻ <code>h1</code> thay vì
+              <code>b</code>
+            </p>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h2</span>&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, tuy nhiên nên chú ý
+        </p>
+        <ul>
+          <li>
+            Các thuộc tính của các thẻ hay dùng như <code>type</code>,
+            <code>placeholder</code>, <code>href</code>...
+          </li>
+          <li>
+            Semantic của các thẻ cũng rất quan trọng vì nó giúp cho dev, trình
+            duyệt hiểu được nội dung của trang web.
+          </li>
+          <li>
+            Không nên viết tất cả bài tập vào một file html, nên tách ra thành
+            các file riêng biệt để dễ quản lý và tìm kiếm.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-h-ng-h-nguy-n-th-https-github-com-ha752002-f8-fullstack-k2-tree-main-exercise-ex_10-6-"
+    >
+      <a
+        href="https://github.com/ha752002/f8-fullstack-k2/tree/main/Exercise/Ex_10-6"
+        >Hồng Hà Nguyễn Thị</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/ha752002/f8-fullstack-k2/blob/main/Exercise/Ex_10-6/ex1.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt*</li>
+          <li>
+            <p>
+              Phần input có thuộc tính id hiện đang không có giá trị, vậy nó
+              không cần thiết
+            </p>
+            <pre><code class="lang-html">&lt;input
+  <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"main__input-email"</span>
+  <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"email"</span>
+  name=<span class="hljs-string">"email"</span>
+  placeholder=<span class="hljs-string">"Enter Email"</span>
+  id=<span class="hljs-string">""</span>
+/&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/ha752002/f8-fullstack-k2/blob/main/Exercise/Ex_10-6/ex2.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Theo semantic, các thẻ heading phải đi từ thẻ h1 đến h6 theo thứ tự.
+            Tuy nhiên, trong bài làm này lại sử dụng thẻ h3 cho các tiêu đề của
+            các list item mà chưa có h2. Điều này sẽ gây khó khăn cho việc trình
+            bày và hiểu nội dung của trang web.
+            <ul>
+              <li>Nên sử dụng thẻ h2 cho các tiêu đề của các list item.</li>
+            </ul>
+          </li>
+          <li>
+            Việc import link css từ assets nhưng không sử dụng một lần nào cũng
+            như file css không có định dạng chung khiến cho việc import css trở
+            nên vô nghĩa.
+            <ul>
+              <li>Nên xóa link css và file css không cần thiết.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/ha752002/f8-fullstack-k2/blob/main/Exercise/Ex_10-6/ex3.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li>
+            Việc import link css từ assets nhưng không sử dụng một lần nào cũng
+            như file css không có định dạng chung khiến cho việc import css trở
+            nên vô nghĩa.
+            <ul>
+              <li>Nên xóa link css và file css không cần thiết.</li>
+            </ul>
+          </li>
+          <li>
+            Các phần <code>header</code>, <code>sidebar</code>,<code
+              >footer</code
+            >
+            không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+            <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+            <code>p</code> để hiển thị đoạn chữ đó.
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Theo các nguyên tắc của W3C, semantic và SEO, thì thẻ
+              <code>&lt;h1&gt;</code> nên được sử dụng để đánh dấu tiêu đề chính
+              của một trang hoặc một phần tử trang. - Trong trường hợp này, tiêu
+              đề &quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
+              khắc phục&quot; là một tiêu đề chính.
+            </p>
+            <ul>
+              <li>
+                Vì vậy, theo các nguyên tắc trên, đúng hơn là sử dụng thẻ
+                <code>&lt;h1&gt;</code> bọc bên ngoài thẻ
+                <code>&lt;a&gt;</code>, như sau:
+              </li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h1</span>&gt;
+</code></pre>
+            <ul>
+              <li>
+                Việc này giúp đảm bảo tính ngữ nghĩa và đánh giá cao về SEO.
+                Đồng thời, trình duyệt cũng sẽ hiển thị tiêu đề theo đúng cấu
+                trúc thông qua việc sử dụng thẻ <code>&lt;h1&gt;</code> mà không
+                bị ảnh hưởng bởi việc bọc ngoài bằng thẻ <code>&lt;a&gt;</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Sử dụng quá nhiều h1 trong một trang web, điều đó là bất hợp lý vì
+              nó sẽ làm cho trình duyệt không hiểu được nội dung chính của trang
+              web.
+            </p>
+            <ul>
+              <li>
+                Nên sử dụng một thẻ h1 trong một trang web để tránh việc trình
+                duyệt không hiểu được nội dung của trang web.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Đánh giá tổng quan bài tập về nhà: Bài làm rất tốt.</p>
+        <ul>
+          <li>
+            Cần chú ý thêm một chút về semantic của các thẻ để việc code trở nên
+            tốt hơn, giúp cho việc hiểu nội dung của trang web dễ dàng hơn.
+          </li>
+          <li>
+            Việc sử dụng
+            <pre><code class="lang-css"><span class="hljs-selector-class">.main__input-email</span> {
+...
+<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">14px</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+            là không cần thiết, có thể sử dụng thuộc tính
+            <code>margin-bottom</code> để thay thế cho
+            <code>margin: 0 0 14px 0;</code>.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-v-tu-n-duy-https-github-com-tuanduy102-f8-btvn-tree-0144a122a746e63068d1a34159cec42431cdce2b-btvn-day-1-"
+    >
+      <a
+        href="https://github.com/tuanduy102/f8-btvn/tree/0144a122a746e63068d1a34159cec42431cdce2b/BTVN-Day-1"
+        >Võ Tuấn Duy</a
+      >
+    </h2>
+    <ul>
+      <li>
+        [x]
+        <a
+          href="https://github.com/tuanduy102/f8-btvn/blob/0144a122a746e63068d1a34159cec42431cdce2b/BTVN-Day-1/bt1.html"
+          >Bài 1</a
+        >
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Thẻ br chỉ được sử dụng để xuống dòng trong các đoạn text.
+            <ul>
+              <li>
+                Việc sử dụng br để ngắt dòng và tạo khoảng cách giữa các phần tử
+                là không đúng.
+                <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+              </li>
+              <li>
+                Nên sử dụng một thẻ block để tạo khoảng cách giữa các phần tử
+                như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tuanduy102/f8-btvn/blob/0144a122a746e63068d1a34159cec42431cdce2b/BTVN-Day-1/bt2.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Với các hình ảnh, icon... không nên set style cả width và height.
+            Điều đó khiến cho tỷ lệ ảnh có thể không còn giống với lúc đầu.
+          </li>
+        </ul>
+        <pre><code class="lang-css"><span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">15px</span>;
+}
+</code></pre>
+        <ul>
+          <li>
+            Nên để 1 thuộc tính là auto. Thông thường thuộc tính auto sẽ là
+            width
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tuanduy102/f8-btvn/blob/0144a122a746e63068d1a34159cec42431cdce2b/BTVN-Day-1/bt3.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li>
+            Các phần <code>header</code>, <code>sidebar</code>,<code
+              >footer</code
+            >
+            không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+            <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+            <code>p</code> để hiển thị đoạn chữ đó.
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            Phần title đầu tiên của trang web nên là thẻ <code>h1</code> thay vì
+            <code>h2</code>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h1</span>&gt;
+</code></pre>
+          </li>
+          <li>
+            Sai chính tả ở:
+            <ul>
+              <li><code>Havard</code> =&gt; <code>Harvard</code></li>
+              <li>
+                <code>...34.500 tủ sụt...</code> =&gt;
+                <code>...34.500 tỷ sụt...</code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Đánh giá tổng quan bài tập về nhà: Bài làm tốt.
+        <ul>
+          <li>
+            Cần chú ý thêm một chút về semantic của các thẻ để việc code trở nên
+            tốt hơn, giúp cho việc hiểu nội dung của trang web dễ dàng hơn.
+          </li>
+          <li>
+            Việc sử dụng
+            <pre><code class="lang-css"><span class="hljs-selector-class">.main__input-email</span> {
+...
+<span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">14px</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+            là không cần thiết, có thể sử dụng thuộc tính
+            <code>margin-bottom</code> để thay thế cho
+            <code>margin: 0 0 14px 0;</code>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-nguy-n-th-tuy-t-https-github-com-xanhrii-k2-f8-fullstack-course-tree-master-rii_day01_html-"
+    >
+      <a
+        href="https://github.com/xanhrii/k2-f8-fullstack-course/tree/master/rii_day01_html"
+        >Nguyễn Thị Tuyết</a
+      >
+    </h2>
+    <ul>
+      <li>
+        [x]
+        <a
+          href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day01_html/homework_01.html"
+          >Bài 1</a
+        >
+        <ul>
+          <li>Bài làm rất tốt *</li>
+        </ul>
+      </li>
+      <li>
+        [x]
+        <a
+          href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day01_html/homework_02.html"
+          >Bài 2</a
+        >
+        <ul>
+          <li>Bài làm rất tốt *</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day01_html/homework_03.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt *</p></li>
+          <li>
+            <p>
+              Thẻ <code>header</code>, <code>sidebar</code>,<code>footer</code>
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Đánh giá tổng quan bài tập về nhà: Bài làm rất tốt.</p>
+        <ul>
+          <li>
+            Nếu style cho thẻ html với mục đích để tất cả các phần tử con của
+            html đều có được style.
+          </li>
+          <li>
+            Nên sử dụng thẻ <code>*</code> để style cho tất cả các phần tử con
+            của html. ```css
+          </li>
+          <li>
+            { margin: 0; padding: 0; box-sizing: border-box; /<em>
+              Cũng nên thêm reset css để giúp bỏ qua các style mặc định của các
+              trình duyệt. Từ đó giúp cho việc style trở nên dễ dàng hơn. </em
+            >/ font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana,
+            sans-serif; } ```
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="-pham-duong-https-github-com-phamduongw-f8-fullstack-k2-">
+      <a href="https://github.com/phamduongw/f8-fullstack-k2">Pham Duong</a>
+    </h2>
+    <ul>
+      <li>
+        [x]
+        <a
+          href="https://github.com/phamduongw/f8-fullstack-k2/blob/main/day-1/ex-1.html"
+          >Bài 1</a
+        >
+        <ul>
+          <li>Bài làm rất tốt *</li>
+        </ul>
+      </li>
+      <li>
+        [x]
+        <a
+          href="https://github.com/phamduongw/f8-fullstack-k2/blob/main/day-1/ex-2.html"
+          >Bài 2</a
+        >
+        <ul>
+          <li>Bài làm rất tốt *</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/phamduongw/f8-fullstack-k2/blob/main/day-1/ex-3.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt *</p></li>
+          <li>
+            <p>
+              Thẻ <code>header</code>, <code>sidebar</code>,<code>footer</code>
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            Phần title chính của bài nên là thẻ <code>h1</code> thay vì
+            <code>h2</code>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h1</span>&gt;
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li><p>Đánh giá tổng quan bài tập về nhà: Bài làm rất tốt.</p></li>
+    </ul>
+    <h2
+      id="-nguy-n-v-n-c-https-github-com-poyken-f8-fullstack-k2-tree-main-day1-"
+    >
+      <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day1"
+        >Nguyễn Văn Đức</a
+      >
+    </h2>
+    <ul>
+      <li>
+        [x]
+        <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day1/cau1"
+          >Bài 1</a
+        >
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Thẻ <code>br</code> chỉ được sử dụng để xuống dòng trong các đoạn
+            text.
+            <ul>
+              <li>
+                Việc sử dụng <code>br</code> để ngắt dòng và tạo khoảng cách
+                giữa các phần tử là không đúng.
+                <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span><span class="hljs-section">&lt;br /&gt;</span>
+</code></pre>
+              </li>
+              <li>
+                Nên sử dụng một thẻ <code>block</code> để tạo khoảng cách giữa
+                các phần tử như <code>div</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Thẻ <code>input</code> có một <code>type</code> là
+            <code>email</code> sử dụng cho việc nhập <code>email</code>.
+            <ul>
+              <li>
+                Nên sử dụng thuộc tính <code>type=&quot;email&quot;</code> để
+                làm một <code>input</code> nhập <code>email</code>.
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Phần thẻ <code>title</code> của một trang web là rất quan trọng, nó
+            được sử dụng để hiển thị tên của trang web cho người dùng và các
+            công cụ tìm kiếm. Nên quan tâm nhiều hơn vào phần title thay vì chỉ
+            để là <code>Document</code>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        [x]
+        <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day1/cau2"
+          >Bài 2</a
+        >
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Nên gom nhóm tất cả các image trong folder vào một folder
+            assets/images để dễ quản lý và tìm kiếm.
+          </li>
+          <li>
+            Phần title của item trong list nên là thẻ <code>h2</code> thay vì
+            <code>h3</code>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</code></pre>
+          </li>
+          <li>
+            Sai chính tả <code>Maketing</code> =&gt; <code>Marketing</code>
+          </li>
+          <li>
+            Phần thẻ <code>title</code> của một trang web là rất quan trọng, nó
+            được sử dụng để hiển thị tên của trang web cho người dùng và các
+            công cụ tìm kiếm. Nên quan tâm nhiều hơn vào phần title thay vì chỉ
+            để là <code>Document</code>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day1/cau3"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Sử dụng nhiều thẻ h1 trong một trang web là không tốt, nên sử dụng
+            một thẻ h1 trong một trang web để tránh việc trình duyệt không hiểu
+            được nội dung của trang web.
+          </li>
+          <li>
+            Thẻ <code>header</code>, <code>sidebar</code>,<code>footer</code>
+            không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+            <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+            <code>p</code> để hiển thị đoạn chữ đó.
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Phần title của trang web nên là thẻ <code>h1</code> thay vì
+              <code>h2</code>
+            </p>
+            <pre><code class="lang-html">&lt;a href=<span class="hljs-string">"#"</span>&gt;
+  &lt;<span class="hljs-symbol">h2</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/<span class="hljs-symbol">h2</span>&gt;
+&lt;/a&gt;
+</code></pre>
+            <ul>
+              <li>
+                <p>
+                  Theo các nguyên tắc của W3C, semantic và SEO, thì thẻ
+                  <code>&lt;h1&gt;</code> nên được sử dụng để đánh dấu tiêu đề
+                  chính của một trang hoặc một phần tử trang. - Trong trường hợp
+                  này, tiêu đề &quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá
+                  mức, cần 300 ngày khắc phục&quot; là một tiêu đề chính.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Vì vậy, theo các nguyên tắc trên, đúng hơn là sử dụng thẻ
+                  <code>&lt;h1&gt;</code> bọc bên ngoài thẻ
+                  <code>&lt;a&gt;</code>, như sau:
+                </p>
+              </li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h1</span>&gt;
+</code></pre>
+            <ul>
+              <li>
+                Việc này giúp đảm bảo tính ngữ nghĩa và đánh giá cao về SEO.
+                Đồng thời, trình duyệt cũng sẽ hiển thị tiêu đề theo đúng cấu
+                trúc thông qua việc sử dụng thẻ <code>&lt;h1&gt;</code> mà không
+                bị ảnh hưởng bởi việc bọc ngoài bằng thẻ <code>&lt;a&gt;</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần thẻ <code>title</code> của một trang web là rất quan trọng,
+              nó được sử dụng để hiển thị tên của trang web cho người dùng và
+              các công cụ tìm kiếm. Nên quan tâm nhiều hơn vào phần title thay
+              vì chỉ để là <code>Document</code>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, cần chú ý thêm một
+          chút tới semantic của các thẻ, phần title của trang web để việc code
+          trở nên tốt hơn, giúp cho việc hiểu nội dung của trang web dễ dàng
+          hơn.
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="-v-c-t-i-https-github-com-apeiron2-f8-fullstack-k2-tree-main-day_1-homework-"
+    >
+      <a
+        href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/Day_1/Homework"
+        >Vũ Đức Tài</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/Day_1/Homework/ex01"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li>
+            <p>
+              Thẻ p được sử dụng để đánh dấu một đoạn văn bản. Không nên sử dụng
+              để bao bọc một thẻ khác. Điều đó là không đúng với semantic của
+              thẻ p. (Đã nói trên lớp và nhắc lại rất nhiều lần).
+            </p>
+            <pre><code class="lang-html">&lt;p&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+&lt;p&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+</code></pre>
+            <ul>
+              <li>Nên sử dụng thẻ <code>div</code> để bao bọc các thẻ khác.</li>
+            </ul>
+            <pre><code class="lang-html">&lt;div&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;div&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+            <ul>
+              <li>Thuộc tính value nếu không sử dụng thì nên xóa đi</li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Thẻ <code>title</code> của một trang web là rất quan trọng, nó
+              được sử dụng để hiển thị tên của trang web cho người dùng và các
+              công cụ tìm kiếm. Nên quan tâm nhiều hơn vào phần title thay vì
+              chỉ để là <code>Document</code>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/Day_1/Homework/ex02"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Nên import một file .min của thư viện, điều đó giúp giảm dung
+              lượng của file css, để tăng tốc độ load trang web.
+            </p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./fontawesome-free-6.4.0-web/css/all.css"</span> /&gt;</span>
+</code></pre>
+            <ul>
+              <li>Nên sử dụng file .min</li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span>
+  <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
+  <span class="hljs-attr">href</span>=<span class="hljs-string">"./fontawesome-free-6.4.0-web/css/all.min.css"</span>
+/&gt;</span>
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Phần title của các item trong list nên là thẻ <code>h2</code> thay
+              vì <code>h3</code>
+            </p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-solid fa-leaf"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+...
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng thẻ <code>h2</code> cho các tiêu đề của các list
+                item.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/Day_1/Homework/ex03"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Các phần <code>header</code>, <code>sidebar</code>,<code
+                >footer</code
+              >
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Phần thẻ a có thuộc tính là href, thuộc tính này bắt buộc phải có
+              value. Nếu không có đường dẫn thì thường được khuyến nghị sử dụng
+              &quot;#&quot; làm value cho thuộc tính href
+            </p>
+            <ul>
+              <li>
+                Việc sử dụng value &quot;&quot; cho thuộc tính href không được
+                khuyến nghị, vì nó có thể gây nhầm lẫn hoặc tạo ra hiệu ứng
+                không mong muốn cho user. Thay vào đó, nên sử dụng &quot;#&quot;
+                để tạo ra một liên kết trống hợp lệ.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <code>article</code> Chỉ được sử dụng để biểu thị cho một bài viết
+              cụ thể, đầy đủ. Trường hợp chỉ có mỗi tiêu đề thì không nên dùng.
+              Nên sử dụng h1 để thay thế thì đúng hơn.
+            </p>
+            <ul>
+              <li>Sửa thành h1</li>
+            </ul>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
+  &lt;a href=<span class="hljs-string">"#"</span>&gt;
+    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
+  &lt;/a&gt;
+&lt;/<span class="hljs-symbol">h1</span>&gt;
+...
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, nên chú ý hơn một chút
+          vào các phần tử semantic, ý nghĩa chính xác của các thẻ, phần title
+          của trang web để việc code trở nên tốt hơn, giúp cho việc hiểu nội
+          dung của trang web dễ dàng hơn.
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="-kh-c-qu-n-https-github-com-quanice-f8-fullstack-k2-tree-main-day01-"
+    >
+      <a href="https://github.com/QuanIce/f8-fullstack-k2/tree/main/Day01"
+        >Đỗ Khắc Quân</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/QuanIce/f8-fullstack-k2/blob/main/Day01/ex01.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Phần title chính của trang web không nên để là thẻ
+              <code>h2</code> mà nên là thẻ <code>h1</code>
+            </p>
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"header"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Get the invite<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span>
+</code></pre>
+          </li>
+          <li>
+            <p>
+              Việc sử dụng padding-top theo % có thể sai với một vài màn hình
+              khiến layout bị lệch quá nhiều so với bản gốc. Nên dùng số chính
+              xác như px, rem, ...
+            </p>
+            <p>
+              <img src="images/do_khac_quan-ex1.png" alt="Đỗ Khắc Quân Ex1" />
+            </p>
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"request-button"</span> style=<span class="hljs-string">"padding-top: 5%;"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span>
+</code></pre>
+            <ul>
+              <li>Sửa lại thành</li>
+            </ul>
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"request-button"</span> style=<span class="hljs-string">"padding-top: 20px;"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span>
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/QuanIce/f8-fullstack-k2/blob/main/Day01/ex02.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt</p></li>
+          <li>
+            <p>
+              Phần title của các item trong list nên là thẻ <code>h2</code> thay
+              vì <code>h3</code>
+            </p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-01"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+...
+</code></pre>
+            <ul>
+              <li>
+                Nên sử dụng thẻ <code>h2</code> cho các tiêu đề của các list
+                item.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần title của trang web rất cần thiết, nó được sử dụng để hiển
+              thị tên của trang web cho người dùng và các công cụ tìm kiếm. Nên
+              quan tâm nhiều hơn vào phần title thay vì chỉ để là
+              <code>Document</code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Cách đặt tên class như này là không tối ưu tốt cho việc tái sử
+              dụng code css
+            </p>
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"content-01"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+...
+&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"content-05"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+            <ul>
+              <li>
+                Vì chúng cùng một tầng ý nghĩa và trong 1 list, chúng có thể sẽ
+                chung một đoạn code css. Nên đặt tên class chúng giống nhau để
+                tái sử dụng code css.
+              </li>
+            </ul>
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"content"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/QuanIce/f8-fullstack-k2/blob/main/Day01/ex03.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li>
+            <p>
+              Phần title của trang web rất cần được quan tâm, nó được sử dụng để
+              hiển thị tên của trang web cho người dùng và các công cụ tìm kiếm.
+              Nên quan tâm nhiều hơn vào phần title thay vì chỉ để là
+              <code>Document</code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Sử dụng nhiều thẻ h1 trong cùng một trang web là không tốt, nên sử
+              dụng một thẻ h1 trong một trang web để tránh việc trình duyệt
+              không hiểu được nội dung của trang web.
+            </p>
+            <ul>
+              <li>
+                Cái này đã được nói rất kỹ trên lớp và nhắc lại rất nhiều lần.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần <code>header</code>, <code>sidebar</code>,<code>footer</code>
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+          <li>
+            Phần title của trang web nên là thẻ <code>h1</code> thay vì
+            <code>h2</code>
+            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
+  &lt;a href=<span class="hljs-string">"https://dantri.com.vn/"</span>
+    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
+  &gt;
+&lt;/<span class="hljs-symbol">h2</span>&gt;
+...
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm tốt, cần chú ý thêm nhiều
+          về các quy tắc viết cấu trúc HTML, các quy tắc về Semantic, quy tắc về
+          SEO, W3C, ... để việc code trở nên tốt hơn, giúp cho việc hiểu nội
+          dung của trang web dễ dàng hơn.
+        </p>
+        <ul>
+          <li>
+            Link tham khảo về các quy tắc
+            <ul>
+              <li>
+                <a href="https://html.spec.whatwg.org/multipage/"
+                  >HTML Standard</a
+                >
+              </li>
+              <li>
+                <a href="https://html.spec.whatwg.org/">HTML Living Standard</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/html/html5_intro.asp"
+                  >HTML5</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                  >HTML5 Semantic Elements</a
+                >
+              </li>
+              <li>...</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2
+      id="-th-nguy-n-i-https-github-com-daithehh04-fullstack-tree-main-day-201-"
+    >
+      <a href="https://github.com/daithehh04/fullstack/tree/main/Day%201"
+        >Thế Nguyễn Đại</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/daithehh04/fullstack/blob/main/Day%201/exercise-1.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm rất tốt *</li>
+          <li>
+            Phần attribute id của input được khai báo nhưng không sử dụng
+            <code>id=&quot;&quot;</code> thì nên xóa đi.
+          </li>
+          <li>
+            Phần title của trang web rất cần thiết, nó được sử dụng để hiển thị
+            tên của trang web cho người dùng và các công cụ tìm kiếm. Nên quan
+            tâm nhiều hơn vào phần title thay vì chỉ để là
+            <code>Document</code>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/daithehh04/fullstack/blob/main/Day%201/exercise-2.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm rất tốt *</p></li>
+          <li>
+            <p>
+              Phần title của trang web rất cần thiết, nó được sử dụng để hiển
+              thị tên của trang web cho người dùng và các công cụ tìm kiếm. Nên
+              quan tâm nhiều hơn vào phần title thay vì chỉ để là
+              <code>Document</code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Phần <code>alt</code> của icon <code>leaf</code> đang có alt là
+              <code>left</code>, như vậy là sai chính tả. Nên sửa lại thành
+              <code>leaf</code>.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/daithehh04/fullstack/blob/main/Day%201/exercise-3.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li><p>Bài làm tốt *</p></li>
+          <li>
+            <p>
+              Phần title của trang web rất cần thiết, nó được sử dụng để hiển
+              thị tên của trang web cho người dùng và các công cụ tìm kiếm. Nên
+              quan tâm nhiều hơn vào phần title thay vì chỉ để là
+              <code>Document</code>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Viết sai cấu trúc HTML. Có thể lý do là ẩu nên không check lại
+              code.
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Có 2 thẻ đóng <code>&lt;main&gt;</code> tuy nhiên chỉ có một
+                  thẻ mở <code>&lt;main&gt;</code>
+                </p>
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+</code></pre>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần <code>header</code>, <code>sidebar</code>,<code>footer</code>
+              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
+              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+              <code>p</code> để hiển thị đoạn chữ đó.
+            </p>
+            <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Bài làm rất tốt, cần chú ý thêm về
+          cấu trúc của HTML để không còn bị sai. Không nên đặt tên dự án, tên
+          folder chứa các ký tự đặc biệt và dấu cách, điều đó sẽ gây khó khăn
+          trong việc quản lý và sử dụng cũng như khiến url trở nên dài và khó
+          nhớ.
+        </p>
+      </li>
+    </ul>
+    <h2 id="-t-ng-p-trai-nh-t-f8-https-github-com-stung16-ex_f8-fullstack-">
+      <a href="https://github.com/Stung16/ex_f8-fullstack"
+        >Tùng đẹp trai nhất f8</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          Khi đặt tên của mình, nên đặt sao cho tường minh và chính xác nhất.
+        </p>
+        <ul>
+          <li>
+            <p>
+              Không nên đặt là <code>Tùng đẹp trai nhất f8</code> vì điều đó là
+              sai sự thật.
+            </p>
+          </li>
+          <li>
+            <p>
+              Đề xuất đổi thành
+              <code>Tùng đẹp trai nhì f8 sau em Dương F8</code>
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day1/ex1-day1.html"
+            >Bài 1</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Không nên đặt đường dẫn có src ảnh là
+            <code>/Day1/img/tải xuống.png</code> vì:
+            <ul>
+              <li>
+                Đường dẫn có thể sai nếu tập html được mở từ một vị trí khác.
+              </li>
+              <li>
+                Nên sử dụng các đường dẫn tương đối <code>../</code>,
+                <code>./</code> để tránh việc đường dẫn sai.
+              </li>
+            </ul>
+          </li>
+          <li>Không có folder nào là Day1/img khiến cho ảnh load bị sai.</li>
+          <li>
+            Phần thẻ title của bài có một chút cần sửa:
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Get the invate<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Vì đây là title chính của trang web, nên sử dụng
+                <code>h1</code> thay vì <code>h2</code>
+              </li>
+              <li>
+                Sai chính tả <code>invate</code> =&gt; <code>invite</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Phần input nhập email nên có thuộc tính
+              <code>type=&quot;email&quot;</code> để trình duyệt có thể kiểm tra
+              được định dạng email.
+            </p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"information_email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Sửa lại thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"information_email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
+</code></pre>
+            <ul>
+              <li>
+                Ngoài ra việc đặt tên className cũng nên thẻ hiện đúng chức năng
+                của phần tử. Input thì nên có className dạng
+                <code>input-email</code> thay vì <code>information_email</code>
+                <ul>
+                  <li>
+                    Việc đặt className <code>information_email</code> có thể gây
+                    hiểu lầm là phần tử đó là một phần tử chứa thông tin về
+                    email chứ không phải là một phần tử nhập email.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day1/ex2-day1.html"
+            >Bài 2</a
+          >
+        </p>
+        <ul>
+          <li>Bài làm tốt</li>
+          <li>
+            Không nên style cho img cả width và height, nên chỉ style cho một
+            trong hai thuộc tính đó.
+            <pre><code class="lang-css"><span class="hljs-selector-class">.wapper_ul-icon</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+}
+</code></pre>
+            <ul>
+              <li>
+                Nên sửa lại thành
+                <pre><code class="lang-css"><span class="hljs-selector-class">.wapper_ul-icon</span> <span class="hljs-selector-tag">img</span> {
+<span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+<span class="hljs-attribute">width</span>: auto;
+}
+</code></pre>
+              </li>
+              <li>
+                Ngoài ra thì className này cũng đang sai chính tả, nên sửa lại
+                thành <code>wrapper_ul-icon</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Nên đặt className một cách tường minh hơn</p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wapper_ul"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Có thể sửa thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wrapper_list"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wapper_ul-icon"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Có thể sửa thành --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wrapper_icon"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- hoặc --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wrapper_list-icon"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day1/ex3-day1.html"
+            >Bài 3</a
+          >
+        </p>
+        <ul>
+          <li>
+            <p>Sử dụng các tag một cách bừa bãi và khó hiểu</p>
+            <ul>
+              <li>
+                Phần <code>header</code>, <code>sidebar</code>,<code
+                  >footer</code
+                >
+                không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể
+                hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
+                <code>p</code> để hiển thị đoạn chữ đó.
+                <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-weight: bold; font-size: 20px"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+...
+</code></pre>
+              </li>
+              <li>
+                Phần title của trang web nên là thẻ <code>h1</code> thay vì
+                <code>h3</code>
+                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"..."</span>&gt;</span>Thượng tướng ... Kuin.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</code></pre>
+              </li>
+              <li>
+                Sử dụng thẻ pre cho một đoạn text đơn thuần ?
+                <pre><code class="lang-html">&lt;pre&gt;
+TRUNG QUỐC - Con trai <span class="hljs-number">8</span> tuổ<span class="hljs-selector-tag">i</span> ôm bộ quần áo ngủ ngồ<span class="hljs-selector-tag">i</span> đợ<span class="hljs-selector-tag">i</span> hàng giờ trước cử<span class="hljs-selector-tag">a</span> để xin được ở lạ<span class="hljs-selector-tag">i</span> cùng mẹ khiến ai nhìn cũng rơ<span class="hljs-selector-tag">i</span> nước mắt.&lt;/pre
+&gt;
+</code></pre>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Đánh giá tổng quan bài tập về nhà: Cần chú ý thêm nhiều vào chức năng
+          chính xác của các thẻ, các thuộc tính, các quy tắc về semantic, SEO,
+          W3C, đặt className để việc code trở nên chuyên nghiệp, dễ hiểu hơn.
+        </p>
+      </li>
+    </ul>
+    <p>** Đánh giá tổng quan cả lớp:</p>
+    <ul>
+      <li>Bài làm tốt =&gt; Rất tốt.</li>
+      <li>
+        Cần chú ý thêm vào các quy tắc để việc code trở nên chặt chẽ, quy củ và
+        dễ hiểu hơn.
+      </li>
+      <li>
+        Cần nộp bài sớm hơn. Tránh gây ảnh hưởng cho các học viên khác và đội
+        ngũ giảng viên trong việc đánh giá chi tiết bài tập của 1 người.
+      </li>
+      <li>
+        Chủ động tìm hiểu, đọc kỹ yêu cầu đề bài cũng như đọc kỹ thông báo lỗi
+        được trả về để tự research.
+        <ul>
+          <li>
+            Không nên gặp lỗi là hỏi ngay, hãy tự research trước khi hỏi tránh
+            việc hỏi những câu hỏi đã được trả lời rất nhiều lần hoặc những câu
+            hỏi quá cơ bản mà không cần hỏi.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
