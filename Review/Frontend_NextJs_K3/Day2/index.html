@@ -11,5 +11,2327 @@
     />
     <title>Duong - Review FE Day2_K3</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="d-ng-review-b-i-h-c-vi-n-fe-k3-">
+      Dương review bài học viên FE K3.
+    </h1>
+    <h2
+      id="-nguy-n-c-h-i-https-github-com-duchainguyen-f8-fe-k3-tree-main-day-2-"
+    >
+      <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-2"
+        >Nguyễn Đức Hải</a
+      >
+    </h2>
+    <pre><code>Sớm nhấ<span class="hljs-built_in">t</span> *
+</code></pre>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Vì chưa học CSS nên có thể sử dụng <code>th</code> để gộp hàng tạo
+          khoảng cách giữa các cột
+        </p>
+        <p>Nếu đã biết CSS, có thể sửa như sau:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-tag">input</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>; <span class="hljs-comment">/*Sửa từ 100 về 80% để tạo khoảng trống ở giữa */</span>
+  }
+  <span class="hljs-selector-id">#_country</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- &lt;th width="10%" rowspan="8"&gt;&lt;/th&gt; --&gt;</span>
+<span class="hljs-comment">&lt;!-- Ẩn cột th thừa --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>
+          Nếu có thể, sửa lại màu text bên trong <code>button</code> để giống
+          bản mẫu hơn, sửa lại kích thước của <code>select</code>, hiện tại
+          chiều cao và chiều rộng của <code>select</code> đều đang lệch so với
+          các <code>input</code>.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt Sử dụng thẻ <code>th</code> bừa bãi, sai semantic.</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first-row"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>C<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>=<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>/<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>
+          Tất cả các cột trên đều không phải là một tiêu đề, vì vậy. Nên sử dụng
+          <code>td</code> thay cho <code>th</code> Đề xuất sửa thành:
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first-row"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>C<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>=<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>/<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Các cột không có thì có thể bỏ qua, không cần thêm <code>td</code> vào
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"* Enter your subject"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"* Enter your subject"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần <code>textarea</code> không nên đưa giá trị mặc định vào, nên để
+          trống để người dùng tự nhập và chỉ đưa vào placeholder để cho người
+          dùng biết cần nhập gì.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"message"</span>&gt;</span>* Your message here <span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"* Your message here"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-2"
+            >Bài 4</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm rất tốt, chỉ có một số lỗi
+        nhỏ về semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2
+      id="-b-o-anh-https-github-com-baoanh2004-frontend-offline-k3-tree-main-day-2-"
+    >
+      <a
+        href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-2"
+        >Bảo Anh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Nên chú ý thêm về phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Nên chú ý thêm về phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Nên chú ý thêm về phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-2"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Vì đây là một list bài viết, chú ý dấu chấm của list ở đầu mỗi list.
+        </p>
+        <p><img src="assets/bai2.png" alt="Ảnh Bài 2" /></p>
+        <p>
+          Nên sử dụng thẻ <code>ul&gt;li</code> để làm list, thay vì không có
+          như hiện tại.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Vì các phần này là các tiêu đề trong section <code>footer</code>, nên
+          sử dụng thẻ <code>heading</code> thay vì thẻ <code>span</code> như
+          hiện tại
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Quick Links<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick Links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2
+      id="-nguy-n-kh-c-t-https-github-com-tunguyen34hd-frontend-f8-offline-tree-main-bai_tap-day_2-"
+    >
+      <a
+        href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_2"
+        >Nguyễn Khắc Tú</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Các phần title của các cột || hàng tương ứng nên sử dụng thẻ
+          <code>th</code> thay vì <code>td</code>
+        </p>
+        <pre><code class="lang-html">&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Address<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span> (optional)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Zip code<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>Address<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>State<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span> (optional)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>Zip code<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần chọn state trong bản mẫu là một <code>select</code>, nên sử dụng
+          thẻ <code>select</code> thay vì <code>input</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"state"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"state"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"state"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"state"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"state"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"state"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Trong bản mẫu, phần hiển thị kết quả &amp;&amp; phép tính không có in
+          đậm. Vì vậy, không nên thêm thẻ <code>&lt;b&gt;</code> vào
+        </p>
+        <pre><code class="lang-html">&lt;td colspan=<span class="hljs-string">"4"</span> style=<span class="hljs-string">"text-align: right"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>9 x 9<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"text-align: right"</span>&gt;</span>9 x 9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm không tốt *</p>
+        <p>
+          Thẻ <code>&lt;br&gt;</code> chỉ được sử dụng để ngắt dòng trong một
+          đoạn văn, không được sử dụng để tạo khoảng trống giữa các phần tử.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"* Enter your email address"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">...</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">...</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>send message<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần input để nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_2"
+            >Bài 4</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Thuộc tính <code>href</code> trong thẻ <code>a</code> bắt buộc có
+          value. Nếu không có value thì có thể sử dụng <code>#</code> ||
+          <code>#!</code>
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2
+      id="-ng-c-ti-n-https-github-com-dongoctien17-f8-frontend-k3-tree-main-day-2-"
+    >
+      <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-2"
+        >Đỗ Ngọc Tiến</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-2"
+            >Bài 1</a
+          >
+        </p>
+        <p>
+          Thuộc tính <code>for</code> thẻ <code>label</code> sử dụng để liên kết
+          với <code>id</code> của <code>input</code> || <code>select</code> ||
+          <code>textarea</code> để khi click vào <code>label</code> thì sẽ focus
+          vào <code>input</code> || <code>select</code> ||
+          <code>textarea</code> tương ứng.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">""</span>&gt;Email address&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"john@example.com"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"email"</span>&gt;Email address&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> id=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"john@example.com"</span> /&gt;
+</code></pre>
+        <p>
+          Input sử dụng để nhập email nên có
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <p>Sai chính tả <code>qptional</code> =&gt; <code>optional</code></p>
+        <p>
+          Phần chọn country là một <code>select</code>, nên sử dụng thẻ
+          <code>select</code> thay vì <code>input</code>
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">""</span>&gt;Country&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"United Kingdom"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">"country"</span>&gt;Country&lt;/label&gt;
+&lt;select name=<span class="hljs-string">"country"</span> id=<span class="hljs-string">"country"</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;United Kingdom&lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;United Kingdom&lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;United Kingdom&lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;United Kingdom&lt;/<span class="hljs-keyword">option</span>&gt;
+&lt;/select&gt;
+</code></pre>
+        <p>
+          Layout chưa giống với bản mẫu, có phần hơi xấu. Nên xem lại phần
+          layout.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Nên chú ý tới thẻ meta title vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Nên chú ý tới thẻ meta title vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <p>Code không format rất khó nhìn.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-2"
+            >Bài 4</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Nên chú ý tới thẻ meta title vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <p>
+          Chưa rõ ý đồ của thẻ <code>div</code> đang bao bọc thẻ
+          <code>img</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://..."</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"80px"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"100px"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"CLIMATE CHANGE"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+        <p>
+          Không nên set cả chiều rộng và chiều cao cho img vì có thể làm ảnh bị
+          méo, sai tỷ lệ, khi muốn thay đổi kích thước ảnh thì phải tính toán và
+          thay đổi cả 2.
+        </p>
+        <p>
+          Các phần title trong list các bài viết là các title quan trọng chỉ sau
+          title chính. Nên sử dụng thẻ <code>h2</code> thay vì <code>h3</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&gt;...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Code không format rất khó nhìn.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-2"
+            >Bài 5</a
+          >
+        </p>
+        <p>
+          Nên chú ý tới thẻ meta title vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <p>
+          Các phần title chính trong từng phần của <code>footer</code> nên sử
+          dụng các thẻ <code>heading</code> thay vì thẻ <code>span</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Quick Links<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick Links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Các icon trong bài là một đường dẫn, nên sử dụng thẻ <code>a</code> để
+          bao bọc các icon
+        </p>
+        <pre><code class="lang-html">&lt;li&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-brands fa-facebook"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-brands fa-facebook"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm chưa tốt, có nhiều lỗi về
+        semantic, cách sử dụng thẻ, cách sử dụng thuộc tính. Nên xem lại phần
+        layout và cách sử dụng thẻ.
+      </li>
+    </ul>
+    <h2
+      id="-nguyen-tuan-anh-https-github-com-fanbaday-f8-fullstack-offline-k3-tree-main-day2-"
+    >
+      <a
+        href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day2"
+        >Nguyen Tuan Anh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day2"
+            >Bài 1</a
+          >
+        </p>
+        <p>
+          Các phần title của các cột || hàng tương ứng nên sử dụng thẻ
+          <code>th</code> thay vì <code>td</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Address<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>State (optional)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>ZIP code<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Email address<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Address<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>State (optional)<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>ZIP code<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần input nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <p>
+          Phần chọn Country là một <code>select</code>, nên sử dụng thẻ
+          <code>select</code> thay vì <code>input</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Cần chú ý thêm về phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng
+        </p>
+        <p>Cần format lại code, quá xấu, quá khó đọc.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day2"
+            >Bài 2</a
+          >
+        </p>
+        <p>
+          Thẻ <code>th</code> chỉ được sử dụng khi đó là một tiêu đề của cột ||
+          hàng tương ứng. Không được sử dụng để thể hiện data của các cột. Việc
+          thể hiện đó đã được thẻ <code>td</code>(table data) thể hiện
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"right"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"right"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Không có file <code>main.css</code> ở cùng cấp với file
+          <code>index.html</code>, nên không thể sử dụng được file
+          <code>main.css</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./main.css"</span> /&gt;</span>
+</code></pre>
+        <p>
+          Cần chú ý hơn vào phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng
+        </p>
+        <p>Format lại code, quá xấu, quá khó đọc.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day2"
+            >Bài 3</a
+          >
+        </p>
+        <p>
+          Phần title chính của trang nên sử dụng <code>h1</code> thay vì
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html">&lt;h2&gt;Get <span class="hljs-keyword">in</span> touch <span class="hljs-keyword">with</span> us <span class="hljs-keyword">by</span> filling contact form <span class="hljs-keyword">below</span>&lt;/h2&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;h1&gt;Get <span class="hljs-keyword">in</span> touch <span class="hljs-keyword">with</span> us <span class="hljs-keyword">by</span> filling contact form <span class="hljs-keyword">below</span>&lt;/h1&gt;
+</code></pre>
+        <p>
+          Phần input nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html">&lt;input type=<span class="hljs-string">"text"</span> <span class="hljs-built_in">name</span>=<span class="hljs-string">""</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">""</span> placeholder=<span class="hljs-string">"* Enter your email address"</span> /&gt;
+</code></pre>
+        <p>
+          Các attribute <code>name</code> &amp;&amp; <code>id</code> nên có giá
+          trị, không nên để trống hoặc nếu không có thì nên xóa đi.
+        </p>
+        <p>Đặt tên className không hợp lý:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"info1"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"info1"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"info"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"info"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+        <p>
+          Cần chú ý hơn vào phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng.
+        </p>
+        <p>Format lại code, quá xấu, quá khó đọc.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day2"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Thẻ <code>h1</code> được dùng để thể hiện tiêu đề
+          <strong>QUAN TRỌNG NHẤT!</strong> của trang web, không được sử dụng
+          cho nhiều tiêu đề trên một trang web.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CLIMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CLIMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CLIMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CLIMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>
+          Trong HTML, không có thẻ nào là thẻ <code>&lt;P&gt;</code> cả, chỉ có
+          thẻ <code>&lt;p&gt;</code> thôi.
+        </p>
+        <p>
+          Cần chú ý thêm về phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng
+        </p>
+        <p>
+          Ở các danh sách bài viết, hình ảnh thường để biểu thị cho bài viết đó.
+          Vì vậy, thuộc tính <code>alt</code> của <code>img</code> nên có giá
+          trị, không nên để trống.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"/Day2/ex4/img/images.jpg"</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+        <p>
+          Không nên sử dụng đường dẫn <code>/</code> vì có thể gây lỗi khi
+          deploy lên server.
+        </p>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/images.jpg"</span> alt=<span class="hljs-string">"CLIMATE CHANGE"</span> /&gt;
+</code></pre>
+        <p>
+          Không có file <code>main.css</code> ở cùng cấp với file
+          <code>index.html</code>, nên không thể sử dụng được file
+          <code>main.css</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./main.css"</span> /&gt;</span>
+</code></pre>
+        <p>
+          Cần chú ý hơn vào phần meta title, vì nó rất quan trọng trong SEO và
+          trải nghiệm người dùng.
+        </p>
+        <p>Format lại code, quá xấu, quá khó đọc.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day2"
+            >Bài 5</a
+          >
+        </p>
+        <p>
+          Thẻ <code>h1</code> được dùng để thể hiện tiêu đề
+          <strong>QUAN TRỌNG NHẤT!</strong> của trang web, không được sử dụng
+          cho nhiều tiêu đề trên một trang web.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Thuộc tính <code>href</code> trong thẻ <code>a</code> bắt buộc có
+          value. Nếu không có value thì có thể sử dụng <code>#</code> ||
+          <code>#!</code>
+        </p>
+        <pre><code class="lang-html">&lt;li&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;li&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          Đánh giá chung bài tập về nhà: Bài tập làm <strong>KHÔNG TỐT</strong>,
+          có nhiều lỗi về semantic, cách sử dụng thẻ, cách sử dụng thuộc tính.
+          Nên xem lại phần layout và cách sử dụng thẻ.
+        </p>
+        <p>* Lưu ý: CODE LẠI TOÀN BỘ. KHÔNG SỬA LẠI CODE CŨ.</p>
+      </li>
+    </ul>
+    <h2 id="-gia-b-o-https-github-com-dogiaba-f8-fe-k3-tree-main-day2-">
+      <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day2"
+        >Gia Bảo Đỗ</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day2">Bài 1</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần button submit không phải là một tiêu đề trong bảng. Không nên bọc
+          bằng thẻ <code>th</code>
+        </p>
+        <pre><code class="lang-html">&lt;th&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>SEND ME FREE COFEE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span></span>
+</code></pre>
+        <p>Sai chính tả <code>COFEE</code> =&gt; <code>COFFEE</code></p>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>SEND ME FREE COFFEE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Nếu muốn <code>submit</code> được <code>form</code> thì
+          <code>.form-input</code> cần là thẻ form và các field cần có thuộc
+          tính <code>name</code>
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"form-input"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">form</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form-input"</span>&gt;...&lt;/<span class="hljs-keyword">form</span>&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day2">Bài 2</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần hiển thị kết quả &amp;&amp; phép tính không phải là một tiêu đề
+          của bảng. Không nên bọc bằng thẻ <code>th</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day2">Bài 3</a>
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day2">Bài 4</a>
+        </p>
+        <p>
+          Vì đây là một list bài viết, các title trong list là các title quan
+          trọng chỉ sau title chính. Nên sử dụng thẻ <code>h2</code> thay vì
+          <code>h4</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day2">Bài 5</a>
+        </p>
+        <p>
+          Bài làm tốt * Các title trong section <code>footer</code> là ngang
+          hàng với title chính trong các section. Nên sử dụng thẻ
+          <code>h2-h3</code> thay vì <code>h4</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Quick Links<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2 id="-duy-https-github-com-saiduii-f8-fe-k3-tree-main-day-2-">
+      <a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-2">Duy</a>
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Các tiêu đề của bảng nên sử dụng thẻ <code>th</code> để bọc sau đó sử
+          dụng thuộc tính <code>align=&quot;left&quot;</code> để căn trái thay
+          vì <code>td</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần hiển thị kết quả &amp;&amp; phép tính không có in đậm, không nên
+          sử dụng thẻ <code>&lt;b&gt;</code> để bao bọc
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-2"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Vì đây là một list bài viết, các title trong list là các title quan
+          trọng chỉ sau title chính. Nên sử dụng thẻ <code>h2</code> thay vì
+          <code>h3</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Thuộc tính <code>alt</code> của <code>img</code> trong trường hợp này
+          là một title của bài viết, nên có giá trị, không nên để trống.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"..."</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ
+          về semantic, giao diện nhưng vẫn có thể sửa lại được.
+        </p>
+        <p>
+          * Lưu ý: Không nên đặt tên các bài tập theo dạng như thế, nên để theo
+          số. Làm như vậy rất khó kiểm soát và review
+        </p>
+      </li>
+    </ul>
+    <h2
+      id="-nguy-n-nh-kh-nh-https-github-com-khanhngoolearn-f8-homework-fe-k3-tree-main-day2-"
+    >
+      <a
+        href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day2"
+        >Nguyễn Đình Khánh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Các phần <code>First Name</code>, <code>Email Address</code> chỉ là
+          các nhãn của input tương ứng, không phải là một title. Không được sử
+          dụng thẻ <code>heading</code> ở đây. Nên sử dụng thẻ span
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 16px; padding-top: 16px;"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;span style=<span class="hljs-string">"font-size: 16px; padding-top: 16px;"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
+</code></pre>
+        <p>
+          Phần chọn <code>Country</code> là một <code>select</code>, nên sử dụng
+          thẻ <code>select</code> thay vì <code>input</code>
+        </p>
+        <pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> style=<span class="hljs-string">"padding: 8px; width: 100%;"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;select name=<span class="hljs-string">"country"</span> id=<span class="hljs-string">"country"</span> style=<span class="hljs-string">"padding: 8px; width: 100%;"</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;Country&lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;Country&lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;Country&lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"country"</span>&gt;Country&lt;/<span class="hljs-keyword">option</span>&gt;
+&lt;/select&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Phần nhập <code>message</code> là một trường nhập to, nhập được nhiều
+          dòng. Nên sử dụng <code>textarea</code> thay vì <code>input</code>
+        </p>
+        <pre><code class="lang-html">&lt;input
+  style=<span class="hljs-string">"padding: 0px 4px 64px; width: 100%;"</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"col"</span>
+  <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span>
+  placeholder=<span class="hljs-string">"* Your message here"</span>
+/&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;textarea
+  style=<span class="hljs-string">"padding: 0px 4px 64px; width: 100%;"</span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"col"</span>
+  placeholder=<span class="hljs-string">"* Your message here"</span>
+&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span></span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day2"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Không có file <code>style.css</code> ở cùng cấp với
+          <code>index.html</code> nên không thể sử dụng được file
+          <code>style.css</code>
+        </p>
+        <p>
+          Sử dụng quá nhiều <code>h1</code> trong bài. Thẻ <code>h1</code> được
+          dùng để thể hiện tiêu đề <strong>QUAN TRỌNG NHẤT!</strong> của trang
+          web, không được sử dụng cho nhiều tiêu đề trên một trang web.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 30px;"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 30px;"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần <code>alt</code> của thẻ <code>img</code> trong trường hợp này là
+          để thể hiện mô tả về hình ảnh tiêu đề bài viết. Nên có giá trị, không
+          nên để trống.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span>
+  style=<span class="hljs-string">"width: 40px; height: 40px; margin-top: 16px;"</span>
+  src=<span class="hljs-string">"./img/android.png"</span>
+  alt=<span class="hljs-string">""</span>
+/&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span>
+  style=<span class="hljs-string">"width: 40px; height: 40px; margin-top: 16px;"</span>
+  src=<span class="hljs-string">"./img/android.png"</span>
+  alt=<span class="hljs-string">"Tieu De Bai Viet"</span>
+/&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day2"
+            >Bài 5</a
+          >
+        </p>
+        <p>
+          Sử dụng quá nhiều thẻ <code>h1</code> trong bài. Thẻ
+          <code>h1</code> được dùng để thể hiện tiêu đề
+          <strong>QUAN TRỌNG NHẤT!</strong> của trang web, không được sử dụng
+          cho nhiều tiêu đề trên một trang web.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 30px;"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 30px;"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          Đánh giá chung bài tập về nhà: Bài tập làm không tốt, có nhiều lỗi về
+          semantic, cách sử dụng thẻ, cách sử dụng thuộc tính. Nên xem lại phần
+          layout và cách sử dụng thẻ.
+        </p>
+        <p>* Lưu ý: Code lại bài 4, 5. Không sửa code cũ.</p>
+      </li>
+    </ul>
+    <h2
+      id="-nguyen-van-hai-https-github-com-hainvsp9x-f8-feoffline-k3-tree-main-day2-"
+    >
+      <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day2"
+        >Nguyen Van Hai</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Phần title chính của trang nên sử dụng <code>h1</code> thay vì
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>
+          Nên sử dụng <code>tr&gt;td || tr&gt;th</code> để giúp luyện tập tốt
+          hơn về cách chia layout của table.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Phần title chính của trang nên sử dụng <code>h1</code> thay vì
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day2"
+            >Bài 4</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần <code>alt</code> của <code>img</code> để mô tả bài viết cho các
+          bộ máy tìm kiếm. Không nên để là <code>&quot;logo&quot;</code>
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"imgs/..."</span> alt=<span class="hljs-string">"logo"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"imgs/..."</span> alt=<span class="hljs-string">"CLIMATE CHANGE"</span> /&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2
+      id="-nguyen-le-quyen-fpl-hn-https-github-com-nguyenlequyen2004-f8-frontend-k3-"
+    >
+      <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3"
+        >Nguyen Le Quyen (FPL HN)</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Cần chú ý hơn vào các thẻ meta title, vì nó rất quan trọng trong SEO
+          và trải nghiệm người dùng
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Thẻ <code>th</code> chỉ được sử dụng khi đó là một tiêu đề của cột ||
+          hàng tương ứng. Không được sử dụng để thể hiện data của các cột. Việc
+          thể hiện đó đã được thẻ <code>td</code>(table data) thể hiện
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần input nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"* Enter your email address"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"* Enter your email address"</span> /&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Sử dụng quá nhiều thẻ <code>h1</code> trong bài. Thẻ
+          <code>h1</code> được dùng để thể hiện tiêu đề
+          <strong>QUAN TRỌNG NHẤT!</strong> của trang web, không được sử dụng
+          cho nhiều tiêu đề trên một trang web.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>CLIMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>CLIMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Thuộc tính <code>alt</code> của <code>img</code> trong trường hợp này
+          là để thể hiện mô tả về hình ảnh tiêu đề bài viết. Nên có giá trị,
+          không nên để trống.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"images/anh1.jpg"</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"images/anh1.jpg"</span> alt=<span class="hljs-string">"CLIMATE CHANGE"</span> /&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Các tiêu đề trong từng phần của <code>footer</code> là các title có
+          chung tầng ý nghĩa, không nên sử dụng bừa bãi các thẻ <code>h1</code>,
+          <code>h2</code>, <code>h3</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2 id="-h-ng-m-nh-https-github-com-truongmanhhung58-f8-frontend-k3-">
+      <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3">Hùng Mạnh</a>
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3">Bài 1</a>
+        </p>
+        <p>
+          Thẻ <code>&lt;p&gt;</code> được sử dụng để thể hiện đó là 1 đoạn văn
+          bản, không phải là để bao bọc các thẻ khác.
+        </p>
+        <pre><code class="lang-html">&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;
+Sign up <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> a coupon you can redeem <span class="hljs-keyword">at</span> your nearest Dancing
+Goat cafe <span class="hljs-keyword">for</span> a sample <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> Comlombia Carlos Imbarchi coffe. We'll
+also make sure you don't miss out <span class="hljs-keyword">on</span> news introducing <span class="hljs-keyword">the</span> new 
+coffees <span class="hljs-keyword">that</span> we add <span class="hljs-keyword">to</span> our store regularly.
+            &lt;/pre
+&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;p&gt;
+  Sign up <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> a coupon you can redeem at your nearest Dancing &lt;br /&gt;
+  Goat cafe <span class="hljs-keyword">for</span> a sample <span class="hljs-keyword">of</span> the Comlombia Carlos Imbarchi coffe. We<span class="hljs-comment">'ll <span class="hljs-doctag">&lt;br /&gt;</span></span>
+  also make sure you don<span class="hljs-comment">'t miss out on news introducing the new <span class="hljs-doctag">&lt;br /&gt;</span></span>
+  coffees that we add <span class="hljs-keyword">to</span> our store regularly.
+&lt;/p&gt;
+</code></pre>
+        <p>
+          Các phần tiêu đề của bảng nên sử dụng thẻ <code>th</code> để bọc sau
+          đó sử dụng thuộc tính <code>align=&quot;left&quot;</code> để căn trái
+          thay vì <code>td</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Firstname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Lastname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Firstname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Lastname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Firstname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Lastname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Firstname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"#"</span>&gt;</span>Lastname<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần input nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"john@example.com"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"john@example.com"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3">Bài 2</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Thẻ <code>th</code> chỉ được sử dụng khi đó là một tiêu đề của cột ||
+          hàng tương ứng. Không được sử dụng để thể hiện data của các cột. Việc
+          thể hiện đó đã được thẻ <code>td</code>(table data) thể hiện
+        </p>
+        <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">...
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3">Bài 3</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần input nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"*Enter your email address"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"*Enter your email address"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần input nhập message là một trường nhập to, nhập được nhiều dòng.
+          Nên sử dụng <code>textarea</code> thay vì <code>input</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"id1"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"*Your message here"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"id1"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"*Your message here"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3">Bài 4</a>
+        </p>
+        <p>
+          Thuộc tính <code>alt</code> như đã nói trên lớp, là một thuộc tính
+          <strong>BẮT BUỘC</strong> của thẻ <code>img</code>.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./images/yasuo1.jpg"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./images/yasuo1.jpg"</span> alt=<span class="hljs-string">"Yasuo"</span> /&gt;
+</code></pre>
+        <p>
+          Trong HTML không có thẻ nào là thẻ <code>&lt;P&gt;</code> cả, chỉ có
+          thẻ <code>&lt;p&gt;</code> thôi.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3">Bài 5</a>
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Các tiêu đề trong từng phần của <code>footer</code> là các title có
+          chung tầng ý nghĩa, không nên sử dụng bừa bãi các thẻ <code>h1</code>,
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          Đánh giá chung bài tập về nhà: Bài tập không tốt, có nhiều lỗi về
+          semantic, cách sử dụng thẻ, cách sử dụng thuộc tính. Nên xem lại phần
+          layout và cách sử dụng thẻ.
+        </p>
+        <p>* Lưu ý: Code lại bài 1, 4. Không sửa code cũ.</p>
+      </li>
+    </ul>
+    <h2 id="-thuy-nguyen-https-github-com-tnnhungoc-f8-fe-k3-tree-main-fek3-">
+      <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3"
+        >thuy nguyen</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần title chính của trang nên sử dụng <code>h1</code> thay vì
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Try a free sample<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Try a free sample<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần title chính của trang nên sử dụng <code>h1</code> thay vì
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html">&lt;h2&gt;Get <span class="hljs-keyword">in</span> touch <span class="hljs-keyword">with</span> us <span class="hljs-keyword">by</span> filling contact form <span class="hljs-keyword">below</span>&lt;/h2&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;h1&gt;Get <span class="hljs-keyword">in</span> touch <span class="hljs-keyword">with</span> us <span class="hljs-keyword">by</span> filling contact form <span class="hljs-keyword">below</span>&lt;/h1&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Phần <code>alt</code> của thẻ <code>img</code> để khai báo mô tả cho
+          hình ảnh cho các bộ máy tìm kiếm. Không nên để chung chung là
+          <code>&quot;logo&quot;</code>.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./images/logo.png"</span> alt=<span class="hljs-string">"logo"</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">"80px"</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./images/logo.png"</span> alt=<span class="hljs-string">"Tieu De Bai Viet"</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">"80px"</span> /&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2 id="-s-n-tr-n-https-github-com-2003son-f8-fe-k3-tree-main-day2-">
+      <a href="https://github.com/2003son/F8-FE-K3/tree/main/day2">Sơn Trần</a>
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/2003son/F8-FE-K3/tree/main/day2">Bài 1</a>
+        </p>
+        <p>
+          Cần chú ý đến meta title, vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <p>
+          Phần tiêu đề của cột || hàng nên sử dụng thẻ <code>th</code> để bọc
+          sau đó sử dụng thuộc tính <code>align=&quot;left&quot;</code> để căn
+          trái thay vì <code>td</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+...
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>Last Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+...
+</code></pre>
+        <p>
+          Các input nên có thuộc tính <code>placeholder</code> để hướng dẫn
+          người dùng nhập vào
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"First name"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Last name"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần input để nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"example@email.com"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/2003son/F8-FE-K3/tree/main/day2">Bài 2</a>
+        </p>
+        <p>
+          Cần chú ý đến meta title, vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <p>
+          Phần text <strong>9 + 9</strong> không phải là một tiêu đề của bảng.
+          Nên không được sử dụng thẻ <code>h1</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          Các nút của bản mẫu có <code>font-weight</code> day hơn, nên sử dụng
+          thẻ <code>&lt;b&gt;</code> bọc vào để in đậm
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;tr&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+  &lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+  &lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+  &lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>x<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/tr&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/2003son/F8-FE-K3/tree/main/day2">Bài 3</a>
+        </p>
+        <ul>
+          <li>Bài làm <strong>KHÔNG TỐT</strong></li>
+        </ul>
+        <p>
+          Cần chú ý đến meta title, vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+</code></pre>
+        <p>
+          Phần input để nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"*Enter your email address"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"*Enter your email address"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>
+          HỌC bao nhiêu buổi rồi mà bọc <code>&lt;p&gt;</code> vào
+          <code>&lt;button&gt;</code> như thế này...
+        </p>
+        <pre><code class="lang-html">&lt;p&gt;
+  &lt;button&gt;Send message&lt;/button&gt;*Please<span class="hljs-built_in"> fill </span>all require form field, thanks
+&lt;/p&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;button&gt;Send message&lt;/button&gt;
+&lt;span&gt;*Please<span class="hljs-built_in"> fill </span>all require form field, thanks&lt;/span&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/2003son/F8-FE-K3/tree/main/day2">Bài 4</a>
+        </p>
+        <p>Bài làm <strong>KHÔNG TỐT</strong></p>
+        <p>
+          Cần chú ý đến meta title, vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+        <p>
+          Sai toàn bộ cấu trúc thẻ <code>ul&gt;li</code> và cách sử dụng thuộc
+          tính <code>alt</code> của thẻ <code>img</code>
+        </p>
+        <ul>
+          <li>
+            Trong thẻ <code>ul</code> chỉ được sử dụng thẻ <code>li</code> để
+            bọc các phần tử con. Không được sử dụng thẻ <code>...</code> để bọc
+            các phần tử con.
+          </li>
+          <li>
+            Thuộc tính <code>alt</code> của thẻ <code>img</code> trong trường
+            hợp này là để thể hiện mô tả về hình ảnh tiêu đề bài viết. Nên có
+            giá trị, không nên để trống.
+          </li>
+          <li>
+            Các tiêu đề của bài viết là các title quan trọng, nên sử dụng thẻ
+            <code>h2</code> thay vì <code>strong</code>
+          </li>
+        </ul>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"anh-h.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 100px;"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>CILMATE CHANGE<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+  aspernatur quisquam est provident nostrum hic vel laborum. Sequi consectetur
+  id, itaque maiores optio voluptatibus quod exercitationem provident sint ab
+  rerum?
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/2003son/F8-FE-K3/tree/main/day2">Bài 5</a>
+        </p>
+        <p>Bài làm <strong>KHÔNG TỐT</strong></p>
+        <p>
+          Thiếu thẻ <code>heading</code> trong bài, nên sử dụng thẻ
+          <code>h2</code> thay vì <code>strong</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          Đánh giá chung bài tập về nhà: Bài tập quá ẩu, không chỉn chu, thiếu
+          format code, thiếu semantic, thiếu thẻ, thiếu thuộc tính. Nên xem lại
+          phần layout và cách sử dụng thẻ.
+        </p>
+        <p>* Lưu ý: Code lại bài 3, 4, 5. Không sửa code cũ.</p>
+      </li>
+    </ul>
+    <h2 id="-kh-i-l-ho-ng-https-github-com-f8study-baitapday2-">
+      <a href="https://github.com/F8study/BaiTapDay2">Khôi Lê Hoàng</a>
+    </h2>
+    <pre><code>* Học viê<span class="hljs-built_in">n</span> muộ<span class="hljs-built_in">n</span> <span class="hljs-number">1</span> buổi.
+</code></pre>
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/F8study/BaiTapDay2">Bài 1</a></p>
+        <p>
+          Các phần title của cột || hàng nên sử dụng thẻ <code>th</code> để bọc
+          sau đó sử dụng thuộc tính <code>align=&quot;left&quot;</code> để căn
+          trái thay vì <code>td</code>
+        </p>
+        <pre><code class="lang-html">&lt;td&gt;<span class="hljs-keyword">first</span> <span class="hljs-built_in">name</span>&lt;/td&gt;
+&lt;td&gt;<span class="hljs-keyword">last</span> <span class="hljs-built_in">name</span>&lt;/td&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-keyword">th</span> align=<span class="hljs-string">"left"</span>&gt;<span class="hljs-keyword">first</span> name&lt;/<span class="hljs-keyword">th</span>&gt;
+&lt;<span class="hljs-keyword">th</span> align=<span class="hljs-string">"left"</span>&gt;<span class="hljs-keyword">last</span> name&lt;/<span class="hljs-keyword">th</span>&gt;
+</code></pre>
+        <p>
+          Các phần field nhập nên thể hiện bằng <code>input</code> thay vì text
+          thuần
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>John<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>smith<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"John"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"smith"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/F8study/BaiTapDay2">Bài 2</a></p>
+        <p>
+          Phần text <strong>9 + 9</strong> không phải là một tiêu đề của bảng.
+          Nên không được sử dụng thẻ <code>th</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9+9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/F8study/BaiTapDay2">Bài 3</a></p>
+        <p>
+          Phần heading của trang nên sử dụng <code>h1</code> thay vì
+          <code>h2</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Get the invite<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Get the invite<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>
+          Không nên sử dụng thẻ <code>p</code> để ngắt dòng và tạo khoảng cách
+        </p>
+        <pre><code class="lang-html"><span class="hljs-section">&lt;p&gt;</span><span class="hljs-section">&lt;/p&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px"</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/F8study/BaiTapDay2">Bài 4</a></p>
+        <p>Sai yêu cầu đề bài</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/F8study/BaiTapDay2">Bài 5</a></p>
+        <p>Chưa làm</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>Đánh giá chung bài tập về nhà: Cần chú ý cố gắng nhiều hơn.</li>
+    </ul>
+    <h2
+      id="-v-th-nh-khang-https-github-com-countduck4819-f8-frontend-tree-main-day2-"
+    >
+      <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day2"
+        >Vũ Thành Khang</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Cần chú ý đến meta title, vì nó rất quan trọng trong SEO và trải
+          nghiệm người dùng
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day2"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần hiển thị phép tính không phải là một tiêu đề của bảng. Không nên
+          sử dụng <code>th</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Phần input để nhập email nên sử dụng
+          <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng
+          định dạng hay không.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+    <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>
+    <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-left: 0px;"</span>
+    <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"* Enter your email address"</span>
+  /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+    <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span>
+    <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-left: 0px;"</span>
+    <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"* Enter your email address"</span>
+  /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day2"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Bài làm tốt * Phần thuộc tính <code>alt</code> ở đây để mô tả hình ảnh
+          cho các bộ máy tìm kiếm. Nên có giá trị, không nên để trống. Nên đặt
+          tên cho hình ảnh theo nội dung của hình ảnh đó.
+        </p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/img.jpg"</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/hinh_anh_gi_do.jpg"</span> alt=<span class="hljs-string">"Tieu De Bai Viet"</span> /&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Các tiêu đề trong từng phần của <code>footer</code> là các title có
+          chung tầng ý nghĩa. Nên sử dụng thẻ <code>h2</code> thay vì
+          <code>span</code>
+        </p>
+        <pre><code class="lang-html">&lt;span&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
+&lt;span&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
+&lt;span&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Quick links<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Việc viết svg vào html làm cho code trở nên khó đọc, khó hiểu. Nên
+          viết svg vào file riêng và sử dụng thẻ <code>img</code> để gọi đến
+          file svg đó.
+        </p>
+        <pre><code class="lang-html">&lt;a href=<span class="hljs-string">"#!"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">svg</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">a</span> href=<span class="hljs-string">"#!"</span>&gt;&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/svg.svg"</span> alt=<span class="hljs-string">"svg"</span> /&gt;&lt;/a&gt;
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+    <h2
+      id="-anh-kien-dang-https-github-com-anhkiendang-f8-fe-k3-tree-main-day-2-"
+    >
+      <a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-2"
+        >Anh Kien Dang</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-2"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Các tiêu đề tương ứng của các cột || hàng nên sử dụng thẻ
+          <code>th</code> để bọc sau đó sử dụng thuộc tính
+          <code>align=&quot;left&quot;</code> để căn trái thay vì
+          <code>td</code>
+        </p>
+        <pre><code class="lang-html">&lt;td&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"left"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-2"
+            >Bài 2</a
+          >
+        </p>
+        <p>
+          Phần text <strong>9 + 9</strong> không phải là một tiêu đề của bảng.
+          Nên không được sử dụng thẻ <code>th</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first_row"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"first_row"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>9 + 9<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-2"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-2"
+            >Bài 4</a
+          >
+        </p>
+        <p>
+          Sử dụng quá nhiều thẻ <code>h1</code> trong bài. Thẻ
+          <code>h1</code> được dùng để thể hiện tiêu đề
+          <strong>QUAN TRỌNG NHẤT!</strong> của trang web, không được sử dụng
+          cho nhiều tiêu đề trên một trang web.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"de_muc"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"de_muc"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-2"
+            >Bài 5</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>
+          Các tiêu đề trong từng phần của <code>footer</code> là các title có
+          chung tầng ý nghĩa. Nên sử dụng thẻ <code>h2</code> thay vì
+          <code>strong</code>
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+        <p>
+          Thuộc tính <code>href</code> trong thẻ <code>a</code> là để định nghĩa
+          đường dẫn. Nên có giá trị, không nên để trống.
+        </p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#!"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tốt, chỉ có một số lỗi nhỏ về
+        semantic, nhưng vẫn có thể sửa lại được.
+      </li>
+    </ul>
+  </body>
 </html>
