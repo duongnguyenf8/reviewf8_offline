@@ -87,7 +87,7 @@
 
   Có thể do fix cứng kích thước và position của các phần tử nên khi màn hình nhỏ hơn thì các phần tử bị tràn ra ngoài.
 
-  ![do_ha_chi](assets/do_ha_chi-bai3.png)
+  ![do_ha_chi](images/do_ha_chi-bai3.png)
 
   Đề xuất một số css để sửa:
 
@@ -187,7 +187,7 @@
   }
   ```
 
-  ![Nguyen Xuan Tuan Anh](assets/nguyen_xuan_tuan_anh-bai3.png)
+  ![Nguyen Xuan Tuan Anh](images/nguyen_xuan_tuan_anh-bai3.png)
 
 ---
 
@@ -285,7 +285,7 @@
 
   Phần body chưa set đúng chiều cao nên hình ảnh bị lệch.
 
-  ![Nguyễn Thành Dương](assets/nguyen_thanh_duong-bai3.png)
+  ![Nguyễn Thành Dương](images/nguyen_thanh_duong-bai3.png)
 
 ---
 
@@ -415,7 +415,7 @@
 
   Layout bị vỡ ở các màn hình khác.
 
-  ![Phan Trung Hiếu](assets/phan_trung_hieu-bai3.png)
+  ![Phan Trung Hiếu](images/phan_trung_hieu-bai3.png)
 
 ---
 
@@ -485,7 +485,7 @@
 
   Vỡ layout
 
-  ![Dương Quốc Anh](assets/duong_quoc_anh-bai3.png)
+  ![Dương Quốc Anh](images/duong_quoc_anh-bai3.png)
 
   Phần icon chưa ở đúng vị trí (icon bị lệch so với bản mẫu).
 
