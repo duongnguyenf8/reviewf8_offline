@@ -27,3 +27,7 @@ pre code {
 pre code span {
   color: rgb(71, 0, 163);
 }
+img {
+  max-width: 500px;
+  height: auto;
+}

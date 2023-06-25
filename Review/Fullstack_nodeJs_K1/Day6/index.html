@@ -11,5 +11,752 @@
     <link rel="stylesheet" href="../../../assets/css/style.css" />
     <title>Duong - Review Day6_K1</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="d-ng-test-b-i-h-c-vi-n">Dương test bài Học Viên</h1>
+    <h2 id="-bi11-043-h-chi-https-github-com-serenaha12-fullstack_nodejs-">
+      <a href="https://github.com/SerenaHa12/fullstack_nodeJS"
+        >Bi11-043 Đỗ Hà Chi</a
+      >
+    </h2>
+    <pre><code>Sớm nhấ<span class="hljs-built_in">t</span> *
+</code></pre>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_06/ex01"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Có thể bọc <code>ul</code> vào thẻ <code>nav</code> để thể hiện cho
+          đúng về mặt ngữ nghĩa là một thanh điều hướng.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_06/ex02"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+        <p>
+          Khi hover vào <code>.item</code> phần border làm cho chúng bị to lên
+          1px và bị giật layout. Có thể sử dụng <code>outline</code> để thay thế
+          cho <code>border</code> trong trường hợp này.
+        </p>
+        <p>Cần tối ưu lại CSS phần này:</p>
+        <pre><code class="lang-css"><span class="hljs-selector-id">#item_01</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#e10c0c</span>;
+}
+
+<span class="hljs-selector-id">#item_02</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#00e9f9</span>;
+}
+
+<span class="hljs-selector-id">#item_03</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ffd700</span>;
+}
+
+<span class="hljs-selector-id">#item_04</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#0000ff</span>;
+}
+
+<span class="hljs-selector-id">#item_05</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#800080</span>;
+}
+
+<span class="hljs-selector-id">#item_06</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#008000</span>;
+}
+</code></pre>
+        <p>Đề xuất sửa thành:</p>
+        <pre><code class="lang-css"><span class="hljs-selector-class">.item</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline</span>: <span class="hljs-number">1px</span> solid transparent;
+}
+<span class="hljs-selector-id">#item_01</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline-color</span>: <span class="hljs-number">#e10c0c</span>;
+}
+
+<span class="hljs-selector-id">#item_02</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline-color</span>: <span class="hljs-number">#00e9f9</span>;
+}
+
+<span class="hljs-selector-id">#item_03</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline-color</span>: <span class="hljs-number">#ffd700</span>;
+}
+
+<span class="hljs-selector-id">#item_04</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline-color</span>: <span class="hljs-number">#0000ff</span>;
+}
+
+<span class="hljs-selector-id">#item_05</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline-color</span>: <span class="hljs-number">#800080</span>;
+}
+
+<span class="hljs-selector-id">#item_06</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">outline-color</span>: <span class="hljs-number">#008000</span>;
+}
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_06/ex03"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Có thể do fix cứng kích thước và position của các phần tử nên khi màn
+          hình nhỏ hơn thì các phần tử bị tràn ra ngoài.
+        </p>
+        <p><img src="assets/do_ha_chi-bai3.png" alt="do_ha_chi" /></p>
+        <p>Đề xuất một số css để sửa:</p>
+        <pre><code class="lang-css"><span class="hljs-selector-class">.login-switch</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">right</span>: -<span class="hljs-number">20.5px</span>; <span class="hljs-comment">/*Một nửa chiều rộng của phần tử*/</span>
+}
+<span class="hljs-selector-class">.login-description</span> {
+  <span class="hljs-attribute">position</span>: relative; <span class="hljs-comment">/*Để phần tử con có thể sử dụng position absolute*/</span>
+}
+<span class="hljs-selector-class">.login-form</span> <span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>; <span class="hljs-comment">/*Để phần tử con chỉ căn đều bên trong, không bị thừa ra ngoài.*/</span>
+}
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên phần CSS chưa đủ
+        tối ưu tốt.
+      </li>
+    </ul>
+    <h2 id="-s-n-ng-m-nh-https-github-com-ngomanhson-f8-fullstack-exercises-">
+      <a href="https://github.com/NgoManhson/f8-fullstack-exercises"
+        >Sơn Ngô Mạnh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NgoManhson/f8-fullstack-exercises"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NgoManhson/f8-fullstack-exercises"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/NgoManhson/f8-fullstack-exercises"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>
+          Phần <code>.form-left:after</code> có 2 đoạn code css font-family khác
+          nhau.
+        </p>
+        <pre><code class="lang-css"><span class="hljs-selector-class">.form-left</span>::after {
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"FontAwesome"</span>;
+  ...
+  <span class="hljs-attribute">font-family</span>: fontAwesome;
+  ...
+}
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần chú ý lại một
+        chút về phần CSS là được.
+      </li>
+    </ul>
+    <h2
+      id="-nguyen-xuan-tuan-anh-https-github-com-xuananh2212-full_stack_01-git-"
+    >
+      <a href="https://github.com/xuananh2212/full_stack_01.git"
+        >Nguyen Xuan Tuan Anh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/xuananh2212/full_stack_01.git">Bài 1</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Phần mũi tên tam giác, các icon trong list con bị lệch so với bản mẫu
+        </p>
+        <p>
+          Các li rỗng nên xử lý lại, ở phần nav, khi hover vào li rỗng vẫn lên
+          màu
+        </p>
+        <p>
+          Phần li con để làm hình tam giác có thể sử dụng
+          <code>::before</code> hoặc <code>::after</code> để tạo ra hình tam
+          giác, không cần phải dùng thêm thẻ <code>li</code>
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/xuananh2212/full_stack_01.git">Bài 2</a>
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/xuananh2212/full_stack_01.git">Bài 3</a>
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Phần className <code>.bg__logn-in</code> không rõ là gì.</p>
+        <p>
+          Sai chính tả <code>Remeber me</code> -&gt; <code>Remember me</code>
+        </p>
+        <p>
+          Do phần css này nên hình ảnh bị khuyết vì hình ảnh đã bị đẩy ra ngoài
+          phần hiển thị.
+        </p>
+        <p>
+          Không nên để width và height là 100vw và 100vh, nên để là
+          <code>100%</code> hoặc <code>min-width</code>,
+          <code>min-height</code> để phù hợp với mọi kích thước màn hình.
+        </p>
+        <pre><code class="lang-css"><span class="hljs-selector-class">.bg__logn-in</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100vw</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+  <span class="hljs-attribute">background-size</span>: cover;
+  <span class="hljs-attribute">background-position</span>: -<span class="hljs-number">4px</span> -<span class="hljs-number">259px</span>;
+}
+</code></pre>
+        <p>
+          <img
+            src="assets/nguyen_xuan_tuan_anh-bai3.png"
+            alt="Nguyen Xuan Tuan Anh"
+          />
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>Đánh giá chung bài tập về nhà: Bài làm rất tốt.</li>
+    </ul>
+    <h2
+      id="-d-ng-hi-p-https-github-com-duonghiep416-duonghiep_f8_fullstack-git-"
+    >
+      <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack.git"
+        >Dương Hiệp</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack.git"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Phần mũi tên đang bị ở dưới list. Không đúng với bản mẫu.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack.git"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+        <p>
+          Icon trong bản mẫu là màu linear. Nhưng trong bài làm lại là màu đơn.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack.git"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Thiếu phần shadow cho icon ở giữa.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm vào tiểu
+        tiết để bài tập được chỉn chu hơn.
+      </li>
+    </ul>
+    <h2
+      id="-mai-vi-t-ho-ng-https-github-com-viethoang-mai-mvh-fullstack-nodejs-f8-01-git-"
+    >
+      <a href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
+        >Mai Việt Hoàng</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+        <p>Khi bỏ transition, effect bị giật xuống, không mượt.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>Làm sai mẫu. Thiếu icon ở giữa.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý vào bản mẫu để làm
+        đúng hơn.
+      </li>
+    </ul>
+    <h2 id="-nguy-n-th-nh-d-ng-https-github-com-duongano-day3-git-">
+      <a href="https://github.com/duongano/day3.git">Nguyễn Thành Dương</a>
+    </h2>
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/duongano/day3.git">Bài 1</a></p>
+        <p>Bài làm tốt *</p>
+        <p>Giao diện quá xấu so với mẫu.</p>
+        <p>Sử dụng sai font chữ.</p>
+        <p>Khi hover màu chữ chưa đổi.</p>
+        <p>Khi hover <code>.menu.box</code> vẫn bị đổi màu.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/duongano/day3.git">Bài 2</a></p>
+        <p>Bài làm tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+        <p>
+          Khi hover phần <code>border</code> làm cho chúng bị to lên 1px và bị
+          giật layout. Có thể sử dụng <code>outline</code> để thay thế cho
+          <code>border</code> trong trường hợp này.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/duongano/day3.git">Bài 3</a></p>
+        <p>Bài làm tốt</p>
+        <p>Phần icon chưa ở đúng vị trí.</p>
+        <p>Phần body chưa set đúng chiều cao nên hình ảnh bị lệch.</p>
+        <p>
+          <img
+            src="assets/nguyen_thanh_duong-bai3.png"
+            alt="Nguyễn Thành Dương"
+          />
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý vào bản mẫu để làm
+        đúng hơn.
+      </li>
+    </ul>
+    <h2
+      id="-luu-anh-quan-https-github-com-anhquan2211-exercise-offline-f8-day6-git-"
+    >
+      <a href="https://github.com/anhquan2211/exercise-offline-F8-day6.git"
+        >Luu Anh Quan</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhquan2211/exercise-offline-F8-day6.git"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhquan2211/exercise-offline-F8-day6.git"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Thiếu phần shadow cho icon.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/anhquan2211/exercise-offline-F8-day6.git"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>Đánh giá chung bài tập về nhà: Bài làm rất tốt *</li>
+    </ul>
+    <h2 id="-minh-quang-https-github-com-taminhquang13-bai_tap_f8-">
+      <a href="https://github.com/taminhquang13/Bai_Tap_F8">Minh Quang</a>
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x] <a href="https://github.com/taminhquang13/Bai_Tap_F8">Bài 1</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Nên chú ý thêm vào meta title, vì chúng rất quan trọng trong SEO và
+          trải nghiệm người dùng.
+        </p>
+        <p>Giao diện quá xấu so với bản mẫu.</p>
+        <p>Sai giao diện khi menu hover không có khoảng cách và mũi tên</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x] <a href="https://github.com/taminhquang13/Bai_Tap_F8">Bài 2</a>
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>
+          Nên chú ý thêm vào meta title, vì chúng rất quan trọng trong SEO và
+          trải nghiệm người dùng.
+        </p>
+        <p>UI quá lệch so với bản mẫu:</p>
+        <ul>
+          <li><p>Chữ quá to</p></li>
+          <li><p>Sai màu icon</p></li>
+          <li><p>Thiếu shadow icon</p></li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x] <a href="https://github.com/taminhquang13/Bai_Tap_F8">Bài 3</a>
+        </p>
+        <p>
+          Phần hover mới hiện ra là không tốt, việc sáng tạo ra nó khiến người
+          dùng khó dùng, không thoải mái.
+        </p>
+        <p>
+          Việc hover không xử lý tốt khiến màn hình bị giật, không tốt cho người
+          dùng
+        </p>
+        <p>
+          Nên chú ý thêm vào meta title, vì chúng rất quan trọng trong SEO và
+          trải nghiệm người dùng.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý đến giao
+        diện mẫu, không được ẩu, cũng không sáng tạo, việc sáng tạo đôi khi
+        khiến mọi thứ quá rối, không tốt một chút nào. Làm lại toàn bộ bài 2, 3
+      </li>
+    </ul>
+    <h2 id="-tu-n-ph-m-https-github-com-phamtuan162-phamtuan-nodejs-01-">
+      <a href="https://github.com/phamtuan162/phamtuan-nodejs-01">Tuấn Phạm</a>
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/phamtuan162/phamtuan-nodejs-01">Bài 1</a>
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Phần <code>.navbar__menu</code> có một style không rõ ý đồ:</p>
+        <pre><code class="lang-css"><span class="hljs-selector-class">.navbar__menu</span> {
+  <span class="hljs-attribute">transition</span>: <span class="hljs-number">0.5s</span>;
+}
+</code></pre>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/phamtuan162/phamtuan-nodejs-01">Bài 2</a>
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/phamtuan162/phamtuan-nodejs-01">Bài 3</a>
+        </p>
+        <p>Bài làm rất tốt *</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý tối ưu lại một
+        chút về phần CSS.
+      </li>
+    </ul>
+    <h2
+      id="-phan-trung-hi-u-https-github-com-pth2003-homework-tree-main-btvn-btvn_buoi_6-"
+    >
+      <a href="https://github.com/pth2003/HOMEWORK/tree/main/BTVN/btvn_buoi_6"
+        >Phan Trung Hiếu</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/pth2003/HOMEWORK/tree/main/BTVN/btvn_buoi_6"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>Giao diện hơi xấu so với bản mẫu.</p>
+        <p>
+          Phần mũi tên bị chìm so với box menu. Nên để mũi tên ở trên box menu.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/pth2003/HOMEWORK/tree/main/BTVN/btvn_buoi_6"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>Thiếu phần shadow của các icon.</p>
+        <p>Phần icon là background linear gradient, không phải là màu đơn.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a
+            href="https://github.com/pth2003/HOMEWORK/tree/main/BTVN/btvn_buoi_6"
+            >Bài 3</a
+          >
+        </p>
+        <p>Bài làm tốt</p>
+        <p>Layout bị vỡ ở các màn hình khác.</p>
+        <p>
+          <img src="assets/phan_trung_hieu-bai3.png" alt="Phan Trung Hiếu" />
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần chú ý thêm vào
+        bản mẫu để làm đúng hơn.
+      </li>
+    </ul>
+    <h2 id="-ho-i-nam-https-github-com-oaihman25-btvn-git-">
+      <a href="https://github.com/oaiHmaN25/btvn.git">Hoài Nam Đỗ</a>
+    </h2>
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/oaiHmaN25/btvn.git">Bài 1</a></p>
+        <p>Bài làm <strong>Không Tốt</strong></p>
+        <p>Sai giao diện, không giống bản mẫu.</p>
+        <p>Code lại.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/oaiHmaN25/btvn.git">Bài 2</a></p>
+        <p>Bài làm chưa tốt</p>
+        <p>Thiếu phần background của icon.</p>
+        <p>Layout hơi xấu so với bản mẫu.</p>
+        <p>Code lại.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>[x] <a href="https://github.com/oaiHmaN25/btvn.git">Bài 3</a></p>
+        <p>Layout quá xấu so với bản mẫu.</p>
+        <p>Thiếu rất nhiều chỗ.</p>
+        <p>Code lại.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm không tốt. Code lại toàn bộ.
+      </li>
+    </ul>
+    <h2 id="-d-ng-qu-c-anh-https-github-com-quocanh-bit-f8_fullstack_006-git-">
+      <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
+        >Dương Quốc Anh</a
+      >
+    </h2>
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
+            >Bài 1</a
+          >
+        </p>
+        <p>Bài làm tốt *</p>
+        <p>Giao diện hơi xấu so với bản mẫu.</p>
+        <p>Chưa có phần gạch chân ngăn cách các <code>list-item</code> con.</p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
+            >Bài 2</a
+          >
+        </p>
+        <p>Bài làm rất tốt *</p>
+        <p>Thiếu phần shadow của các icon và các box.</p>
+        <p>Các background của icon không phải là màu đơn mà là màu linear.</p>
+        <p>
+          Khi hover, phần <code>border</code> làm cho chúng bị to lên một chút
+          và bị giật layout. Có thể sử dụng <code>outline</code> để thay thế cho
+          <code>border</code> trong trường hợp này.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        <p>
+          [x]
+          <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
+            >Bài 3</a
+          >
+        </p>
+        <p>Vỡ layout</p>
+        <p><img src="assets/duong_quoc_anh-bai3.png" alt="Dương Quốc Anh" /></p>
+        <p>Phần icon chưa ở đúng vị trí (icon bị lệch so với bản mẫu).</p>
+        <p>Sau khi sáng tạo, giao diện xấu hơn bản mẫu rất nhiều.</p>
+        <p>
+          Khi click vào <code>Remember me</code> thì phần checkbox không được
+          check.
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <ul>
+      <li>
+        Đánh giá chung bài tập về nhà: Bài làm tạm ổn, tuy nhiên cần chú ý thêm
+        vào bản mẫu để làm đúng hơn. Đừng sáng tạo, làm theo bản mẫu là được.
+      </li>
+    </ul>
+  </body>
 </html>
