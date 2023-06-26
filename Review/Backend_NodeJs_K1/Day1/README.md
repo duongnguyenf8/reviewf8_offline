@@ -269,6 +269,7 @@ a = a + b - b;
 b = a + b - a;
 
 console.log(a, b);
+//  Kết quả: 2 3
 ```
 
 ---
