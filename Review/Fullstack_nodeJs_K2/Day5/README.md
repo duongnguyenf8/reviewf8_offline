@@ -406,3 +406,37 @@
 - [x] Đánh giá chung về bài tập về nhà: Bài làm khá tốt cần xem lại một số lỗi để cải thiện hơn.
 
 ---
+## [Đoàn Duy Chinh](https://duychinh.github.io/f8-fullstack-KS2/Day-5)
+
+- Nên reset css để loại bỏ các css mặc định của trình duyệt
+
+```css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+```
+
+---
+
+- [x] Bài 1: Bài làm tốt.
+
+  Không nên để value mặc định cho các thẻ input vì khi người dùng nhập sẽ phải xóa đi, nên sử dụng placeholder thay cho value.
+
+---
+
+- [x] Bài 2: Bài làm rất tốt \*.
+
+---
+
+- [x] Bài 3: Bài làm tốt \*.
+
+  Cần chú ý về size của các icon đang bé so với bản mẫu.
+
+---
+
+- [x] Đánh giá chung về bài tập về nhà: Bài làm khá tốt
+
+---
