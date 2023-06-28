@@ -220,7 +220,7 @@
     - Đề xuất sửa thành:
     ```html
     <li>
-      <a href="#">
+      <a target="_blank" href="#">
         <img
           src="../../assets/img/twitter.png"
           alt="Twitter"
@@ -299,7 +299,7 @@
   - Đề xuất sửa thành:
   ```html
   <li>
-    <a href="#">
+    <a target="_blank" href="#">
       <img src="twitter.svg" alt="Twitter" width="20px" height="20px" />
     </a>
   </li>
@@ -412,7 +412,7 @@
 
   ```html
   <li>
-    <a href="#">
+    <a target="_blank" href="#">
       <i class="fa-brands fa-facebook-f"></i>
     </a>
   </li>
@@ -509,23 +509,29 @@
     - Đề xuất sửa thành:
     ```html
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">Appoinment</a></li>
+      <li><a target="_blank" href="#">Home</a></li>
+      <li><a target="_blank" href="#">Service</a></li>
+      <li><a target="_blank" href="#">Appoinment</a></li>
     </ul>
     ...
     <ul>
       <li>
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a target="_blank" href="#"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
       </li>
       <li>
-        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        <a target="_blank" href="#"
+          ><i class="fa-brands fa-google-plus-g"></i
+        ></a>
       </li>
       <li>
-        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        <a target="_blank" href="#"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
       </li>
       <li>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
       </li>
     </ul>
     ```

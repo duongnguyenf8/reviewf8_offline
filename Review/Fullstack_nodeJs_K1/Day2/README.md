@@ -971,10 +971,10 @@
 
     ```html
     <li>
-      <a href="#"><u>Servie</u></a>
+      <a target="_blank" href="#"><u>Servie</u></a>
     </li>
     <li>
-      <a href="#"><u>Appointmment</u></a>
+      <a target="_blank" href="#"><u>Appointmment</u></a>
     </li>
     ```
 
@@ -1166,7 +1166,7 @@
 
     - Đề xuất: Sửa thành
       ```html
-      <a href="#">
+      <a target="_blank" href="#">
         <i class="icon..."></i>
       </a>
       ```
@@ -1644,13 +1644,13 @@ Có thể nào viết tách ra thành từng bài tập không vậy
   - Phần thuộc tính href của thẻ a nên sử dụng `"#"` thay vì `""`
     ```html
     <li>
-      <a href="">
+      <a target="_blank" href="">
         <i class="fa-brands fa-google-plus-g"></i>
       </a>
     </li>
     ...
     <li>
-      <a href="">
+      <a target="_blank" href="">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </li>
@@ -1658,13 +1658,13 @@ Có thể nào viết tách ra thành từng bài tập không vậy
     - Đề xuất: Sửa thành
       ```html
       <li>
-        <a href="#">
+        <a target="_blank" href="#">
           <i class="fa-brands fa-google-plus-g"></i>
         </a>
       </li>
       ...
       <li>
-        <a href="#">
+        <a target="_blank" href="#">
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
       </li>
@@ -2013,7 +2013,7 @@ Có thể nào viết tách ra thành từng bài tập không vậy
   - Bài làm tốt \*
     - Tuy nhiên sai chính tả ở
       ```html
-      <a href="#">Appoitment</a>
+      <a target="_blank" href="#">Appoitment</a>
       ```
       - Sửa `Appoitment` thành `Appointment
 

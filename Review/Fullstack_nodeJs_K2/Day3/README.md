@@ -36,8 +36,8 @@
   - Các button nên sử dụng thẻ `button` thay vì thẻ `a` để phù hợp với mục đích sử dụng.
     ```html
     <div class="btn">
-      <a href="#!">View Plans</a>
-      <a href="#!">All Features</a>
+      <a target="_blank" href="#!">View Plans</a>
+      <a target="_blank" href="#!">All Features</a>
     </div>
     ```
 
@@ -387,7 +387,8 @@
     Abu United Arab Emirates <br /><br />
     Tel +123 2 1234 1234 <br />
     Fax +123 2 1234 1234 <br />
-    Email : <a href="duc011002@gmail.com">duc011002@gmail.com</a>
+    Email :
+    <a target="_blank" href="duc011002@gmail.com">duc011002@gmail.com</a>
     ```
 
     - Đề xuất sửa thành:
@@ -400,7 +401,10 @@
         <li>Abu United Arab Emirates</li>
         <li>Tel +123 2 1234 1234</li>
         <li>Fax +123 2 1234 1234</li>
-        <li>Email : <a href="duc011002@gmail.com">duc011002@gmail.com</a></li>
+        <li>
+          Email :
+          <a target="_blank" href="duc011002@gmail.com">duc011002@gmail.com</a>
+        </li>
       </ul>
       ```
 

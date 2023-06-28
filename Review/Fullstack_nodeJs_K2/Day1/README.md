@@ -100,7 +100,7 @@
 
     ```html
     <h2>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h2>
@@ -356,7 +356,7 @@
 
     ```html
     <h2>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h2>
@@ -475,7 +475,7 @@
 
     ```html
     <h2>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h2>
@@ -525,7 +525,7 @@
 
     ```html
     <h1>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -582,7 +582,7 @@
   - Phần title đầu tiên của trang web nên là thẻ `h1` thay vì `h2`
     ```html
     <h1>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -650,7 +650,7 @@
   - Phần title chính của bài nên là thẻ `h1` thay vì `h2`
     ```html
     <h1>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -682,7 +682,7 @@
   - Phần title của item trong list nên là thẻ `h2` thay vì `h3`
     ```html
     <h3>
-      <a href="#">UI/UX Design</a>
+      <a target="_blank" href="#">UI/UX Design</a>
     </h3>
     ```
   - Sai chính tả `Maketing` => `Marketing`
@@ -700,7 +700,7 @@
   - Phần title của trang web nên là thẻ `h1` thay vì `h2`
 
     ```html
-    <a href="#">
+    <a target="_blank" href="#">
       <h2>
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </h2>
@@ -713,7 +713,7 @@
 
     ```html
     <h1>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -801,7 +801,7 @@
 
     ```html
     <h1>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -891,7 +891,7 @@
   - Phần title của trang web nên là thẻ `h1` thay vì `h2`
     ```html
     <h2>
-      <a href="https://dantri.com.vn/"
+      <a target="_blank" href="https://dantri.com.vn/"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -1031,7 +1031,7 @@
     - Phần title của trang web nên là thẻ `h1` thay vì `h3`
       ```html
       <h3>
-        <a href="...">Thượng tướng ... Kuin.</a>
+        <a target="_blank" href="...">Thượng tướng ... Kuin.</a>
       </h3>
       ```
     - Sử dụng thẻ pre cho một đoạn text đơn thuần ?

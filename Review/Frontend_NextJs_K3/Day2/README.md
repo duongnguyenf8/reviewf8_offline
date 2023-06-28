@@ -405,7 +405,7 @@
 
   ```html
   <li>
-    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
   </li>
   ```
 
@@ -599,13 +599,13 @@
   Thuộc tính `href` trong thẻ `a` bắt buộc có value. Nếu không có value thì có thể sử dụng `#` || `#!`
 
   ```html
-  <li><a href="">...</a></li>
+  <li><a target="_blank" href="">...</a></li>
   ```
 
   Đề xuất sửa thành:
 
   ```html
-  <li><a href="#">...</a></li>
+  <li><a target="_blank" href="#">...</a></li>
   ```
 
 ---
@@ -1706,13 +1706,13 @@
   Việc viết svg vào html làm cho code trở nên khó đọc, khó hiểu. Nên viết svg vào file riêng và sử dụng thẻ `img` để gọi đến file svg đó.
 
   ```html
-  <a href="#!"><svg>...</svg></a>
+  <a target="_blank" href="#!"><svg>...</svg></a>
   ```
 
   Đề xuất sửa thành:
 
   ```html
-  <a href="#!"><img src="./img/svg.svg" alt="svg" /></a>
+  <a target="_blank" href="#!"><img src="./img/svg.svg" alt="svg" /></a>
   ```
 
 ---
@@ -1796,13 +1796,13 @@
   Thuộc tính `href` trong thẻ `a` là để định nghĩa đường dẫn. Nên có giá trị, không nên để trống.
 
   ```html
-  <a href="">...</a>
+  <a target="_blank" href="">...</a>
   ```
 
   Đề xuất sửa thành:
 
   ```html
-  <a href="#!">...</a>
+  <a target="_blank" href="#!">...</a>
   ```
 
 ---

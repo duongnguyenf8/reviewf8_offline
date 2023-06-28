@@ -64,14 +64,14 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `a`
     - Thuộc tính href của thẻ `a` bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là `#` hoặc `#!`
     ```html
-    <a href=""
+    <a target="_blank" href=""
       >Vòng xoay cao tốc 34,500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
     </a>
     ```
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -141,7 +141,7 @@
   - Tag `<font>` không hỗ trợ trong HTML5, nên không nên sử dụng nó.
 
     ```html
-    <a href="https://vnexpress.net/">
+    <a target="_blank" href="https://vnexpress.net/">
       <font color="blue">
         <h1>
           Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
@@ -158,7 +158,7 @@
 
     ```html
     <h1>
-      <a href="https://vnexpress.net/">
+      <a target="_blank" href="https://vnexpress.net/">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -240,7 +240,7 @@
 
     ```html
     <h3>
-      <a href=""
+      <a target="_blank" href=""
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h3>
@@ -252,7 +252,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -309,7 +309,7 @@
 
     ```html
     <h2>
-      <a href=""
+      <a target="_blank" href=""
         >Vòng xoay cao tốc 34.500 tỉ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -321,7 +321,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -373,7 +373,7 @@
   - Phần title chính trang web không nên sử dụng `a` mà nên sử dụng `h1` để dúng chuẩn semantic và SEO
 
     ```html
-    <a href=""
+    <a target="_blank" href=""
       >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
     >
     ```
@@ -384,7 +384,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -443,7 +443,7 @@
   - Phần title chính trang web không nên sử dụng `a` mà nên sử dụng `h1` để dúng chuẩn semantic và SEO
 
     ```html
-    <a href="" class="description love-is-blue">
+    <a target="_blank" href="" class="description love-is-blue">
       <h2 class="">
         Vòng xoáy cao tốc 34.500 tỷ sụt lún quá mức, cần 300 tỷ để khắc phục
       </h2>
@@ -460,7 +460,7 @@
 
     ```html
     <h1>
-      <a href="#!" class="title">
+      <a target="_blank" href="#!" class="title">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -541,7 +541,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -603,7 +603,7 @@
   - Phần title chính trang web không nên sử dụng `a` mà nên sử dụng `h1` để dúng chuẩn semantic và SEO
 
     ```html
-    <a href=""
+    <a target="_blank" href=""
       >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
     >
     ```
@@ -613,7 +613,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -721,7 +721,7 @@
   - Phần title chính trang web không nên sử dụng `a` mà nên sử dụng `h1` để dúng chuẩn semantic và SEO
 
     ```html
-    <a href=""
+    <a target="_blank" href=""
       >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
     >
     ```
@@ -731,7 +731,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -798,7 +798,7 @@
 
     ```html
     <h2>
-      <a href=""
+      <a target="_blank" href=""
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -809,7 +809,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>
@@ -1031,7 +1031,7 @@
 
     ```html
     <div>
-      <a href="#!"
+      <a target="_blank" href="#!"
         ><strong
           >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc
           phục</strong
@@ -1044,7 +1044,7 @@
 
     ```html
     <h1>
-      <a href="#!">
+      <a target="_blank" href="#!">
         Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
       </a>
     </h1>

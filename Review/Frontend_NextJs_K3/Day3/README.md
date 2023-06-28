@@ -74,7 +74,7 @@
   <div class="content-2">
     <p>Tel: +971 2657 2300</p>
     <p>Far: +971 2657 2300</p>
-    <p>Email: <a href="#">abc@gmail.com</a></p>
+    <p>Email: <a target="_blank" href="#">abc@gmail.com</a></p>
   </div>
   ```
 
@@ -90,7 +90,7 @@
   <ul class="content-2">
     <li>Tel: +971 2657 2300</li>
     <li>Far: +971 2657 2300</li>
-    <li>Email: <a href="#">abc@gmail.com</a></p>
+    <li>Email: <a target="_blank" href="#">abc@gmail.com</a></p>
     </ul>
   ```
 
@@ -156,7 +156,9 @@
     <li class="item">
       <i class="fa-regular fa-envelope"></i>
       <span>
-        <a href="mailto:info@companyname.com"> info@companyname.com </a>
+        <a target="_blank" href="mailto:info@companyname.com">
+          info@companyname.com
+        </a>
       </span>
     </li>
     <li class="item">
@@ -217,7 +219,9 @@
     <li>
       Email:
       <span>
-        <a href="mailto:cst@ads-securities.com"> cst@ads-securities.com </a>
+        <a target="_blank" href="mailto:cst@ads-securities.com">
+          cst@ads-securities.com
+        </a>
       </span>
     </li>
   </ul>
@@ -289,7 +293,9 @@
     <div class="contact">
       <p>Tel: 0391362394</p>
       <p>Fax: 0220832371</p>
-      <span>Email: <a href="">duchainguyen134@gmai.com</a></span>
+      <span
+        >Email: <a target="_blank" href="">duchainguyen134@gmai.com</a></span
+      >
     </div>
   </div>
   ```
@@ -310,7 +316,7 @@
       <li>
         Email:
         <span>
-          <a href="mailto:duchainguyen134@gmai.com">
+          <a target="_blank" href="mailto:duchainguyen134@gmai.com">
             duchainguyen134@gmai.com
           </a>
         </span>
@@ -370,7 +376,10 @@
     <br />
     <p>Tel: 0123466797</p>
     <p>Fax: 0136464857</p>
-    <p>Email: <a href="hainvsp9x@gmail.com">hainvsp9x@gmail.com</a></p>
+    <p>
+      Email:
+      <a target="_blank" href="hainvsp9x@gmail.com">hainvsp9x@gmail.com</a>
+    </p>
   </div>
   ```
 
@@ -385,7 +394,10 @@
     <ul>
       <li>Tel: 0123466797</li>
       <li>Fax: 0136464857</li>
-      <li>Email: <a href="hainvsp9x@gmail.com"> hainvsp9x@gmail.com </a></li>
+      <li>
+        Email:
+        <a target="_blank" href="hainvsp9x@gmail.com"> hainvsp9x@gmail.com </a>
+      </li>
     </ul>
   </div>
   ```
@@ -511,7 +523,9 @@
     <li class="item">
       <img src="images/box.png" alt="" />
       <span>
-        <a href="mailto:info@companyname.com"> info@companyname.com </a>
+        <a target="_blank" href="mailto:info@companyname.com">
+          info@companyname.com
+        </a>
       </span>
     </li>
     <li class="item">
@@ -657,8 +671,6 @@ Bài 2: Bài làm chưa tốt
 
 Bài 3: Bài làm chưa tốt.
 
-
-
 - Nhận xét chung về UI: Chưa đúng với bản mẫu, cần tìm hiểu thêm để tối ưu bài làm của mình.
 
 ---
@@ -697,8 +709,6 @@ Bài 1: Bài làm rất tốt \*
 
 - Phần contact có thể là một section của trang nên phần CONTACT US nên để là thẻ `<h2>` và các tiêu đề ở dưới là `<h3>`
 
-
-
 ---
 
 Bài 2: Bài làm rất tốt \*
@@ -728,8 +738,6 @@ Bài 5: Bài làm rất tốt \*
 ---
 
 ## [Nguyễn Khắc Tú](https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_3)
-
-
 
 ---
 
@@ -772,8 +780,6 @@ Bài 5: Bài làm rất tốt \*
 ---
 
 ## [Sơn Trần](https://github.com/2003son/F8-FE-K3/tree/main/day3)
-
-
 
 ---
 

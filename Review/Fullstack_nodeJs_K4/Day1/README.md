@@ -40,7 +40,7 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `h2`
     ```html
     <h2>
-      <a href="#" target="_blank" rel="noopener noreferrer"
+      <a target="_blank" href="#" target="_blank" rel="noopener noreferrer"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -48,7 +48,7 @@
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -111,14 +111,14 @@
   - Đoạn title đầu tiên là `"Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục"`
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `a`
     ```html
-    <a href="#" class="bold font26px"
+    <a target="_blank" href="#" class="bold font26px"
       >Vòng xoáy cao ốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
     >
     ```
     - Đề xuất sửa thành:
     ```html
     <h1 class="bold font26px">
-      <a href="#"
+      <a target="_blank" href="#"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -268,7 +268,7 @@
   - Phần title chính nên sử dụng thẻ `h1` thay vì `h2`
     ```html
     <h2>
-      <a href="" target="_blank" rel="noopener noreferrer"
+      <a target="_blank" href="" target="_blank" rel="noopener noreferrer"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -277,7 +277,7 @@
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -344,7 +344,7 @@
 
     ```html
     <h1 style="color:darkblue">
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -468,7 +468,7 @@
     ```
   - Phần title chính nên sử dụng thẻ `h1` thay vì `a`
     ```html
-    <a href="" class="first"
+    <a target="_blank" href="" class="first"
       ><b
         >Vòng xoáy cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</b
       ></a
@@ -478,7 +478,7 @@
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -538,7 +538,7 @@
     ```
   - Phần title chính nên sử dụng thẻ `h1` thay vì `a`
     ```html
-    <a href="" class="first"
+    <a target="_blank" href="" class="first"
       ><b
         >Vòng xoáy cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</b
       ></a
@@ -548,7 +548,7 @@
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -613,7 +613,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
   - Phần title chính nên sử dụng thẻ `h1` thay vì `h2`
     ```html
     <h2>
-      <a href="" style="color: rgb(0, 0, 201);"
+      <a target="_blank" href="" style="color: rgb(0, 0, 201);"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -622,7 +622,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -1003,7 +1003,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
   - Phần title chính nên sử dụng thẻ `h1` thay vì `a>strong`
 
     ```html
-    <a href=""
+    <a target="_blank" href=""
       ><strong
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc
         phục</strong
@@ -1016,7 +1016,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -1079,7 +1079,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
 
     ```html
     <div class="tex-no">
-      <a href=""
+      <a target="_blank" href=""
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </div>
@@ -1090,7 +1090,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -1179,7 +1179,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
     ```
   - Phần title chính nên sử dụng thẻ `h1` thay vì `a`
     ```html
-    <a href=""
+    <a target="_blank" href=""
       ><b
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</b
       ></a
@@ -1189,7 +1189,7 @@ D \* Lưu ý: Không nên đặt tên file, folder, repo chứa các ký tự đ
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         ><b
           >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc
           phục</b

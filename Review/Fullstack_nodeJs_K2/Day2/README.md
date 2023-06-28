@@ -189,7 +189,7 @@
   - Phần icon ở dưới là một icon có thể click vào như một đường dẫn, hay còn gọi là link. Nên sử dụng thẻ `<a>` để định nghĩa
     ```html
     <li>
-      <a href="https://www.facebook.com/" target="_blank"
+      <a target="_blank" href="https://www.facebook.com/" target="_blank"
         ><i class="fa-brands fa-facebook-f"></i
       ></a>
     </li>
@@ -646,16 +646,16 @@
   - Các icon không hoạt động đúng
   ```html
   <li>
-    <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+    <a target="_blank" href="#!"><i class="fa-brands fa-facebook-f"></i></a>
   </li>
   <li>
-    <a href="#!"><i class="fa-brands fa-google-plus-g"></i></a>
+    <a target="_blank" href="#!"><i class="fa-brands fa-google-plus-g"></i></a>
   </li>
   <li>
-    <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+    <a target="_blank" href="#!"><i class="fa-brands fa-twitter"></i></a>
   </li>
   <li>
-    <a href="#!"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a target="_blank" href="#!"><i class="fa-brands fa-linkedin-in"></i></a>
   </li>
   ```
   - Sửa lại các icon!
@@ -714,17 +714,17 @@
   - Viết sai cấu trúc làm cho các đường dẫn đáng ra được hiển thị nhưng lại không:
     ```html
     <ul>
-      <li><a href="#"></a>Home</li>
-      <li><a href="#"></a>Service</li>
-      <li><a href="#"></a>Apppointment</li>
+      <li><a target="_blank" href="#"></a>Home</li>
+      <li><a target="_blank" href="#"></a>Service</li>
+      <li><a target="_blank" href="#"></a>Apppointment</li>
     </ul>
     ```
     - Đề xuất sửa thành:
     ```html
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">Apppointment</a></li>
+      <li><a target="_blank" href="#">Home</a></li>
+      <li><a target="_blank" href="#">Service</a></li>
+      <li><a target="_blank" href="#">Apppointment</a></li>
     </ul>
     ```
   - Các icon như bản mẫu phải là một đường dẫn:
@@ -740,16 +740,18 @@
   ```html
   <ul>
     <li>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+      <a target="_blank" href="#"><i class="fa-brands fa-google-plus-g"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a target="_blank" href="#"
+        ><i class="fa-brands fa-square-instagram"></i
+      ></a>
     </li>
   </ul>
   ```
@@ -943,16 +945,16 @@
 
     ```html
     <li>
-      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a target="_blank" href="#"><i class="fab fa-facebook"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a target="_blank" href="#"><i class="fab fa-google-plus-g"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
     </li>
     <li>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>
     </li>
     ```
 
@@ -1210,13 +1212,13 @@
 
   - Sử dụng đường dẫn `#!` || `#` thì được. Nhưng không được dùng `!#` vì nó sẽ làm cho trang web không hoạt động được
     ```html
-    <a href="!#" class="link" target="_blank">
+    <a target="_blank" href="!#" class="link" target="_blank">
       <i class="fa-brands fa-twitter"></i>
     </a>
     ```
   - Không nên sử dụng hash là chữ in hoa, điều đó sẽ khiến url rất xấu.
     ```html
-    <a href="#Appointment"></a>
+    <a target="_blank" href="#Appointment"></a>
     ```
 
 * Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý một chút nhỏ ở semantic, chức năng các thẻ thường dùng.

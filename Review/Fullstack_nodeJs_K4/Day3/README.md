@@ -37,7 +37,9 @@
   <p class="map__desc">Lorem ipsum dolor sit amet.</p>
   <p class="map__tel">Tel: +7823592392830</p>
   <p class="map__fax">Fax: +23987298357983</p>
-  <p class="map__email">Email: <a href="#!">lehung@gmail.com</a></p>
+  <p class="map__email">
+    Email: <a target="_blank" href="#!">lehung@gmail.com</a>
+  </p>
   ```
 
   Đề xuất sửa thành:
@@ -52,7 +54,9 @@
   <ul class="map__list">
     <li class="map__item">Tel: +7823592392830</li>
     <li class="map__item">Fax: +23987298357983</li>
-    <li class="map__item">Email: <a href="#!"> lehung@gmail.com </a></li>
+    <li class="map__item">
+      Email: <a target="_blank" href="#!"> lehung@gmail.com </a>
+    </li>
   </ul>
   ```
 
@@ -113,7 +117,7 @@
   <div>
     <p>Tel: +971 2675 2300</p>
     <p>Fax: +971 2675 2300</p>
-    <p>Email: <a href="#">info@gmail.com</a></p>
+    <p>Email: <a target="_blank" href="#">info@gmail.com</a></p>
   </div>
   ```
 
@@ -128,7 +132,7 @@
   <ul>
     <li>Tel: +971 2675 2300</li>
     <li>Fax: +971 2675 2300</li>
-    <li>Email: <a href="#">info@gmail.com</a></li>
+    <li>Email: <a target="_blank" href="#">info@gmail.com</a></li>
   </ul>
   ```
 
@@ -194,7 +198,9 @@
     <li>
       <img src="../imageANDicon/letter.png" alt="letter" class="icon" />
       <p>
-        <a href="mailto:info@companyname.com"> info@companyname.com </a>
+        <a target="_blank" href="mailto:info@companyname.com">
+          info@companyname.com
+        </a>
       </p>
     </li>
     <li>
@@ -522,7 +528,9 @@
     <li>
       <img src="images/mail.png" alt="mail-icon" />
       <p>
-        <a href="mailto:info@companyname.com"> info@companyname.com </a>
+        <a target="_blank" href="mailto:info@companyname.com">
+          info@companyname.com
+        </a>
       </p>
     </li>
     <li>
@@ -565,7 +573,7 @@
   <div class="content-info-contact">
     <p>+971 2657 2300</p>
     <p>+971 2657 2323</p>
-    <p>Email: <a href="#">cst@ads.securities.com</a></p>
+    <p>Email: <a target="_blank" href="#">cst@ads.securities.com</a></p>
   </div>
   ```
 
@@ -580,7 +588,7 @@
   <ul>
     <li>+971 2657 2300</li>
     <li>+971 2657 2323</li>
-    <li>Email: <a href="#"> cst@ads.securities.com</a></li>
+    <li>Email: <a target="_blank" href="#"> cst@ads.securities.com</a></li>
   </ul>
   ```
 
@@ -607,13 +615,13 @@
   ```html
   <div class="contact-info">
     <h2>Contact Info</h2>
-    <a href="#!" target="_blank" rel="noopener noreferrer"
+    <a target="_blank" href="#!" target="_blank" rel="noopener noreferrer"
       ><i class="fa-solid fa-location-dot"></i> 321 Awesome Street</a
     >
-    <a href="#!" target="_blank" rel="noopener noreferrer"
+    <a target="_blank" href="#!" target="_blank" rel="noopener noreferrer"
       ><i class="fa-regular fa-envelope"></i> info@companyname.com</a
     >
-    <a href="#!" target="_blank" rel="noopener noreferrer">
+    <a target="_blank" href="#!" target="_blank" rel="noopener noreferrer">
       <i class="fa-solid fa-phone"></i>
       +1 800 123 1234
     </a>
@@ -627,19 +635,19 @@
     <h2 class="contact-info-title">Contact Info</h2>
     <ul class="contact-info-list">
       <li>
-        <a href="#!" target="_blank" rel="noopener noreferrer">
+        <a target="_blank" href="#!" target="_blank" rel="noopener noreferrer">
           <i class="fa-solid fa-location-dot"></i>
           321 Awesome Street
         </a>
       </li>
       <li>
-        <a href="#!" target="_blank" rel="noopener noreferrer">
+        <a target="_blank" href="#!" target="_blank" rel="noopener noreferrer">
           <i class="fa-regular fa-envelope"></i>
           info@companyname.com
         </a>
       </li>
       <li>
-        <a href="#!" target="_blank" rel="noopener noreferrer">
+        <a target="_blank" href="#!" target="_blank" rel="noopener noreferrer">
           <i class="fa-solid fa-phone"></i>
           +1 800 123 1234
         </a>
@@ -679,9 +687,15 @@
     <p>Ab Dhabi, United Arab Emirates</p>
   </div>
   <div class="map-contact">
-    <p class="map-contact-tel">Tel:<a href="#!"> +971 2657 2300</a></p>
-    <p class="map-contact-fax">Fax:<a href="#!"> +971 2657 2323</a></p>
-    <p class="map-contact-email">Email:<a href="#!">abcd2000@gmail.com</a></p>
+    <p class="map-contact-tel">
+      Tel:<a target="_blank" href="#!"> +971 2657 2300</a>
+    </p>
+    <p class="map-contact-fax">
+      Fax:<a target="_blank" href="#!"> +971 2657 2323</a>
+    </p>
+    <p class="map-contact-email">
+      Email:<a target="_blank" href="#!">abcd2000@gmail.com</a>
+    </p>
   </div>
   ```
 
@@ -694,10 +708,14 @@
     <li>Ab Dhabi, United Arab Emirates</li>
   </ul>
   <ul class="map-contact">
-    <li class="map-contact-tel">Tel:<a href="#!"> +971 2657 2300</a></li>
-    <li class="map-contact-fax">Fax:<a href="#!"> +971 2657 2323</a></li>
+    <li class="map-contact-tel">
+      Tel:<a target="_blank" href="#!"> +971 2657 2300</a>
+    </li>
+    <li class="map-contact-fax">
+      Fax:<a target="_blank" href="#!"> +971 2657 2323</a>
+    </li>
     <li class="map-contact-email">
-      Email:<a href="#!"> abcd2000@gmail.com </a>
+      Email:<a target="_blank" href="#!"> abcd2000@gmail.com </a>
     </li>
   </ul>
   ```
@@ -713,7 +731,7 @@
   Phần tử `<a>` không được xuất hiện dưới dạng phần tử con của một nút.
 
   ```html
-  <button><a href="#!">View Plans</a></button>
+  <button><a target="_blank" href="#!">View Plans</a></button>
   ```
 
   Đoạn code này cần tối ưu cách sử dụng thẻ:
@@ -770,7 +788,7 @@
       </li>
       <li>
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        <a href="mailto:info@email.com"> info@email.com </a>
+        <a target="_blank" href="mailto:info@email.com"> info@email.com </a>
       </li>
       <li><i class="fa fa-phone" aria-hidden="true"></i>+841900100</li>
     </ul>
@@ -884,7 +902,9 @@
       <li>
         <i class="fa-sharp fa-regular fa-envelope"></i>
         <p>
-          <a href="mailto:info@companyname.com"> info@companyname.com </a>
+          <a target="_blank" href="mailto:info@companyname.com">
+            info@companyname.com
+          </a>
         </p>
       </li>
       <li>

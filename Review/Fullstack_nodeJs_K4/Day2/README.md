@@ -453,7 +453,7 @@
 
   ```html
   <li>
-    <a href="#"><img src="../imageANDicon/FB.png" alt="" /></a>
+    <a target="_blank" href="#"><img src="../imageANDicon/FB.png" alt="" /></a>
   </li>
   ```
 
@@ -617,13 +617,13 @@
   Thuộc tính `href` trong thẻ `a` là để định nghĩa đường dẫn, không được để trống.
 
   ```html
-  <a href="">...</a>
+  <a target="_blank" href="">...</a>
   ```
 
   Đề xuất sửa thành:
 
   ```html
-  <a href="#">...</a>
+  <a target="_blank" href="#">...</a>
   ```
 
   Phần icon trong list được thể hiện như một đường dẫn, nên sử dụng thẻ `a` để bao bọc icon

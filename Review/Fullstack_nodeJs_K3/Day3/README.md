@@ -89,9 +89,9 @@
     <p>Ab Dhabi, United Arab Emirates</p>
   </div>
   <div class="section-contact">
-    <p>Tel:<a href="tel:+971 2657 2300">+971 2657 2300</a></p>
-    <p>Fax:<a href="#!">+971 2657 2323</a></p>
-    <p>Email:<a href="#!">abc2003@gmail.com</a></p>
+    <p>Tel:<a target="_blank" href="tel:+971 2657 2300">+971 2657 2300</a></p>
+    <p>Fax:<a target="_blank" href="#!">+971 2657 2323</a></p>
+    <p>Email:<a target="_blank" href="#!">abc2003@gmail.com</a></p>
   </div>
   ```
 
@@ -104,9 +104,9 @@
     <li>Ab Dhabi, United Arab Emirates</li>
   </ul>
   <ul class="section-contact">
-    <li>Tel:<a href="tel:+971 2657 2300">+971 2657 2300</a></li>
-    <li>Fax:<a href="#!">+971 2657 2323</a></li>
-    <li>Email:<a href="#!"> </a></li>
+    <li>Tel:<a target="_blank" href="tel:+971 2657 2300">+971 2657 2300</a></li>
+    <li>Fax:<a target="_blank" href="#!">+971 2657 2323</a></li>
+    <li>Email:<a target="_blank" href="#!"> </a></li>
   </ul>
   ```
 
@@ -454,7 +454,9 @@
   </p>
   <p class="info-contact">
     Tel: +971 2 657 2300<br />Fax: +971 2 657 2323<br />Email:
-    <a href="mailto:name@ads.securities.com?subject=subject text"
+    <a
+      target="_blank"
+      href="mailto:name@ads.securities.com?subject=subject text"
       >name@ads.securities.com</a
     >
   </p>
@@ -473,7 +475,9 @@
     <li>Fax: +971 2 657 2323</li>
     <li>
       Email:
-      <a href="mailto:name@ads.securities.com?subject=subject text"
+      <a
+        target="_blank"
+        href="mailto:name@ads.securities.com?subject=subject text"
         >name@ads.securities.com</a
       >
     </li>
@@ -930,7 +934,7 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
   Bài làm rất tốt \*
 
-  Cần chú ý phần text heading có font-weight bé, chỉ có phần trong span là font-weight lớn. 
+  Cần chú ý phần text heading có font-weight bé, chỉ có phần trong span là font-weight lớn.
 
 ---
 

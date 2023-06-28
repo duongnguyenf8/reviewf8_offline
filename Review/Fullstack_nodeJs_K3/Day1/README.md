@@ -69,7 +69,7 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `h2`
     ```html
     <h2>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -77,7 +77,7 @@
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -209,14 +209,14 @@
   - Đoạn title đầu tiên là `"Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục"`
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `a`
     ```html
-    <a href="#"
+    <a target="_blank" href="#"
       >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức,cần 300 ngày khắc phục</a
     >
     ```
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -298,7 +298,7 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `h3`
     ```html
     <h3>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34,500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h3>
@@ -306,7 +306,7 @@
     - Đề xuất sửa thành:
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -394,7 +394,7 @@
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -498,13 +498,13 @@
   - THuộc tính `href` trong thẻ a bắt buộc phải có giá trị, nếu không có thì nên sử dụng `href="#!"`
 
     ```html
-    <a href=""></a>
+    <a target="_blank" href=""></a>
     ```
 
     - Đề xuất sửa thành:
 
     ```html
-    <a href="#!"></a>
+    <a target="_blank" href="#!"></a>
     ```
 
 ---
@@ -637,7 +637,7 @@
 
     ```html
     <h2>
-      <a href="#">
+      <a target="_blank" href="#">
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </a>
     </h2>
@@ -647,7 +647,7 @@
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -716,7 +716,7 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `a`
 
     ```html
-    <a href="#"
+    <a target="_blank" href="#"
       >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
     >
     ```
@@ -725,7 +725,7 @@
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -824,14 +824,14 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `a`
 
     ```html
-    <a href="#">Bàn Nhậu không đối thủ của đội ngũ F8</a>
+    <a target="_blank" href="#">Bàn Nhậu không đối thủ của đội ngũ F8</a>
     ```
 
     - Đề xuất sửa thành:
 
     ```html
     <h1>
-      <a href="#">Bàn Nhậu không đối thủ của đội ngũ F8</a>
+      <a target="_blank" href="#">Bàn Nhậu không đối thủ của đội ngũ F8</a>
     </h1>
     ```
 
@@ -896,7 +896,7 @@
     - Cần sử dụng thẻ `h1` cho đoạn title đó thay vì thẻ `a`
 
     ```html
-    <a href="#"
+    <a target="_blank" href="#"
       >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
     >
     ```
@@ -905,7 +905,7 @@
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -1097,7 +1097,7 @@
 
     ```html
     <h2>
-      <a href="#"
+      <a target="_blank" href="#"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h2>
@@ -1107,7 +1107,7 @@
 
     ```html
     <h1>
-      <a href="#!"
+      <a target="_blank" href="#!"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
@@ -1170,7 +1170,7 @@
     - Ngoài ra, value trong thuộc tính href là bắt buộc. Nếu không có thì nên để là `#` thay vì không có gì.
 
     ```html
-    <a href=""
+    <a target="_blank" href=""
       ><h2>
         Vòng xoay cao tốc 34.500tỷ sụt lún quá mức ,cần 300 ngày khắc phục
       </h2></a
@@ -1181,7 +1181,7 @@
 
     ```html
     <h1>
-      <a href="#"
+      <a target="_blank" href="#"
         >Vòng xoay cao tốc 34.500tỷ sụt lún quá mức ,cần 300 ngày khắc phục</a
       >
     </h1>
@@ -1292,7 +1292,7 @@
     - Ngoài ra, value trong thuộc tính href là bắt buộc. Nếu không có thì nên để là `#` thay vì không có gì.
 
     ```html
-    <a href=""
+    <a target="_blank" href=""
       ><h2>
         Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
       </h2></a
@@ -1303,7 +1303,7 @@
 
     ```html
     <h1>
-      <a href="#"
+      <a target="_blank" href="#"
         >Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục</a
       >
     </h1>
