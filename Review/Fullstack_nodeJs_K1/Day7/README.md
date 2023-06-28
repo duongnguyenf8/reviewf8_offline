@@ -297,3 +297,89 @@ Link github pages bị sai.
 ---
 
 - Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý một chút vào giao diện mẫu và cách tối ưu code HTML.
+
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+---
+
+- [x] Bài 1: Bài làm tốt \*
+
+  `line-height` của đoạn text đang nhỏ hơn so với bản mẫu.
+
+  Chưa `border-radius` khối content.
+
+---
+
+- [x] Bài 2: Bài làm tốt \*
+
+  avartar đang hơi méo và vị trí của avartar khi zoom lên đang bị hở viền, cần điều chỉnh lại `bottom` của phần tử avartar.
+
+---
+
+- [x] Bài 3: Bài làm tốt \*
+
+  Phần tử giả `after` của thẻ h2 và khối `list-city` bị xuống dòng đang không đúng so với bản mẫu.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm khá tốt nhưng cần chỉnh chu hơn so với bản mẫu.
+
+---
+
+## [Nam Nguyễn](https://github.com/namnguyen2603/nguyentrungnam_bai7.git)
+
+---
+
+- [x] Bài 1: Bài làm rất tốt \*
+
+  `line-height` của đoạn text đang nhỏ hơn so với bản mẫu.
+
+---
+
+- [x] Bài 2: Bài làm chưa tốt.
+
+  Sai layout phần navbar đang ngược lại so với bản mẫu cần chú ý hơn.
+
+  Ảnh nền nên có overlay để màu chữ có thể nổi bật hơn.
+
+  Ảnh avatar chủ đầu tư kích thước đang bị lệch và chưa có `border-radius` so với bản mẫu.
+
+---
+
+- [x] Bài 3: Bài làm chưa tốt.
+
+  Phần nav chứa các địa điểm không nên dùng thẻ h2
+
+  Xử lý layout chưa tốt cần cải thiện thêm.
+
+  Phần img cần có overlay để nổi bật chữ, hiện chữ đang rất khó nhìn.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm chưa tốt cần xử lý layout chỉnh chu hơn, cải thiện một số lỗi để hoàn thiện hơn.
+
+---
+
+## [Minh Quang](https://github.com/taminhquang13/BT_F8.git)
+
+---
+
+- [x] Bài 1: Bài làm rất tốt \*
+
+  `line-height` của đoạn text đang nhỏ hơn so với bản mẫu.
+
+---
+
+- [x] Bài 2: Bài làm rất tốt \*
+
+  Chưa `border-radius` avatar như bản mẫu.
+
+---
+
+- [x] Bài 3: Cần xử lý layout cho đúng với bản mẫu
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm cần xử lý layout tốt hơn ở bài 3 còn lại đều khá tốt.
+
+---
