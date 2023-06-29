@@ -11,5 +11,771 @@
     />
     <title>Duong - Review Day2_K3</title>
   </head>
-  <body></body>
+  <body><h1 id="d-ng-nh-gi-b-i-h-c-vi-n">Dương đánh giá bài học viên</h1>
+<h2 id="-nti-n-t-https-github-com-ntiendat-2k3-f8-fullstack-tree-main-bt_b3-"><a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">NTiến Đạt</a></h2>
+<pre><code>Sớm nhất.
+</code></pre><ul>
+<li><p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Phần icon hơi to hơn bản gốc</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần <code>title</code> chính của <code>section</code> này nên sử dụng thẻ <code>h2</code> để bao bọc.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"heading"</span>&gt;</span>WHAT OUR CLIENTS SAY<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html">&lt;header <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"heading"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>WHAT OUR CLIENTS SAY<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/header&gt;</span>
+</code></pre>
+<p>Thẻ <code>article</code> sử dụng để nói về một phần nội dung độc lập có ý nghĩa nhất định, có thể tái sử dụng được. Vì vậy, mỗi<code>article</code> nên có một <code>heading</code> để nói về tiêu đề chính của phần nội dung đó.</p>
+<pre><code class="lang-html">&lt;article <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"client-item"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-avt"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./assets/img/fox.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-img"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-wrap"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-desc"</span>&gt;</span>
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+      nesciunt odit facere in quibusdam harum vitae aliquid ullam eveniet
+      sint."
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-author"</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html">&lt;article <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"client-item"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-avt"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./assets/img/fox.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"avatar"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-img"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-wrap"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-desc"</span>&gt;</span>
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+      nesciunt odit facere in quibusdam harum vitae aliquid ullam eveniet
+      sint."
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"client-author"</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tham khảo thêm bài của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section-desc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>8th floor CI.Tower<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Comiche Road, PO Box 93894<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Ab Dhabi, United Arab Emirates<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section-contact"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Tel:<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"tel:+971 2657 2300"</span>&gt;</span>+971 2657 2300<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Fax:<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#!"</span>&gt;</span>+971 2657 2323<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Email:<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#!"</span>&gt;</span>abc2003@gmail.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section-desc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>8th floor CI.Tower<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Comiche Road, PO Box 93894<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ab Dhabi, United Arab Emirates<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section-contact"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tel:<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"tel:+971 2657 2300"</span>&gt;</span>+971 2657 2300<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Fax:<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#!"</span>&gt;</span>+971 2657 2323<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Email:<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#!"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.</li>
+</ul>
+<h2 id="-v-n-khoa-https-github-com-mrkhoadev-f8-fullstack-k3-tree-main-day3-"><a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Đỗ Văn Khoa</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Sau khi sáng tạo thì xấu quá, không nhìn nổi.</p>
+<p>Đóng thẻ sai:</p>
+<pre><code class="lang-html">&lt;p&gt;
+  <span class="hljs-number">321</span> Awesome <span class="hljs-keyword">Street </span>&lt;<span class="hljs-keyword">br </span>/&gt;
+  New York, NY <span class="hljs-number">17022</span>
+&lt;/<span class="hljs-string">"cho nay chua co dong"</span>&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Sai font-weight so với bản gốc. Phần content phải nhạt hơn phần tên user.</p>
+<p>Font chữ quá khó đọc.</p>
+<p>Thẻ <code>article</code> sử dụng để nói về một phần nội dung độc lập có ý nghĩa nhất định, có thể tái sử dụng được. Vì vậy, mỗi<code>article</code> nên có một <code>heading</code> để nói về tiêu đề chính của phần nội dung đó.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">heading</span>&gt;</span>Johnathan Doe<span class="hljs-tag">&lt;/<span class="hljs-name">heading</span>&gt;</span>
+</code></pre>
+<p>Không có thẻ nào là <code>heading</code> cả.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Johnathan Doe<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên font chữ quá xấu, không đọc được.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Code không format.</p>
+<p>Phần chữ thông tin không đúng với mẫu. có vẻ font chữ đang đậm hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Font-weight của heading sai. Ở bản mẫu, font-weight ở phần chữ màu đen nhạt hơn phần chữ màu xanh.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng đừng cố sáng tạo, nhìn hơi xấu. Cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.</li>
+</ul>
+<h2 id="-nguy-n-quang-c-ng-https-github-com-cuonggold2408-fullxinach_k3-tree-main-day_3-"><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Nguyễn Quang Cường</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần input nhập email nên sử dụng thẻ <code>input</code> với <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng định dạng hay không.</p>
+<pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"Your mail"</span> placeholder=<span class="hljs-string">" Your Mail"</span> /&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Chưa rõ phần chia 3 thẻ <code>div</code> bọc vào nhau để làm gì.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../Assets/image/token.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"John Doe"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"para quote"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">i</span>
+            &gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+            dignissimos molestias, consequuntur delectus cupiditate sed
+            cumque.&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>
+          &gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Phần tên user là một phần khác biệt, không nên bọc chung vào phần thẻ <code>p</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../Assets/image/token.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"John Doe"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"para quote"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span>
+        &gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+        dignissimos molestias, consequuntur delectus cupiditate sed
+        cumque.&amp;quot;<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>
+      &gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tham khảo bài của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+<p>Thẻ <code>br</code> chỉ được sử dụng để ngắt dòng trong đoạn văn, text. Không được sử dụng để ngắt dòng các phần tử, nếu muốn có thể sử dụng một thẻ block khác như <code>div</code>...</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"info"</span> id=<span class="hljs-string">"admin"</span> value=<span class="hljs-string">"admin"</span> required /&gt;
+&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"admin"</span>&gt; Admin &lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">br</span> /&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa rõ ý đồ của thẻ <code>div</code> ở đây:</p>
+<pre><code class="lang-html">&lt;div&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>ADS SECURITIES L.L.C.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần text <code>heading</code> trong <code>span</code> có <code>font-weight</code> đậm hơn mới đúng bản gốc.</p>
+<p>Phần className cần đặt cho dễ hiểu hơn : <code>but</code>, <code>but-fixed</code> =&gt; <code>btn</code>, <code>btn-fixed</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[*] Đánh giá chung bài tập về nhà:</p>
+<p>* Lưu ý: Nên đưa các assets riêng cho từng bài vào các folder riêng. Không nên gộp chung vào một folder.</p>
+</li>
+</ul>
+<h2 id="-v-th-ng-https-github-com-pencilbsp-f8_offline-tree-main-css-btvn_buoi_03-"><a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Vũ Thống</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Các thuộc tính này không có giá trị thì không nên cho vào:</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">select</span> name=<span class="hljs-string">""</span> id=<span class="hljs-string">""</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> value=<span class="hljs-string">""</span>&gt;--Choose a <span class="hljs-built_in">server</span>--&lt;/<span class="hljs-keyword">option</span>&gt;
+&lt;/<span class="hljs-keyword">select</span>&gt;
+</code></pre>
+<p>Sai chính tả <code>Enginner</code> =&gt; <code>Engineer</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 5</a></p>
+<p>Bài làm tốt</p>
+<p>Phần title của một section nên sử dụng thẻ <code>heading</code> để bao bọc.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Best <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Shared Hosting<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Company<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>Best <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Shared Hosting<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Company<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[*] Đánh giá chung bài tập về nhà:</p>
+<p>* Sử dụng, chia folder quá tệ, không rõ ràng, không có cấu trúc.</p>
+</li>
+</ul>
+<h2 id="-ph-v-n-c-https-github-com-phivanduc-f8-fullstack-k3-tree-main-day-3-"><a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Phí Văn Đức</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Mỗi <code>article</code> nên có một <code>heading</code> để nói về tiêu đề chính của phần nội dung đó.</p>
+<pre><code class="lang-html">&lt;article <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"feeback-item"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./Assets/Images/Anh-giot-nuoc.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wrap"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+      corrupti a eveniet explicabo possimus repellendus? Cupiditate nihil
+      dolor aspernatur quae fugiat."
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html">&lt;article <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"feeback-item"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./Assets/Images/Anh-giot-nuoc.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wrap"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+      corrupti a eveniet explicabo possimus repellendus? Cupiditate nihil
+      dolor aspernatur quae fugiat."
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"name"</span>&gt;</span>John Doe<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Mỗi 1 id chỉ được tương ứng với duy nhất một phần tử.</p>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"role"</span> /&gt;</span>
+  Admin
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"role"</span> /&gt;</span>
+  Engineer
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"role"</span> /&gt;</span>
+  Manager
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"role"</span> /&gt;</span>
+  Guest
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+...
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sign-on"</span> /&gt;</span>
+  Mail
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sign-on"</span> /&gt;</span>
+  Payroll
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sign-on"</span> /&gt;</span>
+  Self-service
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+</code></pre>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần text này được hiển thị như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<pre><code class="lang-html">&lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"info-contact"</span>&gt;
+  <span class="hljs-number">8</span>th floor. CI Tower&lt;br /&gt;Corniche road. PO Box <span class="hljs-number">93894</span>&lt;br /&gt;Abu Dhabi, United
+  Arab Emirates
+&lt;/p&gt;
+&lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"info-contact"</span>&gt;
+  Tel: +<span class="hljs-number">971</span> <span class="hljs-number">2</span> <span class="hljs-number">657</span> <span class="hljs-number">2300</span>&lt;br /&gt;Fax: +<span class="hljs-number">971</span> <span class="hljs-number">2</span> <span class="hljs-number">657</span> <span class="hljs-number">2323</span>&lt;br /&gt;Email:
+  &lt;<span class="hljs-selector-tag">a</span>
+    target=<span class="hljs-string">"_blank"</span>
+    href=<span class="hljs-string">"mailto:name@ads.securities.com?subject=subject text"</span>
+    &gt;name@ads<span class="hljs-selector-class">.securities</span><span class="hljs-selector-class">.com</span>&lt;/<span class="hljs-selector-tag">a</span>
+  &gt;
+&lt;/p&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"info-contact"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>8th floor. CI Tower<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Corniche road. PO Box 93894<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Abu Dhabi, United Arab Emirates<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"info-contact"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tel: +971 2 657 2300<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Fax: +971 2 657 2323<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    Email:
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+      <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>
+      <span class="hljs-attr">href</span>=<span class="hljs-string">"mailto:name@ads.securities.com?subject=subject text"</span>
+      &gt;</span>name@ads.securities.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>
+    &gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>Phần font-size như này rất khó để tính toán: <code>font-size: 65.2%;</code></p>
+<p>Đoạn code CSS hover này không rõ ý đồ:</p>
+</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-selector-class">.tab-item</span><span class="hljs-selector-class">.active</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(175, 150, 84);
+  <span class="hljs-attribute">color</span>: white;
+}
+<span class="hljs-selector-class">.tab-item</span><span class="hljs-selector-class">.active</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgb</span>(175, 150, 84);
+  <span class="hljs-attribute">color</span>: white;
+}
+</code></pre>
+<p>Phần hover có transition là <code>0.8</code> quá chậm. Theo <a href="https://lawsofux.com/doherty-threshold/">lawsofux.com</a> thì thời gian tối ưu cho hover là <code>&lt;0.4s</code></p>
+<p>Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.</p>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý đến quy tắc semantic trong HTML tốt hơn để làm cho code dễ đọc hơn.</li>
+</ul>
+<h2 id="-tr-n-xu-n-b-ch-https-github-com-bach0128-f8-fullstack-k3-tree-main-day3-"><a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Trần Xuân Bách</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Có layout nhưng chia quá xấu, thiếu chỉn chu</p>
+<p>Đã code CSS trong internal thì không nên code ở inline nữa.</p>
+<p>Cần chú ý thêm vào phần meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Cần chú ý thêm vào phần meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+<p>Đã code CSS trong internal thì không nên code ở inline nữa.</p>
+<p>Phần tên user là một phần khác biệt, không nên bọc chung vào phần thẻ <code>p</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: gray; margin-left: 10px"</span>&gt;</span>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quidem quia
+  delectus culpa repellendus asperiores libero perspiciatis iure facilis id,
+  nemo, odio natus sit labore! A ad non ut facere iure atque sunt quod eos.
+  Omnis, labore! Vel quos facere odit tempora, illum qui maxime consequuntur
+  ipsam laudantium nihil molestias consequatur porro, asperiores inventore quia
+  cumque fugiat placeat natus aut!
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"padding: 6px"</span>&gt;</span>
+    John Bar
+  <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: gray; margin-left: 10px"</span>&gt;</span>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quidem quia
+  delectus culpa repellendus asperiores libero perspiciatis iure facilis id,
+  nemo, odio natus sit labore! A ad non ut facere iure atque sunt quod eos.
+  Omnis, labore! Vel quos facere odit tempora, illum qui maxime consequuntur
+  ipsam laudantium nihil molestias consequatur porro, asperiores inventore
+  quia cumque fugiat placeat natus aut!
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"padding: 6px"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>John Bar<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+<p>Phần thuộc tính <code>alt</code> trong <code>img</code> sử dụng để mô tả hình ảnh đó là gì. Nên miêu tả tốt, không nên chỉ để là <code>error</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Cần chú ý thêm vào phần meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+<p>Nên chú ý thêm vào cách đặt tên className sao cho đúng chuẩn hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Sai layout bản mẫu, các phần thông tin cần cách một khoảng so với lề trái.</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>8th floor HG Tower<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Manta Road, PO Box 99823<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Abu Dhabi, United Arab Emirates<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Tel: +971 23345 2044<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Fax: +971 8345 71641<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Email <span class="hljs-tag">&lt;<span class="hljs-name">u</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: rgb(199, 153, 93)"</span>&gt;</span>ads@sercurities.com<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>8th floor HG Tower<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Manta Road, PO Box 99823<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Abu Dhabi, United Arab Emirates<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Tel: +971 23345 2044<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Fax: +971 8345 71641<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Email <span class="hljs-tag">&lt;<span class="hljs-name">u</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: rgb(199, 153, 93)"</span>&gt;</span>ads@sercurities.com<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm tốt</p>
+<p>Phần font-weight không chuẩn so với bản gốc. Phần chữ màu đen nhạt hơn phần chữ màu xanh.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý chỉn chu giao diện hơn, không nên ẩu.</li>
+</ul>
+<h2 id="-nguy-n-b-ng-https-github-com-dong205-f8-fullstackoffline-k3-tree-main-day-203-"><a href="https://github.com/Dong205/F8-FullstackOffline-K3/tree/main/Day%203">Nguyễn Bá Đông</a></h2>
+<h2 id="-v-ng-ng-https-github-com-dongvuong-f8-fullstack-k3-tree-main-day3-"><a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Vương Đông</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Hiện nay, có rất nhiều website đã tách phần <code>CONTACT</code> ra một site riêng. Trong trường hợp đó các thẻ <code>heading</code> nên đẩy lên 1 bậc ưu tiên nữa. <code>h2</code> =&gt; <code>h1</code>, <code>h3</code> =&gt; <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần bảng chưa được căn giữa.</p>
+<p>Có thể sử dụng <code>margin</code> để căn giữa</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">table</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+</code></pre>
+<p>Không nên nhảy cóc <code>heading</code> từ <code>h1</code> =&gt; <code>h3</code> vì việc làm đó là sai quy tắc semantic trong HTML.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thanh <code>navigation</code> chuyển hướng nên sử dụng thẻ <code>nav</code> thay vì <code>div</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"contry-color"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>United State<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>London<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Singapore<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hong Kong<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>United State<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>London<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Singapore<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Hong Kong<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+</code></pre>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Tel: +97123456<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Fax: +9712345567<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Email: <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"email-color"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>abc1234@gmail.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Tel: +97123456<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Fax: +9712345567<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Email: <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"email-color"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>abc1234@gmail.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.</li>
+</ul>
+<h2 id="-tr-n-nh-tr-ng-https-github-com-trandinhtrongg-f8_fullstack_k3-tree-main-f8-offline-day3-"><a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Trần Đình Trọng</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Sử dụng thẻ <code>br</code> để ngắt dòng giữa các phần tử, việc đó là không đúng.</p>
+<p>Layout phần thông tin đang bị lệch so với bài mẫu.</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần main chưa căn giữa các phần tử.</p>
+<p>Hình ảnh chưa xử lý để thành hình tròn</p>
+<p>Phần tên user là một phần khác biệt, không nên bọc chung vào phần thẻ <code>p</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 3</a></p>
+<p>Sử dụng sai thẻ form</p>
+<p>Layout đang sai so với bản mẫu</p>
+<p>Có thẻ tham khảo bài bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+<p>Bài này cần làm lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thanh <code>navigation</code> chuyển hướng nên sử dụng thẻ <code>nav</code> để bao bọc</p>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 5</a></p>
+<p>Bài làm tốt</p>
+<p>Đường dẫn ảnh đang chưa chính xác</p>
+<pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/img_190x50.png "</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/img_190x50.png"</span> alt=<span class="hljs-string">""</span> /&gt;
+</code></pre>
+<p>Phần nút ở dưới là một button, không nên sử dụng <code>ul&gt;li&gt;a</code> để tạo</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.</li>
+</ul>
+<h2 id="-ti-n-khi-m-https-github-com-tienkhiemkahp-f8-tree-main-homework-day-3-"><a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Đỗ Tiến Khiêm</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Không nên sử dung <code>&lt;br&gt;&lt;br&gt;</code> để cách dòng. việc đó nên sử dụng một thẻ block khác và một chút css để cách dòng.</p>
+<p>Phần này là để tạo một avatar, không phải là một đoạn văn gì. Chỉ nên sử dụng thẻ <code>span</code></p>
+<pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"customer-avatar"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>H<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span>
+</code></pre>
+<p>Đặt tên className chưa đúng. <code>.item</code> không phải một tên class đủ tường minh để thể hiện hàng. Thay vào đó, sử dụng <code>.row</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Hơi ẩu. Không có self-test.</p>
+<p>Không có thẻ nào là thẻ <code>Label</code></p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">label</span><span class="bash"> <span class="hljs-keyword">for</span>=<span class="hljs-string">"server"</span>&gt;Web server&lt;/label&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Hơi ẩu. Không có self-test.</p>
+<p>Không có thẻ nào là thẻ <code>P</code></p>
+<pre><code class="lang-html"><span class="hljs-symbol">&lt;p&gt;</span>
+  <span class="hljs-number">8</span><span class="hljs-keyword">th</span> <span class="hljs-built_in">floor</span>, CI Tower &lt;<span class="hljs-keyword">br</span> /&gt;
+  Comiche Road, PO Box <span class="hljs-number">93894</span> &lt;<span class="hljs-keyword">br</span> /&gt;
+  Abu Dhabi, United Arab Emỉates
+&lt;/<span class="hljs-keyword">p</span>&gt;
+</code></pre>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<p>Nên chú ý tới thẻ meta title, chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần box màu xanh hiển thị một đoạn text. Nhưng không phải là một một đoạn văn. Nên sử dụng thẻ <code>span</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>190x50<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.</p>
+<p>* Lưu ý: Nên tách các bài tập và file css thành một folder riêng, coi mỗi bài là một project riêng.</p>
+</li>
+</ul>
+<h2 id="-minh-pham-https-github-com-minh0314-f8-k3-tree-main-day3-"><a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Minh Pham</a></h2>
+<ul>
+<li><p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Layout quá xấu so với bản gốc</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<p>Hiện nay, có rất nhiều website đã tách phần <code>CONTACT</code> ra một site riêng. Trong trường hợp đó các thẻ <code>heading</code> nên đẩy lên 1 bậc ưu tiên nữa. <code>h2</code> =&gt; <code>h1</code>, <code>h3</code> =&gt; <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 2</a></p>
+<p>Bài làm không tốt</p>
+<p>Sai layout hoàn toàn, sai chính tả. Nên làm lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Hơi ẩu. Không có format-code</p>
+<p>Có thể tham khảo câu hỏi của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 4</a></p>
+<p>Bài làm quá ẩu. Làm như không làm.</p>
+<p>Code lại bài này.</p>
+<p>Phần map dài quá khiến cho phần content bị co lại nhiều</p>
+<p>Phần background trên navbar là background của box chứ không phải text.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Cần chú ý phần text heading có font-weight bé, chỉ có phần trong span là font-weight lớn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[*] Đánh giá chung bài tập về nhà: Bài làm hơi ẩu, cần chú ý đến layout nhiều hơn, chỉn chu hơn. Để hoàn thiện tốt hơn bài tập của mình.</li>
+</ul>
+</body>
 </html>
