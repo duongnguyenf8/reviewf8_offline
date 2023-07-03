@@ -3,7 +3,8 @@
   "description": "Dương Test Bài học viên",
   "main": "server/server.py",
   "scripts": {
-    "start": "python server/server.py",
+    "dev": "python server/server.py",
+    "build": "python scripts/createList.py",
     "push": "node scripts"
   },
   "dependencies": {

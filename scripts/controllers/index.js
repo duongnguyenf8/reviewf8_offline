@@ -1,18 +1,18 @@
 // controllers/pushController.js
 const { exec } = require("child_process");
-const { logSuccess, logError } = require("../views");
+const { logSuccess, logError, logInfo } = require("../views");
 
 const buildList = () => {
   console.log("Building data.json...");
   return new Promise((resolve, reject) => {
-    const buildChild = exec("python ./createList.py");
+    const buildChild = exec("npm run build");
 
     buildChild.stdout.on("data", (data) => {
       logSuccess(data);
     });
 
     buildChild.stderr.on("data", (data) => {
-      logError(data);
+      logInfo(data);
     });
 
     buildChild.on("error", (error) => {
@@ -43,7 +43,7 @@ const pushGit = (text) => {
     });
 
     pushChild.stderr.on("data", (data) => {
-      logError(data);
+      logInfo(data);
     });
 
     pushChild.on("error", (error) => {
@@ -74,7 +74,7 @@ const deployVercel = () => {
     });
 
     vercelChild.stderr.on("data", (data) => {
-      logError(data);
+      logInfo(data);
     });
 
     vercelChild.on("error", (error) => {
@@ -94,8 +94,10 @@ const deployVercel = () => {
   });
 };
 
-const pushAndDeploy = (text) => {
-  return pushGit(text).then(() => deployVercel());
+const buildPushAndDeploy = async (text) => {
+  await buildList();
+  await pushGit(text);
+  await deployVercel();
 };
 
-module.exports = pushAndDeploy;
+module.exports = buildPushAndDeploy;
