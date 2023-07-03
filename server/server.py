@@ -12,7 +12,7 @@ class RequestHandler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    subprocess.Popen(["python", "../scripts/createList.py"])
+    subprocess.Popen(["python", "scripts/createList.py"])
     server_address = ("", 3000)
     httpd = HTTPServer(server_address, RequestHandler)
     httpd.serve_forever()
