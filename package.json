@@ -4,6 +4,9 @@
   "main": "server/server.py",
   "scripts": {
     "start": "python server/server.py",
-    "vercel" : "python scripts/createList.py && vercel --prod"
+    "push": "node scripts"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
   }
 }
