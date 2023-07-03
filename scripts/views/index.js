@@ -8,7 +8,7 @@ const logError = (message) => {
 };
 
 const logInfo = (message) => {
-  console.log("\x1b[33mℹ", message, "\x1b[0m");
+  console.log("\x1b[36mℹ", message, "\x1b[0m");
 };
 
 module.exports = {
