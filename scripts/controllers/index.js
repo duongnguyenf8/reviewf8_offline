@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 const { logSuccess, logError, logInfo } = require("../views");
 
 const buildList = () => {
-  console.log("Building data.json...");
+  logInfo("Building data.json...");
   return new Promise((resolve, reject) => {
     const buildChild = exec("npm run create");
 
@@ -33,7 +33,7 @@ const buildList = () => {
 };
 
 const pushGit = (text) => {
-  console.log("Pushing code to Git...");
+  logInfo("Pushing code to Git...");
 
   return new Promise((resolve, reject) => {
     const pushChild = exec(`git add . && git commit -m "${text}" && git push`);
@@ -64,7 +64,7 @@ const pushGit = (text) => {
 };
 
 const deployVercel = () => {
-  console.log("Deploying to Vercel...");
+  logInfo("Deploying to Vercel...");
 
   return new Promise((resolve, reject) => {
     const vercelChild = exec("vercel --prod");

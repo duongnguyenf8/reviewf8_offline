@@ -1,4 +1,4 @@
 // routes/index.js
-const pushAndDeploy = require("../controllers");
+const buildPushAndDeploy = require("../controllers");
 
-module.exports = pushAndDeploy;
+module.exports = buildPushAndDeploy;
