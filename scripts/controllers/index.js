@@ -5,7 +5,7 @@ const { logSuccess, logError, logInfo } = require("../views");
 const buildList = () => {
   console.log("Building data.json...");
   return new Promise((resolve, reject) => {
-    const buildChild = exec("npm run build");
+    const buildChild = exec("npm run create");
 
     buildChild.stdout.on("data", (data) => {
       logSuccess(data);

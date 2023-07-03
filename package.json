@@ -4,7 +4,7 @@
   "main": "server/server.py",
   "scripts": {
     "dev": "python server/server.py",
-    "build": "python scripts/createList.py",
+    "create": "python scripts/createList.py",
     "push": "node scripts"
   },
   "dependencies": {
