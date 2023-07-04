@@ -58,7 +58,7 @@ fs.readFile(dataPath, "utf8", (err, jsonData) => {
     const subfolders = folders[folder];
 
     for (const subfolder of subfolders) {
-      const folderPath = path.join(__dirname, "Review", folder, subfolder);
+      const folderPath = path.join("Review", folder, subfolder);
       renderPage(folderPath, folder, subfolder);
     }
   }
