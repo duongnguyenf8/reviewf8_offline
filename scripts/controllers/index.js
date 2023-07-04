@@ -1,4 +1,3 @@
-// controllers/pushController.js
 const { exec } = require("child_process");
 const { logSuccess, logError, logInfo } = require("../views");
 const { runBuild } = require("../build");
