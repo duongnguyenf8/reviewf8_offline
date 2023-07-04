@@ -2,7 +2,7 @@ const { exec } = require("child_process");
 const { logSuccess, logError, logInfo } = require("../views");
 
 function runBuild() {
-  const createListCommand = "python ./script/createList.py";
+  const createListCommand = "python createList.py";
   const renderCommand = "node ./script/render.js";
 
   exec(createListCommand, (error, stdout, stderr) => {
