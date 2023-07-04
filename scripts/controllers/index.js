@@ -73,17 +73,17 @@ const deployVercel = () => {
 };
 
 const buildPushAndDeploy = async (text) => {
-  const build = await building();
-  if (build) {
-    try {
+  try {
+    const build = await building();
+    if (build) {
       logSuccess("Building successfully!");
       await pushGit(text);
       logSuccess("Push git successfully!");
       await deployVercel();
       logSuccess("Deployed successfully!");
-    } catch {
-      logError("Some thing went wrong!");
     }
+  } catch {
+    logError("Some thing went wrong!");
   }
 };
 

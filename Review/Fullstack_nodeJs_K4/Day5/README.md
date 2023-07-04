@@ -8,7 +8,6 @@ Khi focus, màu của tooltip và `.fa-solid.fa-user` có màu hơi đậm. Và 
 
 Phần input `type="tel"` ở bản mẫu không có các icon ở bên phải.
 
-okokok
 
 ---
 
