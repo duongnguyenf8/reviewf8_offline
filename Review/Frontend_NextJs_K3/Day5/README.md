@@ -218,7 +218,7 @@
 
 - [x] [Bài 2](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day5)
 
-  Bài làm tốt
+  Bài làm rất tốt \*
 
   Thiếu action đổi icon khi click mở content.
 
@@ -226,7 +226,7 @@
 
 - [x] [Bài 3](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day5)
 
-  Bài làm rất tốt \*
+  Bài làm tốt \*
 
   Phần đổ bóng đằng sau hơi đậm
 
