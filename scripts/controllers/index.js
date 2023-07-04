@@ -1,35 +1,11 @@
 // controllers/pushController.js
 const { exec } = require("child_process");
 const { logSuccess, logError, logInfo } = require("../views");
+const { runBuild } = require("../build");
 
-const buildList = () => {
-  logInfo("Building data.json...");
-  return new Promise((resolve, reject) => {
-    const buildChild = exec("npm run create");
-
-    buildChild.stdout.on("data", (data) => {
-      logSuccess(data);
-    });
-
-    buildChild.stderr.on("data", (data) => {
-      logInfo(data);
-    });
-
-    buildChild.on("error", (error) => {
-      logError(error);
-      reject(error);
-    });
-
-    buildChild.on("close", (code) => {
-      if (code === 0) {
-        logSuccess("Data.json build completed");
-        resolve();
-      } else {
-        logError(`Data.json build failed with code ${code}`);
-        reject(`Data.json build failed with code ${code}`);
-      }
-    });
-  });
+const building = () => {
+  logInfo("Building...");
+  runBuild();
 };
 
 const pushGit = (text) => {
@@ -95,7 +71,7 @@ const deployVercel = () => {
 };
 
 const buildPushAndDeploy = async (text) => {
-  await buildList();
+  await building();
   await pushGit(text);
   await deployVercel();
 };
