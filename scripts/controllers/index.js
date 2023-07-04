@@ -2,9 +2,12 @@ const { exec } = require("child_process");
 const { logSuccess, logError, logInfo } = require("../views");
 const { runBuild } = require("../build");
 
-const building = () => {
+const building = async () => {
   logInfo("Building...");
-  runBuild();
+  const build = await runBuild();
+  if (build) {
+    return true;
+  }
 };
 
 const pushGit = (text) => {
@@ -70,16 +73,18 @@ const deployVercel = () => {
 };
 
 const buildPushAndDeploy = async (text) => {
-  await building();
+  const build = await building();
   logInfo("Waiting a few seconds...");
-  try {
-    logSuccess("Building successfully!");
-    await pushGit(text);
-    logSuccess("Push git successfully!");
-    await deployVercel();
-    logSuccess("Deployed successfully!");
-  } catch {
-    logError("Some thing went wrong!");
+  if (build) {
+    try {
+      logSuccess("Building successfully!");
+      await pushGit(text);
+      logSuccess("Push git successfully!");
+      await deployVercel();
+      logSuccess("Deployed successfully!");
+    } catch {
+      logError("Some thing went wrong!");
+    }
   }
 };
 
