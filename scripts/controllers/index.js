@@ -73,13 +73,11 @@ const buildPushAndDeploy = async (text) => {
   await building();
   logInfo("Waiting a few seconds...");
   try {
-    setTimeout(async () => {
-      logSuccess("Building successfully!");
-      await pushGit(text);
-      logSuccess("Push git successfully!");
-      await deployVercel();
-      logSuccess("Deployed successfully!");
-    }, 1000);
+    logSuccess("Building successfully!");
+    await pushGit(text);
+    logSuccess("Push git successfully!");
+    await deployVercel();
+    logSuccess("Deployed successfully!");
   } catch {
     logError("Some thing went wrong!");
   }
