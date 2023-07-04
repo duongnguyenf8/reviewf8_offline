@@ -84,7 +84,7 @@ const buildPushAndDeploy = async (text) => {
         await deployVercel();
         logSuccess("Deployed successfully!");
       }
-    }, 1000);
+    }, 2000);
   } catch {
     logError("Some thing went wrong!");
   }
