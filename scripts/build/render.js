@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const MarkdownIt = require("markdown-it");
-const { logSuccess, logError } = require("../../views");
+const { logSuccess, logError } = require("../views");
 
 
 const dataPath = path.join(__dirname, "assets", "data", "data.json");
