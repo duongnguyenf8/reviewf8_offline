@@ -71,7 +71,7 @@ const deployVercel = () => {
 };
 
 const buildPushAndDeploy = async (text) => {
-  await building();
+  building();
   logSuccess("Building successfully!");
   await pushGit(text);
   logSuccess("Push git successfully!");
