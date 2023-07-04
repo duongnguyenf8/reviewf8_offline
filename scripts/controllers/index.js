@@ -74,7 +74,6 @@ const deployVercel = () => {
 
 const buildPushAndDeploy = async (text) => {
   const build = await building();
-  logInfo("Waiting a few seconds...");
   if (build) {
     try {
       logSuccess("Building successfully!");
