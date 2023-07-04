@@ -3,8 +3,7 @@ const path = require("path");
 const MarkdownIt = require("markdown-it");
 const { logSuccess, logError } = require("../views");
 
-
-const dataPath = path.join("assets", "data", "data.json");
+const dataPath = "assets/data/data.json";
 const stylePath = "../../../assets/css/style.css";
 const scriptPath = "../../../assets/js/pages.js";
 
