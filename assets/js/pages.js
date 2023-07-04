@@ -8,7 +8,7 @@ window.onload = () => {
       count = 1;
     }
     if (innerHtml.includes("[x]")) {
-      const html = `<span class="x-icon" data-index="${count++}"></span>`;
+      const html = `<span class="x-icon" data-index="${count++}" ></span>`;
       const newHTML = innerHtml.replace("[x]", html);
       liTag[i].innerHTML = newHTML;
     }
