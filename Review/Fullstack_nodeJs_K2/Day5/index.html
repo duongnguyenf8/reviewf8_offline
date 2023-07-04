@@ -1,682 +1,428 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
 
-    <script src="../../../assets/js/pages.js" defer></script>
-    <link
-      rel="shortcut icon"
-      href="../../../assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Duong - Review Day5_K2</title>
-  </head>
-  <body>
-    <h1 id="qu-n-test-b-i-h-c-vi-n-fullstack-nodejs-day-5">
-      Quân test bài học viên Fullstack NodeJS Day 5
-    </h1>
-    <h2
-      id="-ki-u-duy-t-ng-https-github-com-stung16-ex_f8-fullstack-tree-master-day5-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/Stung16/ex_f8-fullstack/tree/master/day5"
-        >Kiều Duy Tùng</a
-      >
-    </h2>
-    <pre><code>Sớm nhấ<span class="hljs-built_in">t</span>
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <title>Fullstack_nodeJs_K2/Day5</title>
+          <link rel="stylesheet" href="../../../assets/css/style.css" />
+        </head>
+        <body>
+          <h1>Quân test bài học viên Fullstack NodeJS Day 5</h1>
+<h2><a href="https://github.com/Stung16/ex_f8-fullstack/tree/master/day5">Kiều Duy Tùng</a></h2>
+<pre><code>Sớm nhất
 </code></pre>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 1: Bài làm tốt</p>
-        <p>Chưa giống với bản mẫu cần làm chỉn chu hơn.</p>
-        <p>Khoảng cách giữa title và text không giống với bản mẫu.</p>
-        <p>Phần icon của textarea cần xử lý thêm.</p>
-        <p>
-          Icon của thẻ select chưa giống với bản mẫu, hiện đang để là mặc định.
-        </p>
-        <p>
-          Khi focus vào các thẻ input chưa đổi icon thành x như đề bài yêu cầu.
-        </p>
-        <p>
-          Khi check vào checkbox cần căn chỉnh sao cho dấu tích cân đối hơn.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 2: Bài làm tốt *</p>
-        <p>
-          Nên sử dụng thuộc tính <code>cursor</code> để thay đổi thành
-          <code>pointer</code> giúp cho trải nghiệm người dùng tốt hơn khi di
-          chuyển vào các tiêu đề.
-        </p>
-        <p>
-          Phần thể hiện đoạn text thì nên sử dụng thẻ
-          <code>&lt;p&gt;</code> thay cho <code>&lt;div&gt;</code>.
-        </p>
-        <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"paragraph ..._text"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt</p>
+<p>Chưa giống với bản mẫu cần làm chỉn chu hơn.</p>
+<p>Khoảng cách giữa title và text không giống với bản mẫu.</p>
+<p>Phần icon của textarea cần xử lý thêm.</p>
+<p>Icon của thẻ select chưa giống với bản mẫu, hiện đang để là mặc định.</p>
+<p>Khi focus vào các thẻ input chưa đổi icon thành x như đề bài yêu cầu.</p>
+<p>Khi check vào checkbox cần căn chỉnh sao cho dấu tích cân đối hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *</p>
+<p>Nên sử dụng thuộc tính <code>cursor</code> để thay đổi thành <code>pointer</code> giúp cho trải nghiệm người dùng tốt hơn khi di chuyển vào các tiêu đề.</p>
+<p>Phần thể hiện đoạn text thì nên sử dụng thẻ <code>&lt;p&gt;</code> thay cho <code>&lt;div&gt;</code>.</p>
+<pre><code class="language-html">&lt;div class=&quot;paragraph ..._text&quot;&gt;...&lt;/div&gt;
 </code></pre>
-        <p>
-          Sai chính tả <code>content saecond_content</code> nên sửa thành
-          <code>content second_content</code>.
-        </p>
-        <p>
-          Khoảng cách giữa <code>.paragraph</code> và
-          <code>.item_content</code> chưa đúng với bản mẫu.
-        </p>
-        <p>
-          Đặt tên className chưa hơp lý, tiêu đề của một đoạn văn thì nên đặt
-          className là <code>title_content</code> thay vì
-          <code>item_content</code>.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm tốt *</p>
-        <p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
-        <pre><code class="lang-css">* {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">outline</span>: none;
+<p>Sai chính tả <code>content saecond_content</code> nên sửa thành <code>content second_content</code>.</p>
+<p>Khoảng cách giữa <code>.paragraph</code> và <code>.item_content</code> chưa đúng với bản mẫu.</p>
+<p>Đặt tên className chưa hơp lý, tiêu đề của một đoạn văn thì nên đặt className là <code>title_content</code> thay vì <code>item_content</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *</p>
+<p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 </code></pre>
-        <p>
-          Phần tử có class <code>layout_content</code> khi giãn màn hình rất
-          xấu.
-        </p>
-        <p>
-          Nên căn giữa <code>.layout_content</code> theo section. sau đó set
-          max-width cho <code>.layout_content</code>.
-        </p>
-        <p>Bổ sung hiệu ứng shadow cho từng khối để giống với bản mẫu.</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm tốt, tuy nhiên cần tuân
-        thủ theo bản mẫu về khoảng cách và độ lớn của các phần tử. Một số chỗ
-        chưa chỉnh chu, cần khắc phục.
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-b-i-quang-tr-ng-https-github-com-okazakitruong-bqtruong-f8-k2-offline-tree-main-day5-"
-    >
-      <a
-        href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day5"
-        >Bùi Quang Trường</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li>[x] Bài 1: Bài làm rất tốt *</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 2: Bài làm rất tốt *</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm rất tốt *</p>
-        <p>
-          Nên cho thêm thuộc tính <code>transition</code> để khi hover vào mỗi
-          item sẽ mượt mà hơn không bị giật layout.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm nhìn chung rất tốt, chỉ
-        cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-ti-n-t-https-github-com-phamtiendat18-fullstack-k2-tree-main-day_05-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/phamtiendat18/Fullstack-K2/tree/main/Day_05"
-        >Tiến Đạt</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 1: Bài làm chưa tốt</p>
-        <p>
-          Phần input của your name khi focus vào chưa hiển thị field như yêu cầu
-          đề bài, các field hiện lên vẫn chưa đúng. Và khi focus chưa set
-          <code>background-color</code> của icon thành màu đen.
-        </p>
-        <p>
-          Nên thêm thuộc tính <code>require</code> vào các thẻ input để yêu cầu
-          người dùng cần nhập thông tin.
-        </p>
-        <p>
-          Cần thêm <code>outline: none</code> để loại bỏ outline mặc định của
-          input.
-        </p>
-        <p>
-          Các thuộc tính lặp lại ở css nên sử dụng cách viết kết hợp selector để
-          tránh lặp đi lặp lại một số thuộc tính giống nhau.
-        </p>
-        <p>
-          Icon * và icon x vẫn chưa hiện đúng khi focus vào input theo yêu cầu
-          đề bài.
-        </p>
-        <p>Thẻ <code>textarea</code> chưa xử lý <code>placeholder</code>.</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 2: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm rất tốt *.</p>
-        <p>
-          Chú ý về set width của từng khối là 30% ở đây tỉ lệ với màn hình do đó
-          nếu màn hình to thì width sẽ thay đổi làm cho bố cục bị kéo dãn không
-          tốt cho UI.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm tốt tuy nhiên bài 1 chưa
-        được tốt lắm cần hoàn thiện hơn.
-      </li>
-    </ul>
-    <hr />
-    <h2 id="-nguy-n-i-th-https-github-com-daithehh04-fullstack-tree-main-day5-">
-      <a
-        target="_blank"
-        href="https://github.com/daithehh04/fullstack/tree/main/day5"
-        >Nguyễn Đại Thế</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li><p>[x] Bài 1: Bài làm tốt *.</p></li>
-      <li><p>Chưa đổi font chữ placeholder của thẻ textarea.</p></li>
-      <li><p>Phần Subject cần để type là select chứ không phải text.</p></li>
-      <li>
-        <p>
-          Nên có thêm thuộc tính require ở các ô input để validate cho người
-          dùng thì tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li><p>[x] Bài 2: Bài làm rất tốt *.</p></li>
-      <li>
-        <p>
-          Nên cho icon + và - vào trong thẻ label để khi nhấn vào icon cũng có
-          thể mở nội dung.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 3: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm nhìn chung rất tốt, chỉ
-        cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-nguy-n-th-h-ng-h-https-github-com-ha752002-f8-fullstack-k2-tree-main-exercise-ex_24-6-"
-    >
-      <a
-        href="https://github.com/ha752002/f8-fullstack-k2/tree/main/Exercise/Ex_24-6"
-        >Nguyễn Thị Hồng Hà</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li><p>[x] Bài 1: Bài làm chưa tốt.</p></li>
-      <li>
-        <p>
-          Phần tiêu đề không đúng font &quot;Lobster&quot;, Phần text ngoài thẻ
-          span cũng chưa đúng font như yêu cầu đề bài.
-        </p>
-      </li>
-      <li>
-        <p>
-          Xử lý phần placeholder của các thẻ input và thẻ textarea chưa được tốt
-          về <code>font-size</code>, <code>color</code>, khoảng cách với các lề.
-          Cần cải thiện thêm.
-        </p>
-      </li>
-      <li>
-        <p>
-          Phần icon biểu tượng của input subject chiều cao đang cao hơn chiều
-          cao của input làm UI không đẹp, không chỉnh chu.
-        </p>
-      </li>
-      <li>
-        <p>
-          Phần popup cần cách một khoảng so với input như bản mẫu sẽ đẹp hơn.
-        </p>
-      </li>
-      <li>
-        <p>
-          Chưa làm chức năng khi focus vào input đổi icon * thành icon x ở các ô
-          input.
-        </p>
-      </li>
-      <li>
-        <p>Nên thay đổi icon mặc định của thẻ select cho giống với bản mẫu.</p>
-      </li>
-      <li>
-        <p>
-          Nên có thêm thuộc tính require ở các ô input để validate cho người
-          dùng thì tốt hơn.
-        </p>
-      </li>
-      <li><p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p></li>
-    </ul>
-    <pre><code class="lang-css">* {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">outline</span>: none;
+<p>Phần tử có class <code>layout_content</code> khi giãn màn hình rất xấu.</p>
+<p>Nên căn giữa <code>.layout_content</code> theo section. sau đó set max-width cho <code>.layout_content</code>.</p>
+<p>Bổ sung hiệu ứng shadow cho từng khối để giống với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm tốt, tuy nhiên cần tuân thủ theo bản mẫu về khoảng cách và độ lớn của các phần tử. Một số chỗ chưa chỉnh chu, cần khắc phục.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day5">Bùi Quang Trường</a></h2>
+<hr>
+<ul>
+<li>[x] Bài 1: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm rất tốt *</p>
+<p>Nên cho thêm thuộc tính <code>transition</code> để khi hover vào mỗi item sẽ mượt mà hơn không bị giật layout.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm nhìn chung rất tốt, chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/phamtiendat18/Fullstack-K2/tree/main/Day_05">Tiến Đạt</a></h2>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt</p>
+<p>Phần input của your name khi focus vào chưa hiển thị field như yêu cầu đề bài, các field hiện lên vẫn chưa đúng. Và khi focus chưa set <code>background-color</code> của icon thành màu đen.</p>
+<p>Nên thêm thuộc tính <code>require</code> vào các thẻ input để yêu cầu người dùng cần nhập thông tin.</p>
+<p>Cần thêm <code>outline: none</code> để loại bỏ outline mặc định của input.</p>
+<p>Các thuộc tính lặp lại ở css nên sử dụng cách viết kết hợp selector để tránh lặp đi lặp lại một số thuộc tính giống nhau.</p>
+<p>Icon * và icon x vẫn chưa hiện đúng khi focus vào input theo yêu cầu đề bài.</p>
+<p>Thẻ <code>textarea</code> chưa xử lý <code>placeholder</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm rất tốt *.</p>
+<p>Chú ý về set width của từng khối là 30% ở đây tỉ lệ với màn hình do đó nếu màn hình to thì width sẽ thay đổi làm cho bố cục bị kéo dãn không tốt cho UI.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm tốt tuy nhiên bài 1 chưa được tốt lắm cần hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day5">Nguyễn Đại Thế</a></h2>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *.</p>
+</li>
+<li>
+<p>Chưa đổi font chữ placeholder của thẻ textarea.</p>
+</li>
+<li>
+<p>Phần Subject cần để type là select chứ không phải text.</p>
+</li>
+</ul>
+<ul>
+<li>Nên có thêm thuộc tính require ở các ô input để validate cho người dùng thì tốt hơn.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm rất tốt *.</p>
+</li>
+<li>
+<p>Nên cho icon + và - vào trong thẻ label để khi nhấn vào icon cũng có thể mở nội dung.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm nhìn chung rất tốt, chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/ha752002/f8-fullstack-k2/tree/main/Exercise/Ex_24-6">Nguyễn Thị Hồng Hà</a></h2>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+</li>
+<li>
+<p>Phần tiêu đề không đúng font &quot;Lobster&quot;, Phần text ngoài thẻ span cũng chưa đúng font như yêu cầu đề bài.</p>
+</li>
+<li>
+<p>Xử lý phần placeholder của các thẻ input và thẻ textarea chưa được tốt về <code>font-size</code>, <code>color</code>, khoảng cách với các lề. Cần cải thiện thêm.</p>
+</li>
+<li>
+<p>Phần icon biểu tượng của input subject chiều cao đang cao hơn chiều cao của input làm UI không đẹp, không chỉnh chu.</p>
+</li>
+<li>
+<p>Phần popup cần cách một khoảng so với input như bản mẫu sẽ đẹp hơn.</p>
+</li>
+<li>
+<p>Chưa làm chức năng khi focus vào input đổi icon * thành icon x ở các ô input.</p>
+</li>
+<li>
+<p>Nên thay đổi icon mặc định của thẻ select cho giống với bản mẫu.</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>Nên có thêm thuộc tính require ở các ô input để validate cho người dùng thì tốt hơn.</p>
+</li>
+<li>
+<p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
+</li>
+</ul>
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 </code></pre>
-    <hr />
-    <ul>
-      <li>[x] Bài 2: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 3: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm tốt tuy nhiên phần xử lý
-        input ở bài 1 chưa chỉnh chu, cần dành thời gian hoàn thiện hơn.
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-nguy-n-minh-vi-t-https-github-com-nguyenminhviettt-f8_fullstack_k2-tree-main-day_05-"
-    >
-      <a
-        href="https://github.com/nguyenminhviettt/F8_Fullstack_K2/tree/main/day_05"
-        >Nguyễn Minh Việt</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li><p>[x] Bài 1: Bài làm chưa tốt.</p></li>
-      <li>
-        <p>
-          Phần input <code>yourname</code> hiện đang để đường viền và màu của
-          icon biểu tượng như lúc <code>hover</code> vào, điều này không đúng so
-          với bản mẫu, chỉ khi <code>hover</code> mới có hiệu ứng như vậy. Cần
-          chỉnh sửa.
-        </p>
-      </li>
-      <li>
-        <p>
-          Phần <code>textarea</code> cần xử lý tốt hơn chỗ icon * và icon x.
-        </p>
-      </li>
-      <li>
-        <p>
-          Icon * và icon x vẫn chưa hiện đúng và các field cũng chưa đúng chức
-          năng khi <code>focus</code> vào <code>input</code> theo yêu cầu đề
-          bài.
-        </p>
-      </li>
-      <li>
-        <p>
-          Các field khi <code>focus</code> vào hiện lên nếu để
-          <code>opacity</code> thì nó vẫn sẽ chiếm không gian điều đó nó sẽ che
-          đi phần <code>input</code> ở trên làm cho người dùng không nhấn vào
-          được gây cảm giác khó chịu. Đề xuất sử dụng thuộc tính
-          <code>display</code> thay cho <code>opacity</code>.
-        </p>
-      </li>
-      <li>
-        <p>
-          Việc dùng thẻ <code>input</code> có type là checkbox thì không cần
-          phải icon check mà mặc định <code>checkbox</code> khi check vào đã có
-          hiệu ứng check rồi. Việc thêm icon check vào mà không ẩn đi làm cho
-          người dùng hiểu là đã được check mặc dù không muốn. Cần xử lý tốt hơn.
-        </p>
-      </li>
-      <li>
-        <p>
-          Nên có thêm thuộc tính <code>require</code> ở các ô input để
-          <code>validate</code> cho người dùng thì tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 2: Bài làm tốt.</p>
-        <p>
-          Khi nhấn vào tiêu đề để hiện content chưa đổi icon + thành - như yêu
-          cầu của đề bài.
-        </p>
-        <p>
-          Nên cho icon + và icon - vào thẻ label để khi click vào icon vẫn có
-          thể mở content như mong muốn.
-        </p>
-        <p>
-          Một số thuộc tính css lặp lại nhiều lần nên kết hợp cách viết gộp
-          selector để tránh tình trạng lặp nhiều đoạn css giống nhau.
-        </p>
-        <p>
-          Phần content là thể hiện một đoạn text. Nên sử dụng thẻ
-          <code>&lt;p&gt;</code> thay cho <code>&lt;div&gt;</code>.
-        </p>
-        <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm tốt tuy nhiên phần xử lý input ở bài 1 chưa chỉnh chu, cần dành thời gian hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenminhviettt/F8_Fullstack_K2/tree/main/day_05">Nguyễn Minh Việt</a></h2>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+</li>
+<li>
+<p>Phần input <code>yourname</code> hiện đang để đường viền và màu của icon biểu tượng như lúc <code>hover</code> vào, điều này không đúng so với bản mẫu, chỉ khi <code>hover</code> mới có hiệu ứng như vậy. Cần chỉnh sửa.</p>
+</li>
+<li>
+<p>Phần <code>textarea</code> cần xử lý tốt hơn chỗ icon * và icon x.</p>
+</li>
+<li>
+<p>Icon * và icon x vẫn chưa hiện đúng và các field cũng chưa đúng chức năng khi <code>focus</code> vào <code>input</code> theo yêu cầu đề bài.</p>
+</li>
+<li>
+<p>Các field khi <code>focus</code> vào hiện lên nếu để <code>opacity</code> thì nó vẫn sẽ chiếm không gian điều đó nó sẽ che đi phần <code>input</code> ở trên làm cho người dùng không nhấn vào được gây cảm giác khó chịu. Đề xuất sử dụng thuộc tính <code>display</code> thay cho <code>opacity</code>.</p>
+</li>
+</ul>
+<ul>
+<li>Việc dùng thẻ <code>input</code> có type là checkbox thì không cần phải icon check mà mặc định <code>checkbox</code> khi check vào đã có hiệu ứng check rồi. Việc thêm icon check vào mà không ẩn đi làm cho người dùng hiểu là đã được check mặc dù không muốn. Cần xử lý tốt hơn.</li>
+</ul>
+<ul>
+<li>Nên có thêm thuộc tính <code>require</code> ở các ô input để <code>validate</code> cho người dùng thì tốt hơn.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt.</p>
+<p>Khi nhấn vào tiêu đề để hiện content chưa đổi icon + thành - như yêu cầu của đề bài.</p>
+<p>Nên cho icon + và icon - vào thẻ label để khi click vào icon vẫn có thể mở content như mong muốn.</p>
+<p>Một số thuộc tính css lặp lại nhiều lần nên kết hợp cách viết gộp selector để tránh tình trạng lặp nhiều đoạn css giống nhau.</p>
+<p>Phần content là thể hiện một đoạn text. Nên sử dụng thẻ <code>&lt;p&gt;</code> thay cho <code>&lt;div&gt;</code>.</p>
+<pre><code class="language-html">&lt;div class=&quot;content&quot;&gt;
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iusto natus
   neque autem hic eveniet pariatur ea. Excepturi, officiis animi? Voluptate
-  recusandae magni cupiditate, tenetur <span class="hljs-keyword">at</span> nisi aspernatur consectetur illum.
-&lt;/<span class="hljs-keyword">div</span>&gt;
+  recusandae magni cupiditate, tenetur at nisi aspernatur consectetur illum.
+&lt;/div&gt;
 </code></pre>
-        <p>Nên sửa thành</p>
-        <pre><code class="lang-html">&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"content"</span>&gt;
+<p>Nên sửa thành</p>
+<pre><code class="language-html">&lt;p class=&quot;content&quot;&gt;
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iusto natus
   neque autem hic eveniet pariatur ea. Excepturi, officiis animi? Voluptate
-  recusandae magni cupiditate, tenetur <span class="hljs-keyword">at</span> nisi aspernatur consectetur illum.
+  recusandae magni cupiditate, tenetur at nisi aspernatur consectetur illum.
 &lt;/p&gt;
 </code></pre>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm tốt *</p>
-        <p>
-          Chú ý về set width của từng khối là 30% ở đây tỉ lệ với màn hình do đó
-          nếu màn hình to thì width sẽ thay đổi làm cho bố cục bị kéo dãn không
-          tốt cho UI.
-        </p>
-        <p>
-          Chú ý khoảng cách giữa <code>box-content</code> và tiêu đề ở trên cần
-          giãn ra như bản mẫu.
-        </p>
-        <p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
-        <pre><code class="lang-css">* {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">outline</span>: none;
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *</p>
+<p>Chú ý về set width của từng khối là 30% ở đây tỉ lệ với màn hình do đó nếu màn hình to thì width sẽ thay đổi làm cho bố cục bị kéo dãn không tốt cho UI.</p>
+<p>Chú ý khoảng cách giữa <code>box-content</code> và tiêu đề ở trên cần giãn ra như bản mẫu.</p>
+<p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 </code></pre>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm chưa được chỉnh chu, cần
-        dành thời gian nhiều hơn để cải thiện và lưu ý một số lỗi ở trên để hoàn
-        thiện hơn.
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-nguy-n-th-tuy-t-https-github-com-xanhrii-k2-f8-fullstack-course-tree-master-rii_day05_css-"
-    >
-      <a
-        href="https://github.com/xanhrii/k2-f8-fullstack-course/tree/master/rii_day05_css"
-        >Nguyễn Thị Tuyết</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li>[x] Bài 1: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 2: Bài làm rất tốt *.</p>
-        <p>Có thể thêm phần đóng tab bằng cách click vào chính nó.</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 3: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <p>Đánh giá chung về bài tập về nhà: Bài làm rất tốt</p>
-    <hr />
-    <h2
-      id="-ph-m-d-ng-https-github-com-phamduongw-f8-fullstack-k2-tree-main-exercises-day-5-"
-    >
-      <a
-        href="https://github.com/phamduongw/f8-fullstack-k2/tree/main/exercises/day-5"
-        >Phạm Dương</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 1: Bài làm tốt *.</p>
-        <p>Chưa xử lý font chữ của thẻ textarea</p>
-        <p>
-          Nên có thêm thuộc tính require ở các ô input để validate cho người
-          dùng thì tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 2: Bài làm rất tốt *.</p>
-        <p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
-        <pre><code class="lang-css">* {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">outline</span>: none;
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm chưa được chỉnh chu, cần dành thời gian nhiều hơn để cải thiện và lưu ý một số lỗi ở trên để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/xanhrii/k2-f8-fullstack-course/tree/master/rii_day05_css">Nguyễn Thị Tuyết</a></h2>
+<hr>
+<ul>
+<li>[x] Bài 1: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm rất tốt *.</p>
+<p>Có thể thêm phần đóng tab bằng cách click vào chính nó.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<p>Đánh giá chung về bài tập về nhà: Bài làm rất tốt</p>
+<hr>
+<h2><a href="https://github.com/phamduongw/f8-fullstack-k2/tree/main/exercises/day-5">Phạm Dương</a></h2>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *.</p>
+<p>Chưa xử lý font chữ của thẻ textarea</p>
+<p>Nên có thêm thuộc tính require ở các ô input để validate cho người dùng thì tốt hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm rất tốt *.</p>
+<p>Nên reset css để loại bỏ các css mặc định của trình duyệt</p>
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 </code></pre>
-        <p>
-          Phần animation hơi chậm, khiến cho user cảm thấy mệt, trải nghiệm
-          người dùng sẽ kém đi. Nên để &lt;400ms là tốt nhất.
-        </p>
-        <p>
-          Tham khảo tại:
-          <a target="_blank" href="https://lawsofux.com/doherty-threshold/"
-            >https://lawsofux.com</a
-          >
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Bài 3: Chưa làm bài 3. (vừa commit lại lúc 14h50) Bài làm tốt :)
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm tốt, nhưng nộp repo rồi
-        mới commit bài 3 :)
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-nguy-n-duy-hi-u-https-github-com-hieuboss-f8-fullstack-k2-tree-main-html-lesson5-"
-    >
-      <a
-        href="https://github.com/HieuBoss/F8-fullstack-k2/tree/main/html/lesson5"
-        >Nguyễn Duy Hiếu</a
-      >
-    </h2>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 1: Bài làm chưa tốt.</p>
-        <p>
-          Kích thước của các thẻ input đang nhỏ hơn về chiều cao so với bản mẫu.
-        </p>
-        <p>
-          Các placeholder, value của các thẻ input và thẻ textarea đang dính sát
-          vào viền gây khó chịu cho người dùng.
-        </p>
-        <p>
-          Xử lý các kích thước font chữ trong thẻ input, thẻ textarea, text ở
-          ngoài phần checkbox không chỉnh chu, chỗ to chỗ nhỏ.
-        </p>
-        <p>
-          Khi hover vào thẻ input icon * không đổi màu chưa đúng với bản mẫu.
-        </p>
-        <p>
-          Có chức năng khi focus vào thẻ input hiện field nhưng kích thước và vị
-          trí đặt đang không hợp lý.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 2: Bài làm chưa tốt.</p>
-        <p>Chiều rộng của các tiêu đề nên để <code>width:100%</code>.</p>
-        <p>
-          Việc các tiêu đề đang dính sát vào viền gây khó chịu cho người dùng,
-          cần cải thiện.
-        </p>
-        <p>Bài làm quá thiếu chỉn chu, code lại</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm tốt *</p>
-        <p>Các khối có vẻ hơi nhỏ. Nên tăng size lên để dễ nhìn hơn.</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm đa phần cần chỉnh chu và
-        dành nhiều thời gian hơn để cải thiện.
-      </li>
-    </ul>
-    <hr />
-    <h2
-      id="-v-c-t-i-https-github-com-apeiron2-f8-fullstack-k2-tree-main-day_05-home-"
-    >
-      <a
-        href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/Day_05/home"
-        >Vũ Đức Tài</a
-      >
-    </h2>
-    <ul>
-      <li>Nên reset css để loại bỏ các css mặc định của trình duyệt</li>
-    </ul>
-    <pre><code class="lang-css">* {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">outline</span>: none;
+<p>Phần animation hơi chậm, khiến cho user cảm thấy mệt, trải nghiệm người dùng sẽ kém đi. Nên để &lt;400ms là tốt nhất.</p>
+<p>Tham khảo tại: <a href="https://lawsofux.com/doherty-threshold/">https://lawsofux.com</a></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Chưa làm bài 3. (vừa commit lại lúc 14h50) Bài làm tốt :)</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm tốt, nhưng nộp repo rồi mới commit bài 3 :)</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HieuBoss/F8-fullstack-k2/tree/main/html/lesson5">Nguyễn Duy Hiếu</a></h2>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+<p>Kích thước của các thẻ input đang nhỏ hơn về chiều cao so với bản mẫu.</p>
+<p>Các placeholder, value của các thẻ input và thẻ textarea đang dính sát vào viền gây khó chịu cho người dùng.</p>
+<p>Xử lý các kích thước font chữ trong thẻ input, thẻ textarea, text ở ngoài phần checkbox không chỉnh chu, chỗ to chỗ nhỏ.</p>
+<p>Khi hover vào thẻ input icon * không đổi màu chưa đúng với bản mẫu.</p>
+<p>Có chức năng khi focus vào thẻ input hiện field nhưng kích thước và vị trí đặt đang không hợp lý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm chưa tốt.</p>
+<p>Chiều rộng của các tiêu đề nên để <code>width:100%</code>.</p>
+<p>Việc các tiêu đề đang dính sát vào viền gây khó chịu cho người dùng, cần cải thiện.</p>
+<p>Bài làm quá thiếu chỉn chu, code lại</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *</p>
+<p>Các khối có vẻ hơi nhỏ. Nên tăng size lên để dễ nhìn hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm đa phần cần chỉnh chu và dành nhiều thời gian hơn để cải thiện.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/Day_05/home">Vũ Đức Tài</a></h2>
+<ul>
+<li>Nên reset css để loại bỏ các css mặc định của trình duyệt</li>
+</ul>
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 </code></pre>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 1: Bài làm chưa tốt.</p>
-        <p>Font chữ tiêu đề đang không đúng với bản mẫu(Hơi bé và hơi mỏng).</p>
-        <p>
-          Chưa có icon * ở trong các thẻ input, chức năng hover và chức năng
-          focus vào hiển thị như bản mẫu
-        </p>
-        <p>Sai màu: Icon trong bản mẫu màu trắng, trong bài đang để màu đen</p>
-        <p>
-          Icon của thẻ select đang để mặc định cần thay đổi để giống với yêu cầu
-          đề bài.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 2: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm tốt *.</p>
-        <p>Cần chú ý về độ rộng của các khối đang hẹp so với bản mẫu.</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x] Đánh giá chung về bài tập về nhà: Bài làm khá tốt cần xem lại một số
-        lỗi để cải thiện hơn.
-      </li>
-    </ul>
-    <hr />
-    <h2 id="-o-n-duy-chinh-https-duychinh-github-io-f8-fullstack-ks2-day-5-">
-      <a
-        target="_blank"
-        href="https://duychinh.github.io/f8-fullstack-KS2/Day-5"
-        >Đoàn Duy Chinh</a
-      >
-    </h2>
-    <ul>
-      <li>Nên reset css để loại bỏ các css mặc định của trình duyệt</li>
-    </ul>
-    <pre><code class="lang-css">* {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
-  <span class="hljs-attribute">outline</span>: none;
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+<p>Font chữ tiêu đề đang không đúng với bản mẫu(Hơi bé và hơi mỏng).</p>
+<p>Chưa có icon * ở trong các thẻ input, chức năng hover và chức năng focus vào hiển thị như bản mẫu</p>
+<p>Sai màu: Icon trong bản mẫu màu trắng, trong bài đang để màu đen</p>
+<p>Icon của thẻ select đang để mặc định cần thay đổi để giống với yêu cầu đề bài.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *.</p>
+<p>Cần chú ý về độ rộng của các khối đang hẹp so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm khá tốt cần xem lại một số lỗi để cải thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://duychinh.github.io/f8-fullstack-KS2/Day-5">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>Nên reset css để loại bỏ các css mặc định của trình duyệt</li>
+</ul>
+<pre><code class="language-css">* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 </code></pre>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 1: Bài làm tốt.</p>
-        <p>
-          Không nên để value mặc định cho các thẻ input vì khi người dùng nhập
-          sẽ phải xóa đi, nên sử dụng placeholder thay cho value.
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Bài 2: Bài làm rất tốt *.</li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>[x] Bài 3: Bài làm tốt *.</p>
-        <p>Cần chú ý về size của các icon đang bé so với bản mẫu.</p>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>[x] Đánh giá chung về bài tập về nhà: Bài làm khá tốt</li>
-    </ul>
-    <hr />
-  </body>
-</html>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt.</p>
+<p>Không nên để value mặc định cho các thẻ input vì khi người dùng nhập sẽ phải xóa đi, nên sử dụng placeholder thay cho value.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *.</p>
+<p>Cần chú ý về size của các icon đang bé so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm khá tốt</li>
+</ul>
+<hr>
+
+          <script src="../../../assets/js/pages.js" defer></script>
+        </body>
+      </html>
+    

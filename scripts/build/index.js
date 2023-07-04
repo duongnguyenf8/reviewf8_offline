@@ -1,11 +1,11 @@
 const { exec } = require("child_process");
 const { logSuccess, logError, logInfo } = require("../views");
 
-function runBuild() {
+async function runBuild() {
   const createListCommand = "python scripts/build/createList.py";
   const renderCommand = "node scripts/build/render.js";
 
-  exec(createListCommand, (error, stdout, stderr) => {
+  await exec(createListCommand, async (error, stdout, stderr) => {
     logInfo("Building data.json...");
 
     if (error) {
@@ -19,7 +19,7 @@ function runBuild() {
 
     logSuccess("createList.py completed.");
 
-    exec(renderCommand, (error, stdout, stderr) => {
+  await exec(renderCommand, (error, stdout, stderr) => {
       logInfo("Building index.html...");
 
       if (error) {

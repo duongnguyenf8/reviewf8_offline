@@ -1,542 +1,609 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
 
-    <script src="../../../assets/js/pages.js" defer></script>
-    <link
-      rel="shortcut icon"
-      href="../../../assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Duong - Review Day3_K1_Backend</title>
-  </head>
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <title>Backend_NodeJs_K1/Day2</title>
+          <link rel="stylesheet" href="../../../assets/css/style.css" />
+        </head>
+        <body>
+          <h1>Dương test bài học viên Backend NodeJS Day1</h1>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise.git">Nguyễn Minh Hiếu</a></h2>
+<pre><code>Sớm nhất *
+</code></pre>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Lỗi:</p>
+<pre><code class="language-js">total = 15000 + 5 * 13500 + (km - 5) * price;
+</code></pre>
+<p>Đúng phải là <code>4 * 13500</code> vì từ 1km đến 5km là 4km chứ không phải 5km.</p>
+<p>Góp ý</p>
+<ul>
+<li>
+<p>Khai báo biến <code>discount</code> nhưng lại không dùng đến cần tối ưu hơn.</p>
+</li>
+<li>
+<p>Nên check từ km &gt; 0 vì km &lt;= 0 đều tính là không hợp lệ.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Chưa check trường hợp n &lt; 0 và n = 0. Cần kiểm tra kỹ lưỡng các trường hợp.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt *.</p>
+<p>Cần bổ sung điều kiện n &lt;= 0.</p>
+<p>Các phép so sánh nên dùng toán tử <code>===</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tốt, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/MinhTeyer/F8-BackEnd-K1/tree/main/Day-2">Minh Dương</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Vẫn đang hiểu sai yêu cầu đề bài, cần tính theo kiểu cộng dồn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt.</p>
+<p>Nên bổ sung điều kiện n &lt; 0 và n = 0 vào sẽ chặt chẽ hơn.'</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt.</p>
+<p>Chỉ cần lặp đến <code>a / 2</code> là được không cần đến <code>a - 1</code> cần tối ưu hơn vì nếu kiểm tra số to thì có thể tốn nhiều tài nguyên.</p>
+<p>Các phép so sánh nên dùng toán tử <code>===</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/blob/main/HW2/js/hw02.js">Phạm Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra trường hợp n &lt; 0 và n = 0 sẽ thông báo là không hợp lệ còn các trường hợp còn lại sẽ thực hiện yêu cầu bài toán.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] [Bài 2]</li>
+</ul>
+<p>Bài làm rất tốt *</p>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt.</p>
+<p>Chưa kiểm tra điều kiện n &lt; 0 và n = 0.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Chưa kiểm tra trường hợp số nguyên âm và số 0, ngoài ra cần check nếu là số nguyên mới thực hiện còn không là số nguyên sẽ báo không hợp lệ.</p>
+<p>Các phép so sánh nên dùng toán tử <code>===</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tốt, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1">Bao Pham Van</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Phần phép tính km &gt; 120 là tính theo 10% tổng số tiền, vậy cần tách điều kiện <code>else if (km &gt;= 120)</code> ra khỏi các điều kiện khác và được kiểm tra sau khi đã tính toán tổng tiền</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như a &lt; 0, a === 0, a === 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Số nguyên là tập hợp các số tự nhiên, bao gồm cả số dương, số âm và số 0. Số nguyên không thể được biểu diễn dưới dạng phân số hoặc số thập phân, mà chỉ được biểu diễn dưới dạng các con số nguyên từ 0 trở đi và các số âm từ -1 trở đi.</p>
+<p>Số nguyên tố là số tự nhiên lớn hơn 1, không chia hết cho số nguyên dương nào ngoài 1 và chính nó. Nói cách khác, số nguyên tố là những số chỉ có đúng hai ước số là 1 và chính nó. Các số tự nhiên lớn hơn 1 không phải là số nguyên tố được gọi là hợp số.</p>
+<p>Bài làm yêu cầu kiểm tra số nguyên tố chứ không phải là số nguyên. Làm bài sai.</p>
+<p>Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</p>
+<ul>
+<li>Cần cấu trúc lại folder bài tập, tạo folder riêng cho từng bài tập.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi2">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+<p>Chưa có phép kiểm tra số bằng 0 thì sẽ thông báo là không hợp lệ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như a &lt; 0, a === 0, a === 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<h2><a href="https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day%202/js/ex01.js">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như a &lt; 0, a === 0, a === 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</p>
+<p>* Lưu ý, tên folder không nên có dấu cách, nên dùng dấu gạch ngang hoặc dấu gạch dưới thay thế.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-2">Nguyễn Nhất</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Biến price trong <code>total = kWh * price;</code> chưa được khai báo.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như N === 0 &amp;&amp; N === 1 =&gt; N = 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm không tốt</p>
+<p>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</p>
+<p>Điều kiện trong vòng lặp for nên là <code>i &lt;= Math.sqrt(number)</code> thay vì <code>i &lt; Math.sqrt(number)</code> để đảm bảo rằng tất cả các ước số của <code>number</code> đều được kiểm tra.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tốt, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<h2><a href="https://github.com/tuilahieu/nodejs/blob/main/exercise/day2/exercise.js">Trần Văn Hiểu</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nếu nhập một giá trị âm cho number, code sẽ bị lặp vô hạn vì điều kiện cloneOfNumber &gt; 0 sẽ luôn đúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Thay vì lặp từ <strong>number - 1 đến 2</strong>, thì có thể lặp từ <strong>2 đến căn bậc hai của number</strong>. Điều này sẽ giúp giảm thời gian chạy của code mà vẫn cho kết quả chính xác.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</p>
+<p>* Lưu ý:</p>
+<ul>
+<li>
+<p>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</p>
+</li>
+<li>
+<p>Clean code không phải là code ngắn gọn, càng ngắn càng tốt, mà là càng dễ để người khác đọc hiểu nhanh càng tốt, càng dễ bảo trì càng tốt. Như đoạn code trong bài, nếu trên thực tế thì quá khó để hiểu một cách nhanh nhất và thực hiện bảo trì, nâng cấp tốt nhất.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi2">Phương</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Nửa phần trên làm sai công thức nhưng nửa dưới lại đúng công thức =&gt; Kết quả vẫn sai.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tốt, cần chú ý đến đề bài và cách giải quyết bài toán hơn</p>
+<p>* Lưu ý:</p>
+<ul>
+<li>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi2">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng thêm hàm isNaN để kiểm tra dữ liệu nhập vào có phải là số hay không: <code>!Number.isNaN(parseFloat(kWh))</code></p>
+<p>Có thể sử dụng một mảng để lưu giá trị các mức giá và sử dụng vòng lặp để tính toán giá trị cuối cùng, thay vì viết nhiều nhánh if...else như hiện tại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Biến <strong>i</strong> và biến <strong>a</strong> chưa được khai báo bằng bất cứ kiểu nào trong [var, let, const]</p>
+<p>Nên so sánh bằng 3 dấu bằng <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tốt, cần chú ý đến đề bài và cách giải quyết bài toán hơn</p>
+<p>* Lưu ý:</p>
+<ul>
+<li>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/NgoMinhDuc28112001/f8-exercise-k1/tree/main/bai_tap_buoi_2">Minh Đức Ngô</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng cấu trúc <code>if else if</code> để giảm số lượng câu lệnh <code>if else</code> và tránh các lỗi không mong muốn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng một mảng để lưu giá trị các mức giá và sử dụng vòng lặp để tính toán giá trị cuối cùng, thay vì viết nhiều nhánh if...else như hiện tại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Các trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Dòng <code>console.log(count);</code> là không cần thiết vì đề bài không yêu cầu in ra.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm rất tốt, cần chú ý để có thể tối ưu code tốt hơn và xem được các trường hợp đặc biệt.</li>
+</ul>
+<h2><a href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB2">Dương Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt</p>
+<p>Nên đặt tên biến là tiếng Anh, nếu không thể thì tạm thời dùng tiếng Việt. Nhưng tiếng gì thì cũng đừng viết tắt quá đà <code>gthua</code> =&gt; <code>giaiThua</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tạm ổn, cần chú ý đến yêu cầu đề bài và nghiệp vụ của bài toán để làm bài tốt hơn, cũng như đặt tên biến phù hợp hơn.</li>
+</ul>
+<h2><a href="https://github.com/namdctry/f8-backend-k1.git">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Phần hiển thị giá điện có vẻ không cần thiết.</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nên kiểm tra trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+<p>Có thể thay đổi điều kiện của vòng lặp từ <code>i &lt; n/2 - 1</code> thành <code>i &lt;= Math.sqrt(n)</code> để giảm thời gian chạy của đoạn code</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý đến yêu cầu đề bài và nghiệp vụ của bài toán để làm bài tốt hơn.</p>
+<p>* Lưu ý: Cần cấu trúc lại folder bài tập và trên lớp, code giảng viên riêng để dễ quản lý.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenducthanh04/f8-backend-k1.git">Thanh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Điều kiện <code>1 &lt; soKm &lt;= 5</code> không hoạt động như mong đợi trong JavaScript. Nó sẽ được tính toán như sau: <code>(1 &lt; soKm) &lt;= 5</code>, và kết quả sẽ luôn là <strong>true</strong> bất kể giá trị của <strong>soKm</strong>.</p>
+<p>Không có kiểm tra xem soKm có phải là một số dương hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai tương tự bài 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nên kiểm tra trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý đến cú pháp của JS để làm bài tốt hơn.</p>
+<p>* Lưu ý: Cần cấu trúc lại folder bài tập, quá khó hiểu.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/Buoi2">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nên đặt tên biến có tính tường minh hơn. Không nên đặt khó hiểu và chung chung như <code>S</code>, <code>A</code>.</p>
+<p>Nên kiểm tra trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm không tốt</p>
+<p>Phép so sánh đang sử dụng gán thay vì so sánh.</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+<p>không nên sử dụng toán tử nhỏ hơn hoặc bằng (&lt;=) thay vì toán tử nhỏ hơn (&lt;) vì chúng ta cũng cần kiểm tra nếu x chia hết cho căn bậc hai của x.</p>
+<p>Vòng lặp for phải ngắt sau khi tìm thấy ước số của x, nếu không nó sẽ tiếp tục ghi thông báo nói rằng x là số nguyên tố ngay cả sau khi tìm thấy ước số.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý đến cú pháp của JS để làm bài tốt hơn.</p>
+<p>* Lưu ý: Cần cấu trúc lại folder bài tập, quá khó hiểu.</p>
+</li>
+</ul>
 
-  <body>
-    <h1>Review Bài lớp Backend NodeJs K1</h1>
-    <h2 id="d-ng-test-b-i-h-c-vi-n-backend-nodejs-day1">
-      Dương test bài học viên Backend NodeJS Day1
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/hiusnguyen201/F8-Exercise.git"
-            >Hiếu Nguyễn Minh</a
-          >
-        </p>
-        <p>Sớm nhất *</p>
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4:</p>
-    <p>
-      Nếu 1 số là <code>0</code> và 1 số là số <code>dương</code> vẫn ra
-      <code>true</code> mặc dù <code>0</code> không phải là số dương
-    </p>
-    <hr />
-    <p>Bài 5: Làm sai.</p>
-    <p>Thứ tự không tăng dần mà giảm dần</p>
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý tính đến nhiều trường hợp
-      khác nhau, code lại bài 5
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a target="_blank" href="https://github.com/Dangmanh2001/f8_BE_k1"
-          >Đào Đăng Mạnh</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm <strong>Không Tốt</strong></p>
-    <p>Sai đề bài vì không yêu cầu trường hợp nào ưu tiên</p>
-    <hr />
-    <p>Bài 3:</p>
-    <p>Khi có ít nhất số là 0, bài làm sai</p>
-    <p>
-      Có vẻ hầu hết các trường hợp đặc biệt là lấy số <code>a</code> nếu nó khác
-      0
-    </p>
-    <p>Bài này có thể tối ưu một cách tốt hơn như:</p>
-    <pre><code class="lang-js"><span class="hljs-keyword">var</span> <span class="hljs-built_in">max</span> = a;
-<span class="hljs-keyword">if</span> (b &gt; <span class="hljs-built_in">max</span>) {
-  <span class="hljs-built_in">max</span> = b;
-}
-<span class="hljs-keyword">if</span> (<span class="hljs-built_in">c</span> &gt; <span class="hljs-built_in">max</span>) {
-  <span class="hljs-built_in">max</span> = <span class="hljs-built_in">c</span>;
-}
-log(<span class="hljs-string">"Số lớn nhất là "</span> + <span class="hljs-built_in">max</span>);
-</code></pre>
-    <hr />
-    <p>Bài 4:</p>
-    <p>
-      Khi có ít nhất 1 số là 0, bài làm sai (Chưa tính tới trường hợp ít nhất 1
-      số là 0)
-    </p>
-    <p>Bài này có thể tối ưu một cách tốt hơn như:</p>
-    <pre><code class="lang-js"><span class="hljs-keyword">if</span> (a * b &gt; <span class="hljs-number">0</span>) {
-  <span class="hljs-built_in">log</span>(<span class="hljs-string">"a và b cùng dấu (Âm và Âm) hoặc (Dương và Dương)"</span>);
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a * b &lt; <span class="hljs-number">0</span>) {
-  <span class="hljs-built_in">log</span>(<span class="hljs-string">"a và b trái dấu (Âm và Dương)"</span>);
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a + b === <span class="hljs-number">0</span>) {
-  <span class="hljs-built_in">log</span>(<span class="hljs-string">"a và b cùng bằng 0 (Cùng dấu)"</span>);
-} <span class="hljs-keyword">else</span> {
-  <span class="hljs-built_in">log</span>(<span class="hljs-string">"a hoặc b bằng 0 (Khác dấu)"</span>);
-}
-</code></pre>
-    <hr />
-    <p>Bài 5: Bài làm <strong>Không tốt</strong></p>
-    <p>
-      Đánh giá chung bài tập về nhà: Cần chú ý nhiều hơn đến các trường hợp đặc
-      biệt, cần tự self-test lại bài làm trước khi nộp
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/MinhTeyer/F8-BackEnd-K1/tree/main/Day-1"
-          >Minh Dương</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm <strong>Không Tốt</strong></p>
-    <p>Sai đề bài vì không yêu cầu trường hợp nào ưu tiên</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4:</p>
-    <p>Thiếu case trường hợp đặc biệt, 1 số hoặc cả 2 số là 0</p>
-    <hr />
-    <p>Bài 5: Bài làm rất tốt *</p>
-    <hr />
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý tính đến nhiều trường hợp
-      đặc biệt khác nhau
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/maiduchien23/F8-BE/tree/main/f8_nodejs/homeworld"
-          >Mai Đức Hiền</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3:</p>
-    <p>Nếu <code>a = 0</code>, <code>b = 0</code> thì bài làm sai</p>
-    <hr />
-    <p>Bài 4:</p>
-    <p>Thiếu check case trường hợp đặc biệt, 1 số hoặc cả 2 số là 0</p>
-    <hr />
-    <p>Bài 5: Bài làm tốt</p>
-    <p>Thiếu case 2 hoặc 3 số bằng nhau</p>
-    <hr />
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý tính đến nhiều trường hợp
-      đặc biệt khác nhau
-    </p>
-    <p>Sai chính tả <code>homeworld</code> =&gt; <code>homework</code></p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-1"
-          >Nguyễn Nhất</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3:</p>
-    <p>Nếu <code>a = 0</code>, <code>b = 0</code> thì bài làm sai</p>
-    <hr />
-    <p>Bài 4:</p>
-    <p>Thiếu check case trường hợp đặc biệt, 1 số hoặc cả 2 số là 0</p>
-    <hr />
-    <p>Bài 5: Bài làm tốt</p>
-    <p>Thiếu case 2 hoặc 3 số bằng nhau</p>
-    <hr />
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý tính đến nhiều trường hợp
-      đặc biệt khác nhau
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/NgoMinhDuc28112001/f8-exercise-k1/tree/main/bai_tai_buoi_1"
-          >Minh Đức Ngô</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm tốt *</p>
-    <p>
-      Sau khi khai báo nên gán luôn để tránh các lôi không mong muốn như
-      undefined, null, NaN
-    </p>
-    <hr />
-    <p>Bài 2: Bài làm tốt *</p>
-    <p>
-      Việc gom nhóm <code>5**10</code> vào cặp ngoặc đơn là không cần thiết vì
-      khi tính đúng quy tắc nhân/chia trước cộng/trừ sau từ trái qua phải thì
-      phép tính đó được thực hiện đầu tiên rồi.
-    </p>
-    <hr />
-    <p>Bài 3:</p>
-    <p>
-      Nếu <code>a === b &amp;&amp; a &gt; c</code>, <code>c = any</code> thì
-      cách 1 làm sai
-    </p>
-    <p>
-      Nếu <code>a &lt;= 0</code>, <code>b &lt;= 0</code>,
-      <code>c = any</code> thì cách 2 làm sai
-    </p>
-    <hr />
-    <p>Bài 4: Bài làm <strong>Không tốt</strong></p>
-    <p>
-      Điều kiện đó chỉ đúng ở 1 trường hợp quá nhỏ. Nếu 2 số cùng dấu nhưng
-      không bằng nhau vẫn bị coi là khác dấu
-    </p>
-    <hr />
-    <p>Bài 5: Bài làm <strong>Không tốt</strong></p>
-    <p>Quá thủ công. Nếu có nhiều số hơn thì sẽ rất khó để làm</p>
-    <p>Nếu cả 3 số là 0 thì không check được.</p>
-    <hr />
-    <p>
-      Đánh giá chung bài tập về nhà: Cần làm tối ưu hơn, tính toán tốt hơn để
-      tránh các lỗi không mong muốn
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVN"
-          >Bao Pham Van</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 5: Bài làm rất tốt *</p>
-    <hr />
-    <p>Đánh giá chung bài tập về nhà: Bài làm rất tốt *</p>
-    <hr />
-    <h2 id="qu-n-test-b-i-h-c-vi-n-backend-nodejs-day1">
-      Quân test bài học viên Backend NodeJS Day1
-    </h2>
-    <ul>
-      <li>
-        [x]
-        <a target="_blank" href="https://github.com/namdctry/f8-backend-k1"
-          >Nam Nguyen</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Làm sai yêu cầu đề bài.</p>
-    <p>
-      Đề bài yêu cầu không dùng biến trung gian nhưng vẫn dùng biến trung gian
-      để đổi chỗ hai biến.
-    </p>
-    <p>Đề xuất phương pháp:</p>
-    <pre><code class="lang-js">let a = <span class="hljs-number">3</span>,
-  <span class="hljs-keyword">b </span>= <span class="hljs-number">2</span><span class="hljs-comment">;</span>
-
-a = a + <span class="hljs-keyword">b </span>- <span class="hljs-keyword">b;
-</span><span class="hljs-keyword">b </span>= a + <span class="hljs-keyword">b </span>- a<span class="hljs-comment">;</span>
-
-console.log(a, <span class="hljs-keyword">b);</span>
-</code></pre>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm tốt *</p>
-    <p>
-      Cần chú ý về đặt tên biến cho tường minh hơn. Ở đây cần tìm số lớn nhất
-      nên thay biến s bằng biến max.
-    </p>
-    <p>
-      Việc đặt biến tường minh giúp cho sau này đọc lại code sẽ dễ hiểu hơn.
-    </p>
-    <hr />
-    <p>Bài 4: Bài làm chưa tốt</p>
-    <p>
-      Output chưa đúng yêu cầu đề bài: Cần log ra kết quả là hai số cùng dấu hay
-      khác dấu chứ không phải log 2 số a, b
-    </p>
-    <p>Chưa xét đến trường hợp 1 trong 2 số bằng 0 hoặc cả 2 số bằng 0.</p>
-    <p>Đề xuất: Thêm trường hợp a hoặc b hoặc cả 2 số bằng 0.</p>
-    <hr />
-    <p>Bài 5: Bài làm rất tốt *</p>
-    <p>
-      Đánh giá chung: Tốt, cần chú ý đến nhiều trường hợp để clear hết tất cả
-      các trường hợp có thể xảy ra. Code lại bài 1.
-    </p>
-    <p>
-      Không nên khai báo 1 biến chung cho cả 5 bài, nên khai báo biến riêng cho
-      mỗi bài, coi mỗi bài là một chương trình riêng.
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/Buoi1"
-          >Nguyễn Quang Minh</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4: Bài làm chưa tốt</p>
-    <p>Chưa xét đến trường hợp 1 trong 2 số bằng 0 hoặc cả 2 số bằng 0.</p>
-    <p>Đề xuất: Thêm trường hợp a hoặc b hoặc cả 2 số bằng 0.</p>
-    <hr />
-    <p>Bài 5: Bài làm tốt *</p>
-    <p>
-      Trên thực tế không nên sử dụng toán tử gán trong biểu thức. Điều này làm
-      code khó hiểu.
-    </p>
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý tính đến nhiều trường hợp
-      đặc biệt khác nhau
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/tuilahieu/nodejs/blob/main/exercise/day1/exercise.js"
-          >Trần Văn Hiểu</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm chưa tốt</p>
-    <p>Nếu một trong hai số là 0 thì sẽ không thực hiện được phép chia.</p>
-    <p>Đề xuất: Có thể thay toán tử / và toán tử * thành 2 toán tử + và -</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm chưa tốt</p>
-    <p>
-      Sai nếu a = b = 5 và c = 3. Cần xét đến trường hợp 2 trong 3 số bằng nhau.
-    </p>
-    <hr />
-    <p>Bài 4: Bài làm chưa tốt</p>
-    <p>Chưa xét đến trường hợp 1 trong 2 số bằng 0 hoặc cả 2 số bằng 0.</p>
-    <hr />
-    <p>Bài 5: Bài làm chưa tốt</p>
-    <p>Nếu một trong 2 số bằng 0 sẽ không thể thực hiện phép chia.</p>
-    <p>
-      Đề xuất: Sử dụng cách đổi chỗ 2 số đơn giản hơn như dùng biến trung gian.
-    </p>
-    <p>
-      Đánh giá chung bài tập về nhà: Bài làm đa phần chưa tốt cần chú ý hơn về
-      một số trường hợp đặc biệt.
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB1"
-          >Dương Trung Kiên</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4: Bài làm chưa tốt</p>
-    <p>Chưa xét đến trường hợp 1 trong 2 số bằng 0 hoặc cả 2 số bằng 0.</p>
-    <hr />
-    <p>Bài 5: Bài làm rất tốt *</p>
-    <p>
-      Đánh giá chung bài tập về nhà: Bài làm đa phần khá tốt, chỉ cần lưu ý một
-      số trường hợp đặc biệt ở bài 4.
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/nguyenducthanh04/f8-backend-k1.git"
-          >Thanh Nguyễn</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4: Bài làm chưa tốt</p>
-    <p>Chưa xét đến trường hợp 1 trong 2 số bằng 0 hoặc cả 2 số bằng 0.</p>
-    <hr />
-    <p>Bài 5: Bài làm rất tốt *</p>
-    <p>
-      Đánh giá chung bài tập về nhà: Bài làm đa phần khá tốt, chỉ cần lưu ý một
-      số trường hợp đặc biệt ở bài 4.
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a target="_blank" href="https://github.com/phuongnd168/back-end-f8"
-          >Phương</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm chưa tốt</p>
-    <p>Chưa xét đến trường hợp có 2 số hoặc cả 3 số bằng nhau.</p>
-    <p>
-      Đề xuất: Nên gán biến max vào một trong ba số rồi so sánh với 2 số còn lại
-      để tìm ra số lớn nhất. Như vậy sẽ không cần phải xét nhiều trường hợp.
-    </p>
-    <pre><code class="lang-js"><span class="hljs-keyword">var</span> <span class="hljs-built_in">max</span> = a;
-<span class="hljs-keyword">if</span> (b &gt; <span class="hljs-built_in">max</span>) {
-  <span class="hljs-built_in">max</span> = b;
-}
-<span class="hljs-keyword">if</span> (<span class="hljs-built_in">c</span> &gt; <span class="hljs-built_in">max</span>) {
-  <span class="hljs-built_in">max</span> = <span class="hljs-built_in">c</span>;
-}
-console.log(`<span class="hljs-type">S</span>ố lớn nhất trong <span class="hljs-number">3</span> số là ${<span class="hljs-built_in">max</span>}`);
-</code></pre>
-    <hr />
-    <p>Bài 4: Tốt</p>
-    <p>Nếu 2 số cùng là 0 thì vẫn được coi là cùng dấu</p>
-    <p>Nếu chỉ 1 trong 2 số là 0 thì được coi là khác dấu</p>
-    <hr />
-    <p>Bài 5: Bài làm chưa tốt</p>
-    <p>
-      Không nên xét tất cả các trường hợp như vậy, cần phải có logic để xử lý
-      nếu đề bài yêu cầu sắp xếp nhiều số.
-    </p>
-    <p>Đề xuất: Hoán đổi vị trí của các số để sắp xếp theo đúng thứ tự.</p>
-    <pre><code class="lang-js">if (a &gt; <span class="hljs-keyword">b) </span>{
-  temp = a<span class="hljs-comment">;</span>
-  a = <span class="hljs-keyword">b;
-</span>  <span class="hljs-keyword">b </span>= temp<span class="hljs-comment">;</span>
-}
-if (<span class="hljs-keyword">b </span>&gt; c) {
-  temp = <span class="hljs-keyword">b;
-</span>  <span class="hljs-keyword">b </span>= c<span class="hljs-comment">;</span>
-  c = temp<span class="hljs-comment">;</span>
-}
-if (a &gt; <span class="hljs-keyword">b) </span>{
-  temp = a<span class="hljs-comment">;</span>
-  a = <span class="hljs-keyword">b;
-</span>  <span class="hljs-keyword">b </span>= temp<span class="hljs-comment">;</span>
-}
-</code></pre>
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý một số trường hợp đặc biệt
-      và cần xử lý logic ở bài 5 chứ không nên liệt kê tất cả các trường hợp.
-      Code lại bài 5.
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi1"
-          >Trần Anh Đức</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm sai</p>
-    <p>Trong JavaScript không có toán tử ^.</p>
-    <p>Đề xuất: Sử dụng hàm</p>
-    <pre><code class="lang-js">Math.pow()<span class="hljs-comment">;</span>
-</code></pre>
-    <p>hoặc toán tử ** để giải quyết.</p>
-    <hr />
-    <p>Bài 3: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 4: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 5: Bài làm rất tốt *</p>
-    <p>
-      Đánh giá chung bài tập về nhà: Bài làm tốt, Cần đọc lại về các toán tử
-      trong JavaScript.
-    </p>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/palkma-byte/f8-backend-k1/blob/main/Bai-Ve-Nha-Buoi1/js/script.js"
-          >Phạm Hoàng</a
-        >
-      </li>
-    </ul>
-    <p>Bài 1: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 2: Bài làm rất tốt *</p>
-    <hr />
-    <p>Bài 3: Bài làm chưa tốt</p>
-    <p>
-      Sai nếu a = b = 5 và c = 3. Cần xét đến trường hợp 2 trong 3 số bằng nhau.
-    </p>
-    <hr />
-    <p>Bài 4: Bài làm chưa tốt</p>
-    <p>Chưa xét đến trường hợp 1 trong 2 số bằng 0 hoặc cả 2 số bằng 0.</p>
-    <hr />
-    <p>Bài 5: Bài làm tốt *</p>
-    <p>
-      Đánh giá chung bài tập về nhà: Tốt, cần chú ý tính đến nhiều trường hợp
-      khác nhau.
-    </p>
-  </body>
-</html>
+          <script src="../../../assets/js/pages.js" defer></script>
+        </body>
+      </html>
+    

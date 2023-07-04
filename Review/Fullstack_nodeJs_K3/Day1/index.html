@@ -1,2306 +1,1482 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
 
-    <script src="../../../assets/js/pages.js" defer></script>
-    <link
-      rel="shortcut icon"
-      href="../../../assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Duong - Review Day2_K3</title>
-  </head>
-  <body>
-    <h1 id="d-ng-nh-gi-b-i-h-c-vi-n">Dương đánh giá bài học viên</h1>
-    <h2
-      id="-17-ph-v-n-c-https-github-com-phivanduc-f8-fullstack-k3-tree-main-day-1-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1"
-        >17. Phí Văn Đức</a
-      >
-    </h2>
-    <pre><code>Sớm nhất.
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <title>Fullstack_nodeJs_K3/Day1</title>
+          <link rel="stylesheet" href="../../../assets/css/style.css" />
+        </head>
+        <body>
+          <h1>Dương đánh giá bài học viên</h1>
+<h2><a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1">17. Phí Văn Đức</a></h2>
+<pre><code>Sớm nhất.
 </code></pre>
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1/Exercise-1"
-          >Bài 1</a
-        >
-        <ul>
-          <li>
-            Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-            Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai
-            semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử
-            dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần
-            ngắt dòng.
-            <pre><code class="lang-html">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt; &lt;<span class="hljs-keyword">br</span> /&gt;
-&lt;<span class="hljs-keyword">br</span> /&gt;
+<ul>
+<li>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1/Exercise-1">Bài 1</a>
+<ul>
+<li>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;Enter Email&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;
 </code></pre>
-            <ul>
-              <li>
-                Đề xuất sửa thành:
-                <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">div</span> style=<span class="hljs-string">"margin-top: 16px;"</span>&gt;
-&lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt;
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;input type=&quot;email&quot; placeholder=&quot;Enter Email&quot; /&gt;
 &lt;/div&gt;
 </code></pre>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1/Exercise-2"
-          >Bài 2</a
-        >
-        <ul>
-          <li>
-            Các thẻ heading nên tuân theo quy luật semantic. Chỉ sử dụng 1 thẻ
-            <code>h1</code>, các thẻ heading tiếp theo phải được sắp xếp theo
-            thứ tự tăng dần.
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1/Exercise-2">Bài 2</a>
+<ul>
+<li>Các thẻ heading nên tuân theo quy luật semantic. Chỉ sử dụng 1 thẻ <code>h1</code>, các thẻ heading tiếp theo phải được sắp xếp theo thứ tự tăng dần.<pre><code class="language-html">&lt;h3&gt;UI/UX Design&lt;/h3&gt;
 </code></pre>
-            <ul>
-              <li>
-                Đề xuất sửa thành:
-                <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;UI/UX Design&lt;/h2&gt;
 </code></pre>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1/Exercise-3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng. Nên sử dụng thẻ
-              <code>&lt;p&gt;</code> để hiển thị đoạn chữ đó.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-1/Exercise-3">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;p&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;h2&gt;Header&lt;/h2&gt;
+&lt;/header&gt;
 ...
-<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Slider<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+&lt;section class=&quot;slider&quot;&gt;
+  &lt;h3&gt;Slider&lt;/h3&gt;
+&lt;/section&gt;
 ...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+&lt;footer&gt;
+  &lt;h2&gt;Header&lt;/h2&gt;
+&lt;/footer&gt;
 </code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;p&gt;Header&lt;/p&gt;
+&lt;/header&gt;
 ...
-<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Slider<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+&lt;section class=&quot;slider&quot;&gt;
+  &lt;p&gt;Slider&lt;/p&gt;
+&lt;/section&gt;
 ...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+&lt;footer&gt;
+  &lt;p&gt;Header&lt;/p&gt;
+&lt;/footer&gt;
 </code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>h2</code>
-                <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
-&lt;a href=<span class="hljs-string">"#!"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-&lt;/<span class="hljs-symbol">h2</span>&gt;
-</code></pre>
-              </li>
-              <li>
-                Đề xuất sửa thành:
-                <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-&lt;a href=<span class="hljs-string">"#!"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-              </li>
-              <li>
-                Sai chính tả <code>Havard</code> =&gt; <code>Harvard</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý rất nhiều vào
-          semantic, cách phân tích đề bài. Cần chú ý đến các lỗi chính tả, sai
-          ngữ pháp.
-        </p>
-        <p>*Lưu ý: Cần format lại toàn bộ code.</p>
-      </li>
-    </ul>
-    <h2
-      id="-tr-n-nh-tr-ng-https-github-com-trandinhtrongg-f8_fullstack_k3-tree-3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4-f8-offline-day1-"
-    >
-      <a
-        href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1"
-        >Trần Đình Trọng</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1/Bai1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-<span class="hljs-comment">&lt;!-- xuống dòng --&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">div</span> style=<span class="hljs-string">"margin-top: 16px;"</span>&gt;
-  &lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"button"</span> value=<span class="hljs-string">"RESQUEST INVITE"</span> /&gt;
-&lt;/div&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1/Bai2"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Sử dụng sai hoàn toàn cấu trúc ul, li</li>
-          <li>Đã nhắc về thẻ <code>br</code> tuy nhiên vẫn tái sử dụng</li>
-        </ul>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./assets/images/leaf.png"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"leaf"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
-      libero perspiciatis illo accusamus ab!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-
-...
-
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./assets/images/lv.png"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"lv"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Digital Marketing<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
-      libero perspiciatis illo accusamus ab!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
-        <ul>
-          <li>Đề xuất sửa thành:</li>
-        </ul>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./assets/images/leaf.png"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"leaf"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
-      libero perspiciatis illo accusamus ab!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  ...
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./assets/images/lv.png"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"50"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"lv"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Digital Marketing<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
-      libero perspiciatis illo accusamus ab!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1/Bai3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            Sử dụng rất nhiều thẻ <code>h1</code> trong cùng một trang web
-          </li>
-        </ul>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Đoạn title đầu tiên là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>a</code>
-                <pre><code class="lang-html">&lt;a href=<span class="hljs-string">"#"</span>
-&gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức,cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-</code></pre>
-              </li>
-              <li>
-                Đề xuất sửa thành:
-                <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-&lt;a href=<span class="hljs-string">"#!"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        Đánh giá chung bài tập về nhà: Bài làm không tốt. Sai hoàn toàn những gì
-        đã được học trên lớp. Cần chú ý rất nhiều vào semantic, cách phân tích
-        đề bài. *Lưu ý: Cần xem lại và thực hành lại toàn bộ code.
-      </li>
-    </ul>
-    <h2 id="-nti-n-t-https-github-com-ntiendat-2k3-bt_w1-">
-      <a target="_blank" href="https://github.com/Ntiendat-2k3/BT_W1"
-        >NTiến Đạt</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Ntiendat-2k3/BT_W1/tree/main/Bai1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Cần chú ý thêm vào meta title cho trang web vì nó là một phần quan
-              trọng trong SEO và trải nghiệm người dùng.
-            </p>
-          </li>
-          <li>
-            <p>
-              Vì đây là một trang contact, phần title
-              <code>Get the invite</code> nên là thẻ <code>h1</code> thay vì
-              <code>h2</code>
-            </p>
-          </li>
-          <li>
-            <p>
-              Phần input nhập email, nên sử dụng type là <code>email</code> thay
-              vì <code>text</code>
-            </p>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Ntiendat-2k3/BT_W1/tree/main/Bai2"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Cần chú ý thêm vào meta title cho trang web vì nó là một phần quan
-              trọng trong SEO và trải nghiệm người dùng.
-            </p>
-          </li>
-          <li>
-            <p>Sử dụng sai hoàn toàn cấu trúc của <code>ul/li</code></p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-solid fa-leaf"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Necessitatibus, praesentium?
-  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa-solid fa-chart-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Digital Marketing<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Necessitatibus, praesentium?
-  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Ntiendat-2k3/BT_W1/tree/main/Bai3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            Cần chú ý thêm vào meta title cho trang web vì nó là một phần quan
-            trọng trong SEO và trải nghiệm người dùng.
-          </li>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>h3</code>
-                <pre><code class="lang-html">&lt;<span class="hljs-symbol">h3</span>&gt;
-&lt;a href=<span class="hljs-string">"#!"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34</span>,<span class="hljs-number">500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-&lt;/<span class="hljs-symbol">h3</span>&gt;
-</code></pre>
-              </li>
-              <li>
-                Đề xuất sửa thành:
-                <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-&lt;a href=<span class="hljs-string">"#!"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xem lại về cấu
-        trúc các thẻ, semantic trong HTML để bài làm tốt hơn
-      </li>
-    </ul>
-    <h2
-      id="-tr-n-xu-n-b-ch-https-github-com-bach0128-f8-fullstack-k3-tree-main-day-201-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201"
-        >Trần Xuân Bách</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201/Ex1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
-<span class="hljs-section">&lt;br /&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"send_repuest"</span> style=<span class="hljs-string">"margin-top: 16px;"</span>&gt;
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
-&lt;<span class="hljs-regexp">/div&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201/Ex2"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            Sử dụng rất nhiều thẻ <code>h1</code> trong cùng một trang web
-          </li>
-        </ul>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Web Development<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Branding<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Photography<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Apps Development<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Digital Marketing<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-        <ul>
-          <li>Đề xuất sử dụng thẻ <code>h2</code> thay thế.</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201/Ex3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>h2</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">span</span> id=<span class="hljs-string">"header_content_1"</span>&gt;
-  &lt;h2&gt;Vòng xoáy cuộc đờ<span class="hljs-selector-tag">i</span>, bộ phim mớ<span class="hljs-selector-tag">i</span> ra mắt củ<span class="hljs-selector-tag">a</span> tác giả Kim Dung&lt;/h2&gt;
-&lt;/span&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#!"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>h2</code></li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
   &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
+&lt;/h2&gt;
 </code></pre>
-          </li>
-          <li>
-            <p>
-              Thẻ <code>a</code> có thuộc tính bắt buộc là <code>href</code> nếu
-              không có đường dẫn chỉ định thì nên sử dụng
-              <code>href=&quot;#!&quot;</code>
-            </p>
-            <pre><code class="lang-html">&lt;a&gt;
-  Là mộ<span class="hljs-built_in">t</span> bộ phim được nhiều <span class="hljs-built_in">t</span>ác giả mong chờ <span class="hljs-built_in">t</span>ừ <span class="hljs-built_in">n</span>ăm <span class="hljs-number">2022</span>,chúng ta đều quá
-  quen thuộc với <span class="hljs-built_in">t</span>ác giả Kim Dung <span class="hljs-built_in">t</span>ừ những <span class="hljs-built_in">n</span>ăm đầu thập niê<span class="hljs-built_in">n</span> <span class="hljs-number">21</span>.
-&lt;/a&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý thêm vào cách sử
-          dụng các thẻ semantic trong HTML.
-        </p>
-        <p>
-          * Lưu ý, không nên đặt tên folder, dự án là tên có ký tự đặc biệt hay
-          có dấu cách, vì sẽ rất khó để quản lý và sử dụng trong tương lai.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-v-ng-ng-https-github-com-dongvuong-f8-fullstack-k3-tree-7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f-day1-"
-    >
-      <a
-        href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1"
-        >Vương Đông</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1/Baitap1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt;&lt;<span class="hljs-keyword">br</span> /&gt;&lt;<span class="hljs-keyword">br</span> /&gt;
-</code></pre>
-            <ul>
-              <li>
-                <p>
-                  Input sử dụng để nhập email nên sử dụng type là
-                  <code>email</code> thay vì <code>text</code>
-                </p>
-              </li>
-              <li><p>Đề xuất sửa thành:</p></li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1/Baitap2"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-  <span class="hljs-attr">src</span>=<span class="hljs-string">"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm92XM8Oi52AgYaByBceoFdT6Uyfg6f0PlVQ&amp;usqp=CAU"</span>
-  <span class="hljs-attr">alt</span>=<span class="hljs-string">"leaf"</span>
-/&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>
-                Đề xuất xóa thẻ <code>br</code> vì thẻ <code>h2</code> là thẻ
-                block, nó sẽ tự động xuống dòng.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>
-              Không nên sử dụng thẻ img với src là một ảnh đã được mã hóa
-              base64. Vì nó sẽ làm tăng kích thước file HTML, làm giảm tốc độ
-              tải trang web, không tận dụng được cache của trình duyệt.
-            </p>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"data:image/png;base64,iVBORw0K..."</span> alt=<span class="hljs-string">"monitor"</span> /&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"https://....webp"</span> alt=<span class="hljs-string">"monitor"</span> /&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1/Baitap3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SIDE BAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              THuộc tính <code>href</code> trong thẻ a bắt buộc phải có giá trị,
-              nếu không có thì nên sử dụng <code>href=&quot;#!&quot;</code>
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#!"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần chú ý thêm
-        nhiều vào semantic của HTML để bài làm được tốt hơn.
-      </li>
-    </ul>
-    <h2
-      id="-nguy-n-th-nh-tr-ng-https-github-com-thanhtrang16490-f8-offline-tree-main-day-1-15-06-2023-lesson1-"
-    >
-      <a
-        href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1"
-        >Nguyễn Thành Tráng</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span><span class="hljs-section">&lt;br /&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Tuy nhiên nên coi mỗi bài tập là 1 dự án, nên tách các assets ra
-            thành các folder riêng biệt.
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt *</p></li>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 32px; font-weight: 700"</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sidebar"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 24px; font-weight: 700"</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"font-size: 32px; font-weight: 700"</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sidebar"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần chú ý thêm
-        nhiều vào semantic của HTML để bài làm được tốt hơn.
-      </li>
-    </ul>
-    <h2
-      id="-v-n-khoa-https-github-com-mrkhoadev-f8-fullstack-k3-tree-main-day1-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1"
-        >Đỗ Văn Khoa</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt; &lt;<span class="hljs-keyword">br</span> /&gt;&lt;<span class="hljs-keyword">br</span> /&gt;
-&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"submit"</span> value=<span class="hljs-string">"REQUEST INVITE"</span> /&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt;
-&lt;<span class="hljs-selector-tag">div</span> style=<span class="hljs-string">"margin-top: 16px;"</span>&gt;
-  &lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"submit"</span> value=<span class="hljs-string">"REQUEST INVITE"</span> /&gt;
-&lt;/div&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1"
-          >Bài 2</a
-        >
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Slider<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>h2</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
-  &lt;a href=<span class="hljs-string">"#"</span>&gt;
-    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
-  &lt;/a&gt;
-&lt;/<span class="hljs-symbol">h2</span>&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#!"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
   &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        Đánh giá chung bài tập về nhà: Bài làm tốt. Cần có thêm kỹ năng phân
-        tích để cho ra bài làm tốt hơn.
-      </li>
-    </ul>
-    <h2
-      id="-v-th-ng-https-github-com-pencilbsp-f8_offline-tree-main-fullstack03-btvn_buoi_01-"
-    >
-      <a
-        href="https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01"
-        >Vũ Thống</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="hhttps://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt; &lt;<span class="hljs-keyword">br</span> /&gt;
-</code></pre>
-            <ul>
-              <li>
-                <p>
-                  Phần input nhập email, nên sử dụng type là
-                  <code>email</code> thay vì <code>text</code>
-                </p>
-              </li>
-              <li><p>Đề xuất sửa thành:</p></li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>HEADING<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SLIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Slider<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>a</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;a href=<span class="hljs-string">"#"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#!"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-  &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt. Cần có thêm kỹ năng phân
-          tích, sử dụng các thẻ đúng với semantic để cho ra bài làm tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-l-qu-c-kh-nh-https-github-com-lekhanhdhpt-f8-fullstack-k3-tree-main-day-1-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1"
-        >Lê Quốc Khánh</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Get the invite<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Get the invite<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Enter Email"</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"RESQUEST INVITE"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>Sử dụng sai hoàn toàn ý nghĩa của ul, li</p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-leaf"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>UI/UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-      assumenda!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-chart-line"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Digital Marketing<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-      assumenda!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>
-                Đề xuất sử dụng 1 thẻ <code>ul</code> duy nhất để bao bọc các
-                thẻ <code>li</code> có cùng ý nghĩa
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1"
-            >Bài 3</a
-          >
-        </p>
-        <p>
-          Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code>
-          không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-          <code>placeholder</code> cho người dùng.
-        </p>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-</code></pre>
-        <ul>
-          <li>Đề xuất sửa thành:</li>
-        </ul>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-        <ul>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>a</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">a</span> href=<span class="hljs-string">"#"</span>&gt;Bàn Nhậu không đố<span class="hljs-selector-tag">i</span> thủ củ<span class="hljs-selector-tag">a</span> độ<span class="hljs-selector-tag">i</span> ngũ F8&lt;/a&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;h1&gt;
-  &lt;<span class="hljs-selector-tag">a</span> href=<span class="hljs-string">"#"</span>&gt;Bàn Nhậu không đố<span class="hljs-selector-tag">i</span> thủ củ<span class="hljs-selector-tag">a</span> độ<span class="hljs-selector-tag">i</span> ngũ F8&lt;/a&gt;
 &lt;/h1&gt;
 </code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt. Cần tìm hiểu thêm về chức
-          năng, ý nghĩa các thẻ để làm bài tốt hơn, cần thêm kỹ năng tìm hiểu
-          trên mạng để có thể tự học tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-nguy-n-quang-c-ng-https-github-com-cuonggold2408-fullxinach_k3-tree-main-day_1-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1"
-        >Nguyễn Quang Cường</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
-<span class="hljs-section">&lt;br /&gt;</span>
+<ul>
+<li>Sai chính tả <code>Havard</code> =&gt; <code>Harvard</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý rất nhiều vào semantic, cách phân tích đề bài. Cần chú ý đến các lỗi chính tả, sai ngữ pháp.</p>
+<p>*Lưu ý: Cần format lại toàn bộ code.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1">Trần Đình Trọng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1/Bai1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;&lt;br /&gt;
+&lt;!-- xuống dòng --&gt;
 </code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            Cần gom nhóm các hình ảnh lại vào một folder assets/images để quản
-            lý dễ dàng hơn.
-          </li>
-          <li>Bài làm tốt *</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>a</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;a href=<span class="hljs-string">"#"</span>
-  &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#!"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-  &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt. Cần tìm hiểu thêm về các
-          thẻ semantic, cần chú ý các bài giảng của thầy trên lớp để làm bài tốt
-          hơn. Cần có thêm kỹ năng chia folder để quản lý dễ dàng hơn.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-minh-c-https-github-com-a37547-duc-f8-tree-main-baitapbuoi1-">
-      <a
-        target="_blank"
-        href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1"
-        >Đỗ Minh Đức</a
-      >
-    </h2>
-    <ul>
-      <li>
-        [x]
-        <a
-          target="_blank"
-          href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1"
-          >Bài 1</a
-        >
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Phần input nhập email có thể sử dụng type là <code>email</code> thay
-            vì <code>text</code>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            Vì đây là một trang list bài viết, các title bài viết cùng cấp là
-            quan trọng chỉ sau title chính, nên để là h2.
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer"</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>h2</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;h2 <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"news-1"</span>&gt;
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-    <span class="hljs-attr">class</span>=<span class="hljs-string">"vong-xoay-cao-toc"</span>
-    <span class="hljs-attr">href</span>=<span class="hljs-string">"https://zingnews.vn/vong-xoay-cao-toc-34500-ty-sut-lun-qua-muc-can-300-ngay-khac-phuc-post889222.html"</span>
-    <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>
-    <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener"</span>
-  &gt;</span>
-    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
-  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
-&lt;<span class="hljs-regexp">/h2&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span>
-    <span class="hljs-attr">class</span>=<span class="hljs-string">"vong-xoay-cao-toc"</span>
-    <span class="hljs-attr">href</span>=<span class="hljs-string">"https://zingnews.vn/vong-xoay-cao-toc-34500-ty-sut-lun-qua-muc-can-300-ngay-khac-phuc-post889222.html"</span>
-    <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>
-    <span class="hljs-attr">rel</span>=<span class="hljs-string">"noopener"</span>
-  &gt;</span>
-    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
-  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Các className nên đặt có ý nghĩa, dễ hiểu:
-              <code
-                >[ class=&quot;p1&quot;, class=&quot;list-a&quot;,
-                class=&quot;news-1&quot; ]</code
-              >
-              =&gt;
-              <code
-                >[ class=&quot;link&quot;, class=&quot;list&quot;,
-                class=&quot;news_title&quot; ]</code
-              >
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý thêm về các tiểu
-          tiết nhỏ để bài làm hoàn thiện tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-ti-n-khi-m-https-github-com-tienkhiemkahp-f8-tree-main-homework-day-1-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1"
-        >Đỗ Tiến Khiêm</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm rất tốt *</p></li>
-          <li>
-            <p>
-              Phần input nhập email nên để type là <code>email</code> thay vì
-              <code>text</code>
-            </p>
-            <pre><code class="lang-html">&lt;input type=<span class="hljs-string">"text"</span> <span class="hljs-built_in">name</span>=<span class="hljs-string">""</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">""</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt;
-</code></pre>
-            <ul>
-              <li>Các phần thuộc tính không sử dụng tới nên xóa đi</li>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"Enter Email"</span> /&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý thêm về các
-          tiểu tiết nhỏ để bài làm hoàn thiện tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-h-u-h-ng-https-github-com-huuhungg-f8-homework-">
-      <a target="_blank" href="https://github.com/HuuHungg/f8-homework"
-        >Hữu Hưng</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/HuuHungg/f8-homework"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Phần meta title rất quan trọng trong SEO, và trải nghiệm người
-              dùng. Nên sử dụng một cách tốt nhất chứ không phải chỉ là
-              <code>Document</code>
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Get the invite<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/HuuHungg/f8-homework"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>Sử dụng quá nhiều thẻ <code>h1</code> trong một trang web:</p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>UX/UI Design<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Web Development<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Branding<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Photography<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Digital Marketing<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sử dụng thẻ <code>h2</code> thay thế.</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/HuuHungg/f8-homework"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Sử dụng nhiều thẻ <code>h1</code> trong bài, các phần
-              <code>header</code>, <code>sidebar</code>,<code>footer</code>
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >
-            </p>
-            <ul>
-              <li>
-                Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ
-                <code>h2</code>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h2</span>&gt;
-  &lt;a href=<span class="hljs-string">"#"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-  &gt;
-&lt;/<span class="hljs-symbol">h2</span>&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#!"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-  &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm nhiều
-          về cách sử dụng các thẻ heading, br nói riêng và tất cả về semantic
-          trong HTML nói chung để bài làm được tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-minh-pham-https-github-com-minh0314-f8-k3-tree-main-day1-">
-      <a target="_blank" href="https://github.com/Minh0314/F8-K3/tree/main/Day1"
-        >Minh Pham</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Minh0314/F8-K3/tree/main/Day1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Nên thêm thuộc tính type cho input nhập email là
-            <code>email</code> thay vì không có gì thì sẽ lấy default là
-            <code>text</code>
-          </li>
-          <li>
-            Nếu có thể, sử dụng các thuộc tính kích thước để làm nhỏ icon:
-            <code>width</code>, <code>height</code>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Minh0314/F8-K3/tree/main/Day1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Viết sai hoàn toàn các cấu trúc <code>ul/li</code></li>
-          <li>Nên chú ý vào phần báo lỗi cấu trúc của prettier để sửa lại.</li>
-          <li>Sửa lại bài tập và nộp lại.</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Minh0314/F8-K3/tree/main/Day1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>Sai chính tả <code>Harard</code> =&gt; <code>Harvard</code></p>
-          </li>
-          <li>
-            <p>
-              Phần title của trang web nên để trong thẻ <code>h1</code> thay vì
-              <code>h2</code>
-            </p>
-            <ul>
-              <li>
-                <p>Phần thẻ a nên để trong thẻ h1 thay vì ngược lại</p>
-                <ul>
-                  <li>
-                    Vì theo ngữ nghĩa của semantic và SEO, thẻ
-                    <code>h1</code> là tiêu đề chính của trang web, còn thẻ
-                    <code>a</code> là một phần của nội dung trong
-                    <code>h1</code>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p>
-                  Ngoài ra, value trong thuộc tính href là bắt buộc. Nếu không
-                  có thì nên để là <code>#</code> thay vì không có gì.
-                </p>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;a href=<span class="hljs-string">""</span>
-  &gt;&lt;<span class="hljs-symbol">h2</span>&gt;
-    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span><span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức ,cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
-  &lt;/<span class="hljs-symbol">h2</span>&gt;&lt;/a
-&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span><span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức ,cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
-  &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
-</code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm nhiều
-          về cách sử dụng các thẻ heading, a nói riêng và tất cả về semantic
-          trong HTML nói chung để bài làm được tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-ho-ng-b-o-long-https-github-com-hoangbaolong279-f8-tree-main-buoi-1-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1"
-        >Hoàng Bảo Long</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt</p></li>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin-top: 16px;"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>REQUEST INVITE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt *</p></li>
-          <li>
-            <p>
-              Vì đây là một trang list bài viết, các title bài viết cùng cấp là
-              quan trọng chỉ sau title chính, nên để là <code>h2</code>.
-            </p>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm rất tốt, có hiểu biết về
-          semantic. Cần chú ý thêm về các tiểu tiết nhỏ để bài làm hoàn thiện
-          tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-nguy-n-b-ng-https-github-com-dong205-f8-fullstack-k3-blob-main-">
-      <a
-        target="_blank"
-        href="https://github.com/Dong205/F8-fullstack-K3/blob/main"
-        >Nguyễn Bá Đông</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Dong205/F8-fullstack-K3/blob/main"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt</p></li>
-          <li>
-            <p>
-              Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text.
-              Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là
-              sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách
-              sử dụng một thẻ block khác như <code>div</code> để bao bọc nội
-              dung cần ngắt dòng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-section">&lt;br /&gt;</span><span class="hljs-section">&lt;br /&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">div</span> style=<span class="hljs-string">"margin-top: 16px;"</span>&gt;
-  &lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"button"</span> value=<span class="hljs-string">"RESQUEST INVITE"</span> /&gt;
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;input type=&quot;button&quot; value=&quot;RESQUEST INVITE&quot; /&gt;
 &lt;/div&gt;
 </code></pre>
-            <ul>
-              <li>
-                Sai chính tả <code>RESQUEST</code> =&gt; <code>REQUEST</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Dong205/F8-fullstack-K3/blob/main"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt *</p></li>
-          <li>
-            <p>
-              Vì đây là một trang list bài viết, các title bài viết cùng cấp là
-              quan trọng chỉ sau title chính, nên để là <code>h2</code>.
-            </p>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/Dong205/F8-fullstack-K3/blob/main"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Các phần <code>header</code>, <code>sidebar</code>,<code
-                >footer</code
-              >
-              không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện
-              <code>placeholder</code> cho người dùng.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HEADER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>FOOTER<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-</code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1/Bai2">Bài 2</a></p>
+<ul>
+<li>Sử dụng sai hoàn toàn cấu trúc ul, li</li>
+<li>Đã nhắc về thẻ <code>br</code> tuy nhiên vẫn tái sử dụng</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;./assets/images/leaf.png&quot; width=&quot;50&quot; alt=&quot;leaf&quot; /&gt;
+    &lt;h2&gt;UI/UX Design&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
+      libero perspiciatis illo accusamus ab!
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;br /&gt;
+
 ...
-<span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>SIDEBAR<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-...
-<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+
+&lt;br /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;./assets/images/lv.png&quot; width=&quot;50&quot; alt=&quot;lv&quot; /&gt;
+    &lt;h2&gt;Digital Marketing&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
+      libero perspiciatis illo accusamus ab!
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
-          </li>
-          <li>
-            <p>
-              Phần title chính là
-              <code
-                >&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày
-                khắc phục&quot;</code
-              >, nên để trong thẻ <code>h1</code> thay vì <code>h2</code>
-            </p>
-            <ul>
-              <li>
-                <p>Phần thẻ a nên để trong thẻ h1 thay vì ngược lại</p>
-                <ul>
-                  <li>
-                    Vì theo ngữ nghĩa của semantic và SEO, thẻ
-                    <code>h1</code> là tiêu đề chính của trang web, còn thẻ
-                    <code>a</code> là một phần của nội dung trong
-                    <code>h1</code>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <p>
-                  Ngoài ra, value trong thuộc tính href là bắt buộc. Nếu không
-                  có thì nên để là <code>#</code> thay vì không có gì.
-                </p>
-              </li>
-            </ul>
-            <pre><code class="lang-html">&lt;a href=<span class="hljs-string">""</span>
-  &gt;&lt;<span class="hljs-symbol">h2</span>&gt;
-    Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục
-  &lt;/<span class="hljs-symbol">h2</span>&gt;&lt;/a
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;img src=&quot;./assets/images/leaf.png&quot; width=&quot;50&quot; alt=&quot;leaf&quot; /&gt;
+    &lt;h2&gt;UI/UX Design&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
+      libero perspiciatis illo accusamus ab!
+    &lt;/p&gt;
+  &lt;/li&gt;
+  ...
+  &lt;li&gt;
+    &lt;img src=&quot;./assets/images/lv.png&quot; width=&quot;50&quot; alt=&quot;lv&quot; /&gt;
+    &lt;h2&gt;Digital Marketing&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat
+      libero perspiciatis illo accusamus ab!
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/3d9fbdc52a817ad0d69e61654fb9060d5f55e6a4/F8-offline/Day1/Bai3">Bài 3</a></p>
+<ul>
+<li>Sử dụng rất nhiều thẻ <code>h1</code> trong cùng một trang web</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h1&gt;SIDEBAR&lt;/h1&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h1&gt;SIDEBAR&lt;/h1&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Đoạn title đầu tiên là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>a</code></li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức,cần 300 ngày khắc phục&lt;/a
 &gt;
 </code></pre>
-            <ul>
-              <li>Đề xuất sửa thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-symbol">h1</span>&gt;
-  &lt;a href=<span class="hljs-string">"#"</span>
-    &gt;Vòng xoay cao <span class="hljs-built_in">t</span>ốc <span class="hljs-number">34.500</span> <span class="hljs-built_in">t</span>ỷ sụ<span class="hljs-built_in">t</span> lú<span class="hljs-built_in">n</span> quá mức, cầ<span class="hljs-built_in">n</span> <span class="hljs-number">300</span> ngày khắc phục&lt;/a
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
   &gt;
-&lt;/<span class="hljs-symbol">h1</span>&gt;
+&lt;/h1&gt;
 </code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý thêm về các tiểu
-          tiết nhỏ để bài làm hoàn thiện tốt hơn.
-        </p>
-      </li>
-    </ul>
-  </body>
-</html>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm không tốt. Sai hoàn toàn những gì đã được học trên lớp. Cần chú ý rất nhiều vào semantic, cách phân tích đề bài.
+*Lưu ý: Cần xem lại và thực hành lại toàn bộ code.</li>
+</ul>
+<h2><a href="https://github.com/Ntiendat-2k3/BT_W1">NTiến Đạt</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/BT_W1/tree/main/Bai1">Bài 1</a></p>
+<ul>
+<li>
+<p>Cần chú ý thêm vào meta title cho trang web vì nó là một phần quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Vì đây là một trang contact, phần title <code>Get the invite</code> nên là thẻ <code>h1</code> thay vì <code>h2</code></p>
+</li>
+<li>
+<p>Phần input nhập email, nên sử dụng type là <code>email</code> thay vì <code>text</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/BT_W1/tree/main/Bai2">Bài 2</a></p>
+<ul>
+<li>
+<p>Cần chú ý thêm vào meta title cho trang web vì nó là một phần quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Sử dụng sai hoàn toàn cấu trúc của <code>ul/li</code></p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-solid fa-leaf&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+  &lt;h2&gt;UI/UX Design&lt;/h2&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Necessitatibus, praesentium?
+  &lt;/p&gt;
+&lt;/div&gt;
+...
+&lt;div&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-solid fa-chart-line&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+  &lt;h2&gt;Digital Marketing&lt;/h2&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Necessitatibus, praesentium?
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/BT_W1/tree/main/Bai3">Bài 3</a></p>
+<ul>
+<li>
+<p>Cần chú ý thêm vào meta title cho trang web vì nó là một phần quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h2&gt;HEADER&lt;/h2&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>h3</code></li>
+</ul>
+<pre><code class="language-html">&lt;h3&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34,500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h3&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xem lại về cấu trúc các thẻ, semantic trong HTML để bài làm tốt hơn</li>
+</ul>
+<h2><a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201">Trần Xuân Bách</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201/Ex1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;
+&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div class=&quot;send_repuest&quot; style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201/Ex2">Bài 2</a></p>
+<ul>
+<li>Sử dụng rất nhiều thẻ <code>h1</code> trong cùng một trang web</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;UI/UX Design&lt;/h1&gt;
+&lt;h1&gt;Web Development&lt;/h1&gt;
+&lt;h1&gt;Branding&lt;/h1&gt;
+&lt;h1&gt;Photography&lt;/h1&gt;
+&lt;h1&gt;Apps Development&lt;/h1&gt;
+&lt;h1&gt;Digital Marketing&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng thẻ <code>h2</code> thay thế.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day%201/Ex3">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>h2</code></li>
+</ul>
+<pre><code class="language-html">&lt;span id=&quot;header_content_1&quot;&gt;
+  &lt;h2&gt;Vòng xoáy cuộc đời, bộ phim mới ra mắt của tác giả Kim Dung&lt;/h2&gt;
+&lt;/span&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+<li>
+<p>Thẻ <code>a</code> có thuộc tính bắt buộc là <code>href</code> nếu không có đường dẫn chỉ định thì nên sử dụng <code>href=&quot;#!&quot;</code></p>
+<pre><code class="language-html">&lt;a&gt;
+  Là một bộ phim được nhiều tác giả mong chờ từ năm 2022,chúng ta đều quá
+  quen thuộc với tác giả Kim Dung từ những năm đầu thập niên 21.
+&lt;/a&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý thêm vào cách sử dụng các thẻ semantic trong HTML.</p>
+<p>* Lưu ý, không nên đặt tên folder, dự án là tên có ký tự đặc biệt hay có dấu cách, vì sẽ rất khó để quản lý và sử dụng trong tương lai.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1">Vương Đông</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1/Baitap1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;input type=&quot;text&quot; placeholder=&quot;Enter Email&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+</code></pre>
+<ul>
+<li>
+<p>Input sử dụng để nhập email nên sử dụng type là <code>email</code> thay vì <code>text</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1/Baitap2">Bài 2</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;img
+  src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm92XM8Oi52AgYaByBceoFdT6Uyfg6f0PlVQ&amp;usqp=CAU&quot;
+  alt=&quot;leaf&quot;
+/&gt;
+&lt;br /&gt;
+&lt;h2&gt;UI/UX Design&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất xóa thẻ <code>br</code> vì thẻ <code>h2</code> là thẻ block, nó sẽ tự động xuống dòng.</li>
+</ul>
+</li>
+<li>
+<p>Không nên sử dụng thẻ img với src là một ảnh đã được mã hóa base64. Vì nó sẽ làm tăng kích thước file HTML, làm giảm tốc độ tải trang web, không tận dụng được cache của trình duyệt.</p>
+<pre><code class="language-html">&lt;img src=&quot;data:image/png;base64,iVBORw0K...&quot; alt=&quot;monitor&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;https://....webp&quot; alt=&quot;monitor&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/7805cccc6ad5cd807c1c90523bfb1e8e9fc4688f/day1/Baitap3">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;h2&gt;HEADER&lt;/h2&gt;
+&lt;/header&gt;
+&lt;h3&gt;SIDE BAR&lt;/h3&gt;
+&lt;footer&gt;
+  &lt;h2&gt;FOOTER&lt;/h2&gt;
+&lt;/footer&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>THuộc tính <code>href</code> trong thẻ a bắt buộc phải có giá trị, nếu không có thì nên sử dụng <code>href=&quot;#!&quot;</code></p>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;&gt;&lt;/a&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;&lt;/a&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần chú ý thêm nhiều vào semantic của HTML để bài làm được tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1">Nguyễn Thành Tráng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Tuy nhiên nên coi mỗi bài tập là 1 dự án, nên tách các assets ra thành các folder riêng biệt.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/thanhtrang16490/f8-offline/tree/main/day-1-15-06-2023/lesson1">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;header class=&quot;header&quot;&gt;
+  &lt;h2 style=&quot;font-size: 32px; font-weight: 700&quot;&gt;HEADER&lt;/h2&gt;
+&lt;/header&gt;
+...
+&lt;aside class=&quot;sidebar&quot;&gt;
+  &lt;h2 style=&quot;font-size: 24px; font-weight: 700&quot;&gt;SIDEBAR&lt;/h2&gt;
+&lt;/aside&gt;
+...
+&lt;footer class=&quot;footer&quot;&gt;
+  &lt;h2 style=&quot;font-size: 32px; font-weight: 700&quot;&gt;FOOTER&lt;/h2&gt;
+&lt;/footer&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header class=&quot;header&quot;&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;aside class=&quot;sidebar&quot;&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/aside&gt;
+...
+&lt;footer class=&quot;footer&quot;&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần chú ý thêm nhiều vào semantic của HTML để bài làm được tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;Enter Email&quot; /&gt; &lt;br /&gt;&lt;br /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;REQUEST INVITE&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;Enter Email&quot; /&gt;
+&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;REQUEST INVITE&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1">Bài 2</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;Header&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;section class=&quot;slider&quot;&gt;
+  &lt;span&gt;Slider&lt;/span&gt;
+&lt;/section&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>h2</code></li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;
+    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần có thêm kỹ năng phân tích để cho ra bài làm tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01">Vũ Thống</a></h2>
+<ul>
+<li>
+<p>[x] <a href="hhttps://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;input type=&quot;text&quot; placeholder=&quot;Enter Email&quot; /&gt; &lt;br /&gt;
+</code></pre>
+<ul>
+<li>
+<p>Phần input nhập email, nên sử dụng type là <code>email</code> thay vì <code>text</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_01">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h2&gt;HEADING&lt;/h2&gt;
+&lt;h3&gt;SLIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;section class=&quot;slider&quot;&gt;
+  &lt;span&gt;Slider&lt;/span&gt;
+&lt;/section&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>a</code></li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần có thêm kỹ năng phân tích, sử dụng các thẻ đúng với semantic để cho ra bài làm tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1">Lê Quốc Khánh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;
+&lt;h1&gt;Get the invite&lt;/h1&gt;
+&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+&lt;input type=&quot;text&quot; placeholder=&quot;Enter Email&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;Get the invite&lt;/h1&gt;
+&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+&lt;input type=&quot;text&quot; placeholder=&quot;Enter Email&quot; /&gt;
+&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;input type=&quot;button&quot; value=&quot;RESQUEST INVITE&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1">Bài 2</a></p>
+<ul>
+<li>
+<p>Sử dụng sai hoàn toàn ý nghĩa của ul, li</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;i class=&quot;fa fa-leaf&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;UI/UX Design&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+      assumenda!
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+...
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;Digital Marketing&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+      assumenda!
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng 1 thẻ <code>ul</code> duy nhất để bao bọc các thẻ <code>li</code> có cùng ý nghĩa</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-1">Bài 3</a></p>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h2&gt;HEADER&lt;/h2&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+<ul>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>a</code></li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;Bàn Nhậu không đối thủ của đội ngũ F8&lt;/a&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;Bàn Nhậu không đối thủ của đội ngũ F8&lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần tìm hiểu thêm về chức năng, ý nghĩa các thẻ để làm bài tốt hơn, cần thêm kỹ năng tìm hiểu trên mạng để có thể tự học tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;
+&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1">Bài 2</a></p>
+<ul>
+<li>Cần gom nhóm các hình ảnh lại vào một folder assets/images để quản lý dễ dàng hơn.</li>
+<li>Bài làm tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>a</code></li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần tìm hiểu thêm về các thẻ semantic, cần chú ý các bài giảng của thầy trên lớp để làm bài tốt hơn. Cần có thêm kỹ năng chia folder để quản lý dễ dàng hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1">Đỗ Minh Đức</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1">Bài 1</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Phần input nhập email có thể sử dụng type là <code>email</code> thay vì <code>text</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Vì đây là một trang list bài viết, các title bài viết cùng cấp là quan trọng chỉ sau title chính, nên để là h2.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/a37547-duc/F8/tree/main/BaiTapBuoi1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;footer&gt;&lt;p class=&quot;footer&quot;&gt;FOOTER&lt;/p&gt;&lt;/footer&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>h2</code></li>
+</ul>
+<pre><code class="language-html">&lt;h2 class=&quot;news-1&quot;&gt;
+  &lt;a
+    class=&quot;vong-xoay-cao-toc&quot;
+    href=&quot;https://zingnews.vn/vong-xoay-cao-toc-34500-ty-sut-lun-qua-muc-can-300-ngay-khac-phuc-post889222.html&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a
+    class=&quot;vong-xoay-cao-toc&quot;
+    href=&quot;https://zingnews.vn/vong-xoay-cao-toc-34500-ty-sut-lun-qua-muc-can-300-ngay-khac-phuc-post889222.html&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+<li>
+<p>Các className nên đặt có ý nghĩa, dễ hiểu: <code>[ class=&quot;p1&quot;, class=&quot;list-a&quot;, class=&quot;news-1&quot; ]</code> =&gt; <code>[ class=&quot;link&quot;, class=&quot;list&quot;, class=&quot;news_title&quot; ]</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý thêm về các tiểu tiết nhỏ để bài làm hoàn thiện tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1">Đỗ Tiến Khiêm</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Phần input nhập email nên để type là <code>email</code> thay vì <code>text</code></p>
+<pre><code class="language-html">&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;Enter Email&quot; /&gt;
+</code></pre>
+<ul>
+<li>Các phần thuộc tính không sử dụng tới nên xóa đi</li>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;Enter Email&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-1">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý thêm về các tiểu tiết nhỏ để bài làm hoàn thiện tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/HuuHungg/f8-homework">Hữu Hưng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/HuuHungg/f8-homework">Bài 1</a></p>
+<ul>
+<li>
+<p>Phần meta title rất quan trọng trong SEO, và trải nghiệm người dùng. Nên sử dụng một cách tốt nhất chứ không phải chỉ là <code>Document</code></p>
+<pre><code class="language-html">&lt;title&gt;Get the invite&lt;/title&gt;
+</code></pre>
+</li>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/HuuHungg/f8-homework">Bài 2</a></p>
+<ul>
+<li>
+<p>Sử dụng quá nhiều thẻ <code>h1</code> trong một trang web:</p>
+<pre><code class="language-html">&lt;h1&gt;UX/UI Design&lt;/h1&gt;
+&lt;h1&gt;Web Development&lt;/h1&gt;
+&lt;h1&gt;Branding&lt;/h1&gt;
+&lt;h1&gt;Photography&lt;/h1&gt;
+&lt;h1&gt;Digital Marketing&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng thẻ <code>h2</code> thay thế.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/HuuHungg/f8-homework">Bài 3</a></p>
+<ul>
+<li>
+<p>Sử dụng nhiều thẻ <code>h1</code> trong bài, các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>h2</code></li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm nhiều về cách sử dụng các thẻ heading, br nói riêng và tất cả về semantic trong HTML nói chung để bài làm được tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Minh0314/F8-K3/tree/main/Day1">Minh Pham</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day1">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Nên thêm thuộc tính type cho input nhập email là <code>email</code> thay vì không có gì thì sẽ lấy default là <code>text</code></li>
+<li>Nếu có thể, sử dụng các thuộc tính kích thước để làm nhỏ icon: <code>width</code>, <code>height</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day1">Bài 2</a></p>
+<ul>
+<li>Viết sai hoàn toàn các cấu trúc <code>ul/li</code></li>
+<li>Nên chú ý vào phần báo lỗi cấu trúc của prettier để sửa lại.</li>
+<li>Sửa lại bài tập và nộp lại.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Sai chính tả <code>Harard</code> =&gt; <code>Harvard</code></p>
+</li>
+<li>
+<p>Phần title của trang web nên để trong thẻ <code>h1</code> thay vì <code>h2</code></p>
+<ul>
+<li>
+<p>Phần thẻ a nên để trong thẻ h1 thay vì ngược lại</p>
+<ul>
+<li>Vì theo ngữ nghĩa của semantic và SEO, thẻ <code>h1</code> là tiêu đề chính của trang web, còn thẻ <code>a</code> là một phần của nội dung trong <code>h1</code></li>
+</ul>
+</li>
+<li>
+<p>Ngoài ra, value trong thuộc tính href là bắt buộc. Nếu không có thì nên để là <code>#</code> thay vì không có gì.</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;
+  &gt;&lt;h2&gt;
+    Vòng xoay cao tốc 34.500tỷ sụt lún quá mức ,cần 300 ngày khắc phục
+  &lt;/h2&gt;&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+    &gt;Vòng xoay cao tốc 34.500tỷ sụt lún quá mức ,cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm nhiều về cách sử dụng các thẻ heading, a nói riêng và tất cả về semantic trong HTML nói chung để bài làm được tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1">Hoàng Bảo Long</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;button&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Vì đây là một trang list bài viết, các title bài viết cùng cấp là quan trọng chỉ sau title chính, nên để là <code>h2</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hoangbaolong279/F8/tree/main/Buoi-1">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt, có hiểu biết về semantic. Cần chú ý thêm về các tiểu tiết nhỏ để bài làm hoàn thiện tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Dong205/F8-fullstack-K3/blob/main">Nguyễn Bá Đông</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dong205/F8-fullstack-K3/blob/main">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Thẻ <code>br</code> chỉ được sử dụng khi ngắt dòng một đoạn text. Không được sử dụng trong bất kỳ hoàn cảnh nào khác vì điều đó là sai semantic. Có thể sử dụng một lựa chọn thay thế khác bằng cách sử dụng một thẻ block khác như <code>div</code> để bao bọc nội dung cần ngắt dòng.</p>
+<pre><code class="language-html">&lt;br /&gt;&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px;&quot;&gt;
+  &lt;input type=&quot;button&quot; value=&quot;RESQUEST INVITE&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Sai chính tả <code>RESQUEST</code> =&gt; <code>REQUEST</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dong205/F8-fullstack-K3/blob/main">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Vì đây là một trang list bài viết, các title bài viết cùng cấp là quan trọng chỉ sau title chính, nên để là <code>h2</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dong205/F8-fullstack-K3/blob/main">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;SIDEBAR&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code>, nên để trong thẻ <code>h1</code> thay vì <code>h2</code></p>
+<ul>
+<li>
+<p>Phần thẻ a nên để trong thẻ h1 thay vì ngược lại</p>
+<ul>
+<li>Vì theo ngữ nghĩa của semantic và SEO, thẻ <code>h1</code> là tiêu đề chính của trang web, còn thẻ <code>a</code> là một phần của nội dung trong <code>h1</code></li>
+</ul>
+</li>
+<li>
+<p>Ngoài ra, value trong thuộc tính href là bắt buộc. Nếu không có thì nên để là <code>#</code> thay vì không có gì.</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;
+  &gt;&lt;h2&gt;
+    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+  &lt;/h2&gt;&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý thêm về các tiểu tiết nhỏ để bài làm hoàn thiện tốt hơn.</p>
+</li>
+</ul>
+
+          <script src="../../../assets/js/pages.js" defer></script>
+        </body>
+      </html>
+    

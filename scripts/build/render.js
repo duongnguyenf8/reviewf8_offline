@@ -22,18 +22,18 @@ function renderPage(folderPath, folder, subfolder) {
 
     const md = new MarkdownIt();
     const htmlContent = `
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <meta charset="UTF-8">
-          <title>${folder}/${subfolder}</title>
-          ${cssLink}
-        </head>
-        <body>
-          ${md.render(data)}
-          ${scriptTag}
-        </body>
-      </html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>${folder}/${subfolder}</title>
+    ${cssLink}
+  </head>
+  <body>
+    ${md.render(data)}
+    ${scriptTag}
+  </body>
+</html>
     `;
 
     fs.writeFile(outputPath, htmlContent, (err) => {

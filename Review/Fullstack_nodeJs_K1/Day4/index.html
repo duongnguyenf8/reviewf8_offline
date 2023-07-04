@@ -1,1433 +1,776 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../../../assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../../../assets/css/style.css" />
 
-    <script src="../../../assets/js/pages.js" defer></script>
-    <title>Duong - Review Day3_K1</title>
-  </head>
-  <body>
-    <h1 id="d-ng-test-b-i-h-c-vi-n">Dương test bài Học Viên</h1>
-    <h2 id="-bi11-043-h-chi-https-github-com-serenaha12-fullstack_nodejs-">
-      <a target="_blank" href="https://github.com/SerenaHa12/fullstack_nodeJS"
-        >Bi11-043 Đỗ Hà Chi</a
-      >
-    </h2>
-    <pre><code>Sớm nhấ<span class="hljs-built_in">t</span> *
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <title>Fullstack_nodeJs_K1/Day4</title>
+          <link rel="stylesheet" href="../../../assets/css/style.css" />
+        </head>
+        <body>
+          <h1>Dương test bài Học Viên</h1>
+<h2><a href="https://github.com/SerenaHa12/fullstack_nodeJS">Bi11-043 Đỗ Hà Chi</a></h2>
+<pre><code>Sớm nhất *
 </code></pre>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_04/ex01"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Nên sử dụng className để style thay vì style thẳng cho tag. Vì nếu
-            sử dụng tag selector sẽ gây ảnh hưởng đến các tag khác có cùng tên.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_04/ex02"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt</p></li>
-          <li>
-            <p>Kỹ năng phân tích cấu trúc semantic vẫn chưa tốt lắm:</p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>RESERVATION<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Book your table<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_04/ex01">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Nên sử dụng className để style thay vì style thẳng cho tag. Vì nếu sử dụng tag selector sẽ gây ảnh hưởng đến các tag khác có cùng tên.</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_04/ex02">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Kỹ năng phân tích cấu trúc semantic vẫn chưa tốt lắm:</p>
+<pre><code class="language-html">&lt;p&gt;RESERVATION&lt;/p&gt;
+&lt;h1&gt;Book your table&lt;/h1&gt;
 </code></pre>
-            <ul>
-              <li>
-                Ở phần trên, <code>RESERVATION</code> vẫn là một title, nên sử
-                dụng thẻ <code>h3</code> thay vì <code>p</code>
-              </li>
-              <li>
-                Phần <code>Book your table</code> cũng là một title, nên sử dụng
-                thẻ <code>h2</code> thay vì <code>h1</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_04/ex03"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            Nên thống nhất một đơn vị trong CSS, hoặc hạn chế sử dụng nhiều đơn
-            vị khác nhau:
-            <pre><code class="lang-css"><span class="hljs-selector-class">.row</span> {
+<ul>
+<li>Ở phần trên, <code>RESERVATION</code> vẫn là một title, nên sử dụng thẻ <code>h3</code> thay vì <code>p</code></li>
+<li>Phần <code>Book your table</code> cũng là một title, nên sử dụng thẻ <code>h2</code> thay vì <code>h1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/btvn_04/ex03">Bài 3</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Nên thống nhất một đơn vị trong CSS, hoặc hạn chế sử dụng nhiều đơn vị khác nhau:<pre><code class="language-css">.row {
   ...
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">7%</span> <span class="hljs-number">0</span>;
+  margin: 7% 0;
 }
-<span class="hljs-selector-class">.product</span> <span class="hljs-selector-tag">img</span> {
+.product img {
   ...
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0</span> <span class="hljs-number">40px</span> <span class="hljs-number">0</span>;
+  margin: 20px 0 40px 0;
 }
 </code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ
-          năng phân tích cấu trúc semantic, và thống nhất đơn vị trong CSS.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-d-ng-hi-p-https-github-com-duonghiep416-duonghiep_f8_fullstack-git-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/duonghiep416/duonghiep_f8_fullstack.git"
-        >Dương Hiệp</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex2"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm Rất Tốt *</li>
-        </ul>
-      </li>
-      <li><p>Đánh giá chung bài tập về nhà: Bài làm rất tốt</p></li>
-    </ul>
-    <h2 id="-s-n-ng-m-nh-https-github-com-ngomanhson-f8-fullstack-exercises-">
-      <a
-        target="_blank"
-        href="https://github.com/NgoManhson/f8-fullstack-exercises"
-        >Sơn Ngô Mạnh</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex1"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            2 đoạn text này có các style giống nhau, nên gom chung vào một thẻ
-            <code>p</code> và sử dụng thẻ <code>br</code> để ngắt dòng
-            <pre><code class="lang-html">&lt;p <span class="hljs-keyword">class</span>=<span class="hljs-string">"form-desc"</span>&gt;
-  Sign up <span class="hljs-keyword">and</span> we<span class="hljs-comment">'ll send your the best freelance opportunities straight to</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ năng phân tích cấu trúc semantic, và thống nhất đơn vị trong CSS.</li>
+</ul>
+<h2><a href="https://github.com/duonghiep416/duonghiep_f8_fullstack.git">Dương Hiệp</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex1">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex2">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex3">Bài 3</a></p>
+<ul>
+<li>Bài làm Rất Tốt *</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt</li>
+</ul>
+<h2><a href="https://github.com/NgoManhson/f8-fullstack-exercises">Sơn Ngô Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex1">Bài 1</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>2 đoạn text này có các style giống nhau, nên gom chung vào một thẻ <code>p</code> và sử dụng thẻ <code>br</code> để ngắt dòng<pre><code class="language-html">&lt;p class=&quot;form-desc&quot;&gt;
+  Sign up and we'll send your the best freelance opportunities straight to
   your inbox.
 &lt;/p&gt;
-&lt;p <span class="hljs-keyword">class</span>=<span class="hljs-string">"form-desc"</span>&gt;
-  We<span class="hljs-comment">'re building the largest self-service freelancing marketplace for people</span>
-  <span class="hljs-keyword">like</span> you.
+&lt;p class=&quot;form-desc&quot;&gt;
+  We're building the largest self-service freelancing marketplace for people
+  like you.
 &lt;/p&gt;
 </code></pre>
-            <ul>
-              <li>
-                Đề xuất sửa thành:
-                <pre><code class="lang-html">&lt;p <span class="hljs-keyword">class</span>=<span class="hljs-string">"form-desc"</span>&gt;
-Sign up <span class="hljs-keyword">and</span> we<span class="hljs-comment">'ll send your the best freelance opportunities straight to</span>
-your inbox.&lt;br /&gt;
-We<span class="hljs-comment">'re building the largest self-service freelancing marketplace for people</span>
-<span class="hljs-keyword">like</span> you.
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;p class=&quot;form-desc&quot;&gt;
+  Sign up and we'll send your the best freelance opportunities straight to
+  your inbox.&lt;br /&gt;
+  We're building the largest self-service freelancing marketplace for people
+  like you.
 &lt;/p&gt;
 </code></pre>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex2"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex3"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt *</p></li>
-          <li>
-            <p>
-              Nên tìm hiểu thêm về một số các luật, kỹ năng làm UX để khiến trải
-              nghiệm người dùng tốt hơn
-            </p>
-            <ul>
-              <li>
-                Theo <code>Ngưỡng Doherty</code>. Năng suất tăng vọt khi máy
-                tính và người dùng tương tác với tốc độ (&lt;400ms) đảm bảo rằng
-                không phải chờ đợi bên kia.
-              </li>
-            </ul>
-            <blockquote>
-              <p>
-                Năm 1982, Walter J. Doherty và Ahrvind J. Thadani đã xuất bản,
-                trên Tạp chí Hệ thống IBM, một bài báo nghiên cứu đặt ra yêu cầu
-                về thời gian phản hồi của máy tính là 400 mili giây, chứ không
-                phải 2.000 (2 giây) như tiêu chuẩn trước đó. Khi lệnh của con
-                người được thực thi và trả về câu trả lời trong vòng chưa đầy
-                400 mili giây, nó được coi là vượt quá ngưỡng Doherty và việc sử
-                dụng các ứng dụng đó được coi là &quot;nghiện&quot; người dùng.
-              </p>
-            </blockquote>
-            <ul>
-              <li>
-                Xem thêm tại
-                <a
-                  target="_blank"
-                  href="https://lawsofux.com/doherty-threshold/"
-                  ><strong>lawsofux.com</strong></a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, chỉ cần cải thiện một chút
-          về các luật, kỹ năng làm UX để khiến trải nghiệm người dùng tốt hơn.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-nguyen-xuan-tuan-anh-https-github-com-xuananh2212-bt_04-git-">
-      <a target="_blank" href="https://github.com/xuananh2212/bt_04.git"
-        >Nguyen Xuan Tuan Anh</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/xuananh2212/bt_04/tree/main/ex01"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Việc sử dụng</li>
-        </ul>
-        <pre><code class="lang-css"><span class="hljs-selector-tag">html</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">62.5%</span>;
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex2">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day4/Ex3">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Nên tìm hiểu thêm về một số các luật, kỹ năng làm UX để khiến trải nghiệm người dùng tốt hơn</p>
+<ul>
+<li>Theo <code>Ngưỡng Doherty</code>. Năng suất tăng vọt khi máy tính và người dùng tương tác với tốc độ (&lt;400ms) đảm bảo rằng không phải chờ đợi bên kia.</li>
+</ul>
+<blockquote>
+<p>Năm 1982, Walter J. Doherty và Ahrvind J. Thadani đã xuất bản, trên Tạp chí Hệ thống IBM, một bài báo nghiên cứu đặt ra yêu cầu về thời gian phản hồi của máy tính là 400 mili giây, chứ không phải 2.000 (2 giây) như tiêu chuẩn trước đó. Khi lệnh của con người được thực thi và trả về câu trả lời trong vòng chưa đầy 400 mili giây, nó được coi là vượt quá ngưỡng Doherty và việc sử dụng các ứng dụng đó được coi là &quot;nghiện&quot; người dùng.</p>
+</blockquote>
+<ul>
+<li>Xem thêm tại <a href="https://lawsofux.com/doherty-threshold/"><strong>lawsofux.com</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, chỉ cần cải thiện một chút về các luật, kỹ năng làm UX để khiến trải nghiệm người dùng tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/xuananh2212/bt_04.git">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/xuananh2212/bt_04/tree/main/ex01">Bài 1</a></p>
+<ul>
+<li>Việc sử dụng</li>
+</ul>
+<pre><code class="language-css">html {
+  font-size: 62.5%;
 }
 </code></pre>
-        <p>
-          Khiến cho các đơn vị khó tính toán hơn. Vì vậy, nếu sử dụng chúng mà
-          không sửa lại font chữ thì các font chữ sẽ rất nhỏ, rất khó để nhìn.
-          Điều đó làm giảm trải nghiệm người dùng rất lớn.
-        </p>
-        <ul>
-          <li>Tốt nhất là không nên sử dụng trừ khi có một lý do cụ thể.</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/xuananh2212/bt_04/tree/main/ex02"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/xuananh2212/bt_04/tree/main/ex03"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            Nên sử dụng các thẻ img với một src svg ngoài. Điều đó sẽ giúp cho
-            việc tối ưu hóa hình ảnh tốt hơn, dễ hiểu hơn.
-          </li>
-        </ul>
-      </li>
-      <li><p>Đánh giá chung bài tập về nhà: Bài làm tốt</p></li>
-    </ul>
-    <h2 id="-tu-n-ph-m-https-github-com-phamtuan162-phamtuan-nodejs-01-">
-      <a
-        target="_blank"
-        href="https://github.com/phamtuan162/phamtuan-nodejs-01"
-        >Tuấn Phạm</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/xuananh2212/bt_04/tree/main/ex01"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/xuananh2212/bt_04/tree/main/ex02"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt</li>
-          <li>
-            Kỹ năng phân tích cấu trúc semantic vẫn chưa tốt lắm:
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reservation__label"</span>&gt;</span>RESERVATION<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reservation__heading"</span>&gt;</span>Book your table<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<p>Khiến cho các đơn vị khó tính toán hơn. Vì vậy, nếu sử dụng chúng mà không sửa lại font chữ thì các font chữ sẽ rất nhỏ, rất khó để nhìn. Điều đó làm giảm trải nghiệm người dùng rất lớn.</p>
+<ul>
+<li>Tốt nhất là không nên sử dụng trừ khi có một lý do cụ thể.</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/xuananh2212/bt_04/tree/main/ex02">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/xuananh2212/bt_04/tree/main/ex03">Bài 3</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Nên sử dụng các thẻ img với một src svg ngoài. Điều đó sẽ giúp cho việc tối ưu hóa hình ảnh tốt hơn, dễ hiểu hơn.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt</li>
+</ul>
+<h2><a href="https://github.com/phamtuan162/phamtuan-nodejs-01">Tuấn Phạm</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/xuananh2212/bt_04/tree/main/ex01">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/xuananh2212/bt_04/tree/main/ex02">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Kỹ năng phân tích cấu trúc semantic vẫn chưa tốt lắm:<pre><code class="language-html">&lt;p class=&quot;reservation__label&quot;&gt;RESERVATION&lt;/p&gt;
+&lt;h1 class=&quot;reservation__heading&quot;&gt;Book your table&lt;/h1&gt;
 </code></pre>
-            <ul>
-              <li>
-                Ở phần trên, <code>RESERVATION</code> vẫn là một title, nên sử
-                dụng thẻ <code>h3</code> thay vì <code>p</code>
-              </li>
-              <li>
-                Phần <code>Book your table</code> cũng là một title, nên sử dụng
-                thẻ <code>h2</code> thay vì <code>h1</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/xuananh2212/bt_04/tree/main/ex03"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ
-          năng phân tích cấu trúc semantic.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-luu-anh-quan-https-github-com-anhquan2211-exercise-day4-offline-f8-git-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/anhquan2211/exercise-day4-offline-F8.git"
-        >Luu Anh Quan</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/anhquan2211/exercise-day4-offline-F8.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            <p>
-              Phần input và button có chiều cao bằng nhau, tuy nhiên lại để
-              height trong style không đồng nhất
-            </p>
-            <pre><code class="lang-css">.<span class="hljs-class">email </span>{
-<span class="hljs-symbol">  height:</span> <span class="hljs-number">40</span>px;
+<ul>
+<li>Ở phần trên, <code>RESERVATION</code> vẫn là một title, nên sử dụng thẻ <code>h3</code> thay vì <code>p</code></li>
+<li>Phần <code>Book your table</code> cũng là một title, nên sử dụng thẻ <code>h2</code> thay vì <code>h1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/xuananh2212/bt_04/tree/main/ex03">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ năng phân tích cấu trúc semantic.</li>
+</ul>
+<h2><a href="https://github.com/anhquan2211/exercise-day4-offline-F8.git">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/anhquan2211/exercise-day4-offline-F8.git">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Phần input và button có chiều cao bằng nhau, tuy nhiên lại để height trong style không đồng nhất</p>
+<pre><code class="language-css">.email {
+  height: 40px;
   ...;
 }
 
-<span class="hljs-class">button </span>{
-<span class="hljs-symbol">  height:</span> <span class="hljs-number">41</span>px;
+button {
+  height: 41px;
 }
 </code></pre>
-            <ul>
-              <li>
-                Việc này sẽ gây ra hiện tượng lệch chiều cao giữa các phần tử,
-                dẫn đến việc không đồng bộ giữa các phần tử. Ngoài ra còn thể
-                hiện sự thiếu chuẩn mực, chuyên nghiệp trong việc code.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/anhquan2211/exercise-day4-offline-F8.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm rất tốt *</p></li>
-          <li>
-            <p>
-              Vì phần <code>RESERVATION</code> và
-              <code>Book your table</code> đều là title, nên nên sử dụng thẻ
-              <code>h3</code> thay vì <code>p</code>.
-            </p>
-          </li>
-          <li>
-            <p>
-              Phần xử lý DATE rất tốt, nếu có thể xử lý input nhập giờ bằng type
-              <code>time</code> như thế thì sẽ tốt hơn.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/anhquan2211/exercise-day4-offline-F8.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li><p>Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p></li>
-    </ul>
-    <h2
-      id="-mai-vi-t-ho-ng-https-github-com-viethoang-mai-mvh-fullstack-nodejs-f8-01-git-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
-        >Mai Việt Hoàng</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Cần thêm padding-left cho input để tránh việc text bị che khuất, tạo
-            cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải
-            nghiệm người dùng.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Cần thêm padding-left cho tất cả các input để tránh việc text bị che
-            khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm
-            trải nghiệm người dùng.
-          </li>
-          <li>
-            Cần chú ý thêm về phần meta title của trang web vì nó là một phần
-            quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc
-            định là <code>Document</code> mà nên thay bằng một title phù hợp.
-            <ul>
-              <li>
-                Ở đây, nên thay bằng <code>Đặt bàn ăn - Nhà hàng ABC</code>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>
-              Nếu có thể, nên tham khảo câu hỏi và câu trả lời của bạn
-              <a
-                href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html"
-                >Lưu Anh Quân</a
-              >
-              để làm phần input cho date, time tốt hơn.
-            </p>
-          </li>
-          <li>
-            <p>
-              Phần <code>RESERVATION</code> vẫn là một title, không phải là
-              <code>:before</code> của <code>Book your table</code>, nên sử dụng
-              thẻ <code>h3</code> thay vì <code>:before</code>.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần cải thiện một
-          chút về các luật, kỹ năng làm UX để khiến trải nghiệm người dùng tốt
-          hơn.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-phan-trung-hi-u-https-github-com-pth2003-homework-tree-main-btvn_buoi_4-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4"
-        >Phan Trung Hiếu</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            Đáng ra có thể tốt hơn nếu chú ý hơn, chỉn chu hơn vào UI của trang
-            web sao cho đẹp hơn.
-          </li>
-          <li>
-            <p>
-              Cần chú ý thêm về phần meta title của trang web vì nó là một phần
-              quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc
-              định là <code>Document</code> mà nên thay bằng một title phù hợp.
-            </p>
-            <ul>
-              <li>Ở đây, nên thay bằng <code>Form Subscribe</code></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt *</p></li>
-          <li>
-            <p>
-              Các phần value của input không nên nhỏ hơn placeholder quá nhiều
-              vì sẽ gây khó nhìn, khó phân biệt giữa các phần tử.
-            </p>
-          </li>
-          <li>
-            <p>
-              Cần chú ý thêm về phần meta title của trang web vì nó là một phần
-              quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc
-              định là <code>Document</code> mà nên thay bằng một title phù hợp.
-            </p>
-            <ul>
-              <li>
-                Ở đây, nên thay bằng <code>Đặt bàn ăn - Nhà hàng ABC</code>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>Phần title để như này là sao ?</p>
-            <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"sub-title"</span>&gt;RESERVATION&lt;/<span class="hljs-keyword">div</span>&gt;
-&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"title"</span>&gt;Book your table&lt;/<span class="hljs-keyword">div</span>&gt;
+<ul>
+<li>Việc này sẽ gây ra hiện tượng lệch chiều cao giữa các phần tử, dẫn đến việc không đồng bộ giữa các phần tử. Ngoài ra còn thể hiện sự thiếu chuẩn mực, chuyên nghiệp trong việc code.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/anhquan2211/exercise-day4-offline-F8.git">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Vì phần <code>RESERVATION</code> và <code>Book your table</code> đều là title, nên nên sử dụng thẻ <code>h3</code> thay vì <code>p</code>.</p>
+</li>
+<li>
+<p>Phần xử lý DATE rất tốt, nếu có thể xử lý input nhập giờ bằng type <code>time</code> như thế thì sẽ tốt hơn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/anhquan2211/exercise-day4-offline-F8.git">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt.</li>
+</ul>
+<h2><a href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git">Mai Việt Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Cần thêm padding-left cho input để tránh việc text bị che khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải nghiệm người dùng.</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Cần thêm padding-left cho tất cả các input để tránh việc text bị che khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Cần chú ý thêm về phần meta title của trang web vì nó là một phần quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc định là <code>Document</code> mà nên thay bằng một title phù hợp.</p>
+<ul>
+<li>Ở đây, nên thay bằng <code>Đặt bàn ăn - Nhà hàng ABC</code></li>
+</ul>
+</li>
+<li>
+<p>Nếu có thể, nên tham khảo câu hỏi và câu trả lời của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html">Lưu Anh Quân</a> để làm phần input cho date, time tốt hơn.</p>
+</li>
+<li>
+<p>Phần <code>RESERVATION</code> vẫn là một title, không phải là <code>:before</code> của <code>Book your table</code>, nên sử dụng thẻ <code>h3</code> thay vì <code>:before</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01.git">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần cải thiện một chút về các luật, kỹ năng làm UX để khiến trải nghiệm người dùng tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4">Phan Trung Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Đáng ra có thể tốt hơn nếu chú ý hơn, chỉn chu hơn vào UI của trang web sao cho đẹp hơn.</p>
+</li>
+<li>
+<p>Cần chú ý thêm về phần meta title của trang web vì nó là một phần quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc định là <code>Document</code> mà nên thay bằng một title phù hợp.</p>
+<ul>
+<li>Ở đây, nên thay bằng <code>Form Subscribe</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các phần value của input không nên nhỏ hơn placeholder quá nhiều vì sẽ gây khó nhìn, khó phân biệt giữa các phần tử.</p>
+</li>
+<li>
+<p>Cần chú ý thêm về phần meta title của trang web vì nó là một phần quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc định là <code>Document</code> mà nên thay bằng một title phù hợp.</p>
+<ul>
+<li>Ở đây, nên thay bằng <code>Đặt bàn ăn - Nhà hàng ABC</code></li>
+</ul>
+</li>
+<li>
+<p>Phần title để như này là sao ?</p>
+<pre><code class="language-html">&lt;div class=&quot;sub-title&quot;&gt;RESERVATION&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;Book your table&lt;/div&gt;
 </code></pre>
-            <ul>
-              <li>
-                Nên sử dụng thẻ <code>h3</code> cho phần
-                <code>RESERVATION</code> thay vì <code>div</code> để đảm bảo
-                semantic.
-              </li>
-              <li>
-                Phần <code>Book your table</code> cũng nên sử dụng thẻ
-                <code>h2</code> thay vì <code>div</code> để đảm bảo semantic.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>
-              Vì đây là một form đặt hàng, nên nên sử dụng thẻ
-              <code>form</code> để đảm bảo semantic.
-            </p>
-          </li>
-          <li>
-            <p>
-              Nếu có thể, nên tham khảo câu hỏi và câu trả lời của bạn
-              <a
-                href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html"
-                >Lưu Anh Quân</a
-              >
-              để làm phần input cho date, time tốt hơn.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            <p>
-              Nên hiển thị một danh sách khi người dùng vào trang web chứ không
-              phải sau khi bấm nút
-            </p>
-          </li>
-          <li>
-            <p>
-              Nên tìm hiểu thêm về một số các luật, kỹ năng làm UX để khiến trải
-              nghiệm người dùng tốt hơn
-            </p>
-            <ul>
-              <li>
-                Theo <code>Ngưỡng Doherty</code>. Năng suất tăng vọt khi máy
-                tính và người dùng tương tác với tốc độ (&lt;400ms) đảm bảo rằng
-                không phải chờ đợi bên kia.
-              </li>
-            </ul>
-            <blockquote>
-              <p>
-                Năm 1982, Walter J. Doherty và Ahrvind J. Thadani đã xuất bản,
-                trên Tạp chí Hệ thống IBM, một bài báo nghiên cứu đặt ra yêu cầu
-                về thời gian phản hồi của máy tính là 400 mili giây, chứ không
-                phải 2.000 (2 giây) như tiêu chuẩn trước đó. Khi lệnh của con
-                người được thực thi và trả về câu trả lời trong vòng chưa đầy
-                400 mili giây, nó được coi là vượt quá ngưỡng Doherty và việc sử
-                dụng các ứng dụng đó được coi là &quot;nghiện&quot; người dùng.
-              </p>
-            </blockquote>
-            <ul>
-              <li>
-                <p>
-                  Xem thêm tại
-                  <a
-                    target="_blank"
-                    href="https://lawsofux.com/doherty-threshold/"
-                    ><strong>lawsofux.com</strong></a
-                  >
-                </p>
-              </li>
-              <li>
-                <p>
-                  Theo đó, phần <code>transition: 0.5s ease-in;</code> là không
-                  thân thiện với người dùng. Nên thay bằng
-                  <code>transition: 0.3s ease-in;</code> để tăng trải nghiệm
-                  người dùng.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <p>
-              Các nút sau khi bấm chưa được active, chưa được đổi màu. Điều đó
-              làm cho người dùng không biết mình đã bấm hay chưa, dẫn đến việc
-              bấm nhiều lần, làm giảm trải nghiệm người dùng.
-            </p>
-          </li>
-          <li>
-            <p>
-              Cần chú ý thêm về phần meta title của trang web vì nó là một phần
-              quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc
-              định là <code>Document</code> mà nên thay bằng một title phù hợp.
-            </p>
-            <ul>
-              <li>
-                Ở đây, nên thay bằng <code>Best Seller - Cửa hàng ABC</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm chưa được chỉn chu, chưa đảm
-          bảo semantic, chưa đảm bảo UX, SEO. Cần cải thiện nhiều. Nếu có thời
-          gian, nên code lại
-        </p>
-      </li>
-    </ul>
-    <h2 id="-ho-i-nam-https-github-com-oaihman25-btvn-git-">
-      <a target="_blank" href="https://github.com/oaiHmaN25/btvn.git"
-        >Hoài Nam Đỗ</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/oaiHmaN25/btvn.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt</p></li>
-          <li>
-            <p>
-              Nên sử dụng một font chữ không chân để giống với bản mẫu. VD:
-              <code>font-family: &#39;Poppins&#39;, sans-serif;</code>
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/oaiHmaN25/btvn.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>
-            Các field nên có thuộc tính name để khi submit form có thể lấy được
-            dữ liệu của các field đó.
-          </li>
-          <li>
-            <p>
-              Vì mỗi trình duyệt đều có các style mặc định khác nhau, nên nên
-              reset lại style của trình duyệt bằng cách sử dụng thư viện
-              <a target="_blank" href="https://necolas.github.io/normalize.css/"
-                ><strong>normalize.css</strong></a
-              >
-            </p>
-            <ul>
-              <li>
-                Hoặc sử dụng một đoạn css đơn giản hơn, đặt ở đầu file css để
-                reset lại style của trình duyệt:
-              </li>
-            </ul>
-            <pre><code class="lang-css">* {
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">box-sizing</span>: border-box;
+<ul>
+<li>Nên sử dụng thẻ <code>h3</code> cho phần <code>RESERVATION</code> thay vì <code>div</code> để đảm bảo semantic.</li>
+<li>Phần <code>Book your table</code> cũng nên sử dụng thẻ <code>h2</code> thay vì <code>div</code> để đảm bảo semantic.</li>
+</ul>
+</li>
+<li>
+<p>Vì đây là một form đặt hàng, nên nên sử dụng thẻ <code>form</code> để đảm bảo semantic.</p>
+</li>
+<li>
+<p>Nếu có thể, nên tham khảo câu hỏi và câu trả lời của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html">Lưu Anh Quân</a> để làm phần input cho date, time tốt hơn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/pth2003/HOMEWORK/tree/main/btvn_buoi_4">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Nên hiển thị một danh sách khi người dùng vào trang web chứ không phải sau khi bấm nút</p>
+</li>
+<li>
+<p>Nên tìm hiểu thêm về một số các luật, kỹ năng làm UX để khiến trải nghiệm người dùng tốt hơn</p>
+<ul>
+<li>Theo <code>Ngưỡng Doherty</code>. Năng suất tăng vọt khi máy tính và người dùng tương tác với tốc độ (&lt;400ms) đảm bảo rằng không phải chờ đợi bên kia.</li>
+</ul>
+<blockquote>
+<p>Năm 1982, Walter J. Doherty và Ahrvind J. Thadani đã xuất bản, trên Tạp chí Hệ thống IBM, một bài báo nghiên cứu đặt ra yêu cầu về thời gian phản hồi của máy tính là 400 mili giây, chứ không phải 2.000 (2 giây) như tiêu chuẩn trước đó. Khi lệnh của con người được thực thi và trả về câu trả lời trong vòng chưa đầy 400 mili giây, nó được coi là vượt quá ngưỡng Doherty và việc sử dụng các ứng dụng đó được coi là &quot;nghiện&quot; người dùng.</p>
+</blockquote>
+<ul>
+<li>
+<p>Xem thêm tại <a href="https://lawsofux.com/doherty-threshold/"><strong>lawsofux.com</strong></a></p>
+</li>
+<li>
+<p>Theo đó, phần <code>transition: 0.5s ease-in;</code> là không thân thiện với người dùng. Nên thay bằng <code>transition: 0.3s ease-in;</code> để tăng trải nghiệm người dùng.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Các nút sau khi bấm chưa được active, chưa được đổi màu. Điều đó làm cho người dùng không biết mình đã bấm hay chưa, dẫn đến việc bấm nhiều lần, làm giảm trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Cần chú ý thêm về phần meta title của trang web vì nó là một phần quan trọng trong trải nghiệm người dùng, SEO. Không nên chỉ để mặc định là <code>Document</code> mà nên thay bằng một title phù hợp.</p>
+<ul>
+<li>Ở đây, nên thay bằng <code>Best Seller - Cửa hàng ABC</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm chưa được chỉn chu, chưa đảm bảo semantic, chưa đảm bảo UX, SEO. Cần cải thiện nhiều. Nếu có thời gian, nên code lại</li>
+</ul>
+<h2><a href="https://github.com/oaiHmaN25/btvn.git">Hoài Nam Đỗ</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/oaiHmaN25/btvn.git">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Nên sử dụng một font chữ không chân để giống với bản mẫu. VD: <code>font-family: 'Poppins', sans-serif;</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/oaiHmaN25/btvn.git">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các field nên có thuộc tính name để khi submit form có thể lấy được dữ liệu của các field đó.</p>
+</li>
+<li>
+<p>Vì mỗi trình duyệt đều có các style mặc định khác nhau, nên nên reset lại style của trình duyệt bằng cách sử dụng thư viện <a href="https://necolas.github.io/normalize.css/"><strong>normalize.css</strong></a></p>
+<ul>
+<li>Hoặc sử dụng một đoạn css đơn giản hơn, đặt ở đầu file css để reset lại style của trình duyệt:</li>
+</ul>
+<pre><code class="language-css">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </code></pre>
-          </li>
-          <li>
-            <p>
-              Có thể tham khảo câu hỏi của bạn
-              <a
-                href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html"
-                >Lưu Anh Quân</a
-              >
-              để làm phần input cho date, time tốt hơn.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/oaiHmaN25/btvn.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>Các nút chức năng khi hover vào vẫn chưa đủ như ở layout mẫu.</li>
-          <li>
-            Các phần navbar có đổi màu khi hover tuy nhiên màu chữ lại không đổi
-            dẫn đến màu chữ không đủ tương phản với màu nền, khó nhìn.
-          </li>
-          <li>
-            Không chỉn chu khi dò lại lỗi, chính tả
-            <pre><code class="lang-css">ul.products <span class="hljs-built_in">li</span> .<span class="hljs-built_in">product</span>-top .button_icon img {
-  <span class="hljs-built_in">display</span>: inline-;
+</li>
+<li>
+<p>Có thể tham khảo câu hỏi của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html">Lưu Anh Quân</a> để làm phần input cho date, time tốt hơn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/oaiHmaN25/btvn.git">Bài 3</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Các nút chức năng khi hover vào vẫn chưa đủ như ở layout mẫu.</li>
+<li>Các phần navbar có đổi màu khi hover tuy nhiên màu chữ lại không đổi dẫn đến màu chữ không đủ tương phản với màu nền, khó nhìn.</li>
+<li>Không chỉn chu khi dò lại lỗi, chính tả<pre><code class="language-css">ul.products li .product-top .button_icon img {
+  display: inline-;
   ...;
 }
 </code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa chỉn chu
-          vào bản mẫu, dẫn đến UI không được đẹp. Cần cải thiện nhiều hơn, đồng
-          thời nên xem lại các lỗi chính tả, lỗi chức năng trước khi nộp bài.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-nguy-n-duy-an-https-github-com-nguyenduyan9-btvn-git-">
-      <a target="_blank" href="https://github.com/nguyenduyan9/BTVN.git"
-        >Nguyễn Duy An</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/nguyenduyan9/BTVN.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt</li>
-          <li>
-            Phần meta title của trang web nên thay bằng
-            <code>Form Subscribe</code> để đảm bảo SEO, trải nghiệm người dùng
-            tốt hơn.
-          </li>
-          <li>
-            Sai chính tả <code>[whith, straigh, Oppotunities]</code> =&gt;
-            <code>[with, straight, Opportunities]</code>
-          </li>
-          <li>
-            <p>Viết SCSS trong file CSS thì sẽ không chạy được</p>
-            <pre><code class="lang-scss"><span class="hljs-selector-class">.footer</span><span class="hljs-selector-pseudo">:hover</span> {
-  <span class="hljs-attribute">.form-info</span>::placeholder {
-    color: <span class="hljs-number">#ffa500</span>;
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa chỉn chu vào bản mẫu, dẫn đến UI không được đẹp. Cần cải thiện nhiều hơn, đồng thời nên xem lại các lỗi chính tả, lỗi chức năng trước khi nộp bài.</li>
+</ul>
+<h2><a href="https://github.com/nguyenduyan9/BTVN.git">Nguyễn Duy An</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/nguyenduyan9/BTVN.git">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Phần meta title của trang web nên thay bằng <code>Form Subscribe</code> để đảm bảo SEO, trải nghiệm người dùng tốt hơn.</p>
+</li>
+<li>
+<p>Sai chính tả <code>[whith, straigh, Oppotunities]</code> =&gt; <code>[with, straight, Opportunities]</code></p>
+</li>
+<li>
+<p>Viết SCSS trong file CSS thì sẽ không chạy được</p>
+<pre><code class="language-scss">.footer:hover {
+  .form-info::placeholder {
+    color: #ffa500;
   }
 
-  <span class="hljs-selector-class">.form-info</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ddd</span>;
+  .form-info {
+    background-color: #ddd;
   }
 
-  <span class="hljs-selector-class">.btn</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ffa500</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+  .btn {
+    background-color: #ffa500;
+    color: #fff;
   }
 }
 </code></pre>
-          </li>
-          <li>
-            <p>Code không format gây ra khó đọc, khó hiểu, khó bảo trì</p>
-            <pre><code class="lang-html"><span class="hljs-params">&lt;pre&gt;</span>
-  .form-<span class="hljs-class">info </span>{
-<span class="hljs-symbol">padding:</span> <span class="hljs-number">10</span>px <span class="hljs-number">16</span>px;
-<span class="hljs-symbol">border:</span> none    ;
-border-radius: <span class="hljs-number">2</span>px;
+</li>
+<li>
+<p>Code không format gây ra khó đọc, khó hiểu, khó bảo trì</p>
+<pre><code class="language-html">&lt;pre&gt;
+  .form-info {
+padding: 10px 16px;
+border: none    ;
+border-radius: 2px;
 }
-<span class="hljs-params">&lt;/pre&gt;</span>
+&lt;/pre&gt;
 </code></pre>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/nguyenduyan9/BTVN.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt</p></li>
-          <li>
-            <p>
-              Phần meta title của trang web nên thay bằng
-              <code>Đặt bàn ăn - Nhà hàng ABC</code> để đảm bảo SEO, trải nghiệm
-              người dùng tốt hơn.
-            </p>
-          </li>
-          <li>
-            <p>
-              Nếu đã sử dụng link liên kết tới một file fonts từ bên ngoài,
-              không cần thiết phải tải file fonts về nữa.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span>
-  <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap"</span>
-  <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>
-/&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Phần input đang thiếu padding tất cả các phía, dẫn đến việc text
-              bị che khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó
-              làm giảm trải nghiệm người dùng.
-            </p>
-          </li>
-          <li>
-            <p>
-              Tăng chiều cao của input lên bằng button để giống với bản mẫu.
-            </p>
-          </li>
-          <li>
-            <p>Cần đặt tên className sao cho hợp lý hơn:</p>
-            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"table"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-&lt;input type=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"info"</span> placeholder=<span class="hljs-string">"NAME"</span> /&gt;
-</code></pre>
-            <ul>
-              <li>Đề xuất đổi thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-&lt;input type=<span class="hljs-string">"text"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"input"</span> placeholder=<span class="hljs-string">"NAME"</span> /&gt;
-</code></pre>
-            <ul>
-              <li>
-                Vì trong code, không có đoạn nào thể hiện đây là một bảng. Nên
-                đổi thành <code>container</code> để đảm bảo tránh nhầm lẫn. Các
-                input cũng đổi thành <code>input</code> để đảm bảo tránh nhầm
-                lẫn với các phần tử hiển thị thông tin khác.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a target="_blank" href="https://github.com/nguyenduyan9/BTVN.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            Phần UI rất xấu. Không giống với bản mẫu.
-            <pre><code class="lang-css"><span class="hljs-selector-class">.skincare</span>,
-<span class="hljs-selector-class">.csmetics-cases</span>,
-<span class="hljs-selector-class">.fragrance</span>,
-<span class="hljs-selector-class">.haircare</span>,
-<span class="hljs-selector-class">.makeup</span> {
-  ...
-  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.6</span>;
-}
-</code></pre>
-            <ul>
-              <li>
-                Đoạn code trên làm cho các phần tử trên trang web bị mờ đi,
-                không thể nhìn rõ được. Điều đó làm giảm trải nghiệm người dùng.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ
-          năng làm UI để giao diện đẹp hơn, giống với bản mẫu hơn. Cần cải thiện
-          kỹ năng đặt tên className sao cho hợp lý hơn.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-d-ng-qu-c-anh-https-github-com-quocanh-bit-f8_fullstack_006-git-">
-      <a
-        target="_blank"
-        href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
-        >Dương Quốc Anh</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt</p></li>
-          <li>
-            <p>
-              Sử dụng màu không hợp lỹ, nhiều màu không tương phản với nhau hoặc
-              quá tương phản với nhau, dẫn đến việc khó nhìn, khó phân biệt giữa
-              các phần tử.
-            </p>
-            <ul>
-              <li>
-                Có thể sử dụng trang web
-                <a target="_blank" href="https://colorhunt.co/"
-                  ><strong>colorhunt.co</strong></a
-                >
-                để tìm màu hợp lý hơn.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Sử dụng một đường dẫn dễ gây lỗi.</li>
-        </ul>
-        <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/Buoi_4/assets/style2.css"</span> /&gt;</span>
-</code></pre>
-        <ul>
-          <li>
-            <p>
-              Code không hề có format. Dẫn đến khó đọc, khó hiểu, khó bảo trì.
-            </p>
-          </li>
-          <li>
-            <p>
-              Nên xem qua câu hỏi của bạn
-              <a
-                href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html"
-                >Lưu Anh Quân</a
-              >
-              để làm phần input cho date, time tốt hơn.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/QuocAnh-bit/F8_fullstack_006.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>Sử dụng một đường dẫn dễ gây lỗi.</p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/Buoi_4/assets/style3.css"</span> /&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>
-              Code không hề có format. Dẫn đến khó đọc, khó hiểu, khó bảo trì.
-            </p>
-          </li>
-          <li>
-            <p>
-              Khi bấm vào các ô nav, không có active màu khiến cho người dùng
-              không biết mình đang ở trang nào, dẫn đến việc bấm nhiều lần, làm
-              giảm trải nghiệm người dùng.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ
-          năng làm UI để giao diện đẹp hơn, giống với bản mẫu hơn. Cần cải thiện
-          kỹ năng format code để đảm bảo đủ các quy tắc về code convention, dẫn
-          đến khó đọc, khó hiểu, khó bảo trì.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-nam-nguy-n-https-github-com-namnguyen2603-nguyentrungnam_bai4-git-"
-    >
-      <a
-        target="_blank"
-        href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git"
-        >Nam Nguyễn</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt *</li>
-          <li>Phần button khi hover chưa có action đổi màu.</li>
-          <li>
-            Phần label đã bao bọc input thì không cần thêm thuộc tính for.
-          </li>
-          <li>Code không format, Dẫn đến khó đọc, khó hiểu, khó bảo trì.</li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>Phần code sử dụng font chữ này không chạy được:</p>
-            <pre><code class="lang-css"><span class="hljs-selector-class">.sub-title</span> {
-  <span class="hljs-attribute">font-family</span>: Bebas Neue;
-}
-<span class="hljs-selector-class">.title</span> {
-  <span class="hljs-attribute">font-family</span>: Alfa Slab One;
-}
-</code></pre>
-            <ul>
-              <li>
-                Vì nếu muốn sử dụng một font chữ có ký tự đặc biệt cần đưa vào
-                dấu nháy <code>&#39;&#39;</code>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            Làm bài hiện chưa đủ yêu cầu đề bài. Cần làm thêm cho đủ yêu cầu đề
-            bài.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tạm được. Cần làm lại bài 3.
-          Cần cải thiện kỹ năng format code để đảm bảo đủ các quy tắc về code
-          convention, dẫn đến khó đọc, khó hiểu, khó bảo trì.
-        </p>
-      </li>
-    </ul>
-    <h2 id="-minh-quang-https-github-com-taminhquang13-bai_tap_f8-git-">
-      <a target="_blank" href="https://github.com/taminhquang13/Bai_Tap_F8.git"
-        >Minh Quang</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/taminhquang13/Bai_Tap_F8.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Phần meta title của trang web nên thay bằng
-              <code>Form Subscribe</code> để đảm bảo SEO, trải nghiệm người dùng
-              tốt hơn.
-            </p>
-          </li>
-          <li>
-            <p>
-              Thiếu khoảng cách giữa các phần tử, dẫn đến việc không đồng bộ
-              giữa các phần tử, làm giảm trải nghiệm người dùng.
-            </p>
-          </li>
-          <li>
-            <p>
-              Thẻ ul, li để sử dụng hiển thị các list nội dung liên quan đến
-              nhau, không phải là để hiển thị input, button. Điều đó là sai về
-              semantic.
-            </p>
-            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Email address"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"submit"</span>&gt;</span>Send me opportunities<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
-          </li>
-          <li>
-            <p>Code không format. Dẫn đến khó đọc, khó hiểu, khó bảo trì.</p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/taminhquang13/Bai_Tap_F8.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm rất tốt *</li>
-          <li>
-            Phần meta title của trang web nên thay bằng
-            <code>Đặt bàn ăn - Nhà hàng ABC</code> để đảm bảo SEO, trải nghiệm
-            người dùng tốt hơn.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            target="_blank"
-            href="https://github.com/taminhquang13/Bai_Tap_F8.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Chưa có kiến thức tốt về các đường dẫn tương đối và tuyệt đối.
-            </p>
-            <ul>
-              <li>
-                <p>
-                  Phần github chỉ đẩy lên từ <code>Bai_Tap_F8</code> thì làm sao
-                  lấy được từ /1. HocHTML.
-                </p>
-                <ul>
-                  <li>
-                    Nên sử dụng đường dẫn tương đối để đảm bảo đúng đường dẫn.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><p>Thiếu phần button ở trong hình như bản mẫu.</p></li>
-          <li>
-            <p>
-              Phần alt của ảnh nên đặt có ý nghĩa để đảm bảo SEO, trải nghiệm
-              người dùng tốt hơn.
-            </p>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/ive/Gaeul01.jpg"</span> alt=<span class="hljs-string">"b"</span> /&gt;
-</code></pre>
-            <ul>
-              <li>Đoạn code trên không có ý nghĩa gì cả. Nên đổi thành:</li>
-            </ul>
-            <pre><code class="lang-html">&lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"./img/ive/Gaeul01.jpg"</span> alt=<span class="hljs-string">"Gaeul01"</span> /&gt;
-</code></pre>
-          </li>
-          <li><p>Nên xử lý lại ảnh để đỡ bị sai tỷ lệ ảnh.</p></li>
-          <li>
-            <p>
-              Phần meta title của trang web nên thay bằng
-              <code>Best Seller - Cửa hàng ABC</code> để đảm bảo SEO, trải
-              nghiệm người dùng tốt hơn.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, cần cải thiện kỹ năng về
-          các đường dẫn tương đối và tuyệt đối. Cần cải thiện kỹ năng format
-          code để đảm bảo đủ các quy tắc về code convention, dẫn đến khó đọc,
-          khó hiểu, khó bảo trì.
-        </p>
-      </li>
-    </ul>
-    <h2
-      id="-trung-le-https-github-com-trungdeptraii-le_van_trung_14-06-2023-day4-git-"
-    >
-      <a
-        href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git"
-        >Trung Le</a
-      >
-    </h2>
-    <ul>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git"
-            >Bài 1</a
-          >
-        </p>
-        <ul>
-          <li><p>Bài làm tốt. Nhưng hơi ẩu.</p></li>
-          <li>
-            <p>
-              Cần sử dụng font chữ không chân để giống với bản mẫu. VD:
-              <code>font-family: &#39;Poppins&#39;, sans-serif;</code>
-            </p>
-          </li>
-          <li>
-            <p>
-              Cần thêm padding cho input để tránh việc text bị che khuất, tạo
-              cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải
-              nghiệm người dùng.
-            </p>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git"
-            >Bài 2</a
-          >
-        </p>
-        <ul>
-          <li>
-            <p>
-              Phần text trong button nên thêm letter-spacing để tạo khoảng cách
-              giữa các chữ cái, giúp cho người dùng dễ nhìn hơn.
-            </p>
-          </li>
-          <li>
-            <p>
-              Nên thêm padding cho input để tránh việc text bị che khuất, tạo
-              cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải
-              nghiệm người dùng.
-            </p>
-          </li>
-          <li>
-            <p>
-              Phần input cho số người thì nên để là số thay vì text để đảm bảo
-              người dùng không nhập sai kiểu dữ liệu.
-            </p>
-            <pre><code class="lang-html">&lt;input
-  <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span>
-  name=<span class="hljs-string">"people"</span>
-  id=<span class="hljs-string">"people"</span>
-  <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"people"</span>
-  placeholder=<span class="hljs-string">"     PEOPLE"</span>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenduyan9/BTVN.git">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Phần meta title của trang web nên thay bằng <code>Đặt bàn ăn - Nhà hàng ABC</code> để đảm bảo SEO, trải nghiệm người dùng tốt hơn.</p>
+</li>
+<li>
+<p>Nếu đã sử dụng link liên kết tới một file fonts từ bên ngoài, không cần thiết phải tải file fonts về nữa.</p>
+<pre><code class="language-html">&lt;link
+  href=&quot;https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap&quot;
+  rel=&quot;stylesheet&quot;
 /&gt;
 </code></pre>
-            <ul>
-              <li>
-                Cũng không nên để các khoảng trống ở trong placeholder. Vì khi
-                style padding cho input thì sẽ bị sai về vị trí.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          [x]
-          <a
-            href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git"
-            >Bài 3</a
-          >
-        </p>
-        <ul>
-          <li>Bài làm tốt</li>
-          <li>
-            Tuy nhiên cần thêm tính năng click vào nav để đổi ảnh như đề bài.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p>
-          Đánh giá chung bài tập về nhà: Bài làm tốt, không nên ẩu, cần cải
-          thiện sự chỉn chu, chuyên nghiệp trong việc code. Cần cải thiện kỹ
-          năng format code để đảm bảo đủ các quy tắc về code convention, dẫn đến
-          khó đọc, khó hiểu, khó bảo trì.
-        </p>
-      </li>
-    </ul>
-  </body>
-</html>
+</li>
+<li>
+<p>Phần input đang thiếu padding tất cả các phía, dẫn đến việc text bị che khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Tăng chiều cao của input lên bằng button để giống với bản mẫu.</p>
+</li>
+<li>
+<p>Cần đặt tên className sao cho hợp lý hơn:</p>
+<pre><code class="language-html">&lt;div class=&quot;table&quot;&gt;&lt;/div&gt;
+&lt;input type=&quot;text&quot; class=&quot;info&quot; placeholder=&quot;NAME&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất đổi thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;
+&lt;input type=&quot;text&quot; class=&quot;input&quot; placeholder=&quot;NAME&quot; /&gt;
+</code></pre>
+<ul>
+<li>Vì trong code, không có đoạn nào thể hiện đây là một bảng. Nên đổi thành <code>container</code> để đảm bảo tránh nhầm lẫn. Các input cũng đổi thành <code>input</code> để đảm bảo tránh nhầm lẫn với các phần tử hiển thị thông tin khác.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenduyan9/BTVN.git">Bài 3</a></p>
+<ul>
+<li>Phần UI rất xấu. Không giống với bản mẫu.<pre><code class="language-css">.skincare,
+.csmetics-cases,
+.fragrance,
+.haircare,
+.makeup {
+  ...
+  opacity: 0.6;
+}
+</code></pre>
+<ul>
+<li>Đoạn code trên làm cho các phần tử trên trang web bị mờ đi, không thể nhìn rõ được. Điều đó làm giảm trải nghiệm người dùng.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ năng làm UI để giao diện đẹp hơn, giống với bản mẫu hơn. Cần cải thiện kỹ năng đặt tên className sao cho hợp lý hơn.</li>
+</ul>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git">Dương Quốc Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Sử dụng màu không hợp lỹ, nhiều màu không tương phản với nhau hoặc quá tương phản với nhau, dẫn đến việc khó nhìn, khó phân biệt giữa các phần tử.</p>
+<ul>
+<li>Có thể sử dụng trang web <a href="https://colorhunt.co/"><strong>colorhunt.co</strong></a> để tìm màu hợp lý hơn.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git">Bài 2</a></p>
+<ul>
+<li>Sử dụng một đường dẫn dễ gây lỗi.</li>
+</ul>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/Buoi_4/assets/style2.css&quot; /&gt;
+</code></pre>
+<ul>
+<li>
+<p>Code không hề có format. Dẫn đến khó đọc, khó hiểu, khó bảo trì.</p>
+</li>
+<li>
+<p>Nên xem qua câu hỏi của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/xac-dinh-thuoc-tinh-type-cua-the-input-bai-2.html">Lưu Anh Quân</a> để làm phần input cho date, time tốt hơn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git">Bài 3</a></p>
+<ul>
+<li>
+<p>Sử dụng một đường dẫn dễ gây lỗi.</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/Buoi_4/assets/style3.css&quot; /&gt;
+</code></pre>
+</li>
+<li>
+<p>Code không hề có format. Dẫn đến khó đọc, khó hiểu, khó bảo trì.</p>
+</li>
+<li>
+<p>Khi bấm vào các ô nav, không có active màu khiến cho người dùng không biết mình đang ở trang nào, dẫn đến việc bấm nhiều lần, làm giảm trải nghiệm người dùng.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần cải thiện kỹ năng làm UI để giao diện đẹp hơn, giống với bản mẫu hơn. Cần cải thiện kỹ năng format code để đảm bảo đủ các quy tắc về code convention, dẫn đến khó đọc, khó hiểu, khó bảo trì.</li>
+</ul>
+<h2><a href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git">Nam Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git">Bài 1</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Phần button khi hover chưa có action đổi màu.</li>
+<li>Phần label đã bao bọc input thì không cần thêm thuộc tính for.</li>
+<li>Code không format, Dẫn đến khó đọc, khó hiểu, khó bảo trì.</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git">Bài 2</a></p>
+<ul>
+<li>
+<p>Phần code sử dụng font chữ này không chạy được:</p>
+<pre><code class="language-css">.sub-title {
+  font-family: Bebas Neue;
+}
+.title {
+  font-family: Alfa Slab One;
+}
+</code></pre>
+<ul>
+<li>Vì nếu muốn sử dụng một font chữ có ký tự đặc biệt cần đưa vào dấu nháy <code>''</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/namnguyen2603/nguyentrungnam_bai4.git">Bài 3</a></p>
+<ul>
+<li>Làm bài hiện chưa đủ yêu cầu đề bài. Cần làm thêm cho đủ yêu cầu đề bài.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tạm được. Cần làm lại bài 3. Cần cải thiện kỹ năng format code để đảm bảo đủ các quy tắc về code convention, dẫn đến khó đọc, khó hiểu, khó bảo trì.</li>
+</ul>
+<h2><a href="https://github.com/taminhquang13/Bai_Tap_F8.git">Minh Quang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/taminhquang13/Bai_Tap_F8.git">Bài 1</a></p>
+<ul>
+<li>
+<p>Phần meta title của trang web nên thay bằng <code>Form Subscribe</code> để đảm bảo SEO, trải nghiệm người dùng tốt hơn.</p>
+</li>
+<li>
+<p>Thiếu khoảng cách giữa các phần tử, dẫn đến việc không đồng bộ giữa các phần tử, làm giảm trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Thẻ ul, li để sử dụng hiển thị các list nội dung liên quan đến nhau, không phải là để hiển thị input, button. Điều đó là sai về semantic.</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;text&quot; class=&quot;email&quot; placeholder=&quot;Email address&quot; /&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;submit&quot;&gt;Send me opportunities&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+<li>
+<p>Code không format. Dẫn đến khó đọc, khó hiểu, khó bảo trì.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/taminhquang13/Bai_Tap_F8.git">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Phần meta title của trang web nên thay bằng <code>Đặt bàn ăn - Nhà hàng ABC</code> để đảm bảo SEO, trải nghiệm người dùng tốt hơn.</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/taminhquang13/Bai_Tap_F8.git">Bài 3</a></p>
+<ul>
+<li>
+<p>Chưa có kiến thức tốt về các đường dẫn tương đối và tuyệt đối.</p>
+<ul>
+<li>
+<p>Phần github chỉ đẩy lên từ <code>Bai_Tap_F8</code> thì làm sao lấy được từ /1. HocHTML.</p>
+<ul>
+<li>Nên sử dụng đường dẫn tương đối để đảm bảo đúng đường dẫn.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Thiếu phần button ở trong hình như bản mẫu.</p>
+</li>
+<li>
+<p>Phần alt của ảnh nên đặt có ý nghĩa để đảm bảo SEO, trải nghiệm người dùng tốt hơn.</p>
+<pre><code class="language-html">&lt;img src=&quot;./img/ive/Gaeul01.jpg&quot; alt=&quot;b&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đoạn code trên không có ý nghĩa gì cả. Nên đổi thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;./img/ive/Gaeul01.jpg&quot; alt=&quot;Gaeul01&quot; /&gt;
+</code></pre>
+</li>
+<li>
+<p>Nên xử lý lại ảnh để đỡ bị sai tỷ lệ ảnh.</p>
+</li>
+<li>
+<p>Phần meta title của trang web nên thay bằng <code>Best Seller - Cửa hàng ABC</code> để đảm bảo SEO, trải nghiệm người dùng tốt hơn.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần cải thiện kỹ năng về các đường dẫn tương đối và tuyệt đối. Cần cải thiện kỹ năng format code để đảm bảo đủ các quy tắc về code convention, dẫn đến khó đọc, khó hiểu, khó bảo trì.</li>
+</ul>
+<h2><a href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git">Trung Le</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt. Nhưng hơi ẩu.</p>
+</li>
+<li>
+<p>Cần sử dụng font chữ không chân để giống với bản mẫu. VD: <code>font-family: 'Poppins', sans-serif;</code></p>
+</li>
+<li>
+<p>Cần thêm padding cho input để tránh việc text bị che khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải nghiệm người dùng.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git">Bài 2</a></p>
+<ul>
+<li>
+<p>Phần text trong button nên thêm letter-spacing để tạo khoảng cách giữa các chữ cái, giúp cho người dùng dễ nhìn hơn.</p>
+</li>
+<li>
+<p>Nên thêm padding cho input để tránh việc text bị che khuất, tạo cảm giác không đồng bộ giữa các phần tử. Việc đó làm giảm trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>Phần input cho số người thì nên để là số thay vì text để đảm bảo người dùng không nhập sai kiểu dữ liệu.</p>
+<pre><code class="language-html">&lt;input
+  type=&quot;text&quot;
+  name=&quot;people&quot;
+  id=&quot;people&quot;
+  class=&quot;people&quot;
+  placeholder=&quot;     PEOPLE&quot;
+/&gt;
+</code></pre>
+<ul>
+<li>Cũng không nên để các khoảng trống ở trong placeholder. Vì khi style padding cho input thì sẽ bị sai về vị trí.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Trungdeptraii/Le_Van_Trung_14-06-2023-Day4.git">Bài 3</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Tuy nhiên cần thêm tính năng click vào nav để đổi ảnh như đề bài.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, không nên ẩu, cần cải thiện sự chỉn chu, chuyên nghiệp trong việc code. Cần cải thiện kỹ năng format code để đảm bảo đủ các quy tắc về code convention, dẫn đến khó đọc, khó hiểu, khó bảo trì.</li>
+</ul>
+
+          <script src="../../../assets/js/pages.js" defer></script>
+        </body>
+      </html>
+    
