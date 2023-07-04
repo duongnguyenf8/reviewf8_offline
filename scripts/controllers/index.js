@@ -71,9 +71,9 @@ const deployVercel = () => {
 
 const buildPushAndDeploy = async (text) => {
   await building();
-  logSuccess("Building successfully!");
   logInfo("Waiting a few seconds...");
   setTimeout(async () => {
+    logSuccess("Building successfully!");
     await pushGit(text);
     logSuccess("Push git successfully!");
     await deployVercel();
