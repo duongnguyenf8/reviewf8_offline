@@ -3,7 +3,7 @@ const { logSuccess, logError, logInfo } = require("../views");
 
 function runBuild() {
   const createListCommand = "python scripts/build/createList.py";
-  const renderCommand = "node ./script/render.js";
+  const renderCommand = "node scripts/build/render.js";
 
   exec(createListCommand, (error, stdout, stderr) => {
     logInfo("Building data.json...");
