@@ -93,7 +93,7 @@ span[class="x-icon"]::before {
   line-height: 20px;
   border: 2px solid var(--color_second);
   border-radius: 50%;
-  filter: drop-shadow(2px 2px 32px var(--color_second));
+  filter: drop-shadow(2px 4px 1px var(--color_second));
 }
 
 .back-btn {
