@@ -5,6 +5,7 @@ const { logSuccess, logError } = require("../views");
 
 const dataPath = "assets/data/data.json";
 const stylePath = "../../../assets/css/style.css";
+const faviconPath = "../../../assets/images/favicon.ico";
 const scriptPath = "../../../assets/js/pages.js";
 
 function renderPage(folderPath, folder, subfolder) {
@@ -18,12 +19,13 @@ function renderPage(folderPath, folder, subfolder) {
     }
 
     const cssLink = `<link rel="stylesheet" href="${stylePath}" />`;
+    const faviconLink = `<link rel="shortcut icon" href="${faviconPath}" type="image/x-icon" />`;
     const scriptTag = `<script src="${scriptPath}" defer></script>`;
 
     const md = new MarkdownIt();
-    const htmlContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${folder}/${subfolder}</title>${cssLink}</head><body>${md.render(data)}${scriptTag}</body></html>
-`;
-
+    const htmlContent = `<!DOCTYPE html><html><head><meta charset="UTF-8">${faviconLink}<title>${folder}/${subfolder}</title>${cssLink}</head><body>${md.render(
+      data
+    )}${scriptTag}</body></html>`;
     fs.writeFile(outputPath, htmlContent, (err) => {
       if (err) {
         logError(`Error writing file: ${outputPath}`);
