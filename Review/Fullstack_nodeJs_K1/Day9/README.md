@@ -315,3 +315,44 @@
 ---
 
 - Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết cảu bài làm để có thể làm tốt hơn.
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+- [x] [Bài 1](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+  Bài làm chưa tốt
+
+  Phần chuyển item chưa có transition
+
+  Tất cả các phần ảnh bị vỡ do set cả width và height
+
+  Ở một số màn hình khác, phần ảnh bị sai layout.
+
+  ![Dương Quốc Anh Bài 1](images/duong_quoc_anh-bai1.png)
+
+  Phần `.dot` sai màu so với bản gốc
+
+---
+
+- [x] [Bài 2](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+  Bài làm tốt
+
+  Phần transition quá chậm, sẽ khiến user thấy mệt.
+
+  Nên làm transition phần `.content-item p` chậm hơn để giống bản mẫu hơn.
+
+  Phần `.more arrow a i` chưa có hiệu ứng transition. (Quá dài dòng và không cần thiết dài vậy)
+
+  Thuộc tính href của thẻ a cần có một value, nếu không có thì có thể sử dụng "#!"
+
+---
+
+- [x] [Bài 3](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+  Bài làm tốt \*
+
+  Phần `<textarea>` chưa có hiệu ứng.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết cảu bài làm để có thể làm tốt hơn.
