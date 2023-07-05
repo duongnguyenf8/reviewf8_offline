@@ -2,6 +2,8 @@
 
 ## [Hoang Van Thanh](https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_5)
 
+    Sớm nhất \*
+
 - [x] [Bài 1]: Bài làm tốt
 
 Khi focus vị trí tooltip hơn gần.
@@ -166,7 +168,7 @@ Và bỏ selector.
 
 ---
 
-## [Tuan Kiet Hoang](https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_5)
+## [Hà Long Việt](https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_5)
 
 - [x] [Bài 1]: Bài làm tốt \*
 
