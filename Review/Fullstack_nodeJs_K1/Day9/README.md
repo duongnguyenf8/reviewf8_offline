@@ -50,7 +50,6 @@
 
 ## [Sơn Ngô Mạnh](https://github.com/NgoManhson/f8-fullstack-exercises)
 
-
 - [x] [Bài 1](https://github.com/NgoManhson/f8-fullstack-exercises)
 
   Bài làm tốt
@@ -80,3 +79,31 @@
 ---
 
 - Đánh giá chung bài tập về nhà: Bài làm tốt. Có xử dụng được transition làm hiệu ứng, tuy nhiên chưa thể giống với bản mẫu. Nên phân tích kỹ hơn.
+
+## [Dương Hiệp](https://duonghiep416.github.io/duonghiep_f8_fullstack)
+
+- [x] [Bài 1](https://duonghiep416.github.io/duonghiep_f8_fullstack)
+
+  Bài làm tốt
+
+  Thiếu line-height của `.history-desc`
+
+  Chưa làm feature: Khi hover, các item đổi chỗ.
+
+---
+
+- [x] [Bài 2](https://duonghiep416.github.io/duonghiep_f8_fullstack)
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3](https://duonghiep416.github.io/duonghiep_f8_fullstack)
+
+  Bài làm sai so với bản mẫu.
+
+  Phần icon của `select` quá sát viền, lên cách viền phải 1 chút để giống bản mẫu hơn.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý vào các tiểu tiết của bản mẫu để làm tốt hơn.
