@@ -50,7 +50,6 @@
 
 ## [Sơn Ngô Mạnh](https://github.com/NgoManhson/f8-fullstack-exercises)
 
-    Sớm nhất *
 
 - [x] [Bài 1](https://github.com/NgoManhson/f8-fullstack-exercises)
 
@@ -74,18 +73,10 @@
 
 - [x] [Bài 3](https://github.com/NgoManhson/f8-fullstack-exercises)
 
-  Bài làm tốt
+  Bài làm rất tốt \*
 
-  Các animate quá chậm
-
-  Sau khi focus, phần placeholder quá nhỏ.
-
-  Hiệu ứng focus của `<textarea>` bị sai.
-
-  Layout bị sai hoặc bị vỡ ở một màn hình khác:
-
-  ![Đỗ Hà Chi Bài 3](images/do_ha_chi-bai3.png)
+  Phần icon của `select` quá sát viền, lên cách viền phải 1 chút để giống bản mẫu hơn.
 
 ---
 
-- Đánh giá chung bài tập về nhà: Có xử dụng được transition làm hiệu ứng, tuy nhiên chưa thể giống với bản mẫu. Nên phân tích kỹ hơn.
+- Đánh giá chung bài tập về nhà: Bài làm tốt. Có xử dụng được transition làm hiệu ứng, tuy nhiên chưa thể giống với bản mẫu. Nên phân tích kỹ hơn.
