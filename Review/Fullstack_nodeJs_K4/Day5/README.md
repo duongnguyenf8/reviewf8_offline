@@ -256,3 +256,165 @@ Thiếu thuộc tính `box-shaw` cho các thẻ div có `class="box"`, `class ="
 - [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý nhiều hơn vào giao diện mẫu để bài làm chính xác hơn.
 
 ---
+
+## [Nguyễn Hưng Tuân](https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-5.)
+
+- [x] [Bài 1]
+
+  Bài làm rất tốt \*
+
+  Cần xử lý font chữ trong phần placeholder của thẻ textarea.
+
+  Phần icon select nên to hơn và sát hơn một tí sẽ giống với bản mẫu hơn.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+  Phần text trong thẻ p nên để màu chữ nhạt hơn.
+
+---
+
+- Đánh giá: Bài làm rất tốt, chỉ cần chú ý một số lỗi nhỏ để hoàn thiện hơn.
+
+---
+
+## [Đông Nguyễn](https://github.com/Dongnguyen318/F8-fullstack-k4/tree/main/Day%205)
+
+Đặt tên thư mục không nên có dấu cách.
+
+Chưa đưa lên github page \*
+
+- [x] [Bài 1]
+
+  Link CSS bị sai nên file css chưa được liên kết với file html, cần tìm hiểu về đường dẫn tương đối và đường dẫn tuyệt đối.
+
+---
+
+- [x] [Bài 2]
+
+  Link CSS bị sai nên file css chưa được liên kết với file html, cần tìm hiểu về đường dẫn tương đối và đường dẫn tuyệt đối.
+
+---
+
+- [x] [Bài 3]
+
+  Link CSS bị sai nên file css chưa được liên kết với file html, cần tìm hiểu về đường dẫn tương đối và đường dẫn tuyệt đối.
+
+---
+
+- Đánh giá: Cả 3 bài đều không liên kết được với file CSS, cần đặc biệt chú ý.
+
+  \* Yêu cầu xử lý lại tất cả trường hợp tên folder có chứa ký tự đặc biệt.
+
+---
+
+## [Huy Bui](https://github.com/Huy-Bui4869/f8_fullstack_k4/tree/main/Day_5)
+
+- [x] [Bài 1]
+
+  Bài làm rất tốt \*
+
+  Cần xử lý tốt hơn phần placeholder trong thẻ textarea như font chữ, khi focus nên có dấu x thay cho dấu \* như các input ở trên
+
+  Tiêu đề h2 đang khác font chữ so với bản mẫu.
+
+  Phần input nhập SĐT nên có type là number để tránh người dùng nhập sai kiểu dữ liệu.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+  Cần phát triển thêm phần đóng, mở tab bằng cách click vào chính nó.
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+---
+
+- Đánh giá: Bài làm rất tốt, chỉ cần chú ý một số lỗi nhỏ để hoàn thiện hơn.
+
+---
+
+## [Vinh Nguyễn](https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day05)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Khi focus vào input chưa thay đổi icon \* thành x như yêu cầu đề bài.
+
+  Phần icon của thẻ select nên xử lý thêm để giống với bản mẫu.
+
+  Phần text ở checkbox nên để font-size to hơn cho dễ nhìn.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+---
+
+- Đánh giá: Bài làm khá tốt, chỉ cần chú ý thêm một chút về layout để hoàn thiện hơn so với bản mẫu.
+
+---
+
+## [Nguyễn Chi Nam](https://github.com/chinam197/baitapbuoi5.git)
+
+Có link github page nhưng không vào được, cần kiểm tra lại.
+
+- [x] [Bài 1]
+
+  Phần form xử lý rất tệ, không đúng layout và yêu cầu đề bài. Cần xem lại toàn bộ, nếu gặp khó khăn nên đến sớm để được đội ngũ trợ giảng giúp đỡ.
+
+  Phần checkbox khi nhấn vào label không tích được.
+
+  Format code đang rất xấu, khó nhìn, khó đọc. Tham khảo extension tự động format code trong VS Code.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm chưa tốt.
+
+  Cần sử dụng font chữ không chân.
+
+  Chưa có icon + và - ở các tiêu đề như yêu cầu đề bài.
+
+  Không nên đưa thẻ p là con trực tiếp của thẻ ol.
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm tốt.
+
+  Cần xử lý thẻ p trong các box cách viền để dễ nhìn và UI sẽ đẹp hơn.
+
+  Màu button đang hơi nhạt so với bản mẫu, button đang hơi sát so với text ở trên.
+
+  Cần Reset CSS.
+
+---
+
+- Đánh giá: Bài làm chưa tốt, format code đang rất xấu, cần làm theo bản mẫu và chú ý trong việc xử lý layout đang rất yếu. Nếu khó khăn nên đến sớm trước mỗi buổi học để đội ngũ trợ giảng có thể giúp đỡ và giải quyết những thắc mắc khi làm bài tập.
