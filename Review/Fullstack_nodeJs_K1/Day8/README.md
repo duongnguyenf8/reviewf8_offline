@@ -534,7 +534,7 @@
 
 - Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về semantics, các tiểu tiết về màu sắc và kích thước để bài làm tốt hơn.
 
-## [Dương An](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208)
+## [Nguyễn Duy An](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208)
 
 - [x] [Bài 1](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208/BT1)
 
