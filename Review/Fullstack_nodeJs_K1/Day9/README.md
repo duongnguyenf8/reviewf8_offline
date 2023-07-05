@@ -6,7 +6,7 @@
 
 - [x] [Bài 1](https://serenaha12.github.io/fullstack_nodeJS/)
 
-  Bài làm tốt
+  Bài làm chưa tốt
 
   Hình ảnh và timeline cách nhau quá xa.
 
@@ -52,7 +52,7 @@
 
 - [x] [Bài 1](https://github.com/NgoManhson/f8-fullstack-exercises)
 
-  Bài làm tốt
+  Bài làm chưa tốt
 
   Khi hover vào từng giai đoạn nghĩa là hover vào mất cứ chỗ nào trong đoạn đó đều phải được hiệu ứng hover.
 
@@ -84,7 +84,7 @@
 
 - [x] [Bài 1](https://duonghiep416.github.io/duonghiep_f8_fullstack)
 
-  Bài làm tốt
+  Bài làm chưa tốt
 
   Thiếu line-height của `.history-desc`
 
@@ -112,7 +112,7 @@
 
 - [x] [Bài 1](https://github.com/xuananh2212/full_stack_01.git)
 
-  Bài làm tốt
+  Bài làm chưa tốt
 
   Thiếu line-height của `.time-axis__desc`
 
@@ -174,7 +174,7 @@
 
 - [x] [Bài 1](https://github.com/phamtuan162/phamtuan-nodejs-01)
 
-  Bài làm tốt
+  Bài làm chưa tốt
 
   Chưa làm feature: Khi hover, các item đổi chỗ.
 
@@ -272,7 +272,7 @@
 
 ---
 
-- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết cảu bài làm để có thể làm tốt hơn.
+- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết của bài làm để có thể làm tốt hơn.
 
 ## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
 
@@ -314,45 +314,164 @@
 
 ---
 
-- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết cảu bài làm để có thể làm tốt hơn.
-## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết của bài làm để có thể làm tốt hơn.
 
-- [x] [Bài 1](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+## [Trung Le](https://github.com/Trungdeptraii/02-07-2023-LeVanTrung-Day9.git)
 
-  Bài làm chưa tốt
+- [x] [Bài 1](https://github.com/Trungdeptraii/02-07-2023-LeVanTrung-Day9.git)
 
-  Phần chuyển item chưa có transition
+  Bài làm không tốt
 
-  Tất cả các phần ảnh bị vỡ do set cả width và height
+  Bài làm sai yêu cầu, khi hover vào từng giai đoạn thì đổi màu nền và các item đổi chỗ
 
-  Ở một số màn hình khác, phần ảnh bị sai layout.
+  - Trong bài làm thì phải hover vào các nút mới đổi màu
 
-  ![Dương Quốc Anh Bài 1](images/duong_quoc_anh-bai1.png)
+  - Chưa làm feature: Khi hover, các item đổi chỗ.
 
-  Phần `.dot` sai màu so với bản gốc
+  Các hiệu ứng transition không có hoặc có quá ít.
 
 ---
 
-- [x] [Bài 2](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+- [x] [Bài 2](https://github.com/Trungdeptraii/02-07-2023-LeVanTrung-Day9.git)
+
+  Bài làm không tốt
+
+  Hiệu ứng transition sai hoàn toàn yêu cầu đề bài
+
+  Có lỗi khi hover chưa tới phần border của content
+
+  Sử dụng sai font chữ, font chữ trong bài có vẻ giống ở bài 1.
+
+  Hầu hết các thành phần có transition trong bản mẫu thì bài làm chưa có
+
+---
+
+- [x] [Bài 3](https://github.com/Trungdeptraii/02-07-2023-LeVanTrung-Day9.git)
+
+  Hoàn toàn chưa có gì.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm chưa đúng yêu cầu tối thiểu.
+
+## [Minh Quang](https://github.com/taminhquang13/F8_Fullstack.git)
+
+- [x] [Bài 1](https://github.com/taminhquang13/F8_Fullstack.git)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
 
   Bài làm tốt
 
-  Phần transition quá chậm, sẽ khiến user thấy mệt.
+  Chưa có hiệu ứng transition khi item đổi chỗ, dẫn đến bị giật.
 
-  Nên làm transition phần `.content-item p` chậm hơn để giống bản mẫu hơn.
-
-  Phần `.more arrow a i` chưa có hiệu ứng transition. (Quá dài dòng và không cần thiết dài vậy)
-
-  Thuộc tính href của thẻ a cần có một value, nếu không có thì có thể sử dụng "#!"
+  Phần line-height của `.left span` thấp hơn bản mẫu.
 
 ---
 
-- [x] [Bài 3](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+- [x] [Bài 2](https://github.com/taminhquang13/F8_Fullstack.git)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
 
   Bài làm tốt \*
 
-  Phần `<textarea>` chưa có hiệu ứng.
+  Sử dụng sai font chữ, font chữ trong bài có vẻ giống ở bài 1.
+
+  Nên làm transition phần `.caption-item` chậm hơn để giống bản mẫu hơn.
+
+  File `css/variables.css` không có ở trong bài tuy nhiên lại import trong html
 
 ---
 
-- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý lại nhiều vào phần giao diện mẫu và chú ý tiểu tiết cảu bài làm để có thể làm tốt hơn.
+- [x] [Bài 3](https://github.com/taminhquang13/F8_Fullstack.git)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+  Bài làm tốt \*
+
+  Không có hiệu ứng transition ở `<textarea>`
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý hơn nhiều vào bản mẫu và tiểu tiết của bài làm để chỉn chu hơn.
+
+## [Hoài Nam Đỗ](https://github.com/oaiHmaN25/btvn.git)
+
+- [x] [Bài 1](https://github.com/oaiHmaN25/btvn.git)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+  Bài làm không tốt
+
+  Chưa làm feature: Khi hover, các item đổi chỗ.
+
+  Phần `.content` và phần `.background` cách nhau quá xa ở một số màn hình khác.
+
+  Chưa có bất cứ hiệu ứng transition nào.
+
+---
+
+- [x] [Bài 2](https://github.com/oaiHmaN25/btvn.git)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+  Bài làm **Không Tốt**
+
+  Làm sai hoàn toàn đề bài
+
+  Code lại.
+
+---
+
+- [x] [Bài 3](https://github.com/oaiHmaN25/btvn.git)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+  Bài làm không tốt
+
+  Không có bất cứ hiệu ứng transition nào.
+
+  Sau khi thu nhỏ, phần chứ có font chữ rất nhỏ, rất khó nhìn.
+
+  Ở phần `<textarea>` sau khi viết chữ, phần placeholder bị che mất value của người dùng.
+
+  Chưa căn giữa các phần tử.
+
+  Code lại.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm quá ẩu, không chỉn chu. Làm lại (Có kiểm tra)
+
+## [Mai Việt Hoàng](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
+
+Github Pages bị lỗi.
+
+- [x] [Bài 1](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
+
+  Bài làm chưa tốt.
+
+  Có thể tốt hơn nếu chú ý một chút nữa vào đề bài mẫu.
+
+  Chưa làm feature: Khi hover, các item đổi chỗ.
+
+---
+
+- [x] [Bài 2](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
+
+  Bài làm rất tốt \*
+
+  Sau khi delay, có một chút giật ở đoạn cuối của transition trong `.item__desc`.
+
+---
+
+- [x] [Bài 3](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
+
+  Bài làm tốt \*
+
+  Có sáng tạo, tuy nhiên sai so với giao diện mẫu.
+
+  Phần icon của select nên cách một khoảng với viền bên phải để giống bản mẫu hơn
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm rất tốt \*, tuy nhiên cần chú ý thêm một chút nữa vào giao diện mẫu và tuân thủ đúng giao diện mẫu.
