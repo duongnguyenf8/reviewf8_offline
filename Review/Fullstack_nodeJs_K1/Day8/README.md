@@ -76,147 +76,197 @@
 
 ## [Mai Việt Hoàng](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
 
-- [x] [Bài 1](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
-
-  Phần `Documentation` khi hover mới mờ đi, khi chưa hover không nên để mờ, người dùng sẽ nghĩ là bị disable.
-
----
-
-- [x] [Bài 2](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
+- [x] [Bài 1](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap_buoi_8/Bt1/Exercise8.1.html)
 
   Bài làm rất tốt \*
 
-  Cần xử lý lại phần `số lượng * đơn giá` ở giữa so với số lượng.
+  Nên dùng sự kiện `hover` vào thẻ `a` để hiển thị **Mega Menu**
+
+  Thẻ a cần `padding` để tăng trải nghiệm người dùng khi click vào
 
 ---
 
-- [x] [Bài 3](https://github.com/Viethoang-Mai/MVH-fullstack-nodejs-F8-01)
+- [x] [Bài 2](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap_buoi_8/Bt2/Exercise8.2.html)
+
+  Bài làm tốt \*
+
+  Phần **cart\_\_body** cần có thanh cuộn dọc để tăng trải nghiệm người dùng với nhiều sản phẩm
+
+---
+
+- [x] [Bài 3](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap_buoi_8/Bt3/Exercise8.3.html)
 
   Bài làm rất tốt \*
 
+  Chỉnh lại khoảng cách giữa **service\_\_header** và **service\_\_content**
+
 ---
 
-- Đánh giá chung bài tập về nhà: Rất tốt, cần chú ý thêm các tiểu tiết để bài làm tốt hơn.
+- Đánh giá chung bài tập về nhà: Bài làm tốt, để ý thêm về trải nghiệm người dùng, chỉn chu hơn việc căn chỉnh khoảng cách theo thiết kế.
 
 ## [Hoài Nam Đỗ](https://oaihman25.github.io/btvn)
 
-- [x] [Bài 1](oaihman25.github.io/btvn/)
+- [x] [Bài 1](https://oaihman25.github.io/btvn/day8/ex01/ex01.html)
 
-  Cần chú ý nhiều hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+  Bài làm tốt
 
-  Sai yêu cầu đề bài, mega menu chỉ hiện lên khi được hover vào nav menu list
+  Chỉnh lại `font-weight` cho chữ theo đúng thiết kế
+
+  Xem lại cách căn chỉnh giữ **logo** và **main-menu**
+
+  Thêm sự kiện `hover` vào thẻ `a` để hiển thị **Mega Menu**
+
+  Chỉnh lại kích thước của icon info và search đều nhau
 
 ---
 
-- [x] [Bài 2](oaihman25.github.io/btvn/)
-
-  Cần chú ý nhiều hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+- [x] [Bài 2](https://oaihman25.github.io/btvn/day8/ex02/ex02.html)
 
   Bài làm tốt \*
 
-  Cần xử lý lại phần `số lượng * đơn giá`
+  Phần **header** cần căn chỉnh lại chỗ số lượng
 
-  Phần border trong `.count` và button trong đề bài mãu nhạt hơn.
+  Trong phần **content** cần để ý màu sắc theo thiết kế của tên sản phẩm và phần **count**
 
----
-
-- [x] [Bài 3](oaihman25.github.io/btvn/)
-
-  Cần chú ý nhiều hơn vào thẻ meta title vì chúng rất quan trọng trong SEO vàt rải nghiệm người dùng.
-
-  Bài làm tốt \*
-
-  Phần chữ ở subtitle và các button đều hơi bé.
+  Các nút sự kiện nên có `hover` và dùng thêm thuộc tính `cursor: pointer` và hiệu chỉnh màu để tăng tính trải nghiệm người dùng.
 
 ---
 
-- Đánh giá chung bài tập về nhà: Rất tốt, cần chú ý thêm các tiểu tiết để bài làm tốt hơn.
+- [x] [Bài 3](https://oaihman25.github.io/btvn/day8/ex03/ex03.html)
+
+  Bài làm chưa tốt
+
+  Đang lỗi hình ảnh chưa hiển thị
+
+  Khoảng cách chưa đúng với thiết kế
+
+  Cần làm lại
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, để ý thêm về trải nghiệm người dùng, chỉn chu hơn việc căn chỉnh khoảng cách theo thiết kế.
 
 ## [Luu Anh Quan](https://anhquan2211.github.io/exercise-day8-offline-F8/)
 
-- [x] [Bài 1](https://anhquan2211.github.io/exercise-day8-offline-F8/)
-
-  Bài làm sai yêu cầu đề bài, mega menu chỉ hiện lên khi được hover vào nav menu list
-
----
-
-- [x] [Bài 2](https://anhquan2211.github.io/exercise-day8-offline-F8/)
+- [x] [Bài 1](https://anhquan2211.github.io/exercise-day8-offline-F8/exercise01/index.html)
 
   Bài làm tốt \*
 
-  Cần xử lý lại phần `số lượng * đơn giá` (Font-weight nhạt hơn, color đậm hơn).
+  Nên dùng `padding`, `hover` cho thẻ `a`
+
+  Thêm sự kiện `hover` vào thẻ `a` để hiển thị **Mega Menu**
+
+  Chỉnh lại kích thước của icon info và search theo đúng mẫu
+
+  `box-shadow` của **Mega Menu** chưa chuẩn thiết kế
 
 ---
 
-- [x] [Bài 3](https://anhquan2211.github.io/exercise-day8-offline-F8/)
+- [x] [Bài 2](https://anhquan2211.github.io/exercise-day8-offline-F8/exercise02/index.html)
 
-  Bài làm tốt \*
+  Bài làm rất tốt \*
 
-  Phần line-height của `.item-desc` hơi nhỏ.
+  Có sáng tạo nhưng cần làm đúng thiết kế trước.
+
+  Phần **product-number** cần chỉnh lại kích thước theo thiết kế
+
+  Nút **product-action** cần `padding` thêm để tăng trải nghiệm người dùng
 
 ---
 
-- Đánh giá chung bài tập về nhà: Rất tốt, cần chú ý thêm các tiểu tiết để bài làm tốt hơn.
+- [x] [Bài 3](https://duonghiep416.github.io/duonghiep_f8_fullstack/Day8/Ex03/index.html)
+
+  Bài làm rất tốt \*
+
+  Có sáng tạo nhưng cần làm đúng thiết kế trước.
+
+  Nên đưa phần **service-title** và **service-desc** gộp vào 1 khối
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm rất tốt, để ý thêm về trải nghiệm người dùng, chỉn chu hơn việc căn chỉnh kích thước theo thiết kế.
 
 ## [Dương Hiệp](https://github.com/duonghiep416/duonghiep_f8_fullstack.git)
 
-- [x] [Bài 1](https://github.com/duonghiep416/duonghiep_f8_fullstack.git)
+- [x] [Bài 1](https://duonghiep416.github.io/duonghiep_f8_fullstack/Day8/Ex01/index.html)
 
   Bài làm rất tốt \*
 
-  Nếu có thể xử lý hover cho toàn bộ navbar menu item thì tốt hơn.
+  Nên dùng `padding`, `hover` cho thẻ `a`
 
 ---
 
-- [x] [Bài 2](https://github.com/duonghiep416/duonghiep_f8_fullstack.git)
+- [x] [Bài 2](https://duonghiep416.github.io/duonghiep_f8_fullstack/Day8/Ex02/index.html)
 
   Bài làm tốt \*
 
-  Cần xử lý lại phần `số lượng * đơn giá` (Font-weight nhạt hơn).
+  Các nút sự kiện nên có `hover` và dùng thêm thuộc tính `cursor: pointer` để tăng tính trải nghiệm người dùng.
 
-  Thẻ `p` chỉ được sử dụng để thể hiện một đoạn văn bản. Không nên sử dụng để thể hiện một số lượng như trong bài làm. Nên sử dụng `span` thay thế.
+  Chú ý về kích thước, căn chỉnh khoảng cách theo đúng thiết kế ở **shopping-cart-header**
 
----
-
-- [x] [Bài 3](https://github.com/duonghiep416/duonghiep_f8_fullstack.git)
-
-  Bài làm rất tốt \*
+  Phần **cart-products** nên thiết kế thanh cuộn lên xuống khi có nhiều **product-item** bên trong theo đúng thiết kế và để tăng tính trải nghiệm người dùng.
 
 ---
 
-- Đánh giá chung bài tập về nhà: Rất tốt, cần chú ý thêm các tiểu tiết để bài làm tốt hơn.
+- [x] [Bài 3](https://duonghiep416.github.io/duonghiep_f8_fullstack/Day8/Ex03/index.html)
+
+  Bài làm tốt \*
+
+  Nên đưa phần **services-title** và **services-desc** gộp vào 1 khối
+
+  Chú ý căn chỉnh đều giữa title và **services-list**
+
+  Dùng sai HTML semantics `section` bọc `div`
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm rất tốt, để ý thêm về các sự kiện có thêm hiệu ứng tăng trải nghiệm người dùng, chỉn chu hơn việc căn chỉnh khoảng cách theo thiết kế.
 
 ## [Phan Trung Hiếu](https://pth2003.github.io/HOMEWORK/BTVN/btvn_buoi__8/)
 
-- [x] [Bài 1](https://pth2003.github.io/HOMEWORK/BTVN/btvn_buoi__8/)
+- [x] [Bài 1](https://github.com/pth2003/FullStack_Nodejs_K1/tree/main/BTVN/btvn_buoi__8/bai_1)
 
-  Bài làm rất tốt \*
+  Bài làm tốt
 
-  Nếu có thể xử lý hover cho toàn bộ navbar menu item thì tốt hơn.
+  Chú ý `font-weight` của chữ theo thiết kế cần đậm hơn
+
+  Cần `hover` vào thẻ `a` trong các **item** để hiển thi **Mega Menu**
+
+  Cần xem lại HTML Semantics
+
+  Chú ý cách đặt tên class đúng ngữ cảnh và tường mình hơn.
 
 ---
 
-- [x] [Bài 2](https://pth2003.github.io/HOMEWORK/BTVN/btvn_buoi__8/)
+- [x] [Bài 2](https://github.com/pth2003/FullStack_Nodejs_K1/tree/main/BTVN/btvn_buoi__8/bai_2)
 
   Bài làm tốt \*
 
-  Cần xử lý lại phần `số lượng * đơn giá` (Font-weight nhạt hơn).
+  Các nút sự kiện khi `hover` cần có thêm chút hiệu ứng để tăng tính trải nghiệm người dùng.
 
-  Thẻ `p` chỉ được sử dụng để thể hiện một đoạn văn bản. Không nên sử dụng để thể hiện một số lượng như trong bài làm. Nên sử dụng `span` thay thế.
+  Xem lại màu sắc, kích thước, font chữ của thiết kế
 
----
+  Phần **product** nên thiết kế thanh cuộn lên xuống khi có nhiều **product-item** bên trong để tăng tính trải nghiệm người dùng.
 
-- [x] [Bài 3](https://pth2003.github.io/HOMEWORK/BTVN/btvn_buoi__8/)
-
-  Bài làm rất tốt \*
+  Cần xem lại cách đặt tên class tường minh và chuẩn số ít số nhiều
 
 ---
 
-- Đánh giá chung bài tập về nhà: Rất tốt, cần chú ý thêm các tiểu tiết để bài làm tốt hơn.
+- [x] [Bài 3](https://github.com/pth2003/FullStack_Nodejs_K1/tree/main/BTVN/btvn_buoi__8/bai_3)
+
+  Bài làm tốt
+
+  Các nút sự kiện nên có `hover` và dùng thêm thuộc tính `cursor: pointer` để tăng tính trải nghiệm người dùng.
+
+  Cần căn chỉnh lại khoảng cách các phần tử theo thiết kế bài mẫu.
+
+  Chú ý khi dùng `flex` ở thẻ cha thì các thẻ con nên dùng `flex-basis` thay vì dùng `width`
+
+  Cần xem lại cách đặt tên class tường minh, đúng ngữ cảnh và chuẩn số ít số nhiều.
 
 ---
 
-- Đánh giá chung bài tập về nhà: Rất tốt, cần chú ý thêm các tiểu tiết để bài làm tốt hơn.
+- Đánh giá chung bài tập về nhà: Bài làm tốt, để ý thêm về các sự kiện có thêm hiệu ứng tăng trải nghiệm người dùng và xem lại cách đặt tên class để bài làm chỉn chu hơn.
 
 ## [Bùi Quang Bình](https://darkmage84.github.io/binh_fsk_01/btvn_ngay8/)
 
@@ -232,7 +282,7 @@
 
   Phần **header** không được đặt `height` quá cao so với thiết kế. Có thể không cần đặt `height` mà dùng `padding` vào **header**
 
-  Tương tự phần **menu** thiết kế giống \*header** nên bị sai. Và **menu\*\* nên dùng thẻ `nav` theo chuẩn semantics.
+  Tương tự phần **menu** thiết kế giống **header** nên bị sai. Và **menu** nên dùng thẻ `nav` theo chuẩn semantics.
 
   Trong **menu-list** các thẻ `li` không cần css `padding`, `width`, `height`, `font-size`, `font-weight` vào vì đang dùng thẻ `a` bên trong, mà nội dung nằm trong thẻ `a` nên css trực tiếp vào thẻ `a`.
 
@@ -449,3 +499,153 @@
 ---
 
 - Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm về kiến thức HTML Reference, cách sử dụng `::before`, `::after`, cơ chế `flex` cách chia layout, semantics, các tiểu tiết về màu sắc và kích thước để bài làm tốt hơn.
+
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+- [x] [Bài 1](https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/Buoi_8/bai1)
+
+  Bài làm tốt
+
+  Chú ý chỉnh sửa lại `font-weight` cho text theo đúng thiết kế
+
+  Cần bổ chỉnh sửa lại `box-shadow` cho **Mega Menu** theo đúng thiết kế
+
+  Nên chú ý thiết kế chuẩn semantics. Không phải là **sidebar** mà nên dùng `header` và `nav`
+
+---
+
+- [x] [Bài 2](https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/Buoi_8/bai2)
+
+  Bài làm tốt
+
+  Cần căn chỉnh chỉn chu lại phần **quantity** của các **item**
+
+  Chú ý thêm màu sắc theo thiết kế.
+
+  Phần **icon-ship** cần chỉnh lại kích thước theo đúng thiết kế
+
+---
+
+- [x] [Bài 3](https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/Buoi_8/bai3)
+
+  Bài làm rất tốt \*
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về semantics, các tiểu tiết về màu sắc và kích thước để bài làm tốt hơn.
+
+## [Dương An](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208)
+
+- [x] [Bài 1](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208/BT1)
+
+  Bài làm chưa tốt
+
+  Xem lại khoảng cách, kích thước theo như thiết kế bài mẫu.
+
+  Sai `font-family` và cần dùng `text-transform` ở phần nav
+
+  Dùng thẻ sai semantics, phần **nav** nên dùng thẻ `nav`
+
+  Xem lại khoảng cách của các **nav-item**
+
+---
+
+- [x] [Bài 2](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208/BT2)
+
+  Bài làm chưa tốt
+
+  Phần **header**, **footer** của card đang sai so với thiết kế.
+
+  Xem lại khoảng cách giữa các khối.
+
+  Cần đặt tên class theo đúng ngữ cảnh và tường minh hơn.
+
+  Xem lại về HTML semantics.
+
+---
+
+- [x] [Bài 3](https://github.com/nguyenduyan9/BTVN/tree/master/BT-Bu%E1%BB%95i%208/BT3)
+
+  Bài làm tốt \*
+
+  Chú ý khoảng cách đúng theo thiết kế.
+
+  Cần đặt tên class theo đúng ngữ cảnh và tường minh hơn.
+
+  Chú ý nên sử dụng `flex-basis` cho các **item** nằm trong thẻ cha là `flex`.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm về semantics, cách đặt tên class, các tiểu tiết về màu sắc, kích thước và khoảng cách để bài làm tốt hơn.
+
+## [Tuấn Phạm](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi8)
+
+- [x] [Bài 1](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi8/Bai1)
+
+  Bài làm tốt
+
+  Xem lại `hover` ở các **header\_\_navbar-item** đang chưa được tốt để trải nghiệm người dùng
+
+---
+
+- [x] [Bài 2](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi8/Bai2)
+
+  Bài làm tốt \*
+
+  Các nút sự kiện nên có `hover` và dùng thêm thuộc tính `cursor: pointer` để tăng tính trải nghiệm người dùng.
+
+  Phần **card\_\_body** nên tách thêm 1 phần **card\_\_footer** phía dưới.
+
+  Phần **card\_\_body** nên thiết kế thanh cuộn lên xuống khi có nhiều **cart-item** bên trong để tăng tính trải nghiệm người dùng.
+
+---
+
+- [x] [Bài 3](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi8/Bai3)
+
+  Bài làm rất tốt \*
+
+  Nên gộp **service\_\_heading** và **service\_\_desc** thành **service\_\_title**
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm rất tốt, để ý thêm về các sự kiện có thêm hiệu ứng tăng trải nghiệm người dùng.
+
+## [Nguyễn Xuân Tuấn Anh](https://xuananh2212.github.io/full_stack_01/day_08/)
+
+- [x] [Bài 1](https://xuananh2212.github.io/full_stack_01/day_08/ex01/ex01.html)
+
+  Bài làm tốt \*
+
+  Chú ý icon dropdown đang hơi lệch. Nên để `rotate: -45deg` là đẹp.
+
+  Xem lại khoảng cách của icon info và search theo thiết kế bài mẫu.
+
+---
+
+- [x] [Bài 2](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi8/Bai2)
+
+  Bài làm tốt
+
+  Các nút sự kiện khi `hover` cần có thêm chút hiệu ứng để tăng tính trải nghiệm người dùng.
+
+  Xem lại màu sắc, kích thước, font chữ của thiết kế
+
+  Vị trí nút **close** đang sai so với thiết kế.
+
+  Phần **products** nên thiết kế thanh cuộn lên xuống khi có nhiều **cart-item** bên trong để tăng tính trải nghiệm người dùng.
+
+---
+
+- [x] [Bài 3](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi8/Bai3)
+
+  Bài làm tốt
+
+  Các nút sự kiện nên có `hover` và dùng thêm thuộc tính `cursor: pointer` để tăng tính trải nghiệm người dùng.
+
+  Nên gộp **heading-lv1** và **desc\_\_services** thành **service-title**
+
+  Cần xem lại cách đặt tên class tường minh và đúng ngữ cảnh hơn.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, để ý thêm về các sự kiện có thêm hiệu ứng tăng trải nghiệm người dùng và xem lại cách đặt tên class.
