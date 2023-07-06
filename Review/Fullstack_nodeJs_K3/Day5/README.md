@@ -258,150 +258,234 @@
 
 - [*] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
 
-**Phí Văn Đức:**
+## Phí Văn Đức
 
-**Bài 1: Bài làm tốt**
+---
+
+- [x] [Bài 1]: Bài làm tốt
 
 Code trình bày dễ hiểu, comment đầy đủ, tuy nhiên cần chú ý những điều sau:
 
-- Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
-- Phần font-weight của class "desc" bị dày hơn so với thiết kế (để font-weight: 500 là đẹp)
-- Bị thừa icon dấu \* ở phần phone (trong thiết kế không có)
-- Sai màu chữ của form-group subject (trong thiết kế là màu đen)
-- Sai màu của dấu check input checkbox
-- Phần label checkbox chưa được căn giữa so với checkbox và button
-- Phần text trong nút button phải viết hoa hết các kí tự
-- Nút button send bị thừa border-radius (trong thiết kế không có)
+Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
 
-**Bài 2: Bài làm rất tốt**
+Phần font-weight của class "desc" bị dày hơn so với thiết kế (để font-weight: 500 là đẹp)
 
-**Bài 3: Bài làm rất tốt**
+Bị thừa icon dấu \* ở phần phone (trong thiết kế không có)
 
-- Nên đặt class của section theo đúng ý nghĩa của section đó (trong trường hợp này có thể đặt là: services)
+Sai màu chữ của form-group subject (trong thiết kế là màu đen)
 
-- Sai màu phần text phần desc ở các item
-- Phần box-shadow của các item bị quá mờ ở các góc (sai với thiết kế)
+Sai màu của dấu check input checkbox
 
-Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài.
+Phần label checkbox chưa được căn giữa so với checkbox và button
 
-**Nguyễn Thành Tráng:**
+Phần text trong nút button phải viết hoa hết các kí tự
 
-**Bài 1: Bài làm chưa tốt**
+Nút button send bị thừa border-radius (trong thiết kế không có)
 
-- Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
-- Thiếu padding ở các ô input, đang bị sát lề gây mất thẩm mĩ và không đúng với thiết kế
-- Sai chính tả ".com" thành ".comn"
+---
 
-- Phần text trong **class="input-require"** bị sai màu, sửa thành màu trắng cho đúng thiết kế
-- Các icon trong phần input bị sai, trong thiết kế là hình ngôi sao
-- Khi focus vào phần input mới chỉ có trường name và trường email hiện lên **"input-require"** , các trường khác không hiện
-- Khi focus vào các field thì các field không giữ được màu đen của border. Nên chú ý yêu cầu của đề bài "Khi focus, active vào các field sẽ xuất hiện như hình 2"
+- [x] [Bài 2]: Bài làm rất tốt \*
 
-- Phần group-input-submit khác hẳn so với đề bài
+---
 
-- Phần input checkbox không hoạt động, bạn có thể tham khảo cách mình làm phần footer của bài này theo link dưới đây: [https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html](https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html)
+- [x] [Bài 3]: Bài làm rất tốt \*
 
-**Bài 2: Bài làm tốt**
+---
 
-- Vì phần content là nội dung theo dạng danh sách nên sử dụng thẻ ul để hiển thị dạng danh sách, có thể tham khảo cách viết sau:
+Nên đặt class của section theo đúng ý nghĩa của section đó (trong trường hợp này có thể đặt là: services)
 
-- Sử dụng sai font chữ: đang sử dụng font chữ có chân (serif), theo thiết kế là sử dụng font chữ không chân (san-serif)
+Sai màu phần text phần desc ở các item
 
-**Bài 3: Bài làm tốt**
+Phần box-shadow của các item bị quá mờ ở các góc (sai với thiết kế)
 
-- font-weight của tiêu đề hơi mỏng, nên để font-weight: 600 hoặc 700
-- Phần text của desc dưới thẻ h2 bị sai màu
-- font-weight của tiêu đề trong các item hơi mỏng, nên để font-weight: 600 hoặc 700
-- không được để trống **href=""** ở thẻ a, có thể thêm **href="#!"** nếu chưa có link cụ thể
+---
 
-Đánh giá chung bài tập về nhà: Bài làm còn nhiều thiếu sót, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể, chú ý các lỗi chính tả
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài.
 
-**Đỗ Tiến Khiêm:**
+## Nguyễn Thành Tráng
 
-**Bài 1: Bài làm chưa tốt**
+---
 
-- Nên đặt một thẻ bọc ngoài của phần code chính, không nên để thẳng code trong phần thẻ bode, có thể đặt thẻ div với class= "container"
+- [x] [Bài 1]: Bài làm chưa tốt \*
 
-- Nên giới hạn chiều ngang của thẻ chứa nội dung để nội dung không bị tràn ra ngoài
-- Các thẻ input vẫn còn bị lệch nhau, căn chỉnh icon, màu sắc chưa đúng với thiết kế
+Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
 
-- Input checkbox sai với thiết kế, không hoạt động. Có thể tham khảo cách mình làm input tại đây: [https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html](https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html)
+Thiếu padding ở các ô input, đang bị sát lề gây mất thẩm mĩ và không đúng với thiết kế
 
-**Bài 2: Bài làm rất tốt**
+Sai chính tả ".com" thành ".comn"
 
-- Nên sử dụng thẻ ul để hiển thị đoạn văn dạng danh sách như thiết kế.
-- Nên thêm padding vào phần main-content để nội dung không bị sát lề quá gây mất thẩm mĩ và sai với thiết kế.
+Phần text trong **class="input-require"** bị sai màu, sửa thành màu trắng cho đúng thiết kế
 
-**Bài 3: Bài làm tốt**
+Các icon trong phần input bị sai, trong thiết kế là hình ngôi sao
 
-- Sử dụng sai font chữ: đang sử dụng font chữ có chân (serif), theo thiết kế là sử dụng font chữ không chân (san-serif)
-- Sai màu phần desc của mỗi item
-- Phần bóng đổ của các item còn nhạt, nên đậm hơn.
+Khi focus vào phần input mới chỉ có trường name và trường email hiện lên **"input-require"** , các trường khác không hiện
 
-Đánh giá chung bài tập về nhà: Bài tập cần cải thiện nhiều, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể
+Khi focus vào các field thì các field không giữ được màu đen của border. Nên chú ý yêu cầu của đề bài "Khi focus, active vào các field sẽ xuất hiện như hình 2"
 
-**Hoàng Bảo Long:**
+Phần group-input-submit khác hẳn so với đề bài
 
-**Bài 1: Bài làm chưa tốt**
+Phần input checkbox không hoạt động, bạn có thể tham khảo cách mình làm phần footer của bài này theo link dưới đây: [https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html](https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html)
 
-- Sai màu border ở các thẻ input, theo thiết kế là màu xám
-- Khi focus chưa giữ được màu của icon.
-- Vẫn còn border-radius mặc định của trình duyệt ở các thẻ input, nên thêm border-radius: 0 để sửa
-- Lỗi icon ở phần subject
-- Phần message không nên sử dụng thẻ input mà nên sửa thành thẻ textarea
-- Input checkbox sai với thiết kế, chưa căn giữa các phần tử
+---
 
-**Bài 2: Bài làm rất tốt**
+- [x] [Bài 2]: Bài làm tốt
 
-- Vì phần content là nội dung theo dạng danh sách nên sử dụng thẻ ul để hiển thị dạng danh sách, có thể tham khảo cách viết sau:
+Vì phần content là nội dung theo dạng danh sách nên sử dụng thẻ ul để hiển thị dạng danh sách, có thể tham khảo cách viết sau:
 
-**Bài 3: Bài làm tốt**
+Sử dụng sai font chữ: đang sử dụng font chữ có chân (serif), theo thiết kế là sử dụng font chữ không chân (san-serif)
 
-- Vì đây là 1 section trong một trang web nên không sử dụng thẻ h1 (vì trong 1 trang web có thể có nhiều section với thiết kế như nhau), nên dùng thẻ h2 trong trường hợp này
+---
 
-- Chưa có khoảng cách giữa phần title và các item
-- Sai màu phần text của desc
-- Trong code của bạn đang dùng thẻ h1 rồi đến h3 và không có h2, hãy sử dụng thẻ h theo thứ tự lần lượt từ h1 -\> h6
+- [x] [Bài 3]: Bài làm tốt
 
-Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể.
+Font-weight của tiêu đề hơi mỏng, nên để font-weight: 600 hoặc 700
 
-**Đỗ Minh Đức:**
+Phần text của desc dưới thẻ h2 bị sai màu
 
-**Bài 1: Bài làm tốt**
+Font-weight của tiêu đề trong các item hơi mỏng, nên để font-weight: 600 hoặc 700
 
-- Khi focus vào các field chưa giữ được màu, theo đề bài là focus sẽ hiển thị như hình 2
-- Phần class= "tooltip" bị chèn lên các field
+Không được để trống **href=""** ở thẻ a, có thể thêm **href="#!"** nếu chưa có link cụ thể
 
-- Sai icon phone ở field nhập số điện thoại
-- Sai mẫu checkbox ở phần checkbox (khác với thiết kế)
-- Bổ sung id trong input checkbox trùng với for của label để có thể click vào label để kích hoạt checkbox
+---
 
-**Bài 2: Sai yêu cầu đề bài**
+- [x] Đánh giá chung bài tập về nhà: Bài làm còn nhiều thiếu sót, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể, chú ý các lỗi chính tả
+
+## Đỗ Tiến Khiêm
+
+---
+
+- [x] [Bài 1]: Bài làm chưa tốt
+
+Nên đặt một thẻ bọc ngoài của phần code chính, không nên để thẳng code trong phần thẻ bode, có thể đặt thẻ div với class= "container"
+
+Nên giới hạn chiều ngang của thẻ chứa nội dung để nội dung không bị tràn ra ngoài
+
+Các thẻ input vẫn còn bị lệch nhau, căn chỉnh icon, màu sắc chưa đúng với thiết kế
+
+Input checkbox sai với thiết kế, không hoạt động. Có thể tham khảo cách mình làm input tại đây: [https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html](https://stackblitz.com/edit/web-platform-ljr3ri?file=index.html)
+
+---
+
+- [x] [Bài 2]: Bài làm rất tốt \*
+
+Nên sử dụng thẻ ul để hiển thị đoạn văn dạng danh sách như thiết kế.
+
+Nên thêm padding vào phần main-content để nội dung không bị sát lề quá gây mất thẩm mĩ và sai với thiết kế.
+
+---
+
+- [x] [Bài 3]: Bài làm tốt
+
+Sử dụng sai font chữ: đang sử dụng font chữ có chân (serif), theo thiết kế là sử dụng font chữ không chân (san-serif)
+
+Sai màu phần desc của mỗi item
+
+Phần bóng đổ của các item còn nhạt, nên đậm hơn.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài tập cần cải thiện nhiều, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể
+
+## Hoàng Bảo Long
+
+---
+
+- [x] [Bài 1]: Bài làm chưa tốt
+
+Sai màu border ở các thẻ input, theo thiết kế là màu xám
+
+Khi focus chưa giữ được màu của icon.
+
+Vẫn còn border-radius mặc định của trình duyệt ở các thẻ input, nên thêm border-radius: 0 để sửa
+
+Lỗi icon ở phần subject
+
+Phần message không nên sử dụng thẻ input mà nên sửa thành thẻ textarea
+
+Input checkbox sai với thiết kế, chưa căn giữa các phần tử
+
+---
+
+- [x] [Bài 2]: Bài làm rất tốt \*
+
+Vì phần content là nội dung theo dạng danh sách nên sử dụng thẻ ul để hiển thị dạng danh sách
+
+---
+
+- [x] [Bài 3]: Bài làm tốt
+
+Vì đây là 1 section trong một trang web nên không sử dụng thẻ h1 (vì trong 1 trang web có thể có nhiều section với thiết kế như nhau), nên dùng thẻ h2 trong trường hợp này
+
+Chưa có khoảng cách giữa phần title và các item
+
+Sai màu phần text của desc
+
+Trong code của bạn đang dùng thẻ h1 rồi đến h3 và không có h2, hãy sử dụng thẻ h theo thứ tự lần lượt từ h1 -\> h6
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể.
+
+## Đỗ Minh Đức
+
+---
+
+- [x] [Bài 1]: Bài làm tốt
+
+Khi focus vào các field chưa giữ được màu, theo đề bài là focus sẽ hiển thị như hình 2
+
+Phần class= "tooltip" bị chèn lên các field
+
+Sai icon phone ở field nhập số điện thoại
+
+Sai mẫu checkbox ở phần checkbox (khác với thiết kế)
+
+Bổ sung id trong input checkbox trùng với for của label để có thể click vào label để kích hoạt checkbox
+
+---
+
+- [x] [Bài 2]: Sai yêu cầu đề bài
 
 - Đề bài yêu cầu click vào và hiển thị ra nội dung tương ứng nên hãy tận dụng input checkbox để làm điều này. Có thể tham khảo code tại đây: [https://stackblitz.com/edit/web-platform-phyaqi?file=index.html](https://stackblitz.com/edit/web-platform-phyaqi?file=index.html)
 
-**Bài 3: Bài làm rất tốt**
+---
 
-- Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
+- [x] [Bài 3]: Bài làm rất tốt \*
 
-Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể.
+Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
 
-**Vương Đông:**
+---
 
-**Bài 1: Bài làm rất tốt**
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể.
 
-- Khi focus vào các field chưa giữ được màu, theo đề bài là focus sẽ hiển thị như hình 2
-- Thiếu icon dropdown ở field subject
-- Input checkbox hơi to hơn so với thiết kế.
-- Nên giới hạn width của phần description để giống với thiết kế hơn
+## Vương Đông
 
-**Bài 2: Bài làm rất tốt**
+---
 
-- Vì phần content là nội dung theo dạng danh sách nên sử dụng thẻ ul để hiển thị dạng danh sách, có thể tham khảo cách viết sau:
+- [x] [Bài 1]: Bài làm rất tốt \*
 
-**Bài 3: Bài làm rất tốt**
+Khi focus vào các field chưa giữ được màu, theo đề bài là focus sẽ hiển thị như hình 2
 
-- Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
-- Hiệu ứng hơi chậm, nên cho hiệu ứng nhanh hơn
+Thiếu icon dropdown ở field subject
 
-Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể.
+Input checkbox hơi to hơn so với thiết kế.
+
+Nên giới hạn width của phần description để giống với thiết kế hơn
+
+---
+
+- [x] [Bài 2]: Bài làm rất tốt \*
+
+Vì phần content là nội dung theo dạng danh sách nên sử dụng thẻ ul để hiển thị dạng danh sách, có thể tham khảo cách viết sau:
+
+---
+
+- [x] [Bài 3]: Bài làm rất tốt \*
+
+Nên link các thư viện font icon, font chữ trước sau đó đến link file css cuối cùng để tránh các lỗi về thứ tự ưu tiên css.
+
+Hiệu ứng hơi chậm, nên cho hiệu ứng nhanh hơn
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm về các chi tiết nhỏ được thể hiện trong đề bài, cố gắng làm giống với thiết kế nhất có thể.
