@@ -53,7 +53,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
 
   - Không nên sử dụng thẻ `br` để ngắt dòng cho các thẻ khác ngoài text, văn bản.
   - Nên chia label ra một hàng khác tương ứng với cột input.
@@ -99,7 +99,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau: - Các thuộc tính alt nên để có ý nghĩa tương ứng với ảnh..
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau: - Các thuộc tính alt nên để có ý nghĩa tương ứng với ảnh..
 
 ## [Vũ Thống](https://github.com/pencilbsp/f8_offline/tree/main/Fullstack03/btvn_buoi_02)
 
@@ -146,7 +146,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau: - Các thuộc tính alt nên để có ý nghĩa tương ứng với ảnh. - Các phần heading nên sử dụng thẻ `h1` cho phần tiêu đề chính, `h2` cho phần tiêu đề phụ, `h3` cho phần tiêu đề con, ...
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau: - Các thuộc tính alt nên để có ý nghĩa tương ứng với ảnh. - Các phần heading nên sử dụng thẻ `h1` cho phần tiêu đề chính, `h2` cho phần tiêu đề phụ, `h3` cho phần tiêu đề con, ...
 
 ## [Nguyễn Quang Cường](https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_2)
 
@@ -233,7 +233,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Thẻ `p` chỉ để chứa các văn bản có ý nghĩa là một đoạn văn bản. Không sử dụng để mô tả một tiêu đề tương ứng với một input.
   - Thẻ `th` được sử dụng để hiển thị một tiêu đề tương ứng với các cột || hàng của bảng.
   - Sử dụng thẻ `table` nhưng chưa hiểu rõ mục đích, ý nghĩa của nó.
@@ -307,7 +307,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Phần chọn Country là một thẻ select vì nó là một danh sách các lựa chọn.
   - Phần Input nhập email nên sử dụng type="email" để kiểm tra định dạng email.
   - Sử dụng thẻ `th` bừa bãi. Sửa lại.
@@ -352,7 +352,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Vì `button` có type mặc định là `submit` khi ở trong `form` nên nếu không muốn submit thì có thể chuyển về type `button` hoặc sử dụng `event.preventDefault()` như trong bài làm.
   - Cần chú ý hơn vào thẻ meta title vì chúng đóng vai trò quan trọng trong SEO và trải nghiệm người dùng.
 
@@ -420,7 +420,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Phần input nhập email nên sử dụng type="email" để kiểm tra định dạng email.
   - Phần trường nhập message, nên sử dụng thẻ `textarea` để nhập nhiều dòng văn bản thay vì một thẻ input và cho height cao lên.
   - Thẻ `td` đang bao bọc một thẻ `td` khác. Sửa lại.
@@ -538,7 +538,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Các phần title heading đang sử dụng thực chất chỉ là heading của table, không phải là một heading của trang web. Nên sử dụng thẻ `th` để mô tả tiêu đề tương ứng với một cột || hàng của bảng.
   - Nên gộp các cột không cần thiết lại với nhau.
   - Phần input nhập email nên sử dụng type="email" để kiểm tra định dạng email.
@@ -605,7 +605,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Phần input nhập email nên sử dụng type="email" để kiểm tra định dạng email.
   - Các phần title trong list cùng cấp là các title cùng cấp. Nên sử dụng thẻ `h2` cho các phần title này.
   - Các thuộc tính alt nên để có ý nghĩa tương ứng với ảnh.
@@ -652,7 +652,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng cần chú ý một số điểm sau:
   - Thẻ `p` chỉ để chứa các văn bản có ý nghĩa là một đoạn văn bản. Không sử dụng để mô tả một tiêu đề tương ứng với một input.
   - Thẻ `th` chỉ để hiển thị một tiêu đề tương ứng với các cột || hàng của bảng.
   - Không nên sử dụng thẻ `th` để hiển thị dữ liệu.

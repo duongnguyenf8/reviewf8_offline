@@ -28,7 +28,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt
 
 ## [Đỗ Văn Khoa](https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day4)
 
@@ -56,7 +56,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý tối ưu lại HTML và chú ý về semantic HTML.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý tối ưu lại HTML và chú ý về semantic HTML.
 
 ## [Phí Văn Đức](https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-4)
 
@@ -84,7 +84,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý tối ưu lại HTML và chú ý về semantic HTML.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý tối ưu lại HTML và chú ý về semantic HTML.
 
 ## [Vũ Thống](https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_04)
 
@@ -116,7 +116,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần chú ý thêm một số chi tiết nhỏ.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần chú ý thêm một số chi tiết nhỏ.
 
 ## [Vương Đông](https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY4)
 
@@ -144,7 +144,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt. Chỉ cần chú ý thêm một số chi tiết nhỏ.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Chỉ cần chú ý thêm một số chi tiết nhỏ.
 
 ## [Nguyễn Quang Cường](https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_4)
 
@@ -176,7 +176,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt. Chỉ cần chú ý thêm một số chi tiết nhỏ.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Chỉ cần chú ý thêm một số chi tiết nhỏ.
 
 ## [Trần Xuân Bách](https://bach0128.github.io/f8-fullstack-k3/)
 
@@ -206,7 +206,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Chỉ cần chú ý thêm thêm vào đề bài và luyện tập thêm các thuộc tính.
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Chỉ cần chú ý thêm thêm vào đề bài và luyện tập thêm các thuộc tính.
 
 ## [Lê Quốc Khánh](https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/Day-4)
 
@@ -240,7 +240,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần chú ý lại về đường dẫn tương đối, tuyệt đối, cần chú ý thêm vào yêu cầu và bản mẫu của đề bài.
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần chú ý lại về đường dẫn tương đối, tuyệt đối, cần chú ý thêm vào yêu cầu và bản mẫu của đề bài.
 
   \* Lưu ý: Nên cấu trúc lại folder, mỗi một bài tập là một folder.
 
@@ -264,7 +264,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Càn chú ý chỉn chu hơn về chi tiết để giao diện tốt hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Càn chú ý chỉn chu hơn về chi tiết để giao diện tốt hơn.
 
   \* Lưu ý: Nên cấu trúc lại folder, mỗi một bài tập là một folder.
 
@@ -302,7 +302,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Càn chú ý chỉn chu hơn về chi tiết để giao diện tốt hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Càn chú ý chỉn chu hơn về chi tiết để giao diện tốt hơn.
 
   \* Lưu ý: Nên cấu trúc lại folder, mỗi một bài tập là một folder.
 
@@ -346,7 +346,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm vào cách sử dụng các thẻ, thuộc tính css, đường dẫn tương đối, tuyệt đối.
+- [x] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm vào cách sử dụng các thẻ, thuộc tính css, đường dẫn tương đối, tuyệt đối.
 
 ## [Trần Đình Trọng](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day4)
 
@@ -374,7 +374,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm vào cách sử dụng các thẻ, thuộc tính css, đường dẫn tương đối, tuyệt đối.
+- [x] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm vào cách sử dụng các thẻ, thuộc tính css, đường dẫn tương đối, tuyệt đối.
 
 ## [Nguyễn Thành Tráng](https://github.com/thanhtrang16490/f8-offline/tree/main/data/Lesson4)
 
@@ -416,7 +416,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý hoan thiện tốt hơn và sớm hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý hoan thiện tốt hơn và sớm hơn.
 
 ## [Hoàng Bảo Long](https://github.com/hoangbaolong279/F8-Fullstack/tree/main/Buoi-4)
 
@@ -453,7 +453,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý hoàn thiện tốt hơn và sớm hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý hoàn thiện tốt hơn và sớm hơn.
 
 ## [Đỗ Minh Đức](https://github.com/hoangbaolong279/F8-Fullstack/tree/main/Buoi-4)
 
@@ -487,4 +487,4 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý hoàn thiện tốt hơn và sớm hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý hoàn thiện tốt hơn và sớm hơn.

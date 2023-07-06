@@ -22,7 +22,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt
 
 ## [Đỗ Văn Khoa](https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B4)
 
@@ -48,7 +48,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, kiểm tra lại đường dẫn google font trước khi sử dụng.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, kiểm tra lại đường dẫn google font trước khi sử dụng.
 
 ## [Vũ Thống](https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_05)
 
@@ -88,7 +88,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý hơn vào bản mẫu để bài tập được chỉn chu hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý hơn vào bản mẫu để bài tập được chỉn chu hơn.
 
 ## [Trần Đình Trọng](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day5)
 
@@ -116,7 +116,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm quá ẩu, không chỉn chu, cần chú ý hơn vào bản mẫu.
+- [x] Đánh giá chung bài tập về nhà: Bài làm quá ẩu, không chỉn chu, cần chú ý hơn vào bản mẫu.
 
 ## [Nguyễn Quang Cường](https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_5)
 
@@ -158,7 +158,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
 
 ## [Minh Pham](https://github.com/Minh0314/F8-K3/tree/main/Day5)
 
@@ -212,7 +212,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
 
 ## [Lê Quốc Khánh](https://lekhanhdhpt.github.io/F8-Fullstack-K3/Day-5/)
 
@@ -256,7 +256,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần chú ý hơn vào bản mẫu.
 
 ## Phí Văn Đức
 

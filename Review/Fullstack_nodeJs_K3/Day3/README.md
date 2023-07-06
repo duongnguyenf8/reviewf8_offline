@@ -118,7 +118,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.
 
 ## [Đỗ Văn Khoa](https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3)
 
@@ -189,7 +189,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng đừng cố sáng tạo, nhìn hơi xấu. Cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng đừng cố sáng tạo, nhìn hơi xấu. Cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.
 
 ## [Nguyễn Quang Cường](https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3)
 
@@ -291,7 +291,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà:
+- [x] Đánh giá chung bài tập về nhà:
 
   \* Lưu ý: Nên đưa các assets riêng cho từng bài vào các folder riêng. Không nên gộp chung vào một folder.
 
@@ -349,7 +349,7 @@
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà:
+- [x] Đánh giá chung bài tập về nhà:
 
   \* Sử dụng, chia folder quá tệ, không rõ ràng, không có cấu trúc.
 
@@ -511,7 +511,7 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý đến quy tắc semantic trong HTML tốt hơn để làm cho code dễ đọc hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý đến quy tắc semantic trong HTML tốt hơn để làm cho code dễ đọc hơn.
 
 ## [Trần Xuân Bách](https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3)
 
@@ -628,7 +628,7 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý chỉn chu giao diện hơn, không nên ẩu.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý chỉn chu giao diện hơn, không nên ẩu.
 
 ## [Nguyễn Bá Đông](https://github.com/Dong205/F8-FullstackOffline-K3/tree/main/Day%203)
 
@@ -734,7 +734,7 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.
 
 ## [Trần Đình Trọng](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3)
 
@@ -804,7 +804,7 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.
 
 ## [Đỗ Tiến Khiêm](https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3)
 
@@ -882,7 +882,7 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.
 
   \* Lưu ý: Nên tách các bài tập và file css thành một folder riêng, coi mỗi bài là một project riêng.
 
@@ -938,4 +938,4 @@ Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.
 
 ---
 
-- [*] Đánh giá chung bài tập về nhà: Bài làm hơi ẩu, cần chú ý đến layout nhiều hơn, chỉn chu hơn. Để hoàn thiện tốt hơn bài tập của mình.
+- [x] Đánh giá chung bài tập về nhà: Bài làm hơi ẩu, cần chú ý đến layout nhiều hơn, chỉn chu hơn. Để hoàn thiện tốt hơn bài tập của mình.
