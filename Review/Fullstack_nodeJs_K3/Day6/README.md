@@ -602,3 +602,42 @@
   Border phần input hơi dày, nên để 1px là vừa
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần cải thiện nhiều, bám sát vào yêu cầu đề bài.
+
+## [Nguyễn Đức](https://github.com/Nguyenduc2108/f8-fullstack-k3/tree/main/Homework%20session_06)
+
+- [x] [Bài 1](https://github.com/Nguyenduc2108/f8-fullstack-k3/tree/main/Homework%20session_06)
+
+  Bài làm tốt
+
+  Các element quá to so với bản mẫu
+
+  Các icon trong menu con và đoạn nối giữa menu con và menu cha bị lệch.
+
+  Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+- [x] [Bài 2](https://github.com/Nguyenduc2108/f8-fullstack-k3/tree/main/Homework%20session_06)
+
+  Bài làm tốt
+
+  Tỷ lệ box chưa đúng với bản mẫu.
+
+  Chưa có shadow cho icon
+
+  Chưa có background-linear cho icon
+
+  Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+- [x] [Bài 3](https://github.com/Nguyenduc2108/f8-fullstack-k3/tree/main/Homework%20session_06)
+
+  Layout bị vỡ ở màn hình to.
+
+  Phần icon logo chưa phải là hình vuông.
+
+  Kích thước các social icon chưa bằng nhau.
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần xem lại về position, chú ý đến các tiểu tiết của bản mẫu và bài tập về nhà để bài làm tốt hơn.
+
+  \* Lưu ý:
+
+  - Yêu cầu từ buổi sau sử dụng thêm link github page để nộp bài.
+  - Đặt tên folder không nên chứa ký tự đặc biệt. Nên đặt tên các folder theo số thứ tự bài tập để dễ theo dõi.
