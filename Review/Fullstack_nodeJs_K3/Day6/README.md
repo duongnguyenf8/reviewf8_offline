@@ -428,8 +428,6 @@
 
 ### Cần lưu ý
 
-ýý
-
 - [x] [Bài 1](https://github.com/Dong205/F8-FullstackOffline-K3/tree/main/Day%206)
 
   Bài làm rất tốt \*
@@ -565,3 +563,40 @@
 
 - [x] Đánh giá chung bài tập về nhà: Có các chi tiết nhỏ chưa chính xác, cần chú ý các tiểu tiết để hoàn thiện bài tập về nhà.
 
+## [Trần Đình Trọng](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day6)
+
+- [x] [Bài 1](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day6)
+
+  Chưa đạt yêu cầu, không giống bản mẫu chút nào (Làm lại)
+
+- [x] [Bài 2](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day6)main
+
+  Bài làm chưa tốt, không giống bản mẫu
+
+  Chưa có background phần icon
+
+  Sử dụng sai font chữ
+
+  Phần heading quá nhỏ, nên dùng h2 trong trường hợp này
+
+  Icon và heading bị lệch nhau
+
+  Chưa có line-height phần desc
+
+- [x] [Bài 3](https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day6)
+
+  Bài làm chưa tốt
+
+  Sử dụng sai font chữ
+
+  Chưa có logo Just Log
+
+  Sai màu header login
+
+  Chưa có gạch chân dưới header
+
+  Checkbox không hoạt động
+
+  Sai màu phần forgot password, register
+
+  Border phần input hơi dày, nên để 1px là vừa
