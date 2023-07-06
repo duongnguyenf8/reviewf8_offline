@@ -600,3 +600,5 @@
   Sai màu phần forgot password, register
 
   Border phần input hơi dày, nên để 1px là vừa
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần cải thiện nhiều, bám sát vào yêu cầu đề bài.
