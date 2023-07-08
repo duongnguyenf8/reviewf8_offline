@@ -276,7 +276,7 @@
 
 - [x] [Bài 3](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/Day6)
 
-  Bài làm **KHÔNG TỐT** 
+  Bài làm **KHÔNG TỐT**
 
   Xem lại. Làm Lại.
 
@@ -285,3 +285,209 @@
 - [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chỉn chu hơn ở những chi tiết nhỏ.
 
   \* Lưu ý: Yêu cầu từ buổi sau nộp thêm link github page
+
+## [Duy](https://github.com/saiduii/F8-FE-K3/tree/main/Day-6)
+
+- [x] [Bài 1](https://github.com/saiduii/F8-FE-K3/blob/main/Day-6/html/bai1.html)
+
+  Bài làm sơ sài, nhiều lỗi.
+
+  Không đúng như thiết kế bài mẫu.
+
+  ![Duy Bài 1](![Alt text](image.png))
+
+---
+
+- [x] [Bài 2](https://github.com/saiduii/F8-FE-K3/blob/main/Day-6/html/bai2.html)
+
+  Bài làm chưa tốt
+
+  Không đúng thiết kế bài mẫu
+
+  ![Alt text](image-1.png)
+
+---
+
+- [x] [Bài 3](https://github.com/saiduii/F8-FE-K3/blob/main/Day-6/html/bai3.html)
+
+  Bài làm chưa tốt
+
+  Tỷ lệ của box đang sai.
+
+  Border của input sai màu.
+
+  Chưa có đổ bóng cho các input.
+
+  Chưa có action click label để check vào checkbox.
+
+  Thiếu action click cho các phần cần click.
+
+  Font chữ content text quá nhỏ.
+
+  Thiếu Icon.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chỉn chu hơn, cải thiện hơn.
+
+## [Nguyen Le Quyen (FPL HN)](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day6)
+
+- [x] [Bài 1](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day6)
+
+  Bài làm rất tốt \*
+
+  Chú ý `font-weight` không dùng `px`.
+
+  Chú ý thiết kế bài mẫu ở menu con cần thêm tam giác
+
+---
+
+- [x] [Bài 2](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day6)
+
+  Bài làm tốt \*
+
+  Chú ý khi `hover` các **items_content** và nội dung đang còn bị đẩy nhau.
+
+  Cần có action click khi người dùng `hover` vào các **items_content** bằng thuộc tính `cursor: pointer`
+
+  Nên đặt tên class đúng số ít số nhiều
+
+---
+
+- [x] [Bài 3](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day6)
+
+  Bài làm tốt
+
+  Form đang bị cao quá
+
+  Tỷ lệ của box đang sai.
+
+  Chưa có `border-radius` cho `form`.
+
+  `border-radius` cho các nút đang sai.
+
+  Chưa có đổ bóng cho các input.
+
+  Chưa có action click label để check vào checkbox.
+
+  Thiếu action click cho các phần cần click.
+
+  Icon mũi tên đang bị lệch.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, cần chỉn chu hơn, cải thiện hơn về khoảng cách và chú ý trải nghiệm người dùng.
+
+## [Gia Bảo Đỗ](https://dogiaba.github.io/F8-Fe-K3/)
+
+- [x] [Bài 1](https://dogiaba.github.io/F8-Fe-K3/Day6/MenuDropdown/)
+
+  Bài làm tốt \*
+
+  Chú ý `font-weight` không dùng `px`.
+
+  Chú ý thiết kế bài mẫu ở menu con cần thêm tam giác
+
+---
+
+- [x] [Bài 2](https://dogiaba.github.io/F8-Fe-K3/Day6/ServiceLayout/)
+
+  Bài làm tốt \*
+
+  Chú ý khi `hover` các **items_content** đang còn bị đẩy nhau.
+
+  Cần có action click khi người dùng `hover` vào các **items_content** bằng thuộc tính `cursor: pointer`
+
+  Nên đặt tên class đúng số ít số nhiều
+
+---
+
+- [x] [Bài 3](https://dogiaba.github.io/F8-Fe-K3/Day6/FormLogin/)
+
+  Bài làm tốt
+
+  Form đang bị cao quá
+
+  Tỷ lệ của box đang sai.
+
+  Chưa có `border-radius` cho `form`.
+
+  `border-radius` cho các nút đang sai.
+
+  Chưa có đổ bóng cho các input.
+
+  Chưa có action click label để check vào checkbox.
+
+  Thiếu action click cho các phần cần click.
+
+  Icon mũi tên đang bị lệch.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, cần chỉn chu hơn, cải thiện hơn về khoảng cách và chú ý trải nghiệm người dùng.
+
+## [thuy nguyen](https://tnnhungoc.github.io/F8-FE-K3/)
+
+- [x] [Bài 1](https://tnnhungoc.github.io/F8-FE-K3/FEK3/Day6/homeworkassignment1/index.html)
+
+  Bài làm tốt \*
+
+  Chú ý không thêm `margin` vào thẻ `a`
+
+  Các menu con chưa hover vào được
+
+---
+
+- [x] [Bài 2](https://tnnhungoc.github.io/F8-FE-K3/FEK3/Day6/homeworkassignment2/index.html)
+
+  Bài làm tốt \*
+
+  Chú ý khi `hover` các **cta-card-wrap** đang còn bị đẩy nhau.
+
+  Cần có action click khi người dùng `hover` vào các **cta-card-wrap** bằng thuộc tính `cursor: pointer`.
+
+  Chú ý chuẩn HTML Semantics không nên đặt thẻ `section` nằm trong thẻ `div`.
+
+---
+
+- [x] [Bài 3](https://tnnhungoc.github.io/F8-FE-K3/FEK3/Day6/homeworkassignment3/index.html)
+
+  Bài làm rất tốt \*
+
+  Chưa có đổ bóng cho các input.
+
+  Chưa có action click label để check vào checkbox.
+
+  Thiếu action click cho các phần cần click.
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm tốt, cần chỉn chu hơn, cải thiện hơn về khoảng cách, chú ý HTML Semantics, trải nghiệm người dùng.
+
+## [Hùng Mạnh](https://github.com/truongmanhhung58/F8-FrontEnd-k3/tree/main/Day_6)
+
+- [x] [Bài 1](https://github.com/truongmanhhung58/F8-FrontEnd-k3/tree/main/Day_6/Bai_1)
+
+  Bài làm chưa tốt, sơ sài.
+
+---
+
+- [x] [Bài 2](https://github.com/truongmanhhung58/F8-FrontEnd-k3/tree/main/Day_6/Bai_2)
+
+  Bài làm tốt
+
+  Cần xem lại khoảng cách giữa các **content**
+
+  Background các icon chưa đúng màu Gradients.
+
+---
+
+- [x] [Bài 3](https://github.com/truongmanhhung58/F8-FrontEnd-k3/tree/main/Day_6/Bai_3)
+
+  Bài làm sơ sài, chưa tốt, chưa được chỉn chu
+
+  Xem lại bố cục layout
+
+---
+
+- Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chỉn chu hơn, cải thiện hơn về khoảng cách trải nghiệm người dùng. Bài làm vẫn đang còn mang tính đối phó.
