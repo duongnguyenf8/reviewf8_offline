@@ -294,8 +294,6 @@
 
   Không đúng như thiết kế bài mẫu.
 
-  ![Duy Bài 1](![Alt text](image.png))
-
 ---
 
 - [x] [Bài 2](https://github.com/saiduii/F8-FE-K3/blob/main/Day-6/html/bai2.html)
@@ -303,8 +301,6 @@
   Bài làm chưa tốt
 
   Không đúng thiết kế bài mẫu
-
-  ![Alt text](image-1.png)
 
 ---
 
