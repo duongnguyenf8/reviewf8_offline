@@ -1,4 +1,4 @@
-# tuấn anh đánh giá bài học viên
+# Tuấn Anh đánh giá bài học viên
 
 ## [Hoang Van Thanh](https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_6)
 
@@ -509,6 +509,8 @@
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.
 
 ---
+
+# Quân đánh giá bài học viên
 
 ## [Vinh Nguyễn](https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day06)
 
