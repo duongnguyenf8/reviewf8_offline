@@ -1,68 +1,69 @@
-## [Đức Anh Trần](https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi5)
+## [x] [Đức Anh Trần](https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi5)
 
-        Sớm nhất *
+       Sớm nhất *
 
-- [x] Đánh giá: Bài làm rất tốt đúng yêu cầu của đề bài.
-
----
-
-## [Trần Văn Hiểu](https://github.com/tuilahieu/nodejs/blob/main/exercise/day5/index.html)
-
-- [x] Đánh giá: Bài làm rất tốt đúng yêu cầu của đề bài.
+    Đánh giá: Bài làm rất tốt đúng yêu cầu của đề bài.
 
 ---
 
-## [Phương](https://github.com/phuongnd168/back-end-f8/tree/main/Buoi5)
+## [x] [Trần Văn Hiểu](https://github.com/tuilahieu/nodejs/blob/main/exercise/day5/index.html)
 
-- [x] Đánh giá: Bài làm rất tốt đúng yêu cầu của đề bài.
+    Đánh giá: Bài làm rất tốt đúng yêu cầu của đề bài.
 
-## [Đào Đăng Mạnh](https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi5)
+---
 
-- [x] Đang làm chưa hiểu đúng yêu cầu vì đề bài đang cho màu đỏ chạy từng chữ chứ không phải màu đỏ chạy 1 lượt từ đầu đến cuối chuỗi.
+## [x] [Phương](https://github.com/phuongnd168/back-end-f8/tree/main/Buoi5)
 
-- [x] Nguyên nhân do đoạn code sau đây chưa xóa được thẻ span:
+    Đánh giá: Bài làm rất tốt đúng yêu cầu của đề bài.
 
-  ```js
-  keyword[n - 1] = keyword[n - 1].replace("<span></span>", "");
-  ```
+## [x] [Đào Đăng Mạnh](https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi5)
 
-- [x] Có một biểu thức chính quy có thể xóa bất kỳ thẻ HTML nào ở trong một phần tử có thể tham khảo là:
-  ```js
-  keyword[n - 1] = keyword[n - 1].replace(/<\/?[^>]+(>|$)/g, "");
-  ```
+    Đang làm chưa hiểu đúng yêu cầu vì đề bài đang cho màu đỏ chạy từng chữ chứ không phải màu đỏ chạy 1 lượt từ đầu đến cuối chuỗi.
 
-## [Phạm Văn Bảo](https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVN/BTVNB5)
+    Nguyên nhân do đoạn code sau đây chưa xóa được thẻ span:
 
-- [x] Bài làm sai hoàn toàn yêu cầu của đề bài. Nên tham khảo một số bài rất tốt của các bạn khác.
+```js
+keyword[n - 1] = keyword[n - 1].replace("<span></span>", "");
+```
 
-- [x] Đoạn text cần có sẵn trên màn hình và highlight chỉ đi qua từng từ. Hiện tại đang render ra từng từ và highlight cũng chưa xử lý theo từng từ mà từ nào render ra từ đó được highlight nên cần xem kỹ lại yêu cầu đề bài để thực hiện lại logic.
+    Có một biểu thức chính quy có thể xóa bất kỳ thẻ HTML nào ở trong một phần tử có thể tham khảo là:
 
-## [Hiếu Nguyễn Minh](https://github.com/hiusnguyen201/F8-Exercise/blob/main/Lab05/lab05.html)
+```js
+keyword[n - 1] = keyword[n - 1].replace(/<\/?[^>]+(>|$)/g, "");
+```
 
-- [x] Bài làm rất tốt đúng yêu cầu của đề bài.
+## [x] [Phạm Văn Bảo](https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVN/BTVNB5)
 
-## [Quang Minh Nguyễn](https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/Buoi%205)
+    Bài làm sai hoàn toàn yêu cầu của đề bài. Nên tham khảo một số bài rất tốt của các bạn khác.
 
-- [x] **Lưu ý: Nên đổi lại tên folder, không nên để folder có chứa ký tự đặc biệt vì sẽ rất khó để quản lý và sử dụng trong tương lai.**
+    Đoạn text cần có sẵn trên màn hình và highlight chỉ đi qua từng từ. Hiện tại đang render ra từng từ và highlight cũng chưa xử lý theo từng từ mà từ nào render ra từ đó được highlight nên cần xem kỹ lại yêu cầu đề bài để thực hiện lại logic.
 
-- [x] Bài làm rất tốt đúng yêu cầu của đề bài.
+## [x] [Hiếu Nguyễn Minh](https://github.com/hiusnguyen201/F8-Exercise/blob/main/Lab05/lab05.html)
 
-## [Mai Đức Hiền](https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day05/)
+    Bài làm rất tốt đúng yêu cầu của đề bài.
 
-- [x] **Lưu ý: Nên cấu trúc lại folder nếu không sẽ rất khó để quản lý và sử dụng trong tương lai.**
+## [x] [Quang Minh Nguyễn](https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/Buoi%205)
 
-- [x] Sử dụng rất nhiều `setTimeout` mà không cần thiết
+    **Lưu ý: Nên đổi lại tên folder, không nên để folder có chứa ký tự đặc biệt vì sẽ rất khó để quản lý và sử dụng trong tương lai.**
 
-- [x] Chưa có chức năng lặp lại các từ khóa.
+    Bài làm rất tốt đúng yêu cầu của đề bài.
 
-## [Nguyễn Nhất](https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-5)
+## [x] [Mai Đức Hiền](https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day05/)
 
-- [x] Bài làm rất tốt đúng yêu cầu của đề bài.
+    **Lưu ý: Nên cấu trúc lại folder nếu không sẽ rất khó để quản lý và sử dụng trong tương lai.**
 
-## [Thanh Nguyễn](https://github.com/nguyenducthanh04/f8-backend-k1.git)
+    Sử dụng rất nhiều `setTimeout` mà không cần thiết
 
-- [x] Bài làm rất tốt đúng yêu cầu của đề bài.
+    Chưa có chức năng lặp lại các từ khóa.
 
-## [Dương Trung Kiên](https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB5)
+## [x] [Nguyễn Nhất](https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-5)
 
-- [x] Bài làm sai yêu cầu đề bài, với yêu cầu đề bài là lặp qua từng chữ một, mỗi lần chỉ highlight một từ. Hiện trong bài làm đang highlight cả câu rồi cộng dồn đến cuối.
+    Bài làm rất tốt đúng yêu cầu của đề bài.
+
+## [x] [Thanh Nguyễn](https://github.com/nguyenducthanh04/f8-backend-k1.git)
+
+    Bài làm rất tốt đúng yêu cầu của đề bài.
+
+## [x] [Dương Trung Kiên](https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB5)
+
+    Bài làm sai yêu cầu đề bài, với yêu cầu đề bài là lặp qua từng chữ một, mỗi lần chỉ highlight một từ. Hiện trong bài làm đang highlight cả câu rồi cộng dồn đến cuối.
