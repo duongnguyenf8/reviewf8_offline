@@ -819,3 +819,77 @@ Tất cả các đường dẫn đang để tuyệt đối nên khi chuyển san
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất không tốt, cần code lại cả 3 bài cho chuẩn layout. Nếu gặp khó khăn nên đặt câu hỏi hoặc nhờ các bạn trợ giảng để có thể cải thiện tốt hơn việc làm bài tập về nhà.
+
+
+
+## [Chiến Đặng](https://github.com/f8githubdemodilam/f8-fullstack-.git)
+
+**Nộp muộn**
+
+**Chưa deploy được lên github page**
+
+- [x] [Bài 1]
+
+  Sai layout hoàn toàn. Cần code lại.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm tốt.
+
+  Nếu xem trên màn nhỏ sẽ bị vỡ layout.
+
+  Xử lý phần border chưa tốt vì khi hover vào đang bị giật layout.
+
+  Nên thêm phần shadow cho các khối và các icon của từng box.
+
+  Các đoạn text trong từng khối đang có `line-height` nhỏ hơn so với bản mẫu.
+
+---
+
+- [x] [Bài 3]
+
+  Vì đang để `width` của các phần tử theo đơn vị % nên khi laptop màn hình nhỏ đang hiển thị sai layout. Cần chỉnh sửa lại.
+
+  Sai font chữ ở hầu hết các đoạn text trong layout.
+
+  Chưa xử lý tốt placeholder của các thẻ input.
+
+---
+
+- [x] Đánh giá: Bài làm chưa tốt, cần chú ý nhiều chỗ cơ bản về font chữ, cũng như layout của các bài tập cần chỉnh chu và hoàn thiện hơn.
+
+## [Nguyễn Ngọc Hùng](https://github.com/Oladayne/f8-fullstack-k98.git)
+
+**Nộp muộn**
+
+**Chưa deploy được lên github page**
+
+Nên đặt tên foler không có dấu cách và đặt tiếng Anh.
+
+- [x] [Bài 1]
+
+  Sai layout hoàn toàn. Cần code lại.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm tốt.
+
+  Sai chính tả `LEAR MORE` và chưa đổi màu của `LEARN MORE`.
+
+  Sai font chữ của layout.
+
+  Nên tuân thủ layout cho đúng layout nhất có thể.
+
+---
+
+- [x] [Bài 3]
+
+  Sai layout hoàn toàn. Cần code lại.
+
+---
+
+- [x] Đánh giá: Bài làm chưa tốt, cần chỉnh chu và dành thời gian nhiều hơn và không nên tích hợp CSS trong file HTML vì khi CSS nhiều lên sẽ rất rối và khó debug. Cần code lại cho hoàn chỉnh và tuân thủ layout là điều quan trọng nhất.
