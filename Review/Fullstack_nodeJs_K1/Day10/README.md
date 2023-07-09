@@ -252,9 +252,9 @@
 
 - [x] [Bài 3](https://github.com/QuocAnh-bit/F8_fullstack_006)
 
-  Bài làm rất tốt \*
+  Bài làm tốt \*
 
-  Màu nền rất đẹp và hợp.
+  Màu nền đẹp và hợp.
 
   Xử lý mở thư vẫn còn bị giật.
 
