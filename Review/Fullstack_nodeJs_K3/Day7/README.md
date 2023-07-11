@@ -38,6 +38,8 @@
 
 ## [Đỗ Văn Khoa](https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day7)
 
+    Sớm nhất*
+
 - [x] [Bài 1](https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day7)
 
   Bài làm tốt
