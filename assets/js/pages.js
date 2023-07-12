@@ -13,6 +13,12 @@ window.onload = () => {
       liTag[i].innerHTML = newHTML;
     }
   }
+  const tagA = document.querySelectorAll("a");
+
+  for (var i = 0; i < tagA.length; i++) {
+    tagA[i].setAttribute("target", "_blank");
+  }
+
   backBtn.className = "back-btn";
   backBtn.innerText = "Back";
   backBtn.onclick = () => {

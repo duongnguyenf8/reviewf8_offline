@@ -19,6 +19,7 @@ fetch("./assets/data/data.json")
         subListItem.classList.add("item_list-item");
 
         const subLink = document.createElement("a");
+        subLink.setAttribute("target", "_blank");
         const subLinkPath = `./Review/${key}/${subItem}/index.html`;
         subLink.href = subLinkPath;
         subLink.textContent = subItem;
