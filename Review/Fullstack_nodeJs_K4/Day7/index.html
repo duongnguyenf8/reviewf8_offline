@@ -1,0 +1,333 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day7</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Tuyết đánh giá bài học viên</h1>
+<h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_7">Hoang Van Thanh</a></h2>
+<p>Sớm nhất *</p>
+<ul>
+<li>
+<p>[x] <a href="https://yanshu92.github.io/F8-Fullstack-K4/Day_7/Bai1.html">Bài 1</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Phần <code>project-banner</code> theo design thì ảnh nền là sát trên cùng và có width full, nên không cần thêm css margin.</p>
+<p>Phần background nên thêm overlay để có thể nổi chữ trắng trên nền trong trường hợp thay đổi ảnh quá sáng.</p>
+<p>Thiếu <code>border-radius</code> cho <code>.project-content</code>.</p>
+<p>Padding của <code>project-price</code> chưa đúng, cần tăng padding 2 bên trái phải.</p>
+<p>Phần title h2 cần thêm CSS <code>text-transform: capitalize</code> có style là viết hoa chữ cái đầu giống như design.</p>
+<p>Thêm <code>min-width</code> cho <code>.project-banner</code> để khi resize hoặc với màn hình kích thước nhỏ hơn thì sẽ không bị vỡ giao diện:</p>
+<p><img src="images/hoang_van_thanh-1.1.png" alt="Hoang Van Thanh"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://yanshu92.github.io/F8-Fullstack-K4/Day_7/Bai2.html">Bài 2</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Phần <code>.profile-invester</code> theo design thì có width full nên để <code>width: 100%</code>. Trong bài này set <code>max-width: 1200px</code> là không đúng, có thể bỏ.</p>
+<p>Trong bài này tất cả chữ đều là chữ in hoa, nên cần thêm CSS <code>text-transform: uppercase</code> nữa cho các phần chữ.</p>
+<p>Phần <code>profile-data__number</code>: Chưa in đậm.</p>
+<p>Nên có thêm overlay cho background, và <code>text-shadow</code> cho <code>profile-data__name</code>, <code>profile-data__number</code> để phần text hiển thị nổi hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://yanshu92.github.io/F8-Fullstack-K4/Day_7/Bai3.html">Bài 3</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Nên thêm thẻ <code>section</code> bọc tất cả code. thay vì viết code trực tiếp trong thẻ <code>main</code></p>
+<p>Xem lại design, cần thêm style css <code>text-transform: uppercase</code> cho các phần chữ in đậm, và thêm <code>text-transform: capitalize</code> cho các phần chữ viết hoa chữ cái đầu.</p>
+<p>Phần <code>real-estate__area</code> theo design là căn bên trái, nên set <code>justity-content: space-between</code> là chưa đúng.</p>
+<p>Nên có thêm overlay cho ảnh để text hiển thị dễ nhìn hơn.</p>
+<p>Check xóa css thừa (không có tác dụng / bị lặp): <code>z-index</code>, <code>position: relative</code>.</p>
+<ul>
+<li><code>z-index</code> ở <code>real-estate__title</code> và <code>real-estate__district-info span</code> (z-index chỉ có tác dụng khi phần tử đó có thuộc tính position là relative, absolute, fixed, sticky)</li>
+<li><code>position: relative</code> bị lặp ở <code>.real-estate__list .real-estate__district</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm hầu hết đều đã tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-07">Tuan Kiet Hoang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-07/ex-01">Bài 1</a>:</p>
+<p>Bài làm chưa tốt</p>
+<p>Layout css chưa đúng, cần làm lại layout theo đúng như design:</p>
+<pre><code>- Width, height của banner.
+- Background ảnh phải full width, full height của banner, không có khoảng cách trên, và 2 bên.
+- Phần &quot;banner-content&quot; lệch bên trái, chứ không phải căn giữa.
+</code></pre>
+<p>Phần giá chưa đúng font-weight là đậm.</p>
+<p>Nên thay thẻ <code>div</code> có class<code>.banner</code> thành thẻ semantic là <code>section</code> để tốt cho SEO.</p>
+<p>Chỉ import những font-weight cần dùng (bỏ font-weight 300 và 700).</p>
+<p>Check xóa bỏ CSS comment thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-07/ex-02">Bài 2</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Nên có thêm overlay cho background để phần text hiển thị nổi hơn.</p>
+<p>Nên css lại phần phần <code>.avatar</code> dùng <code>position</code>, các thẻ con bên trong dùng margin / padding để tạo khoảng cách.</p>
+<p>Các phần <code>.profile-name</code> , <code>.profile-data_data &gt; span</code>, <code>.navbar-item</code>: font-weight chưa đúng, cần đậm hơn.</p>
+<p>Trong bài này tất cả chữ đều là chữ in hoa, nên cần thêm CSS <code>text-transform: uppercase</code> nữa cho các phần chữ.</p>
+<p>Thiết nội dung <code>alt</code> cho ảnh avatar.</p>
+<p>Check CSS thừa: <code>content: ''</code> ở css thẻ của thẻ <code>hr</code>. Vì nó không có tác dụng.</p>
+<p>Phần <code>.profile-name</code> nên dùng thẻ h2. Dùng thẻ <code>&lt;b&gt;</code> hoặc <code>&lt;strong&gt;</code> cho phần <code>profile-data_data span</code></p>
+<p>Phần <code>.navbar</code>: Chưa có active item đầu tiên giống như design. Nên dùng <code>justify-content: flex-end</code> thay vì <code>flex-direction: row-reverse</code> để không cần viết HTML đảo ngược lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-07/ex-03">Bài 3</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Chỉnh lại <code>.container</code>: Chưa căn giữa như design. Width đang bị vượt quá màn hình (do set width:100% + margin:30px).</p>
+<p>Phần <code>.content-list</code> chưa đúng font-weight, cần đậm hơn. 2 dòng chữ trong tab bị chênh lệch size nhiều quá. Chữ tên tỉnh cần nhỏ lại chút và chữ hàng ngay dưới nó cần to lên chút để giống design hơn.</p>
+<p>Phần <code>.item-name</code> nên dùng thẻ semantic: h3 hoặc strong thay vì dùng <code>span</code></p>
+<p>Phần <code>.item</code> nên có thêm overlay cho background image để phần text hiển thị nổi hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài chưa được tốt. HTML cần chú ý sử dụng thẻ semantic để tốt cho SEO. CSS chú ý căn chỉnh bố cục, những style tiểu tiết để giống với design hơn, điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-7">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên 2 đoạn text nên gộp vào một thẻ p sẽ tốt hơn.</p>
+<p>Không nên reset vào thẻ body, nên đưa vào thẻ * để tất cả các thẻ khác đều được reset.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+<p>Các số liệu trong title như <code>1993</code>, <code>35</code> đang hơi nhỏ so với bản gốc.</p>
+<p>Phần logo hơi lệch nên điều chỉnh lại.</p>
+<p>Ở trong thẻ <code>li</code> mô tả từng mục trong Navigation nên thêm thẻ <code>a</code> sẽ tốt hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Phần <code>nav</code> hơi lệch so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt chỉ cần lưu ý một số chi tiết nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/tree/main/Day_7">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên độ rộng của phần banner hơi rộng hơn so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Chưa có phần gạch ngang ở <code>title</code>.</p>
+<p>Phần text trong thẻ <code>nav</code> đang có độ dày mỏng hơn bản mẫu.</p>
+<p>Nên để <code>max-width</code> nhỏ hơn vì nếu xem trên màn hình laptop nhỏ sẽ bị vỡ layout.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt chỉ cần lưu ý một số chi tiết nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/chinam197/nopbaitapbuoi7.git">Nguyễn Chi Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt</p>
+<p>Không nên để <code>background-image</code> có <code>height: 100vh</code> vì đây chỉ là phần banner nhỏ của 1 trang và với bài tập này nếu để thế thì ảnh sẽ bị vỡ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt</p>
+<p>Nên để background chiếm 100% độ rộng của trang sẽ tốt hơn.</p>
+<p>Phần logo hơi lệch và to hơn so với bản mẫu.</p>
+<p>Không nên để height: 100vh cho body, điều đó có nghĩa là nội dung sẽ không thể kéo xuống được</p>
+<p>Có thể xem xét thay qua sử dụng min-height: 100vh cho body và html</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Thuộc tính <code>font-family</code> nên có font chữ dự phòng ở sau font chữ sử dụng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt chỉ cần lưu ý một số chi tiết nhỏ để hoàn thiện hơn.</li>
+</ul>
+<h1>tuấn anh đánh giá bài học viên</h1>
+<h2><a href="https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day07">Vinh Nguyễn</a></h2>
+<ul>
+<li>[x] [Bài 1]: Bài làm tốt *</li>
+</ul>
+<p>Sai Màu của Tiêu đề <code> #bf4240</code>.</p>
+<ul>
+<li>
+<p>Lỗi màu.</p>
+<p><img src="images/vinhnguyen_b1.png" alt="Alt text"></p>
+</li>
+<li>
+<p>[x] [Bài 2]: Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] [Bài 3]:</li>
+</ul>
+<p>Căn Khối <strong>container</strong> ra giữa.</p>
+<ul>
+<li>Đề Xuất.</li>
+</ul>
+<pre><code class="language-css">.container {
+  width: 1135px;
+  margin: 0 auto;
+}
+</code></pre>
+<p>Vỡ giao diện 1 hàng nhiều hơn 3 <strong>item</strong>.</p>
+<ul>
+<li>
+<p>Lỗi.</p>
+<p><img src="images/vinhnguyen_b3.png" alt="Alt text">.</p>
+</li>
+<li>
+<p>Đề Xuất.</p>
+</li>
+</ul>
+<pre><code class="language-css">.card-item {
+  width: calc(100% / 3 - 10px);
+}
+</code></pre>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm hầu hết đều tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://huynguyen3107.github.io/f8-fullstack-k4/Github/gitpage.html">Mạnh Huy</a></h2>
+<ul>
+<li>[x] [Bài 1]: Bài làm tốt</li>
+</ul>
+<p>Thẻ <code>&lt;p&gt;</code> có <code>font-size</code> hơi nhỏ tăng <code>font-size: 16px</code>.</p>
+<p>Thẻ <code>&lt;div class=</code>price<code>&gt;</code> kích thước <strong>width</strong> và <strong>height</strong> nhỏ hơn so với bản mẫu.</p>
+<ul>
+<li>Đề Xuất.</li>
+</ul>
+<pre><code class="language-css">.price {
+  padding: 14px 30px;
+  font-size: 25px;
+}
+</code></pre>
+<hr>
+<ul>
+<li>[x] [Bài 2]:</li>
+</ul>
+<p>Thẻ <code>img</code> trong <code>&lt;div class =&quot;profile-img&quot;&gt;</code> ảnh bị vỡ.</p>
+<ul>
+<li>Đề Xuất.</li>
+</ul>
+<pre><code class="language-css">.profile-img img {
+  object-fit: cover;
+}
+</code></pre>
+<p>Tăng khoảng cách giữa 2 khối <code>&lt;div class=&quot;profile-avt&quot;</code> và <code>&lt;div class=&quot;prfile-desc&quot;&gt;</code>.</p>
+<p>vị trí khối <code>&lt;div class=&quot;profile-info&quot;&gt;</code> sai so với bản mẫu.</p>
+<ul>
+<li>
+<p>Lỗi.</p>
+<p><img src="images/manhhuy_b2.png" alt="Alt text"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] [Bài 3]: bài làm tốt *</li>
+</ul>
+<p>Sai <strong>semantic</strong> thay thẻ <code>&lt;p&gt;</code> thành thẻ <code>&lt;span&gt;</code>.</p>
+<p>Thẻ <code>&lt;p&gt;</code> dùng để bọc 1 đoạn văn.</p>
+<hr>
+<p>Đánh giá chung bài tập về nhà: Bài làm hầu hết đều tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.</p>
+<hr>
+<h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-7">Đặng Khải</a></h2>
+<ul>
+<li>[x] [Bài 1]: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] [Bài 2]: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] [Bài 3]: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</li>
+</ul>
+<h2><a href="https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_7">Hà Long Việt</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Vietha22/f8_fullstack_k4/blob/main/Day_7/ex01.html">Bài 1</a>:</p>
+<p>Bài làm rất tốt *</p>
+<p>Phần img: code CSS background này thừa vì nó không có tác dụng cho thẻ img, cần xóa bỏ.</p>
+<p>Và Không nên set <code>min-width: 100vw</code>, nên dùng <code>width:100%</code> hoặc dùng <code>min-width</code> thì để <code>min-width: 100%</code>. Vì khi web dài xuống sẽ xuất hiện thanh cuộn dọc thì khi đó set 100vw sẽ không có width full như design.</p>
+<p><img src="images/viet-ha-1.1.png" alt="Hà Long Việt"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Vietha22/f8_fullstack_k4/blob/main/Day_7/ex02.html">Bài 2</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Thiếu <code>border-radius</code> cho <code>img</code> avatar</p>
+<p>Nên có thêm overlay cho background, và <code>text-shadow</code> cho thẻ <code>h2</code>, <code>strong</code> để phần text hiển thị nổi hơn.</p>
+<p>Trong bài này tất cả chữ đều là chữ in hoa, nên cần thêm CSS <code>text-transform: uppercase</code> nữa cho các phần chữ.</p>
+<p>Phần đường kẻ dưới <code>.intro</code> nên thay đổi lại width, không nên fix cứng từng width theo từng chữ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Vietha22/f8_fullstack_k4/blob/main/Day_7/ex03.html">Bài 3</a>:</p>
+<p>Bài làm tốt *</p>
+<p>Nên đổi thẻ h4 thành h3. Vì trong bài chưa có 'h3'. (các thẻ heading sẽ được dùng lần lượt h1 -&gt; h2 -&gt; h3 -&gt; h4)</p>
+<p>Phần '.area-nav' set css <code>justity-content: space-between</code> là chưa đúng, vì theo design là căn trái.</p>
+<p>Các <code>.area-item</code> nên có thêm overlay cho background image để phần text hiển thị nổi hơn.</p>
+<p>Nên set lại <code>width</code> của <code>.area-heading</code> để nếu màn hình rộng hơn khoảng cách giữa nó không bị giãn ra rộng quá so với design như này:</p>
+<p><img src="images/viet-ha-1.3.png" alt="Hà Long Việt"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
