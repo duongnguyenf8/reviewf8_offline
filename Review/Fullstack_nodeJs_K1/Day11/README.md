@@ -311,3 +311,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
 **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-375.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm một số màn hình ở nhỏ, chú ý thêm về size các ảnh và các phần tử.
