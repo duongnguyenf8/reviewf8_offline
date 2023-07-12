@@ -24,7 +24,7 @@
 
 - Sớm nhất \*
 
-* [x] Màn hình: max-width: 1500px
+- [x] Màn hình: max-width: 1500px
 
 Bài làm rất tốt \*
 
