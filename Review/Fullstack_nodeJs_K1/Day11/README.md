@@ -30,7 +30,7 @@
 
 - Sớm nhất \*
 
-- [x] Màn hình: max-width: 1500px
+- [x] Bài 1: Màn hình: max-width: 1500px
 
 Bài làm rất tốt \*
 
@@ -52,7 +52,7 @@ Phần `.footer .section-desc` sai hoàn toàn so với bản mẫu.
 
 ---
 
-- [x] Màn hình: max-width: 1399px
+- [x] Bài 2: Màn hình: max-width: 1399px
 
 Bài làm chưa tốt
 
@@ -64,7 +64,7 @@ Chưa có responsive ở màn hình này.
 
 ---
 
-- [x] Màn hình: max-width: 1199px
+- [x] Bài 3: Màn hình: max-width: 1199px
 
 Bài làm chưa tốt
 
@@ -76,7 +76,7 @@ Chưa có responsive ở màn hình này.
 
 ---
 
-- [x] Màn hình: max-width: 991px
+- [x] Bài 4: Màn hình: max-width: 991px
 
 Bài làm tốt
 
@@ -92,7 +92,7 @@ Các item ở `.copyright, .copyright-links` trong bản mẫu là cùng một h
 
 ---
 
-- [x] Màn hình: max-width: 767px
+- [x] Bài 5: Màn hình: max-width: 767px
 
 Bài làm rất tốt \*
 
@@ -104,7 +104,7 @@ Các phần `.download-btn, .order-link` có kích thước nhỏ hơn bản m�
 
 ---
 
-- [x] Màn hình: max-width: 575px
+- [x] Bài 6: Màn hình: max-width: 575px
 
 Bài làm rất tốt \*
 
@@ -114,13 +114,13 @@ Các lỗi sai giống ở màn hình max-width: 767px.
 
 ---
 
-- [x] Màn hình: max-width: 420px
+- [x] Bài 7: Màn hình: max-width: 420px
 
 Bài làm rất tốt \*
 
 ## **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep420.png)**
 
-- [x] Màn hình: max-width: 375px
+- [x] Bài 8: Màn hình: max-width: 375px
 
 Bài làm rất tốt \*
 
@@ -132,7 +132,7 @@ Bài làm rất tốt \*
 
 ## [Nguyen Xuan Tuan Anh](https://github.com/xuananh2212/full_stack_01/tree/main/day_11)
 
-- [x] Màn hình: max-width: 1500px
+- [x] Bài 1: Màn hình: max-width: 1500px
 
 Bài làm tốt \*
 
@@ -150,7 +150,7 @@ Sai chính tả **hourse** -> **hours**.
 
 ---
 
-- [x] Màn hình: max-width: 1399px
+- [x] Bài 2: Màn hình: max-width: 1399px
 
 Bài làm tốt \*
 
@@ -160,7 +160,7 @@ Một số lỗi sai giống như ở màn hình max-width: 1500px.
 
 ---
 
-- [x] Màn hình: max-width: 1199px
+- [x] Bài 3: Màn hình: max-width: 1199px
 
 Bài làm rất tốt \*
 
@@ -170,7 +170,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 ---
 
-- [x] Màn hình: max-width: 991px
+- [x] Bài 4: Màn hình: max-width: 991px
 
 Bài làm rất tốt \*
 
@@ -182,7 +182,7 @@ Một số chiều rộng của các phần tử chưa giống bản mẫu.
 
 ---
 
-- [x] Màn hình: max-width: 767px
+- [x] Bài 5: Màn hình: max-width: 767px
 
 Bài làm tốt \*
 
@@ -192,7 +192,7 @@ Một số lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
 ---
 
-- [x] Màn hình: max-width: 575px
+- [x] Bài 6: Màn hình: max-width: 575px
 
 Bài làm rất tốt \*
 
@@ -200,7 +200,7 @@ Bài làm rất tốt \*
 
 ---
 
-- [x] Màn hình: max-width: 420px
+- [x] Bài 7: Màn hình: max-width: 420px
 
 Bài làm tốt \*
 
@@ -212,7 +212,7 @@ Các `.service__items__inner` chưa thu nhỏ chiều cao.
 
 ---
 
-- [x] Màn hình: max-width: 375px
+- [x] Bài 8: Màn hình: max-width: 375px
 
 Bài làm tốt \*
 
@@ -228,7 +228,7 @@ Các lỗi sai tương tự như ở màn hình max-width: 420px.
 
 ## [Bi11-043 Đỗ Hà Chi](https://serenaha12.github.io/grover)
 
-- [x] Màn hình: max-width: 1500px
+- [x] Bài 1: Màn hình: max-width: 1500px
 
 Bài làm tốt \*
 
@@ -242,7 +242,7 @@ Thiếu đổ bóng cho `.header .banner .btn img`
 
 ---
 
-- [x] Màn hình: max-width: 1399px
+- [x] Bài 2: Màn hình: max-width: 1399px
 
 Chưa có responsive ở màn hình này.
 
@@ -250,7 +250,7 @@ Chưa có responsive ở màn hình này.
 
 ---
 
-- [x] Màn hình: max-width: 1199px
+- [x] Bài 3: Màn hình: max-width: 1199px
 
 Chưa có responsive ở màn hình này.
 
@@ -258,7 +258,7 @@ Chưa có responsive ở màn hình này.
 
 ---
 
-- [x] Màn hình: max-width: 991px
+- [x] Bài 4: Màn hình: max-width: 991px
 
 Chưa có responsive ở màn hình này.
 
@@ -266,7 +266,7 @@ Chưa có responsive ở màn hình này.
 
 ---
 
-- [x] Màn hình: max-width: 767px
+- [x] Bài 5: Màn hình: max-width: 767px
 
 Bài làm chưa tốt
 
@@ -288,7 +288,7 @@ Phần `.download .content` để width là 100% nhưng chưa xóa `margin-left 
 
 ---
 
-- [x] Màn hình: max-width: 575px
+- [x] Bài 6: Màn hình: max-width: 575px
 
 Bài làm chưa tốt
 
@@ -298,7 +298,7 @@ Các lỗi sai giống như ở màn hình max-width: 767px.
 
 ---
 
-- [x] Màn hình: max-width: 420px
+- [x] Bài 7: Màn hình: max-width: 420px
 
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
@@ -306,7 +306,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 ---
 
-- [x] Màn hình: max-width: 375px
+- [x] Bài 8: Màn hình: max-width: 375px
 
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
