@@ -22,9 +22,11 @@
 
 - Đường dẫn:
 
-  - HTML: `https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/index.html`
+  - Root: `https://reviewf8.vercel.app/Review`
 
-  - Hình ảnh: `https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images`
+  - HTML: `/Fullstack_nodeJs_K1/Day11/index.html`
+
+  - Hình ảnh: `/Fullstack_nodeJs_K1/Day11/images`
 
 ## [Dương Hiệp](https://github.com/duonghiep416/duonghiep_f8_fullstack.git)
 
