@@ -73,38 +73,60 @@
 <h2><a href="https://daithehh04.github.io/fullstack/day7/">Đỗ Khắc Quân</a></h2>
 <hr>
 <ul>
+<li>[x] Bài 1: Bài làm rất tốt *</li>
+</ul>
+<p>Phần background chỉ là của section đó(<code>#project-banner</code>).</p>
+<ul>
 <li>
-<p>[x] Bài 1: Bài làm không tốt</p>
-<p>Thẻ <code>&lt;p&gt;</code> được sử dụng để hiển thị một đoạn văn bản. Không nên sử dụng ở phần ghi giá. Nên sử dụng thẻ <code>&lt;span&gt;</code></p>
-<p>Thẻ section được sử dụng đển thể hiện một phần của trang web, bên trong section ở nữ cảnh này chỉ nên sử dụng div để bao bọc, phân chia.</p>
-<p>Ở đề bài là Font chữ: Asap, Font chữ giá: SFU nhưng hiện tại, chỉ sử dụng font chữ Asap.</p>
-<p>Nên căn giữa hoặc căn toàn màn hình. Không nên căn trái một section.</p>
-<p>Không có section bọc section, làm vậy là sai hoàn toàn semantic.</p>
-<p>Code lại cho chuẩn semantic</p>
+<p>Nên gộp chung vào thẻ section.</p>
+<pre><code class="language-html">&lt;figure id=&quot;background-cover&quot;&gt;
+  &lt;img
+    src=&quot;./assets/images/ha-noi-melody-residences-cover.jpg&quot;
+    alt=&quot;ha-noi-melody&quot;
+  /&gt;
+&lt;/figure&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;section id=&quot;project-banner&quot;&gt;
+  &lt;figure id=&quot;background-cover&quot;&gt;
+    &lt;img
+      src=&quot;./assets/images/ha-noi-melody-residences-cover.jpg&quot;
+      alt=&quot;ha-noi-melody&quot;
+    /&gt;
+  &lt;/figure&gt;
+  ...
+&lt;/section&gt;
+</code></pre>
+<p>Hoặc cũng có thể sử dụng thuộc tính <code>background-image</code> của CSS để thay thế cho thẻ <code>figure</code> và <code>img</code>.</p>
+<pre><code class="language-css">#project-banner {
+  background-image: url(&quot;./assets/images/ha-noi-melody-residences-cover.jpg&quot;);
+}
+</code></pre>
 </li>
 </ul>
 <hr>
 <ul>
-<li>
-<p>[x] Bài 2: Bài làm không tốt</p>
-<p>Phần background nên có một lớp overlay để chữ trắng không bị chìm so với nền.</p>
-<p>Không nên set cả width, height của img, việc đó có thể làm cho ảnh bị méo, hoặc kho muốn thay đổi kích cỡ ảnh thì phải tính toán để thay đổi cả 2 chiều.</p>
-<p>Không có section bọc section, làm vậy là sai hoàn toàn semantic.</p>
-<p>Section là một thẻ để thể hiện là một phần hoàn toàn có nghĩa của toàn trang web. Ở đây, chỉ để bao bọc logo thì không phải là một section.</p>
-<p>Thẻ strong chỉ để nhấn mạnh một nội dung quan trọng của một trang web, nếu chỉ đơn giản la là in đậm thì không cần</p>
-<p>Code lại cho chuẩn semantic.</p>
-</li>
+<li>[x] Bài 2: Sử dụng position chưa tốt.</li>
 </ul>
+<p><img src="images/do_van_quan-bai2.png" alt="Do Van Quan"></p>
+<p>Hiện tại, <code>.profile</code> đang position absolute theo body, nên ở một số màn hình khác, nó sẽ bị lệch vị trí.</p>
+<p>Với phần <code>.profile</code> hiện tại, có thể chưa nên cho là 1 section. Nên đặt nó là 1 <code>div</code> bình thường, tên của class sẽ là <code>.info</code> hoặc <code>.introduction</code>.</p>
+<p>Có thể gộp chung <code>&lt;figure&gt;</code> vào chung section với <code>.profile</code> để tạo thành 1 section.</p>
+<p>Hoặc cũng có thể sử dụng thuộc tính <code>background-image</code> của CSS để thay thế cho thẻ <code>figure</code> và <code>img</code>.</p>
+<p>Nên có thêm overlay cho background để phần text hiển thị nổi hơn, đảm bảo độ tương phản giữa text và background và khi thay đổi ảnh, text vẫn hiển thị tốt.</p>
 <hr>
 <ul>
-<li>
-<p>[x] Bài 3: Bài làm <strong>Không tốt</strong></p>
-<p>Code lại cho chuẩn semantic.</p>
-</li>
+<li>[x] Bài 3:</li>
 </ul>
+<p>Bài làm tốt</p>
+<p>Thiếu phần đường ngang tại <code>.heading</code></p>
+<p>Nên có thêm overlay cho background để phần text hiển thị nổi hơn, đảm bảo độ tương phản giữa text và background và khi thay đổi ảnh, text vẫn hiển thị tốt.</p>
+<p>Phần <code>.location-list</code> chưa hẳn là một section riêng biệt, một section trong trang web cần có ý nghĩa riêng, có tiêu đề, có nội dung riêng biệt. Ở đây đơn giản là một thanh menu để click và đổi các hình ảnh tương ứng ở dưới, có thể sử dụng thẻ <code>nav</code> để bọc chúng.</p>
+<p>Với các <code>.location-content</code>, heading của nó là một tiêu đề nhỏ ở trong từng đầu mục trên thanh menu. Không nên sử dụng heading cùng cấp với <code>.location-list</code> ở trên mà nên tăng thêm 1 cấp heading cho <code>.location-content</code>.</p>
+<p>Trong hầu hết trường hợp, cả một phần to này là một section lớn trong một trang web, nên sử dụng section để bọc chúng, ở bên trong tùy trường hợp có thể sử dụng <code>nav</code>, <code>article</code>, <code>footer</code>, <code>header</code> để bọc các phần tử con bên trong. Và các heading sẽ thường bắt đầu từ <code>h2</code> trở lên.</p>
 <hr>
 <ul>
-<li>[x] Đánh giá chung về bài tập về nhà: Bài làm Không tốt, xem lại toàn bộ semantic.</li>
+<li>[x] Đánh giá chung về bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý thêm về thuộc tính <code>position</code> và cách sử dụng các thẻ HTML theo đúng chuẩn semantics.</li>
 </ul>
 <hr>
 <h2><a href="https://ha752002.github.io/f8-fullstack-k2/Exercise/Ex_1-7/index.html">Hồng Hà Nguyễn Thị</a></h2>

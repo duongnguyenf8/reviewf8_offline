@@ -88,45 +88,78 @@
 
 ---
 
-- [x] Bài 1: Bài làm không tốt
+- [x] Bài 1: Bài làm rất tốt \*
 
-  Thẻ `<p>` được sử dụng để hiển thị một đoạn văn bản. Không nên sử dụng ở phần ghi giá. Nên sử dụng thẻ `<span>`
+Phần background chỉ là của section đó(`#project-banner`).
 
-  Thẻ section được sử dụng đển thể hiện một phần của trang web, bên trong section ở nữ cảnh này chỉ nên sử dụng div để bao bọc, phân chia.
+- Nên gộp chung vào thẻ section.
 
-  Ở đề bài là Font chữ: Asap, Font chữ giá: SFU nhưng hiện tại, chỉ sử dụng font chữ Asap.
+  ```html
+  <figure id="background-cover">
+    <img
+      src="./assets/images/ha-noi-melody-residences-cover.jpg"
+      alt="ha-noi-melody"
+    />
+  </figure>
+  ```
 
-  Nên căn giữa hoặc căn toàn màn hình. Không nên căn trái một section.
+  Đề xuất sửa thành:
 
-  Không có section bọc section, làm vậy là sai hoàn toàn semantic.
+  ```html
+  <section id="project-banner">
+    <figure id="background-cover">
+      <img
+        src="./assets/images/ha-noi-melody-residences-cover.jpg"
+        alt="ha-noi-melody"
+      />
+    </figure>
+    ...
+  </section>
+  ```
 
-  Code lại cho chuẩn semantic
+  Hoặc cũng có thể sử dụng thuộc tính `background-image` của CSS để thay thế cho thẻ `figure` và `img`.
+
+  ```css
+  #project-banner {
+    background-image: url("./assets/images/ha-noi-melody-residences-cover.jpg");
+  }
+  ```
 
 ---
 
-- [x] Bài 2: Bài làm không tốt
+- [x] Bài 2: Sử dụng position chưa tốt.
 
-  Phần background nên có một lớp overlay để chữ trắng không bị chìm so với nền.
+![Do Van Quan](images/do_van_quan-bai2.png)
 
-  Không nên set cả width, height của img, việc đó có thể làm cho ảnh bị méo, hoặc kho muốn thay đổi kích cỡ ảnh thì phải tính toán để thay đổi cả 2 chiều.
+Hiện tại, `.profile` đang position absolute theo body, nên ở một số màn hình khác, nó sẽ bị lệch vị trí.
 
-  Không có section bọc section, làm vậy là sai hoàn toàn semantic.
+Với phần `.profile` hiện tại, có thể chưa nên cho là 1 section. Nên đặt nó là 1 `div` bình thường, tên của class sẽ là `.info` hoặc `.introduction`.
 
-  Section là một thẻ để thể hiện là một phần hoàn toàn có nghĩa của toàn trang web. Ở đây, chỉ để bao bọc logo thì không phải là một section.
+Có thể gộp chung `<figure>` vào chung section với `.profile` để tạo thành 1 section.
 
-  Thẻ strong chỉ để nhấn mạnh một nội dung quan trọng của một trang web, nếu chỉ đơn giản la là in đậm thì không cần
+Hoặc cũng có thể sử dụng thuộc tính `background-image` của CSS để thay thế cho thẻ `figure` và `img`.
 
-  Code lại cho chuẩn semantic.
-
----
-
-- [x] Bài 3: Bài làm **Không tốt**
-
-  Code lại cho chuẩn semantic.
+Nên có thêm overlay cho background để phần text hiển thị nổi hơn, đảm bảo độ tương phản giữa text và background và khi thay đổi ảnh, text vẫn hiển thị tốt.
 
 ---
 
-- [x] Đánh giá chung về bài tập về nhà: Bài làm Không tốt, xem lại toàn bộ semantic.
+- [x] Bài 3:
+
+Bài làm tốt
+
+Thiếu phần đường ngang tại `.heading`
+
+Nên có thêm overlay cho background để phần text hiển thị nổi hơn, đảm bảo độ tương phản giữa text và background và khi thay đổi ảnh, text vẫn hiển thị tốt.
+
+Phần `.location-list` chưa hẳn là một section riêng biệt, một section trong trang web cần có ý nghĩa riêng, có tiêu đề, có nội dung riêng biệt. Ở đây đơn giản là một thanh menu để click và đổi các hình ảnh tương ứng ở dưới, có thể sử dụng thẻ `nav` để bọc chúng.
+
+Với các `.location-content`, heading của nó là một tiêu đề nhỏ ở trong từng đầu mục trên thanh menu. Không nên sử dụng heading cùng cấp với `.location-list` ở trên mà nên tăng thêm 1 cấp heading cho `.location-content`.
+
+Trong hầu hết trường hợp, cả một phần to này là một section lớn trong một trang web, nên sử dụng section để bọc chúng, ở bên trong tùy trường hợp có thể sử dụng `nav`, `article`, `footer`, `header` để bọc các phần tử con bên trong. Và các heading sẽ thường bắt đầu từ `h2` trở lên.
+
+---
+
+- [x] Đánh giá chung về bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý thêm về thuộc tính `position` và cách sử dụng các thẻ HTML theo đúng chuẩn semantics.
 
 ---
 
