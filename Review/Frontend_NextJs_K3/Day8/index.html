@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day8</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên FE K3.</h1>
+<h2><a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Nguyễn Đức Hải</a></h2>
+<pre><code>Sớm nhất*
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Ở giao diện mẫu, padding vào trong của mega menu lớn hơn.</p>
+<p>Ở giao diện mẫu mọi list-item đều căn trái chứ không phải căn giữa.</p>
+<p>Vị trí các list-item không đúng với giao diện mẫu.</p>
+<p>Vì phần menu navbar và mega menu là một phần điều hướng nên nên đặt chung trong một thẻ nav.</p>
+<p>Không nên sử dụng font-weight 700 ở * vì nó sẽ làm cho font bị mất chất, mỗi lần muốn sử dụng thì phải đưa về font-weight mong muốn.</p>
+<p>HTML5 bổ xung thêm một số thẻ bao bọc semantics như <code>header...</code>. Nên sử dụng chúng để tăng khả năng đọc hiểu source code.</p>
+<p>Phần <code>div.logo-img</code> sử dụng max-width nhưng thẻ img không có width 100% nên không có tác dụng.</p>
+<p>Không nên đặt tên class như <code>menu-item-1, menu-item-2...</code> vì nó không nói lên được nội dung của nó, và khi cần thêm một menu-item mới thì phải sửa lại tên class.</p>
+<ul>
+<li>Như trường hợp này là một ví dụ:</li>
+</ul>
+<pre><code class="language-css">.menu-item-1 li:nth-child(4),
+.menu-item-4 li:nth-child(1),
+.menu-item-5 li:nth-child(1),
+.menu-item-5 li:nth-child(5),
+.menu-item-5 li:nth-child(4),
+.menu-item-2 li:nth-child(1),
+.menu-item-2 li:nth-child(3),
+.menu-item-2 li:nth-child(4),
+.menu-item-2 li:nth-child(5),
+.menu-item-2 li:nth-child(8) {
+  opacity: 0;
+}
+</code></pre>
+<ul>
+<li>Nên đặt tên class như sau:</li>
+</ul>
+<pre><code class="language-css">.menu-item li {
+  opacity: 0;
+}
+</code></pre>
+<ul>
+<li>Hơn nữa khi muốn tạo một khoảng trống, không nên cho content vào rồi để opacity: 0 mà nên sử dụng <code>margin</code> hoặc <code>padding</code> để tạo khoảng trống.</li>
+</ul>
+<p>Nên bổ dung hiệu ứng highlight màu cho menu-nav khi hover vào mega menu con của nó.</p>
+<p>Thiếu background nền.</p>
+</li>
+<li>
+<p>[x] <a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Ở HTML5 có thêm các thẻ bao bọc semantics như <code>header, footer, main, section...</code> nên nên sử dụng chúng để tăng khả năng đọc hiểu source code.</p>
+<p>Đang có một chút lỗi về giao diện khiến hiện thanh scroll ngang:</p>
+<p><img src="images/duchainguyen-bai2.png" alt="duchainguyen"></p>
+<p>Không nên sử dụng <code>padding: 10px 0</code> để căn giữa ảnh ở 1 <code>div.logo-car</code> vì nếu resize kích thước div thì có thể sẽ khiến bức ảnh không còn được căn giữa theo chiều dọc.</p>
+<p><img src="images/duchainguyen-bai2-2.png" alt="duchainguyen"></p>
+<ul>
+<li>Các dễ nhất để căn giữa một bức ảnh theo div cha theo chiều dọc là:</li>
+</ul>
+<pre><code class="language-css">.logo-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</code></pre>
+<p>&lt;!-- Hoặc --&gt;</p>
+<pre><code class="language-css">.logo-car {
+  position: relative;
+}
+.logo-car img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</code></pre>
+<p>&lt;!-- Hoặc --&gt;</p>
+<pre><code class="language-css">.logo-car {
+  display: grid;
+  place-items: center;
+}
+</code></pre>
+<p>ID trong 1 trang web chỉ nên sử dụng 1 lần, nên sử dụng class thay thế.</p>
+<p><img src="images/duchainguyen-bai2-3.png" alt="duchainguyen"></p>
+<p>Phần mini cart nên sử dụng thẻ <code>aside</code> để bao bọc.</p>
+<p>Tiêu đề của mini cart không phải là một <code>heading</code>, không nên sử dụng <code>h2</code> mà nên sử dụng <code>p</code> hoặc <code>span</code>.</p>
+<p>Tất cả các heading bên trong đều chỉ là đầu mục, không nên sử dụng <code>heading</code> mà nên sử dụng <code>p</code> hoặc <code>span</code>.</p>
+<p>Hình ảnh của sản phẩm trong giỏ hàng cần một giá trị alt đủ ý nghĩa thích hợp thay vì để trống vì khi hình ảnh không hiển thị thì sẽ không có giá trị nào để thay thế.</p>
+<p>Màu chữ ở các <code>.title</code> bị sai với giao diện mẫu.</p>
+<p>Phần font-weight ở <code>.foot-text span</code> cân đậm hơn.</p>
+<p>Phần hiển thị chữ ở <code>.item-price span</code> sai với giao diện mẫu.</p>
+<p>Các màu chữ ở <code>.counter</code> sai với giao diện mẫu.</p>
+<p>Phần <code>.title-h2 h2</code> cần cho font chữ nhỏ hơn và font-weight đậm hơn.</p>
+<p>Nếu là tiêu đề chính, nên sử dụng một class như <code>.main-title</code> thay vì class <code>.title-h2</code>.</p>
+<p>Phần màu của đường kẻ tại <code>.product::before</code> cần cho nhạt hơn.</p>
+<p>Nên chia rõ hơn các product nên gom nhóm vào một class là <code>.products</code> để có thể xử lý tốt hơn.</p>
+<p>Các phần thông tin phụ như tổng tiền, lưu ý, các nút button nên bao bọc bằng một thẻ <code>footer</code>.</p>
+<p><strong>Ở bài rút gọn</strong>. Hầu hết các lỗi đều giống ở bài chính, chỉ trừ việc không bị hiện thanh scroll ngang.</p>
+<p>Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>[x] <a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Font chữ ở các phần title đều sai, ở bản mẫu sử dụng một font chữ có chân nhọn.</p>
+<p>Sai chính tả <strong>Read-Mode</strong> thành <strong>Read More</strong>.</p>
+<p>Phần <code>.content</code> thiếu khoảng cách phía dưới.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ có một số lỗi nhỏ về giao diện và sai chính tả. Cần chú ý thêm về việc sử dụng các thẻ bao bọc semantics để tăng khả năng đọc hiểu source code. Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
