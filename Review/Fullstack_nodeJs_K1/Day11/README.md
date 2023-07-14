@@ -322,6 +322,156 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 ---
 
+# Tuyết đánh giá bài học viên
+
+## [Trung Le](https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11.git)
+
+- [x] [Bài 1](https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11)
+
+  Bài làm **không tốt** \*
+
+  CÁC LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ FIX:
+
+  - Chưa làm responsive: Cần làm thêm, nộp lại đầy đủ.
+
+  - Màu chưa đúng: background section, text, background button link.
+
+  - Font chữ, line-height lớn hơn bản mẫu. Các phần chữ có kiểu chữ đậm chưa giống bản mẫu.
+
+  - Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - Nên sử dụng `margin` và `padding` hợp lý. Xác định khoảng cách nào dùng `margin`, khoảng cách nào dùng `padding`.
+
+  - Chưa thêm nội dung `alt` cho nhiều ảnh.
+
+  - Nhiều ảnh chưa set kích thước, chưa set "object-fit" cho ảnh. Trường hợp đổi ảnh khác với kích thước khác thì giao diện sẽ bị vỡ, ảnh bị méo.
+
+  - Đặt tên class phù hợp ("lists" --> "list"). Xóa bỏ những class không cần thiết `"logo-header col-sm-"`, những comment CSS dư.
+
+  ***
+
+  LỖI Ở CÁC PHẦN RIÊNG:
+
+  Phần `headrer`:
+
+  - Chưa xử lý hover vào ".nav-item".
+
+  Phần section `.policy`:
+
+  - Khoảng cách padding lớn hơn so với bản mẫu.
+
+  - Phần `.product`: Chưa xử lý hover.
+
+  Phần section `WHY CHOOSE US`, `HOME DELIVERY`:
+
+  - Khoảng cách giữa 2 section này chưa giống như bản mẫu, cần tăng khoảng cách lên.
+
+  - Chưa xử lý button link khi hover vào.
+
+  Phần section `download app`
+
+  - Chưa có màu background và khoảng cách trên dưới của section.
+
+  - Sử dụng thẻ `div` cho phần 2 button link `.appstore` tải app là chưa đúng. Ở đây là link nên cần dùng thẻ `a`. Khoảng cách giữa hai link này chưa đúng.
+
+  Phần `footer`:
+
+  - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng:
+
+    **[Xem ảnh](images/trung-le-1.1.png)**
+
+  - Nên set padding cho thẻ cha (`.footer`), chứ không nên set `margin-top` cho từng thẻ con bên trong (`.content`)
+
+  - Các link đang có font-weight đậm, không giống bản mẫu là font-weight mảnh.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài không tốt. HTML cần chú ý dùng thẻ semantic, đặt tên class phù hợp, thêm nội dung 'alt' cho ảnh đầy đủ để tốt cho SEO. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể. Cần làm thêm responsive đầy đủ, hoàn thiện và nộp lại.
+
+## [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day11)
+
+- [x] [Bài 1](https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day11/index.html)
+
+  Bài làm tốt \*
+
+  CÁC LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ FIX:
+
+  - Chưa có responsive cho những màn hình sau:
+
+    - Màn hình: max-width: 1199px.
+
+    - Màn hình: từ width: 575px trở xuống (max-width:420px, max-width:375px). Cần check lại break-point và xử lý responsive thêm
+
+  - Ảnh: Nhiều ảnh set kích thước chưa đúng. Trường hợp đổi ảnh khác với kích thước bất kì khác thì giao diện sẽ bị vỡ. Vậy nên không nên chỉ set `width:auto`, nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.
+
+  - Bố cục trang HTML nên dùng thẻ semantic `<main></main>`, `<footer></footer>` bọc ngoài cùng các phần nội dung chính lớn.
+
+  - Chú ý nên comment HTML thống nhất: 'ENDS-->END', chữ 'END' viết đầu cả / viết cuối cả
+
+    **[Xem Ảnh](images/luu_anh_quan_1.3.png)**
+
+  - Cần xóa bỏ code và comment thừa trong HTML:
+
+    **[Xem ảnh](images/luu_anh_quan_1.1.png)**
+
+  LỖI Ở CÁC PHẦN RIÊNG:
+
+  Phần `link-order`:
+
+  - Cần chỉnh css flexbox lại để các item có width ôm cả content, tránh không để chèn như thế này:
+
+    **[Xem ảnh](images/luu_anh_quan_1.2.png)**
+
+  - `btn-process` cần thêm `cursor:pointer` cho màn PC.
+
+  Phần `footer`:
+
+  - Các link ở `footer` chưa xử lý khi hover ở PC sẽ đổi màu chữ.
+
+  - Phần copyright chưa đúng, ở bản mẫu không có khoảng cách bên trái.
+
+---
+
+- [x] [Màn hình: max-width: 1500px]
+
+  - Bài làm rất tốt \*
+
+---
+
+- [x] [Màn hình: max-width: 1399px]
+
+  - Xác định break-point 1200px <==> **1399px** là chưa đúng với bản mẫu. Ở bài mẫu là 1200px <==> **1398px**.
+
+  - Phần `link-order` width nhỏ hơn bản mẫu.
+
+  - 3 section `feature, feature-2, cta`: content của 2 cột trái-phải đang căn top theo chiều dọc. Bản mẫu là căn giữa. (Để linh hoạt cho 2 item này luôn nằm giữa theo chiều dọc khi ở cha đã dùng flex column, thì nên dùng `align-items:center`, thay vì dùng `margin-top` cho thẻ con). width các cột chưa đúng, lớn hơn bản mẫu.
+
+  - Phần `cta-btn`: khoảng cách giữa 2 button link nhỏ hơn bản mẫu.
+
+  - Phần `logo-desc`: width lớn hơn bản mẫu.
+
+---
+
+- [x] [Màn hình: max-width: 991px]
+
+  - Xử lý responsive lại phần này cho tất cả màn hình từ 991px trở xuống. Lỗi khi resize về màn nhỏ, chọn mở menu, resize ra màn lớn thì menu vẫn còn bug này:
+
+    **[Xem ảnh](images/luu_anh_quan_1.4.png)**
+
+  - Chưa responsive cho khoảng cách trên dưới của 3 section `feature, feature-2, cta`.
+
+---
+
+- [x] [Màn hình: max-width: 991px]
+
+  - Bài làm rất tốt \*
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần để ý thêm về xác định break-point, những khả năng bug css của các item: kích thước, vị trí, khoảng cách, màu, action khi màn hình thay đổi và check xóa code thừa, file thừa không dùng đến để bài hoàn thiện hơn.
+
+---
+
 ## [Tuấn Phạm](https://github.com/phamtuan162/phamtuan-nodejs-01)
 
 - [x] Bài 1: Màn hình: max-width: 1500px
