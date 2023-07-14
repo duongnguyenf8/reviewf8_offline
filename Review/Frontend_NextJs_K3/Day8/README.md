@@ -149,3 +149,155 @@
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ có một số lỗi nhỏ về giao diện và sai chính tả. Cần chú ý thêm về việc sử dụng các thẻ bao bọc semantics để tăng khả năng đọc hiểu source code. Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+## [Nguyen Le Quyen (FPL HN)](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day8/Baitap)
+
+    Sớm nhất*
+
+- [x] [Bài 1](file:///D:/F8_Office/Review_GIT/F8-FE-K3/NguyenLeQuyen2004/f8-frontend-k3/Day8/Baitap/ex01.html)
+
+  Bài làm rất tốt\*
+
+  Chú ý kỹ hơn về `font-weight` thiết kế bài mẫu
+
+  Các icon như **info** và **search** cần bổ sung action khi `hover` dùng `cursor: pointer` để tăng trải nghiệm người dùng.
+
+- [x] [Bài 2](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/blob/main/Day8/Baitap/ex02.html)
+
+  Bài làm tốt
+
+  Phần hiển thị số lượng sản phẩm trong giỏ hàng không nên dùng `::after` sau này tương tác với backend hơi rắc rối. Nên dùng thẻ `span`.
+
+  Nút xoá sản phẩm cũng không dùng `::after`, nên dùng `span` để sau này dễ dàng xử lý sự kiện.
+
+  Phần **product** nên cho vào `div` là **product-lists** bọc lại và dùng `overflow-Y: scroll` theo trục Y và đặt max-height để khi người dùng thêm nhiều sản phẩm giúp phần **cart** được gọn gàng hơn.
+
+  Nên đặt tên class đúng ngữ cảnh, tường minh tránh kiểu **box-1** có thể chia thành **box-left**, **box-right**.
+
+  Để ý phần `font-family` đang dùng là font không chân.
+
+- [x] [Bài 3](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/blob/main/Day8/Baitap/ex03.html)
+
+  Bài làm chưa tốt
+
+  Chưa đúng với thiết kế bài mẫu.
+
+  Nội dung mô tả trong các div chưa co đều lại.
+
+  Các `button` đang bị dính sát vào phần nội dung, và không đều nhau.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý kỹ về thiết kế ở bài mẫu, phân tích layout kỹ trước khi làm. Nên xem lại cách đặt tên class tường minh hơn, đúng ngữ cảnh hơn.
+
+## [Vũ Thành Khang](https://github.com/countduck4819/f8-frontend/tree/main/Day8)
+
+- [x] [Bài 1](https://github.com/countduck4819/f8-frontend/tree/main/Day8)
+
+  Bài làm chưa tốt
+
+  Nên hiển thị **MEGA MENU** với nền trắng theo đúng thiết kế.
+
+  Xử lý nút khi `hover` chưa tốt. Khi `hover` trỏ xuống phần **MEGA MENU** sẽ bị mất luôn.
+
+  Các icon như **info** và **search** cần bổ sung action khi `hover` dùng `cursor: pointer` để tăng trải nghiệm người dùng. Nút **info** đang bị méo
+
+- [x] [Bài 2](https://github.com/countduck4819/f8-frontend/tree/main/Day8)
+
+  Bài làm chưa tốt
+
+  Phần **items** không đúng với thiết kế bài mẫu. Không nên dùng `background-color`.
+
+  Phần **increment** thiết kế sai.
+
+- [x] [Bài 3](https://github.com/countduck4819/f8-frontend/tree/main/Day8)
+
+  Bài làm tốt
+
+  Chú ý phần hình ảnh không nên để cứng cả `width` và `height`. Chỉ nên để cứng 1 trong cái `width` hoặc `height`.
+
+  Nên sử dụng `display: flex` trong các thẻ `li` để căn chỉnh các item con bên trong, không dùng `margin` cho nội dung item mà nên dùng `padding`
+
+  Không nên reset CSS `text-align: center`
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều chưa hoàn thiện tốt, chưa đúng với bản mẫu. Cần chú ý chỉn chu hơn vào tiểu tiết và giao diện mẫu để làm đúng.
+
+## [Gia Bảo Đỗ](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8)
+
+- [x] [Bài 1](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8)
+
+  Bài làm rất tốt
+
+  Chú ý kỹ hơn về `font-weight` cho các text theo như thiết kế bài mẫu.
+
+  Chú ý các icon xổ xuống bé hơn xíu như bài mẫu.
+
+  Các icon như **info** và **search** cần bổ sung action khi `hover` dùng `cursor: pointer` để tăng trải nghiệm người dùng.
+
+  Chú ý dùng `transform: all 0.4s ease;` là sai.
+
+- [x] [Bài 2](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8)
+
+  Bài làm tốt \*
+
+  Phần hiển thị số lượng sản phẩm trong giỏ hàng không nên dùng `::after` sau này tương tác với backend hơi rắc rối. Nên dùng thẻ `span`. Căn chỉnh lại số lượng ra giữa.
+
+  Chú ý phần **quantity_product** thiết kế chưa giống với bài mẫu. Chưa có action khi `hover` vào nút tăng giảm, dùng `cursor: pointer` để tăng trải nghiệm người dùng.
+
+  Phần **products** nên đặt max-height và dùng `overflow-Y: scroll` theo trục Y để khi người dùng thêm nhiều sản phẩm giúp phần **cart** được gọn gàng hơn.
+
+- [x] [Bài 3](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8)
+
+  Bài làm chưa tốt
+
+  Có ý tưởng chia layout, bố cục các item đúng nhưng chưa sát với thiết kế bài mẫu.
+
+  Code lại.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Nên chú ý phân tích layout trước khi làm. Cần chú ý chỉn chu hơn vào tiểu tiết và giao diện mẫu để làm đúng.
+
+## [thuy nguyen](https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8)
+
+- [x] [Bài 1](https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8)
+
+  Bài làm rất tốt
+
+  Chú ý kỹ hơn về `font-weight` cho các text theo như thiết kế bài mẫu.
+
+  Các icon như **info** và **search** cần bổ sung action khi `hover` dùng `cursor: pointer` để tăng trải nghiệm người dùng.
+
+- [x] [Bài 2](https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8)
+
+  Bài làm tốt \*
+
+  Chú ý các hình ảnh sản phẩm đều nằm trong 1 nền màu.
+
+  Chú ý `button` add cần đặt `background-color` theo thiết kế bài mẫu.
+
+  Nên nhóm các **item** vào trong **items** chứ không tách lẻ ra.
+
+  Phần **items** nên đặt max-height và dùng `overflow-Y: scroll` theo trục Y để khi người dùng thêm nhiều sản phẩm giúp phần **cart** được gọn gàng hơn.
+
+  Chú ý cách đặt class cần đúng ngữ cảnh, tường minh. Ví dụ **items** là số nhiều thì bên trong **items** phải có nhiều **item**.
+
+  Nên thêm sự kiện `hover` cho các nút xoá sản phẩm `cursor: pointer` để tăng tính trải nghiệm người dùng.
+
+- [x] [Bài 3](https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8)
+
+  Bài làm **KHÔNG TỐT\***
+
+  Bài làm chưa đúng với thiết kế mẫu.
+
+  Cần phân tích lại Layout để chia bố cục.
+
+  Code lại.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Nên chú ý phân tích layout trước khi làm. Cần chú ý chỉn chu hơn vào tiểu tiết và giao diện mẫu để làm đúng.
+
+---
