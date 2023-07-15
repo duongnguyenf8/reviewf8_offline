@@ -303,6 +303,7 @@
   - Dấu `+`, `-`, ở phần `quantity` và icon dấu `x` ở mỗi sản phẩm có thể click được, nên dùng thẻ `button` và set css `cursor:pointer`, kích thước lớn hơn để trải nghiệm người dùng tốt hơn.
 
 - `button` chưa đúng font-family, khoảng cách.
+
 - [x] [Bài 3](https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise3/)
 
   Bài làm tốt\*
@@ -472,8 +473,6 @@
 ---
 
 ## [Nguyen Le Quyen (FPL HN)](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day8/Baitap)
-
-    Sớm nhất*
 
 - [x] [Bài 1](file:///D:/F8_Office/Review_GIT/F8-FE-K3/NguyenLeQuyen2004/f8-frontend-k3/Day8/Baitap/ex01.html)
 
