@@ -322,6 +322,135 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 ---
 
+## [Sơn Ngô Mạnh](https://ngomanhson.github.io/f8-fullstack-exercises)
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm tốt \*
+
+  Không nên để transition-property là all, nên chỉ định rõ transition-property cụ thể. Vì khi load trang, các phần tử sẽ có hiệu ứng chuyển động, không đẹp.
+
+  Cấu trúc header hơi thừa thẻ div. (header > .container > .header-inner) => (header > .header-inner) hoặc viết luôn vào header nếu nghiệp vụ đơn giản.
+
+  Thuộc tính `href` của thẻ a bao bọc vào logo ở header thường dùng để back về trang chủ, không nên để đường dẫn là `./` mà nên để là `/`
+
+  Phần `header-search` hầu hết không sử dụng để điều hướng, nên không nên đặt trong phần `nav.nav`. Nên tách ra thành một phần riêng.
+
+  Phần `.text-img__title` không phải là một tiêu đề, chỉ là một đoạn text thông thường được làm khác đi để nhấn mạnh. Nên dùng thẻ `strong` hoặc `span` thay cho h3.
+
+  Không nên fix cứng width của `.cta-group__btn` vì ở ngoài đã có chiều rộng rồi. Nên để width là 100% hoặc auto.
+
+  Các tiêu đề ở `footer` không phải là một heading, nên không nên dùng thẻ h4. Nên dùng thẻ `b` hoặc `span` thay cho h4.
+
+  Không cần thiết phải tạo animation và keyframe ở đây:
+
+  ```css
+  @keyframes slip {
+    from {
+      transform: translateY(-10%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  ```
+
+  Phần hiển thị nội dung hơi to so với bản mẫu.
+
+  Các hình ảnh đều to hơn bản mẫu.
+
+  **[Xem ảnh](images/ngomanhson1500.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1399px
+
+  Bài làm tốt
+
+  Các lỗi sai giống như ở màn hình max-width: 1500px.
+
+  Chưa thu nhỏ các font-size, kích cỡ ảnh phù hợp.
+
+  Chưa có responsive ở màn hình này.
+
+  **[Xem ảnh](images/ngomanhson1399.png)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 1199px
+
+  Bài làm rất tốt \*
+
+  Các lỗi sai giống như ở màn hình max-width: 1399px.
+
+  **[Xem ảnh](images/ngomanhson1199.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 991px
+
+  Bài làm tốt \*
+
+  Các lỗi sai giống như ở màn hình max-width: 1199px.
+
+  Phần `.feature-content-two` sai vị trí so với bản mẫu.
+
+  Hiệu ứng đóng, mở menu chưa giống bản mẫu.
+
+  **[Xem ảnh](images/ngomanhson991.png)**
+
+---
+
+- [x] Bài 5: Màn hình: max-width: 767px
+
+  Bài làm tốt \*
+
+  Các lỗi sai giống như ở màn hình max-width: 991px.
+
+  Các hình ảnh quá to so với bản mẫu.
+
+  **[Xem ảnh](images/ngomanhson767.png)**
+
+---
+
+- [x] Bài 6: Màn hình: max-width: 575px
+
+  Bài làm chưa tốt \*
+
+  Các lỗi sai giống như ở màn hình max-width: 767px.
+
+  Vỡ layout khi mở menu ở header, do phần menu chiếm 228px (input search)
+
+  - Phần ảnh logo mặc định chiếm thêm 155px (Kích thước mặc định)
+
+  - Thêm kích thước của nút menu toggle.
+
+  - Nên kích thước thực vượt quá 390px, các phần tử sẽ bị đẩy ra ngoài.
+
+  - Nên để kích thước của các phần đã set 390px là 100% để tránh vỡ layout.
+
+  **[Xem ảnh](images/ngomanhson575.png)**
+
+---
+
+- [x] Bài 7: Màn hình: max-width: 420px
+
+  Bài làm chưa tốt \*
+
+  Các lỗi sai giống như ở màn hình max-width: 575px.
+
+  **[Xem ảnh](images/ngomanhson420.png)**
+
+---
+
+- [x] Bài 8: Màn hình: max-width: 375px
+
+  Bài làm chưa tốt \*
+
+  Các lỗi sai giống như ở màn hình max-width: 420px.
+
+  **[Xem ảnh](images/ngomanhson375.png)**
+
 # Tuyết đánh giá bài học viên
 
 ## [Trung Le](https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11.git)

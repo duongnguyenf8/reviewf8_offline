@@ -96,9 +96,9 @@
 
 ---
 
-## [Đoàn Duy Chinh](https://duychinh.github.io/f8-fullstack-KS2/Day-10/index.html)
+## [Kiều Duy Tùng](https://stung16.github.io/ex_f8-fullstack/day10)
 
-- [x] [Bài 1](https://duychinh.github.io/f8-fullstack-KS2/Day-10/index.html)
+- [x] [Bài 1](https://stung16.github.io/ex_f8-fullstack/day10)
 
   Bài làm rất tốt \*
 
@@ -108,7 +108,7 @@
 
 ---
 
-- [x] [Bài 2](https://duychinh.github.io/f8-fullstack-KS2/Day-10/index.html)
+- [x] [Bài 2](https://stung16.github.io/ex_f8-fullstack/day10)
 
   Bài làm tốt \*
 
@@ -116,7 +116,7 @@
 
 ---
 
-- [x] [Bài 3](https://duychinh.github.io/f8-fullstack-KS2/Day-10/index.html)
+- [x] [Bài 3](https://stung16.github.io/ex_f8-fullstack/day10)
 
   Bài làm rất tốt \*
 

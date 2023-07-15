@@ -251,6 +251,116 @@
 <li>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm một số màn hình ở nhỏ, chú ý thêm về size các ảnh và các phần tử.</li>
 </ul>
 <hr>
+<h2><a href="https://ngomanhson.github.io/f8-fullstack-exercises">Sơn Ngô Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Màn hình: max-width: 1500px</p>
+<p>Bài làm tốt *</p>
+<p>Không nên để transition-property là all, nên chỉ định rõ transition-property cụ thể. Vì khi load trang, các phần tử sẽ có hiệu ứng chuyển động, không đẹp.</p>
+<p>Cấu trúc header hơi thừa thẻ div. (header &gt; .container &gt; .header-inner) =&gt; (header &gt; .header-inner) hoặc viết luôn vào header nếu nghiệp vụ đơn giản.</p>
+<p>Thuộc tính <code>href</code> của thẻ a bao bọc vào logo ở header thường dùng để back về trang chủ, không nên để đường dẫn là <code>./</code> mà nên để là <code>/</code></p>
+<p>Phần <code>header-search</code> hầu hết không sử dụng để điều hướng, nên không nên đặt trong phần <code>nav.nav</code>. Nên tách ra thành một phần riêng.</p>
+<p>Phần <code>.text-img__title</code> không phải là một tiêu đề, chỉ là một đoạn text thông thường được làm khác đi để nhấn mạnh. Nên dùng thẻ <code>strong</code> hoặc <code>span</code> thay cho h3.</p>
+<p>Không nên fix cứng width của <code>.cta-group__btn</code> vì ở ngoài đã có chiều rộng rồi. Nên để width là 100% hoặc auto.</p>
+<p>Các tiêu đề ở <code>footer</code> không phải là một heading, nên không nên dùng thẻ h4. Nên dùng thẻ <code>b</code> hoặc <code>span</code> thay cho h4.</p>
+<p>Không cần thiết phải tạo animation và keyframe ở đây:</p>
+<pre><code class="language-css">@keyframes slip {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+</code></pre>
+<p>Phần hiển thị nội dung hơi to so với bản mẫu.</p>
+<p>Các hình ảnh đều to hơn bản mẫu.</p>
+<p><strong><a href="images/ngomanhson1500.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Màn hình: max-width: 1399px</p>
+<p>Bài làm tốt</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 1500px.</p>
+<p>Chưa thu nhỏ các font-size, kích cỡ ảnh phù hợp.</p>
+<p>Chưa có responsive ở màn hình này.</p>
+<p><strong><a href="images/ngomanhson1399.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Màn hình: max-width: 1199px</p>
+<p>Bài làm rất tốt *</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 1399px.</p>
+<p><strong><a href="images/ngomanhson1199.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Màn hình: max-width: 991px</p>
+<p>Bài làm tốt *</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 1199px.</p>
+<p>Phần <code>.feature-content-two</code> sai vị trí so với bản mẫu.</p>
+<p>Hiệu ứng đóng, mở menu chưa giống bản mẫu.</p>
+<p><strong><a href="images/ngomanhson991.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5: Màn hình: max-width: 767px</p>
+<p>Bài làm tốt *</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 991px.</p>
+<p>Các hình ảnh quá to so với bản mẫu.</p>
+<p><strong><a href="images/ngomanhson767.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6: Màn hình: max-width: 575px</p>
+<p>Bài làm chưa tốt *</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 767px.</p>
+<p>Vỡ layout khi mở menu ở header, do phần menu chiếm 228px (input search)</p>
+<ul>
+<li>
+<p>Phần ảnh logo mặc định chiếm thêm 155px (Kích thước mặc định)</p>
+</li>
+<li>
+<p>Thêm kích thước của nút menu toggle.</p>
+</li>
+<li>
+<p>Nên kích thước thực vượt quá 390px, các phần tử sẽ bị đẩy ra ngoài.</p>
+</li>
+<li>
+<p>Nên để kích thước của các phần đã set 390px là 100% để tránh vỡ layout.</p>
+</li>
+</ul>
+<p><strong><a href="images/ngomanhson575.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7: Màn hình: max-width: 420px</p>
+<p>Bài làm chưa tốt *</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 575px.</p>
+<p><strong><a href="images/ngomanhson420.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8: Màn hình: max-width: 375px</p>
+<p>Bài làm chưa tốt *</p>
+<p>Các lỗi sai giống như ở màn hình max-width: 420px.</p>
+<p><strong><a href="images/ngomanhson375.png">Xem ảnh</a></strong></p>
+</li>
+</ul>
 <h1>Tuyết đánh giá bài học viên</h1>
 <h2><a href="https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11.git">Trung Le</a></h2>
 <ul>
