@@ -41,38 +41,7 @@ const pushGit = (text) => {
   });
 };
 
-const deployVercel = () => {
-  logInfo("Deploying to Vercel...");
-
-  return new Promise((resolve, reject) => {
-    const vercelChild = exec("vercel --prod");
-
-    vercelChild.stdout.on("data", (data) => {
-      logSuccess(data);
-    });
-
-    vercelChild.stderr.on("data", (data) => {
-      logInfo(data);
-    });
-
-    vercelChild.on("error", (error) => {
-      logError(error);
-      reject(error);
-    });
-
-    vercelChild.on("close", (code) => {
-      if (code === 0) {
-        logSuccess("Vercel deployment completed");
-        resolve();
-      } else {
-        logError(`Vercel deployment failed with code ${code}`);
-        reject(`Vercel deployment failed with code ${code}`);
-      }
-    });
-  });
-};
-
-const buildPushAndDeploy = async (text) => {
+const buildPush = async (text) => {
   try {
     const build = await building();
     setTimeout(async () => {
@@ -81,8 +50,9 @@ const buildPushAndDeploy = async (text) => {
         logSuccess("Building successfully!");
         await pushGit(text);
         logSuccess("Push git successfully!");
-        await deployVercel();
-        logSuccess("Deployed successfully!");
+        logInfo("Waiting deployment to Vercel");
+        logInfo("https://vercel.com");
+        logSuccess("https://reviewf8.vercel.app");
       }
     }, 2000);
   } catch {
@@ -90,4 +60,4 @@ const buildPushAndDeploy = async (text) => {
   }
 };
 
-module.exports = buildPushAndDeploy;
+module.exports = buildPush;
