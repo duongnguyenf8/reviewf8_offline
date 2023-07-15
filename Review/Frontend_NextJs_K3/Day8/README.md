@@ -150,6 +150,327 @@
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ có một số lỗi nhỏ về giao diện và sai chính tả. Cần chú ý thêm về việc sử dụng các thẻ bao bọc semantics để tăng khả năng đọc hiểu source code. Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
 
+---
+
+# Tuyết review bài học viên FE K3.
+
+---
+
+## [Nguyễn Khắc Tú](https://tunguyenhd.github.io/FrontEnd-F8-K3/)
+
+- [x] [Bài 1](https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/Day_8/Bai-1/)
+
+  Bài làm tốt
+
+  - Nên dùng thẻ semantic `<header>` bọc ngoài cùng phần header và dùng `<nav>` bọc ngoài các nav-item.
+
+  - Ảnh logo cần set thêm kích thước, để nếu là ảnh khác với kích thước bất kì thì sẽ không bị vỡ giao diện. Và thêm dung cho thuộc tính `alt` của ảnh để tốt cho SEO.
+
+  - Icon mũi tên cạnh nav-item đang to hơn so với design.
+
+  - Thêm css `text-transform:uppercase` cho những chữ kiểu in hoa và `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+  - Width của `subnav` chưa đúng. Cần set lại bằng với width của `nav-bar`.
+
+  - Thiếu đường kẻ ở giữa 2 `megabox-wrap-column`.
+
+  - Phần `megabox-wrap-column` width chưa đúng. Cần set width rộng chiếm trọn phần bên phải còn lại của `subnav`.
+
+- [x] [Bài 2](https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/Day_8/Bai-2/)
+
+  Bài làm tốt
+
+  - Phần `cart` height chưa đúng. Cần set height full màn hình đúng như design.
+
+  - Thiếu icon `"x"` bên phải ở mỗi `cart__item`.
+
+  - Ảnh sản phẩm: Chưa có phần màu background sau ảnh. Nên set thêm `height / max-height`. Vì nếu là ảnh khác có chiều dài dài hơn thì cả `cart__item` sẽ bị dài ra theo, nhìn sẽ không đồng đều với các `cart__item` khác.
+
+  - Màu chữ `cart__item-price` chưa đúng.
+
+  - Dấu `+`, `-` ở phần `cart__item-quantity` có thể click được, nên dùng thẻ `button` và set kích thước lớn hơn để trải nghiệm của người dùng tốt hơn.
+
+  - border của `.cart__item` chưa đúng, ở design là border full theo width của `cart__body`.
+
+  - Nên thêm đường kẻ giữa 2 phần `cart__list-item` và `cart__total` nhìn vào có thể dễ phân tách 2 nội dung đó.
+
+  - Font-size của phần `cart__total` chưa đúng design.
+
+  - `button` chưa đúng font-family. Font-size đang lớn hơn design.
+
+- [x] [Bài 3](https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/Day_8/Bai-3/)
+
+  Bài làm tốt\*
+
+  - Sửa lại tên file "index..html --> index.html" để xem được bài deploy trên github page.
+
+  - `service-item__title` không bằng nhau --> cần set thêm height cho ảnh để các ảnh có height bằng nhau.
+
+    ![Nguyễn Khắc Tú](images/nguyenkhactu_1.png)
+
+  - Phần `service-item__dsc` chưa đúng màu chữ và line-height.
+
+  - `button` chưa đúng font-family.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều tốt, chỉ có một số lỗi nhỏ, chú ý hơn về sử dụng thẻ semantic / non-semantic, set kích thước cho ảnh, font-family button và chú ý tiểu tiết và giao diện mẫu để làm đúng.
+
+## [Bảo Anh](https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/)
+
+- [x] [Bài 1](https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/bai1.html)
+
+  Bài làm chưa tốt
+
+  - icon mũi tên đang lớn hơn design.
+
+  - Thiếu `box-shadow` cho phần mega menu.
+
+  - Thêm css `text-transform:uppercase` cho những chữ kiểu in hoa và `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+  - Các cột đang không set width. Cần set thêm width / max-width cho các cột trong mega menu, để đảm bảo khi text dài thì width của cột sẽ không bị dài quá mong muốn.
+
+  - Các item trong mega menu chưa ngang hàng với nhau, khoảng cách trên dưới giữa 2 item chưa đều nhau.
+
+    ![Bảo Anh](images/baoanh_1.png)
+
+  - Các `Item Name` là link trong mega menu, nên sử dụng thẻ `a`.
+
+- [x] [Bài 2](https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/bai2.html)
+
+  Bài làm tốt\*
+
+  - Có thể bỏ CSS `body{padding:40px}` vì không có tác dụng gì trong bài.
+
+  - Thiếu icon `"x"` bên phải ở mỗi `item`.
+
+  - Icon `"x"` ở `heading` và dấu `+`, `-` ở phần `num` có thể click được, nên dùng thẻ `button` và set kích thước lớn hơn để trải nghiệm của người dùng tốt hơn.
+
+  - Ảnh sản phẩm: chưa có phần màu background dưới ảnh.
+
+  - Phần `.row + span` font-size hơi nhỏ.
+
+  - Phần `.foot span` font-weight chưa đúng, cần đậm hơn.
+
+- [x] [Bài 3](https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/bai3.html)
+
+  Bài làm tốt
+
+  - Font-family chưa đúng theo yêu cầu là font `Roboto`.
+
+  - Thêm css `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+  - Cần thêm nội dung cho thuộc tính `alt` của ảnh để tốt cho SEO.
+
+  - Phần text trong `li > p` chưa đúng line-height.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn.
+
+---
+
+## [Nguyễn Đình Khánh](https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day8)
+
+- [x] [Bài 1](https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise1/)
+
+  Bài làm tốt\*
+
+  - Nên dùng thẻ semantic `<header>` thay cho `div.header`, và dùng thẻ `<nav>` ngoài `ul.header-menu`.
+
+  - Thêm css `object-fit` cho ảnh logo, để nếu là ảnh khác với kích thước khác thì ảnh sẽ không bị méo.
+
+  - màu chữ `Documentation` chưa đúng design. Cần nhạt hơn.
+
+  - Thêm css `text-transform:uppercase` cho những chữ kiểu in hoa và `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+  - Các chữ in hoa: có style giống nhau nên đặt tên class giống nhau, và set css theo tên class chung đó, thay vì phải css cho từng cái một. Và phần này đang có font-weight đậm hơn so với design.
+
+  - Phần `.menuBox-item1 ul li` nên tăng padding lên 1 chút nữa để có khoảng cách giữa 2 item giống với design hơn.
+
+  - Check xóa bỏ code css thừa.
+
+- [x] [Bài 2](https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise2/)
+
+  Bài làm chưa tốt. Cần chú ý design để làm giống hơn.
+
+  - Phần `cart-box`: Sai vị trí. Theo design là sát bên phải màn hình. Chiều cao chưa đúng, cần set full màn hình.
+
+  - Phần số ở trên chữ `cart-title` quá nhỏ.
+
+  - Ảnh: Nên set thêm `height/max-height, object-fit` Vì nếu là ảnh khác có chiều dài dài hơn thì cả `product-item` sẽ bị dài ra theo, nhìn sẽ không đồng đều với các `product-item` khác.
+
+  - Dấu `+`, `-`, ở phần `quantity` và icon dấu `x` ở mỗi sản phẩm có thể click được, nên dùng thẻ `button` và set css `cursor:pointer`, kích thước lớn hơn để trải nghiệm người dùng tốt hơn.
+
+- `button` chưa đúng font-family, khoảng cách.
+- [x] [Bài 3](https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise3/)
+
+  Bài làm tốt\*
+
+  - Nên thay thẻ `h2` bằng thẻ `p` vì đây là dòng chữ mô tả thêm cho `h1`. Chứ không phải một tiêu đề.
+
+  - Phần title `h3` font-size đang nhỏ hơn design.
+
+  - Font-weight của phần `.box-info > p` đang đậm hơn so với design.
+
+  - Chưa xử lý phần `box-item` có ít dòng chữ hơn.
+
+    ![Nguyễn Đình Khánh](images/nguyendinhkhanh_1.png)
+
+  - Cần set thêm css `height / max-height` cho ảnh, để tránh trường hợp là ảnh khác có kích thước bất kì thì các ảnh vẫn có chiều cao đều nhau.
+
+  - `button` chưa đúng font-family.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn.
+
+## [Đỗ Ngọc Tiến](https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day8)
+
+- [x] [Bài 1](https://dongoctien17.github.io/F8-frontend-k3/Day8/Bai1.html)
+
+  Bài làm chưa tốt
+
+  - Nên dùng thẻ semantic `<header>, <nav>` thay vì dùng thẻ `div`.
+
+  - Phần `icon` lớn hơn so với design.
+
+  - Nên dùng thẻ `a` bọc chữ trong `menu-content > li` vì đây là link trong mega menu.
+
+  - Ảnh: Ảnh logo cần thêm `height` vì khi là ảnh khác có kích thước bất kì thì vẫn đảm bảo chiều cao ảnh không bị dài quá. Ảnh Background chưa set kích thước, nên với những màn hình nhỏ dưới 1700px, sẽ bị xuất hiện thanh cuộn ngang.
+
+  - Khoảng cách trên dưới chưa giống design. Ở design content sẽ sát đều về 2 phía trên dưới.
+
+    ![Đỗ Ngọc Tiến](images/dongoctien_1.png)
+
+  - Thêm css `text-transform:uppercase` cho những chữ kiểu in hoa và `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+  - File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.
+
+- [x] [Bài 2](https://dongoctien17.github.io/F8-frontend-k3/Day8/Bai2.html)
+
+  Bài làm chưa tốt
+
+  - Phần `.container` không nên set width là %. Vì sẽ không đảm bảo không đảm bảo các nội dung bên trong sẽ hiển thị đúng khi màn hình to /nhỏ hơn. Nên set width cứng bằng `px`.
+
+  - Căn lề các nội dung chưa thẳng hàng như design
+
+    ![Đỗ Ngọc Tiến](images/dongoctien_2.png)
+
+  - Ảnh: Nên set thêm `height / max-height`. Vì nếu là ảnh khác có chiều dài dài hơn thì cả `content` sẽ bị dài ra theo.
+
+  - Dấu `+`, `-`, ở phần `quantity` và icon dấu `x` ở mỗi sản phẩm có thể click được, nên dùng thẻ `button` và set css `cursor:pointer`, kích thước lớn hơn để trải nghiệm người dùng tốt hơn.
+
+  - File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.
+
+  - Check xóa code thừa
+
+    ![Đỗ Ngọc Tiến](images/dongoctien_3.png)
+
+  - Chưa format code.
+
+- [x] [Bài 3](https://dongoctien17.github.io/F8-frontend-k3/Day8/Bai3.html)
+
+  Bài làm tốt
+
+  - Không nên set height cố định cho `content > p`
+
+  - Ảnh: chưa set kích thước. Cần thêm nội dung cho thuộc tính `alt`.
+
+  - Phần `".content > p"`: không nên set height cố định. Line-height chưa đúng.
+
+    ![Đỗ Ngọc Tiến](images/dongoctien_4.png)
+
+  - Thêm css `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn.
+
+## [Nguyen Tuan Anh](https://github.com/fanbaday/f8-fullstack-offline-K3/blob/main/homework.html)
+
+- [x] [Bài 1](https://fanbaday.github.io/f8-fullstack-offline-K3/day8/ex1/)
+
+  Bài làm chưa tốt
+
+  - mega menu vị trí chưa đúng. Bị lệch trái quá nhiều.
+
+    ![Nguyen Tuan Anh](images/nguyentuananh_1.png)
+
+  - Nên dùng thẻ semantic `<header>, <nav>` thay vì dùng thẻ `div`.
+
+  - Phần `icon` lớn hơn so với design.
+
+  - Check HTML Validate W3C: Thẻ `div` không được là con trực tiếp của thẻ `ul`. Có thẻ đóng `</li>` mà Không có thẻ mở `<li>`.
+
+    ![Nguyen Tuan Anh](images/nguyentuananh_5.png)
+
+  - Nên dùng thẻ `a` bọc chữ trong `menu-elements > li` vì đây là link trong mega menu.
+
+  - Ảnh: Ảnh logo cần thêm `height` vì khi là ảnh khác có kích thước bất kì thì vẫn đảm bảo chiều cao ảnh không bị dài quá.
+
+  - Khoảng cách trên dưới của mega-menu chưa giống design. Ở design content sẽ sát đều về 2 phía trên dưới.
+
+  - Thêm css `text-transform:uppercase` cho những chữ kiểu in hoa và `text-transform:capitalize` cho những kiểu chữ viết hoa chữ cái đầu.
+
+  - File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.
+
+  - Xóa ảnh không dùng trong thư mục `img`.
+
+  - Chưa format code.
+
+- [x] [Bài 2](https://fanbaday.github.io/f8-fullstack-offline-K3/day8/ex2/)
+
+  Bài làm tốt
+
+  - Chưa có màu background cho body.
+
+  - Ảnh: Nên set thêm `height / max-height`. Vì nếu là ảnh khác có chiều dài dài hơn thì cả `content` sẽ bị dài ra theo.
+
+  - Dấu `+`, `-`, ở phần `quantity` và icon dấu `x` ở mỗi sản phẩm có thể click được, nên dùng thẻ `button`.
+
+  - Phần `cart-product` font-size đang lớn hơn so với design.
+
+  - Phần `product-value` font-weight cần đậm hơn.
+
+  - `button` chưa đúng font-family.
+
+  - File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.
+
+  - Xóa ảnh không dùng trong thư mục `img`.
+
+  - Check xóa code thừa, comment thừa.
+
+  - Chưa Format code.
+
+- [x] [Bài 3](https://fanbaday.github.io/f8-fullstack-offline-K3/day8/ex3/)
+
+  Bài làm chưa tốt
+
+  - Nên dùng thẻ semantic `<section>` thay cho `div.services-section`
+
+  - Layout chưa đúng. Khi màn hình nhỏ:
+
+    ![Nguyen Tuan Anh](images/nguyentuananh_2.png)
+
+    Khi màn hình lớn:
+
+    ![Nguyen Tuan Anh](images/nguyentuananh_3.png)
+
+  - Cả bài dùng Font-family chưa đúng.
+
+  - Chưa xử lý với `service` có chữ dòng chữ hơn.
+
+    ![Nguyen Tuan Anh](images/nguyentuananh_4.png)
+
+  - Cần set thêm css `height / max-height` cho ảnh, để tránh trường hợp là ảnh khác có kích thước bất kì thì các ảnh vẫn có chiều cao đều nhau.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn. Cần check code, format code lần cuối trước khi gửi bài để bài được chỉnh chu hơn.
+
+---
+
 ## [Nguyen Le Quyen (FPL HN)](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day8/Baitap)
 
     Sớm nhất*
