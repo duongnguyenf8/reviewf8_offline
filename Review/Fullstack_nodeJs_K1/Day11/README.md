@@ -451,9 +451,6 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson375.png)**
 
-
-
-
 ## [Hoài Nam Đỗ](https://oaihman25.github.io/btvn/day11/ex01.html)
 
 - [x] [Bài 1](https://oaihman25.github.io/btvn/day11/ex01.html)
@@ -462,11 +459,11 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Chưa hoàn thiện responsive cho những breakpoint sau:
 
-    - `width:1399px`: chưa css lại các khoảng cách.
+  - `width:1399px`: chưa css lại các khoảng cách.
 
-    - `width:1199px`: mới chỉ có responsive phần footer. Chưa css lại các khoảng cách. Giao diện bị lệch sang phải do ảnh ở các section set width cứng, khi màn nhỏ nó không co lại theo.
+  - `width:1199px`: mới chỉ có responsive phần footer. Chưa css lại các khoảng cách. Giao diện bị lệch sang phải do ảnh ở các section set width cứng, khi màn nhỏ nó không co lại theo.
 
-    - `width:991px, 757px, 575px, 420px, 375px`: Chưa hoàn thiện ( xác định sai một breakpoint, bài mẫu là `575px`, bạn đang làm là `576px`.)
+  - `width:991px, 757px, 575px, 420px, 375px`: Chưa hoàn thiện ( xác định sai một breakpoint, bài mẫu là `575px`, bạn đang làm là `576px`.)
 
 - [x] [Màn min-width: 1400px]
 
@@ -486,9 +483,9 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Phần Header: chưa hoàn thiện.
 
-    - Các item chưa căn giữa theo chiều ngang (set thêm align-items:center). Phần search thiếu icon kính lúp. Thiếu phần giỏ hàng.
+  - Các item chưa căn giữa theo chiều ngang (set thêm align-items:center). Phần search thiếu icon kính lúp. Thiếu phần giỏ hàng.
 
-    - Các nav item: Chưa active `Home`, Chưa xử lý hover đổi màu chữ. Kích thước của nav item đang bị nhỏ nên sẽ hơi khó để cho người dùng chọn được đúng vào.
+  - Các nav item: Chưa active `Home`, Chưa xử lý hover đổi màu chữ. Kích thước của nav item đang bị nhỏ nên sẽ hơi khó để cho người dùng chọn được đúng vào.
 
   Phần secttion: 2 cột trái phải trong section chưa được căn giữa nhau theo chiều ngang.
 
@@ -496,13 +493,13 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Phần section tải app: 2 button link nên dùng `a` bọc ngoài, vì đây là link.
 
-  Phần Footer: 
-    
-    - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng: Copyright.
+  Phần Footer:
 
-    - Các cột đang căn giữa (do set align-items:center) theo chiều ngang, khác với bản mẫu là căn top.
+  - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng: Copyright.
 
-    - Các link ở `footer` chưa xử lý khi hover ở PC sẽ đổi màu chữ.
+  - Các cột đang căn giữa (do set align-items:center) theo chiều ngang, khác với bản mẫu là căn top.
+
+  - Các link ở `footer` chưa xử lý khi hover ở PC sẽ đổi màu chữ.
 
 ---
 
@@ -532,11 +529,11 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Phần `header-end`:
 
-    - Button `btn-order` hover vào bị giật, do khi hover có thêm border. Nên dùng `outline` để thêm đường viền vì outline không thay đổi kích thước, vị trí của phần tử nên sẽ không bị giật.
+  - Button `btn-order` hover vào bị giật, do khi hover có thêm border. Nên dùng `outline` để thêm đường viền vì outline không thay đổi kích thước, vị trí của phần tử nên sẽ không bị giật.
 
   Phần section `service`:
 
-    - Khoảng cách: khoảng cách từ phía trên của section với phần nội dung (tổng 160px) đang lớn hơn bài mẫu (100px). Khoảng cách giữa `h2` và `service-detail` chưa đúng.
+  - Khoảng cách: khoảng cách từ phía trên của section với phần nội dung (tổng 160px) đang lớn hơn bài mẫu (100px). Khoảng cách giữa `h2` và `service-detail` chưa đúng.
 
   Phần section `choose` , `home`: Khoảng cách giữa `h2` và chữ ở thẻ `p` chưa giống bài mẫu.
 
@@ -544,18 +541,18 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 - [x] [Màn max-width: 1500px]: Làm bài tốt. Chỉ có những lưu ý & lỗi chung ở trên. Và thêm lỗi này:
 
-   - Phần `left-content-top-text`: kích thước cả phần này đang to hơn bài mẫu, do font-size lớn. Phần `h1 > span` có font-weight chưa đúng, cần đậm hơn.
+  - Phần `left-content-top-text`: kích thước cả phần này đang to hơn bài mẫu, do font-size lớn. Phần `h1 > span` có font-weight chưa đúng, cần đậm hơn.
 
-- [x] [Màn max-width: 1399px]: 
+- [x] [Màn max-width: 1399px]:
 
   - Phần `left-content-top-text` lỗi như ở màn max-width: 1500px.
 
-  Phần chữ chưa đúng: 
+  Phần chữ chưa đúng:
 
   ![Minh Quang - man hinh 1399px](images/minhquang_2.png)
 
   Phần `left-content-bottom-btn`: 2 button này đang bị đè lên nhau. Cần chỉnh lại phần flexbox này.
-  
+
   ![Minh Quang - man hinh 1399px](images/minhquang_1.png)
 
   Phần section `choose`: Nội dung chữ bên cột phải chưa đúng
@@ -578,7 +575,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Nên set @media cho toàn bài theo 1 chiều (hoặc `min-width`, hoặc `max-width`). HTML cần chú ý đặt tên class chung cho những phần có style giống nhau. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình. 
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Nên set @media cho toàn bài theo 1 chiều (hoặc `min-width`, hoặc `max-width`). HTML cần chú ý đặt tên class chung cho những phần có style giống nhau. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình.
 
 # Tuyết đánh giá bài học viên
 
@@ -884,3 +881,101 @@ Phần hiển thị các phần tử đang to hơn bản mẫu.
 Các lỗi sai giống như ở màn hình max-width: 1399px.
 
 **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1199.png)**
+
+## [Mai Việt Hoàng](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap/Bai_tap_buoi_11/Bt1/Exercise11.html)
+
+- [x] [Bài 1](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap/Bai_tap_buoi_11/Bt1/Exercise11.html)
+
+  Bài làm rất tốt \*
+
+  CÁC ĐIỂM TRONG TOÀN BÀI CẦN CHÚ Ý ĐỂ BÀI HOÀN THIỆN HƠN:
+
+  - Nên dùng thẻ HTML semantic `<nav>` cho phần `list-items` và dùng thẻ `<section>` cho phần `hero` thay vì dùng `div`.
+
+  - Phần `search` icon hình kính lúp chưa đúng vị trí. Cần được set nằm trong ô input.
+
+  - Phần chữ ở thẻ `h1` font-weight đậm hơn bài mẫu.
+
+  - Ở section `service`: width của `service__row` lớn hơn bài mẫu.
+
+  - Phần `footer__logo--desc` có width lớn hơn bải mẫu. Phần `footer__copyright` font-weight đậm hơn bài mẫu. Phần `footer__condition`: chưa xử lý hover đổi màu chữ.
+
+  - `Chữ`: Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - Các button `btn` nên set thêm padding.
+
+  - Ở phần `head` file HTML, nên để phần nhúng link các thư viện lên trên phần link css của bài. Để có thể ghi đè css của thư viện nếu cần.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+  - [x] [Màn max-width: 1500px]: Chưa làm responsive.
+
+  - [x] [Màn max-width: 1399px] Làm bài rất tốt. Chỉ có những lưu ý chung ở trên.
+
+  - [x] [Màn max-width: 1199x]: Làm bài tốt. Có những lưu ý chung ở trên và `font-size, line-height` nhiều phần chữ đang bị lơn hơn bài mẫu, từ màn này về những màn nhỏ đều có lỗi này.
+
+  - [x] [Màn max-width: 991px]: Làm bài tốt. Có những lưu ý chung ở trên và:
+
+    - Cần thêm `z-index` cho `.header-content` để nó nằm hẳn ở dưới `hero`.
+
+    - 2 button ở 2 section `feature-up`, `feature-down` vị trí căn giữa là chưa đúng. Bài mẫu là căn trái.
+
+    - Còn bug: khi mở menu, để nguyên --> rồi chuyển về màn hình lơn hơn thì khoảng margin-top của `hero` vẫn còn.
+
+      ![Mai Việt Hoàng man hinh 991px](images/maiviethoang_1.png)
+
+  - [x] [Màn max-width: 767px]: Làm bài rất tốt. Chỉ có những lưu ý chung ở trên.
+
+  - [x] [Màn max-width: 575px], [Màn max-width: 420px], [Màn max-width: 375px]: Bài làm tốt. Có những lưu ý chung ở trên và:
+
+    - Phần `hero`, 2 button link `order` chưa căn trái là chưa đúng vị trí. Ở bài mẫu là căn giữa.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chú ý hơn các tiểu tiết của từng thành phần ở các kích thước màn hình để bài hoàn thiện hơn.
+
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/Buoi_11)
+
+- [x] [Bài 1](https://quocanh-bit.github.io/F8_fullstack_006/Buoi_11/bai1.html)
+
+  Bài làm chưa tốt
+
+  Chưa có responsive cho các breakpoint: max-width: 1500px, 1399px, 575px, 420px, 375px.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:
+
+  - Nên dùng thẻ HTML semantic `<nav>` cho phần `list-menu`, và thẻ `<section>` cho phần `header-grover-wrap`.
+
+  - Phần header: Chưa active cho nav item `Home`. Phần search, icon kính lúp và chữ chưa ngang hàng. Icon giỏ hàng hơi nhỏ và nên thêm css `cursor:pointer` cho màn desktop vì icon này có thể click được.
+
+  - Kích thước `container` ở các màn đang chưa giống như bài mẫu, khoảng cách các phần lề trái phải của section, nên kích thước cột ở trong chưa đúng.
+
+  - Font-size chữ của `h1` đang lớn hơn bài mẫu. Button link `"Order Now"` font-size đang bị nhỏ và kích thước chưa đúng, nên set padding thay vì set `width:100%`.
+
+  - Section `service`: Phần `_service_grover_grocery_content_wrap` có width lớn hơn bài mẫu. Và chưa xử lý hover vào các item thì hiện background phía sau.
+
+  - Footer: màu chữ của thẻ `h4` chưa đúng.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+- [x] [Màn min-width: 1200px]: Bài làm tốt.
+
+  - Section `service`: Phần `content-item-title h3` chưa đúng font-size.
+
+  - Phần `feature-2-content`: Chưa căn giữa theo chiều ngang nội dung ở 2 cột trái và cột phải.
+
+  - Phần `cta-btn`: bài mẫu không có khoảng cách bên trái, và khoảng cách giữa 2 button link download app chưa đúng.
+
+  - Phần `footer`: khoảng cách trái phải chưa đúng. Chưa xử lý hover đổi màu chữ cho các link. Phần `".footer-content-logo > p"` và `".list-content > p"` text-align căn giữa là k đúng, ở bài mẫu là căn trái.
+
+- [x] [Màn min-width: 768px]: Bài làm tốt. Các lỗi chung ở trên và thêm:
+
+  - Chưa có hiệu ứng khi mở / đóng menu.
+
+  - Section `service`: các `service-content-item` đang có height không bằng nhau.
+
+  - Phần `cta-btn` chưa căn trái.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt nhưng chưa responsive đầy đủ. Cần quan sát kỹ bài mẫu để biết được các breakpoint, và chú ý những tiểu tiết để responsive đầy đủ cho từng thành phần theo các kích thước màn hình.

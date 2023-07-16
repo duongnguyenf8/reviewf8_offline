@@ -42,8 +42,8 @@
 
   Thiếu box-shadow tại 2 button.
 
-  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-1500.png)**
-  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-1500.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-1500.png)**
 
 ---
 
@@ -57,8 +57,8 @@
 
   ![Tuan Anh](images/tuananh1365.png)
 
-  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-1365.png)**
-  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-1365.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-1365.png)**
 
 ---
 
@@ -70,8 +70,8 @@
 
   Cực kỳ chuẩn giao diện
 
-  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-960.png)**
-  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-960.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-960.png)**
 
 ---
 
@@ -83,8 +83,8 @@
 
   Cực kỳ chuẩn giao diện, tuy có hơi lệch một vài px.
 
-  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-480.png)**
-  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-480.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-480.png)**
 
 ---
 
@@ -152,9 +152,82 @@
   Hơi lệch một chút so với bản mẫu.
 
   Các lỗi trước tương tự như màn hình 960px.
+
   **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-480.png)**
   **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-480.png)**
 
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về size các ảnh và các phần tử, chú ý kiểm tra lại các hiệu ứng.
+
+---
+
+## [Mai Việt Hoàng](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap/Bai_tap_buoi_12/Exercise12.html)
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm rất tốt \*
+
+  Sai icon ở `.landing .landing-content__info .logo .logo-img`.
+
+  Có thể rút gọn 2 input radio bằng một input checkbox.
+
+  Chưa làm phần selection.
+
+  Đổi màu sai khi hover vào `.landing .landing-form .form .form__row a`
+
+  Thời gian hiệu ứng quá nhanh tại các label của `.tab-switch`
+
+  Font chữ quá mảnh tại `.landing .landing-content__info .desc`
+
+  Sai hiệu ứng khi hover vào nút.
+
+  Phần `.sub-heading` thực tế không phải là một heading riêng, nó không mang một ý nghĩa nào khi đứng một mình.
+
+  - Nó cần đi cùng với `.heading` vì vậy nên gộp cả 2 lại.
+
+  - Phần `.form__heading` mới là một `h2`
+
+  Thiếu đổ bóng ở các button.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-1500.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px
+
+  Bài làm tốt
+
+  Lệch nhiều so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 1500px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-1365.png)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px
+
+  Bài làm tốt
+
+  Lệch nhiều so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 1365px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-960.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px
+
+  Bài làm tốt
+
+  Hơi lệch một chút so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 960px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-480.png)**
