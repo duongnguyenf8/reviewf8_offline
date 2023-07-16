@@ -4,9 +4,9 @@
 
 [x] [Bài 1]: Bài làm rất tốt \*
 
-Nên Cần giữa phần **icon** và phần **nội dung**.
+Nên căn giữa phần **icon** và phần **nội dung**.
 
-Đề Xuất.
+Đề xuất.
 
 ```css
 .project-nav__item {
@@ -34,7 +34,7 @@ Thẻ p: tăng line-height `line-height: 1.7rem`.
 
 [x] [Bài 1]: Bài làm tốt
 
-Nên tăng Khoảng Cách giữa các **icon** và phần **Nội dung**.
+Nên tăng khoảng cách giữa các **icon** và phần **Nội dung**.
 
 ![Alt text](images/ThaiDuyTien_b1.png)
 
@@ -56,7 +56,7 @@ Khi **hover** vào thẻ các `class=menu` thì **mega-menu** mới hiện thị
 }
 ```
 
-Phần `.body_item` nên thiết kế thanh cuộn lên xuống khi có nhiều sp để tăng tính trải nghiệm người dùng.
+Phần `.body_item` nên thiết kế thanh cuộn lên xuống khi có nhiều sản phẩm để tăng tính trải nghiệm người dùng.
 
 Bị Vỡ Giao Diện.
 
@@ -80,7 +80,7 @@ Nên Bọc thẻ `<div class = "container">` trong thẻ `<section>` để chia 
 
 Khi nên để thẻ `<button` có thuộc tính là `position: absolute;`.
 
-Lỗi.
+Các button đang bị chèn lên text, cần kiểm tra và sửa lại cho bài làm chỉnh chu hơn.
 
 ![Alt text](images/ThaiDuyTien_bai3.png).
 
@@ -114,7 +114,7 @@ button {
 
 Thiếu **đường** ngăn cách các sản phẩm.
 
-Đề Xuất.
+Đề xuất.
 
 ```css
 .cart-center .product + .cart-center .product {
