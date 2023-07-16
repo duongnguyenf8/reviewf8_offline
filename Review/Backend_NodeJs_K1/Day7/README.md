@@ -70,6 +70,20 @@ Kết quả
 
   Hiện tại, chưa kiểm tra nếu trong `same` đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào `same` nữa. Cần sửa lại, nếu để như hiện tại thì trong `same` sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.
 
+  ```js
+  var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+  var arr2 = [6, 4, 20, 11];
+  //Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+  ```
+
+  Đề xuất:
+
+  ```js
+  if (arr2.includes(current) && !prev.includes(current)) {
+    prev.push(current);
+  }
+  ```
+
 ---
 
 - [x] Bài 2:
@@ -322,17 +336,51 @@ Kết quả
 
 - [x] Bài 1:
 
+  Bài làm tốt \*
+
+  Cần kiểm tra tất cả các trường hợp có thể xảy ra khi làm việc với mảng:
+
+  - Kiểm tra đầu vào có phải là một mảng hay không? Nếu không phải là mảng cần thông báo cho hợp lý trong trường hợp này.
+
+  - Kiểm tra trong 2 mảng đầu vào có mảng nào trống hay không? Tương tự nếu có mảng trống sẽ thông báo như nào cho hợp lý.
+
+  - Nên tính đến trường hợp 2 mảng không có phần tử nào giống nhau thì thông báo cho người dùng biết sẽ hợp lý hơn.
+
+  Hiện tại, chưa kiểm tra nếu trong `same` đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào `same` nữa. Cần sửa lại, nếu để như hiện tại thì trong `same` sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.
+
+  ```js
+  var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+  var arr2 = [6, 4, 20, 11];
+  //Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+  ```
+
+  Đề xuất:
+
+  ```js
+  if (arr2.includes(current) && !prev.includes(current)) {
+    prev.push(current);
+  }
+  ```
+
 ---
 
 - [x] Bài 2:
+
+  Bài làm tốt \*
+
+  Cần kiểm tra điều kiện đầu vào như nhận xét ở bài 1.
 
 ---
 
 - [x] Bài 3:
 
+  Bài làm tốt \*
+
+  Cần kiểm tra điều kiện đầu vào như nhận xét ở bài 1.
+
 ---
 
-- [x] Đánh giá chung bài tập về nhà:
+- [x] Đánh giá chung bài tập về nhà: Bài làm khá tốt, tuy nhiên cần lưu ý một số điều kiện cần kiểm tra khi làm việc với mảng để hoàn thiện bài làm hơn.
 
 ---
 
@@ -340,17 +388,51 @@ Kết quả
 
 - [x] Bài 1:
 
+  Bài làm tốt \*
+
+  Cần kiểm tra tất cả các trường hợp có thể xảy ra khi làm việc với mảng:
+
+  - Kiểm tra đầu vào có phải là một mảng hay không? Nếu không phải là mảng cần thông báo cho hợp lý trong trường hợp này.
+
+  - Kiểm tra trong 2 mảng đầu vào có mảng nào trống hay không? Tương tự nếu có mảng trống sẽ thông báo như nào cho hợp lý.
+
+  - Nên tính đến trường hợp 2 mảng không có phần tử nào giống nhau thì thông báo cho người dùng biết sẽ hợp lý hơn.
+
+  Hiện tại, chưa kiểm tra nếu trong `same` đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào `same` nữa. Cần sửa lại, nếu để như hiện tại thì trong `same` sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.
+
+  ```js
+  var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+  var arr2 = [6, 4, 20, 11];
+  //Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+  ```
+
+  Đề xuất:
+
+  ```js
+  if (arr2.includes(current) && !prev.includes(current)) {
+    prev.push(current);
+  }
+  ```
+
 ---
 
 - [x] Bài 2:
+
+  Bài làm rất tốt. \*
 
 ---
 
 - [x] Bài 3:
 
+  Bài làm chưa tốt.
+
+  Bài làm có sử dụng hàm `arrReduct` nhưng chưa khai báo ở trong bài 3 nên khi chạy sẽ nhận được lỗi là `arrReduct is not defined`.
+
+  Nếu áp dụng hàm `arrReduct` ở bài 2 thì có kết quả trả về nhưng hiện tại kết quả chỉ lọc được các kiểu dữ liệu `number`, `string`, `boolean` để cho vào 3 mảng riêng nhưng nếu khác 3 kiểu dữ liệu trên thì chưa xử lý trường hợp này.
+
 ---
 
-- [x] Đánh giá chung bài tập về nhà:
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần lưu ý một số trường hợp đặc biệt để hoàn thiện hơn.
 
 ---
 
