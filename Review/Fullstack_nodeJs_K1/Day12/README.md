@@ -400,3 +400,109 @@
   Bài làm không tốt tốt
 
   Tất cả màn hình đều sai hoàn toàn về giao diện. Do sai background.
+
+## [Minh Quang](https://github.com/taminhquang13/F8_Fullstack/tree/main/BT12)
+
+Bài làm tốt
+
+NHỮNG LƯU Ý, LỖI CHUNG TOÀN BÀI:
+
+- Với màn desktop: Phần nội dung đang căn chỉnh top không căn linh hoạt luôn ở giữa màn hình theo chiều dọc.
+
+- Các `button` và thẻ `a` sai font-family. Với những màn desktop, button đang active ở `switch-btn` chưa chỉnh về `cursor:auto`.
+
+- Phần các input:
+
+  - Ô `input` đầu tiên của form chưa auto focus ngay từ đầu.
+
+  - Khi input:focus,input:valid thì `label` chưa có khoảng cách 2 bên với border của input.
+
+  - Các ô input trừ kiểu checkbox, đang đều có name giống nhau là `name="text"`. Có thể viết thuộc tính `required` thay vì `required=""`
+
+  - Ô input email ở register form đang có `type=text` là chưa phù hợp. Nên để `type=email`
+
+- Với những màn Desktop, phần Checkbox `Remember Me` chưa được active ngay từ đầu, và chưa có `cursor:pointer`.
+
+- Với những màn Desktop: Button submit chưa xử lý hover đổi màu background.
+
+- Chữ `line-txt` chưa đúng mã màu.
+
+- Phần `social-link > i` (16px) đang lớn hơn bài mẫu (12px). Với những màn Desktop, chưa xử lý hover cho từng icon link.
+
+- Ở phần `head` của file HTML, nên để phần link file css của bài xuống dưới phần nhúng link css của thư viện. Để có thể ghi đè css của thư viện nếu cần.
+
+  ![Minh Quang - man hinh 1364px](images/minhquang_4.png)
+
+CHÚ Ý VÀ LỖI Ở NHỮNG PHẦN RIÊNG:
+
+- [x] Bài 1: Màn hình: [max-width: 1500px]:
+
+  Bài làm chưa tốt.
+
+  Vì chưa căn chỉnh nội dung luôn linh hoạt ở giữa màn hình nên nội dung toàn trang dài quá 100vh, nhưng không có thanh cuộn dọc nên bị khuất mất phần nội dung dài quá 100vh đó.
+
+  Vị trí form register chưa đúng, đang bị lệch hẳn xuống dưới.
+
+---
+
+- [x] Bài 2: Các màn hình: [max-width: 1364px], [max-width: 600px], [ max-width: 480px]:
+
+  Bài làm chưa tốt.
+
+  Từ [max-width: 724px] trở xuống đang bị lỗi không width full màn hình, do phần form register ẩn nhưng vẫn đang chiếm kích thước thực trên trang.
+
+  ![Minh Quang - man hinh 1364px](images/minhquang_3.png)
+
+  Ngoài những lỗi trên thì, giao diện Login tương đối trùng khớp với bài mẫu, chỉ lệch một chút ở một số chỗ:
+
+  ![Minh Quang - man hinh 1364px](images/minhquang_2.png)
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm các tiểu tiết style, check vị trí các phần tử khi ở các màn hình kích thước khác nhau để bài làm tốt hơn.
+
+---
+
+## [Tuấn Phạm](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi12)
+
+Bài làm rất tốt \*
+
+NHỮNG LƯU Ý, LỖI CHUNG TOÀN BÀI:
+
+Phần khoảng cách giữa `landing__desc` và `landing__tab-switch` đang nhỏ hơn bài mẫu.
+
+- Phần `landing__tab-switch`: kiểu chữ uppercase là không giống bài mẫu, ở bài mẫu là kiểu viết lowercase. Với những màn desktop, button đang active khi hover vào vẫn hiện hình bàn tay, ở chưa chỉnh về `cursor:auto`.
+
+- Form: Ô input đầu tiên của form register chưa autofocus ngay từ đầu. ô input email ở register form đang có `type=text` là chưa phù hợp, nên để `type=email`. Chữ label của checkbox chưa đúng mã màu.
+
+- Màu chữ của link `forgot password` chưa đúng.
+
+CHÚ Ý VÀ LỖI Ở NHỮNG PHẦN RIÊNG:
+
+- [x] Bài 1: Màn hình: max-width: 1500px.
+
+  Bài làm rất tốt \*
+
+  Chỉ có một chút về xác định breakpoint, bạn đang làm là 1499px, chưa đúng như bài mẫu là 1500px.
+
+- [x] Bài 2: Màn hình: max-width: 1364px
+
+  Bài làm rất tốt \*
+
+  Giao diện và mọi thứ đều đã rất tốt, chỉ có một chút về việc bạn đang xác định breakpoint chưa đúng theo bài mẫu: Bạn đang làm là 1367px, chưa đúng như bài mẫu là 1364px.
+
+- [x] Bài 3: Màn hình: max-width: 600px:
+
+  Bài làm rất tốt
+
+  Chỉ chưa xử lý: Ở màn hình này width của form được set lại giá trị khác (full width theo `container`), padding của form cũng đang nhỏ hơn bài mẫu.
+
+- [x] Bài 4: Màn hình: max-width: 500px:
+
+  Bài làm rất tốt
+
+  Chỉ chưa xử lý: Ở màn hình này width của `landing__tab-switch` được set lại giá trị khác (full width theo `container`). Padding của form cũng đang nhỏ hơn bài mẫu.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm xác định breakpoint theo bài mẫu, để ý style các phần tử theo các kích thước màn hình để bài sẽ hoàn thiện hơn.
