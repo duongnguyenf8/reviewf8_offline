@@ -1,5 +1,7 @@
 ## [Nguyễn Đức Dũng](https://github.com/dungng1321/f8-BackEnd-NodeJS-k1/tree/feature/day-7)
 
+**Sớm nhất**
+
 - [x] Bài 1:
 
   Bài làm tốt \*

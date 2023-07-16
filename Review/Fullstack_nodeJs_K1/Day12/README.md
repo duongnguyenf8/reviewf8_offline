@@ -6,752 +6,306 @@
 
   - max-width: 1500px
 
-  - max-width: 1399px
+  - max-width: 1365px
 
-  - max-width: 1199px
+  - max-width: 960px
 
-  - max-width: 991px
-
-  - max-width: 767px
-
-  - max-width: 575px
-
-  - max-width: 420px
-
-  - max-width: 375px
+  - max-width: 480px
 
 - Đường dẫn:
 
   - Root: `https://reviewf8.vercel.app/Review`
 
-  - HTML: `/Fullstack_nodeJs_K1/Day11/index.html`
+  - HTML: `/Fullstack_nodeJs_K1/Day12/index.html`
 
-  - Hình ảnh: `/Fullstack_nodeJs_K1/Day11/images`
+  - Hình ảnh: `/images/Fullstack_nodeJs_K1/Day12/images`
 
-## [Dương Hiệp](https://github.com/duonghiep416/duonghiep_f8_fullstack.git)
+## [Nguyen Xuan Tuan Anh](https://github.com/xuananh2212/full_stack_01/tree/main/day_12)
 
-- Sớm nhất \*
+    Sớm nhất *
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
-Bài làm rất tốt \*
+  Bài làm rất tốt \*
 
-Chiều rộng phần hiển thị các phần tử đang bé hơn bản mẫu.
+  Chưa đổi màu của selection.
 
-Phần bóng của `.hero-order img` quá đậm so với bản mẫu.
+  Sai logo tại `.landing-content .logo-icon`
 
-Chiều rộng các `.service-item` lớn hơn bản mẫu một chút.
+  Hiệu ứng transition hơi nhanh so với mẫu.
 
-Chưa xử lý action hover cho `.service-item`.
+  Màu button ở register khác với bản mẫu.
 
-Màu chữ ở `section-title` sai so với bản mẫu.
+  Hiệu ứng transition tại `.form-group input` sai so với bản mẫu.
 
-Hình ảnh ở `.delivery .hero-img, .favorite .hero-img, .download .hero-img` lớn hơn so với bản mẫu.
+  Chưa đổi màu khi hover vào `.forgot__link`
 
-Phần `.footer .section-desc` sai hoàn toàn so với bản mẫu.
+  Thiếu box-shadow tại 2 button.
 
-**[Xem ảnh](images/duonghiep1500.png)**
-
----
-
-- [x] Bài 2: Màn hình: max-width: 1399px
-
-Bài làm chưa tốt
-
-Chưa xử lý action hover cho `.service-item`.
-
-Chưa có responsive ở màn hình này.
-
-**[Xem ảnh](images/duonghiep1399.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-1500.png)**
 
 ---
 
-- [x] Bài 3: Màn hình: max-width: 1199px
+- [x] Bài 2: Màn hình: max-width: 1365px
 
-Bài làm chưa tốt
+  Bài làm chưa tốt
 
-Chưa xử lý action hover cho `.service-item`.
+  Các lỗi trước tương tự như màn hình 1500px.
 
-Chưa có responsive ở màn hình này.
+  Phần `.container` chưa căn giữa. Vì `.container` sử dụng `margin: 0 25px`
 
-**[Xem ảnh](images/duonghiep1199.png)**
+  ![Tuan Anh](images/tuananh1365.png)
 
----
-
-- [x] Bài 4: Màn hình: max-width: 991px
-
-Bài làm tốt
-
-Các item trong `.hero-content` ở bản mẫu là căn trái chứ không phải căn giữa.
-
-Các `.service-item` chưa đúng với bản mẫu, ở bản mẫu cả 3 item cùng trên một hàng.
-
-Các item ở `.delivery-content, .favorite-content, .download-links` ở bản mẫu là căn trái chứ không phải căn giữa.
-
-Các item ở `.copyright, .copyright-links` trong bản mẫu là cùng một hàng, không phải là 2 hàng.
-
-**[Xem ảnh](images/duonghiep991.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-1365.png)**
 
 ---
 
-- [x] Bài 5: Màn hình: max-width: 767px
+- [x] Bài 3: Màn hình: max-width: 960px
 
-Bài làm rất tốt \*
+  Bài làm rất tốt \*
 
-Các phần `.hero-title, .section-title` có font-size nhỏ hơn bản mẫu.
+  Các lỗi trước tương tự như màn hình 1365px.
 
-Các phần `.download-btn, .order-link` có kích thước nhỏ hơn bản mẫu.
+  Cực kỳ chuẩn giao diện
 
-**[Xem ảnh](images/duonghiep767.png)**
-
----
-
-- [x] Bài 6: Màn hình: max-width: 575px
-
-Bài làm rất tốt \*
-
-Các lỗi sai giống ở màn hình max-width: 767px.
-
-**[Xem ảnh](images/duonghiep575.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-960.png)**
 
 ---
 
-- [x] Bài 7: Màn hình: max-width: 420px
+- [x] Bài 4: Màn hình: max-width: 480px
 
-Bài làm rất tốt \*
+  Bài làm rất tốt \*
 
-**[Xem ảnh](images/duonghiep420.png)**
+  Các lỗi trước tương tự như màn hình 960px.
 
----
+  Cực kỳ chuẩn giao diện, tuy có hơi lệch một vài px.
 
-- [x] Bài 8: Màn hình: max-width: 375px
-
-Bài làm rất tốt \*
-
-**[Xem ảnh](images/duonghiep375.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/tuananh2212-register-480.png)**
 
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm một số màn hình ở mức giữa, chú ý thêm về size các ảnh và các phần tử.
 
-## [Nguyen Xuan Tuan Anh](https://github.com/xuananh2212/full_stack_01/tree/main/day_11)
+---
+
+## [Dương Hiệp](https://duonghiep416.github.io/duonghiep_f8_fullstack/Day12/)
 
 - [x] Bài 1: Màn hình: max-width: 1500px
-
-Bài làm tốt \*
-
-Chú ý chữ hoa, chữ thường
-
-Phần `.heading.lv2.cta--lv2.feature-cta--lv2` chưa có max-width.
-
-Hình ảnh ở `.cta__img` to hơn bản mẫu.
-
-Phần `.service__items__inner` có chiều rộng lớn hơn bản mẫu.
-
-Sai chính tả **hourse** -> **hours**.
-
-**[Xem ảnh](images/xuananh1500.png)**
-
----
-
-- [x] Bài 2: Màn hình: max-width: 1399px
-
-Bài làm tốt \*
-
-Một số lỗi sai giống như ở màn hình max-width: 1500px.
-
-**[Xem ảnh](images/xuananh1399.png)**
-
----
-
-- [x] Bài 3: Màn hình: max-width: 1199px
-
-Bài làm rất tốt \*
-
-Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
-
-**[Xem ảnh](images/xuananh1199.png)**
-
----
-
-- [x] Bài 4: Màn hình: max-width: 991px
-
-Bài làm rất tốt \*
-
-Animation hiển thị menu chưa giống bản mẫu.
-
-Một số chiều rộng của các phần tử chưa giống bản mẫu.
-
-**[Xem ảnh](images/xuananh991.png)**
-
----
-
-- [x] Bài 5: Màn hình: max-width: 767px
-
-Bài làm tốt \*
-
-Một số lỗi sai vẫn giống như ở màn hình max-width: 991px.
-
-**[Xem ảnh](images/xuananh767.png)**
-
----
-
-- [x] Bài 6: Màn hình: max-width: 575px
-
-Bài làm rất tốt \*
-
-**[Xem ảnh](images/xuananh575.png)**
-
----
-
-- [x] Bài 7: Màn hình: max-width: 420px
-
-Bài làm tốt \*
-
-Phần `.heading.lv2.service--lv2` chưa thu nhỏ font-size.
-
-Các `.service__items__inner` chưa thu nhỏ chiều cao.
-
-**[Xem ảnh](images/xuananh420.png)**
-
----
-
-- [x] Bài 8: Màn hình: max-width: 375px
-
-Bài làm tốt \*
-
-Các lỗi sai tương tự như ở màn hình max-width: 420px.
-
-**[Xem ảnh](images/xuananh375.png)**
-
----
-
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm một số màn hình ở mức giữa, chú ý thêm về size các ảnh và các phần tử.
-
----
-
-## [Bi11-043 Đỗ Hà Chi](https://serenaha12.github.io/grover)
-
-- [x] Bài 1: Màn hình: max-width: 1500px
-
-Bài làm tốt \*
-
-Chưa có action hover cho `.item-content`.
-
-Thiếu đổ bóng cho `.header .banner .btn img`
-
-Để ý thêm một chút về kích thước max-width của một số phần tử text.
-
-**[Xem ảnh](images/serenaha12-1500.png)**
-
----
-
-- [x] Bài 2: Màn hình: max-width: 1399px
-
-Chưa có responsive ở màn hình này.
-
-**[Xem ảnh](images/serenaha12-1399.png)**
-
----
-
-- [x] Bài 3: Màn hình: max-width: 1199px
-
-Chưa có responsive ở màn hình này.
-
-**[Xem ảnh](images/serenaha12-1199.png)**
-
----
-
-- [x] Bài 4: Màn hình: max-width: 991px
-
-Chưa có responsive ở màn hình này.
-
-**[Xem ảnh](images/serenaha12-991.png)**
-
----
-
-- [x] Bài 5: Màn hình: max-width: 767px
-
-Bài làm chưa tốt
-
-Trong file `responsive.css`, dòng 133-135, responsive từ màn hình 853px:
-
-```css
-.nav-logo img {
-  margin-right: 240%;
-}
-```
-
-Điều này làm cho phần icon đẩy ra ngoài rất nhiều, gây nên lỗi responsive, hiện scroll bar ngang một cách rõ rệt.
-
-Các item trong bản mẫu là căn giữa chứ không phải căn trái.
-
-Phần `.download .content` để width là 100% nhưng chưa xóa `margin-left 100px` nên bị đẩy ra ngoài.
-
-**[Xem ảnh](images/serenaha12-767.png)**
-
----
-
-- [x] Bài 6: Màn hình: max-width: 575px
-
-Bài làm chưa tốt
-
-Các lỗi sai giống như ở màn hình max-width: 767px.
-
-**[Xem ảnh](images/serenaha12-575.png)**
-
----
-
-- [x] Bài 7: Màn hình: max-width: 420px
-
-Các lỗi sai giống như ở màn hình max-width: 575px.
-
-**[Xem ảnh](images/serenaha12-420.png)**
-
----
-
-- [x] Bài 8: Màn hình: max-width: 375px
-
-Các lỗi sai giống như ở màn hình max-width: 575px.
-
-**[Xem ảnh](images/serenaha12-375.png)**
-
----
-
-- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm một số màn hình ở nhỏ, chú ý thêm về size các ảnh và các phần tử.
-
----
-
-## [Sơn Ngô Mạnh](https://ngomanhson.github.io/f8-fullstack-exercises)
-
-- [x] Bài 1: Màn hình: max-width: 1500px
-
-  Bài làm tốt \*
-
-  Không nên để transition-property là all, nên chỉ định rõ transition-property cụ thể. Vì khi load trang, các phần tử sẽ có hiệu ứng chuyển động, không đẹp.
-
-  Cấu trúc header hơi thừa thẻ div. (header > .container > .header-inner) => (header > .header-inner) hoặc viết luôn vào header nếu nghiệp vụ đơn giản.
-
-  Thuộc tính `href` của thẻ a bao bọc vào logo ở header thường dùng để back về trang chủ, không nên để đường dẫn là `./` mà nên để là `/`
-
-  Phần `header-search` hầu hết không sử dụng để điều hướng, nên không nên đặt trong phần `nav.nav`. Nên tách ra thành một phần riêng.
-
-  Phần `.text-img__title` không phải là một tiêu đề, chỉ là một đoạn text thông thường được làm khác đi để nhấn mạnh. Nên dùng thẻ `strong` hoặc `span` thay cho h3.
-
-  Không nên fix cứng width của `.cta-group__btn` vì ở ngoài đã có chiều rộng rồi. Nên để width là 100% hoặc auto.
-
-  Các tiêu đề ở `footer` không phải là một heading, nên không nên dùng thẻ h4. Nên dùng thẻ `b` hoặc `span` thay cho h4.
-
-  Không cần thiết phải tạo animation và keyframe ở đây:
-
-  ```css
-  @keyframes slip {
-    from {
-      transform: translateY(-10%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  ```
-
-  Phần hiển thị nội dung hơi to so với bản mẫu.
-
-  Các hình ảnh đều to hơn bản mẫu.
-
-  **[Xem ảnh](images/ngomanhson1500.png)**
-
----
-
-- [x] Bài 2: Màn hình: max-width: 1399px
-
-  Bài làm tốt
-
-  Các lỗi sai giống như ở màn hình max-width: 1500px.
-
-  Chưa thu nhỏ các font-size, kích cỡ ảnh phù hợp.
-
-  Chưa có responsive ở màn hình này.
-
-  **[Xem ảnh](images/ngomanhson1399.png)**
-
----
-
-- [x] Bài 3: Màn hình: max-width: 1199px
 
   Bài làm rất tốt \*
 
-  Các lỗi sai giống như ở màn hình max-width: 1399px.
+  Thiếu phần hình tròn ở bên phải màn hình.
 
-  **[Xem ảnh](images/ngomanhson1199.png)**
+  Sai icon ở `.page-info .logo i`.
 
----
+  Có thể rút gọn 2 input radio bằng một input checkbox.
 
-- [x] Bài 4: Màn hình: max-width: 991px
+  Chưa làm phần selection.
 
-  Bài làm tốt \*
+  Chưa đổi màu khi hover vào `.forgot-password-link`
 
-  Các lỗi sai giống như ở màn hình max-width: 1199px.
+  Chưa làm action translate khi hover vào các `.page-form .social-link`
 
-  Phần `.feature-content-two` sai vị trí so với bản mẫu.
+  Khi unfocus, chưa đổi lại màu viền các input.
 
-  Hiệu ứng đóng, mở menu chưa giống bản mẫu.
+  Sai hiệu ứng khi hover vào nút.
 
-  **[Xem ảnh](images/ngomanhson991.png)**
-
----
-
-- [x] Bài 5: Màn hình: max-width: 767px
-
-  Bài làm tốt \*
-
-  Các lỗi sai giống như ở màn hình max-width: 991px.
-
-  Các hình ảnh quá to so với bản mẫu.
-
-  **[Xem ảnh](images/ngomanhson767.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-1500.png)**
 
 ---
 
-- [x] Bài 6: Màn hình: max-width: 575px
+- [x] Bài 2: Màn hình: max-width: 1365px
 
-  Bài làm chưa tốt \*
+  Bài làm tốt
 
-  Các lỗi sai giống như ở màn hình max-width: 767px.
+  Lệch nhiều so với bản mẫu.
 
-  Vỡ layout khi mở menu ở header, do phần menu chiếm 228px (input search)
+  Các lỗi trước tương tự như màn hình 1500px.
 
-  - Phần ảnh logo mặc định chiếm thêm 155px (Kích thước mặc định)
-
-  - Thêm kích thước của nút menu toggle.
-
-  - Nên kích thước thực vượt quá 390px, các phần tử sẽ bị đẩy ra ngoài.
-
-  - Nên để kích thước của các phần đã set 390px là 100% để tránh vỡ layout.
-
-  **[Xem ảnh](images/ngomanhson575.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-1365.png)**
 
 ---
 
-- [x] Bài 7: Màn hình: max-width: 420px
+- [x] Bài 3: Màn hình: max-width: 960px
 
-  Bài làm chưa tốt \*
+  Bài làm tốt
 
-  Các lỗi sai giống như ở màn hình max-width: 575px.
+  Lệch nhiều so với bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson420.png)**
+  Các lỗi trước tương tự như màn hình 1365px.
 
----
-
-- [x] Bài 8: Màn hình: max-width: 375px
-
-  Bài làm chưa tốt \*
-
-  Các lỗi sai giống như ở màn hình max-width: 420px.
-
-  **[Xem ảnh](images/ngomanhson375.png)**
-
-# Tuyết đánh giá bài học viên
-
-## [Trung Le](https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11.git)
-
-- [x] [Bài 1](https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11)
-
-  Bài làm **không tốt** \*
-
-  CÁC LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ FIX:
-
-  - Chưa làm responsive: Cần làm thêm, nộp lại đầy đủ.
-
-  - Màu chưa đúng: background section, text, background button link.
-
-  - Font chữ, line-height lớn hơn bản mẫu. Các phần chữ có kiểu chữ đậm chưa giống bản mẫu.
-
-  - Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
-
-  - Nên sử dụng `margin` và `padding` hợp lý. Xác định khoảng cách nào dùng `margin`, khoảng cách nào dùng `padding`.
-
-  - Chưa thêm nội dung `alt` cho nhiều ảnh.
-
-  - Nhiều ảnh chưa set kích thước, chưa set "object-fit" cho ảnh. Trường hợp đổi ảnh khác với kích thước khác thì giao diện sẽ bị vỡ, ảnh bị méo.
-
-  - Đặt tên class phù hợp ("lists" --> "list"). Xóa bỏ những class không cần thiết `"logo-header col-sm-"`, những comment CSS dư.
-
-  ***
-
-  LỖI Ở CÁC PHẦN RIÊNG:
-
-  Phần `headrer`:
-
-  - Chưa xử lý hover vào ".nav-item".
-
-  Phần section `.policy`:
-
-  - Khoảng cách padding lớn hơn so với bản mẫu.
-
-  - Phần `.product`: Chưa xử lý hover.
-
-  Phần section `WHY CHOOSE US`, `HOME DELIVERY`:
-
-  - Khoảng cách giữa 2 section này chưa giống như bản mẫu, cần tăng khoảng cách lên.
-
-  - Chưa xử lý button link khi hover vào.
-
-  Phần section `download app`
-
-  - Chưa có màu background và khoảng cách trên dưới của section.
-
-  - Sử dụng thẻ `div` cho phần 2 button link `.appstore` tải app là chưa đúng. Ở đây là link nên cần dùng thẻ `a`. Khoảng cách giữa hai link này chưa đúng.
-
-  Phần `footer`:
-
-  - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng:
-
-    **[Xem ảnh](images/trung-le-1.1.png)**
-
-  - Nên set padding cho thẻ cha (`.footer`), chứ không nên set `margin-top` cho từng thẻ con bên trong (`.content`)
-
-  - Các link đang có font-weight đậm, không giống bản mẫu là font-weight mảnh.
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-960.png)**
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài không tốt. HTML cần chú ý dùng thẻ semantic, đặt tên class phù hợp, thêm nội dung 'alt' cho ảnh đầy đủ để tốt cho SEO. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể. Cần làm thêm responsive đầy đủ, hoàn thiện và nộp lại.
+- [x] Bài 4: Màn hình: max-width: 480px
 
-## [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day11)
+  Bài làm tốt
 
-- [x] [Bài 1](https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day11/index.html)
+  Hơi lệch một chút so với bản mẫu.
 
-  Bài làm tốt \*
+  Các lỗi trước tương tự như màn hình 960px.
 
-  CÁC LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ FIX:
-
-  - Chưa có responsive cho những màn hình sau:
-
-    - Màn hình: max-width: 1199px.
-
-    - Màn hình: từ width: 575px trở xuống (max-width:420px, max-width:375px). Cần check lại break-point và xử lý responsive thêm
-
-  - Ảnh: Nhiều ảnh set kích thước chưa đúng. Trường hợp đổi ảnh khác với kích thước bất kì khác thì giao diện sẽ bị vỡ. Vậy nên không nên chỉ set `width:auto`, nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.
-
-  - Bố cục trang HTML nên dùng thẻ semantic `<main></main>`, `<footer></footer>` bọc ngoài cùng các phần nội dung chính lớn.
-
-  - Chú ý nên comment HTML thống nhất: 'ENDS-->END', chữ 'END' viết đầu cả / viết cuối cả
-
-    **[Xem Ảnh](images/luu_anh_quan_1.3.png)**
-
-  - Cần xóa bỏ code và comment thừa trong HTML:
-
-    **[Xem ảnh](images/luu_anh_quan_1.1.png)**
-
-  LỖI Ở CÁC PHẦN RIÊNG:
-
-  Phần `link-order`:
-
-  - Cần chỉnh css flexbox lại để các item có width ôm cả content, tránh không để chèn như thế này:
-
-    **[Xem ảnh](images/luu_anh_quan_1.2.png)**
-
-  - `btn-process` cần thêm `cursor:pointer` cho màn PC.
-
-  Phần `footer`:
-
-  - Các link ở `footer` chưa xử lý khi hover ở PC sẽ đổi màu chữ.
-
-  - Phần copyright chưa đúng, ở bản mẫu không có khoảng cách bên trái.
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-480.png)**
 
 ---
 
-- [x] [Màn hình: max-width: 1500px]
-
-  - Bài làm rất tốt \*
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về size các ảnh và các phần tử, chú ý kiểm tra lại các hiệu ứng.
 
 ---
 
-- [x] [Màn hình: max-width: 1399px]
-
-  - Xác định break-point 1200px <==> **1399px** là chưa đúng với bản mẫu. Ở bài mẫu là 1200px <==> **1398px**.
-
-  - Phần `link-order` width nhỏ hơn bản mẫu.
-
-  - 3 section `feature, feature-2, cta`: content của 2 cột trái-phải đang căn top theo chiều dọc. Bản mẫu là căn giữa. (Để linh hoạt cho 2 item này luôn nằm giữa theo chiều dọc khi ở cha đã dùng flex column, thì nên dùng `align-items:center`, thay vì dùng `margin-top` cho thẻ con). width các cột chưa đúng, lớn hơn bản mẫu.
-
-  - Phần `cta-btn`: khoảng cách giữa 2 button link nhỏ hơn bản mẫu.
-
-  - Phần `logo-desc`: width lớn hơn bản mẫu.
-
----
-
-- [x] [Màn hình: max-width: 991px]
-
-  - Xử lý responsive lại phần này cho tất cả màn hình từ 991px trở xuống. Lỗi khi resize về màn nhỏ, chọn mở menu, resize ra màn lớn thì menu vẫn còn bug này:
-
-    **[Xem ảnh](images/luu_anh_quan_1.4.png)**
-
-  - Chưa responsive cho khoảng cách trên dưới của 3 section `feature, feature-2, cta`.
-
----
-
-- [x] [Màn hình: max-width: 991px]
-
-  - Bài làm rất tốt \*
-
----
-
-- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần để ý thêm về xác định break-point, những khả năng bug css của các item: kích thước, vị trí, khoảng cách, màu, action khi màn hình thay đổi và check xóa code thừa, file thừa không dùng đến để bài hoàn thiện hơn.
-
----
-
-## [Tuấn Phạm](https://github.com/phamtuan162/phamtuan-nodejs-01)
+## [Mai Việt Hoàng](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap/Bai_tap_buoi_12/Exercise12.html)
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
-Bài làm rất tốt \*
+  Bài làm rất tốt \*
 
-Phần `.hero__attention-tittle` không hẳn là một heading, chỉ là một đoạn text thông thường. Nên dùng thẻ `span` thay cho h3.
+  Sai icon ở `.landing .landing-content__info .logo .logo-img`.
 
-Phần `nav.navbar` chỉ được sử dụng để hiển thị các thanh điều hướng (navigation). Còn phần search thì không phải là thanh điều hướng, nên không nên đặt trong phần này.
+  Có thể rút gọn 2 input radio bằng một input checkbox.
 
-Phần `.hero__heading`, `.serve__heading`, `.favorite__title`, `.app__tittle`... có font-size nhỏ hơn bản mẫu.
+  Chưa làm phần selection.
 
-Các phần hình ảnh đều to hơn bản mẫu.
+  Đổi màu sai khi hover vào `.landing .landing-form .form .form__row a`
 
-**[Xem ảnh](images/phamtuan162-1500.png)**
+  Thời gian hiệu ứng quá nhanh tại các label của `.tab-switch`
 
----
+  Font chữ quá mảnh tại `.landing .landing-content__info .desc`
 
-- [x] Bài 2: Màn hình: max-width: 1399px
+  Sai hiệu ứng khi hover vào nút.
 
-Bài làm rất tốt \*
+  Phần `.sub-heading` thực tế không phải là một heading riêng, nó không mang một ý nghĩa nào khi đứng một mình.
 
-Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
+  - Nó cần đi cùng với `.heading` vì vậy nên gộp cả 2 lại.
 
-Khoảng cách giữa các phần tử chưa giống bản mẫu.
+  - Phần `.form__heading` mới là một `h2`
 
-**[Xem ảnh](images/phamtuan162-1399.png)**
+  Thiếu đổ bóng ở các button.
 
----
-
-- [x] Bài 3: Màn hình: max-width: 1199px
-
-Chưa responsive tốt ở màn hình này.
-
-Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
-
-Các font chữ, hình ảnh chưa thu nhỏ.
-
-**[Xem ảnh](images/phamtuan162-1199.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-1500.png)**
 
 ---
 
-- [x] Bài 4: Màn hình: max-width: 991px
+- [x] Bài 2: Màn hình: max-width: 1365px
 
-Chưa responsive tốt ở màn hình này.
+  Bài làm tốt
 
-Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
+  Lệch nhiều so với bản mẫu.
 
-Các font chữ, hình ảnh chưa thu nhỏ.
+  Các lỗi trước tương tự như màn hình 1500px.
 
-**[Xem ảnh](images/phamtuan162-991.png)**
-
----
-
-- [x] Bài 5: Màn hình: max-width: 767px
-
-Các lỗi sai vẫn giống như ở màn hình max-width: 991px.
-
-**[Xem ảnh](images/phamtuan162-767.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-1365.png)**
 
 ---
 
-- [x] Bài 6: Màn hình: max-width: 575px
+- [x] Bài 3: Màn hình: max-width: 960px
 
-Các lỗi sai vẫn giống như ở màn hình max-width: 767px.
+  Bài làm tốt
 
-**[Xem ảnh](images/phamtuan162-575.png)**
+  Lệch nhiều so với bản mẫu.
 
----
+  Các lỗi trước tương tự như màn hình 1365px.
 
-- [x] Bài 7: Màn hình: max-width: 420px
-
-Các lỗi sai vẫn giống như ở màn hình max-width: 575px.
-
-**[Xem ảnh](images/phamtuan162-420.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-960.png)**
 
 ---
 
-- [x] Bài 8: Màn hình: max-width: 375px
+- [x] Bài 4: Màn hình: max-width: 480px
 
-Các lỗi sai vẫn giống như ở màn hình max-width: 420px.
+  Bài làm tốt
 
-**[Xem ảnh](images/phamtuan162-375.png)**
+  Hơi lệch một chút so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 960px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-480.png)**
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý chia thêm nhiều breakpoint ở mức thấp nữa, không nên chặn 2 đầu của một mức breakpoint.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về size các ảnh và các phần tử, chú ý kiểm tra lại các hiệu ứng.
 
 ---
 
-## [Nam Nguyễn](https://namnguyen2603.github.io/nguyentrungnam_bai11/ex1)
+## [Luu Anh Quan](https://anhquan2211.github.io/F8-OFFLINE/)
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
-Chưa có action hover cho các nút.
+  Bài làm rất tốt \*
 
-Chưa có action hover cho `.service-grover .free-shipping, .service-grover .returns, .service-grover .checkout`
+  Sai icon ở `.section-landing .landing-content .logo img`.
 
-- Các style chung, nên gộp lại vào một class, không nên sử dụng các class khác nhau, rất khó sử dụng.
+  Phần `.title-small` thực tế không phải là một heading riêng, nó không mang một ý nghĩa nào khi đứng một mình.
 
-Phần `nav.navbar` không nên đặt phần search vào đây vì phần này chỉ dùng để hiển thị các thanh điều hướng (navigation).
+  - Nó cần đi cùng với `.title-main` vì vậy nên gộp cả 2 lại.
 
-Thiếu action ẩn placeholder khi focus vào input.
+  Có thể rút gọn 2 input radio bằng một input checkbox.
 
-Không đặt max-width cho phần tử bao bọc lớn nhất `.main` nên khi màn hình rộng hơn bản mẫu thì các phần tử sẽ căng ra.
+  Chưa làm phần selection.
 
-ClassName `.main` thường được biểu thị cho các phần nội dung chính. Không nên bọc cả `header`, `.footer`
+  Bài làm rất khớp bản mẫu
 
-Nên sử dụng các thẻ bao bọc có semantics như `section, header, footer` thay cho `div`.
-
-Không nên sử dụng màu chữ `#000` vì sự tương phản quá cao sẽ khiến người dùng khó đọc.
-
-Phần **More than Faster** không phải là một tiêu đề cho mục nào cả, chỉ đơn giản là một dòng chữ được style khác đi để nhấn mạnh thông điệp. Nên sử dụng thẻ `span` thay cho `h3`.
-
-Các thẻ heading đặt quá bừa bãi.
-
-Các phần `.content h5` là một heading bổ nghĩa cho heading `h2` nên nên sử dụng thẻ `h3` thay cho `h5`.
-
-Các phần in đậm biểu thị cho một list ở footer không phải là một heading, không nên sử dụng `h4` cho các phần này.
-
-Font-size ở **heading** chưa đúng, quá bé so với bản mẫu.
-
-Chưa xử lý khoảng cách 2 bên cho `.service-grover p`.
-
-Có dòng code thừa trong file CSS
-
-```css
-@media screen and (min-width: 992px) {
-}
-```
-
-**[Xem ảnh](images/namnguyen2603-1500.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-1500.png)**
 
 ---
 
-- [x] Bài 2: Màn hình: max-width: 1399px
+- [x] Bài 2: Màn hình: max-width: 1365px
 
-Chưa có responsive ở màn hình này.
+  Bài làm rất tốt \*
 
-Các lỗi sai giống như ở màn hình max-width: 1500px.
+  Các lỗi trước tương tự như màn hình 1500px.
 
-**[Xem ảnh](images/namnguyen2603-1399.png)**
+  Rất khớp với bản mẫu.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-1365.png)**
 
 ---
 
-- [x] Bài 3: Màn hình: max-width: 1199px
+- [x] Bài 3: Màn hình: max-width: 960px
 
-Bài làm rất tốt \*
+  Bài làm rất tốt \*
 
-Phần hiển thị các phần tử đang to hơn bản mẫu.
+  Các lỗi trước tương tự như màn hình 1365px.
 
-Các lỗi sai giống như ở màn hình max-width: 1399px.
+  Rất khớp với bản mẫu.
 
-**[Xem ảnh](images/namnguyen2603-1199.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-960.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px
+
+  Bài làm rất tốt \*
+
+  Các lỗi trước tương tự như màn hình 960px.
+
+  Rất khớp với bản mẫu.
+
+  Phần `Forgot password?` chưa xử lý tốt, khiến giao diện bị vỡ, tuy nhiên vẫn perfectly responsive.
+
+  - Có thể thêm overflow: hidden vào `.form` để giải quyết vấn đề này.
+
+  - Có thể do không có cha nào của nó là relative nên nó nhận body làm cha, sau đó vì sử dụng `right: -100%` nên nó sẽ bị tràn ra ngoài body.
+
+  - Lý do không nhận thấy có vẻ là do sử dụng thêm width 100% nên phần text vẫn nằm trong phần `.form` nên không bị tràn ra ngoài.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-480.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý test lại màn hình nhỏ để tự tìm ra lỗi và sửa lại.

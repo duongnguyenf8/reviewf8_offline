@@ -50,7 +50,7 @@ Hình ảnh ở `.delivery .hero-img, .favorite .hero-img, .download .hero-img` 
 
 Phần `.footer .section-desc` sai hoàn toàn so với bản mẫu.
 
-**[Xem ảnh](images/duonghiep1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep1500.png)**
 
 ---
 
@@ -62,7 +62,7 @@ Chưa xử lý action hover cho `.service-item`.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/duonghiep1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep1399.png)**
 
 ---
 
@@ -74,7 +74,7 @@ Chưa xử lý action hover cho `.service-item`.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/duonghiep1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep1199.png)**
 
 ---
 
@@ -90,7 +90,7 @@ Các item ở `.delivery-content, .favorite-content, .download-links` ở bản 
 
 Các item ở `.copyright, .copyright-links` trong bản mẫu là cùng một hàng, không phải là 2 hàng.
 
-**[Xem ảnh](images/duonghiep991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep991.png)**
 
 ---
 
@@ -102,7 +102,7 @@ Các phần `.hero-title, .section-title` có font-size nhỏ hơn bản mẫu.
 
 Các phần `.download-btn, .order-link` có kích thước nhỏ hơn bản mẫu.
 
-**[Xem ảnh](images/duonghiep767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep767.png)**
 
 ---
 
@@ -112,7 +112,7 @@ Bài làm rất tốt \*
 
 Các lỗi sai giống ở màn hình max-width: 767px.
 
-**[Xem ảnh](images/duonghiep575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep575.png)**
 
 ---
 
@@ -120,7 +120,7 @@ Các lỗi sai giống ở màn hình max-width: 767px.
 
 Bài làm rất tốt \*
 
-**[Xem ảnh](images/duonghiep420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep420.png)**
 
 ---
 
@@ -128,7 +128,7 @@ Bài làm rất tốt \*
 
 Bài làm rất tốt \*
 
-**[Xem ảnh](images/duonghiep375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep375.png)**
 
 ---
 
@@ -150,7 +150,7 @@ Phần `.service__items__inner` có chiều rộng lớn hơn bản mẫu.
 
 Sai chính tả **hourse** -> **hours**.
 
-**[Xem ảnh](images/xuananh1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh1500.png)**
 
 ---
 
@@ -160,7 +160,7 @@ Bài làm tốt \*
 
 Một số lỗi sai giống như ở màn hình max-width: 1500px.
 
-**[Xem ảnh](images/xuananh1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh1399.png)**
 
 ---
 
@@ -170,7 +170,7 @@ Bài làm rất tốt \*
 
 Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
-**[Xem ảnh](images/xuananh1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh1199.png)**
 
 ---
 
@@ -182,7 +182,7 @@ Animation hiển thị menu chưa giống bản mẫu.
 
 Một số chiều rộng của các phần tử chưa giống bản mẫu.
 
-**[Xem ảnh](images/xuananh991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh991.png)**
 
 ---
 
@@ -192,7 +192,7 @@ Bài làm tốt \*
 
 Một số lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
-**[Xem ảnh](images/xuananh767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh767.png)**
 
 ---
 
@@ -200,7 +200,7 @@ Một số lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
 Bài làm rất tốt \*
 
-**[Xem ảnh](images/xuananh575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh575.png)**
 
 ---
 
@@ -212,7 +212,7 @@ Phần `.heading.lv2.service--lv2` chưa thu nhỏ font-size.
 
 Các `.service__items__inner` chưa thu nhỏ chiều cao.
 
-**[Xem ảnh](images/xuananh420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh420.png)**
 
 ---
 
@@ -222,7 +222,7 @@ Bài làm tốt \*
 
 Các lỗi sai tương tự như ở màn hình max-width: 420px.
 
-**[Xem ảnh](images/xuananh375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh375.png)**
 
 ---
 
@@ -242,7 +242,7 @@ Thiếu đổ bóng cho `.header .banner .btn img`
 
 Để ý thêm một chút về kích thước max-width của một số phần tử text.
 
-**[Xem ảnh](images/serenaha12-1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-1500.png)**
 
 ---
 
@@ -250,7 +250,7 @@ Thiếu đổ bóng cho `.header .banner .btn img`
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/serenaha12-1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-1399.png)**
 
 ---
 
@@ -258,7 +258,7 @@ Chưa có responsive ở màn hình này.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/serenaha12-1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-1199.png)**
 
 ---
 
@@ -266,7 +266,7 @@ Chưa có responsive ở màn hình này.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/serenaha12-991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-991.png)**
 
 ---
 
@@ -288,7 +288,7 @@ Các item trong bản mẫu là căn giữa chứ không phải căn trái.
 
 Phần `.download .content` để width là 100% nhưng chưa xóa `margin-left 100px` nên bị đẩy ra ngoài.
 
-**[Xem ảnh](images/serenaha12-767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-767.png)**
 
 ---
 
@@ -298,7 +298,7 @@ Bài làm chưa tốt
 
 Các lỗi sai giống như ở màn hình max-width: 767px.
 
-**[Xem ảnh](images/serenaha12-575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-575.png)**
 
 ---
 
@@ -306,7 +306,7 @@ Các lỗi sai giống như ở màn hình max-width: 767px.
 
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
-**[Xem ảnh](images/serenaha12-420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-420.png)**
 
 ---
 
@@ -314,7 +314,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
-**[Xem ảnh](images/serenaha12-375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-375.png)**
 
 ---
 
@@ -359,7 +359,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các hình ảnh đều to hơn bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson1500.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson1500.png)**
 
 ---
 
@@ -373,7 +373,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Chưa có responsive ở màn hình này.
 
-  **[Xem ảnh](images/ngomanhson1399.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson1399.png)**
 
 ---
 
@@ -383,7 +383,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các lỗi sai giống như ở màn hình max-width: 1399px.
 
-  **[Xem ảnh](images/ngomanhson1199.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson1199.png)**
 
 ---
 
@@ -397,7 +397,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Hiệu ứng đóng, mở menu chưa giống bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson991.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson991.png)**
 
 ---
 
@@ -409,7 +409,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các hình ảnh quá to so với bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson767.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson767.png)**
 
 ---
 
@@ -429,7 +429,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Nên để kích thước của các phần đã set 390px là 100% để tránh vỡ layout.
 
-  **[Xem ảnh](images/ngomanhson575.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson575.png)**
 
 ---
 
@@ -439,7 +439,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các lỗi sai giống như ở màn hình max-width: 575px.
 
-  **[Xem ảnh](images/ngomanhson420.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson420.png)**
 
 ---
 
@@ -449,7 +449,133 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các lỗi sai giống như ở màn hình max-width: 420px.
 
-  **[Xem ảnh](images/ngomanhson375.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson375.png)**
+
+## [Hoài Nam Đỗ](https://oaihman25.github.io/btvn/day11/ex01.html)
+
+- [x] [Bài 1](https://oaihman25.github.io/btvn/day11/ex01.html)
+
+  Bài làm **không tốt** \*
+
+  Chưa hoàn thiện responsive cho những breakpoint sau:
+
+  - `width:1399px`: chưa css lại các khoảng cách.
+
+  - `width:1199px`: mới chỉ có responsive phần footer. Chưa css lại các khoảng cách. Giao diện bị lệch sang phải do ảnh ở các section set width cứng, khi màn nhỏ nó không co lại theo.
+
+  - `width:991px, 757px, 575px, 420px, 375px`: Chưa hoàn thiện ( xác định sai một breakpoint, bài mẫu là `575px`, bạn đang làm là `576px`.)
+
+- [x] [Màn min-width: 1400px]
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:
+
+  - Các section: Khoảng cách trên, dưới, trái, phải chưa đúng.
+
+  - `Ảnh`: Nhiều ảnh chưa set kích thước / set kích thước chưa đúng. Trường hợp đổi ảnh khác với kích thước bất kì khác thì giao diện sẽ bị vỡ. Nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.
+
+  - `Chữ`: Mã màu của tất cả những chữ đen chưa đúng. Rất nhiều phần chữ chưa được set line-height như bài mẫu (vd: h2, p). Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - `button`: chưa đúng font-family. Chưa xử lý hover. Chưa set `cursor:pointer`.
+
+  - Chưa format code. Xóa phần nhúng link fontawesome nếu không dùng đến. Check xóa comment css thừa.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+  Phần Header: chưa hoàn thiện.
+
+  - Các item chưa căn giữa theo chiều ngang (set thêm align-items:center). Phần search thiếu icon kính lúp. Thiếu phần giỏ hàng.
+
+  - Các nav item: Chưa active `Home`, Chưa xử lý hover đổi màu chữ. Kích thước của nav item đang bị nhỏ nên sẽ hơi khó để cho người dùng chọn được đúng vào.
+
+  Phần secttion: 2 cột trái phải trong section chưa được căn giữa nhau theo chiều ngang.
+
+  Phần `What we Serve` chưa đúng: màu của hình icon, Khoảng cách giữa ảnh và `h3`, lớp layer màu có vị trí và animation chưa đúng chưa đúng.
+
+  Phần section tải app: 2 button link nên dùng `a` bọc ngoài, vì đây là link.
+
+  Phần Footer:
+
+  - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng: Copyright.
+
+  - Các cột đang căn giữa (do set align-items:center) theo chiều ngang, khác với bản mẫu là căn top.
+
+  - Các link ở `footer` chưa xử lý khi hover ở PC sẽ đổi màu chữ.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. HTML cần chú ý dùng thẻ semantic, đặt tên class phù hợp. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình. Cần làm thêm responsive đầy đủ, hoàn thiện và nộp lại.
+
+## [Minh Quang](https://taminhquang13.github.io/F8_Fullstack/BT11/)
+
+- [x] [Bài 1](https://taminhquang13.github.io/F8_Fullstack/BT11/)
+
+  Bài làm tốt \*
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:
+
+  - CSS @media các phần `grid system`, `container` dùng của boostrap đang set toàn bộ là `min-width`. Nhưng trong bài ở file `style.css` lại set toàn bộ là `max-width`. Nên đổi lại theo một cách, để có không có những sai lệch khi responsive.
+
+  - Phần `Header` chưa hiển thị đúng với màn hình desktop.
+
+  - Nên đặt class chung cho những phần nội dung có style giống nhau và set css cho class đó: các section, những thành phần trong section (h5, h2, p), các button.
+
+  - `Ảnh`: Nhiều ảnh chưa có nội dung thuộc tính `alt`. Chưa set kích thước / set kích thước chưa đúng. Trường hợp với ảnh khác có kích thước bất kì thì giao diện có thể sẽ bị vỡ. Nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.
+
+  - `Chữ`: Mã màu của tất cả những chữ đen chưa đúng. Rất nhiều phần chữ chưa được set line-height như bài mẫu (vd: h2, p). Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - Link css vào file HTML nên để link css của cách thư viện ở trên, link css của bài ở dưới cùng. Để có thể ghi đè CSS của thư viện nếu cần.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+  Phần `header-end`:
+
+  - Button `btn-order` hover vào bị giật, do khi hover có thêm border. Nên dùng `outline` để thêm đường viền vì outline không thay đổi kích thước, vị trí của phần tử nên sẽ không bị giật.
+
+  Phần section `service`:
+
+  - Khoảng cách: khoảng cách từ phía trên của section với phần nội dung (tổng 160px) đang lớn hơn bài mẫu (100px). Khoảng cách giữa `h2` và `service-detail` chưa đúng.
+
+  Phần section `choose` , `home`: Khoảng cách giữa `h2` và chữ ở thẻ `p` chưa giống bài mẫu.
+
+  Phần `footer`: Khoảng cách trên dưới chưa đúng, cần lớn hơn. Ở bài mẫu không có đường kẻ ngăn cách `footer-bottom-line`.
+
+- [x] [Màn max-width: 1500px]: Làm bài tốt. Chỉ có những lưu ý & lỗi chung ở trên. Và thêm lỗi này:
+
+  - Phần `left-content-top-text`: kích thước cả phần này đang to hơn bài mẫu, do font-size lớn. Phần `h1 > span` có font-weight chưa đúng, cần đậm hơn.
+
+- [x] [Màn max-width: 1399px]:
+
+  - Phần `left-content-top-text` lỗi như ở màn max-width: 1500px.
+
+  Phần chữ chưa đúng:
+
+  ![Minh Quang - man hinh 1399px](images/minhquang_2.png)
+
+  Phần `left-content-bottom-btn`: 2 button này đang bị đè lên nhau. Cần chỉnh lại phần flexbox này.
+
+  ![Minh Quang - man hinh 1399px](images/minhquang_1.png)
+
+  Phần section `choose`: Nội dung chữ bên cột phải chưa đúng
+
+  ![Minh Quang - man hinh 1399px](images/minhquang_3.png)
+
+- [x] [Màn max-width: 1199px]: Bài làm tốt. Xác định sai breakpoint, ở bài mẫu breakpoint 1199px, bạn đang làm là 1200px. Phần `left-content-bottom-btn` chữ và ảnh bị lệch, không căn giữa.
+
+- [x] [Màn max-width: 991px]: Bài làm chưa tốt. Chưa giống bài mẫu về các khoảng cách, font-size chữ.
+
+  - Phần `service-detail` 3 item chiều cao không bằng nhau. Cần set 3 item có chiều cao bằng nhau.
+
+  - Sai bố cục: thứ tự đúng là ảnh -> chữ -> ảnh -> chữ
+
+    ![Minh Quang - man hinh 991px](images/minhquang_4.png)
+
+- [x] [Màn max-width: 767px], [Màn max-width: 575px], [Màn max-width: 420px]: Bài làm chưa tốt. Các lỗi tương tự như ở màn 991px
+
+  Phần `app-content-btn` chưa căn giữa, khoảng cách giữa 2 button chưa đúng.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Nên set @media cho toàn bài theo 1 chiều (hoặc `min-width`, hoặc `max-width`). HTML cần chú ý đặt tên class chung cho những phần có style giống nhau. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình.
 
 # Tuyết đánh giá bài học viên
 
@@ -507,7 +633,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng:
 
-    **[Xem ảnh](images/trung-le-1.1.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/trung-le-1.1.png)**
 
   - Nên set padding cho thẻ cha (`.footer`), chứ không nên set `margin-top` cho từng thẻ con bên trong (`.content`)
 
@@ -537,11 +663,11 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Chú ý nên comment HTML thống nhất: 'ENDS-->END', chữ 'END' viết đầu cả / viết cuối cả
 
-    **[Xem Ảnh](images/luu_anh_quan_1.3.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.3.png)**
 
   - Cần xóa bỏ code và comment thừa trong HTML:
 
-    **[Xem ảnh](images/luu_anh_quan_1.1.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.1.png)**
 
   LỖI Ở CÁC PHẦN RIÊNG:
 
@@ -549,7 +675,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Cần chỉnh css flexbox lại để các item có width ôm cả content, tránh không để chèn như thế này:
 
-    **[Xem ảnh](images/luu_anh_quan_1.2.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.2.png)**
 
   - `btn-process` cần thêm `cursor:pointer` cho màn PC.
 
@@ -585,7 +711,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Xử lý responsive lại phần này cho tất cả màn hình từ 991px trở xuống. Lỗi khi resize về màn nhỏ, chọn mở menu, resize ra màn lớn thì menu vẫn còn bug này:
 
-    **[Xem ảnh](images/luu_anh_quan_1.4.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.4.png)**
 
   - Chưa responsive cho khoảng cách trên dưới của 3 section `feature, feature-2, cta`.
 
@@ -615,7 +741,7 @@ Phần `.hero__heading`, `.serve__heading`, `.favorite__title`, `.app__tittle`..
 
 Các phần hình ảnh đều to hơn bản mẫu.
 
-**[Xem ảnh](images/phamtuan162-1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-1500.png)**
 
 ---
 
@@ -627,7 +753,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Khoảng cách giữa các phần tử chưa giống bản mẫu.
 
-**[Xem ảnh](images/phamtuan162-1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-1399.png)**
 
 ---
 
@@ -639,7 +765,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Các font chữ, hình ảnh chưa thu nhỏ.
 
-**[Xem ảnh](images/phamtuan162-1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-1199.png)**
 
 ---
 
@@ -651,7 +777,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Các font chữ, hình ảnh chưa thu nhỏ.
 
-**[Xem ảnh](images/phamtuan162-991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-991.png)**
 
 ---
 
@@ -659,7 +785,7 @@ Các font chữ, hình ảnh chưa thu nhỏ.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
-**[Xem ảnh](images/phamtuan162-767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-767.png)**
 
 ---
 
@@ -667,7 +793,7 @@ Các lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 767px.
 
-**[Xem ảnh](images/phamtuan162-575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-575.png)**
 
 ---
 
@@ -675,7 +801,7 @@ Các lỗi sai vẫn giống như ở màn hình max-width: 767px.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 575px.
 
-**[Xem ảnh](images/phamtuan162-420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-420.png)**
 
 ---
 
@@ -683,7 +809,7 @@ Các lỗi sai vẫn giống như ở màn hình max-width: 575px.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 420px.
 
-**[Xem ảnh](images/phamtuan162-375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-375.png)**
 
 ---
 
@@ -732,7 +858,7 @@ Có dòng code thừa trong file CSS
 }
 ```
 
-**[Xem ảnh](images/namnguyen2603-1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1500.png)**
 
 ---
 
@@ -742,7 +868,7 @@ Chưa có responsive ở màn hình này.
 
 Các lỗi sai giống như ở màn hình max-width: 1500px.
 
-**[Xem ảnh](images/namnguyen2603-1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1399.png)**
 
 ---
 
@@ -754,4 +880,102 @@ Phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Các lỗi sai giống như ở màn hình max-width: 1399px.
 
-**[Xem ảnh](images/namnguyen2603-1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1199.png)**
+
+## [Mai Việt Hoàng](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap/Bai_tap_buoi_11/Bt1/Exercise11.html)
+
+- [x] [Bài 1](https://viethoang-mai.github.io/MVH-fullstack-nodejs-F8-01/Bai_tap/Bai_tap_buoi_11/Bt1/Exercise11.html)
+
+  Bài làm rất tốt \*
+
+  CÁC ĐIỂM TRONG TOÀN BÀI CẦN CHÚ Ý ĐỂ BÀI HOÀN THIỆN HƠN:
+
+  - Nên dùng thẻ HTML semantic `<nav>` cho phần `list-items` và dùng thẻ `<section>` cho phần `hero` thay vì dùng `div`.
+
+  - Phần `search` icon hình kính lúp chưa đúng vị trí. Cần được set nằm trong ô input.
+
+  - Phần chữ ở thẻ `h1` font-weight đậm hơn bài mẫu.
+
+  - Ở section `service`: width của `service__row` lớn hơn bài mẫu.
+
+  - Phần `footer__logo--desc` có width lớn hơn bải mẫu. Phần `footer__copyright` font-weight đậm hơn bài mẫu. Phần `footer__condition`: chưa xử lý hover đổi màu chữ.
+
+  - `Chữ`: Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - Các button `btn` nên set thêm padding.
+
+  - Ở phần `head` file HTML, nên để phần nhúng link các thư viện lên trên phần link css của bài. Để có thể ghi đè css của thư viện nếu cần.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+  - [x] [Màn max-width: 1500px]: Chưa làm responsive.
+
+  - [x] [Màn max-width: 1399px] Làm bài rất tốt. Chỉ có những lưu ý chung ở trên.
+
+  - [x] [Màn max-width: 1199x]: Làm bài tốt. Có những lưu ý chung ở trên và `font-size, line-height` nhiều phần chữ đang bị lơn hơn bài mẫu, từ màn này về những màn nhỏ đều có lỗi này.
+
+  - [x] [Màn max-width: 991px]: Làm bài tốt. Có những lưu ý chung ở trên và:
+
+    - Cần thêm `z-index` cho `.header-content` để nó nằm hẳn ở dưới `hero`.
+
+    - 2 button ở 2 section `feature-up`, `feature-down` vị trí căn giữa là chưa đúng. Bài mẫu là căn trái.
+
+    - Còn bug: khi mở menu, để nguyên --> rồi chuyển về màn hình lơn hơn thì khoảng margin-top của `hero` vẫn còn.
+
+      ![Mai Việt Hoàng man hinh 991px](images/maiviethoang_1.png)
+
+  - [x] [Màn max-width: 767px]: Làm bài rất tốt. Chỉ có những lưu ý chung ở trên.
+
+  - [x] [Màn max-width: 575px], [Màn max-width: 420px], [Màn max-width: 375px]: Bài làm tốt. Có những lưu ý chung ở trên và:
+
+    - Phần `hero`, 2 button link `order` chưa căn trái là chưa đúng vị trí. Ở bài mẫu là căn giữa.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chú ý hơn các tiểu tiết của từng thành phần ở các kích thước màn hình để bài hoàn thiện hơn.
+
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/Buoi_11)
+
+- [x] [Bài 1](https://quocanh-bit.github.io/F8_fullstack_006/Buoi_11/bai1.html)
+
+  Bài làm chưa tốt
+
+  Chưa có responsive cho các breakpoint: max-width: 1500px, 1399px, 575px, 420px, 375px.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:
+
+  - Nên dùng thẻ HTML semantic `<nav>` cho phần `list-menu`, và thẻ `<section>` cho phần `header-grover-wrap`.
+
+  - Phần header: Chưa active cho nav item `Home`. Phần search, icon kính lúp và chữ chưa ngang hàng. Icon giỏ hàng hơi nhỏ và nên thêm css `cursor:pointer` cho màn desktop vì icon này có thể click được.
+
+  - Kích thước `container` ở các màn đang chưa giống như bài mẫu, khoảng cách các phần lề trái phải của section, nên kích thước cột ở trong chưa đúng.
+
+  - Font-size chữ của `h1` đang lớn hơn bài mẫu. Button link `"Order Now"` font-size đang bị nhỏ và kích thước chưa đúng, nên set padding thay vì set `width:100%`.
+
+  - Section `service`: Phần `_service_grover_grocery_content_wrap` có width lớn hơn bài mẫu. Và chưa xử lý hover vào các item thì hiện background phía sau.
+
+  - Footer: màu chữ của thẻ `h4` chưa đúng.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+- [x] [Màn min-width: 1200px]: Bài làm tốt.
+
+  - Section `service`: Phần `content-item-title h3` chưa đúng font-size.
+
+  - Phần `feature-2-content`: Chưa căn giữa theo chiều ngang nội dung ở 2 cột trái và cột phải.
+
+  - Phần `cta-btn`: bài mẫu không có khoảng cách bên trái, và khoảng cách giữa 2 button link download app chưa đúng.
+
+  - Phần `footer`: khoảng cách trái phải chưa đúng. Chưa xử lý hover đổi màu chữ cho các link. Phần `".footer-content-logo > p"` và `".list-content > p"` text-align căn giữa là k đúng, ở bài mẫu là căn trái.
+
+- [x] [Màn min-width: 768px]: Bài làm tốt. Các lỗi chung ở trên và thêm:
+
+  - Chưa có hiệu ứng khi mở / đóng menu.
+
+  - Section `service`: các `service-content-item` đang có height không bằng nhau.
+
+  - Phần `cta-btn` chưa căn trái.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt nhưng chưa responsive đầy đủ. Cần quan sát kỹ bài mẫu để biết được các breakpoint, và chú ý những tiểu tiết để responsive đầy đủ cho từng thành phần theo các kích thước màn hình.
