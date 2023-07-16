@@ -309,3 +309,94 @@
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý test lại màn hình nhỏ để tự tìm ra lỗi và sửa lại.
+
+---
+
+## [Dương Quốc Anh](https://quocanh-bit.github.io/F8_fullstack_006/buoi_12/bai1.html)
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm tốt
+
+  Có thể rút gọn 2 input radio bằng một input checkbox.
+
+  Chưa làm phần selection.
+
+  Chưa đổi màu khi hover vào `.landing .landing-form .form .form__row a`
+
+  Sai hiệu ứng khi hover vào nút.
+
+  Đổ bóng sai ở button phần đăng ký.
+
+  Sai hoàn toàn title tại `.form-box-title` ở phần đăng ký.
+
+  Sai chính tả `.lading` => `.landing`
+
+  Phần `.lading-form .form-box a` sai màu.
+
+  Việc sử dụng font-size bằng `em` sẽ rất khó để tính toán nếu không có một trường hợp cụ thể.
+
+  Đặt font-weight quá bừa bãi, không có một quy tắc cụ thể.
+
+  ```css
+  /*Font title*/
+  @font-face {
+    font-family: "Titillium";
+    src: url(../fonts/Titillium-Light.otf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Titillium";
+    src: url(../fonts/Titillium-Black.otf);
+    font-weight: 600;
+  }
+  /*Font content*/
+  @font-face {
+    font-family: "Rajdhani";
+    src: url(../fonts/Rajdhani-Light.ttf);
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Rajdhani";
+    src: url(../fonts/Rajdhani-SemiBold.ttf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Rajdhani";
+    src: url(../fonts/Rajdhani-Bold.ttf);
+    font-weight: 600;
+  }
+  ```
+
+  Đề xuất sửa thành:
+
+  - Font-weight Light: 300
+  - Font-weight SemiBold: 500
+  - Font-weight Bold: 700
+  - Font-weight Black: 900
+
+  Bài làm quá lệch so với bản mẫu
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/quocanh-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/quocanh-register-1500.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px
+
+  Bài làm không tốt
+
+  Các lỗi trước tương tự như màn hình 1500px.
+
+  Bài làm quá lệch so với bản mẫu
+
+  Background bản mẫu không sử dụng fixed.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/quocanh-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/quocanh-register-1365.png)**
+
+- [x] Bài 3: Màn hình: max-width: 960px
+
+  Bài làm không tốt tốt
+
+  Tất cả màn hình đều sai hoàn toàn về giao diện. Do sai background.
