@@ -18,7 +18,7 @@
 
   - HTML: `/Fullstack_nodeJs_K1/Day12/index.html`
 
-  - Hình ảnh: `https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/Fullstack_nodeJs_K1/Day12/images`
+  - Hình ảnh: `/images/Fullstack_nodeJs_K1/Day12/images`
 
 ## [Nguyen Xuan Tuan Anh](https://github.com/xuananh2212/full_stack_01/tree/main/day_12)
 
@@ -231,3 +231,81 @@
 
   **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-login-480.png)**
   **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/viethoang-register-480.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về size các ảnh và các phần tử, chú ý kiểm tra lại các hiệu ứng.
+
+---
+
+## [Luu Anh Quan](https://anhquan2211.github.io/F8-OFFLINE/)
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm rất tốt \*
+
+  Sai icon ở `.section-landing .landing-content .logo img`.
+
+  Phần `.title-small` thực tế không phải là một heading riêng, nó không mang một ý nghĩa nào khi đứng một mình.
+
+  - Nó cần đi cùng với `.title-main` vì vậy nên gộp cả 2 lại.
+
+  Có thể rút gọn 2 input radio bằng một input checkbox.
+
+  Chưa làm phần selection.
+
+  Bài làm rất khớp bản mẫu
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-1500.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px
+
+  Bài làm rất tốt \*
+
+  Các lỗi trước tương tự như màn hình 1500px.
+
+  Rất khớp với bản mẫu.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-1365.png)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px
+
+  Bài làm rất tốt \*
+
+  Các lỗi trước tương tự như màn hình 1365px.
+
+  Rất khớp với bản mẫu.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-960.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px
+
+  Bài làm rất tốt \*
+
+  Các lỗi trước tương tự như màn hình 960px.
+
+  Rất khớp với bản mẫu.
+
+  Phần `Forgot password?` chưa xử lý tốt, khiến giao diện bị vỡ, tuy nhiên vẫn perfectly responsive.
+
+  - Có thể thêm overflow: hidden vào `.form` để giải quyết vấn đề này.
+
+  - Có thể do không có cha nào của nó là relative nên nó nhận body làm cha, sau đó vì sử dụng `right: -100%` nên nó sẽ bị tràn ra ngoài body.
+
+  - Lý do không nhận thấy có vẻ là do sử dụng thêm width 100% nên phần text vẫn nằm trong phần `.form` nên không bị tràn ra ngoài.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/anhquan-register-480.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý test lại màn hình nhỏ để tự tìm ra lỗi và sửa lại.
