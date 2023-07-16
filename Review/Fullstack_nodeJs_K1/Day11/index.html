@@ -361,6 +361,155 @@
 <p><strong><a href="images/ngomanhson375.png">Xem ảnh</a></strong></p>
 </li>
 </ul>
+<h2><a href="https://oaihman25.github.io/btvn/day11/ex01.html">Hoài Nam Đỗ</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://oaihman25.github.io/btvn/day11/ex01.html">Bài 1</a></p>
+<p>Bài làm <strong>không tốt</strong> *</p>
+<p>Chưa hoàn thiện responsive cho những breakpoint sau:</p>
+<ul>
+<li>
+<p><code>width:1399px</code>: chưa css lại các khoảng cách.</p>
+</li>
+<li>
+<p><code>width:1199px</code>: mới chỉ có responsive phần footer. Chưa css lại các khoảng cách. Giao diện bị lệch sang phải do ảnh ở các section set width cứng, khi màn nhỏ nó không co lại theo.</p>
+</li>
+<li>
+<p><code>width:991px, 757px, 575px, 420px, 375px</code>: Chưa hoàn thiện ( xác định sai một breakpoint, bài mẫu là <code>575px</code>, bạn đang làm là <code>576px</code>.)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] [Màn min-width: 1400px]</p>
+<p>CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:</p>
+<ul>
+<li>
+<p>Các section: Khoảng cách trên, dưới, trái, phải chưa đúng.</p>
+</li>
+<li>
+<p><code>Ảnh</code>: Nhiều ảnh chưa set kích thước / set kích thước chưa đúng. Trường hợp đổi ảnh khác với kích thước bất kì khác thì giao diện sẽ bị vỡ. Nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.</p>
+</li>
+<li>
+<p><code>Chữ</code>: Mã màu của tất cả những chữ đen chưa đúng. Rất nhiều phần chữ chưa được set line-height như bài mẫu (vd: h2, p). Cần chú ý thêm css <code>text-transform: uppercase</code> cho những phần chữ in hoa, thêm <code>text-transform: capitalize</code> cho những phần chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p><code>button</code>: chưa đúng font-family. Chưa xử lý hover. Chưa set <code>cursor:pointer</code>.</p>
+</li>
+<li>
+<p>Chưa format code. Xóa phần nhúng link fontawesome nếu không dùng đến. Check xóa comment css thừa.</p>
+</li>
+</ul>
+<p>CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:</p>
+<p>Phần Header: chưa hoàn thiện.</p>
+<ul>
+<li>
+<p>Các item chưa căn giữa theo chiều ngang (set thêm align-items:center). Phần search thiếu icon kính lúp. Thiếu phần giỏ hàng.</p>
+</li>
+<li>
+<p>Các nav item: Chưa active <code>Home</code>, Chưa xử lý hover đổi màu chữ. Kích thước của nav item đang bị nhỏ nên sẽ hơi khó để cho người dùng chọn được đúng vào.</p>
+</li>
+</ul>
+<p>Phần secttion: 2 cột trái phải trong section chưa được căn giữa nhau theo chiều ngang.</p>
+<p>Phần <code>What we Serve</code> chưa đúng: màu của hình icon, Khoảng cách giữa ảnh và <code>h3</code>, lớp layer màu có vị trí và animation chưa đúng chưa đúng.</p>
+<p>Phần section tải app: 2 button link nên dùng <code>a</code> bọc ngoài, vì đây là link.</p>
+<p>Phần Footer:</p>
+<ul>
+<li>
+<p>Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng: Copyright.</p>
+</li>
+<li>
+<p>Các cột đang căn giữa (do set align-items:center) theo chiều ngang, khác với bản mẫu là căn top.</p>
+</li>
+<li>
+<p>Các link ở <code>footer</code> chưa xử lý khi hover ở PC sẽ đổi màu chữ.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. HTML cần chú ý dùng thẻ semantic, đặt tên class phù hợp. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình. Cần làm thêm responsive đầy đủ, hoàn thiện và nộp lại.</li>
+</ul>
+<h2><a href="https://taminhquang13.github.io/F8_Fullstack/BT11/">Minh Quang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://taminhquang13.github.io/F8_Fullstack/BT11/">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:</p>
+<ul>
+<li>
+<p>CSS @media các phần <code>grid system</code>, <code>container</code> dùng của boostrap đang set toàn bộ là <code>min-width</code>. Nhưng trong bài ở file <code>style.css</code> lại set toàn bộ là <code>max-width</code>. Nên đổi lại theo một cách, để có không có những sai lệch khi responsive.</p>
+</li>
+<li>
+<p>Phần <code>Header</code> chưa hiển thị đúng với màn hình desktop.</p>
+</li>
+<li>
+<p>Nên đặt class chung cho những phần nội dung có style giống nhau và set css cho class đó: các section, những thành phần trong section (h5, h2, p), các button.</p>
+</li>
+<li>
+<p><code>Ảnh</code>: Nhiều ảnh chưa có nội dung thuộc tính <code>alt</code>. Chưa set kích thước / set kích thước chưa đúng. Trường hợp với ảnh khác có kích thước bất kì thì giao diện có thể sẽ bị vỡ. Nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.</p>
+</li>
+<li>
+<p><code>Chữ</code>: Mã màu của tất cả những chữ đen chưa đúng. Rất nhiều phần chữ chưa được set line-height như bài mẫu (vd: h2, p). Cần chú ý thêm css <code>text-transform: uppercase</code> cho những phần chữ in hoa, thêm <code>text-transform: capitalize</code> cho những phần chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>Link css vào file HTML nên để link css của cách thư viện ở trên, link css của bài ở dưới cùng. Để có thể ghi đè CSS của thư viện nếu cần.</p>
+</li>
+</ul>
+<p>CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:</p>
+<p>Phần <code>header-end</code>:</p>
+<ul>
+<li>Button <code>btn-order</code> hover vào bị giật, do khi hover có thêm border. Nên dùng <code>outline</code> để thêm đường viền vì outline không thay đổi kích thước, vị trí của phần tử nên sẽ không bị giật.</li>
+</ul>
+<p>Phần section <code>service</code>:</p>
+<ul>
+<li>Khoảng cách: khoảng cách từ phía trên của section với phần nội dung (tổng 160px) đang lớn hơn bài mẫu (100px). Khoảng cách giữa <code>h2</code> và <code>service-detail</code> chưa đúng.</li>
+</ul>
+<p>Phần section <code>choose</code> , <code>home</code>: Khoảng cách giữa <code>h2</code> và chữ ở thẻ <code>p</code> chưa giống bài mẫu.</p>
+<p>Phần <code>footer</code>: Khoảng cách trên dưới chưa đúng, cần lớn hơn. Ở bài mẫu không có đường kẻ ngăn cách <code>footer-bottom-line</code>.</p>
+</li>
+<li>
+<p>[x] [Màn max-width: 1500px]: Làm bài tốt. Chỉ có những lưu ý &amp; lỗi chung ở trên. Và thêm lỗi này:</p>
+<ul>
+<li>Phần <code>left-content-top-text</code>: kích thước cả phần này đang to hơn bài mẫu, do font-size lớn. Phần <code>h1 &gt; span</code> có font-weight chưa đúng, cần đậm hơn.</li>
+</ul>
+</li>
+<li>
+<p>[x] [Màn max-width: 1399px]:</p>
+<ul>
+<li>Phần <code>left-content-top-text</code> lỗi như ở màn max-width: 1500px.</li>
+</ul>
+<p>Phần chữ chưa đúng:</p>
+<p><img src="images/minhquang_2.png" alt="Minh Quang - man hinh 1399px"></p>
+<p>Phần <code>left-content-bottom-btn</code>: 2 button này đang bị đè lên nhau. Cần chỉnh lại phần flexbox này.</p>
+<p><img src="images/minhquang_1.png" alt="Minh Quang - man hinh 1399px"></p>
+<p>Phần section <code>choose</code>: Nội dung chữ bên cột phải chưa đúng</p>
+<p><img src="images/minhquang_3.png" alt="Minh Quang - man hinh 1399px"></p>
+</li>
+<li>
+<p>[x] [Màn max-width: 1199px]: Bài làm tốt. Xác định sai breakpoint, ở bài mẫu breakpoint 1199px, bạn đang làm là 1200px. Phần <code>left-content-bottom-btn</code> chữ và ảnh bị lệch, không căn giữa.</p>
+</li>
+<li>
+<p>[x] [Màn max-width: 991px]: Bài làm chưa tốt. Chưa giống bài mẫu về các khoảng cách, font-size chữ.</p>
+<ul>
+<li>
+<p>Phần <code>service-detail</code> 3 item chiều cao không bằng nhau. Cần set 3 item có chiều cao bằng nhau.</p>
+</li>
+<li>
+<p>Sai bố cục: thứ tự đúng là ảnh -&gt; chữ -&gt; ảnh -&gt; chữ</p>
+<p><img src="images/minhquang_4.png" alt="Minh Quang - man hinh 991px"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] [Màn max-width: 767px], [Màn max-width: 575px], [Màn max-width: 420px]: Bài làm chưa tốt. Các lỗi tương tự như ở màn 991px</p>
+<p>Phần <code>app-content-btn</code> chưa căn giữa, khoảng cách giữa 2 button chưa đúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Nên set @media cho toàn bài theo 1 chiều (hoặc <code>min-width</code>, hoặc <code>max-width</code>). HTML cần chú ý đặt tên class chung cho những phần có style giống nhau. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình.</li>
+</ul>
 <h1>Tuyết đánh giá bài học viên</h1>
 <h2><a href="https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11.git">Trung Le</a></h2>
 <ul>

@@ -451,6 +451,135 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   **[Xem ảnh](images/ngomanhson375.png)**
 
+
+
+
+## [Hoài Nam Đỗ](https://oaihman25.github.io/btvn/day11/ex01.html)
+
+- [x] [Bài 1](https://oaihman25.github.io/btvn/day11/ex01.html)
+
+  Bài làm **không tốt** \*
+
+  Chưa hoàn thiện responsive cho những breakpoint sau:
+
+    - `width:1399px`: chưa css lại các khoảng cách.
+
+    - `width:1199px`: mới chỉ có responsive phần footer. Chưa css lại các khoảng cách. Giao diện bị lệch sang phải do ảnh ở các section set width cứng, khi màn nhỏ nó không co lại theo.
+
+    - `width:991px, 757px, 575px, 420px, 375px`: Chưa hoàn thiện ( xác định sai một breakpoint, bài mẫu là `575px`, bạn đang làm là `576px`.)
+
+- [x] [Màn min-width: 1400px]
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:
+
+  - Các section: Khoảng cách trên, dưới, trái, phải chưa đúng.
+
+  - `Ảnh`: Nhiều ảnh chưa set kích thước / set kích thước chưa đúng. Trường hợp đổi ảnh khác với kích thước bất kì khác thì giao diện sẽ bị vỡ. Nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.
+
+  - `Chữ`: Mã màu của tất cả những chữ đen chưa đúng. Rất nhiều phần chữ chưa được set line-height như bài mẫu (vd: h2, p). Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - `button`: chưa đúng font-family. Chưa xử lý hover. Chưa set `cursor:pointer`.
+
+  - Chưa format code. Xóa phần nhúng link fontawesome nếu không dùng đến. Check xóa comment css thừa.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+  Phần Header: chưa hoàn thiện.
+
+    - Các item chưa căn giữa theo chiều ngang (set thêm align-items:center). Phần search thiếu icon kính lúp. Thiếu phần giỏ hàng.
+
+    - Các nav item: Chưa active `Home`, Chưa xử lý hover đổi màu chữ. Kích thước của nav item đang bị nhỏ nên sẽ hơi khó để cho người dùng chọn được đúng vào.
+
+  Phần secttion: 2 cột trái phải trong section chưa được căn giữa nhau theo chiều ngang.
+
+  Phần `What we Serve` chưa đúng: màu của hình icon, Khoảng cách giữa ảnh và `h3`, lớp layer màu có vị trí và animation chưa đúng chưa đúng.
+
+  Phần section tải app: 2 button link nên dùng `a` bọc ngoài, vì đây là link.
+
+  Phần Footer: 
+    
+    - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng: Copyright.
+
+    - Các cột đang căn giữa (do set align-items:center) theo chiều ngang, khác với bản mẫu là căn top.
+
+    - Các link ở `footer` chưa xử lý khi hover ở PC sẽ đổi màu chữ.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. HTML cần chú ý dùng thẻ semantic, đặt tên class phù hợp. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình. Cần làm thêm responsive đầy đủ, hoàn thiện và nộp lại.
+
+## [Minh Quang](https://taminhquang13.github.io/F8_Fullstack/BT11/)
+
+- [x] [Bài 1](https://taminhquang13.github.io/F8_Fullstack/BT11/)
+
+  Bài làm tốt \*
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI TRONG TOÀN BÀI CẦN CHÚ Ý VÀ SỬA:
+
+  - CSS @media các phần `grid system`, `container` dùng của boostrap đang set toàn bộ là `min-width`. Nhưng trong bài ở file `style.css` lại set toàn bộ là `max-width`. Nên đổi lại theo một cách, để có không có những sai lệch khi responsive.
+
+  - Phần `Header` chưa hiển thị đúng với màn hình desktop.
+
+  - Nên đặt class chung cho những phần nội dung có style giống nhau và set css cho class đó: các section, những thành phần trong section (h5, h2, p), các button.
+
+  - `Ảnh`: Nhiều ảnh chưa có nội dung thuộc tính `alt`. Chưa set kích thước / set kích thước chưa đúng. Trường hợp với ảnh khác có kích thước bất kì thì giao diện có thể sẽ bị vỡ. Nên set width bằng 100% thẻ cha, hoặc set cứng một giá trị cụ thể phù hợp và thêm max-width, height, object-fit,... để căn chỉnh thêm.
+
+  - `Chữ`: Mã màu của tất cả những chữ đen chưa đúng. Rất nhiều phần chữ chưa được set line-height như bài mẫu (vd: h2, p). Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+  - Link css vào file HTML nên để link css của cách thư viện ở trên, link css của bài ở dưới cùng. Để có thể ghi đè CSS của thư viện nếu cần.
+
+  CÁC ĐIỂM CHƯA TỐT, LỖI Ở CÁC PHẦN RIÊNG:
+
+  Phần `header-end`:
+
+    - Button `btn-order` hover vào bị giật, do khi hover có thêm border. Nên dùng `outline` để thêm đường viền vì outline không thay đổi kích thước, vị trí của phần tử nên sẽ không bị giật.
+
+  Phần section `service`:
+
+    - Khoảng cách: khoảng cách từ phía trên của section với phần nội dung (tổng 160px) đang lớn hơn bài mẫu (100px). Khoảng cách giữa `h2` và `service-detail` chưa đúng.
+
+  Phần section `choose` , `home`: Khoảng cách giữa `h2` và chữ ở thẻ `p` chưa giống bài mẫu.
+
+  Phần `footer`: Khoảng cách trên dưới chưa đúng, cần lớn hơn. Ở bài mẫu không có đường kẻ ngăn cách `footer-bottom-line`.
+
+- [x] [Màn max-width: 1500px]: Làm bài tốt. Chỉ có những lưu ý & lỗi chung ở trên. Và thêm lỗi này:
+
+   - Phần `left-content-top-text`: kích thước cả phần này đang to hơn bài mẫu, do font-size lớn. Phần `h1 > span` có font-weight chưa đúng, cần đậm hơn.
+
+- [x] [Màn max-width: 1399px]: 
+
+  - Phần `left-content-top-text` lỗi như ở màn max-width: 1500px.
+
+  Phần chữ chưa đúng: 
+
+  ![Minh Quang - man hinh 1399px](images/minhquang_2.png)
+
+  Phần `left-content-bottom-btn`: 2 button này đang bị đè lên nhau. Cần chỉnh lại phần flexbox này.
+  
+  ![Minh Quang - man hinh 1399px](images/minhquang_1.png)
+
+  Phần section `choose`: Nội dung chữ bên cột phải chưa đúng
+
+  ![Minh Quang - man hinh 1399px](images/minhquang_3.png)
+
+- [x] [Màn max-width: 1199px]: Bài làm tốt. Xác định sai breakpoint, ở bài mẫu breakpoint 1199px, bạn đang làm là 1200px. Phần `left-content-bottom-btn` chữ và ảnh bị lệch, không căn giữa.
+
+- [x] [Màn max-width: 991px]: Bài làm chưa tốt. Chưa giống bài mẫu về các khoảng cách, font-size chữ.
+
+  - Phần `service-detail` 3 item chiều cao không bằng nhau. Cần set 3 item có chiều cao bằng nhau.
+
+  - Sai bố cục: thứ tự đúng là ảnh -> chữ -> ảnh -> chữ
+
+    ![Minh Quang - man hinh 991px](images/minhquang_4.png)
+
+- [x] [Màn max-width: 767px], [Màn max-width: 575px], [Màn max-width: 420px]: Bài làm chưa tốt. Các lỗi tương tự như ở màn 991px
+
+  Phần `app-content-btn` chưa căn giữa, khoảng cách giữa 2 button chưa đúng.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Nên set @media cho toàn bài theo 1 chiều (hoặc `min-width`, hoặc `max-width`). HTML cần chú ý đặt tên class chung cho những phần có style giống nhau. CSS: chú ý những tiểu tiết ở bản mẫu để căn chỉnh khoảng cách, style kiểu chữ, màu, kích thước hình ảnh, xử lý hover sao cho giống bản mẫu nhất có thể ở các kích thước màn hình. 
+
 # Tuyết đánh giá bài học viên
 
 ## [Trung Le](https://github.com/Trungdeptraii/09-07-2023-Le-Van_Trung-Day11.git)
