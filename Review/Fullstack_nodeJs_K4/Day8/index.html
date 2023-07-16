@@ -1,0 +1,235 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day8</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/Le-Hung-020903/f8-fullstack-k4/tree/main/buoi_8">Lê Đình Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p><code>USAGE</code> đang viết sai chính tả là <code>USEGE</code>.</p>
+<p>Độ dày của text trong bài làm đang mỏng hơn so với bản mẫu.</p>
+<p>Icon mũi tên ở menu cấp 1 nên đặt kích thước nhỏ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Độ dày tên sản phẩm đang mỏng hơn so với bản mẫu.</p>
+<p>Nên xử lý hiển thị tên sản phẩm theo kiểu rút gọn có dấu <code>...</code> để khi tên sản phẩm quá dài sẽ không bị vỡ layout. Có thể tham khảo đoạn code sau đây:</p>
+<pre><code class="language-css">display: -webkit-box;
+-webkit-line-clamp: 3; /*Số dòng muốn hiển thị*/
+-webkit-box-orient: vertical;
+overflow: hidden; /*Ẩn nội dung vượt quá sẽ bị ẩn đi*/
+</code></pre>
+<p>Nên tuân thủ bản mẫu, ở đây số lượng sản phẩm được hiển thị là 1 chứ không phải 01</p>
+<p>Phần text dùng để hiển thị giá đang đậm hơn so với bản mẫu.</p>
+<p>Ở sản phẩm thứ 4 phần giá đang bị xuống hàng do độ rộng không đủ để hiển thị trên 1 hàng nên xử lý lại.</p>
+<p>Phần transition hover vào button đang không thân thiện với người dùng vì thời gian khi hover vào không thực hiện luôn mà lại delay 0.3s và ngoài ra thời gian thực hiện là 0.5s khá lâu. Không nên để delay ở trường hợp này và điều chỉnh lại thời gian thực hiện tối đa là 0.4s sẽ tốt cho trải nghiệm người dùng hơn.</p>
+<p>Phần border của button <code>View Cart</code> đang đậm hơn so với bản mẫu</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Phần transition không nên để delay trong trường hợp này.</p>
+<p>Ở đây nội dung trong <code>service-item__desc</code> đang giống hệt nhau nên chắc chắn các button sẽ thẳng hàng nhau nhưng khi nội dung đoạn văn của 1 item ngắn hơn thì sẽ kéo theo button bị lệch so với các hàng khác. Do bản mẫu có item có đoạn mô tả ngắn nhưng các button vẫn thẳng hàng nhau. Bài này chưa xử lý trường hợp đó.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, tuy nhiên cần lưu ý khi dùng thuộc tính <code>transition</code> và một số lỗi khác để hoàn thiện bài làm hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/chinam197/baitapvenha">Nguyễn Chí Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p><code>Blocks</code> đang viết sai chính tả là <code>Blogks</code></p>
+<p>Phần menu cấp 2 ở mục Documentation bị lệch so với các mục khác.</p>
+<p>Xử lý chưa tốt phần menu cấp 2 vì hiện tại không thao tác được với menu cấp 2 do khi di chuyển chuột ra khỏi tên menu cấp 1 bị mất hover nên menu cấp 2 sẽ bị ẩn đi.</p>
+<p>Cần sửa lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt</p>
+<p>Không tuân thủ màu như bản mẫu ở nhiều chỗ.</p>
+<p>Background của sản phẩm màu đậm hơn so với bản mẫu.</p>
+<p>Tên sản phẩm cần đặc biệt lưu ý về cách trình bày tên sản phẩm cho chỉnh chu và theo bản mẫu các chữ cái đầu phải viết hoa.</p>
+<p>Xử lý chưa tốt phần border miêu tả số lượng sản phẩm.</p>
+<p>Phần giá của từng sản phẩm độ dày đang dày hơn ở bản mẫu.</p>
+<p>Độ rộng của layout đang bị rộng hơn so với bản mẫu.</p>
+<p><code>Cart</code> viết sai chính tả đang viết là <code>card</code>.</p>
+<p>Khối bao quanh sản phẩm đến hết không nên dùng thẻ <code>form</code>, sai ngữ nghĩa về mặt HTML.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Khi sử dụng <code>font-family</code> nên sử dụng font chữ đề phòng ở sau font chữ muốn sử dụng để phòng trường hợp font chữ chính bị lỗi sẽ có font chữ khác dự phòng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm đa phần không chỉnh chu, cần đặc biệt lưu ý để cải thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/KIENTT99/F8-Fullstack-k4/tree/main/ngay_8">Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Xử lý chưa tốt phần menu cấp 2 vì hiện tại không thao tác được với menu cấp 2 do khi di chuyển chuột ra khỏi tên menu cấp 1 bị mất hover nên menu cấp 2 sẽ bị ẩn đi.</p>
+<p>Phần menu cấp 2 làm không chỉnh chu, lệch nhiều so với bản mẫu cần sửa lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Vì không set <code>height</code> nên sang màn hình to hơn thì khối <code>shopping</code> có chiều cao ngắn hơn so với chiều cao của màn hình to.</p>
+<p>Số <code>4</code> ở trên chữ <code>Shopping Cart</code> xử lý chưa được tốt, đang bị lệch.</p>
+<p>Background của các sản phẩm chưa đúng so với bản mẫu.</p>
+<p>Độ dày của phần giá sản phẩm hơi mỏng và kích thước hơi nhỏ so với bản mẫu.</p>
+<p>Font chữ của <code>Subtotal</code>, font chữ của 2 button đang không đúng font chữ yêu cầu đề bài.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Tổng quan font chữ quá nhỏ, gây khó chịu cho người dùng khi sử dụng web.</p>
+<p>Vì đây chỉ là 1 section trong một trang web nên việc sử dụng thẻ <code>h1</code> cho tiêu đề là không hợp lý.</p>
+<p>Việc sử dụng thẻ <code>form</code> bao tất cả section này cũng không đúng về mặt ngữ nghĩa của HTML.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm hầu như chưa tốt, cần chú ý hơn về cách làm bài tập sao cho giống với bản mẫu và cần chỉnh chu hơn để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-8">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+<p>Số 4 ở trên tiêu đề <code>Shopping Cart</code> xử lý chưa tốt lắm đang bị lệch.</p>
+<p>Chữ thể hiện tên sản phẩm có màu hơi đậm so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Tiêu đề chính, tiêu đề của các item đang dùng sai font chữ so với yêu cầu đề bài.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt chỉ cần lưu ý một số lỗi nhỏ để có thể hoàn thiện hơn đặc biệt là vấn đề sử dụng font chữ.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-8">Đặng Khải</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p>Ở trường hợp này không nên sử dụng <code>transition-delay</code> khi hover vào các item.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt có tính sáng tạo, rất chỉnh chu, cố gắng tiếp tục phát huy ở các bài tập sau.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day08">Vinh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+<p>Chữ thể hiện giá sản phẩm đang có độ dày mỏng hơn so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, tiếp tục cố gắng ở các bài tập sau.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-08">Tuấn Kiệt Hoàng</a></h2>
+<p><strong>Nộp muộn</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt</p>
+<p>Ở menu cấp 1, mũi tên chỉ xuống nên căn giữa sẽ đẹp hơn.</p>
+<p>Ở menu cấp 2, khoảng cách giữa các mục đang hơi thấp nên tổng quan nhìn menu cấp 2 sẽ bị nhiều chữ và không thoáng. Ngoài ra có cột chưa được căn thẳng hàng nhau. Cần chỉnh sửa lại cho đúng với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Chưa có số lượng sản phẩm ở trên tiêu đề <code>Shopping Cart</code>.</p>
+<p>Background sản phẩm đang không giống với bản mẫu.</p>
+<p>Phần số lượng của từng sản phẩm cụ thể cần tuân thủ theo bản mẫu.</p>
+<p>Chữ <code>Spend $ 499.00 to Free Shipping</code> có độ dày mỏng hơn so với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt.</p>
+<p>Sai font chữ so với bản mẫu, đây là lỗi cơ bản nhất khi xây dựng layout, cần hết sức chú ý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm ở mức khá và cần lưu ý một số lỗi nhỏ đặc biệt là font chữ ở bài 3, cần tuân thủ theo bản mẫu và chỉnh chu hơn khi làm bài tập.</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
