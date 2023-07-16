@@ -1,0 +1,251 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day7</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/dungng1321/f8-BackEnd-NodeJS-k1/tree/feature/day-7">Nguyễn Đức Dũng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra tất cả các trường hợp có thể xảy ra khi làm việc với mảng:</p>
+<ul>
+<li>
+<p>Kiểm tra đầu vào có phải là một mảng hay không? Nếu không phải là mảng cần thông báo cho hợp lý trong trường hợp này.</p>
+</li>
+<li>
+<p>Kiểm tra trong 2 mảng đầu vào có mảng nào trống hay không? Tương tự nếu có mảng trống sẽ thông báo như nào cho hợp lý.</p>
+</li>
+<li>
+<p>Nên tính đến trường hợp 2 mảng không có phần tử nào giống nhau thì thông báo cho người dùng biết sẽ hợp lý hơn.</p>
+</li>
+</ul>
+<p>Hiện tại, chưa kiểm tra nếu trong <code>same</code> đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào <code>same</code> nữa. Cần sửa lại, nếu để như hiện tại thì trong <code>same</code> sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra điều kiện đầu vào như nhận xét ở bài 1.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra điều kiện đầu vào như nhận xét ở bài 1.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, tuy nhiên cần lưu ý một số điều kiện cần kiểm tra khi làm việc với mảng để hoàn thiện bài làm hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi7">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm sử dụng phương thức <code>reduce</code> để giải quyết bài toán tuy nhiên trong điều kiện if ở trong vòng lặp reduce đang có một số vấn đề:</p>
+<ul>
+<li>
+<p>Chưa kiểm tra là nếu phần tử <code>current</code> hiện tại đã có trong result rồi thì không push vào nữa.</p>
+<pre><code class="language-js">var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+var arr2 = [6, 4, 20, 11];
+//Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+</code></pre>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (arr2.includes(current) &amp;&amp; !prev.includes(current)) {
+  prev.push(current);
+}
+</code></pre>
+</li>
+<li>
+<p>Chưa tính đến trường hợp giữa 2 mảng không có phần tử nào giống nhau thì Output sẽ như thế nào cho hợp lý.</p>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (result.length === 0) {
+  console.log(&quot;Không có phần tử giao giữa hai mảng&quot;);
+} else {
+  console.log(&quot;Kết quả giao giữa hai mảng là&quot;, result);
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt</p>
+<p>Vì sử dụng phương thức Number đối với mảng nên khi mảng rỗng nó sẽ chuyển về số 0, điều này làm cho kết quả không đúng nếu như trong mảng đầu vào có mảng rỗng.</p>
+<p>Sử dụng phương thức <code>split</code> ngăn cách các phần tử bởi dấu <code>,</code> điều này nếu như trong mảng phần tử như <code>&quot;7,8&quot;</code> thì kết quả sẽ không đúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Bài làm chỉ đúng với trường hợp input ở ví dụ nhưng nếu trường hợp nào mà kiểu dữ liệu không phải là <code>string</code>, <code>number</code>, <code>boolean</code> thì chưa xử lý trong bài những trường hợp ngoại lệ đó.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt nhưng cần chú ý hơn để giải quyết các trường hợp đặc biệt khi giải quyết một vấn đề nào đó.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-7">Nguyễn Nhất</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm sử dụng phương thức <code>reduce</code> để giải quyết bài toán tuy nhiên trong điều kiện if ở trong vòng lặp reduce đang có một số vấn đề:</p>
+<ul>
+<li>
+<p>Chưa kiểm tra là nếu phần tử <code>current</code> hiện tại đã có trong result rồi thì không push vào nữa.</p>
+<pre><code class="language-js">var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+var arr2 = [6, 4, 20, 11];
+//Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+</code></pre>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (arr2.includes(current) &amp;&amp; !prev.includes(current)) {
+  prev.push(current);
+}
+</code></pre>
+</li>
+<li>
+<p>Chưa tính đến trường hợp giữa 2 mảng không có phần tử nào giống nhau thì Output sẽ như thế nào cho hợp lý.</p>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (result.length === 0) {
+  console.log(&quot;Không có phần tử giao giữa hai mảng&quot;);
+} else {
+  console.log(&quot;Kết quả giao giữa hai mảng là&quot;, result);
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Hiện tại đang sử dụng phương thức <code>flat</code> để làm phẳng mảng với độ sâu là 3. Tuy nhiên nếu fix cứng độ sâu như vậy thì chỉ đúng trong trường hợp này. Nên giải quyết bài toán tổng quan nhất có thể.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra nếu đầu vào có một mảng rỗng thì sẽ xử lý như thế nào?</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, chỉ cần lưu ý kiểm tra một số trường hợp đặc biệt để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi7">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm sử dụng phương thức <code>reduce</code> để giải quyết bài toán tuy nhiên trong điều kiện if ở trong vòng lặp reduce đang có một số vấn đề:</p>
+<ul>
+<li>
+<p>Chưa kiểm tra là nếu phần tử <code>current</code> hiện tại đã có trong result rồi thì không push vào nữa.</p>
+<pre><code class="language-js">var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+var arr2 = [6, 4, 20, 11];
+//Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+</code></pre>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (arr2.includes(current) &amp;&amp; !prev.includes(current)) {
+  prev.push(current);
+}
+</code></pre>
+</li>
+<li>
+<p>Chưa tính đến trường hợp giữa 2 mảng không có phần tử nào giống nhau thì Output sẽ như thế nào cho hợp lý.</p>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (result.length === 0) {
+  console.log(&quot;Không có phần tử giao giữa hai mảng&quot;);
+} else {
+  console.log(&quot;Kết quả giao giữa hai mảng là&quot;, result);
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Nếu như trong mảng có phần tử không phải là số thì khi đó sẽ có phần tử NaN khi cố gắng chuyển đổi sang số. Cần tối ưu hơn.</p>
+<p>Sử dụng phương thức <code>split</code> ngăn cách các phần tử bởi dấu <code>,</code> điều này nếu như trong mảng phần tử như <code>&quot;7,8&quot;</code> thì kết quả sẽ không đúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt</p>
+<p>Bài làm chưa kiểm tra điều kiện của mảng đầu vào.</p>
+<p>Bài làm chỉ đúng với Input như ở ví dụ nhưng cần kiểm tra hết tất cả các trường hợp có thể xảy ra như 2 mảng có thể có 1 mảng là mảng rỗng hoặc có nhiều kiểu dữ liệu khác chứ không chỉ là 3 kiểu dữ liệu <code>string</code>, <code>number</code>, <code>boolean</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, chỉ cần lưu ý kiểm tra các trường hợp đặc biệt có thể xảy ra để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day07/js/ex01.js">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt. *</p>
+<p>Cần kiểm tra tất cả các trường hợp có thể xảy ra khi làm việc với mảng:</p>
+<ul>
+<li>
+<p>Kiểm tra đầu vào có phải là một mảng hay không? Nếu không phải là mảng cần thông báo cho hợp lý trong trường hợp này.</p>
+</li>
+<li>
+<p>Kiểm tra trong 2 mảng đầu vào có mảng nào trống hay không? Tương tự nếu có mảng trống sẽ phải thông báo ra màn hình.</p>
+</li>
+<li>
+<p>Nên tính đến trường hợp 2 mảng không có phần tử nào giống nhau thì thông báo cho người dùng biết sẽ hợp lý hơn.</p>
+</li>
+</ul>
+<p>Hiện tại, chưa kiểm tra nếu trong <code>same</code> đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào <code>same</code> nữa. Cần sửa lại, nếu để như hiện tại thì trong <code>same</code> sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra các điều kiện của đầu vào như nhận xét ở bài 1.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm chỉ đúng khi độ dài 2 mảng bằng nhau, nhưng khi độ dài 2 mảng khác nhau thì Output sẽ không đúng nữa:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true, 3],
+  [&quot;b&quot;, 2, false],
+];
+//Output: [['a', 'b'], [1, 2], [true, false], [3]].
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần lưu ý hơn các trường hợp đặc biệt khi làm việc với mảng và cần tính đến các trường hợp có thể xảy ra để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
