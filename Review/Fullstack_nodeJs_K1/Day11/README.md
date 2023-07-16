@@ -50,7 +50,7 @@ Hình ảnh ở `.delivery .hero-img, .favorite .hero-img, .download .hero-img` 
 
 Phần `.footer .section-desc` sai hoàn toàn so với bản mẫu.
 
-**[Xem ảnh](images/duonghiep1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep1500.png)**
 
 ---
 
@@ -62,7 +62,7 @@ Chưa xử lý action hover cho `.service-item`.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/duonghiep1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep1399.png)**
 
 ---
 
@@ -74,7 +74,7 @@ Chưa xử lý action hover cho `.service-item`.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/duonghiep1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep1199.png)**
 
 ---
 
@@ -90,7 +90,7 @@ Các item ở `.delivery-content, .favorite-content, .download-links` ở bản 
 
 Các item ở `.copyright, .copyright-links` trong bản mẫu là cùng một hàng, không phải là 2 hàng.
 
-**[Xem ảnh](images/duonghiep991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep991.png)**
 
 ---
 
@@ -102,7 +102,7 @@ Các phần `.hero-title, .section-title` có font-size nhỏ hơn bản mẫu.
 
 Các phần `.download-btn, .order-link` có kích thước nhỏ hơn bản mẫu.
 
-**[Xem ảnh](images/duonghiep767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep767.png)**
 
 ---
 
@@ -112,7 +112,7 @@ Bài làm rất tốt \*
 
 Các lỗi sai giống ở màn hình max-width: 767px.
 
-**[Xem ảnh](images/duonghiep575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep575.png)**
 
 ---
 
@@ -120,7 +120,7 @@ Các lỗi sai giống ở màn hình max-width: 767px.
 
 Bài làm rất tốt \*
 
-**[Xem ảnh](images/duonghiep420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep420.png)**
 
 ---
 
@@ -128,7 +128,7 @@ Bài làm rất tốt \*
 
 Bài làm rất tốt \*
 
-**[Xem ảnh](images/duonghiep375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/duonghiep375.png)**
 
 ---
 
@@ -150,7 +150,7 @@ Phần `.service__items__inner` có chiều rộng lớn hơn bản mẫu.
 
 Sai chính tả **hourse** -> **hours**.
 
-**[Xem ảnh](images/xuananh1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh1500.png)**
 
 ---
 
@@ -160,7 +160,7 @@ Bài làm tốt \*
 
 Một số lỗi sai giống như ở màn hình max-width: 1500px.
 
-**[Xem ảnh](images/xuananh1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh1399.png)**
 
 ---
 
@@ -170,7 +170,7 @@ Bài làm rất tốt \*
 
 Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
-**[Xem ảnh](images/xuananh1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh1199.png)**
 
 ---
 
@@ -182,7 +182,7 @@ Animation hiển thị menu chưa giống bản mẫu.
 
 Một số chiều rộng của các phần tử chưa giống bản mẫu.
 
-**[Xem ảnh](images/xuananh991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh991.png)**
 
 ---
 
@@ -192,7 +192,7 @@ Bài làm tốt \*
 
 Một số lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
-**[Xem ảnh](images/xuananh767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh767.png)**
 
 ---
 
@@ -200,7 +200,7 @@ Một số lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
 Bài làm rất tốt \*
 
-**[Xem ảnh](images/xuananh575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh575.png)**
 
 ---
 
@@ -212,7 +212,7 @@ Phần `.heading.lv2.service--lv2` chưa thu nhỏ font-size.
 
 Các `.service__items__inner` chưa thu nhỏ chiều cao.
 
-**[Xem ảnh](images/xuananh420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh420.png)**
 
 ---
 
@@ -222,7 +222,7 @@ Bài làm tốt \*
 
 Các lỗi sai tương tự như ở màn hình max-width: 420px.
 
-**[Xem ảnh](images/xuananh375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/xuananh375.png)**
 
 ---
 
@@ -242,7 +242,7 @@ Thiếu đổ bóng cho `.header .banner .btn img`
 
 Để ý thêm một chút về kích thước max-width của một số phần tử text.
 
-**[Xem ảnh](images/serenaha12-1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-1500.png)**
 
 ---
 
@@ -250,7 +250,7 @@ Thiếu đổ bóng cho `.header .banner .btn img`
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/serenaha12-1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-1399.png)**
 
 ---
 
@@ -258,7 +258,7 @@ Chưa có responsive ở màn hình này.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/serenaha12-1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-1199.png)**
 
 ---
 
@@ -266,7 +266,7 @@ Chưa có responsive ở màn hình này.
 
 Chưa có responsive ở màn hình này.
 
-**[Xem ảnh](images/serenaha12-991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-991.png)**
 
 ---
 
@@ -288,7 +288,7 @@ Các item trong bản mẫu là căn giữa chứ không phải căn trái.
 
 Phần `.download .content` để width là 100% nhưng chưa xóa `margin-left 100px` nên bị đẩy ra ngoài.
 
-**[Xem ảnh](images/serenaha12-767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-767.png)**
 
 ---
 
@@ -298,7 +298,7 @@ Bài làm chưa tốt
 
 Các lỗi sai giống như ở màn hình max-width: 767px.
 
-**[Xem ảnh](images/serenaha12-575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-575.png)**
 
 ---
 
@@ -306,7 +306,7 @@ Các lỗi sai giống như ở màn hình max-width: 767px.
 
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
-**[Xem ảnh](images/serenaha12-420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-420.png)**
 
 ---
 
@@ -314,7 +314,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 Các lỗi sai giống như ở màn hình max-width: 575px.
 
-**[Xem ảnh](images/serenaha12-375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/serenaha12-375.png)**
 
 ---
 
@@ -359,7 +359,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các hình ảnh đều to hơn bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson1500.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson1500.png)**
 
 ---
 
@@ -373,7 +373,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Chưa có responsive ở màn hình này.
 
-  **[Xem ảnh](images/ngomanhson1399.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson1399.png)**
 
 ---
 
@@ -383,7 +383,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các lỗi sai giống như ở màn hình max-width: 1399px.
 
-  **[Xem ảnh](images/ngomanhson1199.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson1199.png)**
 
 ---
 
@@ -397,7 +397,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Hiệu ứng đóng, mở menu chưa giống bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson991.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson991.png)**
 
 ---
 
@@ -409,7 +409,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các hình ảnh quá to so với bản mẫu.
 
-  **[Xem ảnh](images/ngomanhson767.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson767.png)**
 
 ---
 
@@ -429,7 +429,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Nên để kích thước của các phần đã set 390px là 100% để tránh vỡ layout.
 
-  **[Xem ảnh](images/ngomanhson575.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson575.png)**
 
 ---
 
@@ -439,7 +439,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các lỗi sai giống như ở màn hình max-width: 575px.
 
-  **[Xem ảnh](images/ngomanhson420.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson420.png)**
 
 ---
 
@@ -449,7 +449,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   Các lỗi sai giống như ở màn hình max-width: 420px.
 
-  **[Xem ảnh](images/ngomanhson375.png)**
+  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/ngomanhson375.png)**
 
 
 
@@ -636,7 +636,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Chưa hoàn thiện nội dung, thiếu phần nội dung cuối cùng:
 
-    **[Xem ảnh](images/trung-le-1.1.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/trung-le-1.1.png)**
 
   - Nên set padding cho thẻ cha (`.footer`), chứ không nên set `margin-top` cho từng thẻ con bên trong (`.content`)
 
@@ -666,11 +666,11 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Chú ý nên comment HTML thống nhất: 'ENDS-->END', chữ 'END' viết đầu cả / viết cuối cả
 
-    **[Xem Ảnh](images/luu_anh_quan_1.3.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.3.png)**
 
   - Cần xóa bỏ code và comment thừa trong HTML:
 
-    **[Xem ảnh](images/luu_anh_quan_1.1.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.1.png)**
 
   LỖI Ở CÁC PHẦN RIÊNG:
 
@@ -678,7 +678,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Cần chỉnh css flexbox lại để các item có width ôm cả content, tránh không để chèn như thế này:
 
-    **[Xem ảnh](images/luu_anh_quan_1.2.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.2.png)**
 
   - `btn-process` cần thêm `cursor:pointer` cho màn PC.
 
@@ -714,7 +714,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
   - Xử lý responsive lại phần này cho tất cả màn hình từ 991px trở xuống. Lỗi khi resize về màn nhỏ, chọn mở menu, resize ra màn lớn thì menu vẫn còn bug này:
 
-    **[Xem ảnh](images/luu_anh_quan_1.4.png)**
+    **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/luu_anh_quan_1.4.png)**
 
   - Chưa responsive cho khoảng cách trên dưới của 3 section `feature, feature-2, cta`.
 
@@ -744,7 +744,7 @@ Phần `.hero__heading`, `.serve__heading`, `.favorite__title`, `.app__tittle`..
 
 Các phần hình ảnh đều to hơn bản mẫu.
 
-**[Xem ảnh](images/phamtuan162-1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-1500.png)**
 
 ---
 
@@ -756,7 +756,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Khoảng cách giữa các phần tử chưa giống bản mẫu.
 
-**[Xem ảnh](images/phamtuan162-1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-1399.png)**
 
 ---
 
@@ -768,7 +768,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Các font chữ, hình ảnh chưa thu nhỏ.
 
-**[Xem ảnh](images/phamtuan162-1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-1199.png)**
 
 ---
 
@@ -780,7 +780,7 @@ Chiều rộng phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Các font chữ, hình ảnh chưa thu nhỏ.
 
-**[Xem ảnh](images/phamtuan162-991.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-991.png)**
 
 ---
 
@@ -788,7 +788,7 @@ Các font chữ, hình ảnh chưa thu nhỏ.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
-**[Xem ảnh](images/phamtuan162-767.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-767.png)**
 
 ---
 
@@ -796,7 +796,7 @@ Các lỗi sai vẫn giống như ở màn hình max-width: 991px.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 767px.
 
-**[Xem ảnh](images/phamtuan162-575.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-575.png)**
 
 ---
 
@@ -804,7 +804,7 @@ Các lỗi sai vẫn giống như ở màn hình max-width: 767px.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 575px.
 
-**[Xem ảnh](images/phamtuan162-420.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-420.png)**
 
 ---
 
@@ -812,7 +812,7 @@ Các lỗi sai vẫn giống như ở màn hình max-width: 575px.
 
 Các lỗi sai vẫn giống như ở màn hình max-width: 420px.
 
-**[Xem ảnh](images/phamtuan162-375.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/phamtuan162-375.png)**
 
 ---
 
@@ -861,7 +861,7 @@ Có dòng code thừa trong file CSS
 }
 ```
 
-**[Xem ảnh](images/namnguyen2603-1500.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1500.png)**
 
 ---
 
@@ -871,7 +871,7 @@ Chưa có responsive ở màn hình này.
 
 Các lỗi sai giống như ở màn hình max-width: 1500px.
 
-**[Xem ảnh](images/namnguyen2603-1399.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1399.png)**
 
 ---
 
@@ -883,4 +883,4 @@ Phần hiển thị các phần tử đang to hơn bản mẫu.
 
 Các lỗi sai giống như ở màn hình max-width: 1399px.
 
-**[Xem ảnh](images/namnguyen2603-1199.png)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day11/images/namnguyen2603-1199.png)**

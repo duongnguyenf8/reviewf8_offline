@@ -18,11 +18,11 @@
 
   - HTML: `/Fullstack_nodeJs_K1/Day12/index.html`
 
-  - Hình ảnh: `/Fullstack_nodeJs_K1/Day12/images`
+  - Hình ảnh: `https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/Fullstack_nodeJs_K1/Day12/images`
 
 ## [Nguyen Xuan Tuan Anh](https://github.com/xuananh2212/full_stack_01/tree/main/day_12)
 
-- Sớm nhất \*
+    Sớm nhất *
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
@@ -42,8 +42,8 @@
 
   Thiếu box-shadow tại 2 button.
 
-  **[Xem ảnh-Login](images/tuananh2212-login-1500.png)**
-  **[Xem ảnh-Register](images/tuananh2212-register-1500.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-1500.png)**
 
 ---
 
@@ -55,10 +55,10 @@
 
   Phần `.container` chưa căn giữa. Vì `.container` sử dụng `margin: 0 25px`
 
-  ![Tuan Anh](tuananh1365.png)
+  ![Tuan Anh](images/tuananh1365.png)
 
-  **[Xem ảnh-Login](images/tuananh2212-login-1365.png)**
-  **[Xem ảnh-Register](images/tuananh2212-register-1365.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-1365.png)**
 
 ---
 
@@ -70,8 +70,8 @@
 
   Cực kỳ chuẩn giao diện
 
-  **[Xem ảnh-Login](images/tuananh2212-login-960.png)**
-  **[Xem ảnh-Register](images/tuananh2212-register-960.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-960.png)**
 
 ---
 
@@ -83,9 +83,78 @@
 
   Cực kỳ chuẩn giao diện, tuy có hơi lệch một vài px.
 
-  **[Xem ảnh-Login](images/tuananh2212-login-480.png)**
-  **[Xem ảnh-Register](images/tuananh2212-register-480.png)**
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/imagesimages/tuananh2212-register-480.png)**
 
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm một số màn hình ở mức giữa, chú ý thêm về size các ảnh và các phần tử.
+
+---
+
+## [Dương Hiệp](https://duonghiep416.github.io/duonghiep_f8_fullstack/Day12/)
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm rất tốt \*
+
+  Thiếu phần hình tròn ở bên phải màn hình.
+
+  Sai icon ở `.page-info .logo i`.
+
+  Có thể rút gọn 2 input radio bằng một input checkbox.
+
+  Chưa làm phần selection.
+
+  Chưa đổi màu khi hover vào `.forgot-password-link`
+
+  Chưa làm action translate khi hover vào các `.page-form .social-link`
+
+  Khi unfocus, chưa đổi lại màu viền các input.
+
+  Sai hiệu ứng khi hover vào nút.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-1500.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-1500.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px
+
+  Bài làm tốt
+
+  Lệch nhiều so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 1500px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-1365.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-1365.png)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px
+
+  Bài làm tốt
+
+  Lệch nhiều so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 1365px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-960.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-960.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px
+
+  Bài làm tốt
+
+  Hơi lệch một chút so với bản mẫu.
+
+  Các lỗi trước tương tự như màn hình 960px.
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-login-480.png)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/duonghiep-register-480.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về size các ảnh và các phần tử, chú ý kiểm tra lại các hiệu ứng.
