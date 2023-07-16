@@ -3,7 +3,9 @@
 ## [Hoang Van Thanh](https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_8)
 
 [x] [Bài 1]: Bài làm rất tốt \*
+
 Nên Cần giữa phần **icon** và phần **nội dung**.
+
 Đề Xuất.
 
 ```css
@@ -19,6 +21,7 @@ Nên Cần giữa phần **icon** và phần **nội dung**.
 ---
 
 [x] [Bài 3]: Bài làm rất tốt \*
+
 Thẻ p: tăng line-height `line-height: 1.7rem`.
 
 ---
@@ -40,8 +43,11 @@ Khi **hover** vào thẻ các `class=menu` thì **mega-menu** mới hiện thị
 ---
 
 [x] [Bài 2]:
+
 Ảnh bị méo.
+
 ![Alt text](images/ThaiDuyTien_b2.png).
+
 Đề Xuất:
 
 ```css
@@ -53,13 +59,16 @@ Khi **hover** vào thẻ các `class=menu` thì **mega-menu** mới hiện thị
 Phần `.body_item` nên thiết kế thanh cuộn lên xuống khi có nhiều sp để tăng tính trải nghiệm người dùng.
 
 Bị Vỡ Giao Diện.
+
 ![Alt text](images/ThaiDuyTien_b2.1.png);
+
 Code Lại bài 2.
 
 ---
 
 [x] [Bài 3]:
 Nên Bọc thẻ `<div class = "container">` trong thẻ `<section>` để chia layout cho dễ.
+
 Đề Xuất.
 
 ```css
@@ -70,8 +79,11 @@ Nên Bọc thẻ `<div class = "container">` trong thẻ `<section>` để chia 
 ```
 
 Khi nên để thẻ `<button` có thuộc tính là `position: absolute;`.
+
 Lỗi.
+
 ![Alt text](images/ThaiDuyTien_bai3.png).
+
 Đề Xuất.
 
 ```css
@@ -99,7 +111,9 @@ button {
 ---
 
 [x] [Bài 2]: Bài làm tốt \*
+
 Thiếu **đường** ngăn cách các sản phẩm.
+
 Đề Xuất.
 
 ```css
@@ -111,7 +125,9 @@ Thiếu **đường** ngăn cách các sản phẩm.
 ---
 
 [x] [Bài 3]: Bài làm rất tốt \*
+
 Thẻ `<p>` tăng `font-size: 15px`.
+
 Thẻ `<button>` tăng `padding: 12px 24px;`.
 
 ---
@@ -121,21 +137,29 @@ Thẻ `<button>` tăng `padding: 12px 24px;`.
 ## [Mạnh Huy](https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_08)
 
 [x] [Bài 1]: Bài làm tốt \*
+
 Thiếu đường ngăn cách giữa thẻ `<div  class ="elements-submenu">`.
+
 ![Alt text](images/ManhHuy_b1.png)
 
 ---
 
 [x] [Bài 2]: Bài làm rất tốt \*
+
 Thẻ `<ul class="shopping-cart-products">` nên thay giá trị của thuộc tính `overflow: auto`.
+
 Vì khi các items con có chiều dài và chiều rộng lớn hơn.
+
 Thì mới xuất hiện thanh cuốn ngang hoặc dọc.
 
 ---
 
 [x] [Bài 3]: Bài làm rất tốt \*
+
 Thẻ `<p>` tăng `line-height: 1.4rem`.
+
 Không lên đặt height cho `.service-item` vì khi tăng **nội dung** thẻ `<p>` nên sẽ bị vỡ giao diện.
+
 ![Alt text](images/ManhHuy_b3.png).
 
 ---
@@ -145,7 +169,9 @@ Không lên đặt height cho `.service-item` vì khi tăng **nội dung** thẻ
 ## [Hà Long Việt](https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_8)
 
 [x] [Bài 1]: Bài làm rất tốt \*
+
 Nên Cần giữa phần **icon** và phần **nội dung**.
+
 Đề Xuất.
 
 ```css
@@ -159,10 +185,15 @@ Nên Cần giữa phần **icon** và phần **nội dung**.
 ---
 
 [x] [Bài 2]: Bài làm tốt \*
+
 Thẻ `<section class="shopping-cart">` không nên đặt `height: 100vh`.
+
 Vì khi các phần tử con có height lớn hơn vw sẽ xuất hiện lỗi.
+
 Lỗi.
+
 ![Alt text](images/HaLongViet_b3.png).
+
 Đề Xuất.
 
 ```css
@@ -174,6 +205,7 @@ Lỗi.
 ---
 
 [x] [Bài 3]: Bài làm rất tốt \*
+
 Thẻ `<p>` tăng `line-height: 1.4rem`
 
 ---
