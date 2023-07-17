@@ -48,6 +48,15 @@ var arrB = [5, 2, 6, 7, 1];
 </li>
 </ul>
 <p>Hiện tại, chưa kiểm tra nếu trong <code>same</code> đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào <code>same</code> nữa. Cần sửa lại, nếu để như hiện tại thì trong <code>same</code> sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.</p>
+<pre><code class="language-js">var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+var arr2 = [6, 4, 20, 11];
+//Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+</code></pre>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (arr2.includes(current) &amp;&amp; !prev.includes(current)) {
+  prev.push(current);
+}
+</code></pre>
 </li>
 </ul>
 <hr>
@@ -282,36 +291,102 @@ var arr2 = [6, 4, 20, 11];
 <hr>
 <h2><a href="https://github.com/namdctry/f8-backend-k1/tree/main/btvn/btvn-b7">Nam Nguyen</a></h2>
 <ul>
-<li>[x] Bài 1:</li>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra tất cả các trường hợp có thể xảy ra khi làm việc với mảng:</p>
+<ul>
+<li>
+<p>Kiểm tra đầu vào có phải là một mảng hay không? Nếu không phải là mảng cần thông báo cho hợp lý trong trường hợp này.</p>
+</li>
+<li>
+<p>Kiểm tra trong 2 mảng đầu vào có mảng nào trống hay không? Tương tự nếu có mảng trống sẽ thông báo như nào cho hợp lý.</p>
+</li>
+<li>
+<p>Nên tính đến trường hợp 2 mảng không có phần tử nào giống nhau thì thông báo cho người dùng biết sẽ hợp lý hơn.</p>
+</li>
+</ul>
+<p>Hiện tại, chưa kiểm tra nếu trong <code>same</code> đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào <code>same</code> nữa. Cần sửa lại, nếu để như hiện tại thì trong <code>same</code> sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.</p>
+<pre><code class="language-js">var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+var arr2 = [6, 4, 20, 11];
+//Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+</code></pre>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (arr2.includes(current) &amp;&amp; !prev.includes(current)) {
+  prev.push(current);
+}
+</code></pre>
+</li>
 </ul>
 <hr>
 <ul>
-<li>[x] Bài 2:</li>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra điều kiện đầu vào như nhận xét ở bài 1.</p>
+</li>
 </ul>
 <hr>
 <ul>
-<li>[x] Bài 3:</li>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra điều kiện đầu vào như nhận xét ở bài 1.</p>
+</li>
 </ul>
 <hr>
 <ul>
-<li>[x] Đánh giá chung bài tập về nhà:</li>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm khá tốt, tuy nhiên cần lưu ý một số điều kiện cần kiểm tra khi làm việc với mảng để hoàn thiện bài làm hơn.</li>
 </ul>
 <hr>
 <h2><a href="https://github.com/palkma-byte/f8-backend-k1/blob/main/HW/HW7/hw7.js">Pham Hoang</a></h2>
 <ul>
-<li>[x] Bài 1:</li>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra tất cả các trường hợp có thể xảy ra khi làm việc với mảng:</p>
+<ul>
+<li>
+<p>Kiểm tra đầu vào có phải là một mảng hay không? Nếu không phải là mảng cần thông báo cho hợp lý trong trường hợp này.</p>
+</li>
+<li>
+<p>Kiểm tra trong 2 mảng đầu vào có mảng nào trống hay không? Tương tự nếu có mảng trống sẽ thông báo như nào cho hợp lý.</p>
+</li>
+<li>
+<p>Nên tính đến trường hợp 2 mảng không có phần tử nào giống nhau thì thông báo cho người dùng biết sẽ hợp lý hơn.</p>
+</li>
+</ul>
+<p>Hiện tại, chưa kiểm tra nếu trong <code>same</code> đã có phần tử giống nhau lần 1 rồi thì các vòng lặp sau nếu có phần tử đó sẽ không lưu kết quả vào <code>same</code> nữa. Cần sửa lại, nếu để như hiện tại thì trong <code>same</code> sẽ có những trường hợp 1 phần tử xuất hiện nhiều hơn 1 lần. Không đúng với yêu cầu bài toán.</p>
+<pre><code class="language-js">var arr1 = [1, 5, 11, 2, 6, 6, 6, 11];
+var arr2 = [6, 4, 20, 11];
+//Output: Kết quả giao giữa 2 mảng là 11,6,6,6,11
+</code></pre>
+<p>Đề xuất:</p>
+<pre><code class="language-js">if (arr2.includes(current) &amp;&amp; !prev.includes(current)) {
+  prev.push(current);
+}
+</code></pre>
+</li>
 </ul>
 <hr>
 <ul>
-<li>[x] Bài 2:</li>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
 </ul>
 <hr>
 <ul>
-<li>[x] Bài 3:</li>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm có sử dụng hàm <code>arrReduct</code> nhưng chưa khai báo ở trong bài 3 nên khi chạy sẽ nhận được lỗi là <code>arrReduct is not defined</code>.</p>
+<p>Nếu áp dụng hàm <code>arrReduct</code> ở bài 2 thì có kết quả trả về nhưng hiện tại kết quả chỉ lọc được các kiểu dữ liệu <code>number</code>, <code>string</code>, <code>boolean</code> để cho vào 3 mảng riêng nhưng nếu khác 3 kiểu dữ liệu trên thì chưa xử lý trường hợp này.</p>
+</li>
 </ul>
 <hr>
 <ul>
-<li>[x] Đánh giá chung bài tập về nhà:</li>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần lưu ý một số trường hợp đặc biệt để hoàn thiện hơn.</li>
 </ul>
 <hr>
 <h2><a href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB7">Dương Trung Kiên</a></h2>
