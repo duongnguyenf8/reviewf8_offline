@@ -2,24 +2,29 @@ import os
 import json
 
 
-def get_subfolders(path):
-    subfolders = {}
-    for entry in os.scandir(path):
-        if entry.is_dir():
-            subfolder_name = entry.name
-            subfolder_path = entry.path
-            subfolder_contents = get_subfolders(subfolder_path)
-            if subfolder_contents:
-                subfolders[subfolder_name] = list(subfolder_contents.keys())
-            else:
-                subfolders[subfolder_name] = []
-    return subfolders
+def get_subfolders_level_2(path):
+    subfolders_level_2 = {}
+    for subfolder_name in os.listdir(path):
+        subfolder_path = os.path.join(path, subfolder_name)
+        if os.path.isdir(subfolder_path):
+            subfolders_level_2[subfolder_name] = []
+            for subfolder_name_2 in os.listdir(subfolder_path):
+                subfolder_path_2 = os.path.join(
+                    subfolder_path, subfolder_name_2)
+                if os.path.isdir(subfolder_path_2):
+                    folder_number = int(subfolder_name_2[3:])
+                    subfolders_level_2[subfolder_name].append(f"Day{folder_number}")
+    return subfolders_level_2
 
 
 path = 'Review'
 
-subfolders = get_subfolders(path)
-json_data = json.dumps(subfolders)
+subfolders_level_2 = get_subfolders_level_2(path)
+
+for subfolder_name, subfolders in subfolders_level_2.items():
+    subfolders.sort(key=lambda x: int(x[3:]))
+
+json_data = json.dumps(subfolders_level_2)
 
 data_dir = 'assets/data'
 os.makedirs(data_dir, exist_ok=True)

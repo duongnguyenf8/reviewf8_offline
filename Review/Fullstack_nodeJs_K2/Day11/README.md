@@ -30,7 +30,7 @@
 
 ## [Đoàn Duy Chinh](https://duychinh.github.io/f8-fullstack-KS2/project1/index.html)
 
-- Sớm nhất \*
+    Sớm nhất \*
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
@@ -92,7 +92,7 @@
 
 - [x] Bài 5: Màn hình: max-width: 767px
 
-  Bài làm tốt 
+  Bài làm tốt
 
   Chưa thay đổi font chữ.
 
@@ -110,8 +110,7 @@
 
   Bài làm không tốt \*
 
-    Chưa có responsive cho màn hình mobile
-
+  Chưa có responsive cho màn hình mobile
 
 **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/duychinh575.png)**
 
@@ -121,8 +120,7 @@
 
   Bài làm tốt \*
 
-    Chưa có responsive cho màn hình mobile
-
+  Chưa có responsive cho màn hình mobile
 
 **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/duychinh420.png)**
 
@@ -132,11 +130,24 @@
 
   Bài làm không tốt \*
 
-    Chưa có responsive cho màn hình mobile
-
+  Chưa có responsive cho màn hình mobile
 
 **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/duychinh375.png)**
 
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Mới chỉ responsive ở các màn từ tablet đến desktop nhỏ. Chưa tính tới mobile, dosktop to. Bài làm chưa đủ tốt. Cần cố gắng hơn.
+
+## [Kiều Duy Tùng](https://stung16.github.io/ex_f8-fullstack/day11)
+
+    Sớm nhất \*
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm rất tốt \*
+
+  Các section đều có các style giống nhau, không nên sử dụng id để style, việc đó sẽ khiến lặp code không cần thiết. Nên sử dụng class để style.
+
+  Phần header nên tách riêng ra, không nên đưa vào thẻ main, **nên sử dụng thẻ header**, main chỉ để chứa các thông tin, nội dung chính của trang web, không nên chứa các phần header, footer, sidebar, ...
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/stung161500.png)**
