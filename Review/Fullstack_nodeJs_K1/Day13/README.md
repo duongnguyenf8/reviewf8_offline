@@ -138,7 +138,8 @@
   Phần `explore` là một phần của trang web, không thuộc `header`. Không nên để `explore` nằm trong header. Đối với màn hình nhỏ, phần `explore` bị mất nội dung.
 
   Phần `help center` đặt chưa được hợp lý, có thể tham khảo cách bố trí phần `explore`, `help center` trong hình sau:
-  ![Alt text](images/image.png)
+
+  ![Alt text](images/duyan.png)
 
 ---
 
@@ -187,11 +188,17 @@
 - [x] [Bài 1](https://serenaha12.github.io/ecommerce_ui/.)
 
   Màn hình trên > 1200px tất cả kích thước ảnh đang sai so với bản mẫu.
+
   ![Alt text](images/hachi_1.png)
+
   Từ Màn 992px => 1200px lỗi giao diện do để `.wrapper__inner` có `width: 1200px`.
+
   Màn Tablet cũng bị lỗi giao diện .
+
   Khoảng cách giữa các hình ảnh khá xa từ màn hình < 992px.
+
   ![Alt text](images/hachi_2.png).
+
   Không Có giao diện mobile(bổ sung thêm giao diện mobile).
 
 ---
@@ -203,6 +210,7 @@
 - [x] [Bài 1](https://duonghiep416.github.io/duonghiep_f8_fullstack/)
 
   Màn hình trên > 1200px làm tốt.
+
   ![Alt text](images/duonghiep_b1.png);
 
   Màn Tablet nên chỉnh phần **slide bar** đối xứng giao diện sẽ đẹp hơn.
@@ -218,9 +226,13 @@
 - [x] [Bài 1](https://github.com/namnguyen2603/nguyentrungnam_bai13.git)
 
   Màn hình trên > 1200px tất cả kích thước các ảnh đang sai so với mẫu thiết kế.
+
   ![Alt text](images/namnguyen_1.png).
+
   Nút `help center` chưa giống với thiết kế (Xem video hướng dẫn code trong **chương 8** để hiểu rõ hơn).
+
   Từ Màn hình < 1200px bị lỗi giao diện.
+
   Chưa có giao diện **mobile**.
 
 ---
@@ -232,8 +244,11 @@
 - [x] [Bài 1](https://github.com/anhquan2211/F8-OFFLINE)
 
   Màn hình trên > 1200px làm tốt.
+
   ![Alt text](images/luuAnhquan_1.png).
+
   Màn hình tablet làm tốt.
+
   Màn hình mobile làm tốt.
 
 ---
