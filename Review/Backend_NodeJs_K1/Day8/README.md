@@ -298,37 +298,37 @@
 
 ## [Nguyễn Nhất](https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-8)
 
-- [x] Bài 1:
+  - [x] Bài 1:
 
-  Bài làm chưa tốt.
+    Bài làm chưa tốt.
 
-  Chưa kiểm tra điều kiện mảng Customers phải là một mảng hợp lệ khi truyền vào, cần check các trường hợp nếu mảng là null hoặc undefined thì sẽ thông báo cho người dùng biết.
+    Chưa kiểm tra điều kiện mảng Customers phải là một mảng hợp lệ khi truyền vào, cần check các trường hợp nếu mảng là null hoặc undefined thì sẽ thông báo cho người dùng biết.
 
-  Cần kiểm tra trường hợp một trong các phần tử trong mảng là một đối tượng không có đầy đủ các thuộc tính `name` hoặc `age` hoặc `address`.
+    Cần kiểm tra trường hợp một trong các phần tử trong mảng là một đối tượng không có đầy đủ các thuộc tính `name` hoặc `age` hoặc `address`.
 
-  Và giá trị của các thuộc tính cần phải thoải mãn và hợp lệ như:
+    Và giá trị của các thuộc tính cần phải thoải mãn và hợp lệ như:
 
-  - Giá trị của thuộc tính name là một chuỗi hợp lệ và không phải là null hoặc undefined.
+    - Giá trị của thuộc tính name là một chuỗi hợp lệ và không phải là null hoặc undefined.
 
-  - Giá trị của thuộc tính age là một số nguyên dương hợp lệ.
+    - Giá trị của thuộc tính age là một số nguyên dương hợp lệ.
 
-  - Giá trị của thuộc tính address là một chuỗi hợp lệ và không phải là null hoặc undefined.
+    - Giá trị của thuộc tính address là một chuỗi hợp lệ và không phải là null hoặc undefined.
 
-  Thuộc tính `shortName` đang hiển thị không đúng ví dụ như user `Nguyen Văn Anh` thì shortName đang là `Nguyễn B`.
+    Thuộc tính `shortName` đang hiển thị không đúng ví dụ như user `Nguyen Văn Anh` thì shortName đang là `Nguyễn B`.
 
----
+  ---
 
-- [x] Bài 2:
+  - [x] Bài 2:
 
-  Bài làm tốt. \*
+    Bài làm tốt. \*
 
-  Đề bài yêu cầu khi khởi tạo thì không có thuộc tính role, khi tạo user sẽ tự động thêm thuộc tính `role` chứ không phải ban đầu khi tạo đã có thuộc tính đó.
+    Đề bài yêu cầu khi khởi tạo thì không có thuộc tính role, khi tạo user sẽ tự động thêm thuộc tính `role` chứ không phải ban đầu khi tạo đã có thuộc tính đó.
 
----
+  ---
 
-- [x] Đánh giá: Bài làm khá tốt chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.
+  - [x] Đánh giá: Bài làm khá tốt chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.
 
----
+  ---
 
 ## [Nguyễn Quang Minh](https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi8)
 
