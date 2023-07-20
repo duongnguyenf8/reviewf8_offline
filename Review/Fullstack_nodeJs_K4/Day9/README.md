@@ -218,7 +218,7 @@
 
 ---
 
-## [Hà Long Việt](https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_8)
+## [Hà Long Việt](images/https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_8)
 
 - [x] Bài 1:
 
@@ -247,3 +247,178 @@
 - [x] Đánh giá: Bài làm khá tốt ngoại trừ bài 3, cần đầu tư và chỉnh chu hơn khi làm bài tập về nhà.
 
 ---
+
+# tuấn anh đánh giá bài học viên
+
+## [Hoang Van Thanh](https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_8)
+
+- [x] [Bài 1]: Bài làm rất tốt \*
+
+  Không có hiệu ứng chuyển màu nền của nút **button** chuyển màu đột ngột.
+
+- [x] [Bài 2]: Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]: Bài làm rất tốt \*
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm hầu hết đều rất tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.
+
+---
+
+## [Huy Bui](https://github.com/Huy-Bui4869/f8_fullstack_k4/tree/main/Day_9)
+
+- [x] [Bài 1]: Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 2]: Bài làm tốt \*
+
+  Không Có Hiệu ứng **đường viền** trong của thẻ `<div class="container">`.
+
+  Tham Khảo Bài của : [Hoang Van Thanh](https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_8)
+
+---
+
+- [x] [Bài 3]: Bài làm tốt \*
+
+  Khi nhập dữ liệu vào thẻ `<input>` sau đó làm mất **focus** xuất hiện lỗi.
+
+  ![Alt text](images/huybui_b3.png).
+
+  Đề Xuất thêm Thuộc tính **required**.
+
+  ```css
+  input:valid ~ label {
+    top: 2px;
+    transform: translateY(0);
+    font-size: 13px;
+  }
+  ```
+
+  ```html
+  <input type="text" id="last-name" required />
+  ```
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm hầu hết đều rất tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.
+
+## [Nguyễn Hưng Tuân](https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-9)
+
+- [x] [Bài 1]: Bài làm rất tốt \*
+
+  Thẻ `<p>` tăng `line-height: 1.4rem`.
+
+---
+
+- [x] [Bài 2]: Bài làm tốt
+
+  Không có đường Viền Trong và Hiệu ứng của nó.
+
+  Tham Khảo Bài của : [Hoang Van Thanh](https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_8)
+
+---
+
+- [x] [Bài 3]: Bài làm tốt
+
+  Khi nhập dữ liệu vào thẻ `<input>` sau đó làm mất **focus** xuất hiện lỗi.
+
+  ![Alt text](images/nguyenhungtuan_b3.png).
+
+  Đang chưa chọn được **selector** `input:valid`.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm hầu hết đều tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn
+
+## [Vinh Nguyễn](https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day09)
+
+- [x] [Bài 1]: Bài làm rất tốt \*
+
+  Không có hiệu ứng chuyển màu nền của nút **button** chuyển màu đột ngột.
+
+---
+
+- [x] [Bài 2]: Bài làm tốt \*
+
+  Hiệu ứng đường Viền Trong Hơi giật.
+
+---
+
+- [x] [Bài 3]:
+
+  Khi nhập dữ liệu vào thẻ `<input>` sau đó làm mất **focus** xuất hiện lỗi.
+
+  Lỗi.
+
+  ![Alt text](images/vinhnguyen.png)
+
+  Đề Xuất.
+
+  ```css
+  .form-field:valid ~ .form-label {
+    font-size: 12px;
+    line-height: 16px;
+    transform: translateY(-12px);
+    transition: 0.2s ease;
+  }
+  ```
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn
+
+## [Mạnh Huy](https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_09)
+
+- [x] [Bài 1]: Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 2]: Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]:
+
+  Khi nhập dữ liệu vào thẻ `<input>` sau đó làm mất **focus** xuất hiện lỗi.
+
+  Lỗi.
+
+  ![Alt text](images/manhhuy_b3.png)
+
+  Đề Xuất.
+
+  ```css
+  input:valid ~ label {
+    top: 0;
+    left: 5px;
+    transform: scale(0.8);
+  }
+  ```
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn
+
+## [Nguyễn Chi Nam](https://github.com/chinam197/baitapday9.git)
+
+- [x] [Bài 1]: Bài làm tốt
+
+  Không có màu nền và hiệu ứng khi **:hover** vào thẻ `<button>`.
+
+---
+
+- [x] [Bài 2]: Bài làm rất tốt \*
+
+  Hiệu ứng đường viền trong hơi giật.
+
+---
+
+- [x] [Bài 3]: Bài làm rất tốt \*
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm hầu hết rất tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn
