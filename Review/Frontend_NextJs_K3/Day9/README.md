@@ -248,133 +248,132 @@
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Cần chú ý, xem lại thiết kế bài mẫu chỉn chu hơn vào tiểu tiết.
 
-
 ## [Nguyen Tuan Anh](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
 
--   [x] [Bài 1](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
+- [x] [Bài 1](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
 
-    Bài làm rất tốt
+  Bài làm rất tốt
 
--   [x] [Bài 2](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
+- [x] [Bài 2](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
 
-    Bài làm tốt
+  Bài làm tốt
 
-    Đang thiếu hình nền và `border` của các item khi `hover` vào.
+  Đang thiếu hình nền và `border` của các item khi `hover` vào.
 
-    Trong các khối **service** nên bọc thêm thẻ `div` nữa để thực hiện `padding` và tạo `border`.
+  Trong các khối **service** nên bọc thêm thẻ `div` nữa để thực hiện `padding` và tạo `border`.
 
--   [x] [Bài 3](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
+- [x] [Bài 3](https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day9)
 
-    Bài làm chưa tốt
+  Bài làm chưa tốt
 
-    Khi các `input` có dữ liệu nhập vào thì text như **First name** phải ở phía góc trên của `input` chứ không phải biến mất.
+  Khi các `input` có dữ liệu nhập vào thì text như **First name** phải ở phía góc trên của `input` chứ không phải biến mất.
 
-    Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
+  Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
 
-    Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
+  Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
 
-    Phần `placeholder` chưa chỉnh `font-family` cho `textarea`.
+  Phần `placeholder` chưa chỉnh `font-family` cho `textarea`.
 
 ---
 
--   [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Cần chú ý kỹ về thiết kế của bài mẫu (**bài 2 - 3**) để hoàn thiện hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Cần chú ý kỹ về thiết kế của bài mẫu (**bài 2 - 3**) để hoàn thiện hơn.
 
 ## [Duy](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
 
--   [x] [Bài 1](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
+- [x] [Bài 1](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
 
-    Bài làm chưa tốt
+  Bài làm chưa tốt
 
-    Chưa nắm rõ yêu cầu bài làm. Khi `hover` thì đồng thời thay đổi màu nền của `button`.
+  Chưa nắm rõ yêu cầu bài làm. Khi `hover` thì đồng thời thay đổi màu nền của `button`.
 
-    Khi `hover` hiệu ứng chuyển đổi đang bị cứng cần bổ sung `transition` để tăng trải nghiệm người dùng.
+  Khi `hover` hiệu ứng chuyển đổi đang bị cứng cần bổ sung `transition` để tăng trải nghiệm người dùng.
 
-    Các **dot** trong **line** thiếu nền mờ toả bao quanh.
+  Các **dot** trong **line** thiếu nền mờ toả bao quanh.
 
--   [x] [Bài 2](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
+- [x] [Bài 2](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
 
-    Bài làm **KHÔNG TỐT** \*
+  Bài làm **KHÔNG TỐT** \*
 
-    Khoảng cách giữa các phần tử chưa chuẩn như thiết kế bài mẫu.
+  Khoảng cách giữa các phần tử chưa chuẩn như thiết kế bài mẫu.
 
-    Khi `hover` vào các item đang bị phình ra phá vỡ layout, khoảng cách giữa các phần tử chưa chuẩn như thiết kế bài mẫu.
+  Khi `hover` vào các item đang bị phình ra phá vỡ layout, khoảng cách giữa các phần tử chưa chuẩn như thiết kế bài mẫu.
 
-    Chưa có `border` khi `hover`, `icon` của phần **Learn more** đang sai thiết kế.
+  Chưa có `border` khi `hover`, `icon` của phần **Learn more** đang sai thiết kế.
 
--   [x] [Bài 3](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
+- [x] [Bài 3](https://github.com/saiduii/F8-FE-K3/tree/main/Day-9)
 
-    Bài làm chưa tốt
+  Bài làm chưa tốt
 
-    Khi các `input` có dữ liệu nhập vào thì text như **First name** phải ở phía góc trên của `input` chứ không phải biến mất.
+  Khi các `input` có dữ liệu nhập vào thì text như **First name** phải ở phía góc trên của `input` chứ không phải biến mất.
 
-    Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
+  Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
 
-    Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
+  Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
 
-    Phần `placeholder` chưa chỉnh `font-family` cho `textarea`, và chưa có `padding`.
+  Phần `placeholder` chưa chỉnh `font-family` cho `textarea`, và chưa có `padding`.
 
-    `Button` gửi đang thiếu hiệu ứng action khi `hover` vào để tăng trải nghiệm người dùng.
+  `Button` gửi đang thiếu hiệu ứng action khi `hover` vào để tăng trải nghiệm người dùng.
 
 ---
 
--   [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện chưa tốt. Cần chú ý kỹ về yêu cầu, thiết kế của các bài mẫu để hoàn thiện hơn. Nên làm bài tập chỉn chu, tỉ mỉ hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện chưa tốt. Cần chú ý kỹ về yêu cầu, thiết kế của các bài mẫu để hoàn thiện hơn. Nên làm bài tập chỉn chu, tỉ mỉ hơn.
 
 ## [Gia Bảo Đỗ](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
 
--   [x] [Bài 1](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
+- [x] [Bài 1](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
 
-    Bài làm rất tốt
+  Bài làm rất tốt
 
-    Chú ý khi chuyển đổi xong thì `button` cũng đổi màu luôn.
+  Chú ý khi chuyển đổi xong thì `button` cũng đổi màu luôn.
 
-    Chú ý nên sử dụng `transition` để tạo hiệu ứng chuyển đổi mượt hơn.
+  Chú ý nên sử dụng `transition` để tạo hiệu ứng chuyển đổi mượt hơn.
 
--   [x] [Bài 2](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
+- [x] [Bài 2](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
 
-    Bài làm tốt \*
+  Bài làm tốt \*
 
-    Cần chú ý khoảng cách giữa các phần tử chưa chuẩn như thiết kế bài mẫu.
+  Cần chú ý khoảng cách giữa các phần tử chưa chuẩn như thiết kế bài mẫu.
 
-    Khi `hover` vào các item đang bị thiếu `border` nên bọc thêm thẻ `div` căn `padding` và set `border`.
+  Khi `hover` vào các item đang bị thiếu `border` nên bọc thêm thẻ `div` căn `padding` và set `border`.
 
-    Chưa có `border` khi `hover`, `icon` của phần **Learn more** đang sai thiết kế.
+  Chưa có `border` khi `hover`, `icon` của phần **Learn more** đang sai thiết kế.
 
--   [x] [Bài 3](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
+- [x] [Bài 3](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day9)
 
-    Bài làm chưa tốt
+  Bài làm chưa tốt
 
-    Khi các `input` nhập dữ liệu nhập vào thì text như **First name** phải cách nội dung nhập 1 khoảng dễ nhìn.
+  Khi các `input` nhập dữ liệu nhập vào thì text như **First name** phải cách nội dung nhập 1 khoảng dễ nhìn.
 
-    Khi các `input` có dữ liệu nhập vào thì text như **First name** phải nằm ở góc trên của `input`.
+  Khi các `input` có dữ liệu nhập vào thì text như **First name** phải nằm ở góc trên của `input`.
 
-    Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
+  Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
 
-    Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
+  Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
 
 ---
 
--   [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Cần chú ý kỹ về thiết kế của các bài mẫu để hoàn thiện hơn. Nên làm bài tập chỉn chu, tỉ mỉ hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Cần chú ý kỹ về thiết kế của các bài mẫu để hoàn thiện hơn. Nên làm bài tập chỉn chu, tỉ mỉ hơn.
 
 ## [Vũ Thành Khang](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
 
--   [x] [Bài 1](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
+- [x] [Bài 1](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
 
-    Bài làm rất tốt
+  Bài làm rất tốt
 
--   [x] [Bài 2](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
+- [x] [Bài 2](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
 
-    Bài làm rất tốt
+  Bài làm rất tốt
 
-    Cần bổ sung thêm `overley` cho nền khi `hover` để làm rõ nội dung hơn. Ví dụ có thể bổ sung thêm `background-blend-mode: multiply;`
+  Cần bổ sung thêm `overley` cho nền khi `hover` để làm rõ nội dung hơn. Ví dụ có thể bổ sung thêm `background-blend-mode: multiply;`
 
--   [x] [Bài 3](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
+- [x] [Bài 3](https://github.com/countduck4819/f8-frontend/tree/main/Day9)
 
-    Bài làm tốt \*
+  Bài làm tốt \*
 
-    Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
+  Màu `outline` của các thẻ `input` khi `focus` đang bị sai so với thiết kế bài mẫu.
 
-    Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
+  Màu nền các thẻ `input` khi nhập dữ liệu chưa thay đổi màu nền.
 
 ---
 
--   [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện rất tốt. Cần chú ý kỹ hơn nữa về thiết kế của các bài mẫu để hoàn thiện hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện rất tốt. Cần chú ý kỹ hơn nữa về thiết kế của các bài mẫu để hoàn thiện hơn.
