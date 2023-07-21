@@ -318,6 +318,228 @@ Bài làm không tốt
 
 ---
 
+# Tuyết đánh giá bài học viên Fullstack-K2-Day11
+
+## [Hồng Hà Nguyễn Thị](https://ha752002.github.io/f8-fullstack-k2/Exercise/Ex_11/index.html)
+
+Bài làm rất tốt\*
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm rất tốt \*
+
+  Từ màn hình 1399px trở đi, ở section `service` phần chữ `section__item-content_title2` đang căn trái là chưa đúng.
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1399px, max-width: 1199px
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3,4: Màn hình: max-width: 991px, max-width: 767px
+
+  Bài làm rất tốt
+
+  Từ màn này trở xuống chưa có phần mở/đóng menu `navbar-collapse`.
+
+---
+
+- [x] Bài 5: Màn hình: max-width: 575px
+
+  Bài làm rất tốt
+
+  Từ màn 574px trở xuống cả trang đang căn trái, chưa căn giữa.
+
+  ![Hồng Hà Nguyễn Thị](images/hongha_1.png)
+
+---
+
+- [x] Bài 6, 7: Màn hình: max-width: 420px, max-width: 375px
+
+  Bài làm rất tốt
+
+  Font-size của các phần tiêu đề `section__item-content_title2` của 3 section cuối đang lớn hơn bài mẫu.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài đã làm rất tốt\*. Chỉ có một số lưu ý trên cần chú ý để bài hoàn thiện hơn.
+
+## [Duy Hiếu Nguyễn](https://hieuboss.github.io/F8-fullstack-k2/html/lesson11/ex1/ex1.html)
+
+Bài làm chưa tốt, chưa đầy đủ.
+
+**Chưa làm responsive các màn: max-width: 1399px, max-width: 1199px, max-width: 991px, max-width: 767px, max-width: 575px, max-width: 420px**
+
+- [x] Bài Màn hình: max-width: 1500px
+
+  Bài làm rất tốt
+
+  Phần khoảng cách phía trên của section `infor__gorver` đang lớn hơn nhiều quá so với bài mẫu.
+
+  Cần chia lại kích thước cho 2 flex item này:
+
+  ![Duy Hiếu Nguyễn](images/duyhieu_1.png)
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Mới chỉ làm giao diện ở màn desktop thông thường, phần này đã làm rất tốt. Chưa làm responsive đầy đủ cho các kích thước màn từ destop đến mobile như bài mẫu. Cần làm tiếp đầy đủ cho bài hoàn thiện hơn.
+
+## [Bùi Quang Trưởng](https://okazakitruong.github.io/BQTruong-F8-K2-Offline/Day11/exe01.html)
+
+Bài làm rất tốt \*
+
+**Những lưu ý và lỗi chung trong toàn bài**
+
+- Mã màu ở các phần chữ đen đậm "#000" là chưa đúng như bài mẫu "#2E2E2E".
+
+- Tất cả các button chưa đúng font-family. Và 2 button ở trong `section-groceries` chưa đúng font-weight.
+
+- Tất cả các chữ của sub title ở mỗi section, và ở `service-container > h3` chưa đúng font-weight: `More than Faster`, `What we Serve`, `What we Serve`,...
+
+- Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+- Cần thêm nội dung cho thuộc tính `alt` của ảnh ở các `section-img` để tốt cho SEO. Ảnh ở `section-groceries` đang lớn hơn khá nhiều so với bài mẫu, nên kích thước 2 cột đang chưa được giống như bài mẫu.
+
+- Footer: Khoảng cách trên dưới giữa các `content > ul > li` đang nhỏ hơn bài mẫu. Phần `Terms & Conditions Privacy & Policy` chưa đúng. đây là 2 thẻ `a` cho 2 link khác nhau, không phải 1 đoạn text.
+
+- Ở các màn hình lớn từ desktop:
+
+  - Khoảng cách trên dưới của các section đang nhỏ hơn bài mẫu.
+
+  - Phần `nav` chưa xử lý hover vào từng nav item khi ở các màn hình desktop. Thêm css `cursor:pointer` cho phần `cart-icon` vì icon này có thể click được, để trải nghiệm người dùng tốt hơn.
+
+**Những lưu ý và lỗi riêng ở mỗi màn hình**
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1399px
+
+  Bài làm rất tốt \*
+
+  Phần `section-groceries` căn `"align-item:center"` là chưa đúng, bài mẫu ở màn hình này là căn kiểu `flex-start`.
+
+---
+
+- [x] Bài 3, 4: Màn hình: max-width: 1199px, Màn hình: max-width: 991px
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 5: Màn hình: max-width: 767px
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 6: Màn hình: max-width: 575px
+
+  Bài làm rất tốt
+
+  Toàn trang đang không được full màn hình, đang có khoảng cách bên phải. Lỗi này do phần `service-bg` đang lệch ra chưa chỉnh lại ở màn hình này trở xuống.
+
+---
+
+- [x] Bài 7, 8: Màn hình: max-width: 420px, max-width: 375px
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt \*. Chỉ có một số lưu ý trên cần chú ý để bài hoàn thiện hơn.
+
+## [Nguyễn Minh Việt - K2](https://nguyenminhviettt.github.io/F8_Fullstack_K2/day_11/baitap/index.html)
+
+Bài làm chưa tốt, chưa đầy đủ.
+
+**Những lưu ý và lỗi chung trong toàn bài**
+
+- Phần `navbar` chưa active nav item đầu tiên `Home`, và chưa có css style khi hover vào mỗi nav item ở các màn hình desktop.
+
+- Cần thêm đầy đủ nội dung cho thuộc tính `atl` của ảnh để tốt cho SEO.
+
+- Cần chú ý thêm css `text-transform: uppercase` cho những phần chữ in hoa, thêm `text-transform: capitalize` cho những phần chữ viết hoa chữ cái đầu.
+
+- Font-weight của các `button.btn` chưa đúng, cần đậm hơn. Hình icon `hero__button-play` đang lỗi chưa thấy hiển thị.
+
+- Các phần có animation, có `:hover` vào sẽ có thay đổi css như là `button`, `menu__item`, cần làm cho những thay đổi nhìn mượt hơn.
+
+- Nên bọc thẻ `a` cho cả phần `contact__icon`, thay vì bọc `a` ở ảnh icon bên trong.
+
+- Footer: Khoảng cách giữa phần `footer__item.item-1 > .logo` và `footer__item.item-1 > desc` chưa đúng.
+
+- Ở các màn desktop, tỉ lệ width của 2 cột phần `contact` chưa đúng. Và khoảng cách giữa 2 section `service` lớn hơn nhiều so với bài mẫu.
+
+**Những lưu ý và lỗi riêng ở mỗi màn hình**
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+  Chưa làm responsive.
+
+  Width của `container` nhỏ hơn bài mẫu.
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1399px
+
+  Bài làm rất tốt từ màn `1200px <==> 1399px`
+
+  Từ màn hình `1200px trở xuống` giao diện chưa đúng như bài mẫu.
+
+---
+
+- [x] Bài Những màn hình: max-width: 1199px, max-width: 991px, Màn hình: max-width: 767px, max-width: 575px, max-width: 420px, max-width: 375px.
+
+  Bài làm không tốt \*
+
+  Giao diện chưa đúng như bài mẫu. Cần làm thêm responsive cho các phần nội dung trên trang đầy đủ về bố cục, kích thước, khoảng cách,...
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, chưa đầy đủ. Cần chú ý quan sát bài mẫu để xác định được hết các breakpoint, những chi tiết thay đổi của mỗi thành phần ở từng màn hình để làm responsive tốt hơn. Cần làm tiếp đầy đủ responsive cho bài hoàn thiện hơn.
+
+## [Việt Hoàngg](https://buiviethoang2211.github.io/f8-fullstack-k2/Day_11/html/ex1.html)
+
+Bài làm chưa tốt, chưa đầy đủ.
+
+**Chưa làm responsive các màn: max-width: 1399px, max-width: 1199px, max-width: 991px, max-width: 767px, max-width: 575px, max-width: 420px**
+
+- [x] Bài Màn hình: max-width: 1500px
+
+  Bài làm tốt.
+
+  - Nên dùng các thẻ HTML semantic `<header>, <nav, <section>` cho các phần nội dung tương ứng thay vì dùng thẻ div.
+
+  - Phần `navbar` chưa active nav item đầu tiên `Home`
+
+- Font-weight ở các phần chữ nhỏ trên trang chưa đúng, đang đậm hơn bài mẫu.
+
+- Các phần button link chưa có thuộc tính `href`. nên bọc thẻ `a` cho cả phần nút, thay vì chỉ bọc phần chữ. Cần thêm `transition` cho nút có `:hover` để khi hover vào nút nhìn sẽ mượt hơn, và kích thước các nút này đang nhỏ hơn nhiều so với bài mẫu.
+
+- Cần thêm nội dung cho thuộc tính `alt` của ảnh để tốt cho SEO.
+
+- Trong bài chưa có <h4>, nhưng lại có <h5>. Cần sửa lại, các thẻ heading được sử dụng theo thứ tự `h1 > h2 > h3 > h4 > h5`.
+
+- các section có màu background `#FEF5F5` đang chưa đúng. màu background phải full màn hình.
+
+- Footer có chưa đầy đủ nội dung. khoảng cách trên dưới của footer, kích thước các cột chưa giống bài mẫu. Cần css thêm.
+
+- Trừ section đầu tiên, section thứ 2. Còn ở các section khác chưa đúng Font-size của `headline-page[x]`.
+
+- Phần section `container-page2`: Khoảng cách trên dưới của section đang nhỏ hơn bài mẫu, chưa xử lý hover ở mỗi `.item`
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Mới chỉ làm giao diện ở màn desktop thông thường, phần này đã làm ổn. Chưa làm responsive đầy đủ cho các kích thước màn từ destop đến mobile như bài mẫu. Nhiều khoảng cách, style kích thước, style chữ của các phần chưa giống với bài mẫu. Cần chú ý quan sát bài mẫu để xác định được hết các breakpoint, những chi tiết thay đổi của mỗi thành phần ở từng màn hình để làm responsive tốt hơn. Cần làm tiếp đầy đủ responsive cho bài hoàn thiện hơn.
+
+---
+
 ## [Đỗ Khắc Quân](https://github.com/Quan2409/F8-HomeWork/tree/main/Day11/F8-GroverDelivery)
 
 - Sớm nhất \*
