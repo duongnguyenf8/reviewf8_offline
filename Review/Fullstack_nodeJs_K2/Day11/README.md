@@ -352,7 +352,7 @@ Bài làm rất tốt\*
 
   Từ màn 574px trở xuống cả trang đang căn trái, chưa căn giữa.
 
-  ![Hồng Hà Nguyễn Thị](images/hongha_1.png)
+  ![Hồng Hà Nguyễn Thị](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/hongha_1.png)
 
 ---
 
@@ -380,7 +380,7 @@ Bài làm chưa tốt, chưa đầy đủ.
 
   Cần chia lại kích thước cho 2 flex item này:
 
-  ![Duy Hiếu Nguyễn](images/duyhieu_1.png)
+  ![Duy Hiếu Nguyễn](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/duyhieu_1.png)
 
 ---
 
