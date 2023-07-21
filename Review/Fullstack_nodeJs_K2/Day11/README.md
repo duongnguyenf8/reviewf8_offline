@@ -140,8 +140,6 @@
 
 ## [Kiều Duy Tùng](https://stung16.github.io/ex_f8-fullstack/day11)
 
-    Sớm nhất \*
-
 - [x] Bài 1: Màn hình: max-width: 1500px
 
   Bài làm rất tốt \*
@@ -160,7 +158,7 @@
 
   Phần `.footer_content_bottom-left` không nằm trên cùng một hàng như bản mẫu.
 
-  **[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/stung161500.png)**
+- [x] Bài x: Các màn hình khác làm khá tốt. Chỉ cần sửa lại các lỗi như màn hình 1500px
 
 ---
 
@@ -317,3 +315,211 @@ Bài làm không tốt
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm responsive ở những màn lớn tốt, những màn nhỏ ở mobile chưa responsive tốt và chưa đầy đủ. Cần chú ý kỹ bài mẫu, để xác định được đúng breakpoint, những chi tiết nhỏ của từng phần ở từng màn hình để làm responsive tốt hơn.
+
+---
+
+## [Đỗ Khắc Quân](https://github.com/Quan2409/F8-HomeWork/tree/main/Day11/F8-GroverDelivery)
+
+- Sớm nhất \*
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+Bài làm rất tốt \*
+
+- Khoảng cách của các phần tử trong **header\_\_nav** nhỏ hơn so với bài mẫu.
+
+- Phần đổ bóng cuar **header\_\_search** bị đậm hơn so với bài mẫu. Khi `focus` vào **header\_\_search** đang bị mất thanh dọc giữa phần **search** và **cart**
+
+- Vị trí của các phần tử đa phần chưa khớp với bài mẫu nhiều.
+
+- Css cho icon của **button--process** sai so với bài mẫu, phần text đang chưa có `font-weight`.
+
+- Phần **item02\_\_highlight** chưa có `font-weight`
+
+- Khi `hover` vào các **box** trong **item02\_\_box** độ lệch chưa đúng so với bài mẫu.
+
+- Khoảng cách của các **iteam** trong **main\_\_item03** chưa giống thiết kế.
+
+- Phần **main\_\_item05** màu nền chưa đúng thiết kế.
+
+- Màu `border` cho các **item05\_\_button** chưa đúng, đang bị đậm hơn.
+
+- Phần **footer** chưa có đường line phân cách giữa **footer-endline** và các phần tử ở trên.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai1.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1399px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai2.png)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 1199px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+Đang bị xuất hiện thanh cuộn ngang.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai3.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 991px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai4.png)**
+
+---
+
+- [x] Bài 5: Màn hình: max-width: 767px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai5.png)**
+
+---
+
+- [x] Bài 6: Màn hình: max-width: 575px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai6.png)**
+
+---
+
+- [x] Bài 7: Màn hình: max-width: 420px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai7.png)**
+
+---
+
+- [x] Bài 8: Màn hình: max-width: 375px
+
+Bài làm chưa tốt
+
+Chưa có responsive ở màn hình này.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/do_khac_quan-bai8.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần làm bổ sung các màn hình khác để responsive, chú ý thêm về kích thước, màu sắc giao diện bài mẫu. Chú ý về cách đặt tên class trong project phải tường minh, đúng ngữ cảnh, rõ số ít số nhiều.
+
+## [Nguyễn Thị Tuyết](https://github.com/Quan2409/F8-HomeWork/tree/main/Day11/F8-GroverDelivery)
+
+- Sớm nhất \*
+
+- [x] Bài 1: Màn hình: max-width: 1500px
+
+Bài làm tốt \*
+
+- Kích thước và khoảng cách của các `section` đa phần đang nhỏ hơn so với giao diện mẫu.
+
+- Phần text **sec_title** chưa đúng thiết kế giao diện mẫu, `font-size` bé.
+
+- Button **Order Now** trong **sec_btn-list** to hơn thiết kế giao diện mẫu.
+
+- Chưa có bóng cho **btn_ico**
+
+- Phần **sec_title** trong **sec service**, **sec choose-us**, **row sec delivery**, **sec cta** chưa đúng thiết kế giao diện mẫu.
+
+- Các **service_item** đang quá to, không đúng với thiết kế giao diện mẫu.
+
+- Các button chưa có hiệu ứng sau khi `click` hoặc `hover`.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai1.png)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1399px
+
+Bài làm tốt
+
+Các lỗi sai giống như màn 1500px.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai2.png)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 1199px
+
+Bài làm rất tốt \*
+
+Button trong **sec_btn-list** chưa đúng.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai3.png)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 991px
+
+Bài làm chưa tốt
+
+Kích thước và khoảng cách của các `section` đa phần đang nhỏ hơn so với giao diện mẫu.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai4.png)**
+
+---
+
+- [x] Bài 5: Màn hình: max-width: 767px
+
+Bài làm tốt
+
+Lỗi giống với màn 991px.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai5.png)**
+
+---
+
+- [x] Bài 6: Màn hình: max-width: 575px
+
+Bài làm tốt \*
+
+Các **service_item** cần có khoảng cách với nhau
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai6.png)**
+
+---
+
+- [x] Bài 7: Màn hình: max-width: 420px
+
+Bài làm tốt
+
+Các **service_item** cần có khoảng cách với nhau
+
+Khoảng cách giữa các **btn-box** trong **sec cta** chưa giống giao diện mẫu.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai7.png)**
+
+---
+
+- [x] Bài 8: Màn hình: max-width: 375px
+
+Bài làm tốt
+
+Các lỗi sai giống với màn 420px
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K2/Day11/images/nguyen_thi_tuyet-bai8.png)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Chú ý thêm về kích thước, màu sắc giao diện bài mẫu để hoàn thiện chỉn chu hơn.
