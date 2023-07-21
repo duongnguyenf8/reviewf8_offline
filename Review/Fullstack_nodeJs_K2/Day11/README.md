@@ -542,7 +542,6 @@ Bài làm chưa tốt, chưa đầy đủ.
 
 ## [Đỗ Khắc Quân](https://github.com/Quan2409/F8-HomeWork/tree/main/Day11/F8-GroverDelivery)
 
-- Sớm nhất \*
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
@@ -648,7 +647,6 @@ Chưa có responsive ở màn hình này.
 
 ## [Nguyễn Thị Tuyết](https://github.com/Quan2409/F8-HomeWork/tree/main/Day11/F8-GroverDelivery)
 
-- Sớm nhất \*
 
 - [x] Bài 1: Màn hình: max-width: 1500px
 
