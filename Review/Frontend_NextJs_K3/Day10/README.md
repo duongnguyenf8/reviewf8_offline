@@ -131,3 +131,133 @@
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý xem kỹ lại bản mẫu để bài làm được tốt hơn.
+
+## [Nguyễn Đình Khánh](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+- [x] [Bài 1](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+  Bài làm tốt
+
+  Tất cả các animate của bài làm đều không giống bản mẫu.
+
+  Sai font chữ, font chữ ở bản mẫu là một font chữ không chân.
+
+- [x] [Bài 2](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+  Bài làm tốt \*
+
+  Chưa có tab hiển thị trước cho màn hình chính.
+
+  Animation gần giống bản mẫu. Tuy nhiên cần xem "Kỹ" hơn.
+
+  - Các phần tab được đổi nội dung sau khi xoay được một chút chứ không phải sau khi quá ít.
+
+  Có bug ở tab đầu tiên khi click vào tab đó thì nội dung của tab đó không hiển thị.
+
+- [x] [Bài 3](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+  Cần chú ý hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.
+
+  Bài làm rất tốt \*
+
+  Thừa một phần đóng thư khi phần lá thư được mở hết và đóng lại.
+
+  Chưa hoàn thiện, chưa vẽ xong hình lá thư.
+
+  Bài làm sai màu.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý xem kỹ lại bản mẫu để bài làm được tốt hơn.
+
+## [thuy nguyen](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+- [x] [Bài 1](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+  Bài làm rất tốt \*
+
+  Các font chữ ở bản mẫu hơi bé hơn.
+
+- [x] [Bài 2](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+  Bài làm tốt \*
+
+  Animation gần giống bản mẫu. Tuy nhiên cần xem "Kỹ" hơn.
+
+  - Các phần tab được đổi nội dung sau khi xoay được một chút chứ không phải sau khi quá ít.
+
+  Có bug ở khi click vào tab đó thì nội dung của tab đó bị giật.
+
+- [x] [Bài 3](https://khanhngoolearn.github.io/F8-homework-fe-k3/day10)
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý xem kỹ lại bản mẫu để bài làm được hoàn thiện.
+
+## [Đỗ Ngọc Tiến](https://dongoctien17.github.io/F8-frontend-k3)
+
+- [x] [Bài 1](https://dongoctien17.github.io/F8-frontend-k3)
+
+  Bài làm chưa tốt
+
+  Chưa xử lý animate chuyển icon ở navbar.
+
+  Chưa xử lý tốt khiến hiện thanh cuộn ngang và dọc.
+
+- [x] [Bài 2](https://dongoctien17.github.io/F8-frontend-k3)
+
+  Bài làm tốt \*
+
+  Animation gần giống bản mẫu. Tuy nhiên cần xem "Kỹ" hơn.
+
+  - Các phần tab được đổi nội dung sau khi xoay được một chút chứ không phải sau khi quá ít.
+
+- [x] [Bài 3](https://dongoctien17.github.io/F8-frontend-k3)
+
+  Bài làm rất tốt \*
+
+  Khi di chuột ra ngoài, bức thư hơi giật xuống.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt. Cần chú ý xem kỹ lại bản mẫu để bài làm được hoàn thiện.
+
+## [Nguyen Le Quyen](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day10)
+
+**Chưa gửi link Github page**
+
+Cần cấu trúc lại folder để dễ quản lý hơn.
+
+- [x] [Bài 1](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day10)
+
+  Bài làm tốt
+
+  Chưa xử lý animate chuyển icon ở navbar.
+
+  Sai font chữ, font chữ ở bản mẫu là một font chữ không chân.
+
+  Có một chút lỗi ở trang home
+
+  ![nguyen le quyen](images/nguyen_le_quyen-bai1.png)
+
+- [x] [Bài 2](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day10)
+
+  Bài làm tốt \*
+
+  Animation gần giống bản mẫu. Tuy nhiên cần xem "Kỹ" hơn.
+
+  - Các phần tab được đổi nội dung sau khi xoay được một chút chứ không phải sau khi quá ít.
+
+  Có một chút lỗi, khi click vào tab đó thì nội dung của tab đó bị giật.
+
+- [x] [Bài 3](https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day10)
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Cần chú ý xem kỹ lại bản mẫu để bài làm được hoàn thiện.
