@@ -396,7 +396,7 @@ Bài làm rất tốt\*
 
 ## [Phí Văn Đức](https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-11/Build-Responsive-Web)
 
-- [x] [Cả bài]
+- **[*] [Cả bài]**
 
   Click vào `icon-burger` không có phần `navbar` hiện ra
 
