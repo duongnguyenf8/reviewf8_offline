@@ -479,7 +479,7 @@ Chưa xử lý responsive.
 
 - [x] Đánh giá chung bài tập về nhà: màn hình PC làm rất tốt, từ màn tablet trở xuống làm không giống với bản mẫu.
 
-## [Nguyễn Hưng Tuân ](https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-11/GroverPJ).
+## [Nguyễn Hưng Tuân](https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-11/GroverPJ).
 
 - [x] Bài 1: Màn hình: max-width: 1500px.
 
