@@ -224,7 +224,7 @@ Khoảng cách giữa phần search và menu đang không đúng so với bản 
 
 Một số chỗ hơi lệch so với bản mẫu.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-1500.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien1500.jpeg)**
 
 ---
 
@@ -234,7 +234,7 @@ Bài làm rất tốt \*.
 
 Nhận xét như màn hình 1500px.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-1399.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien1399.jpeg)**
 
 ---
 
@@ -244,7 +244,7 @@ Bài làm tốt \*.
 
 Nhận xét như màn hình 1500px.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-1199.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien1199.jpeg)**
 
 ---
 
@@ -254,7 +254,7 @@ Bài làm chưa tốt.
 
 Ngoài một số chỗ còn lệch khá nhiều so với bản mẫu, thì phần `HOME DELIVERY` đang sắp xếp sai layout so với bản mẫu.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-991.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien991.jpeg)**
 
 ---
 
@@ -266,7 +266,7 @@ Phần dưới phần header cần căn giữa nhưng đang chưa căn giữa.
 
 Cần xem lại bản mẫu ở màn hình 767px để thiết kế cho đúng bản mẫu, hiện tại một số phần có vẻ chưa xử lý nên đang khác hoàn toàn so với bản mẫu.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-767.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien767.jpeg)**
 
 ---
 
@@ -278,7 +278,7 @@ Các lỗi sai giống như ở màn hình max-width: 767px.
 
 Chưa xử lý responsive.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-575.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien575.jpeg)**
 
 ---
 
@@ -288,7 +288,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 Chưa xử lý responsive.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-420.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien420.jpeg)**
 
 ---
 
@@ -298,7 +298,7 @@ Các lỗi sai giống như ở màn hình max-width: 575px.
 
 Chưa xử lý responsive.
 
-**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien-375.jpeg)**
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day11/images/duytien375.jpeg)**
 
 ---
 
