@@ -77,3 +77,83 @@
   Nếu một trong số các field là phép toán thì bài làm sai.
 
   ![tuan_anh-bai5](images/tuan_anh-bai5.png)
+
+## [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day16/main.js)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+- [x] [Bài 4]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+- [x] [Bài 5]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+  Nên gán số lớn ra một biến và console.log 1 lần để dễ sửa và nâng cấp code hơn.
+
+  Cần format code theo chuẩn để dễ đọc hơn
+
+- [x] [Bài 4]
+
+  Bài làm tốt
+
+  ```js
+  a = 0;
+  b = -1;
+  if (a * b < 0) {
+    console.log("Khac dau");
+  } else {
+    console.log("Cung dau"); // Cung dau
+  }
+  // ---
+  a = 0;
+  b = 1;
+  if (a * b < 0) {
+    console.log("Khac dau");
+  } else {
+    console.log("Cung dau"); // Cung dau
+  }
+  ```
+
+  Với trường hợp có 1 số là 0, bài làm sai.
+
+  Format lại code.
+
+- [x] [Bài 5]
+
+  Sai yêu cầu đề bài: Sắp xếp tăng dần nhưng lại in ra giảm dần.
+
+## [Dương Hiệp](https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day16)
