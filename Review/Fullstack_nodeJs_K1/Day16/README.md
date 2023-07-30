@@ -407,3 +407,69 @@
   ***
 
 - [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số.
+
+## [Minh Quang](https://github.com/taminhquang13/F8_Fullstack/tree/main/BT15)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Format lại code.
+
+  ***
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 4]
+
+  Bài làm tốt
+
+  Thực tế không cần bọc `if ((f * g) > 0) {}` vì `f * g` đã trả về 1 giá trị boolean.
+
+  ```js
+  var f = 0,
+    g = -1;
+  if (f * g < 0) {
+    console.log("Khac dau");
+  } else {
+    console.log("Cung dau");
+  }
+
+  // ---
+
+  var f = 0,
+    g = 1;
+  if (f * g < 0) {
+    console.log("Khac dau");
+  } else {
+    console.log("Cung dau");
+  }
+  ```
+
+  Với trường hợp có 1 số là 0, bài làm sai.
+
+  ***
+
+- [x] [Bài 5]
+
+  Bài làm rất tốt \*
+
+  Cần kiểm tra tính hợp lệ của 2 số trước khi so sánh.
+
+  Nên tách ra để console.log 1 lần. Để tối ưu cho việc sửa đổi code sau này.
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số. Chú ý đến việc format code và tối ưu code.
