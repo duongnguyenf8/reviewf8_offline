@@ -96,9 +96,7 @@
 
 - [x] [Bài 4]
 
-  Bài làm tốt \*
-
-  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+  Bài làm rất tốt \*
 
 - [x] [Bài 5]
 
@@ -157,3 +155,27 @@
   Sai yêu cầu đề bài: Sắp xếp tăng dần nhưng lại in ra giảm dần.
 
 ## [Dương Hiệp](https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day16)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+- [x] [Bài 4]
+
+  Bài làm rất tốt \*
+
+- [x] [Bài 5]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
