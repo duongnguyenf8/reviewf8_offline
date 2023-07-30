@@ -435,3 +435,311 @@
 - [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm các tiểu tiết như viết hoa các chữ sao cho đúng bản mẫu, chú ý các kích cỡ màn hình để tránh bỏ sót các trường hợp khác. Chú ý xử lý tốt hơn các button và layout cho đúng với bản mẫu nhất có thể.
 
 ---
+
+## [Tuan Kiet Hoang](https://suspiciously36.github.io/f8_fullstack_k4/)
+
+- [x] Bài 1: Màn hình: max-width: 1500px.
+
+Bài làm tốt.
+
+Tất cả các thẻ `<input>` trong thẻ `<form>` khi **:focus** có màu mặc định do chưa ghi đề lại `outline:none`.
+
+Đề Xuất.
+
+```css
+input {
+  outline: none;
+}
+```
+
+Phần `.landing-page-info__logo` kích thước hình ảnh đang nhỏ hơn bản mẫu.
+
+Phần `.landing-page_switches` khoảng cách đang xa hơi so với bản mẫu. giảm `margin-top: 90px`.
+
+Phần `.form-login-register` đang to hơn thiết kế và không được căn giữa.
+
+Đề Xuất Thêm các thuộc tính sau.
+
+```css
+.form-login-register {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+```
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/tuankienhoang1500.jpeg)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px.
+
+bài làm tốt.
+
+Tất cả các thẻ `<input>` trong thẻ `<form>` khi **:focus** có màu mặc định do chưa ghi đề lại `outline:none`.
+
+Đề Xuất.
+
+```css
+input {
+  outline: none;
+}
+```
+
+Phần `.landing-page-info__logo` kích thước hình ảnh đang nhỏ hơn bản mẫu.
+
+Phần `.landing-page-forms` `margin: 33px auto` đang gần hơi so với bản mẫu , bản mẫu `margin-top: 80px`.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/tuankienhoang1365.jpeg)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px.
+
+Bài làm tốt.
+
+Lỗi giống màn 1365px.
+
+Khoảng cách giữa `.form` và `.login-title` đang sai so với bản mẫu.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/tuankienhoang960.jpeg)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px.
+
+Bài làm tốt
+
+Lỗi giống màn 996px.
+
+Thẻ `<span>` trong thẻ `.landing-page-info_title` thuộc tính `font-size:7rem` đang sai so với bản mẫu.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/huymanh991px.jpeg)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt cần chú ý **font-size** của các thẻ khi chuyển màn. và cần cẩn thận khi đo khoảng cách giữa các phần tử.
+
+## [Nguyễn Hưng Tuân](https://hungtuan.github.io/f8-fullstack-k4/)
+
+- [x] Bài 1: Màn hình: max-width: 1500px.
+
+Bài làm tốt.
+
+Phần `.landing__content__logo` kích thước đang nhỏ hơn so với bản mẫu.
+
+Khi **:focus** vào `<input type="email" id="register-email/>` chưa đổi màu `border`.
+
+Thẻ `.landing__content__tab` đang lật so với bản mẫu.
+
+Phần `.landing__form__register` cũng đang lật so với bản mẫu .
+
+Chưa có hiệu ứng khi **:hover** vào thẻ con trong `.landing__form__login__links`.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/hungtuan1500.jpeg)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px.
+
+bài làm rất tốt.
+
+Phần `.landing__content__logo` kích thước đang nhỏ hơn so với bản mẫu.
+
+Phần `.landing__form__register` đang bị lật so với bản mẫu.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/hungtuan1365.jpeg)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px.
+
+Bài làm rất tốt.
+
+Lỗi giống màn 1365px.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/hungtuan960.jpeg)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px.
+
+Bài làm tốt
+
+Lỗi giống màn 996px.
+
+Phần `.landing__content__tab` kích thước đang ngắn hơn bản mẫu.
+
+Đề Xuất.
+
+```css
+.landing__content__tab__login {
+  flex: 1;
+}
+```
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/hungtuan480.jpeg)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt và cần cẩn thận khi đo khoảng cách giữa các phần tử cẩn thận hơn Đề yều cầu Sử dụng Grid system nhưng không sử dụng.
+
+## [Vinh Nguyễn](https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day12)
+
+- [x] Bài 1: Màn hình: max-width: 1500px.
+
+Bài làm chưa tốt.
+
+Chưa có responsive màn này (**code lại**).
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/vinh1500.jpeg)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px.
+
+Thẻ `.landing-info-title heading--h1` kích thước `font-size: 3.75rem;` đang nhỏ hơn bản mẫu.
+
+Thẻ `.login-btn` có kích thước **width** đang dài hơn bản mẫu.
+
+Thẻ `.form-box register-form` thuộc tính `padding: 40px 32px` sai so bản mẫu.
+
+Đề xuất.
+
+```css
+.form-box.register-form {
+  padding: 64px;
+}
+```
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/vinh1365.jpeg)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px.
+
+Bài làm chưa tốt.
+
+Lỗi giống màn 1365px.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/vinh960.jpeg)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px.
+
+Bài làm tốt
+
+Phần `.form-box register-form` khoảng cách đang lật so với bản mẫu.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/vinh480.jpeg)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm chưa tốt. chưa có màn hình 1500px yêu cầu code lại , và xem lại từ màn 1365px -> 960px.
+
+## [Hà Long Việt](https://vietha22.github.io/f8_fullstack_k4/Day_12/index.html)
+
+- [x] Bài 1: Màn hình: max-width: 1500px.
+
+Bài làm tốt.
+
+Phần `.form-box form-register` và `.form-box form-login` chưa được căn giữa.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/viet1500.jpeg)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px.
+
+Bài làm rất tốt \*
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/viet1365.jpeg)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px.
+
+Bài làm rất tốt \*
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/viet960.jpeg)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px.
+
+Bài chưa tốt.
+
+Thẻ `<h1>` chưa ghi đề lại `font-size: 6.5rem; ` to hơn bản mẫu.
+
+Phần `tab-switch` kích thước nút đang nhỏ hơn bản mẫu.
+
+Phần `.form-box form-register` chưa ghi đề lại `padding: 64px` sai so mới bản mẫu và chưa có khoảng cách giữa 2 lề trái , lề phải.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/viet480.jpeg)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm Tốt cần xem lại màn 480px cần chú ý kích thước và **font-size** khi chuyển màn.
+
+---
+
+## [Trần Đức Công](https://github.com/TranCong312002/F8-fullstack-k4/tree/main/Bai_tap_buoi_12)
+
+- [x] Bài 1: Màn hình: max-width: 1500px.
+
+Bài làm chưa tốt.
+
+Chưa có responsive vỡ giao diện **code lại**.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/cong1500.jpeg)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1365px.
+
+Bài làm chưa Tốt.
+
+Lỗi giống màn 1500px.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/cong1365.jpeg)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 960px.
+
+Bài làm chưa tốt.
+
+Sai ảnh Logo.
+
+Thẻ `.landing` **background** Lỗi xuất hiện màu trắng do để `height: 100%`;
+
+Đề Xuất.
+
+```css
+.langding {
+  min-height: 100%;
+}
+```
+
+Khoảng cách các Thẻ đang lật nhau hoàn toàn.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/cong960.jpeg)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 480px.
+
+Bài chưa tốt.
+
+Lỗi giống màn 960px.
+
+Thẻ `<h1>` chưa ghi đề lại `font-size: 10.4rem;` to hơn bản mẫu.
+
+Thẻ `.form-box form-register` kích thước đang lớn hơn **.container** làm vỡ giao diện.
+
+**[Xem ảnh](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/cong480.jpeg)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài chưa Tốt. cần chỉnh chu hơn khi làm bài Yêu cầu **code lại**.
