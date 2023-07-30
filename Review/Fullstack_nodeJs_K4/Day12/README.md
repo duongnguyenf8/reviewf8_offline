@@ -185,6 +185,8 @@
   }
   ```
 
+  Chưa làm tính năng autofocus vào input đầu tiên của 2 form.
+
   **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/manhhuy-login-1920.jpeg)**
   **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/manhhuy-register-1920.jpeg)**
 
@@ -208,6 +210,8 @@
 
   Ở giao diện `register` phần chữ `contact us` đang có `font-weight` mỏng hơn so với bản mẫu.
 
+  Chưa làm tính năng autofocus vào input đầu tiên của 2 form.
+
   **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/manhhuy-login-1500.jpeg)**
   **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/manhhuy-register-1500.jpeg)**
 
@@ -228,6 +232,8 @@
   Khi check vào phần `Remember Me` thì chưa xử lý border của ô vuông check.
 
   Ở giao diện `register` phần chữ `contact us` đang có `font-weight` mỏng hơn so với bản mẫu.
+
+  Chưa làm tính năng autofocus vào input đầu tiên của 2 form.
 
   **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/manhhuy-login-1365.jpeg)**
   **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K1/Day12/images/manhhuy-register-1365.jpeg)**
@@ -377,6 +383,8 @@
 
   Các button ở cả 2 giao diện `Login to your account!` và `Register now` đang không có `box-shadow`.
 
+  Chưa làm tính năng autofocus vào input đầu tiên của 2 form.
+
 - [x] Bài 1: Màn hình: max-width: 1920px
 
   Bài làm chưa tốt.
@@ -433,6 +441,81 @@
 ---
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm các tiểu tiết như viết hoa các chữ sao cho đúng bản mẫu, chú ý các kích cỡ màn hình để tránh bỏ sót các trường hợp khác. Chú ý xử lý tốt hơn các button và layout cho đúng với bản mẫu nhất có thể.
+
+---
+
+## [Nguyễn Ngọc Hùng](https://oladayne.github.io/f8-fullstack-k98/)
+
+- [x] Nhận xét chung các màn hình:
+
+  Chiều cao của cả 2 form `login` và `register` đang dài hơn bản mẫu, làm cho icon tên lửa ở góc trái bị che khuất đi một phần.
+
+  Chưa làm tính năng autofocus vào input đầu tiên của 2 form.
+
+  Ở bản mẫu khi ban đầu vào thì các `checkbox` sẽ mặc định được checked nhưng hiện tại bài làm đang không được checked mỗi khi vào trang.
+
+  Các button `Login to your Account!` và `Register Now!` ở 2 form không có box-shadow như bản mẫu.
+
+  Phần text `Login with your Social Account` không có gạch 2 bên như bản mẫu.
+
+- [x] Bài 1: Màn hình: max-width: 1920px
+
+  Bài làm chưa tốt.
+
+  Bản mẫu khi màn hình từ 1501px trở đi có thêm background màu trắng được bo tròn ở bên khối form nhưng hiện tại bài làm chưa có.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-login-1920.jpeg)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-register-1920.jpeg)**
+
+---
+
+- [x] Bài 2: Màn hình: max-width: 1500px
+
+  Bài làm tốt
+
+  Giao diện login: Phần content khá chuẩn so với bản mẫu, còn phần form do set chiều cao không đúng nên lệch khá nhiều so với bản mẫu.
+
+  Giao diện register: Cả 2 phần đều lệch khá nhiều so với bản mẫu.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-login-1500.jpeg)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-register-1500.jpeg)**
+
+---
+
+- [x] Bài 3: Màn hình: max-width: 1365px
+
+  Bài làm tốt.
+
+  Cả 2 giao diện đều khá tốt nhưng phần form lệch khá nhiều nhưng ít hơn các màn hình trên.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-login-1365.jpeg)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-register-1365.jpeg)**
+
+---
+
+- [x] Bài 4: Màn hình: max-width: 960px
+
+  Bài làm tốt.
+
+  Nhận xét tương tự như màn hình 1365px.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-login-960.jpeg)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-register-960.jpeg)**
+
+---
+
+- [x] Bài 5: Màn hình: max-width: 480px
+
+  Bài làm không tốt
+
+  Cần xem lại kích cỡ các tiêu đề và hiện tại các form đang bị quá sát viền nên chỉnh sửa lại cho đúng với bản mẫu.
+
+  **[Xem ảnh-Login](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-login-480.jpeg)**
+  **[Xem ảnh-Register](https://reviewf8.vercel.app/Review/Fullstack_nodeJs_K4/Day12/images/ngochung-register-480.jpeg)**
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm còn nhiều vấn đề cần chỉnh chu hơn, cần chú ý đến các breakpoint để không bỏ qua màn hình nào, cần chú ý hơn về các tiểu tiết để hoàn thiện hơn.
 
 ---
 
