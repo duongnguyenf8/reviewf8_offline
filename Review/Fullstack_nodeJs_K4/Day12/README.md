@@ -515,7 +515,7 @@
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm còn nhiều vấn đề cần chỉnh chu hơn, cần chú ý đến các breakpoint để không bỏ qua màn hình nào, cần chú ý hơn về các tiểu tiết để hoàn thiện hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm còn nhiều vấn đề cần chỉnh chu hơn, cần chú ý đến các breakpoint để không bỏ qua màn hình nào, cần chú ý hơn về các tiểu tiết để hoàn thiện hơn
 
 ---
 
