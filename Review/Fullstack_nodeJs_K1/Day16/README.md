@@ -473,3 +473,274 @@
   ***
 
 - [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số. Chú ý đến việc format code và tối ưu code.
+
+# Hiệp review bài Fullstack K1 Day16 (JS Day1)
+
+## [Nguyễn Duy An](https://github.com/nguyenduyan9/BTVN.git)
+
+**Lưu ý: Nên đặt thẻ `script` trước thẻ đóng của thẻ `body`**
+
+- [x] [Bài 1]
+
+  Bài làm chưa tốt
+
+  Sai yêu cầu đề bài. Đề bài yêu cầu hoán vị 2 số cho trước
+
+  Ví dụ:
+
+  - Input: a = 5; b = 10
+  - Output: a = 10; b = 5
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm tốt
+
+  Nên để `console.log("Số lớn nhất là:"...)` vì nếu để `console.log("a là số lớn nhất")` sẽ không biết số lớn nhất là bao nhiêu
+
+  Thay vì sử dụng nhiều lớp lồng nhau, ta có thể sử dụng cấu trúc `else if {}` và kết hợp sử dụng các `toán tử logic` để rút gọn mã. Điều này giúp code trở nên dễ đọc hơn.
+
+---
+
+- [x] [Bài 4]
+
+  Bài làm tốt
+
+  Chưa kiểm tra trường hợp 1 trong 2 số bằng 0.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] [Bài 5]
+
+  Bài làm tốt
+
+  Nên để `console.log("Thứ tự tăng dần là:"...)` (trả về kết quả trực tiếp là số)
+
+  Thay vì sử dụng nhiều lớp lồng nhau, ta có thể sử dụng cấu trúc `else if {}` và kết hợp sử dụng các `toán tử logic` để rút gọn mã. Điều này giúp code trở nên dễ đọc hơn.
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số.
+
+## [Hoài Nam Đỗ](https://github.com/oaiHmaN25/btvn.git)
+
+- [x] [Bài 1]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm chưa tốt
+
+  Chưa kiểm tra trường hợp 2 số bằng nhau. Nếu 2 số bằng nhau kết quả bị sai
+
+---
+
+- [x] [Bài 4]
+
+  Bài làm tốt
+
+  Chưa kiểm tra trường hợp 1 trong 2 số bằng 0.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] [Bài 5]
+
+  Bài làm chưa tốt
+
+  Đang trả về thứ tự giảm dần
+
+  Nếu cho các số có giá trị bằng nhau thì code không chạy
+
+  Nếu cho số có giá trị âm vào thì trả về kết quả sai
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số.
+
+## [Đỗ Hà Chi](https://github.com/SerenaHa12/fullstack_nodeJS/blob/main/hoc_javascript/btvn_16/ex01/index.html)
+
+- [x] [Bài 1]
+
+  Bài làm rất tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 4]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 5]
+
+  Bài làm rất tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm rất tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số.
+
+## [Trung Le](https://github.com/Trungdeptraii/Le-Van-Trung-26-07-2023.git)
+
+- [x] [Bài 1]
+
+  Bài làm rất tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm tốt
+
+  Nên sử dụng cách viết `if, else if {}` trong trường hợp này giúp dễ đọc code
+
+  Trường hợp có các số bằng nhau đang bị trả về `null`
+
+---
+
+- [x] [Bài 4]
+
+  Bài làm chưa tốt
+
+  Chưa kiểm tra trường hợp 1 trong 2 số bằng 0.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] [Bài 5]
+
+  Bài làm tốt
+
+  Nên format code theo chuẩn để dễ đọc hơn
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Chưa kiểm tra trường hợp 2 số bằng nhau
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số, số bằng 0.
+
+## [Tuấn Phạm](https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi16)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  ***
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 4]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 5]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm rất tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số.
+
+## [Nam Nguyễn](https://github.com/namnguyen2603/nguyentrungnam_bai16.git)
+
+- [x] [Bài 1]
+
+  Bài làm tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  ***
+
+- [x] [Bài 2]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 3]
+
+  Bài làm rất tốt \*
+
+  ***
+
+- [x] [Bài 4]
+
+  Bài làm chưa tốt
+
+  Chưa kiểm tra trường hợp 1 trong 2 số bằng 0.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+  ***
+
+- [x] [Bài 5]
+
+  Bài làm rất tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  ***
+
+- [x] Đánh giá chung bài tập về nhà: bài làm rất tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số.
