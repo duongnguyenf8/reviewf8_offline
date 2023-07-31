@@ -1,3 +1,253 @@
+## [Trần Văn Hiểu](https://github.com/tuilahieu/nodejs/blob/main/exercise/day11/ex.js)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Cần phải kiểm tra điều kiện để biến `url` nhận vào là một `url`. Có thể tham khảo cách kiểm tra dữ liệu đưa vào phải bắt đầu bằng `http` hoặc sử dụng biểu thức chính quy.
+
+  Nên đưa link api vào trong hàm vì chỉ sử dụng ở trong hàm đó, cũng như đưa link vào trong hàm để dễ dàng sửa đổi.
+
+  Cần sử dụng try catch để bắt lỗi tốt hơn, nên thêm phần xử lý lỗi khi không thể kết nối với API.
+
+  Cần kiểm tra cả trường hợp khi data trả về không lỗi nhưng nó là một chuỗi rỗng thì nên thông báo cho người dùng.
+
+  Tham khảo đoạn code dưới đây:
+
+  ```js
+  const link = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`;
+  const linkShorten = async function (url) {
+    try {
+      const api = `https://api.shrtco.de/v2/shorten?url=${url && url.trim()}}`;
+      const res = await fetch(api);
+      const { ok, error, result } = await res.json();
+      if (ok) {
+        return {
+          short_link: result.short_link,
+          short_link2: result.short_link2,
+          short_link3: result.short_link3,
+        };
+      }
+      throw new Error(error || "Oops, Something error.");
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+  (async function () {
+    const data = await linkShorten(link);
+    if (data) {
+      console.log(data);
+    } else {
+      console.log("No data found");
+    }
+  })();
+  ```
+
+- [x] Đánh giá: Bài làm rất tốt, tuy nhiên cần kiểm tra các lỗi có thể xảy ra để cách làm chặt chẽ và hoàn thiện hơn.
+
+---
+
+## [Phương](https://github.com/phuongnd168/back-end-f8/tree/main/Buoi11)
+
+- [x] Bài 1:
+
+  Bài làm chưa tốt.
+
+  Cần phải kiểm tra điều kiện để biến `url` nhận vào là một `url`. Có thể tham khảo cách kiểm tra dữ liệu đưa vào phải bắt đầu bằng `http` hoặc sử dụng biểu thức chính quy.
+
+  Nên đưa link api vào trong hàm vì chỉ sử dụng ở trong hàm đó, cũng như đưa link vào trong hàm để dễ dàng sửa đổi.
+
+  Có rất nhiều đường dẫn trả về, nên in ra tất cả thay vì chỉ in ra 1 đường dẫn
+
+  ```js
+  console.log("Đường dẫn sau khi rút gọn: " + data.result.short_link);
+  ```
+
+  Cần sử dụng try catch để bắt lỗi tốt hơn, nên thêm phần xử lý lỗi khi không thể kết nối với API.
+
+  Cần kiểm tra cả trường hợp khi data trả về không lỗi nhưng nó là một chuỗi rỗng thì nên thông báo cho người dùng.
+
+  Tham khảo đoạn code dưới đây:
+
+  ```js
+  const link = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`;
+  const linkShorten = async function (url) {
+    try {
+      const api = `https://api.shrtco.de/v2/shorten?url=${url && url.trim()}}`;
+      const res = await fetch(api);
+      const { ok, error, result } = await res.json();
+      if (ok) {
+        return {
+          short_link: result.short_link,
+          short_link2: result.short_link2,
+          short_link3: result.short_link3,
+        };
+      }
+      throw new Error(error || "Oops, Something error.");
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+  (async function () {
+    const data = await linkShorten(link);
+    if (data) {
+      console.log(data);
+    } else {
+      console.log("No data found");
+    }
+  })();
+  ```
+
+- [x] Đánh giá: Bài làm tốt tuy nhiên cần cải thiện nhiều chỗ nhỏ và lưu ý đưa link api vào trong hàm để dễ dàng sửa đổi, nâng cấp hơn.
+
+---
+
+## [Trần Anh Đức](https://github.com/ducanhtranptit/F8_Homework/blob/main/Buoi11/buoi11.js)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Cần phải kiểm tra điều kiện để biến `url` nhận vào là một `url`. Có thể tham khảo cách kiểm tra dữ liệu đưa vào phải bắt đầu bằng `http` hoặc sử dụng biểu thức chính quy.
+
+  Khi khai báo biến `apiUrl` đang có một khoảng trắng trước giá trị của biến đó khi gán, điều này là không tốt và sau này sẽ gặp nhiều vấn đề khi làm việc với api mà đường dẫn không đúng.
+
+  Có rất nhiều đường dẫn trả về, nên in ra tất cả thay vì chỉ in ra 1 đường dẫn
+
+  ```js
+  return data.result.full_short_link;
+  ```
+
+  Nên sử dụng async/await thay vì promise. Nó giúp code dễ đọc hơn, dễ debug hơn.
+
+Tham khảo đoạn code dưới đây:
+
+```js
+const link = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`;
+const linkShorten = async function (url) {
+  try {
+    const api = `https://api.shrtco.de/v2/shorten?url=${url && url.trim()}}`;
+    const res = await fetch(api);
+    const { ok, error, result } = await res.json();
+    if (ok) {
+      return {
+        short_link: result.short_link,
+        short_link2: result.short_link2,
+        short_link3: result.short_link3,
+      };
+    }
+    throw new Error(error || "Oops, Something error.");
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+(async function () {
+  const data = await linkShorten(link);
+  if (data) {
+    console.log(data);
+  } else {
+    console.log("No data found");
+  }
+})();
+```
+
+---
+
+- [x] Đánh giá: Bài làm tốt tuy nhiên cần cải thiện nhiều chỗ nhỏ và nên sử dụng async/await thay vì promise.
+
+---
+
+## [Khải Nguyễn](https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-11)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Cần phải kiểm tra điều kiện để biến `url` nhận vào là một `url`. Có thể tham khảo cách kiểm tra dữ liệu đưa vào phải bắt đầu bằng `http` hoặc sử dụng biểu thức chính quy.
+
+  Với các giá trị không thay đổi, nên sử dụng biến const thay vì let
+
+  ```js
+  var api = `https://api.shrtco.de/v2/shorten?url=`;
+  var url = `https://www.youtube.com/`;
+  var res = await fetch(`${api}${url}`);
+  var pos = await res.json();
+  ```
+
+  Có rất nhiều đường dẫn trả về, nên in ra tất cả thay vì chỉ in ra 1 đường dẫn
+
+  ```js
+  console.log(`Link sau khi rút gọn là: ${pos.result.short_link}`);
+  ```
+
+  Nên đưa link api vào trong hàm vì chỉ sử dụng ở trong hàm đó, cũng như đưa link vào trong hàm để dễ dàng sửa đổi.
+
+  Nên sử dụng thuộc tính kiểm tra data khi đã chuyển `res` về dạng json thì sẽ hợp lý hơn.
+
+  Tham khảo đoạn code dưới đây:
+
+  ```js
+  const link = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`;
+  const linkShorten = async function (url) {
+    try {
+      const api = `https://api.shrtco.de/v2/shorten?url=${url && url.trim()}}`;
+      const res = await fetch(api);
+      const { ok, error, result } = await res.json();
+      if (ok) {
+        return {
+          short_link: result.short_link,
+          short_link2: result.short_link2,
+          short_link3: result.short_link3,
+        };
+      }
+      throw new Error(error || "Oops, Something error.");
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  };
+  (async function () {
+    const data = await linkShorten(link);
+    if (data) {
+      console.log(data);
+    } else {
+      console.log("No data found");
+    }
+  })();
+  ```
+
+---
+
+- [x] Đánh giá: Bài làm tốt tuy nhiên cần khai báo với từ khóa hợp lý, đưa link api vào trong hàm để dễ dàng sửa đổi, nâng cấp hơn.
+
+---
+
+## [Nguyễn Đức Dũng](https://github.com/dungng1321/f8-BackEnd-NodeJS-k1/blob/feature/day-11/index.js)
+
+- [x] Bài 1:
+
+  Bài làm rất tốt. \*
+
+  Tuy nhiên bước cuối cùng nên kiểm tra `shortenLink` có là giá trị `truthy` hay không để có thể thông báo cho người dùng nếu xảy ra bất cứ lỗi gì ngoài ý muốn sẽ hợp lý hơn.
+
+  ```js
+  const shortenLink = await getShortenLink(originalLink);
+  if (shortenLink) {
+    console.log(shortenLink);
+  } else {
+    console.log("No data found");
+  }
+  ```
+
+---
+
+- [x] Đánh giá: Bài làm rất tốt chỉ cần chú ý trường hợp lỗi nhỏ để hoàn thiện hơn.
+
+---
+
 ## [Pham Hoang](https://github.com/palkma-byte/f8-backend-k1/blob/main/HW/HW11/hw11.js)
 
 - [x] Bài 1:
