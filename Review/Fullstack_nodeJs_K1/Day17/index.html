@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day17</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên K1 - Fullstack</h1>
+<h2><a href="https://github.com/anhquan2211/F8-OFFLINE.git">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Quãng đường đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Số điện đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng à truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); // 50kWh đầu tiên
+  calculate(50, 1734); // Từ kWh 51 - 100
+  calculate(100, 2014); // Từ kWh 101 - 200
+  calculate(100, 2536); // Từ kWh 201 - 300
+  calculate(100, 2834); // Từ kWh 301 - 400
+  calculate(Infinity, 2927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`Tổng số tiền điện phải đóng tháng này là: ${TotalBill(300)}đ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Biến <code>add</code> không được sử dụng.</p>
+<p>Biến <code>n</code> là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 3; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+console.log(
+  `${!isPrime(1234566) ? &quot;Không &quot; : &quot;&quot;}Thỏa mãn điều kiện là số nguyên tố`
+);
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt * Nếu có thể, cần tối ưu các phép toán lặp lại, tối ưu các trường hợp có thể để giảm số lần lặp.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
