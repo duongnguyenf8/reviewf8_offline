@@ -157,7 +157,7 @@ console.log(`số tiền phải đóng ${TotalBill(401)} vnd`);
 }
 const number = 2;
 console.log(
-  `số ${element} ${!isPrime(element) ? &quot;không phải&quot; : &quot;là&quot;} số  nguyên tố`
+  `số ${number} ${!isPrime(number) ? &quot;không phải&quot; : &quot;là&quot;} số  nguyên tố`
 );
 </code></pre>
 </li>
@@ -242,9 +242,7 @@ console.log(TotalBill(401));
   return true;
 }
 const number = 4;
-console.log(
-  `${element} ${!isPrime(element) ? &quot;không&quot; : &quot;&quot;} là số  nguyên tố`
-);
+console.log(`${number} ${!isPrime(number) ? &quot;không&quot; : &quot;&quot;} là số  nguyên tố`);
 </code></pre>
 </li>
 </ul>
@@ -290,6 +288,206 @@ console.log(count(5));
 <li>
 <p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 8</a></p>
 <p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<h2><a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Phan Trung Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Số km là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Chưa tính tới trường hợp đi một chút (0=&gt; dưới 1Km) là 15000, nếu không thì đang bị lỗi.</p>
+<pre><code>Tong tien = undefined
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Số điện là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(TotalBill(401));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để đảm bảo được sử dụng lại ở nhiều chỗ.</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const number = 4;
+console.log(`${number} ${!isPrime(number) ? &quot;khong&quot; : &quot;&quot;} la so nguyen to`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 6</a></p>
+<p>Bài làm tốt *</p>
+<p>Một bàn cờ có 8 hàng và 8 cột.</p>
+<p>Nên sử dụng <code>document.write</code> để in ra màn hình.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 7</a></p>
+<p>Bài làm tốt *</p>
+<p>Biến <code>sizes</code> là một hàng số không đổi, nên sử dụng <code>const</code> để khai báo biến.</p>
+<p>Nên sử dụng <code>document.write</code> để in ra màn hình.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 8</a></p>
+<p>Bài làm KHÔNG tốt *</p>
+<p>Không được sử dụng vòng lặp.</p>
+<p>Chưa xét điều kiện <code>N=0</code></p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}.
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 3</a></p>
+<p>Bài làm tốt *.</p>
+<p>Nên kiểm tra khi <strong>parse</strong> về số.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Hiệu năng bài chưa tốt.</p>
+<p>Nên lặp đến căn bậc 2 của <code>n</code> vì các số sau của căn bậc 2 có phép chia tương tự.</p>
+<p>Nên check trước các trường hợp có thể để bài làm tốt hơn, chạy nhanh hơn.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const n = 4;
+console.log(`${n} ${!isPrime(n) ? &quot;không phải&quot; : &quot;&quot;} là số nguyên tố.`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 5</a></p>
+<p>Bài làm chưa tốt *</p>
+<p>Khi vẽ tầng sau của tam giác, các số cần được tiếp tục tăng lên 1 đơn vị so với tầng trước đó.</p>
+<pre><code class="language-js">function drawTriangle(n) {
+  var weight = &quot;&quot;;
+  var count = 1;
+  for (let i = 1; i &lt;= n; i++) {
+    for (let j = 1; j &lt;= i; j++) {
+      weight += count + &quot; &quot;;
+      count++;
+    }
+    weight += &quot;\n&quot;;
+  }
+  return weight;
+}
+
+console.log(drawTriangle(5));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 7</a></p>
+<p>Bài làm tốt *</p>
+<p>Chưa đủ phép tính của bảng cửu chương.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 8</a></p>
+<p>Bài làm tốt.</p>
+<p>Sai trường hợp khi <code>n = 1</code></p>
 </li>
 </ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
