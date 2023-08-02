@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day17</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên K1 - Fullstack - Day 17</h1>
-<h2><a href="https://github.com/anhquan2211/F8-OFFLINE.git">Luu Anh Quan</a></h2>
+<h2><a href="//github.com/anhquan2211/F8-OFFLINE.git">Luu Anh Quan</a></h2>
 <ul>
 <li>
 <p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 1</a></p>
@@ -13,7 +13,7 @@
 <p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 2</a></p>
 <p>Bài làm tốt *</p>
 <p>Số điện đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
-<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng à truyền vào là số điện</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
 <pre><code class="language-js">function TotalBill(kWh) {
   if (kWh &lt;= 0) {
     console.log(`Số kWh nhập vào phải lớn hơn 0!`);
@@ -97,7 +97,7 @@ console.log(
 <ul>
 <li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt * Nếu có thể, cần tối ưu các phép toán lặp lại, tối ưu các trường hợp có thể để giảm số lần lặp.</li>
 </ul>
-<h2><a href="https://github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Nguyen Xuan Tuan Anh</a></h2>
+<h2><a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Nguyen Xuan Tuan Anh</a></h2>
 <ul>
 <li>
 <p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 1</a></p>
@@ -110,7 +110,7 @@ console.log(
 <p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 2</a></p>
 <p>Bài làm tốt *</p>
 <p>Số điện đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
-<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng à truyền vào là số điện</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
 <pre><code class="language-js">function TotalBill(kWh) {
   if (kWh &lt;= 0) {
     console.log(`Số kWh nhập vào phải lớn hơn 0!`);
@@ -182,4 +182,114 @@ console.log(
 </li>
 </ul>
 <hr>
+<h2><a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Minh Quang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 1</a></p>
+<p>Bài làm chưa tốt *</p>
+<p>Khi tính tiền taxi, nếu số km nhập vào là số âm thì sẽ bị sai kết quả. Nên kiểm tra điều kiện số km nhập vào phải lớn hơn 0.</p>
+<p>Khi tính tiền taxi cần cộng dồn các giá trị tiền taxi lại với nhau, nên khai báo biến <code>total</code> ở ngoài vòng lặp để cộng dồn các giá trị lại với nhau.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(TotalBill(401));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Nên tách thành hàm để đảm bảo được sử dụng lại ở nhiều chỗ.</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const number = 4;
+console.log(
+  `${element} ${!isPrime(element) ? &quot;không&quot; : &quot;&quot;} là số  nguyên tố`
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 5</a></p>
+<p>Bài làm chưa tốt *</p>
+<p>Khi vẽ tầng sau của tam giác, các số cần được tiếp tục tăng lên 1 đơn vị so với tầng trước đó.</p>
+<pre><code class="language-js">function count(n) {
+  var weight = &quot;&quot;;
+  var count = 1;
+  for (let i = 1; i &lt;= n; i++) {
+    for (let j = 1; j &lt;= i; j++) {
+      weight += count + &quot; &quot;;
+      count++;
+    }
+    weight += &quot;\n&quot;;
+  }
+  return weight;
+}
+
+console.log(count(5));
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 6</a></p>
+<p>Bài làm tốt</p>
+<p>Có khoảng cách ở giữa bàn cờ:</p>
+<p><img src="images/taminhquang13-Bai6.png" alt="taminhquang13-Bai6"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên có khoảng cách và xuống dòng sau khi đã hết phép tính của 1 số.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
