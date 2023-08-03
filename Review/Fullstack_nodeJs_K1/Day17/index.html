@@ -1,0 +1,956 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day17</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên K1 - Fullstack - Day 17</h1>
+<h2><a href="//github.com/anhquan2211/F8-OFFLINE.git">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Quãng đường đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Số điện đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); // 50kWh đầu tiên
+  calculate(50, 1734); // Từ kWh 51 - 100
+  calculate(100, 2014); // Từ kWh 101 - 200
+  calculate(100, 2536); // Từ kWh 201 - 300
+  calculate(100, 2834); // Từ kWh 301 - 400
+  calculate(Infinity, 2927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`Tổng số tiền điện phải đóng tháng này là: ${TotalBill(300)}đ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Biến <code>add</code> không được sử dụng.</p>
+<p>Biến <code>n</code> là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+console.log(
+  `${!isPrime(3) ? &quot;Không t&quot; : &quot;T&quot;}hỏa mãn điều kiện là số nguyên tố`
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/anhquan2211/F8-OFFLINE/blob/main/f8-offline-day17/main.js">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt * Nếu có thể, cần tối ưu các phép toán lặp lại, tối ưu các trường hợp có thể để giảm số lần lặp.</li>
+</ul>
+<h2><a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể bỏ qua cả Km = 0 vì nếu không đi thì không cần tính tiền <strong><code>:))</code></strong></p>
+<pre><code class="language-js">if (!isNaN(numberKm) &amp;&amp; numberKm &gt;= 0)
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Số điện đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(401)} vnd`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p><code>element</code> là một số, nên đặt tên biến là <code>number</code> sẽ dễ hiểu hơn, nên sử dụng const để khai báo biến vì đây là một giá trị không thay đổi</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const number = 2;
+console.log(
+  `số ${number} ${!isPrime(number) ? &quot;không phải&quot; : &quot;là&quot;} số  nguyên tố`
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="//github.com/xuananh2212/js_fullstack_k1/tree/main/day17">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<h2><a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Minh Quang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 1</a></p>
+<p>Bài làm chưa tốt *</p>
+<p>Khi tính tiền taxi, nếu số km nhập vào là số âm thì sẽ bị sai kết quả. Nên kiểm tra điều kiện số km nhập vào phải lớn hơn 0.</p>
+<p>Khi tính tiền taxi cần cộng dồn các giá trị tiền taxi lại với nhau, nên khai báo biến <code>total</code> ở ngoài vòng lặp để cộng dồn các giá trị lại với nhau.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(TotalBill(401));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Nên tách thành hàm để đảm bảo được sử dụng lại ở nhiều chỗ.</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const number = 4;
+console.log(`${number} ${!isPrime(number) ? &quot;không&quot; : &quot;&quot;} là số  nguyên tố`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 5</a></p>
+<p>Bài làm chưa tốt *</p>
+<p>Khi vẽ tầng sau của tam giác, các số cần được tiếp tục tăng lên 1 đơn vị so với tầng trước đó.</p>
+<pre><code class="language-js">function count(n) {
+  var weight = &quot;&quot;;
+  var count = 1;
+  for (let i = 1; i &lt;= n; i++) {
+    for (let j = 1; j &lt;= i; j++) {
+      weight += count + &quot; &quot;;
+      count++;
+    }
+    weight += &quot;\n&quot;;
+  }
+  return weight;
+}
+
+console.log(count(5));
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 6</a></p>
+<p>Bài làm tốt</p>
+<p>Có khoảng cách ở giữa bàn cờ:</p>
+<p><img src="images/taminhquang13-Bai6.png" alt="taminhquang13-Bai6"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên có khoảng cách và xuống dòng sau khi đã hết phép tính của 1 số.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/taminhquang13/F8_Fullstack/blob/main/BT17/js/script.js">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<h2><a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Phan Trung Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Số km là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Chưa tính tới trường hợp đi một chút (0=&gt; dưới 1Km) là 15000, nếu không thì đang bị lỗi.</p>
+<pre><code>Tong tien = undefined
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Số điện là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(TotalBill(401));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để đảm bảo được sử dụng lại ở nhiều chỗ.</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const number = 4;
+console.log(`${number} ${!isPrime(number) ? &quot;khong&quot; : &quot;&quot;} la so nguyen to`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 6</a></p>
+<p>Bài làm tốt *</p>
+<p>Một bàn cờ có 8 hàng và 8 cột.</p>
+<p>Nên sử dụng <code>document.write</code> để in ra màn hình.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 7</a></p>
+<p>Bài làm tốt *</p>
+<p>Biến <code>sizes</code> là một hàng số không đổi, nên sử dụng <code>const</code> để khai báo biến.</p>
+<p>Nên sử dụng <code>document.write</code> để in ra màn hình.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="//github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_17/script.js">Bài 8</a></p>
+<p>Bài làm KHÔNG tốt *</p>
+<p>Không được sử dụng vòng lặp.</p>
+<p>Chưa xét điều kiện <code>N=0</code></p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}.
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 3</a></p>
+<p>Bài làm tốt *.</p>
+<p>Nên kiểm tra khi <strong>parse</strong> về số.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Hiệu năng bài chưa tốt.</p>
+<p>Nên lặp đến căn bậc 2 của <code>n</code> vì các số sau của căn bậc 2 có phép chia tương tự.</p>
+<p>Nên check trước các trường hợp có thể để bài làm tốt hơn, chạy nhanh hơn.</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (number % 1 !== 0 || number &lt; 2 || (number % 2 === 0 &amp;&amp; number !== 2))
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+const n = 4;
+console.log(`${n} ${!isPrime(n) ? &quot;không phải&quot; : &quot;&quot;} là số nguyên tố.`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 5</a></p>
+<p>Bài làm chưa tốt *</p>
+<p>Khi vẽ tầng sau của tam giác, các số cần được tiếp tục tăng lên 1 đơn vị so với tầng trước đó.</p>
+<pre><code class="language-js">function drawTriangle(n) {
+  var weight = &quot;&quot;;
+  var count = 1;
+  for (let i = 1; i &lt;= n; i++) {
+    for (let j = 1; j &lt;= i; j++) {
+      weight += count + &quot; &quot;;
+      count++;
+    }
+    weight += &quot;\n&quot;;
+  }
+  return weight;
+}
+
+console.log(drawTriangle(5));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 7</a></p>
+<p>Bài làm tốt *</p>
+<p>Chưa đủ phép tính của bảng cửu chương.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day17/main.js">Bài 8</a></p>
+<p>Bài làm tốt.</p>
+<p>Sai trường hợp khi <code>n = 1</code></p>
+</li>
+</ul>
+<h1>Hiệp review bài Fullstack K1 Day17 (JS Day2)</h1>
+<h2><a href="https://github.com/Trungdeptraii/30-07-2023-Le-Van_Trung-Day17.git">Trung Le</a></h2>
+<p><strong>Lưu ý: Nên đặt thẻ <code>script</code> trước thẻ đóng của thẻ <code>body</code></strong></p>
+<ul>
+<li>
+<p>Ở tất cả các bài:</p>
+<p>Khi nhập và tính lần đầu tiên sẽ không ra kết quả.</p>
+<p>Vẫn nhập được chữ <code>e</code> vào thẻ input có <code>type=&quot;number&quot;</code> khiến chương trình bị lỗi</p>
+<p>Nên đặt tên biến bằng Tiếng Anh</p>
+</li>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên đặt tên biến bằng Tiếng Anh, không đặt tên biến nửa Tiếng Anh nửa Tiếng Việt</p>
+<p>Lỗi khi ấn <code>kiểm tra</code> nhiều lần ở cùng một giá trị thì bị lặp bảng</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt *</p>
+<p>Sai giá tiền ở cấp 6</p>
+<p>Lỗi khi ấn <code>kiểm tra</code> nhiều lần ở cùng một giá trị thì bị lặp bảng</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt</p>
+<p>Placeholder của thẻ input vẫn là của bài 2</p>
+<p>Chưa kiểm tra trường hợp đầu vào không phải số nguyên</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Chưa kiểm tra trường hợp đầu vào không phải số nguyên</p>
+<p>Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.</p>
+<p>Nên tách hàm kiểm tra số nguyên tố ra khỏi sự kiện click. Điều này giúp mã dễ đọc hơn và cho phép tái sử dụng hàm kiểm tra ở các nơi khác.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 5]</p>
+<p>Bài làm chưa tốt</p>
+<p>Chương trình chỉ hoạt động đúng ở lần chạy đầu tiên. Bị lỗi ở các lần chạy tiếp theo</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 6]</p>
+<p>Bài làm tốt</p>
+<p>Vì đã học HTML, CSS nên có thể tạo thẻ <code>div</code> hoặc <code>span</code> và thêm <code>style</code> vào để giống bàn cờ vua.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 7]</p>
+<p>Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 8]</p>
+<p>Bài làm chưa tốt</p>
+<p>Chương trình chỉ hoạt động đúng ở lần chạy đầu tiên. Bị lỗi ở các lần chạy tiếp theo</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số, chú ý về các trường hợp chỉ chạy chương trình đúng ở lần đầu tiên.</li>
+</ul>
+<h2><a href="https://github.com/realguy010895/hunganh-f8-k1-buoi17/blob/main/btvn-b17.js">Nguyễn Hùng Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai yêu cầu đề bài</p>
+<p>Từ 0 km đến 1 km: Giá cước là 15000đ.</p>
+<p>Từ 1.1 km đến 5 km: Giá cước bao gồm phần 1 km đầu tiên với giá 15000đ và phần từ 1.1 km đến 5 km với giá 13500đ cho mỗi km.</p>
+<p>Trên 5 km: Giá cước bao gồm phần 1 km đầu tiên với giá 15000đ, phần từ 1.1 km đến 5 km với giá 13500đ cho mỗi km và phần vượt qua 5 km với giá 11000đ cho mỗi km.</p>
+<p>Trên 120 km: Sau khi tính toán các mức giá cước như ở trường hợp trên, sẽ giảm 10% tổng số tiền cước.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai yêu cầu đề bài</p>
+<p>Cách giải thích đề bài tương tự với bài 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Chưa kiểm tra trường hợp đầu vào không phải số nguyên, nhỏ hơn 0. Chương trình sẽ bị lỗi nếu người dùng nhập vào không hợp lệ nên cần kiểm tra hết các trường hợp đầu vào.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Chưa kiểm tra trường hợp đầu vào không phải số nguyên. Chương trình sẽ bị lỗi nếu người dùng nhập vào không hợp lệ nên cần kiểm tra hết các trường hợp đầu vào.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 5]</p>
+<p>Bài làm tốt</p>
+<p>Lưu ý: Trong javascript có phân biệt chữ hoa và chữ thường. Trong bài đang truyền <code>n</code> vào hàm trong khi lại đặt tên biến là <code>N</code> khiến cho hàm không chạy</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 6]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 7]</p>
+<p>Bài làm rất tốt *</p>
+<p>Sai chính tả tên hàm <code>board</code> -&gt; <code>boad</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 8]</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai công thức</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số, chú ý đọc rõ yêu cầu đề bài.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/phamtuan162/phamtuan-nodejs-01">Tuấn Phạm</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm có kiểm tra <code>n</code> phải là số nguyên lớn hơn 0 thì mới thực hiện tính toán tuy nhiên chưa có thông báo lỗi nếu như người dùng nhập <code>n</code> không thỏa mãn điều kiện đó. Nên bổ sung thông báo lỗi nếu người dùng nhập sai sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên ở trong vòng lặp <code>for</code>:</p>
+<pre><code class="language-js">for (var i = 2; i &lt; n; i++) {
+  if (n % i === 0) {
+    return false;
+    n = i;
+  }
+}
+</code></pre>
+<p>Việc gán <code>n = i</code> ở sau câu lệnh <code>return</code> là không cần thiết vì sau câu lệnh <code>return</code> sẽ nhảy ra khỏi hàm và không thực hiện các câu lệnh ở sau <code>return</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên cần kiểm tra điều kiện của n nếu như n là số nhỏ hơn 1 thì vẫn thực hiện logic và không có điểm dừng làm cho treo trình duyệt.</p>
+<p>Và cũng cần kiểm tra n phải là số nguyên.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số chi tiết nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git">Dương Quốc Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Việc đặt tên biến là <code>numberKm_1</code>, <code>numberKm_2</code>, <code>numberKm_3</code>, <code>price_1</code>, <code>price_2</code>, <code>price_3</code> không tường minh và không có ý nghĩa cụ thể. Điều này làm cho người khác khi đọc code cảm thấy khó hiểu. Nên đặt tên biến tường minh và có ý nghĩa nhất có thể.</p>
+<p>Bài làm chưa kiểm tra nếu như số km đi được là số nhỏ hơn hoặc bằng 0 thì sẽ thông báo cho người dùng cần nhập lại cho hợp lý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Nhận xét tên biến như nhận xét ở Bài 1.</p>
+<p>Ở điều kiện số kWh nằm trong khoảng từ 50 - 100 đang viết sai tên biến <code>numberKwh_2</code>. Hiện tại đang viết là <code>numberKm_2</code>.</p>
+<pre><code class="language-js">totalBill = 50 * numberKwh_1 + (n - 50) * numberKm_2;
+</code></pre>
+<p>Ở điều kiện số kWh trong khoảng từ 100 - 200 đang sai logic, làm cho kết quả sai. Cụ thể hiện tại trong bài làm là:</p>
+<pre><code class="language-js">if (n &gt; 100 &amp;&amp; n &lt;= 200) {
+  totalBill = 50 * numberKwh_1 + 100 * numberKwh_2 + (n - 150) * numberKwh_3;
+}
+</code></pre>
+<p>Ở đây biến <code>numberKwh_2</code> đại diện cho 50 số kWh trong khoảng từ 51 - 100 vì vậy lấy <code>numberKwh_2 * 100</code> là không đúng.</p>
+<p>Và điều đó dẫn cho biểu thức phía sau <code>n - 150</code> cũng không đúng. Biểu thức đúng phải là:</p>
+<pre><code class="language-js">if (n &gt; 100 &amp;&amp; n &lt;= 200) {
+  totalBill = 50 * numberKwh_1 + 50 * numberKwh_2 + (n - 100) * numberKwh_3;
+}
+</code></pre>
+<p>Việc hiểu sai từ điều kiện ở trên làm cho logic tính toán ở các điều kiện phía dưới bị sai theo. Cần đọc kỹ yêu cầu bài toán và sửa lại cho đúng với yêu cầu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên, việc gán giá trị khởi tạo cho <code>subTotal</code> là không cần thiết vì khi vào vòng lặp <code>subTotal</code> đã được tính và gán bằng giá trị mới là <code>i * (i + 1)</code>.</p>
+<p>Bài làm có kiểm tra <code>n</code> phải là số nguyên lớn hơn 0 thì mới thực hiện tính toán tuy nhiên chưa có thông báo lỗi nếu như người dùng nhập <code>n</code> không thỏa mãn điều kiện đó. Nên bổ sung thông báo lỗi nếu người dùng nhập sai sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm chưa kiểm tra điều kiện của <code>n</code> phải là số nguyên rồi mới thực hiện logic. Hiện tại nếu nhập <code>n = 2.3</code> thì kết quả sẽ là <code>So 2.3 la so nguyen to</code>.</p>
+<p>Góp ý:</p>
+<p>Ở trong hàm <code>prime</code> có một tham số là <code>number</code> thì có thể lấy <code>number</code> kiểm tra luôn các điều kiện cần thiết chứ không cần gán tham số <code>number</code> cho biến <code>n</code> rồi kiểm tra điều kiện của <code>n</code>. Cần hạn chế tạo thêm các biến không cần thiết.</p>
+<p>Hàm <code>prime</code> trả về giá trị <code>boolean</code> vậy nên khi đưa vào điều kiện của <code>if</code> không cần phải so sánh <code>prime(n) === true</code> và <code>prime(n) === false</code>. Chỉ cần <code>if (prime(n))</code> là được.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên cần kiểm tra điều kiện của n nếu như n là số nhỏ hơn 1 thì vẫn thực hiện logic và không có điểm dừng làm cho treo trình duyệt.</p>
+<p>Và cũng cần kiểm tra n phải là số nguyên.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, lưu ý về việc đặt tên biến, tối ưu code để hoàn thiện bài làm hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/namnguyen2603/nguyentrungnam_bai17.git">Nam Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm có kiểm tra điều kiện <code>distance &gt; 0</code> tuy nhiên chưa có thông báo lỗi nếu như <code>distance &lt;= 0</code>, thiếu vế <code>else</code>khi kiểm tra điều kiện <code>distance &gt; 0</code>.</p>
+<p>Phần còn lại của bài làm logic tốt tuy nhiên việc nhập cứng giá tiền một km của từng chặng như hiện tại thì khi muốn thay đổi giá tiền một km của chặng nào đó sẽ phải sửa khá nhiều chỗ. Do đó, nên gán giá của từng chặng vào một biến nào đó sẽ thuận tiện cho việc sửa đổi sau này.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên, việc gán giá trị khởi tạo cho <code>subS</code> là không cần thiết vì khi vào vòng lặp <code>subS</code> đã được tính và gán bằng giá trị mới là <code>i * (i + 1)</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Lưu ý về việc format code đang có những chỗ xuống dòng không cần thiết ví dụ như sử dụng <code>else</code> thì không cần thiết phải xuống dòng.</p>
+<p>Góp ý: Khi sử dụng vòng lặp, việc lặp lại nhiều lần không cần thiết cũng gây ảnh hưởng đến thời gian thực hiện của chương trình. Vì vậy, thường khi kiểm tra số nguyên tố, chỉ cần kiểm tra đến <code>Math.sqrt(n)</code> là được.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm có hoàn thành yêu cầu vẽ tam giác vuông nhưng các số trong các hàng đang không liên tiếp từ 1 - 15 như yêu cầu đề bài. Mà mỗi hàng đều đang bắt đầu từ '1'.</p>
+<p>Tham khảo đoạn code dưới đây:</p>
+<pre><code class="language-js">function drawTriangle(n) {
+  let currentNumber = 1,
+    row = &quot;&quot;;
+  for (let i = 1; i &lt;= n; i++) {
+    for (let j = 1; j &lt;= i; j++) {
+      row += currentNumber + &quot; &quot;;
+      currentNumber++;
+    }
+    row += &quot;\n&quot;;
+  }
+  return row;
+}
+console.log(drawTriangle(5));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên bài làm đang hiển thị ra bảng <code>console</code> kết quả thực hiện nên rất nhỏ và khó nhìn, nên hiển thị ra trình duyệt bằng câu lệnh <code>document.write</code> sẽ hợp lý hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/hoc_javascript/btvn_17/ex03">Đỗ Hà Chi</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang hiểu sai yêu cầu của bài toán. Hiện tại bài làm đang làm theo hướng nếu như số km nhập vào thuộc khoảng nào đó thì sẽ tính toàn bộ số km từ đầu đến đó cùng một giá tiền. Điều này sẽ làm cho kết quả bị sai vì nên làm theo cách cộng dồn km sẽ chính xác hơn.</p>
+<p>Ví dụ như nếu người dùng nhập vào 4km thì nên tính 1km giá 15000đ và 3km còn lại giá 13500đ.</p>
+<p>Ngoài ra, cần kiểm tra điều kiện của <code>distance</code>, nếu như người dùng nhập vào số km nhỏ hơn hoặc bằng 0 sẽ cần thông báo cho người dùng nhập lại cho hợp lý hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm hiện tại đang hiểu sai yêu cầu đề bài như bài 1. Nhận xét tương tự như bài 1.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt.</p>
+<p>Tuy nhiên chưa kiểm tra điều kiện của <code>n</code>, nếu như <code>n</code> không phải là số nguyên hoặc nhỏ hơn hoặc bằng 0 thì cần thông báo lỗi.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên bài làm chưa kiểm tra điều kiện của <code>n</code> phải là số nguyên rồi mới thực hiện logic. Hiện tại nếu nhập <code>n = 2.3</code> thì kết quả sẽ là <code>2.3 is a prime number</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Chưa hoàn thành.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Chưa hoàn thành.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Chưa hoàn thành.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Các bài đã làm cần đọc kỹ yêu cầu đề bài để hoàn thiện hơn và tránh bỏ xót trường hợp của đầu vào trong các bài toán.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
