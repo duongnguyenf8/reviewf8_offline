@@ -2,7 +2,7 @@
 
 - [x] Bài 1: Bài làm tốt \*
 
-      Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
 
 ---
 
@@ -16,7 +16,7 @@
 
 - [x] Bài 4: Bài làm tốt
 
-      Số **0** là số không âm cũng không dương. Nên phải tách Trường hợp đó.
+  Số **0** là số không âm cũng không dương. Nên phải tách trường hợp đó.
 
   ```javascript
   var a = 1;
@@ -44,20 +44,20 @@
 
 - [x] Bài 1: Bài làm chưa tốt.
 
-      Đề bài yêu cầu không dùng biến trung gian.
+  Đề bài yêu cầu không dùng biến trung gian.
 
-      Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
 
 ---
 
 - [x] Bài 2: Bài làm chưa tốt.
 
-      Sai công thức.
+  Sai công thức.
 
-      ```javascript
-            var s = 10 + 20 + 5 ** 10 / 2;
-            console.log(s);
-      ```
+  ```javascript
+  var s = 10 + 20 + 5 ** 10 / 2;
+  console.log(s);
+  ```
 
 ---
 
@@ -73,13 +73,13 @@
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt , cần cẩn thận hơi khi làm bài.Tuy nhiên cần cải thiện về việc đặt tên biến,
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần cẩn thận hơi khi làm bài.Tuy nhiên cần cải thiện về việc đặt tên biến,
 
 ## [Bùi Quang Trưởng](https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day16)
 
 - [x] Bài 1: Bài làm tốt \*.
 
-      Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
 
 ---
 
@@ -99,13 +99,13 @@
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt ,tuy nhiên cần tính đến các trường hợp đầu vào không phải số.
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên cần tính đến các trường hợp đầu vào không phải số.
 
 ## [Kiều Duy Tùng](https://github.com/Stung16/ex_f8-fullstack/tree/master/day16)
 
 - [x] Bài 1: Bài làm tốt \*.
 
-      Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
 
 ---
 
@@ -115,48 +115,47 @@
 
 - [x] Bài 3: Bài chưa tốt.
 
-      Đề bài yêu cầu dùng câu lệnh rẽ nhánh.
+  Đề bài yêu cầu dùng câu lệnh rẽ nhánh.
 
 ---
 
 - [x] Bài 4: Bài làm tốt .
 
-      Chưa có trường hợp `a=== 0 || b===0`.
+  Chưa có trường hợp `a=== 0 || b===0`.
 
-      Số **0** là số không âm cũng không dương.
+  Số **0** là số không âm cũng không dương.
 
-
-      ```javascript
-            var a = 1;
-            var b = -1;
-            if (a * b >= 0) {
-            if (a === 0 || b === 0) {
-                  console.log("Một trong hai số bằng 0.");
-            } else {
-                  console.log("Hai số cùng dấu.");
-            }
-            } else {
-            console.log("Hai số trái dấu.");
-            }
-      ```
+  ```javascript
+  var a = 1;
+  var b = -1;
+  if (a * b >= 0) {
+    if (a === 0 || b === 0) {
+      console.log("Một trong hai số bằng 0.");
+    } else {
+      console.log("Hai số cùng dấu.");
+    }
+  } else {
+    console.log("Hai số trái dấu.");
+  }
+  ```
 
 ---
 
 - [x] Bài 5: Bài làm tốt \*
 
-      Chưa tốt ưu **condition** trong câu rẽ nhánh **if** không cần trường hợp dấu **=**
+  Chưa tốt ưu **condition** trong câu rẽ nhánh **if** không cần trường hợp dấu **=**
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt ,tuy nhiên cần tính đến các trường hợp đầu vào không phải số và cần học đề bài kĩ hơn.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần tính đến các trường hợp đầu vào không phải số và cần học đề bài kĩ hơn.
 
 ## [Hồng Hà Nguyễn Thị](https://ha752002.github.io/f8-fullstack-k2/)
 
 - [x] Bài 1: Bài làm tốt \*.
 
-      Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
 
-      Không nên kiểm tra `(Number.isInteger(a) && Number.isInteger(b))` đầu vào có thể là số thập phân.
+  Không nên kiểm tra `(Number.isInteger(a) && Number.isInteger(b))` đầu vào có thể là số thập phân.
 
 ---
 
@@ -166,63 +165,61 @@
 
 - [x] Bài 3: Bài làm tốt \*.
 
-      Chưa tốt ưu **condition** trong câu rẽ nhánh **if**.
+  Chưa tốt ưu **condition** trong câu rẽ nhánh **if**.
 
-      ```javascript
-            function maxNumbers(a, b, c) {
-            let  maxNumber = a;
-            if (maxNumber < b) {
-                  maxNumber = b;
-            } else if (maxNumber < c) {
-                  maxNumber = c;
-            }
-            return maxNumber;
-            }
-      ```
+  ```javascript
+  function maxNumbers(a, b, c) {
+    let maxNumber = a;
+    if (maxNumber < b) {
+      maxNumber = b;
+    } else if (maxNumber < c) {
+      maxNumber = c;
+    }
+    return maxNumber;
+  }
+  ```
 
 ---
 
 - [x] Bài 4: Bài làm tốt .
 
-      Không nên kiểm tra `(Number.isInteger(a) && Number.isInteger(b))` đầu vào có thể là số thập phân.
+  Không nên kiểm tra `(Number.isInteger(a) && Number.isInteger(b))` đầu vào có thể là số thập phân.
 
-      Chưa có trường hợp `a=== 0 || b===0`.
+  Chưa có trường hợp `a=== 0 || b===0`.
 
-      Số **0** là số không âm cũng không dương.
+  Số **0** là số không âm cũng không dương.
 
-      ```javascript
-            var a = 1;
-            var b = -1;
-            if (a * b >= 0) {
-            if (a === 0 || b === 0) {
-                  console.log("Một trong hai số bằng 0.");
-            } else {
-                  console.log("Hai số cùng dấu.");
-            }
-            } else {
-            console.log("Hai số trái dấu.");
-            }
-      ```
+  ```javascript
+  var a = 1;
+  var b = -1;
+  if (a * b >= 0) {
+    if (a === 0 || b === 0) {
+      console.log("Một trong hai số bằng 0.");
+    } else {
+      console.log("Hai số cùng dấu.");
+    }
+  } else {
+    console.log("Hai số trái dấu.");
+  }
+  ```
 
 ---
 
 - [x] Bài 5: Bài làm tốt \*
 
-      Không nên kiểm tra `(Number.isInteger(a) && Number.isInteger(b))` đầu vào có thể là số thập phân.
+  Không nên kiểm tra `(Number.isInteger(a) && Number.isInteger(b))` đầu vào có thể là số thập phân.
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-            if ( !isNaN(a) && !isNaN(b)  && !isNaN(c)) {
-
-               ....
-
-            }
-      ```
+  ```javascript
+  if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    //...
+  }
+  ```
 
 ---
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt ,cần cẩn thận hơn khi nộp bài.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần cẩn thận hơn khi nộp bài.
 
 ---
 
@@ -254,27 +251,27 @@
 
 - [x] Bài 3: Bài làm tốt \*.
 
-      Chưa tốt ưu **condition** trong câu rẽ nhánh **if** không cần trường hợp **==**.
+  Chưa tốt ưu **condition** trong câu rẽ nhánh **if** không cần trường hợp **==**.
 
 ---
 
 - [x] Bài 4: Bài làm tốt \* .
 
-      Chưa tốt ưu **condition** trong câu rẽ nhánh **if**.
+  Chưa tốt ưu **condition** trong câu rẽ nhánh **if**.
 
-      ```javascript
-            var a = 1;
-            var b = -1;
-            if (a * b >= 0) {
-            if (a === 0 || b === 0) {
-                  console.log("Một trong hai số bằng 0.");
-            } else {
-                  console.log("Hai số cùng dấu.");
-            }
-            } else {
-            console.log("Hai số trái dấu.");
-            }
-      ```
+  ```javascript
+  var a = 1;
+  var b = -1;
+  if (a * b >= 0) {
+    if (a === 0 || b === 0) {
+      console.log("Một trong hai số bằng 0.");
+    } else {
+      console.log("Hai số cùng dấu.");
+    }
+  } else {
+    console.log("Hai số trái dấu.");
+  }
+  ```
 
 ---
 
@@ -314,29 +311,29 @@
 
 - [x] Bài 4: Bài làm tốt \* .
 
-      Chưa có trường hợp `a=== 0 || b===0`.
+  Chưa có trường hợp `a=== 0 || b===0`.
 
-      Số **0** là số không âm cũng không dương.
+  Số **0** là số không âm cũng không dương.
 
-      ```javascript
-            var a = 1;
-            var b = -1;
-            if (a * b >= 0) {
-            if (a === 0 || b === 0) {
-                  console.log("Một trong hai số bằng 0.");
-            } else {
-                  console.log("Hai số cùng dấu.");
-            }
-            } else {
-            console.log("Hai số trái dấu.");
-            }
-      ```
+  ```javascript
+  var a = 1;
+  var b = -1;
+  if (a * b >= 0) {
+    if (a === 0 || b === 0) {
+      console.log("Một trong hai số bằng 0.");
+    } else {
+      console.log("Hai số cùng dấu.");
+    }
+  } else {
+    console.log("Hai số trái dấu.");
+  }
+  ```
 
 ---
 
 - [x] Bài 5: Bài làm tốt \*
 
-      Chưa tốt ưu **condition** trong câu rẽ nhánh **if** không cần trường hợp **==**.
+  Chưa tốt ưu **condition** trong câu rẽ nhánh **if** không cần trường hợp **==**.
 
 ---
 
@@ -364,29 +361,25 @@
 
 ---
 
-- [x] Bài 3: Bài làm rất tốt \*.
-
----
-
 - [x] Bài 4: Bài làm tốt \* .
 
-      Chưa có trường hợp `a=== 0 || b===0`.
+  Chưa có trường hợp `a=== 0 || b===0`.
 
-      Số **0** là số không âm cũng không dương.
+  Số **0** là số không âm cũng không dương.
 
-      ```javascript
-            var a = 1;
-            var b = -1;
-            if (a * b >= 0) {
-            if (a === 0 || b === 0) {
-                  console.log("Một trong hai số bằng 0.");
-            } else {
-                  console.log("Hai số cùng dấu.");
-            }
-            } else {
-            console.log("Hai số trái dấu.");
-            }
-      ```
+  ```javascript
+  var a = 1;
+  var b = -1;
+  if (a * b >= 0) {
+    if (a === 0 || b === 0) {
+      console.log("Một trong hai số bằng 0.");
+    } else {
+      console.log("Hai số cùng dấu.");
+    }
+  } else {
+    console.log("Hai số trái dấu.");
+  }
+  ```
 
 ---
 
