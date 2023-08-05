@@ -530,3 +530,496 @@
   Bài làm tốt.
 
   Sai trường hợp khi `n = 1`
+
+# Hiệp review bài Fullstack K1 Day17 (JS Day2)
+
+## [Trung Le](https://github.com/Trungdeptraii/30-07-2023-Le-Van_Trung-Day17.git)
+
+**Lưu ý: Nên đặt thẻ `script` trước thẻ đóng của thẻ `body`**
+
+- Ở tất cả các bài:
+
+  Khi nhập và tính lần đầu tiên sẽ không ra kết quả.
+
+  Vẫn nhập được chữ `e` vào thẻ input có `type="number"` khiến chương trình bị lỗi
+
+  Nên đặt tên biến bằng Tiếng Anh
+
+- [x] [Bài 1]
+
+  Bài làm rất tốt \*
+
+  Nên đặt tên biến bằng Tiếng Anh, không đặt tên biến nửa Tiếng Anh nửa Tiếng Việt
+
+  Lỗi khi ấn `kiểm tra` nhiều lần ở cùng một giá trị thì bị lặp bảng
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm tốt \*
+
+  Sai giá tiền ở cấp 6
+
+  Lỗi khi ấn `kiểm tra` nhiều lần ở cùng một giá trị thì bị lặp bảng
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm chưa tốt
+
+  Placeholder của thẻ input vẫn là của bài 2
+
+  Chưa kiểm tra trường hợp đầu vào không phải số nguyên
+
+---
+
+- [x] [Bài 4]
+
+  Bài làm tốt
+
+  Chưa kiểm tra trường hợp đầu vào không phải số nguyên
+
+  Trừ số 2, tất cả các số chẵn khác đều không phải là số nguyên tố vì vậy, có thể check luôn nếu là số chẵn khác 2 thì không phải. Điều này sẽ giảm số lần lặp đi rất nhiều.
+
+  Nên tách hàm kiểm tra số nguyên tố ra khỏi sự kiện click. Điều này giúp mã dễ đọc hơn và cho phép tái sử dụng hàm kiểm tra ở các nơi khác.
+
+---
+
+- [x] [Bài 5]
+
+  Bài làm chưa tốt
+
+  Chương trình chỉ hoạt động đúng ở lần chạy đầu tiên. Bị lỗi ở các lần chạy tiếp theo
+
+---
+
+- [x] [Bài 6]
+
+  Bài làm tốt
+
+  Vì đã học HTML, CSS nên có thể tạo thẻ `div` hoặc `span` và thêm `style` vào để giống bàn cờ vua.
+
+---
+
+- [x] [Bài 7]
+
+  Bài làm rất tốt
+
+---
+
+- [x] [Bài 8]
+
+  Bài làm chưa tốt
+
+  Chương trình chỉ hoạt động đúng ở lần chạy đầu tiên. Bị lỗi ở các lần chạy tiếp theo
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số, chú ý về các trường hợp chỉ chạy chương trình đúng ở lần đầu tiên.
+
+## [Nguyễn Hùng Anh](https://github.com/realguy010895/hunganh-f8-k1-buoi17/blob/main/btvn-b17.js)
+
+- [x] [Bài 1]
+
+  Bài làm chưa tốt
+
+  Sai yêu cầu đề bài
+
+  Từ 0 km đến 1 km: Giá cước là 15000đ.
+
+  Từ 1.1 km đến 5 km: Giá cước bao gồm phần 1 km đầu tiên với giá 15000đ và phần từ 1.1 km đến 5 km với giá 13500đ cho mỗi km.
+
+  Trên 5 km: Giá cước bao gồm phần 1 km đầu tiên với giá 15000đ, phần từ 1.1 km đến 5 km với giá 13500đ cho mỗi km và phần vượt qua 5 km với giá 11000đ cho mỗi km.
+
+  Trên 120 km: Sau khi tính toán các mức giá cước như ở trường hợp trên, sẽ giảm 10% tổng số tiền cước.
+
+---
+
+- [x] [Bài 2]
+
+  Bài làm chưa tốt
+
+  Sai yêu cầu đề bài
+
+  Cách giải thích đề bài tương tự với bài 1
+
+---
+
+- [x] [Bài 3]
+
+  Bài làm tốt
+
+  Chưa kiểm tra trường hợp đầu vào không phải số nguyên, nhỏ hơn 0. Chương trình sẽ bị lỗi nếu người dùng nhập vào không hợp lệ nên cần kiểm tra hết các trường hợp đầu vào.
+
+---
+
+- [x] [Bài 4]
+
+  Bài làm tốt
+
+  Chưa kiểm tra trường hợp đầu vào không phải số nguyên. Chương trình sẽ bị lỗi nếu người dùng nhập vào không hợp lệ nên cần kiểm tra hết các trường hợp đầu vào.
+
+---
+
+- [x] [Bài 5]
+
+  Bài làm tốt
+
+  Lưu ý: Trong javascript có phân biệt chữ hoa và chữ thường. Trong bài đang truyền `n` vào hàm trong khi lại đặt tên biến là `N` khiến cho hàm không chạy
+
+---
+
+- [x] [Bài 6]
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] [Bài 7]
+
+  Bài làm rất tốt \*
+
+  Sai chính tả tên hàm `board` -> `boad`
+
+---
+
+- [x] [Bài 8]
+
+  Bài làm chưa tốt
+
+  Sai công thức
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số, chú ý đọc rõ yêu cầu đề bài.
+
+---
+
+## [Tuấn Phạm](https://github.com/phamtuan162/phamtuan-nodejs-01)
+
+- [x] Bài 1:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Bài làm có kiểm tra `n` phải là số nguyên lớn hơn 0 thì mới thực hiện tính toán tuy nhiên chưa có thông báo lỗi nếu như người dùng nhập `n` không thỏa mãn điều kiện đó. Nên bổ sung thông báo lỗi nếu người dùng nhập sai sẽ chặt chẽ hơn.
+
+---
+
+- [x] Bài 4:
+
+  Bài làm rất tốt. \*
+
+  Tuy nhiên ở trong vòng lặp `for`:
+
+  ```js
+  for (var i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+      n = i;
+    }
+  }
+  ```
+
+  Việc gán `n = i` ở sau câu lệnh `return` là không cần thiết vì sau câu lệnh `return` sẽ nhảy ra khỏi hàm và không thực hiện các câu lệnh ở sau `return`.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 6:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 7:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 8:
+
+  Bài làm tốt. \*
+
+  Tuy nhiên cần kiểm tra điều kiện của n nếu như n là số nhỏ hơn 1 thì vẫn thực hiện logic và không có điểm dừng làm cho treo trình duyệt.
+
+  Và cũng cần kiểm tra n phải là số nguyên.
+
+---
+
+- [x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số chi tiết nhỏ để hoàn thiện hơn.
+
+---
+
+## [Dương Quốc Anh](https://github.com/QuocAnh-bit/F8_fullstack_006.git)
+
+- [x] Bài 1:
+
+  Bài làm chưa tốt.
+
+  Việc đặt tên biến là `numberKm_1`, `numberKm_2`, `numberKm_3`, `price_1`, `price_2`, `price_3` không tường minh và không có ý nghĩa cụ thể. Điều này làm cho người khác khi đọc code cảm thấy khó hiểu. Nên đặt tên biến tường minh và có ý nghĩa nhất có thể.
+
+  Bài làm chưa kiểm tra nếu như số km đi được là số nhỏ hơn hoặc bằng 0 thì sẽ thông báo cho người dùng cần nhập lại cho hợp lý.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm chưa tốt.
+
+  Nhận xét tên biến như nhận xét ở Bài 1.
+
+  Ở điều kiện số kWh nằm trong khoảng từ 50 - 100 đang viết sai tên biến `numberKwh_2`. Hiện tại đang viết là `numberKm_2`.
+
+  ```js
+  totalBill = 50 * numberKwh_1 + (n - 50) * numberKm_2;
+  ```
+
+  Ở điều kiện số kWh trong khoảng từ 100 - 200 đang sai logic, làm cho kết quả sai. Cụ thể hiện tại trong bài làm là:
+
+  ```js
+  if (n > 100 && n <= 200) {
+    totalBill = 50 * numberKwh_1 + 100 * numberKwh_2 + (n - 150) * numberKwh_3;
+  }
+  ```
+
+  Ở đây biến `numberKwh_2` đại diện cho 50 số kWh trong khoảng từ 51 - 100 vì vậy lấy `numberKwh_2 * 100` là không đúng.
+
+  Và điều đó dẫn cho biểu thức phía sau `n - 150` cũng không đúng. Biểu thức đúng phải là:
+
+  ```js
+  if (n > 100 && n <= 200) {
+    totalBill = 50 * numberKwh_1 + 50 * numberKwh_2 + (n - 100) * numberKwh_3;
+  }
+  ```
+
+  Việc hiểu sai từ điều kiện ở trên làm cho logic tính toán ở các điều kiện phía dưới bị sai theo. Cần đọc kỹ yêu cầu bài toán và sửa lại cho đúng với yêu cầu.
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Tuy nhiên, việc gán giá trị khởi tạo cho `subTotal` là không cần thiết vì khi vào vòng lặp `subTotal` đã được tính và gán bằng giá trị mới là `i * (i + 1)`.
+
+  Bài làm có kiểm tra `n` phải là số nguyên lớn hơn 0 thì mới thực hiện tính toán tuy nhiên chưa có thông báo lỗi nếu như người dùng nhập `n` không thỏa mãn điều kiện đó. Nên bổ sung thông báo lỗi nếu người dùng nhập sai sẽ chặt chẽ hơn.
+
+---
+
+- [x] Bài 4:
+
+  Bài làm tốt. \*
+
+  Bài làm chưa kiểm tra điều kiện của `n` phải là số nguyên rồi mới thực hiện logic. Hiện tại nếu nhập `n = 2.3` thì kết quả sẽ là `So 2.3 la so nguyen to`.
+
+  Góp ý:
+
+  Ở trong hàm `prime` có một tham số là `number` thì có thể lấy `number` kiểm tra luôn các điều kiện cần thiết chứ không cần gán tham số `number` cho biến `n` rồi kiểm tra điều kiện của `n`. Cần hạn chế tạo thêm các biến không cần thiết.
+
+  Hàm `prime` trả về giá trị `boolean` vậy nên khi đưa vào điều kiện của `if` không cần phải so sánh `prime(n) === true` và `prime(n) === false`. Chỉ cần `if (prime(n))` là được.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 6:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 7:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 8:
+
+  Bài làm tốt. \*
+
+  Tuy nhiên cần kiểm tra điều kiện của n nếu như n là số nhỏ hơn 1 thì vẫn thực hiện logic và không có điểm dừng làm cho treo trình duyệt.
+
+  Và cũng cần kiểm tra n phải là số nguyên.
+
+---
+
+- [x] Đánh giá: Bài làm khá tốt, lưu ý về việc đặt tên biến, tối ưu code để hoàn thiện bài làm hơn.
+
+---
+
+## [Nam Nguyễn](https://github.com/namnguyen2603/nguyentrungnam_bai17.git)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Bài làm có kiểm tra điều kiện `distance > 0` tuy nhiên chưa có thông báo lỗi nếu như `distance <= 0`, thiếu vế `else`khi kiểm tra điều kiện `distance > 0`.
+
+  Phần còn lại của bài làm logic tốt tuy nhiên việc nhập cứng giá tiền một km của từng chặng như hiện tại thì khi muốn thay đổi giá tiền một km của chặng nào đó sẽ phải sửa khá nhiều chỗ. Do đó, nên gán giá của từng chặng vào một biến nào đó sẽ thuận tiện cho việc sửa đổi sau này.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Tuy nhiên, việc gán giá trị khởi tạo cho `subS` là không cần thiết vì khi vào vòng lặp `subS` đã được tính và gán bằng giá trị mới là `i * (i + 1)`.
+
+---
+
+- [x] Bài 4:
+
+  Bài làm rất tốt. \*
+
+  Lưu ý về việc format code đang có những chỗ xuống dòng không cần thiết ví dụ như sử dụng `else` thì không cần thiết phải xuống dòng.
+
+  Góp ý: Khi sử dụng vòng lặp, việc lặp lại nhiều lần không cần thiết cũng gây ảnh hưởng đến thời gian thực hiện của chương trình. Vì vậy, thường khi kiểm tra số nguyên tố, chỉ cần kiểm tra đến `Math.sqrt(n)` là được.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm chưa tốt.
+
+  Bài làm có hoàn thành yêu cầu vẽ tam giác vuông nhưng các số trong các hàng đang không liên tiếp từ 1 - 15 như yêu cầu đề bài. Mà mỗi hàng đều đang bắt đầu từ '1'.
+
+  Tham khảo đoạn code dưới đây:
+
+  ```js
+  function drawTriangle(n) {
+    let currentNumber = 1,
+      row = "";
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= i; j++) {
+        row += currentNumber + " ";
+        currentNumber++;
+      }
+      row += "\n";
+    }
+    return row;
+  }
+  console.log(drawTriangle(5));
+  ```
+
+---
+
+- [x] Bài 6:
+
+  Bài làm rất tốt. \*
+
+  Tuy nhiên bài làm đang hiển thị ra bảng `console` kết quả thực hiện nên rất nhỏ và khó nhìn, nên hiển thị ra trình duyệt bằng câu lệnh `document.write` sẽ hợp lý hơn.
+
+---
+
+- [x] Bài 7:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 8:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Đánh giá: Bài làm khá tốt chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.
+
+---
+
+## [Đỗ Hà Chi](https://github.com/SerenaHa12/fullstack_nodeJS/tree/main/hoc_javascript/btvn_17/ex03)
+
+- [x] Bài 1:
+
+  Bài làm chưa tốt.
+
+  Bài làm đang hiểu sai yêu cầu của bài toán. Hiện tại bài làm đang làm theo hướng nếu như số km nhập vào thuộc khoảng nào đó thì sẽ tính toàn bộ số km từ đầu đến đó cùng một giá tiền. Điều này sẽ làm cho kết quả bị sai vì nên làm theo cách cộng dồn km sẽ chính xác hơn.
+
+  Ví dụ như nếu người dùng nhập vào 4km thì nên tính 1km giá 15000đ và 3km còn lại giá 13500đ.
+
+  Ngoài ra, cần kiểm tra điều kiện của `distance`, nếu như người dùng nhập vào số km nhỏ hơn hoặc bằng 0 sẽ cần thông báo cho người dùng nhập lại cho hợp lý hơn.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm chưa tốt.
+
+  Bài làm hiện tại đang hiểu sai yêu cầu đề bài như bài 1. Nhận xét tương tự như bài 1.
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt.
+
+  Tuy nhiên chưa kiểm tra điều kiện của `n`, nếu như `n` không phải là số nguyên hoặc nhỏ hơn hoặc bằng 0 thì cần thông báo lỗi.
+
+---
+
+- [x] Bài 4:
+
+  Bài làm tốt. \*
+
+  Tuy nhiên bài làm chưa kiểm tra điều kiện của `n` phải là số nguyên rồi mới thực hiện logic. Hiện tại nếu nhập `n = 2.3` thì kết quả sẽ là `2.3 is a prime number`.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm rất tốt. \*
+
+---
+
+- [x] Bài 6:
+
+  Chưa hoàn thành.
+
+---
+
+- [x] Bài 7:
+
+  Chưa hoàn thành.
+
+---
+
+- [x] Bài 8:
+
+  Chưa hoàn thành.
+
+---
+
+- [x] Đánh giá: Các bài đã làm cần đọc kỹ yêu cầu đề bài để hoàn thiện hơn và tránh bỏ xót trường hợp của đầu vào trong các bài toán.
+
+---
