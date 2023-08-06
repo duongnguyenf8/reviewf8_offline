@@ -12,18 +12,6 @@
 
   Bài làm rất tốt. \*
 
-  Tuy nhiên, cần chú ý việc `console.log()` ra một cách rõ ràng và chuẩn hơn code sẽ chặt chẽ hơn. Hiện tại đang làm như sau:
-
-  ```js
-  console.log(`s : ${s}`); //s : 4882842.5
-  ```
-
-  Góp ý nên sửa dấu `:` thành dấu `=`:
-
-  ```js
-  console.log(`s = ${s}`); //s : 4882842.5
-  ```
-
 ---
 
 - [x] Bài 3:
@@ -147,58 +135,58 @@
 
 ## [Mạnh Huy](https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_14)
 
-- [x] Bài 1:
+  - [x] Bài 1:
 
-  Bài làm rất tốt. \*
+    Bài làm rất tốt. \*
 
----
+  ---
 
-- [x] Bài 2:
+  - [x] Bài 2:
 
-  Bài làm rất tốt. \*
+    Bài làm rất tốt. \*
 
----
+  ---
 
-- [x] Bài 3:
+  - [x] Bài 3:
 
-  Bài làm rất tốt. \*
+    Bài làm rất tốt. \*
 
-  Tuy nhiên việc xét từng trường hợp như vậy nếu như bài toán yêu cầu tìm số lớn nhất trong 5 số hoặc nhiều hơn sẽ phải xét rất nhiều trường hợp.
+    Tuy nhiên việc xét từng trường hợp như vậy nếu như bài toán yêu cầu tìm số lớn nhất trong 5 số hoặc nhiều hơn sẽ phải xét rất nhiều trường hợp.
 
-  Vì vậy, có thể tham khảo cách làm sau đây:
+    Vì vậy, có thể tham khảo cách làm sau đây:
 
-  ```js
-  var a = 60,
-    b = 30,
-    c = 90;
+    ```js
+    var a = 60,
+      b = 30,
+      c = 90;
 
-  var max = a;
-  if (b > max) {
-    max = b;
-  }
-  if (c > max) {
-    max = c;
-  }
-  console.log("Số lớn nhất là:", max);
-  ```
+    var max = a;
+    if (b > max) {
+      max = b;
+    }
+    if (c > max) {
+      max = c;
+    }
+    console.log("Số lớn nhất là:", max);
+    ```
 
----
+  ---
 
-- [x] Bài 4:
+  - [x] Bài 4:
 
-  Bài làm tốt. \*
+    Bài làm tốt. \*
 
-  Góp ý: Trường hợp tồn tại số 0 trong 2 số a và b nên đưa ra thông báo là `tồn tại số 0 trong hai số a và b` thì bài làm chặt chẽ hơn.
+    Góp ý: Trường hợp tồn tại số 0 trong 2 số a và b nên đưa ra thông báo là `tồn tại số 0 trong hai số a và b` thì bài làm chặt chẽ hơn.
 
----
+  ---
 
-- [x] Bài 5:
+  - [x] Bài 5:
 
-  Bài làm rất tốt. \*
+    Bài làm rất tốt. \*
 
----
+  ---
 
-- [x] Đánh giá: Bài làm khá tốt, chú ý cần tối ưu code ngắn gọn để hoàn thiện hơn.
+  - [x] Đánh giá: Bài làm khá tốt, chú ý cần tối ưu code ngắn gọn để hoàn thiện hơn.
 
 ---
 
