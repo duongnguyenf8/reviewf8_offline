@@ -1,0 +1,324 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day16</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/thaiduytien1611cunbeo/NopbaitapF8/tree/main/Day14">Thái Duy Tiến</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên, cần chú ý việc <code>console.log()</code> ra một cách rõ ràng và chuẩn hơn code sẽ chặt chẽ hơn. Hiện tại đang làm như sau:</p>
+<pre><code class="language-js">console.log(`s : ${s}`); //s : 4882842.5
+</code></pre>
+<p>Góp ý nên sửa dấu <code>:</code> thành dấu <code>=</code>:</p>
+<pre><code class="language-js">console.log(`s = ${s}`); //s : 4882842.5
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên việc xét nhiều trường hợp như vậy, làm cho code không tối ưu, rắc rối và khó cải thiện code sau này.</p>
+<p>Nên tham khảo phương pháp sau đây:</p>
+<pre><code class="language-js">var a = 60,
+  b = 30,
+  c = 90;
+
+var max = a;
+if (b &gt; max) {
+  max = b;
+}
+if (c &gt; max) {
+  max = c;
+}
+console.log(&quot;Số lớn nhất là:&quot;, max);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên bài làm chưa xét đến trường hợp một trong hai số là 0 hoặc cả 2 số là 0. Hai trường hợp này cần tách riêng vì số 0 là một số đặc biệt, không âm cũng không dương.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số trường hợp đặc biệt có thể xảy ra và nên tối ưu code để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-16">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt. *</p>
+<p>Góp ý: Nên tách trường hợp số <code>0</code> thành một trường hợp riêng để thông báo tồn tại số 0 trong 2 số thì bài làm sẽ chặt chẽ hơn. Vì số <code>0</code> là một số đặc biệt.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số trường hợp đặc biệt để bài làm thêm chặt chẽ hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_15">Hoàng Văn Thanh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Góp ý: Trường hợp <code>c = 0</code> sẽ thông báo là <code>Không xác định cùng/trái dấu</code>, điều này là đúng nếu như tích của 2 số bằng 0. Tuy nhiên nên thông báo <code>tồn tại số 0 trong 2 số a và b</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý thông báo rõ ràng hơn các trường hợp đặc biệt để bài làm thêm chặt chẽ hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_14">Mạnh Huy</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên việc xét từng trường hợp như vậy nếu như bài toán yêu cầu tìm số lớn nhất trong 5 số hoặc nhiều hơn sẽ phải xét rất nhiều trường hợp.</p>
+<p>Vì vậy, có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var a = 60,
+  b = 30,
+  c = 90;
+
+var max = a;
+if (b &gt; max) {
+  max = b;
+}
+if (c &gt; max) {
+  max = c;
+}
+console.log(&quot;Số lớn nhất là:&quot;, max);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt. *</p>
+<p>Góp ý: Trường hợp tồn tại số 0 trong 2 số a và b nên đưa ra thông báo là <code>tồn tại số 0 trong hai số a và b</code> thì bài làm chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, chú ý cần tối ưu code ngắn gọn để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/chinam197/baitapb16.git">Nguyễn Chi Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên việc xét từng trường hợp như vậy nếu như bài toán yêu cầu tìm số lớn nhất trong 5 số hoặc nhiều hơn sẽ phải xét rất nhiều trường hợp.</p>
+<p>Vì vậy, có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var a = 60,
+  b = 30,
+  c = 90;
+
+var max = a;
+if (b &gt; max) {
+  max = b;
+}
+if (c &gt; max) {
+  max = c;
+}
+console.log(&quot;Số lớn nhất là:&quot;, max);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên, cần xét đến trường hợp một trong 2 số là <code>0</code> để đưa ra kết luận <code>tồn tại số 0 trong 2 số a và b</code> thì bài làm sẽ chặt chẽ hơn vì số <code>0</code> là số không âm cũng không dương.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Khi thử <code>a = -4, b = 0, c = 0</code> thì không sắp xếp được theo giá trị tăng dần vì hiện bài làm đang xét cụ thể các trường hợp nhưng chỉ xét các trường hợp lớn hơn và nhỏ hơn. Nếu như có 2 hoặc 3 giá trị bằng nhau thì không thể đưa ra kết luận.</p>
+<p>Vì vậy, cần làm theo cách khác tối ưu hơn, có thể tham khảo cách sau đây:</p>
+<pre><code class="language-js">var a = 40,
+  b = 60,
+  c = 20,
+  temp;
+
+if (a &gt; b) {
+  temp = a;
+  a = b;
+  b = temp;
+}
+if (a &gt; c) {
+  temp = a;
+  a = c;
+  c = temp;
+}
+if (b &gt; c) {
+  temp = b;
+  b = c;
+  c = temp;
+}
+
+console.log(&quot;Sắp xếp theo thứ tự tăng dần:&quot;, a, b, c);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, tuy nhiên các cách làm còn chưa thực sự tối ưu, cần chú ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day16">Vinh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên, hiện tại đang <code>log</code> ra từng số nhưng yêu cầu bài toán là sắp xếp thành dãy số có thứ tự tăng dần, nên <code>log</code> ra dãy số để bài làm chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, cố gắng duy trì trong các buổi sau.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
