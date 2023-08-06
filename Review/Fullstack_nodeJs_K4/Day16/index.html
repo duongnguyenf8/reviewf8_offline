@@ -321,4 +321,372 @@ console.log(&quot;Sắp xếp theo thứ tự tăng dần:&quot;, a, b, c);
 <li>[x] Đánh giá: Bài làm rất tốt, cố gắng duy trì trong các buổi sau.</li>
 </ul>
 <hr>
+<h2><a href="https://albertkhai.github.io/f8-fullstack-offline/Day-16/index.html">Đặng Khải</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *</p>
+<p>Hàm <code>areNaN(...args)</code> chưa kiểm tra hết trường hợp đầu vào có thể là 1 chuỗi dạng số ví dụ: <code>&quot;123&quot;</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *</p>
+<p>Chưa tốt ưu <strong>condition</strong> trong câu rẽ nhánh <strong>if</strong>.</p>
+<p>Đề xuất.</p>
+<pre><code class="language-javascript">result = a;
+if (result &lt; b) {
+  result = b;
+}
+if (result &lt; c) {
+  result = c;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 4: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 5: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên vẫn còn 1 số lỗi nhỏ.</li>
+</ul>
+<h2><a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-16">Tuan Kiet Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *.</p>
+<p>Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt.</p>
+<p>chưa tốt ưu <strong>condition</strong> trong câu rẽ nhánh <strong>if</strong>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">maxValue = a;
+if (maxValue &lt; b) {
+  maxValue = b;
+}
+if (maxValue &lt; c) {
+  maxValue = c;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 4: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 5: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt,tuy nhiên cần tính đến các trường hợp đầu vào không phải số.</li>
+</ul>
+<h2><a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day16">Trần Đức Công</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt .</p>
+<p>Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.</p>
+<p>Sai trường hợp <strong>a</strong> là số thập phân.</p>
+<p>Lỗi.</p>
+<p><img src="images/tranduccong.png" alt="tranduccong-bai1">.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var a = 10;
+var b = 20;
+b = b + a;
+a = b - a;
+b = b - a;
+console.log(`a=`, a);
+console.log(`b=`, b);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *</p>
+<p>Chưa tối ưu câu lệnh rẽ nhánh <strong>if</strong>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">maxValue = a;
+if (maxValue &lt; b) {
+  maxValue = b;
+}
+if (maxValue &lt; c) {
+  maxValue = c;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt</p>
+<p>Chưa xét trường hợp <code>a === 0 || b === 0</code>.</p>
+<p>Số <code>0</code> không phải số dương cũng không phải số âm.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var a = -10;
+var b = 20;
+var c =
+  a * b === 0
+    ? `không thể xét dấu vì a hoặc b bằng 0`
+    : a * b &gt; 0
+    ? `2 số cùng dấu`
+    : `2 số trái dấu`;
+console.log(c);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5: Bài làm chưa tốt.</p>
+<p>Sai trường hợp <code>c &lt; a &lt; b </code> ví dụ: <code>a = 16,  b = 18,  c = 2</code>.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">if (a &gt; b) {
+  if (a &gt; c) {
+    if (b &gt; c) {
+      console.log(c, b, a);
+    } else {
+      console.log(b, c, a);
+    }
+  } else {
+    console.log(b, a, c);
+  }
+} else {
+  if (b &lt; c) {
+    console.log(a, b, c);
+  } else {
+    if (c &gt; a) {
+      console.log(a, c, b);
+    } else {
+      console.log(c, a, b);
+    }
+  }
+}
+</code></pre>
+<p>Chưa tối ưu <strong>condition</strong> trong câu rẽ nhánh.</p>
+<p>Đề Xuất lại.</p>
+<pre><code class="language-javascript">let a = 120;
+let b = 121;
+let c = 99;
+if (a &gt; b) {
+  a += b;
+  b = a - b;
+  a -= b;
+}
+if (b &gt; c) {
+  b += c;
+  c = b - c;
+  b -= c;
+}
+if (a &gt; b) {
+  a += b;
+  b = a - b;
+  a -= b;
+}
+console.log(
+  &quot;ba số a,b,c sau khi được sắp xếp tăng dần lần lượt là:&quot;,
+  a,
+  b,
+  c
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần cẩn thận hơi khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/Le-Hung-020903/f8-fullstack-k4/tree/main/Day_16/javascript">Lê Đình Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt .</p>
+<p>Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.</p>
+<p>Sai trường hợp <code>a || b là số thập phân</code>.</p>
+<p>Bài làm chỉ đúng với số nguyên.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var a = 10;
+var b = 20;
+b = b + a;
+a = b - a;
+b = b - a;
+console.log(`a=`, a);
+console.log(`b=`, b);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *.</p>
+<p>Chưa tối ưu <strong>condition</strong> trong câu rẽ nhánh <strong>if</strong>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">maxNumber = a;
+if (maxNumber &lt; b) {
+  maxNumber = b;
+}
+if (maxNumber &lt; c) {
+  maxNumber = c;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt .</p>
+<p>Chưa có trường hợp <code>a === 0 || b === 0</code>.</p>
+<p>Số <strong>0</strong> là số không âm cũng không dương.</p>
+<pre><code class="language-javascript">var a = -10;
+var b = 20;
+var c =
+  a * b === 0
+    ? `không thể xét dấu vì a hoặc b bằng 0`
+    : a * b &gt; 0
+    ? `2 số cùng dấu`
+    : `2 số trái dấu`;
+console.log(c);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 5: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần tính đến các trường hợp đầu vào không phải số và cần học đề bài kĩ hơn.</li>
+</ul>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/tree/main/Day_14">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt * .</p>
+<p>Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *.</p>
+<p>Chưa tối ưu <strong>condition</strong> trong câu rẽ nhánh <strong>if</strong>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">biggestNumber = a;
+if (biggestNumber &lt; b) {
+  biggestNumber = b;
+}
+if (biggestNumber &lt; c) {
+  biggestNumber = c;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 4: Bài làm rất tốt * .</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5: Bài làm chưa tốt.</p>
+<p>Sai trường hợp Nếu <code> z &gt; x</code> biến <code>biggest</code> sẽ sai phải cập nhật lại biến <code>biggest</code>.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">var z = 11,
+  x = 8,
+  c = 0,
+  biggest = z;
+
+if (z &gt; x) {
+  z = x;
+  x = biggest;
+  biggest = z;
+}
+
+if (z &gt; c) {
+  z = c;
+  c = biggest;
+}
+
+if (x &gt; c) {
+  biggest = x;
+  x = c;
+  c = biggest;
+}
+console.log(`Sắp xếp 3 số tăng dần ${z}, ${x}, ${c}`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần tính đến các trường hợp đầu vào không phải số và cần học đề bài kĩ hơn.</li>
+</ul>
+<h2><a href="https://github.com/Vietha22/f8_fullstack_k4/blob/main/Day_15/js/ex01.js">Hà Long Việt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt * .</p>
+<p>Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt * .</p>
+<p>Chưa có trường hợp <code>a === 0 || b === 0</code>.</p>
+<p>Số <strong>0</strong> là số không âm cũng không dương.</p>
+<pre><code class="language-javascript">var a = -10;
+var b = 20;
+var c =
+  a * b === 0
+    ? `không thể xét dấu vì a hoặc b bằng 0`
+    : a * b &gt; 0
+    ? `2 số cùng dấu`
+    : `2 số trái dấu`;
+console.log(c);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 5: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên cần tính đến các trường hợp đầu vào không phải số.</li>
+</ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
