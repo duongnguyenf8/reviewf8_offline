@@ -141,4 +141,70 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/tuilahieu/nodejs/tree/main/exercise/day13)
 
-- [x] Đánh giá chung bài tập về nhà:
+  Bài làm chưa tốt
+
+  Chưa có chạy chữ giống bản mẫu.
+
+  Ở trường hợp này, send một file css, js từ server về với đường dẫn là `/script.js` và `/style.css` sau đó link vào html và viết code JS, CSS trong đó.
+
+  Nên tách ra 1 file CSS, 1 file JS và 1 file HTML để bài làm dễ hiểu hơn, code ngắn gọn và đúng chức năng của file.
+
+  Chưa rõ chức năng của div block trong profile
+
+  Đề xuất xóa đi vì không cần thiết.
+
+  ```html
+  <div class="block">
+    <span class="array-key">{key}</span>
+    <div class="array">{array}</div>
+    <span>{key}</span>
+    <!--Thừa-->
+    <span>{key}</span>
+    <!--Thừa-->
+    <span>{key}</span>
+    <!--Thừa-->
+    <span>{key}</span>
+    <!--Thừa-->
+  </div>
+  ```
+
+  Khi viết đường dẫn trong `modules/render.js` nhưng phải suy theo file `server.js` ở ngoài, điều đó khiến rất khó để bắt đúng đường dẫn, dễ sai đường dẫn và khi muốn sửa, gom, tách folder sẽ phải sửa rất khó.
+
+  Đề xuất truyền đường dẫn từ file đó vào function `Render.render(path)`
+
+  Việc nhân thêm một tham số là data trong khi ở `Render.render` lại lấy data từ file data.js làm cho code trở nên khó hiểu và không cần thiết. _(Chưa kể datas là sai chính tả)_
+
+  ```js
+  render = (request, response, data = datas) => {
+    let keys = Object.keys(data);
+    let values = Object.values(data);
+    fs.readFile("./views/home.html", "utf8", (err, viewContent) => {
+      // ...
+    });
+  };
+  ```
+
+  Đề xuất sửa thành:
+
+  ```js
+  const data = require("../data");
+  render = (request, response, pathFile) => {
+    let keys = Object.keys(data);
+    let values = Object.values(data);
+    fs.readFile(pathFile, "utf8", (err, viewContent) => {
+      // ...
+    });
+  };
+  ```
+
+  **code**:
+
+  Nên đặt tên biến một cách rõ ràng hơn:
+
+  ```js
+  let arrayContent = values[j].map(
+    (content) => `<p class="array-attr">${content}</p>`
+  );
+  ```
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa đúng yêu cầu đề bài khi chưa chạy được đúng chức năng. Cần sửa lại, làm lại cho đúng chức năng cần thiết.

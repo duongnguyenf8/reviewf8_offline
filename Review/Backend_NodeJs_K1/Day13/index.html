@@ -152,9 +152,55 @@
 <ul>
 <li>
 <p>[x] <a href="https://github.com/tuilahieu/nodejs/tree/main/exercise/day13">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa có chạy chữ giống bản mẫu.</p>
+<p>Ở trường hợp này, send một file css, js từ server về với đường dẫn là <code>/script.js</code> và <code>/style.css</code> sau đó link vào html và viết code JS, CSS trong đó.</p>
+<p>Nên tách ra 1 file CSS, 1 file JS và 1 file HTML để bài làm dễ hiểu hơn, code ngắn gọn và đúng chức năng của file.</p>
+<p>Chưa rõ chức năng của div block trong profile</p>
+<p>Đề xuất xóa đi vì không cần thiết.</p>
+<pre><code class="language-html">&lt;div class=&quot;block&quot;&gt;
+  &lt;span class=&quot;array-key&quot;&gt;{key}&lt;/span&gt;
+  &lt;div class=&quot;array&quot;&gt;{array}&lt;/div&gt;
+  &lt;span&gt;{key}&lt;/span&gt;
+  &lt;!--Thừa--&gt;
+  &lt;span&gt;{key}&lt;/span&gt;
+  &lt;!--Thừa--&gt;
+  &lt;span&gt;{key}&lt;/span&gt;
+  &lt;!--Thừa--&gt;
+  &lt;span&gt;{key}&lt;/span&gt;
+  &lt;!--Thừa--&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Khi viết đường dẫn trong <code>modules/render.js</code> nhưng phải suy theo file <code>server.js</code> ở ngoài, điều đó khiến rất khó để bắt đúng đường dẫn, dễ sai đường dẫn và khi muốn sửa, gom, tách folder sẽ phải sửa rất khó.</p>
+<p>Đề xuất truyền đường dẫn từ file đó vào function <code>Render.render(path)</code></p>
+<p>Việc nhân thêm một tham số là data trong khi ở <code>Render.render</code> lại lấy data từ file data.js làm cho code trở nên khó hiểu và không cần thiết. <em>(Chưa kể datas là sai chính tả)</em></p>
+<pre><code class="language-js">render = (request, response, data = datas) =&gt; {
+  let keys = Object.keys(data);
+  let values = Object.values(data);
+  fs.readFile(&quot;./views/home.html&quot;, &quot;utf8&quot;, (err, viewContent) =&gt; {
+    // ...
+  });
+};
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">const data = require(&quot;../data&quot;);
+render = (request, response, pathFile) =&gt; {
+  let keys = Object.keys(data);
+  let values = Object.values(data);
+  fs.readFile(pathFile, &quot;utf8&quot;, (err, viewContent) =&gt; {
+    // ...
+  });
+};
+</code></pre>
+<p><strong>code</strong>:</p>
+<p>Nên đặt tên biến một cách rõ ràng hơn:</p>
+<pre><code class="language-js">let arrayContent = values[j].map(
+  (content) =&gt; `&lt;p class=&quot;array-attr&quot;&gt;${content}&lt;/p&gt;`
+);
+</code></pre>
 </li>
 <li>
-<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa đúng yêu cầu đề bài khi chưa chạy được đúng chức năng. Cần sửa lại, làm lại cho đúng chức năng cần thiết.</p>
 </li>
 </ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
