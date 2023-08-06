@@ -20,7 +20,17 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-13)
 
-- [x] Đánh giá chung bài tập về nhà:
+  **Bài làm không tốt \***
+
+  Không giống bản mẫu.
+
+  Các data ở `profiles` nên đưa vào thẻ `a` để bấm được để chuyển trang.
+
+  Khi viết đường dẫn trong `core/Base.js` nhưng phải suy theo file `server.js` ở ngoài, điều đó khiến rất khó để bắt đúng đường dẫn, dễ sai đường dẫn và khi muốn sửa, gom, tách folder sẽ phải sửa rất khó.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm nên cố gắng làm theo giống bản mẫu nhất có thể, nên xem lại để hoàn thiện hơn.
 
 ---
 
@@ -30,7 +40,17 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/hiusnguyen201/F8-Exercise/tree/main/Lab13)
 
-- [x] Đánh giá chung bài tập về nhà:
+  **Bài làm không tốt \***
+
+  Không giống bản mẫu.
+
+  Các data ở `profiles` nên đưa vào thẻ `a` để bấm được để chuyển trang.
+
+  Khi viết đường dẫn trong `core/Base.js` nhưng phải suy theo file `server.js` ở ngoài, điều đó khiến rất khó để bắt đúng đường dẫn, dễ sai đường dẫn và khi muốn sửa, gom, tách folder sẽ phải sửa rất khó.
+
+  Lưu ý format code ở các câu lệnh `if...else`.
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm nên cố gắng làm theo giống bản mẫu nhất có thể, nên xem lại để hoàn thiện hơn.
 
 ---
 
@@ -40,7 +60,15 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/nguyenducthanh04/f8-backend-k1.git)
 
-- [x] Đánh giá chung bài tập về nhà:
+  Không giống bản mẫu. Quá sơ sài.
+
+  Khi viết đường dẫn trong `core/Base.js` nhưng phải suy theo file `server.js` ở ngoài, điều đó khiến rất khó để bắt đúng đường dẫn, dễ sai đường dẫn và khi muốn sửa, gom, tách folder sẽ phải sửa rất khó.
+
+  Hiện tại đang hiển thị được data ở `contact` là `[object Object]` cần xem lại.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm quá sơ sài, nên xem lại, code lại.
 
 ---
 
@@ -50,7 +78,23 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVNB13)
 
-- [x] Đánh giá chung bài tập về nhà:
+  **Bài làm không tốt \***
+
+  Không giống bản mẫu.
+
+  Đường dẫn chưa bấm được để chuyển trang
+
+  Format code trong file JSON quá xấu.
+
+  Chưa chia folder hợp lý, rất khó để thêm, sửa, xóa, nâng cấp.
+
+  Phải thêm khoảng trắng ở trong file JSON, như vậy là không tốt, rất khó để sửa với file json lớn.
+
+  Việc sử dùng replaceAll ở trong trường hợp đã cắt bằng regex là không cần thiết, chỉ cần sử dụng replace.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm chưa chỉn chu, cần code lại
 
 ---
 
@@ -60,7 +104,17 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi13)
 
-- [x] Đánh giá chung bài tập về nhà:
+  Bài làm tốt.
+
+  Bài làm chỉ đang hiển thị được các data lên giao diện nhưng chưa hiển thị format code giống như bản mẫu.
+
+  Chưa có chạy chữ giống bản mẫu.
+
+  Việc sử dùng replaceAll ở trong trường hợp đã cắt bằng regex là không cần thiết, chỉ cần sử dụng replace.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm cần chỉnh chu hơn và cần giống bản mẫu nhất có thể, nên xem lại để hoàn thiện hơn.
 
 ---
 
@@ -70,7 +124,17 @@ Yêu cầu:
 
 - [x] [Bài 1](https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi13)
 
-- [x] Đánh giá chung bài tập về nhà:
+  **Bài làm không tốt \***
+
+  Ở trong file `package.json` đang để `"start": "node index.js"` nhưng hiện tại trong bài làm không có file `index.js`
+
+  Bài làm cần xem lại tất cả đường dẫn import và liên kết các file với nhau. Hiện đang không chạy được server vì một số file không tồn tại.
+
+  Việc sử dùng replaceAll ở trong trường hợp đã cắt bằng regex là không cần thiết, chỉ cần sử dụng replace
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm quá sơ sài và không chỉnh chu, cần code lại.
 
 ---
 
@@ -111,7 +175,7 @@ Yêu cầu:
   Chưa ignore node_module, khiến file bài tập rất nặng khi đẩy lên git và clone về.
 
   Khi thay đổi trong HTML, dữ liệu không được cập nhật do đang fix cứng thẻ và element trong HTML, Home.js.
-
+  ``
   Tên biến Constructor chưa được viết hoa đúng convention.
 
   Các file code được hiển thị ra client nên đưa vào public hoặc view để gom nhóm đúng mục đích của nó.
