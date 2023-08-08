@@ -1,0 +1,491 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day17</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_16">Hoàng Văn Thanh</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên số km là một đại lượng không đổi, nên khai báo bằng từ khóa <code>const</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên số điện là một đại lượng không đổi, nên khai báo bằng từ khóa <code>const</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên ở trong hàm kiểm tra số nguyên tố <code>isPrimeNumber</code> nếu như sử dụng phương pháp đặt cờ hiệu thì nên sử dụng ở tất cả các chỗ cần sử dụng phương pháp đó. Cụ thể ở chỗ xét điều kiện <code>number % m === 0</code> thì ở trong khối đó nên gán <code>key = false</code> sẽ hợp lý và thống nhất về cách làm hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_15">Mạnh Huy</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Góp ý về HTML:</p>
+<ul>
+<li>Ở trong thẻ input có thuộc tính <code>placeholder</code> và đang có giá trị là <code>Mileage</code>. Có nghĩa là dặm, đây là một đơn vị cũng để đo độ dài quãng đường nhưng khác với đơn vị km. 1 dặm = 1,61km. Việc để placeholder như vậy có thể làm cho người dùng hiểu nhầm về đơn vị đo đang tính hiện tại là dặm chứ không phải km.</li>
+</ul>
+<p>Góp ý về JS:</p>
+<ul>
+<li>
+<p>Số km là đại lượng không đổi nên khai báo <code>distance</code> bằng từ khóa <code>const</code>.</p>
+</li>
+<li>
+<p>Trong trường hợp số km đi được lớn hơn 120km thì cách tính tổng tiền trước khi giảm 10% giống với cách tính tổng tiền từ 5km đến 120km. Nên gộp 2 trường hợp này vào để tránh việc lặp code, giúp cho tối ưu code.</p>
+</li>
+<li>
+<p>Chú ý cần <code>log</code> ra thông báo cụ thể và rõ ràng sẽ giúp ích cho người dùng sẽ hiểu hơn về vấn đề đang giải quyết. Cụ thể hiện tại khi nhập số km thì chỉ in ra đúng số tiền phải trả, cần đưa ra lời dẫn cụ thể ví dụ như: <code> Số tiền phải trả cho ${distance}km là ${totalPrice} VNĐ</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Góp ý về JS:</p>
+<ul>
+<li>
+<p>Số kWh là đại lượng không đổi nên khai báo bằng từ khóa <code>const</code>.</p>
+</li>
+<li>
+<p>Nhận xét về việc thông báo cụ thể rõ ràng như bài 1.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Hiện tại đang viết điều kiện của hàm if để trả về <code>false</code> như sau:</p>
+<pre><code class="language-js">if ((n % 1 !== 0) &amp; (n &lt;= 1)) {
+  return false;
+}
+</code></pre>
+<p>Vì trong JS không có toán tử <code>&amp;</code> nên nó sẽ không hiểu được điều kiện trên và khi nhập số 1 hoặc số không nguyên thì đều trả ra kết quả các số đó là số nguyên tố. Điều đó làm cho kết quả của bài làm hiện tại sai.</p>
+<p>Có thể sửa lại điều kiện trong hàm if cho đúng hoặc có thể tham khảo đoạn code kiểm tra số nguyên tố sau đây:</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (
+    number % 1 !== 0 ||
+    number &lt; 2 ||
+    (number % 2 === 0 &amp;&amp; number !== 2) ||
+    (number % 3 === 0 &amp;&amp; number !== 3)
+  )
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+console.log(
+  `${!isPrime(3) ? &quot;Không t&quot; : &quot;T&quot;}hỏa mãn điều kiện là số nguyên tố`
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên chưa có thông báo nếu như người dùng nhập vào một giá trị âm hoặc một giá trị không phải là số nguyên. Điều đó làm cho nếu như người dùng ban đầu nhập vào một giá trị hợp lệ thì sẽ in ra dãy số hình tam giác đúng yêu cầu nhưng sau đó nếu như nhập một giá trị không hợp lệ thì giao diện vẫn hiển thị kết quả trước đó.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, cần lưu ý về điều kiện ở bài 4 và một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_16">Hà Long Việt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang hiểu sai yêu cầu bài toán, hiện bài làm đang lấy số km đi được nhân với giá tiền của km được quy định trong khoảng đó với tất cả số km đi được. Nhưng đúng phải là cộng dồn số tiền ứng với số km trong từng khoảng.</p>
+<p>Ví dụ cụ thể: Giả sử tổng quãng đường đi được là 10km thì sẽ chia ra làm 3 khoảng:</p>
+<ul>
+<li>
+<p>1km đầu tiên vẫn sẽ tính là 15 000đ. Vì vậy số tiền phải trả cho 1km đầu là: 15 000 * 1 = 15 000đ.</p>
+</li>
+<li>
+<p>4km tiếp theo sẽ tính là 13 500đ / 1km. Vì vậy số tiền phải trả cho 4km tiếp theo là: 13 500 * 4 = 54 000đ</p>
+</li>
+<li>
+<p>5km cuối cùng sẽ tính là 11 000đ / 1km. Vì vậy số tiền phải trả cho 4km cuối là 11 000 * 5 = 55 000đ.</p>
+</li>
+<li>
+<p>Như vậy tổng số tiền phải trả cho 10km là 15 000 + 54 000 + 55 000 = 124 000đ.</p>
+</li>
+</ul>
+<p>Số km là đại lượng không đổi nên khai báo <code>km</code> bằng từ khóa <code>const</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Số kWh là đại lượng không đổi nên khai báo bằng từ khóa <code>const</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm hiện nếu nhập <code>n = -3</code> thì sẽ trả về kết quả là <code>S = 0</code> do nó sẽ lấy giá trị của S khi khai báo là 0, điều này không đúng và nên kiểm tra điều kiện đầu vào của n (số âm, không phải là số nguyên) để đưa ra thông báo hợp lý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Góp ý: Nên tối ưu vòng lặp để giảm bớt các vòng lặp kiểm tra không cần thiết.</p>
+<p>Có thể tham khảo đoạn code tối ưu sau đây:</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (
+    number % 1 !== 0 ||
+    number &lt; 2 ||
+    (number % 2 === 0 &amp;&amp; number !== 2) ||
+    (number % 3 === 0 &amp;&amp; number !== 3)
+  )
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+console.log(
+  `${!isPrime(3) ? &quot;Không t&quot; : &quot;T&quot;}hỏa mãn điều kiện là số nguyên tố`
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Hiện chưa có khoảng trắng giữa các số nên khi in ra các số sẽ dính vào nhau không đúng với bài mẫu mà đề bài đưa ra.</p>
+<p>Nên kiểm tra điều kiện nếu <code>n</code> là số âm hoặc một số không nguyên sẽ đưa ra thông báo hợp lý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm chưa kiểm tra nếu n là số âm và số không nguyên.</p>
+<p>Ngoài ra khi so sánh nên sử dụng <code>===</code> sẽ chặt chẽ hơn là sử dụng <code>==</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, cần lưu ý đọc kỹ yêu cầu đề bài và một số lỗi nhỏ để hoàn thiện và chỉnh chu hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Oladayne/f8-fullstack-k98.git">Nguyễn Ngọc Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang hiểu sai yêu cầu bài toán, hiện bài làm đang lấy số km đi được nhân với giá tiền của km được quy định trong khoảng đó với tất cả số km đi được. Nhưng đúng phải là cộng dồn số tiền ứng với số km trong từng khoảng.</p>
+<p>Ví dụ cụ thể: Giả sử tổng quãng đường đi được là 10km thì sẽ chia ra làm 3 khoảng:</p>
+<ul>
+<li>
+<p>1km đầu tiên vẫn sẽ tính là 15 000đ. Vì vậy số tiền phải trả cho 1km đầu là: 15 000 * 1 = 15 000đ.</p>
+</li>
+<li>
+<p>4km tiếp theo sẽ tính là 13 500đ / 1km. Vì vậy số tiền phải trả cho 4km tiếp theo là: 13 500 * 4 = 54 000đ</p>
+</li>
+<li>
+<p>5km cuối cùng sẽ tính là 11 000đ / 1km. Vì vậy số tiền phải trả cho 4km cuối là 11 000 * 5 = 55 000đ.</p>
+</li>
+<li>
+<p>Như vậy tổng số tiền phải trả cho 10km là 15 000 + 54 000 + 55 000 = 124 000đ.</p>
+</li>
+</ul>
+<p>Số km là đại lượng không đổi nên khai báo <code>km</code> bằng từ khóa <code>const</code>.</p>
+<p>Bài làm hiện còn chưa kiểm tra đầy đủ các điều kiện ở đầu vào nếu như nó là số âm.</p>
+<p>Ngoài ra, việc đặt biến <code>a</code> để chỉ số km đi được và biến <code>temp</code> để tính tổng số tiền phải trả là không hợp lý về mặt ngữ nghĩa, cần lưu ý việc đặt biến đúng ý nghĩa, rõ ràng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Số kWh là đại lượng không đổi nên khai báo bằng từ khóa <code>const</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm hiện nếu nhập <code>n = -3</code> thì sẽ trả về kết quả là <code>temp = 0</code> do nó sẽ lấy giá trị của temp khi khai báo là 0, điều này không đúng và nên kiểm tra điều kiện đầu vào của n (số âm, không phải là số nguyên) để đưa ra thông báo hợp lý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Chú ý về việc format code.</p>
+<p>Hiện tại khi <code>log</code> ra đang là <code>ko phải là số nt</code> và <code>là số nt</code>. Chú ý cần thông báo một cách rõ ràng, rành mạch, không viết tắt để bài làm chặt chẽ và chỉnh chu hơn.</p>
+<p>Đoạn code sau đây đang sai khi thông báo ra <code>là nt</code> nếu nhập m = 1 thì thông báo như vậy là không đúng:</p>
+<pre><code class="language-js">if (m &lt; 3) {
+  console.log(&quot;là nt&quot;);
+}
+</code></pre>
+<p>Có thể tham khảo đoạn code tối ưu dưới đây để hoàn thiện bài làm hơn:</p>
+<pre><code class="language-js">function isPrime(number) {
+  if (
+    number % 1 !== 0 ||
+    number &lt; 2 ||
+    (number % 2 === 0 &amp;&amp; number !== 2) ||
+    (number % 3 === 0 &amp;&amp; number !== 3)
+  )
+    return false;
+  for (let i = 5; i &lt;= Math.sqrt(number); i += 2)
+    if (number % i === 0) return false;
+  return true;
+}
+console.log(
+  `${!isPrime(3) ? &quot;Không t&quot; : &quot;T&quot;}hỏa mãn điều kiện là số nguyên tố`
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm tốt. *</p>
+<p>Chú ý về việc format code.</p>
+<p>Nên kiểm tra điều kiện nếu <code>n</code> là số âm hoặc một số không nguyên sẽ đưa ra thông báo hợp lý.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p><strong>Chưa làm.</strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần chú ý về việc format code, hiển thị rõ ràng khi thông báo ra kết quả hoặc một lỗi nào đó, cần đọc kỹ yêu cầu đề bài và một số lỗi nhỏ để hoàn thiện và chỉnh chu hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/suspiciously36/f8_fullstack_k4/tree/main/day-17">Hoàng Tuấn Kiệt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang hiểu sai yêu cầu bài toán, hiện bài làm đang lấy số km đi được nhân với giá tiền của km được quy định trong khoảng đó với tất cả số km đi được. Nhưng đúng phải là cộng dồn số tiền ứng với số km trong từng khoảng.</p>
+<p>Ví dụ cụ thể: Giả sử tổng quãng đường đi được là 10km thì sẽ chia ra làm 3 khoảng:</p>
+<ul>
+<li>
+<p>1km đầu tiên vẫn sẽ tính là 15 000đ. Vì vậy số tiền phải trả cho 1km đầu là: 15 000 * 1 = 15 000đ.</p>
+</li>
+<li>
+<p>4km tiếp theo sẽ tính là 13 500đ / 1km. Vì vậy số tiền phải trả cho 4km tiếp theo là: 13 500 * 4 = 54 000đ</p>
+</li>
+<li>
+<p>5km cuối cùng sẽ tính là 11 000đ / 1km. Vì vậy số tiền phải trả cho 4km cuối là 11 000 * 5 = 55 000đ.</p>
+</li>
+<li>
+<p>Như vậy tổng số tiền phải trả cho 10km là 15 000 + 54 000 + 55 000 = 124 000đ.</p>
+</li>
+</ul>
+<p>Số km là đại lượng không đổi nên khai báo <code>km</code> bằng từ khóa <code>const</code>.</p>
+<p>Bài làm hiện còn chưa kiểm tra đầy đủ các điều kiện ở đầu vào nếu như nó là số âm.</p>
+<p>Đề bài đang để <code>discount</code> là 10% nhưng hiện tại bài làm đang để là <code>15%</code>.</p>
+<p>Chia khoảng số km đi được chưa hợp lý, điều kiện đầu tiên là <code>km &lt;= 1</code> rồi thì điều kiện tiếp theo nên là <code>1 &lt; km &amp;&amp; km &lt;= 5</code> chứ không nên là <code>1 &lt;= km &amp;&amp; km &lt;= 5</code>.</p>
+<p>Tên biến nên đặt theo quy tắc camelCase. Ví dụ như: <code>unitPrice1</code>, <code>unitPrice2</code>, <code>unitPrice3</code>.</p>
+<p>Ngoài ra, cần thông báo <code>log</code> ra rõ ràng hơn để bài làm chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm vẫn hiểu sai yêu cầu như bài 1. Ở đây đúng vẫn cần phải cộng dồn số tiền của từng kWh với từng khoảng đã quy định.</p>
+<p>Tên biến nên đặt theo quy tắc camelCase. Ví dụ như: <code>unitPrice1</code>, <code>unitPrice2</code>, <code>unitPrice3</code>.</p>
+<p>Ngoài ra, cần thông báo <code>log</code> ra rõ ràng hơn để bài làm chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Hiện bài làm đang in ra đúng dạng tam giác vuông nhưng mỗi hàng đều bắt đầu từ 1 mà đề bài yêu cầu số bắt đầu mỗi hàng sẽ liên tiếp với số cuối cùng của hàng trước.</p>
+<p>Tham khảo đoạn code dưới đây để sửa lại:</p>
+<pre><code class="language-js">function triangle(N) {
+  let result = &quot;&quot;;
+  let currentNumber = 1;
+
+  for (let i = 1; i &lt;= N; i++) {
+    for (let j = 1; j &lt;= i; j++) {
+      result += currentNumber + &quot; &quot;;
+      currentNumber++;
+    }
+    result += &quot;\n&quot;;
+  }
+  return result;
+}
+
+console.log(triangle(5));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên cần chỉnh chu hơn trong việc hiển thị bảng cửu chương trên giao diện một cách rõ ràng và đẹp hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, tuy nhiên cần đọc kỹ yêu cầu đề bài ở bài 1, bài 2 và một số lỗi nhỏ để hoàn thiện và chỉnh chu hơn.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
