@@ -488,4 +488,620 @@ console.log(triangle(5));
 <li>[x] Đánh giá: Bài làm khá tốt, tuy nhiên cần đọc kỹ yêu cầu đề bài ở bài 1, bài 2 và một số lỗi nhỏ để hoàn thiện và chỉnh chu hơn.</li>
 </ul>
 <hr>
+<h2><a href="https://github.com/chinam197/bai17.git">Nguyễn Chi Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt *</p>
+<p>Sai cách tính tiền của quãng đường <code>1 &lt; số km ≤ 5 và km &gt; 5</code>.</p>
+<p>Ví dụ : đi được 10km, 1 km đầu tiền sẽ tính là 15000đ / 1km, sau đó 4 km tiếp theo tính 13500đ/1km , 5km cuối cùng tính 11000đ /1km.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var numberKm = 10;
+var sumTaxi;
+const FROM_1_LESS = 15000;
+const FROM_5_LESS = 13500;
+const TO_5_MORE = 11000;
+
+if (!isNaN(numberKm) &amp;&amp; numberKm &gt; 0) {
+  if (numberKm &lt;= 1) sumTaxi = numberKm * FROM_1_LESS;
+  else if (numberKm &gt; 1 &amp;&amp; numberKm &lt;= 5)
+    sumTaxi = (numberKm - 1) * FROM_5_LESS + FROM_1_LESS;
+  else if (numberKm &gt; 5) {
+    sumTaxi = (numberKm - 5) * TO_5_MORE + 4 * FROM_5_LESS + FROM_1_LESS;
+    let discount = 0;
+    if (numberKm &gt; 120) {
+      discount = 0.1 * sumTaxi;
+    }
+    sumTaxi -= discount;
+  }
+
+  console.log(`tiền cước taxi phải trả là: ${sumTaxi} vnd`);
+} else {
+  console.log(&quot;vui lòng nhập giá trị số hoặc nhập giá trị &gt; 0&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm chưa tốt.</p>
+<p>Sai hầu hết tất cả các trường hợp , đúng được trường hợp số kwh từ <code>0- 50</code>.</p>
+<p>Ví dụ cách tính: tháng này dùng hết 500 kwh số điện, cách tính tổng số tiền như sau: (500 - 400 = 100)kwh tính 2.927 đồng/kwh +
+(400-300 = 100)kwh tính 2.834 đồng/kwh + (300-200 = 100)kwh tính 2.536 đồng/kwh + (200-100 = 100) kwh tính 2.014 đồng/kwh + (100-50 = 50)kwh tính 1.734 đồng/kwh + còn lại 50kwh tính 1.678 đồng/kwh.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">let numberKwh = 500;
+var sumElectricity;
+const kwh401 = 2.927;
+const kwh301 = 2.834;
+const kwh201 = 2.536;
+const kwh101 = 2.014;
+const kwh51 = 1.734;
+const kwh0 = 1.678;
+
+function electricityBill(numberKwh) {
+  if (!isNaN(numberKwh) &amp;&amp; numberKwh &gt;= 0) {
+    if (numberKwh &gt;= 401)
+      return (sumElectricity =
+        (numberKwh - 400) * kwh401 +
+        100 * kwh301 +
+        100 * kwh201 +
+        100 * kwh101 +
+        50 * kwh51 +
+        50 * kwh0);
+    else if (numberKwh &gt;= 301)
+      return (sumElectricity =
+        (numberKwh - 300) * kwh301 +
+        100 * kwh201 +
+        100 * kwh101 +
+        50 * kwh51 +
+        50 * kwh0);
+    else if (numberKwh &gt;= 201)
+      return (sumElectricity =
+        (numberKwh - 200) * kwh201 + 100 * kwh101 + 50 * kwh51 + 50 * kwh0);
+    else if (numberKwh &gt;= 101)
+      return (sumElectricity =
+        (numberKwh - 100) * kwh101 + 50 * kwh51 + 50 * kwh0);
+    else if (numberKwh &gt;= 51)
+      return (sumElectricity = (numberKwh - 50) * kwh51 + 50 * kwh0);
+    else return (sumElectricity = kwh0 * numberKwh);
+  } else {
+    return null;
+  }
+}
+
+sumElectricity = electricityBill(numberKwh);
+if (sumElectricity !== null) {
+  console.log(`số tiền phải đóng ${sumElectricity} vnd`);
+} else {
+  console.log(&quot;vui lòng nhập giá trị số hoặc nhập giá trị &gt;= 0&quot;);
+}
+</code></pre>
+<p>Đề Xuất cách tối ưu.</p>
+<pre><code class="language-javascript">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(500)} vnd`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm chưa tốt.</p>
+<p>Sai điều kiện dừng <code>n*(n+1)</code>.</p>
+<p>Biến <code>s</code> cộng dồn chứ không phải gắn lại biến <code>s</code> sau mỗi lần lặp.</p>
+<p><img src="images/nguyenchinam.png" alt="Alt text">.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var s = 0;
+n = 3;
+for (var i = 1; i &lt;= n; i++) {
+  s += i * (i + 1);
+}
+console.log(`tong S khi n =${n} la :${s}`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm chưa tốt.</p>
+<p>Sai trường hợp <code>n=2</code> số 2 là số nguyên tố.</p>
+<p><img src="images/nguyenchinamb4.png" alt="Alt text">.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+console.log(&quot;isPrime(number)&quot;, isPrime(9007199254740881));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 5: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 6: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 7: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8: Bài làm chưa tốt.</p>
+<p>Sai thuật toán.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">let stopPoint = 5;
+function sumNotLoop(n) {
+  if (n === 1) {
+    return n;
+  }
+  return 1 / n + sumNotLoop(n - 1);
+}
+
+if (stopPoint % 1 == 0 &amp;&amp; stopPoint &gt; 0) {
+  console.log(`gía trị S = ${sumNotLoop(stopPoint)}`);
+} else {
+  console.log(&quot;vui lòng nhập giá trị là số nguyên và &gt; 0&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần xem lại từ 1 -&gt; 4 và bài 8. không hiểu bài nào yêu cầu đặt câu hỏi.</li>
+</ul>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/tree/main/Day_15">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *</p>
+<p>Quãng đường đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Các phép tính đang lặp lại nhiều lần, nên tách thành một hàm riêng để tái sử dụng và truyền vào là số điện.</p>
+<p>Đề Xuất .</p>
+<pre><code class="language-javascript">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(500)} vnd`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt *.</p>
+<p>Đề Xuất tối ưu.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+console.log(&quot;isPrime(number)&quot;, isPrime(9007199254740881));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 5: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 6: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 7: Bài làm rất tốt *</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 8: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. cần phát huy , tuy nhiên vẫn còn 1 số lỗi nhỏ.</li>
+</ul>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/blob/main/Day-17/js/main.js">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+<p>Sai cách tính tiền của quãng đường <code>1 &lt; số km ≤ 5 và km &gt; 5</code>.</p>
+<p>Ví dụ : đi được 10km, 1 km đầu tiền sẽ tính là 15000đ / 1km, sau đó 4 km tiếp theo tính 13500đ/1km , 5km cuối cùng tính 11000đ /1km.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var numberKm = 10;
+var sumTaxi;
+const FROM_1_LESS = 15000;
+const FROM_5_LESS = 13500;
+const TO_5_MORE = 11000;
+
+if (!isNaN(numberKm) &amp;&amp; numberKm &gt; 0) {
+  if (numberKm &lt;= 1) sumTaxi = numberKm * FROM_1_LESS;
+  else if (numberKm &gt; 1 &amp;&amp; numberKm &lt;= 5)
+    sumTaxi = (numberKm - 1) * FROM_5_LESS + FROM_1_LESS;
+  else if (numberKm &gt; 5) {
+    sumTaxi = (numberKm - 5) * TO_5_MORE + 4 * FROM_5_LESS + FROM_1_LESS;
+    let discount = 0;
+    if (numberKm &gt; 120) {
+      discount = 0.1 * sumTaxi;
+    }
+    sumTaxi -= discount;
+  }
+
+  console.log(`tiền cước taxi phải trả là: ${sumTaxi} vnd`);
+} else {
+  console.log(&quot;vui lòng nhập giá trị số hoặc nhập giá trị &gt; 0&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm chưa tốt.</p>
+<p>Sai hầu hết tất cả các trường hợp , đúng được trường hợp số kwh từ <code>0- 50</code>.</p>
+<p>Ví dụ cách tính: tháng này dùng hết 500 kwh số điện, cách tính tổng số tiền như sau: (500 - 400 = 100)kwh tính 2.927 đồng/kwh +
+(400-300 = 100)kwh tính 2.834 đồng/kwh + (300-200 = 100)kwh tính 2.536 đồng/kwh + (200-100 = 100) kwh tính 2.014 đồng/kwh + (100-50 = 50)kwh tính 1.734 đồng/kwh + còn lại 50kwh tính 1.678 đồng/kwh.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">let numberKwh = 500;
+var sumElectricity;
+const kwh401 = 2.927;
+const kwh301 = 2.834;
+const kwh201 = 2.536;
+const kwh101 = 2.014;
+const kwh51 = 1.734;
+const kwh0 = 1.678;
+
+function electricityBill(numberKwh) {
+  if (!isNaN(numberKwh) &amp;&amp; numberKwh &gt;= 0) {
+    if (numberKwh &gt;= 401)
+      return (sumElectricity =
+        (numberKwh - 400) * kwh401 +
+        100 * kwh301 +
+        100 * kwh201 +
+        100 * kwh101 +
+        50 * kwh51 +
+        50 * kwh0);
+    else if (numberKwh &gt;= 301)
+      return (sumElectricity =
+        (numberKwh - 300) * kwh301 +
+        100 * kwh201 +
+        100 * kwh101 +
+        50 * kwh51 +
+        50 * kwh0);
+    else if (numberKwh &gt;= 201)
+      return (sumElectricity =
+        (numberKwh - 200) * kwh201 + 100 * kwh101 + 50 * kwh51 + 50 * kwh0);
+    else if (numberKwh &gt;= 101)
+      return (sumElectricity =
+        (numberKwh - 100) * kwh101 + 50 * kwh51 + 50 * kwh0);
+    else if (numberKwh &gt;= 51)
+      return (sumElectricity = (numberKwh - 50) * kwh51 + 50 * kwh0);
+    else return (sumElectricity = kwh0 * numberKwh);
+  } else {
+    return null;
+  }
+}
+
+sumElectricity = electricityBill(numberKwh);
+if (sumElectricity !== null) {
+  console.log(`số tiền phải đóng ${sumElectricity} vnd`);
+} else {
+  console.log(&quot;vui lòng nhập giá trị số hoặc nhập giá trị &gt;= 0&quot;);
+}
+</code></pre>
+<p>Đề Xuất cách tối ưu.</p>
+<pre><code class="language-javascript">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(500)} vnd`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt .</p>
+<p>Chưa tốt ưu không cần phải tạo ra 1 biến <code>count</code>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var n = 5;
+var total = 0;
+for (var i = 1; i &lt;= n; i++) {
+  total += i * (i + 1);
+}
+console.log(`Tổng S là: ${total}`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt.</p>
+<p>Đề Xuất tối ưu.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+console.log(&quot;isPrime(number)&quot;, isPrime(9007199254740881));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5: Bài làm tốt.</p>
+<p>Điều kiện trong <strong>for</strong> <code>i &lt;=5</code> cho vào 1 biến vì nếu muốn thêm dòng thì chỉ cần sửa giá trị của biến.</p>
+<p>Đề xuất.</p>
+<pre><code class="language-javascript">var n = 5;
+var string = &quot;&quot;;
+var count = 1;
+for (var i = 1; i &lt;= n; i++) {
+  for (var j = 1; j &lt;= i; j++) {
+    string += count + &quot; &quot;;
+    count++;
+  }
+  string += &quot;\n\n&quot;;
+}
+console.log(string);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 6.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 7: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 7.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8: Bài làm tốt *.</p>
+<p>Chưa tối ưu hàm <code>calculateHarmonicSeriesSum</code> không cần chuyển 2 tham số , chỉ cần chuyển 1 tham số.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function calculateHarmonicSeriesSum(n) {
+  if (n === 1) {
+    return 1;
+  }
+  // Tính tổng và tiếp tục đệ quy
+  return 1 / n + calculateHarmonicSeriesSum(n - 1);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tạm ổn. Cần tiếp tục làm lại bài 1,2,6,7. cần cẩn thận hơn khi làm bài, không hiểu bài làm yêu cầu đặt câu hỏi.</li>
+</ul>
+<h2><a href="https://github.com/vinhh03/vinh_f8_fullstack_k4/tree/main/bai_tap/day17">Vinh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 1.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 2.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt * .</p>
+<p>Cần xét xem đầu vào có phải <strong>số</strong> hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt.</p>
+<p>Đề Xuất tối ưu.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+console.log(&quot;isPrime(number)&quot;, isPrime(9007199254740881));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 5.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 6: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 6.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 7: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 8: Bài làm chưa tốt.</p>
+<p>Yêu cầu làm bài 8.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Hoàn thiện nốt các phần chưa hoàn thành.</li>
+</ul>
+<h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-17">Đặng Khải</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *.</p>
+<p>Quãng đường đi là một giá trị không thay đổi, nên sử dụng từ khóa const để khai báo biến.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Đề Xuất tối ưu lại.</p>
+<pre><code class="language-javascript">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0!`);
+    return;
+  }
+  let totalBill = 0;
+
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1.678); // 50kWh đầu tiên
+  calculate(50, 1.734); // Từ kWh 51 - 100
+  calculate(100, 2.014); // Từ kWh 101 - 200
+  calculate(100, 2.536); // Từ kWh 201 - 300
+  calculate(100, 2.834); // Từ kWh 301 - 400
+  calculate(Infinity, 2.927); // Từ kWh 401 trở đi
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(500)} vnd`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt * .</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm tốt *.</p>
+<p>Đề Xuất tối ưu.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+console.log(&quot;isPrime(number)&quot;, isPrime(9007199254740881));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 5: Bài làm tốt *.</p>
+<p>Trường hợp <code>n === 1</code> lỗi, Vẫn phải in ra 1 dòng với <strong>count === 1</strong>;</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 6: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 7: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 8: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. chỉ cần chỉnh sửa 1 số lỗi nhỏ.</li>
+</ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
