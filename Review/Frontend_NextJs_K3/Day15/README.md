@@ -309,12 +309,398 @@
 
 ## [thuy nguyen](https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day15_JS)
 
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Nên gán số lớn ra một biến và console.log 1 lần để dễ sửa và nâng cấp code hơn.
+
+  Chưa tốt ưu condition trong câu rẽ nhánh if.
+
+  Đề xuất.
+
+  ```js
+  result = a;
+  if (result < b) {
+    result = b;
+  }
+  if (result < c) {
+    result = c;
+  }
+  ```
+
+---
+
+- [x] Bài 4:
+
+  Bài làm chưa tốt. \*
+
+  Với trường hợp có 1 số là 0, bài làm sai.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm rất tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần tính đến các trường hợp đặc biệt như đầu vào không phải là số, số bằng 0. Chú ý đến việc tối ưu code.
+
+---
+
 ## [Bảo Anh](https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-15)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Format lại code.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 4:
+
+  Bài làm tốt. \*
+
+  Tuy nhiên có cách giải đơn giản hơn là kiểm tra tích của 2 số, nếu tích >= 0 thì 2 số cùng dấu, ngược lại thì 2 số trái dấu.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm chưa tốt \*
+
+  Đang trả về thứ tự giảm dần
+
+  Chưa kiểm tra trường hợp 2 hoặc 3 số bằng nhau
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số. Chú ý đến việc format code và kiểm tra kĩ hơn về các trường hợp của bài toán để tránh gặp lỗi.
+
+---
 
 ## [Nguyễn Đình Khánh](https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day15)
 
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Format lại code.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Nên gán số lớn ra một biến và console.log 1 lần để dễ sửa và nâng cấp code hơn.
+
+  Chưa tốt ưu condition trong câu rẽ nhánh if.
+
+  Đề xuất.
+
+  ```js
+  result = a;
+  if (result < b) {
+    result = b;
+  }
+  if (result < c) {
+    result = c;
+  }
+  ```
+
+---
+
+- [x] Bài 4:
+
+  Bài làm chưa tốt. \*
+
+  Với trường hợp có 1 số là 0, bài làm sai.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm chưa tốt \*
+
+  Chưa kiểm tra trường hợp 2 số bằng nhau. Vì trong trường hợp này sẽ bị sai thứ tự sắp xếp (lỗi logic)
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Nên tạo một biến để lưu kết quả rồi console.log 1 lần. Sẽ tối ưu hơn cho việc sửa đổi code sau này.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số, số bằng 0. Chú ý đến việc format code và kiểm tra kĩ hơn về các trường hợp của bài toán để tránh gặp lỗi.
+
+---
+
 ## [Hùng Mạnh](https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_1/js/Bai1.js)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Format lại code.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Khi khai báo biến kiểu rút gọn nên ngăn cách các biến bằng dấu "," để đúng cú pháp hơn
+
+  Chưa tốt ưu condition trong câu rẽ nhánh if.
+
+  Đề xuất.
+
+  ```js
+  result = a;
+  if (result < b) {
+    result = b;
+  }
+  if (result < c) {
+    result = c;
+  }
+  ```
+
+---
+
+- [x] Bài 4:
+
+  Bài làm tốt. \*
+
+  Nếu 2 số không được truyền vào thì bài làm sai.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm chưa tốt \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Lỗi logic, khi biến c < a hoặc b < a thì sau khi sắp xếp biến b sẽ = 0, và sai thứ tự sắp xếp.
+
+  Đề xuất
+
+  ```js
+  if (a > b) {
+    temp = a;
+    a = b;
+    b = temp;
+  }
+  if (b > c) {
+    temp = b;
+    b = c;
+    c = temp;
+  }
+  if (a > b) {
+    temp = a;
+    a = b;
+    b = temp;
+  }
+  ```
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số. Chú ý đến việc format code, cú pháp và kiểm tra kĩ hơn về logic của bài làm.
+
+---
 
 ## [Gia Bảo Đỗ](https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day15)
 
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Chưa tốt ưu condition trong câu rẽ nhánh if.
+
+  Đề xuất.
+
+  ```js
+  result = a;
+  if (result < b) {
+    result = b;
+  }
+  if (result < c) {
+    result = c;
+  }
+  ```
+
+---
+
+- [x] Bài 4:
+
+  Bài làm chưa tốt. \*
+
+  Với trường hợp có 1 số là 0, bài làm sai.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm chưa tốt. \*
+
+  Nên format code theo chuẩn để dễ đọc hơn
+
+  Nếu cho số có giá trị âm vào thì trả về kết quả sai
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+  Lỗi logic khi biến b <= a, c > a, hoặc b < 0 thì sẽ bị sai thứ tự sắp xếp.
+
+  Đề xuất
+
+  ```js
+  if (a > b) {
+    temp = a;
+    a = b;
+    b = temp;
+  }
+  if (b > c) {
+    temp = b;
+    b = c;
+    c = temp;
+  }
+  if (a > b) {
+    temp = a;
+    a = b;
+    b = temp;
+  }
+  ```
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số, số bằng 0. Chú ý đến việc format code, tối ưu code và kiểm tra kĩ hơn về logic của bài làm.
+
+---
+
 ## [Nguyễn Đức Hải](https://github.com/duchainguyen/F8-FE-K3/tree/main/day-14)
+
+- [x] Bài 1:
+
+  Bài làm tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] Bài 2:
+
+  Bài làm rất tốt \*
+
+---
+
+- [x] Bài 3:
+
+  Bài làm tốt. \*
+
+  Chưa tốt ưu condition trong câu rẽ nhánh if.
+
+  Đề xuất.
+
+  ```js
+  result = a;
+  if (result < b) {
+    result = b;
+  }
+  if (result < c) {
+    result = c;
+  }
+  ```
+
+---
+
+- [x] Bài 4:
+
+  Bài làm chưa tốt. \*
+
+  Với trường hợp có 1 số là 0, bài làm sai.
+
+  Nếu 2 số không được truyền vào hoặc cả 2 là 0 thì bài làm sai.
+
+---
+
+- [x] Bài 5:
+
+  Bài làm rất tốt. \*
+
+  Nên kiểm tra có phải một số hợp lệ không trước khi so sánh và đổi chỗ.
+
+---
+
+- [x] Đánh giá chung bài tập về nhà: bài làm tốt, tuy nhiên cần chú ý đến các trường hợp đặc biệt như đầu vào không phải là số, số bằng 0. Chú ý đến việc tối ưu code hơn.
+
+---
