@@ -134,7 +134,11 @@
 
 - [x] [Bài 1]
 
-- [x] Đánh giá chung bài tập về nhà:
+  Bài làm rất tốt \*
+
+  Chưa xử lý giao tiếp với API URL
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt
 
 ---
 

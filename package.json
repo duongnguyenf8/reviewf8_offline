@@ -6,6 +6,7 @@
     "push": "node scripts"
   },
   "dependencies": {
+    "formidable": "^3.5.0",
     "markdown-it": "^13.0.1",
     "yargs": "^17.7.2"
   }
