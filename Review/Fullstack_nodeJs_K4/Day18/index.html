@@ -1,0 +1,387 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day18</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_16a">Hoàng Văn Thanh</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm yêu cầu đảo ngược số nguyên nên cần thực hiện cả số nguyên âm và số nguyên dương.</p>
+<p>Chưa xử lý các trường hợp n có số 0 ở đầu tiên. Ví dụ một số trường hợp sau:</p>
+<ul>
+<li>
+<p>Hiện tại khi nhập <code>n = 01</code> thì kết quả của bài làm đang là <code>1</code>.</p>
+</li>
+<li>
+<p>Khi nhập <code>n = 011</code> thì kết quả của bài làm đang là <code>9</code>.</p>
+<p>Đề xuất chuyển về chuỗi rồi đảo ngược và chuyển lại về chữ.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Một số trường hợp chưa xử lý:</p>
+<ul>
+<li>
+<p><code>n = 1900</code>: kết quả của bài làm hiện tại là <code>một ngàn chín trăm linh</code> (và các số tương tự).</p>
+</li>
+<li>
+<p><code>n = 1910</code>: kết quả của bài làm hiện tại là <code>một ngàn chín trăm một mươi</code> (và các số tương tự).</p>
+</li>
+<li>
+<p><code>n = 2000</code>: kết quả của bài làm hiện tại là <code>hai ngàn linh</code> (và các số tương tự).</p>
+</li>
+<li>
+<p><code>n = 2011: kết quả của bài làm hiện tại là </code>hai ngàn một mươi một` (và các số tương tự).</p>
+</li>
+<li>
+<p><code>n = 100</code>: kết quả của bài làm hiện tại là <code>một trăm linh</code> (và các số tương tự).</p>
+</li>
+<li>
+<p><code>n = 034</code>: kết quả của bài làm hiện tại là <code>hai mươi tám</code> (và các số tương tự).</p>
+</li>
+<li>
+<p><code>n = 11</code>: kết quả của bài làm hiện tại là <code>một mươi một</code> (và các số tương tự từ 12 - 19).</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số trường hợp đặc biệt để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_16a">Mạnh Huy</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm yêu cầu đảo ngược số nguyên nên cần thực hiện cả số nguyên âm và số nguyên dương.</p>
+<p>Chưa xử lý các trường hợp n có số 0 ở đầu tiên. Ví dụ một số trường hợp sau:</p>
+<ul>
+<li>
+<p>Hiện tại khi nhập <code>n = 01</code> thì kết quả của bài làm đang là <code>1</code>.</p>
+</li>
+<li>
+<p>Khi nhập <code>n = 011</code> thì kết quả của bài làm đang là <code>11</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số trường hợp đặc biệt để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_16a">Hà Long Việt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Nên đặt tên <code>function</code> theo quy tắc camelCase.</p>
+<p>Trong bài làm ở điều kiện <code>n = 1</code> hoặc <code>n = 2</code> đang return về <code>[1, 1]</code> là không hợp lý khi nhập <code>n = 1</code> mà giá trị trả về lại là một mảng có 2 số 1. Trong khi <code>n = 1</code> chỉ cần hiển thị 1 số fibonacci đầu tiên.</p>
+<p>Bài làm chưa kiểm tra đủ điều kiện của n, hiện nhập n là số âm vẫn thực hiện logic nên bị treo trình duyệt vì đang sử dụng đệ quy lùi.</p>
+<p>Bài làm chưa kiểm tra điều kiện n phải là số nguyên.</p>
+<p>Tham khảo bài làm dưới đây:</p>
+<pre><code class="language-js">var Fibonacci = function (n) {
+  if (n === 1 || n === 2) {
+    return 1;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+var listFibonaci = function (number) {
+  if (number &gt; 1) {
+    return fibonacci(number) + &quot; &quot; + listFibonaci(number - 1);
+  }
+  return 1;
+};
+
+var n = 15;
+if (Number.isInteger(n) &amp;&amp; n &gt; 0) {
+  console.log(`${n} số Fibonacci đầu tiên là: ${listFibonaci(n)}`);
+} else {
+  console.log(&quot;Nhập lại N&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Chưa xử lý các trường hợp n có số 0 ở đầu tiên. Ví dụ một số trường hợp sau:</p>
+<ul>
+<li>
+<p>Hiện tại khi nhập <code>n = 01</code> thì kết quả của bài làm đang là <code>1</code>.</p>
+</li>
+<li>
+<p>Khi nhập <code>n = 011</code> thì kết quả của bài làm đang là <code>9</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Cần kiểm tra điều kiện đầu vào của n phải từ 0 đến 9999, phải nguyên thì mới thực hiện logic để bài làm thêm chặt chẽ hơn.</p>
+<p>Một số trường hợp chưa xử lý:</p>
+<ul>
+<li><code>n = 034</code>: kết quả của bài làm hiện tại là <code>hai mươi tám</code> (và các số tương tự bắt đầu bằng 0).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt cần lưu ý một số trường hợp đặc biệt và điều kiện đầu vào để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/thaiduytien1611cunbeo/NopbaitapF8/tree/main/Day17/js">Thái Duy Tiến</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt.</p>
+<p>Số Fibonacci đầu tiên là số <strong>0</strong>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function fibonacci(n) {
+  if (n &lt; 2) {
+    return n;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+var n = 10;
+if (!isNaN(n) &amp;&amp; n &gt; 0) {
+  var count = 0;
+  while (count &lt; n) {
+    console.log(fibonacci(count));
+    count++;
+  }
+} else {
+  console.log(&quot;giá trị n không thoả mãn&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Nên Kiểm tra xem đầu vào có phải số không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. cần cẩn thận đọc kĩ đề bài khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/tree/main/Day_16">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt.</p>
+<p>Số Fibonacci đầu tiên là số <strong>0</strong>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function fibonacci(n) {
+  if (n &lt; 2) {
+    return n;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+var n = 10;
+if (!isNaN(n) &amp;&amp; n &gt; 0) {
+  var count = 0;
+  while (count &lt; n) {
+    console.log(fibonacci(count));
+    count++;
+  }
+} else {
+  console.log(&quot;giá trị n không thoả mãn&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Nên Kiểm tra xem đầu vào có phải số không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm chưa tốt.</p>
+<p>Đầu vào nhập số nào cũng in ra <code>mười</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. cần cẩn thận đọc kĩ đề bài khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/chinam197/baitap20.git">Nguyễn Chi Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm chưa tốt.</p>
+<p>Chưa hiểu đề bài.</p>
+<p>Đề bài Yêu cầu Hiện thị N số Fibonacci đầu tiên.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function fibonacci(n) {
+  if (n &lt; 2) {
+    return n;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+var n = 10;
+if (!isNaN(n) &amp;&amp; n &gt; 0) {
+  var count = 0;
+  while (count &lt; n) {
+    console.log(fibonacci(count));
+    count++;
+  }
+} else {
+  console.log(&quot;giá trị n không thoả mãn&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Nên Kiểm tra xem đầu vào có phải số không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt.</p>
+<p>Không lên tạo 3 mảng làm thế khác phức tạp.</p>
+<p>Sử dụng Kiến thức đang học để làm.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. cần cẩn thận đọc kĩ đề bài khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/blob/main/Day-18-Ham/js/main.js">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *.</p>
+<p>Nên Kiểm tra đầu vào có phải số không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Nên Kiểm tra xem đầu vào có phải số không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *.</p>
+<p>Nên sử dụng kiến thức đang học để làm.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. tuy nhiên vẫn còn 1 số lỗi nhỏ.</li>
+</ul>
+<h2><a href="https://github.com/TranCong312002/F8-fullstack-k4/tree/main/Bai_tap_ve_ham">Trần Đức Công</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt *.</p>
+<p>Nên Kiểm tra đầu vào có phải số không.</p>
+<p>Dãy Fibonacci số đầu tiên trong dãy là số <strong>0</strong>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Nên Kiểm tra xem đầu vào có phải số không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt *.</p>
+<p>Nên sử dụng kiến thức đang học để làm.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. cần cẩn thận hơn khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/Le-Hung-020903/f8-fullstack-k4/tree/main/function_exercises">Lê Đình Hùng</a></h2>
+<ul>
+<li>[x] Bài 1: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Chưa kiểm tra trường hợp nhập vào là số âm.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Sai 1 số trường hợp đầu vào.</p>
+<p>Đầu vào nhập <code>2011</code> in ra kết quả là <code>hai nghìn mười</code>.</p>
+<p>Nhập <code>11</code> in ra kết quả là <code>mười</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. cần cẩn thận hơn khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-18">Đặng Khải</a></h2>
+<ul>
+<li>[x] Bài 1: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 2: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
