@@ -47,4 +47,196 @@
 <p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể tối ưu hơn bằng cách tách các file hợp lý và không cần thiết phải sử dụng đệ quy.</p>
 </li>
 </ul>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_18">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_18">Vũ Thống</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-18-JS/Exercise-1">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt.</p>
+<p>Không cần thiết phải tạo biến <code>var wordsLength = words.length;</code> vì việc sử dụng <code>words.length</code> đã đủ ngắn gọn.</p>
+<p>Sau khi chạy hết, chưa được highlight lại.</p>
+<p>Có thể vì chưa reset currentRedWord.</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+    text-shadow: -0.2px -0.2px 0 red, 0.2px -0.2px 0 red, -0.2px 0.2px 0 red, 0.2px
+        0.2px 0 red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;),
+    i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightWord() {
+    if (i &gt;= content.length) return resetContent();
+    for (let j = 0; j &lt; i; j++)
+      content[j] = content[j]
+        .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+        .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+    const span = document.createElement(&quot;span&quot;);
+    span.className = &quot;highlight&quot;;
+    span.innerText = content[i];
+    content[i] = span.outerHTML;
+    $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+    i++;
+  }
+  setInterval(highlightWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, chưa đủ chức năng và yêu cầu đề bài.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Ntiendat-2k3/F8-js-BTVN/tree/main/BTVN/Buoi3">NTiến Đạt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Thay vì add style vào thẻ span, có thể sử dụng className để việc style cho highlight dễ dàng hơn.</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+    text-shadow: -0.2px -0.2px 0 red, 0.2px -0.2px 0 red, -0.2px 0.2px 0 red, 0.2px
+        0.2px 0 red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;),
+    i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightWord() {
+    if (i &gt;= content.length) return resetContent();
+    for (let j = 0; j &lt; i; j++)
+      content[j] = content[j]
+        .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+        .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+    const span = document.createElement(&quot;span&quot;);
+    span.className = &quot;highlight&quot;;
+    span.innerText = content[i];
+    content[i] = span.outerHTML;
+    $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+    i++;
+  }
+  setInterval(highlightWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý thêm về việc phát triển, maintain sau này.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/blob/main/JS-Day-18/js/homework.js">Lê Quốc Khánh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Thay vì việc tạo một function và gọi nó khi <code>onload</code> thì có thể viết toàn bộ bên ngoài và lặp lại function <code>changeColor</code> bằng setInterval vì trong trường hợp này là không cần thiết.</p>
+<p>Thay vì add style vào thẻ span, có thể sử dụng className để việc style cho highlight dễ dàng hơn.</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+    text-shadow: -0.2px -0.2px 0 red, 0.2px -0.2px 0 red, -0.2px 0.2px 0 red, 0.2px
+        0.2px 0 red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;),
+    i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightWord() {
+    if (i &gt;= content.length) return resetContent();
+    for (let j = 0; j &lt; i; j++)
+      content[j] = content[j]
+        .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+        .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+    const span = document.createElement(&quot;span&quot;);
+    span.className = &quot;highlight&quot;;
+    span.innerText = content[i];
+    content[i] = span.outerHTML;
+    $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+    i++;
+  }
+  setInterval(highlightWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý thêm về việc phát triển, maintain sau này.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/blob/main/JS-Day-18/js/homework.js">Hữu Hưng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Mốt số từ sau khi chạy bị dính khoảng cách vào nhau, khiến nó không còn được coi là 2 từ mà bị ghép thành 1.</p>
+<p>Có thể do logic join cập nhật lại html mới khi đã thêm thẻ span.</p>
+<pre><code class="language-js">contentElement.innerHTML = newWords.join(&quot; &quot;);
+currentsIndex = (currentsIndex + 1) % words.length;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần self-test, tự kiểm tra kỹ trước khi hoàn thiện và nộp bài tập.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Nguyenduc2108/f8-fullstack-k3/blob/main/Homework_session_18/script.js">Nguyễn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *</p>
+</li>
+</ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
