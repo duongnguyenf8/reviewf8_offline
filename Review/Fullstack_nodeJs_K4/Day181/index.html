@@ -1,0 +1,298 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day181</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-18-">Đặng Khải</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm tốt *</p>
+<p>Không cần trường hợp <code>!content.trim().includes(&quot; &quot;)</code>.</p>
+<p>đề xuất 1 cách khác.</p>
+<pre><code class="language-javascript">let content = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente omnis aperiam quidem. Dignissimos voluptatum autem facere! Dolor quidem qui iusto laudantium asperiores molestias omnis, fugiat ratione deleniti molestiae id numquam?`;
+content = content.replaceAll(&quot; &quot;, &quot;&lt;/span&gt; &lt;span&gt;&quot;);
+content = `&lt;span&gt;${content}&lt;/span&gt;`;
+console.log(content);
+var index = 0;
+setInterval(() =&gt; {
+  var charCurrent = content.charAt(index);
+  var charNext = content.charAt(index + 1);
+  if (charCurrent === &quot;&gt;&quot; &amp;&amp; charNext !== &quot; &quot;) {
+    var html =
+      content.slice(0, index) + ' class=&quot;hightlight&quot;' + content.slice(index);
+    console.log(html);
+    document.body.innerHTML = html;
+  }
+  index++;
+
+  if (index === content.length) {
+    console.log(content.length);
+    console.log(index);
+    index = 0;
+  }
+}, 20);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài rất tốt, Cần cẩn thận hơn khi nộp bài.</li>
+</ul>
+<h2><a href="https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_17">Mạnh Huy</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt *</p>
+<p>Có thể tham khảo cách sau đây:</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;);
+  let i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightNextWord() {
+    if (i &gt;= content.length) {
+      resetContent();
+    } else {
+      for (let j = 0; j &lt; i; j++) {
+        content[j] = content[j]
+          .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+          .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+      }
+      const span = document.createElement(&quot;span&quot;);
+      span.className = &quot;highlight&quot;;
+      span.innerText = content[i];
+      content[i] = span.outerHTML;
+      $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+      i++;
+    }
+  }
+  setInterval(highlightNextWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_17">Hoang Van Thanh</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt *</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên nếu sử dụng kiến thức về String để giải quyết bài toán này sẽ củng cố kiến thức về String hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/blob/main/Day-18/js/main.js">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt *</p>
+<p>Có thể tham khảo cách sau đây:</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;);
+  let i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightNextWord() {
+    if (i &gt;= content.length) {
+      resetContent();
+    } else {
+      for (let j = 0; j &lt; i; j++) {
+        content[j] = content[j]
+          .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+          .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+      }
+      const span = document.createElement(&quot;span&quot;);
+      span.className = &quot;highlight&quot;;
+      span.innerText = content[i];
+      content[i] = span.outerHTML;
+      $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+      i++;
+    }
+  }
+  setInterval(highlightNextWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên nếu sử dụng kiến thức về String để giải quyết bài toán này sẽ củng cố kiến thức về String hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/thaiduytien1611cunbeo/NopbaitapF8/tree/main/Day18">Thái Duy Tiến</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt *.</p>
+<p>Tuy nhiên nên tách css ra một file khác sẽ hoàn chỉnh hơn.</p>
+<p>Có thể tham khảo cách sau đây:</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;);
+  let i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightNextWord() {
+    if (i &gt;= content.length) {
+      resetContent();
+    } else {
+      for (let j = 0; j &lt; i; j++) {
+        content[j] = content[j]
+          .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+          .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+      }
+      const span = document.createElement(&quot;span&quot;);
+      span.className = &quot;highlight&quot;;
+      span.innerText = content[i];
+      content[i] = span.outerHTML;
+      $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+      i++;
+    }
+  }
+  setInterval(highlightNextWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, đúng với yêu cầu của đề bài.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/TranCong312002/F8-fullstack-k4/tree/main/Bai_tap_buoi_18">Trần Đức Công</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt *</p>
+<p>Có thể tham khảo cách sau đây:</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;);
+  let i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightNextWord() {
+    if (i &gt;= content.length) {
+      resetContent();
+    } else {
+      for (let j = 0; j &lt; i; j++) {
+        content[j] = content[j]
+          .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+          .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+      }
+      const span = document.createElement(&quot;span&quot;);
+      span.className = &quot;highlight&quot;;
+      span.innerText = content[i];
+      content[i] = span.outerHTML;
+      $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+      i++;
+    }
+  }
+  setInterval(highlightNextWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, đúng với yêu cầu của đề bài.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/blob/main/Day_17/js/script.js">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt *</p>
+<p>Tuy nhiên nên tách css ra một file khác sẽ hoàn chỉnh hơn.</p>
+<p>Có thể tham khảo cách sau đây:</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;);
+  let i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightNextWord() {
+    if (i &gt;= content.length) {
+      resetContent();
+    } else {
+      for (let j = 0; j &lt; i; j++) {
+        content[j] = content[j]
+          .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+          .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+      }
+      const span = document.createElement(&quot;span&quot;);
+      span.className = &quot;highlight&quot;;
+      span.innerText = content[i];
+      content[i] = span.outerHTML;
+      $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+      i++;
+    }
+  }
+  setInterval(highlightNextWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, đúng với yêu cầu của đề bài.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
