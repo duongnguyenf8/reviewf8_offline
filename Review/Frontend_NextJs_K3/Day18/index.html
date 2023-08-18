@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day18</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà lớp FE-K3</h1>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-18">Nguyễn Đức Hải</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
+var maxValue = numbers[0];
+var minValue = numbers[0];
+var positionMin = numbers[0];
+var positionMax = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
+});
+
+console.log(
+  `
+Giá trị lớn nhất của mảng là: ${maxValue}
+    - vị trí index: ${positionMax}
+`,
+  `
+Giá trị nhỏ nhất của mảng là: ${minValue}
+    - vị trí index: ${positionMin}
+`
+);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]:</p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên với reduce, có thể làm ngắn gọn hơn:</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (var i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+function getAverage(array) {
+  if (!array.length) return &quot;Không có số nguyên tố&quot;;
+  var sum = array.reduce(function (prev, value) {
+    return prev + value;
+  });
+  return sum / array.length;
+}
+var average = getAverage(array.filter(isPrime));
+console.log(average);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]:</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên có thể rút ngắn hơn với <code>forEach</code></p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+var finalArr = [];
+
+arr.forEach((val) =&gt; !finalArr.includes(val) &amp;&amp; finalArr.push(val));
+
+console.log(finalArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]:</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên có thể tối ưu, rút ngắn lại với một số phương thức của mảng</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên chưa áp dụng được nhiều phương thức có sẵn của mảng, chưa khai thác được hết sức mạnh của các phương thức đó. Nên sử dụng nhiều hơn.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
