@@ -1,0 +1,734 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day3</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên FE K3.</h1>
+<h2><a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-3">Đỗ Ngọc Tiến</a></h2>
+<pre><code>Sớm nhất *
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Các thuộc tính id trong input cần có giá trị, không nên để trống. Nếu không có thì nên xóa đi.</p>
+<p>Thẻ <code>button</code> ở đây giúp tạo ra một nút để submit form, cần đưa thẻ <code>button</code> vào trong form.</p>
+<p>Đây là các heading nhỏ của <code>CONTACT US</code> nên nên sử dụng thẻ <code>heading</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;protein&quot;&gt;Contact Info&lt;/div&gt;
+&lt;div class=&quot;protein&quot;&gt;Having Any Query! Or Book an appointment&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h2&gt;Contact Info&lt;/h2&gt;
+&lt;h2&gt;Having Any Query! Or Book an appointment&lt;/h2&gt;
+</code></pre>
+<p>Trong thực tế, hầu hết các trang web nổi tiếng đều sẽ thiết kế trang <code>contact</code> riêng chứ không còn là một <code>section</code>. Vì vậy. phần <code>CONTACT US</code> nên là <code>h1</code></p>
+<pre><code class="language-html">&lt;h2&gt;CONTACT US&lt;/h2&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h1&gt;CONTACT US&lt;/h1&gt;
+</code></pre>
+<p>Các phần <code>Input</code> nên có một chút <code>padding-left</code> để khi nhập liệu sẽ không bị dính vào viền trái.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-3">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Phần <code>button</code> ở đây giúp tạo ra một nút để submit form, cần đưa thẻ <code>button</code> vào trong form.</p>
+<p>Có thể tìm hiểu và làm được màu của input thì tốt hơn</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thông tin hiển hiển thị theo dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;content-1&quot;&gt;
+  &lt;h2&gt;ADS SECURITIES L.L.C&lt;/h2&gt;
+  &lt;p&gt;8th floor.Ci Tower&lt;/p&gt;
+  &lt;p&gt;Comiche Road. PO Bow 93894&lt;/p&gt;
+  &lt;p&gt;Abu Dhabi United Arab Emiraes&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content-2&quot;&gt;
+  &lt;p&gt;Tel: +971 2657 2300&lt;/p&gt;
+  &lt;p&gt;Far: +971 2657 2300&lt;/p&gt;
+  &lt;p&gt;Email: &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;abc@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h2&gt;ADS SECURITIES L.L.C&lt;/h2&gt;
+&lt;ul class=&quot;content-1&quot;&gt;
+  &lt;li&gt;8th floor.Ci Tower&lt;/li&gt;
+  &lt;li&gt;Comiche Road. PO Bow 93894&lt;/li&gt;
+  &lt;li&gt;Abu Dhabi United Arab Emiraes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;content-2&quot;&gt;
+  &lt;li&gt;Tel: +971 2657 2300&lt;/li&gt;
+  &lt;li&gt;Far: +971 2657 2300&lt;/li&gt;
+  &lt;li&gt;Email: &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;abc@gmail.com&lt;/a&gt;&lt;/p&gt;
+  &lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day-3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Việc để một thẻ <code>img</code> vào trong thẻ <code>p</code> về mặt kỹ thuật là không sai, tuy nhiên, phần alt cần đucowj đảm bảo để cho biết vì sao hình ảnh được &quot;Nhấn Mạnh&quot; mà lại phải chèn vào trong text. Nhưng trong trường hợp này, thuộc tính <code>alt</code> không được cho giá trị, chưa kể tới việc thẻ <code>&lt;p&gt;</code> ở đây bọc thẻ <code>&lt;img&gt;</code> không có mục đích, có vẻ là chỉ để xuống hàng.</p>
+<pre><code class="language-html">&lt;p class=&quot;logo&quot;&gt;&lt;img src=&quot;./img/img_190-50.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</code></pre>
+<p>Vì vậy, nên sửa thành:</p>
+<pre><code class="language-html">&lt;img class=&quot;logo&quot; src=&quot;./img/img_190-50.png&quot; alt=&quot;Logo&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần một chút phân tích cấu trúc HTMl nữa là hoàn thiện.</p>
+<p>* Lưu ý: Cần đưa các bài tập vào các thư mục riêng biệt, không đưa tất cả vào một thư mục.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-3">Bảo Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Các thông tin được thể hiện ở dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;h2 class=&quot;info__title&quot;&gt;Contact Info&lt;/h2&gt;
+&lt;div class=&quot;info__items&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-location-dot&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;321 Awesome Street New York, NY 17022&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;i class=&quot;fa-regular fa-envelope&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;info@companyname.com&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-phone&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;+1 800 123 1234&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h2 class=&quot;info__title&quot;&gt;Contact Info&lt;/h2&gt;
+&lt;ul class=&quot;info__items&quot;&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-location-dot&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;321 Awesome Street New York, NY 17022&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;i class=&quot;fa-regular fa-envelope&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;
+      &lt;a target=&quot;_blank&quot; href=&quot;mailto:info@companyname.com&quot;&gt;
+        info@companyname.com
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;i class=&quot;fa-solid fa-phone&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;+1 800 123 1234&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-3">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần label của các <code>input type=&quot;checkbox&quot;</code>, <code>radio</code> chưa có. nếu có thì sẽ tốt hơn</p>
+<p>Có thể tìm hiểu và làm được màu của input thì tốt hơn</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thông tin hiển hiển thị theo dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;contact-address&quot;&gt;
+  &lt;span&gt;8th floor, CI Tower&lt;/span&gt;
+  &lt;span&gt;Comiche Road, PO Box 93894&lt;/span&gt;
+  &lt;span&gt;Aba Dhabi, United Arab Animates&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;contact-address&quot;&gt;
+  &lt;span&gt;Tel: +971 2 657 2300&lt;/span&gt;
+  &lt;span&gt;Fax: +971 2 657 2323&lt;/span&gt;
+  &lt;span&gt;Email: &lt;span&gt;cst@ads-securities.com&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;ul class=&quot;contact-address&quot;&gt;
+  &lt;li&gt;8th floor, CI Tower&lt;/li&gt;
+  &lt;li&gt;Comiche Road, PO Box 93894&lt;/li&gt;
+  &lt;li&gt;Aba Dhabi, United Arab Animates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;contact-address&quot;&gt;
+  &lt;li&gt;Tel: +971 2 657 2300&lt;/li&gt;
+  &lt;li&gt;Fax: +971 2 657 2323&lt;/li&gt;
+  &lt;li&gt;
+    Email:
+    &lt;span&gt;
+      &lt;a target=&quot;_blank&quot; href=&quot;mailto:cst@ads-securities.com&quot;&gt;
+        cst@ads-securities.com
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần một chút phân tích cấu trúc HTMl nữa là hoàn thiện.</li>
+</ul>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-3">Nguyễn Đức Hải</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần <code>textarea</code> không có thuộc tính <code>type</code>, phàn <code>id</code> không nên để là &quot;&quot;, nếu không có thì xóa đi</p>
+<pre><code class="language-html">&lt;textarea
+  type=&quot;message&quot;
+  name=&quot;message&quot;
+  id=&quot;&quot;
+  cols=&quot;30&quot;
+  rows=&quot;10&quot;
+  placeholder=&quot;Message&quot;
+&gt;&lt;/textarea&gt;
+</code></pre>
+<p>Hiện nay, hầu hết các trang web lớn đều có trang <code>contact</code> riêng, không còn là một <code>section</code> nữa. Vì vậy, phần <code>CONTACT US</code> nên là <code>h1</code> và các title nhỏ hơn nên là <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-3">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Trong tiếng anh, từ <code>mật khẩu</code> được viết là <code>password</code> chứ không phải <code>pass-word</code></p>
+<p>Có thể tìm hiểu và làm được màu của input thì tốt hơn</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thông tin hiển hiển thị theo dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;left&quot;&gt;
+  &lt;div class=&quot;address&quot;&gt;
+    &lt;h2&gt;ADS SECURITIES L.L.C&lt;/h2&gt;
+    &lt;p&gt;Tòa 3 Nam Từ Liêm&lt;/p&gt;
+    &lt;p&gt;99 Đ. Mễ Trì, Mễ Trì, Nam Từ Liêm&lt;/p&gt;
+    &lt;p&gt;Tòa 3 Nam Từ Liêm&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;contact&quot;&gt;
+    &lt;p&gt;Tel: 0391362394&lt;/p&gt;
+    &lt;p&gt;Fax: 0220832371&lt;/p&gt;
+    &lt;span
+      &gt;Email: &lt;a target=&quot;_blank&quot; href=&quot;&quot;&gt;duchainguyen134@gmai.com&lt;/a&gt;&lt;/span
+    &gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;div class=&quot;left&quot;&gt;
+  &lt;h2&gt;ADS SECURITIES L.L.C&lt;/h2&gt;
+  &lt;ul class=&quot;address&quot;&gt;
+    &lt;li&gt;Tòa 3 Nam Từ Liêm&lt;/li&gt;
+    &lt;li&gt;99 Đ. Mễ Trì, Mễ Trì, Nam Từ Liêm&lt;/li&gt;
+    &lt;li&gt;Tòa 3 Nam Từ Liêm&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;contact&quot;&gt;
+    &lt;li&gt;Tel: 0391362394&lt;/li&gt;
+    &lt;li&gt;Fax: 0220832371&lt;/li&gt;
+    &lt;li&gt;
+      Email:
+      &lt;span&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;mailto:duchainguyen134@gmai.com&quot;&gt;
+          duchainguyen134@gmai.com
+        &lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần một chút phân tích cấu trúc HTMl nữa là hoàn thiện.</li>
+</ul>
+<h2><a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day3">Nguyen Van Hai</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day3">Bài 1</a></p>
+<p>Code format hơi xấu, khó đọc.</p>
+<p>Bài làm tốt.</p>
+<p>Hiện nay, hầu hết các trang web lớn đều có trang <code>contact</code> riêng, không còn là một <code>section</code> nữa. Vì vậy, phần <code>CONTACT US</code> nên là <code>h1</code> và các title nhỏ hơn nên là <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Ở phần meta title đã thông báo đây là trang hiển thị các comment của khách hàng. Vì vậy, tiêu đề chính ở đây sẽ sử dụng <code>h1</code> thay vì <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day3">Bài 3</a></p>
+<p>Sai đề bài.</p>
+<p>Ở phần chọn <code>role</code> sử dụng <code>radio</code> nhưng trong bài đang dùng <code>checkbox</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thông tin ở đây được hiển thị theo dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div id=&quot;info&quot;&gt;
+  &lt;h1&gt;ADS SECURITIES L.L.C.&lt;/h1&gt;
+  &lt;p&gt;Dinh Thon, My Dinh, Nam Tu Liem, Ha Noi&lt;/p&gt;
+  &lt;br /&gt;
+  &lt;p&gt;Tel: 0123466797&lt;/p&gt;
+  &lt;p&gt;Fax: 0136464857&lt;/p&gt;
+  &lt;p&gt;
+    Email:
+    &lt;a target=&quot;_blank&quot; href=&quot;hainvsp9x@gmail.com&quot;&gt;hainvsp9x@gmail.com&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;div id=&quot;info&quot;&gt;
+  &lt;h1&gt;ADS SECURITIES L.L.C.&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Dinh Thon, My Dinh, Nam Tu Liem, Ha Noi&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Tel: 0123466797&lt;/li&gt;
+    &lt;li&gt;Fax: 0136464857&lt;/li&gt;
+    &lt;li&gt;
+      Email:
+      &lt;a target=&quot;_blank&quot; href=&quot;hainvsp9x@gmail.com&quot;&gt; hainvsp9x@gmail.com &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/day3">Bài 5</a></p>
+<p>Trong bản mẫu, phần heading chữ màu xanh có font weight dày hơn chữ màu đen.</p>
+<pre><code class="language-html">&lt;h2&gt;Best &lt;span&gt;Shared Hosting&lt;/span&gt; Company&lt;/h2&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h2&gt;
+  Best &lt;span&gt;&lt;b&gt;Shared Hosting&lt;/b&gt;&lt;/span&gt; Company
+&lt;/h2&gt;
+</code></pre>
+<p>thẻ <code>button</code> typ <code>submit</code> nhưng không có <code>form</code> nào ở trong bài. Nên sửa thành <code>type=&quot;button&quot;</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần một chút phân tích cấu trúc HTMl nữa là hoàn thiện.</li>
+</ul>
+<h2><a href="https://github.com/F8study/BaiTapDay3">Khôi Lê Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/F8study/BaiTapDay3">Bài 1</a></p>
+<p>Phân tích layout chưa tốt</p>
+<p>Các thẻ heading có chung tầng ý nghĩa nên sử dụng cùng 1 loại thẻ.</p>
+<p>2 id đang trùng nhau:</p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;label for=&quot;name&quot;&gt;&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;your name&quot; id=&quot;name&quot; /&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;label for=&quot;name&quot;&gt;&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;subject&quot; id=&quot;name&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Thiếu format code</p>
+<p>Cần chú ý nhiều hơn đến thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/F8study/BaiTapDay3">Bài 2</a></p>
+<p>Sử dụng quá nhiều thẻ <code>h1</code> trong cùng một trang</p>
+<p>Chia 1 bảng layout, chỉ nên dùng 1 thẻ table</p>
+<p>Cần chú ý nhiều hơn đến thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/F8study/BaiTapDay3">Bài 3</a></p>
+<p>Sai layout mẫu</p>
+<p>Cần chú ý nhiều hơn đến thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/F8study/BaiTapDay3">Bài 4</a></p>
+<p>Layout phân tích tốt, cần chỉn chu hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/F8study/BaiTapDay3">Bài 5</a></p>
+<p>Phần chữ màu đen trong heading có font weight nhỏ hơn chữ màu xanh</p>
+<p>Sử dụng quá nhiều thẻ h1 trong cùng một trang</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm cần cố gắng rất nhiều.</li>
+</ul>
+<h2><a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day3">Nguyen Le Quyen (FPL HN)</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Phần thông tin hiển hiển thị theo dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;info__items&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;images/address.png&quot; alt=&quot;&quot; /&gt;
+    &lt;span&gt;321 Awesome Street New York, NY 17022&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;images/box.png&quot; alt=&quot;&quot; /&gt;
+    &lt;span&gt;info@companyname.com&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;
+    &lt;img src=&quot;images/phone.png&quot; alt=&quot;&quot; /&gt;
+    &lt;span&gt;+1 800 123 1234&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;ul class=&quot;info__items&quot;&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;img src=&quot;images/address.png&quot; alt=&quot;&quot; /&gt;
+    &lt;span&gt;321 Awesome Street New York, NY 17022&lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;img src=&quot;images/box.png&quot; alt=&quot;&quot; /&gt;
+    &lt;span&gt;
+      &lt;a target=&quot;_blank&quot; href=&quot;mailto:info@companyname.com&quot;&gt;
+        info@companyname.com
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;item&quot;&gt;
+    &lt;img src=&quot;images/phone.png&quot; alt=&quot;&quot; /&gt;
+    &lt;span&gt;+1 800 123 1234&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day3">Bài 2</a></p>
+<p>Bào làm tốt *</p>
+<p>Nên chú ý nhiều hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+<p>Không nên dặt className bằng tiếng Việt, nên dùng tiếng Anh.</p>
+<pre><code class="language-html">&lt;div class=&quot;hang1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;hang2&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;div class=&quot;row row1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;row row2&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p>Tên class <code>thumb</code> thường được dùng cho các hình ảnh nhỏ không phải là để làm một thẻ bao bọc thông tin</p>
+<pre><code class="language-html">&lt;div class=&quot;item&quot;&gt;
+  &lt;div class=&quot;thumb&quot;&gt;
+    &lt;img src=&quot;images/monk-555391_1920.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        &quot;Life is like riding a bicycle. To keep your balance, you must keep
+        moving.&quot;
+      &lt;/p&gt;
+      &lt;cite&gt;Albert Einstein&lt;/cite&gt;
+    &lt;/blockquote&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;div class=&quot;item&quot;&gt;
+  &lt;div class=&quot;thumb&quot;&gt;
+    &lt;img src=&quot;images/monk-555391_1920.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      &quot;Life is like riding a bicycle. To keep your balance, you must keep
+      moving.&quot;
+    &lt;/p&gt;
+    &lt;cite&gt;Albert Einstein&lt;/cite&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day3">Bài 3</a></p>
+<p>Sai layout mẫu.</p>
+<p>Nên chú ý nhiều hơn vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day3">Bài 4</a></p>
+<p>Phần map có chủ đích làm sáng tạo nhưng đã làm các phần trên bị xấu</p>
+<p>Các phần thông tin hiển hiển thị theo dạng list, nên sử dụng thẻ <code>ul</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;contact-address&quot;&gt;
+  &lt;span&gt;8th floor, CI Tower&lt;/span&gt;
+  &lt;span&gt;Comiche Road, PO Box 93894&lt;/span&gt;
+  &lt;span&gt;Aba Dhabi, United Arab Animates&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;contact-address&quot;&gt;
+  &lt;span&gt;Tel: +971 2 657 2300&lt;/span&gt;
+  &lt;span&gt;Fax: +971 2 657 2323&lt;/span&gt;
+  &lt;span&gt;Email: &lt;span&gt;cst@ads-securities.com&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần này không phải title, chỉ là một despcription nên không nên sử dụng className là <code>title2</code>
+Vì nó thể hiện một đoạn văn bản. Nên sử dụng thẻ <code>p</code> thay vì <code>span</code></p>
+<pre><code class="language-html">&lt;span class=&quot;title2&quot;&gt;
+  With this responsive landing page template, you can promote your all
+  hosting, domain and email services
+&lt;/span&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;p class=&quot;description&quot;&gt;
+  With this responsive landing page template, you can promote your all
+  hosting, domain and email services
+&lt;/p&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, có sáng tạo. Tuy nhiên sáng tạo không phải lúc nào cũng được và không phải lúc nào cũng tốt.</li>
+</ul>
+<h2><a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-3">Duy</a></h2>
+<hr>
+<p>Bài 1: Bài làm tốt *</p>
+<ul>
+<li>
+<p>Nên tách css ra một file css riêng, giúp cho việc đọc code dễ hiểu và dễ xử lý hơn.</p>
+</li>
+<li>
+<p>Chiều rộng của các input và textarea đang khác nhau, điều này không tốt cho UI gây khó chịu cho người đọc.</p>
+</li>
+<li>
+<p>Góp ý: Nên xử lý placeholder thêm một số thuộc tính css như padding để không dính vào viền của input gây khó chịu người đọc.</p>
+</li>
+</ul>
+<hr>
+<p>Bài 2: Bài làm chưa tốt</p>
+<ul>
+<li>img và text chưa nằm ngang nhau, cần xử lý thêm để tối ưu vấn đề này.</li>
+</ul>
+<hr>
+<p>Bài 3: Bài làm chưa tốt.</p>
+<ul>
+<li>Nhận xét chung về UI: Chưa đúng với bản mẫu, cần tìm hiểu thêm để tối ưu bài làm của mình.</li>
+</ul>
+<hr>
+<p>Bài 4: Bài làm tốt *</p>
+<ul>
+<li>
+<p>Thừa thẻ i ở dòng 22 và thừa thẻ đóng div ở dòng 27.</p>
+</li>
+<li>
+<p>Phần đầu nên sử dụng thẻ nav để biểu diễn thanh điều hướng ứng với 4 items.</p>
+</li>
+<li>
+<p>Chú ý về màu nền và màu chữ cần độ tương phản dễ đọc không gây khó chịu cho người dùng.</p>
+</li>
+<li>
+<p>Góp ý: Cần tuân thủ thiết kế của bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<p>Bài 5: Bài làm tốt</p>
+<ul>
+<li>Đặt tên class sai quy ước. Đây là lỗi sai khá nghiêm trọng. Xem lại cách đặt tên class.</li>
+</ul>
+<hr>
+<p>Nhận xét chung về bài tập về nhà: Bài làm khá tốt, tuy nhiên nên tách riêng file css và html và cần lưu ý về một số lỗi ở trên để hoàn thiện bài tập tốt hơn.</p>
+<hr>
+<h2><a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day3">Gia Bảo Đỗ</a></h2>
+<hr>
+<p>Cần lưu ý về đặt tên folder không nên có dấu space điều này bất tiện về sau này nếu muốn <code>import</code>.</p>
+<hr>
+<p>Bài 1: Bài làm rất tốt *</p>
+<ul>
+<li>Phần contact có thể là một section của trang nên phần CONTACT US nên để là thẻ <code>&lt;h2&gt;</code> và các tiêu đề ở dưới là <code>&lt;h3&gt;</code></li>
+</ul>
+<hr>
+<p>Bài 2: Bài làm rất tốt *</p>
+<hr>
+<p>Bài 3: Bài làm rất tốt *</p>
+<ul>
+<li>Cần sửa lại phần viền của các select, input sao cho giống bản mẫu</li>
+</ul>
+<hr>
+<p>Bài 4: Bài làm rất tốt *</p>
+<ul>
+<li>Phần hover navbar ở 2 đầu chưa full đến viền của border.</li>
+</ul>
+<hr>
+<p>Bài 5: Bài làm rất tốt *</p>
+<ul>
+<li>Nên thay đổi title ở phần head để hiệu quả với SEO.</li>
+</ul>
+<hr>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt chỉ có một số chỗ nhỏ cần lưu ý.</p>
+<hr>
+<h2><a href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/Bai_tap/Day_3">Nguyễn Khắc Tú</a></h2>
+<hr>
+<p>Bài 1: Bài làm rất tốt *</p>
+<ul>
+<li>
+<p>Chưa thay đổi <code>font-size</code> của placeholder của thẻ textarea mà vẫn để mặc định.</p>
+</li>
+<li>
+<p>Kiểm tra lại đường link liên kết đến fontawesome vì icon không hiện lên được.</p>
+</li>
+</ul>
+<hr>
+<p>Bài 2: Bài làm rất tốt *</p>
+<ul>
+<li>
+<p>Khoảng cách giữa h1 và article chưa đúng với bản mẫu.</p>
+</li>
+<li>
+<p>Vị trí của avatar đang hơi thấp so với bản mẫu. Phải căn lề trên với đoạn text.</p>
+</li>
+</ul>
+<hr>
+<p>Bài 3: Bài làm rất tốt *</p>
+<ul>
+<li>
+<p>Hai button cần được căn giữa.</p>
+</li>
+<li>
+<p>Cần thay đổi viền của các thẻ select, input sao cho giống với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<p>Bài 4: Bài làm rất tốt *</p>
+<hr>
+<p>Bài 5: Bài làm rất tốt *</p>
+<ul>
+<li>Chú ý về <code>font-size</code> của tiêu đề cần lớn hơn.</li>
+</ul>
+<hr>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt chỉ có một số chỗ nhỏ cần lưu ý.</p>
+<hr>
+<h2><a href="https://github.com/2003son/F8-FE-K3/tree/main/day3">Sơn Trần</a></h2>
+<hr>
+<p>Bài 1: Bài làm chưa tốt.</p>
+<ul>
+<li>Sai chính tả khá nhiều một số chỗ như <code>foteer</code>, <code>CONTACH</code>,... và cần tuân thủ viết hoa các chữ cái như bản mẫu (having không viết hoa).</li>
+</ul>
+<ul>
+<li>
+<p>Không nên đặt tên class là footer vì đây không phải là thành phần footer của trang.</p>
+</li>
+<li>
+<p>Thuộc tính name và id nếu không đặt gì nên bỏ đi không nên để trống.</p>
+</li>
+<li>
+<p>Phần location chưa xuống dòng như bản mẫu.</p>
+</li>
+<li>
+<p>Góp ý: Các thành phần placeholder của input dính viền trái, khó đọc, không tốt, không giúp người dùng có trải nghiệm tốt đề xuất sử dụng thuộc tính <code>padding-left</code></p>
+</li>
+</ul>
+<hr>
+<p>Bài 2: Bài làm rất tốt *</p>
+<hr>
+<p>Bài 3: Bài làm tốt *</p>
+<ul>
+<li>Nên sử dụng thẻ label với thuộc tính <code>for</code> kèm với input để khi nhấn vào label có thể focus vào input.</li>
+</ul>
+<ul>
+<li>Cần thay đổi viền của các thẻ select, input sao cho giống với bản mẫu.</li>
+</ul>
+<hr>
+<p>Bài 4: Bài làm rất tốt *</p>
+<ul>
+<li>
+<p>Nên sử dụng thẻ nav để biểu diễn menu.</p>
+</li>
+<li>
+<p>Chú ý về độ rộng của navbar sao cho đúng với bản mẫu.</p>
+</li>
+</ul>
+<hr>
+<p>Bài 5: Bài làm rất tốt *</p>
+<hr>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt chỉ có một số chỗ nhỏ cần lưu ý và hoàn thiện cho các bài tập sau.</p>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

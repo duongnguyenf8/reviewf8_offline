@@ -1,0 +1,226 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day20</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://ha752002.github.io/f8-fullstack-k2/">Nguyễn Thị Hồng Hà</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Việc sử dụng cả 2 phương thức <code>map</code> và <code>filter</code> là không cần thiết, có thể sử dụng phương thức <code>filter</code> đã có thể giải quyết bài toàn này.</p>
+<pre><code class="language-js">var newArr = arrA.filter(function (arrItem) {
+  return arrB.includes(arrItem);
+});
+</code></pre>
+<p>Tuy nhiên việc lọc phần tử <code>undefined</code> ở trong mảng kết quả <code>newArray</code> cũng không cần thiết vì đề bài không yêu cầu lọc giá trị <code>undefined</code>, nếu như cả 2 mảng đều có phần tử có giá trị là <code>undefined</code> thì vẫn có thể lấy được.</p>
+<p>Ngoài ra, bài làm chưa tính được trường hợp có nhiều phần tử giống nhau thì chỉ lấy 1 phần tử để cho vào mảng kết quả.</p>
+<p>Hiện tại, bài làm sẽ có kết quả nếu đầu vào như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 2, 2];
+var arrB = [5, 2, 6, 7, 1];
+//Output: [1, 2, 2, 2]
+</code></pre>
+<p>Và cũng cần phải kiểm tra điều kiện đầu vào phải là mảng và nếu như không có phần tử nào giống nhau giữa 2 mảng thì nên thông báo cho người dùng biết một cách hợp lý.</p>
+<p>Có thể tham khảo cách làm sau đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB)) {
+  var result = arrA.reduce((prev, current) =&gt; {
+    if (arrB.includes(current) &amp;&amp; !prev.includes(current)) {
+      prev.push(current);
+    }
+    return prev;
+  }, []);
+
+  if (result.length === 0) {
+    console.log(`Hai mảng đã cho không có phần tử nào giống nhau`);
+  } else {
+    console.log(`Các phần tử giống nhau của 2 mảng là:`, result);
+  }
+} else {
+  console.log(`Vui lòng nhập lại mảng.`);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Có thể sử dụng vòng lặp while để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức flat sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị Infinity.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên, ở giao diện, item ở giữa chưa được xử lý <code>margin-left: 20px</code> nên nhìn sẽ hơi lệch so với các item khác, do nó đang được css chung cho các item khi chưa đổi chỗ. Cần xử lý sau khi đổi chỗ sẽ hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần chú ý các trường hợp đặc biệt có thể xảy ra trong mỗi bài toán, cần lưu ý về bài 3 và chỉnh chu hơn trong việc xây dựng giao diện ở bài 4.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Stung16/ex_f8-fullstack/tree/master/Day20">Kiều Duy Tùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Tuy nhiên bài làm chưa tính được trường hợp có nhiều phần tử giống nhau thì chỉ lấy 1 phần tử để cho vào mảng kết quả.</p>
+<p>Hiện tại, bài làm sẽ có kết quả nếu đầu vào như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 2, 2];
+var arrB = [5, 2, 6, 7, 1];
+//Output: [1, 2, 2, 2]
+</code></pre>
+<p>Và cũng cần phải kiểm tra điều kiện đầu vào phải là mảng và nếu như không có phần tử nào giống nhau giữa 2 mảng thì nên thông báo cho người dùng biết một cách hợp lý.</p>
+<p>Có thể tham khảo cách làm sau đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB)) {
+  var result = arrA.reduce((prev, current) =&gt; {
+    if (arrB.includes(current) &amp;&amp; !prev.includes(current)) {
+      prev.push(current);
+    }
+    return prev;
+  }, []);
+
+  if (result.length === 0) {
+    console.log(`Hai mảng đã cho không có phần tử nào giống nhau`);
+  } else {
+    console.log(`Các phần tử giống nhau của 2 mảng là:`, result);
+  }
+} else {
+  console.log(`Vui lòng nhập lại mảng.`);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Có thể sử dụng vòng lặp while để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức flat sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị Infinity.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên việc check từng kiểu dữ liệu rồi đẩy vào các mảng riêng như vậy hơi thủ công, và ở trong bài làm chỉ đang kiểm tra 3 kiểu dữ liệu <code>string</code>, <code>boolean</code>, <code>number</code>.</p>
+<p>Vậy nếu cần xử lý nhiều kiểu dữ liệu khác như <code>object</code>, <code>array</code>, <code>function</code>,... thì cần check từng trường hợp.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    return arr.flat(Infinity).reduce((acc, item) =&gt; {
+      const type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, {});
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên ở phía giao diện, cần xem lại kích thước khối <code>container</code> vì hiện tại phần <code>content</code> đang bị tràn ra ngoài kích thước khối <code>container</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần lưu ý một số trường hợp đặc biệt có thể xảy ra trong mỗi bài toán và cần chỉnh chu hơn khi xây dựng giao diện.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HieuBoss/F8-fullstack-k2/tree/main/javascript/lesson6">Duy Hiếu Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên, đề bài yêu cầu Output nhận được là một mảng chứa các phần tử giống nhau ví dụ như <code>[1, 2]</code> nhưng hiện tại bài làm có Output là <code>1, 2</code>.</p>
+<p>Cần xử lý tốt hơn để thu được Output giống với yêu cầu đề bài.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm chưa đạt đầu ra như yêu cầu đề bài đưa ra. Cần xem lại logic khi xử lý phân tách kiểu dữ liệu trong vòng lặp <code>for...in</code>.</p>
+<p>Nguyên nhân là do khi khởi tạo <code>result</code> đang gán <code>result = []</code> nên js sẽ không hiểu <code>result[type]</code>. Vì vậy cách khắc phục là nên gán <code>result = {}</code> sẽ được đầu ra như mong muốn.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    return arr.flat(Infinity).reduce((acc, item) =&gt; {
+      const type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, {});
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên, ở giao diện, item ở giữa chưa được xử lý <code>margin: 20px</code> nên nhìn sẽ hơi lệch so với lề trái, do nó đang được css chung cho các item khi chưa đổi chỗ. Cần xử lý sau khi đổi chỗ sẽ hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần chú ý các trường hợp đặc biệt có thể xảy ra trong mỗi bài toán, cần lưu ý về bài 3 và chỉnh chu hơn trong việc xây dựng giao diện ở bài 4.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

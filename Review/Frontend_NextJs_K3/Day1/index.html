@@ -1,0 +1,1217 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day1</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên FE K3.</h1>
+<h2><a href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/B%C3%A0i%20t%E1%BA%ADp%20Day%201">Nguyễn Khắc Tú</a></h2>
+<pre><code>- Không nên để tên folder hoặc repo có ký tự đặc biệt vì đường dấn nhìn sẽ rất xấu, và khó để bảo trì, import vào các file khác.
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/B%C3%A0i%20t%E1%BA%ADp%20Day%201">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Phần input để nhập email có thể sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</p>
+</li>
+<li>
+<p>Phần css này không cần thiết vì không chứa bất cứ thuộc tính nào.</p>
+<pre><code class="language-css">.button-request {
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/B%C3%A0i%20t%E1%BA%ADp%20Day%201">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Vì đây là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code>. Các title bài viết nên sử dụng <code>h2</code> thay vì <code>h3</code>.</li>
+</ul>
+<pre><code class="language-html">&lt;h3&gt;UI/UX Design&lt;/h3&gt;
+&lt;h3&gt;Web Development&lt;/h3&gt;
+&lt;h3&gt;Branding&lt;/h3&gt;
+&lt;h3&gt;Photography&lt;/h3&gt;
+&lt;h3&gt;Apps Development&lt;/h3&gt;
+&lt;h3&gt;Digital Marketing&lt;/h3&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tunguyen34hd/FrontEnd-F8-Offline/tree/main/B%C3%A0i%20t%E1%BA%ADp%20Day%201">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;p&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;p&gt;Header&lt;/p&gt;
+&lt;/header&gt;
+...
+&lt;section class=&quot;sidebar&quot;&gt;
+  &lt;p&gt;Sidebar&lt;/p&gt;
+&lt;/section&gt;
+...
+&lt;footer&gt;
+  &lt;p&gt;Header&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính là <code>&quot;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&quot;</code></p>
+<ul>
+<li>Cần sử dụng thẻ <code>h1</code> cho đoạn title đó thay vì thẻ <code>a</code></li>
+<li>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></li>
+</ul>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;
+  &gt;Vòng xoay cao tốc 34,500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+&lt;/a&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về semantic HTML, và một số lỗi nhỏ về CSS. Cần chú ý đến các lỗi này để tránh gặp phải trong tương lai. * Lưu ý: Cần chuyển đổi, thay tên toàn bộ folder.</li>
+</ul>
+<h2><a href="https://github.com/saiduii/F8-FE-K3/tree/main">Duy</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/saiduii/F8-FE-K3/tree/main">Bài 1</a></p>
+<ul>
+<li>
+<p>Thẻ <code>br</code> chỉ nên sử dụng khi xuống dòng ở một đoạn văn bản. Không nên sử dụng nó để tạo khoảng cách giữa các phần tử.</p>
+<pre><code class="language-html">&lt;br /&gt;
+&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top:16px;&quot;&gt;
+  &lt;button type=&quot;submit&quot;&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/saiduii/F8-FE-K3/tree/main">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Vì ở đây là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code>. Các title bài viết nên sử dụng <code>h2</code> thay vì <code>h3</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/saiduii/F8-FE-K3/tree/main">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;p&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;p&gt;Header&lt;/p&gt;
+&lt;/header&gt;
+...
+&lt;section class=&quot;sidebar&quot;&gt;
+  &lt;p&gt;Sidebar&lt;/p&gt;
+&lt;/section&gt;
+...
+&lt;footer&gt;
+  &lt;p&gt;Header&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Tag <code>&lt;font&gt;</code> không hỗ trợ trong HTML5, nên không nên sử dụng nó.</p>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;https://vnexpress.net/&quot;&gt;
+  &lt;font color=&quot;blue&quot;&gt;
+    &lt;h1&gt;
+      Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+    &lt;/h1&gt;
+  &lt;/font&gt;
+&lt;/a&gt;
+</code></pre>
+<ul>
+<li>
+<p>Phần thẻ a nên để trong thẻ h1 thay vì ngược lại</p>
+<ul>
+<li>Vì theo ngữ nghĩa của semantic và SEO, thẻ h1 là tiêu đề chính của trang web, còn thẻ a là một phần của nội dung trong h1</li>
+</ul>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;https://vnexpress.net/&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, chỉ có một số lỗi nhỏ về semantic HTML, cần chú ý thêm về các bài giảng trên lớp và tìm hiểu thêm về các thẻ sử dụng ở HTML5 để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-1">Nguyễn Đức Hải</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-1">Bài 1</a></p>
+<ul>
+<li>
+<p>Vì đây là một trang web invite contact</p>
+<ul>
+<li>Title <code>Get the invite</code> phải để trong thẻ <code>h1</code> thay vì <code>h2</code></li>
+</ul>
+</li>
+<li>
+<p>Không sủ dụng đường dẫ như này <code>src=&quot;/day-1/img/48.png&quot;</code> vì nó sẽ bị lỗi khi deploy lên server</p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;./img/48.png&quot; alt=&quot;48&quot; /&gt;
+</code></pre>
+</li>
+<li>
+<p>Input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</p>
+</li>
+<li>
+<p>Phần title trang web nên chú ý vì nó là một phần quan trọng trong SEO, trải nghiệm người dùng (UX)</p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Get the invite&lt;/title&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-1">Bài 2</a></p>
+<ul>
+<li>
+<p>Các title trong list nên sử dụng <code>h2</code> thay vì <code>h3</code> vì nó là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code></p>
+</li>
+<li>
+<p>Không sử dụng đường dẫn dạng như này: <code>src=&quot;/day-1/img/UI.png&quot;</code></p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;./img/UI.png&quot; alt=&quot;UI&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h3&gt;HEADER&lt;/h3&gt;
+&lt;h4&gt;SIDEBAR&lt;/h4&gt;
+&lt;h3&gt;FOOTER&lt;/h3&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav class=&quot;sidebar&quot;&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>h3</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;h3&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h3&gt;
+</code></pre>
+<ul>
+<li>
+<p>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý về các meta title, đường dẫn, semantic HTML, SEO, và tìm hiểu thêm về các thẻ sử dụng ở HTML5 để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-1">Bảo Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-1">Bài 1</a></p>
+<ul>
+<li>Sai layout đề bài khi button nằm cùng một hàng với input. Có thẻ bao bọc button vào một thẻ <code>div</code> để ngắt hàng và sử dụng thuộc tính <code>margin-top</code> để tạo khoảng cách giữa button và input.</li>
+<li>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-1">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các phần title nên sử dụng <code>h2</code> thay vì <code>h3</code> vì nó là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h2&gt;HEADER&lt;/h2&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav class=&quot;sidebar&quot;&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>h2</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;h2&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỉ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>
+<p>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, nên tách các bài tập ra thành từng file, coi mỗi bài là một trang web để làm bài tốt hơn. Cần chú ý đến meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</li>
+</ul>
+<h2><a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Buoi-1">Đỗ Ngọc Tiến</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Buoi-1">Bài 1</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Buoi-1">Bài 2</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Buoi-1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav class=&quot;sidebar&quot;&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>a</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>
+<p>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day1">Nguyễn Đình Khánh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day1">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Không nên sử dụng ảnh có src là một đoạn mã hóa base64 vì nó sẽ làm tăng kích thước file html, làm giảm tốc độ tải trang web, không thể tận dụng được cache của trình duyệt.</p>
+</li>
+<li>
+<p>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day1">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Không nên sử dụng ảnh có src là một đoạn mã hóa base64 vì nó sẽ làm tăng kích thước file html, làm giảm tốc độ tải trang web, không thể tận dụng được cache của trình duyệt.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1 class=&quot;header&quot;&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header class=&quot;header&quot;&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav class=&quot;sidebar&quot;&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>a</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot; class=&quot;description love-is-blue&quot;&gt;
+  &lt;h2 class=&quot;&quot;&gt;
+    Vòng xoáy cao tốc 34.500 tỷ sụt lún quá mức, cần 300 tỷ để khắc phục
+  &lt;/h2&gt;
+&lt;/a&gt;
+</code></pre>
+<ul>
+<li>
+<p>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></p>
+</li>
+<li>
+<p>Không nên sử dụng thẻ <code>h2</code> trong thẻ <code>a</code> vì nó sẽ làm giảm độ ưu tiên của thẻ <code>h2</code> trong SEO</p>
+</li>
+<li>
+<p>Các thuộc tính không sử dụng <code>class=&quot;&quot;</code> nên xóa đi để làm cho code gọn hơn</p>
+</li>
+<li>
+<p>ClassName nên đặt có ý nghĩa vầ ngắn gọn hơn để dễ dàng bảo trì và phát triển hơn</p>
+</li>
+<li>
+<p>Phần màu mặc định của thẻ <code>a</code> là màu xanh, nên không cần phải khai báo lại màu xanh cho thẻ <code>a</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot; class=&quot;title&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/Dogiaba/f8-fe-k3-htmlDay1/tree/main/Day1">Gia Bảo Đỗ</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/f8-fe-k3-htmlDay1/tree/main/Day1">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Thẻ <code>br</code> chỉ nên sử dụng khi xuống dòng ở một đoạn văn bản. Không nên sử dụng nó để tạo khoảng cách giữa các phần tử.</p>
+<pre><code class="language-html">&lt;input placeholder=&quot;Enter Email&quot; /&gt;&lt;br /&gt;&lt;br /&gt;
+</code></pre>
+<ul>
+<li>
+<p>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top:16px;&quot;&gt;
+  &lt;button type=&quot;submit&quot;&gt;REQUEST INVITE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/f8-fe-k3-htmlDay1/tree/main/Day1">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Sai chính tả <code>Devlepment</code> =&gt; <code>Development</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/f8-fe-k3-htmlDay1/tree/main/Day1">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>a</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;a
+  style=&quot;font-size: 30px;&quot;
+  href=&quot;https://zingnews.vn/vong-xoay-cao-toc-34500-ty-sut-lun-qua-muc-can-300-ngay-khac-phuc-post889222.html&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục
+&lt;/a&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+<li>
+<p>Style màu mặc định của thẻ <code>a</code> đã là màu xanh <code>blue</code> không cần thiết phải style lại.</p>
+<pre><code class="language-css">a {
+  color: blue;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</p>
+<p>* Lưu ý: Không nên gửi link commit, làm vậy rất khó để review</p>
+</li>
+</ul>
+<h2><a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Hùng Mạnh</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Bài 1</a>
+<ul>
+<li>Không nên set cả thuộc tính width, height cho ảnh, làm vậy sẽ khiến ảnh bị méo, nên chỉ set một trong hai thuộc tính đó.</li>
+<li>Không nên sử dụng ảnh có src là một đoạn mã hóa base64 vì nó sẽ làm tăng kích thước file html, làm giảm tốc độ tải trang web, không thể tận dụng được cache của trình duyệt.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Bài 2</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h2&gt;HEADER&lt;/h2&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>a</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></li>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/anhkiendang/F8-FE-K3/tree/main/DAY-1">Anh Kien Dang</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Bài 1</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Bài 2</a></p>
+<ul>
+<li>
+<p>Làm sai hoàn toàn cấu trúc của thẻ <code>ul/li</code></p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;i class=&quot;fa-solid fa-leaf&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;UX/UI DESIGN&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure
+      sunt, tempore debitis eligendi sapiente.
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+...
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;i class=&quot;fa-sharp fa-solid fa-chart-line&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;Digital marketing&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure
+      sunt, tempore debitis eligendi sapiente.
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<ul>
+<li>
+<p>Với các list cùng một loại thì nên đặt chúng trong cùng một thẻ <code>ul</code> và các phần tử con của <code>ul</code> là các thẻ <code>li</code></p>
+</li>
+<li>
+<p>Đề xuất sửa thành:</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;i class=&quot;fa-solid fa-leaf&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;UX/UI DESIGN&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure
+      sunt, tempore debitis eligendi sapiente.
+    &lt;/p&gt;
+  &lt;/li&gt;
+  ...
+  &lt;li&gt;
+    &lt;i class=&quot;fa-sharp fa-solid fa-chart-line&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;Digital marketing&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure
+      sunt, tempore debitis eligendi sapiente.
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/Day_1">Bài 3</a></p>
+<ul>
+<li>
+<p>Phần meta title nên chú ý vì nó là một phần quan trọng trong SEO, trải nghiệm người dùng (UX)</p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;News&lt;/title&gt;
+</code></pre>
+</li>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính trang web không nên sử dụng <code>a</code> mà nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;&quot;
+  &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+&gt;
+</code></pre>
+<ul>
+<li>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></li>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/2003son/F8-FE-K3/tree/main/day1">Sơn Trần</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/2003son/F8-FE-K3/tree/main/day1">Bài 1</a>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Phần title chính nên sử dụng thẻ <code>h1</code> thay vì <code>h3</code><pre><code class="language-html">&lt;h3&gt;Get the invite&lt;/h3&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/2003son/F8-FE-K3/tree/main/day1">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các phần title của list nên sử dụng <code>h2</code> thay vì <code>h3</code></p>
+<ul>
+<li>Vì nó là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code></li>
+</ul>
+<pre><code class="language-html">&lt;h3&gt;UX/UI DESIGN&lt;/h3&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;UX/UI DESIGN&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/2003son/F8-FE-K3/tree/main/day1">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h3&gt;SIDEBAR&lt;/h3&gt;
+&lt;h2&gt;FOOTER&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính thay vì sử dụng thẻ <code>h2</code> thì nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;h2&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;&quot;
+    &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc phục&lt;/a
+  &gt;
+&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Thuộc tính href của thẻ <code>a</code> bắt buộc có một giá trị nếu không có giá trị thì nên để giá trị là <code>#</code> hoặc <code>#!</code></li>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/tnnhungoc/F8-FE-K3">thuy nguyen</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3">Bài 1</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Không nên set cả thuộc tính width, height cho ảnh, làm vậy sẽ khiến ảnh bị méo, nên chỉ set một trong hai thuộc tính đó.</li>
+<li>Phần input để nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay chưa.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Không nên set cả thuộc tính width, height cho ảnh, làm vậy sẽ khiến ảnh bị méo, nên chỉ set một trong hai thuộc tính đó.</li>
+<li>Sử dụng quá nhiều thẻ <code>h1</code> trong bài, điều đó là sai semantic, làm giảm độ ưu tiên của thẻ <code>h1</code> trong SEO
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;UX/UI DESIGN&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Phần <code>sidebar</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;div class=&quot;sidebar&quot;&gt;
+  &lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</p>
+<p>* Lưu ý: Không nên đặt tên file, folder chứa ký tự đặc biệt (Dấu cách) vì sẽ rất khó để bảo trì, phát triển sau này, ngoài ra, sẽ khiến url rất khó nhìn và không tối ưu cho SEO.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3">Nguyen Le Quyen (FPL HN)</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3">Bài 2</a></p>
+<ul>
+<li>
+<p>Sử dụng sai hoàn toàn cấu trúc của thẻ <code>ul/li</code></p>
+<pre><code class="language-html">&lt;div class=&quot;ui-ux&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;img src=&quot;images/leaf.png&quot; alt=&quot;&quot; style=&quot;width: 30px&quot; /&gt;&lt;/li&gt;
+    &lt;p&gt;Lorem ispum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+...
+&lt;div class=&quot;digital&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;img src=&quot;images/growth.jpg&quot; alt=&quot;&quot; style=&quot;width: 30px&quot; /&gt;&lt;/li&gt;
+    &lt;h1&gt;Digital marketing&lt;/h1&gt;
+    &lt;p&gt;Lorem ispum dolor sit amet, consectetur adipisicing elit&lt;/p&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Với các list cùng một loại thì nên đặt chúng trong cùng một thẻ <code>ul</code> và các phần tử con của <code>ul</code> là các thẻ <code>li</code></li>
+<li>Chỉ nên có một thẻ <code>h1</code> trong một trang web, nên sử dụng <code>h2</code> thay vì <code>h1</code>, vì nó là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code></li>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;i class=&quot;fa-solid fa-leaf&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;UX/UI DESIGN&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure
+      sunt, tempore debitis eligendi sapiente.
+    &lt;/p&gt;
+  &lt;/li&gt;
+  ...
+  &lt;li&gt;
+    &lt;i class=&quot;fa-sharp fa-solid fa-chart-line&quot;&gt;&lt;/i&gt;
+    &lt;h2&gt;Digital marketing&lt;/h2&gt;
+    &lt;p&gt;
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure
+      sunt, tempore debitis eligendi sapiente.
+    &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h1&gt;HEADER&lt;/h1&gt;
+&lt;h2&gt;SIDEBAR&lt;/h2&gt;
+&lt;h1&gt;FOOTER&lt;/h1&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</li>
+</ul>
+<h2><a href="https://github.com/countduck4819/f8-frontend/tree/main/Day%201">Vũ Thành Khang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day%201">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Phần title chính nên sử dụng thẻ <code>h1</code> thay vì thẻ <code>h2</code></p>
+<pre><code class="language-html">&lt;h2&gt;Get the invite&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;Get the invite&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day%201">Bài 2</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Các title của list nên sử dụng <code>h2</code> thay vì <code>h3</code> vì nó là một trang web viết về một list bài viết, các title của list chỉ đứng sau <code>h1</code></p>
+<pre><code class="language-html">&lt;h3&gt;UX/UI DESIGN&lt;/h3&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;UX/UI DESIGN&lt;/h2&gt;
+</code></pre>
+</li>
+<li>
+<p>Nên sử dụng một thẻ img để liên kết tới một file svg ngoài, việc đó sẽ giúp cho code gọn hơn, dễ bảo trì hơn.</p>
+<pre><code class="language-html">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;1em&quot; viewBox=&quot;0 0 512 512&quot;&gt;
+  &lt;path
+    d=&quot;M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.2 5.4c-25.9 5.9-50 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z&quot;
+  /&gt;
+&lt;/svg&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;images/leaf.png&quot; alt=&quot;some_alt&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day%201">Bài 3</a></p>
+<ul>
+<li>
+<p>Các phần <code>header</code>, <code>sidebar</code>,<code>footer</code> không phải là một tiêu đề, chúng chỉ để hiển thị đoạn chữ thể hiện <code>placeholder</code> cho người dùng. Nên sử dụng thẻ <code>&lt;span&gt;</code> để hiển thị đoạn chữ đó.</p>
+<pre><code class="language-html">&lt;h2&gt;Header&lt;/h2&gt;
+&lt;h3&gt;SideBar&lt;/h3&gt;
+&lt;h2 style=&quot;margin-top: 10px&quot;&gt;Footer&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;header&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/header&gt;
+...
+&lt;nav&gt;
+  &lt;span&gt;Sidebar&lt;/span&gt;
+&lt;/nav&gt;
+...
+&lt;footer&gt;
+  &lt;span&gt;Header&lt;/span&gt;
+&lt;/footer&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần title chính thay vì sử dụng thẻ <code>a</code> thì nên sử dụng <code>h1</code> để dúng chuẩn semantic và SEO</p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;
+    &gt;&lt;strong
+      &gt;Vòng xoay cao tốc 34.500 tỷ sụt lún quá mức, cần 300 ngày khắc
+      phục&lt;/strong
+    &gt;&lt;/a
+  &gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;
+    Vòng xoáy cao tốc 35.500 tỷ lún sụt quá mức, cần 300 ngày khắc phục
+  &lt;/a&gt;
+&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài tập làm tốt, cần chú ý đến các thẻ semantic để làm bài tốt hơn.</p>
+<p>* Lưu ý: Không nên đặt tên file, folder chứa ký tự đặc biệt (Dấu cách) vì sẽ rất khó để bảo trì, phát triển sau này, ngoài ra, sẽ khiến url rất khó nhìn và không tối ưu cho SEO.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
