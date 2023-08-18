@@ -5,7 +5,7 @@
 <p>[x] [Bài 1]</p>
 <p>Bài làm rất tốt*</p>
 <p>Có thể sử dụng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
-<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 3];
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
 var maxValue = numbers[0];
 var minValue = numbers[0];
 var positionMin = numbers[0];
@@ -14,7 +14,8 @@ var positionMax = numbers[0];
 numbers.forEach(function (number) {
   maxValue = maxValue &lt; number ? number : maxValue;
   minValue = minValue &gt; number ? number : minValue;
-  number &gt; maxValue ? (positionMax = number) : (positionMin = number);
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
 });
 
 console.log(
@@ -100,7 +101,7 @@ console.log(insertSorted(numbers, element));
 <p>[x] [Bài 1]</p>
 <p>Bài làm rất tốt*</p>
 <p>Có thể sử dụng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
-<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 3];
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
 var maxValue = numbers[0];
 var minValue = numbers[0];
 var positionMin = numbers[0];
@@ -109,7 +110,8 @@ var positionMax = numbers[0];
 numbers.forEach(function (number) {
   maxValue = maxValue &lt; number ? number : maxValue;
   minValue = minValue &gt; number ? number : minValue;
-  number &gt; maxValue ? (positionMax = number) : (positionMin = number);
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
 });
 
 console.log(
@@ -195,7 +197,7 @@ console.log(insertSorted(numbers, element));
 <p>[x] [Bài 1]</p>
 <p>Bài làm rất tốt*</p>
 <p>Có thể sử dụng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
-<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 3];
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
 var maxValue = numbers[0];
 var minValue = numbers[0];
 var positionMin = numbers[0];
@@ -204,7 +206,8 @@ var positionMax = numbers[0];
 numbers.forEach(function (number) {
   maxValue = maxValue &lt; number ? number : maxValue;
   minValue = minValue &gt; number ? number : minValue;
-  number &gt; maxValue ? (positionMax = number) : (positionMin = number);
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
 });
 
 console.log(
@@ -290,7 +293,7 @@ console.log(insertSorted(numbers, element));
 <p>[x] [Bài 1]</p>
 <p>Bài làm tốt*</p>
 <p>Có thể sử dụng một vòng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
-<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 3];
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
 var maxValue = numbers[0];
 var minValue = numbers[0];
 var positionMin = numbers[0];
@@ -299,7 +302,8 @@ var positionMax = numbers[0];
 numbers.forEach(function (number) {
   maxValue = maxValue &lt; number ? number : maxValue;
   minValue = minValue &gt; number ? number : minValue;
-  number &gt; maxValue ? (positionMax = number) : (positionMin = number);
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
 });
 
 console.log(
@@ -365,7 +369,7 @@ console.log(insertSorted(numbers, element));
 <p>[x] [Bài 1]</p>
 <p>Bài làm tốt*</p>
 <p>Có thể sử dụng một vòng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
-<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 3];
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
 var maxValue = numbers[0];
 var minValue = numbers[0];
 var positionMin = numbers[0];
@@ -374,7 +378,8 @@ var positionMax = numbers[0];
 numbers.forEach(function (number) {
   maxValue = maxValue &lt; number ? number : maxValue;
   minValue = minValue &gt; number ? number : minValue;
-  number &gt; maxValue ? (positionMax = number) : (positionMin = number);
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
 });
 
 console.log(
@@ -452,30 +457,29 @@ console.log(insertSorted(numbers, element));
 </ul>
 <p>Đều chưa hiển thị thông báo trên giao diện cho người dùng. Vì hiện tại đang có lỗi <code>text is not defined</code> ở trên giao diện, cần xem lại.</p>
 <p>Có thể tham khảo cách sau đây:</p>
-<pre><code class="language-js">function MaxAndMin(array) {
-  var max;
-  var min;
-  var indexMax = 0;
-  var indexMin = 0;
-  if (array.length &gt; 0) {
-    max = array[0];
-    min = array[0];
-    for (let i = 0; i &lt; array.length; i++) {
-      if (max &lt; array[i]) {
-        max = array[i];
-        indexMax = i;
-      }
-      if (min &gt; array[i]) {
-        min = array[i];
-        indexMin = i;
-      }
-    }
-    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
-    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
-  } else {
-    console.log(&quot;danh sách rỗng&quot;);
-  }
-}
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
+var maxValue = numbers[0];
+var minValue = numbers[0];
+var positionMin = numbers[0];
+var positionMax = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
+});
+
+console.log(
+  `
+Giá trị lớn nhất của mảng là: ${maxValue}
+    - vị trí index: ${positionMax}
+`,
+  `
+Giá trị nhỏ nhất của mảng là: ${minValue}
+    - vị trí index: ${positionMin}
+`
+);
 </code></pre>
 <hr>
 </li>
