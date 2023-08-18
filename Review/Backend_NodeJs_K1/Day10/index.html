@@ -1,0 +1,383 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day10</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi10">Trần Đức Anh</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần lưu ý đọc kỹ yêu cầu đề bài để xử lý theo đúng yêu cầu bài toán.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi10">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Khi sử dụng <code>promise</code> việc đặt <code>reject</code> ở sau câu lệnh <code>resolve</code> là không đúng vì <code>promise</code> chỉ trả về <code>resolve</code> hoặc <code>reject</code> khi gặp bất kỳ 1 trong 2 câu lệnh <code>resolve()</code> hoặc <code>reject()</code> sẽ không thực hiện các câu lệnh đằng sau nữa vì lúc đó nó đã có kết quả trả về rồi.</p>
+<p>Việc đặt sau mỗi <code>.then</code> là <code>.catch</code> cũng không cần thiết có thể đặt <code>.catch</code> ở sau 3 câu lệnh <code>.then</code> sẽ hợp lý hơn và đúng yêu cầu bài toán <code>Mở =&gt; Đọc =&gt; Đóng</code> hơn.</p>
+<p>Chưa làm theo cách sử dụng <code>Callback Function</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần ôn lại kiến thức về <code>Promise</code> để giải quyết bài toán chặt chẽ và tối ưu hơn. Ngoài ra cần đọc kỹ yêu cầu đề bài để tránh bỏ sót bất kỳ yêu cầu nào.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVN/BTVNB10">Phạm Văn Bảo</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+<p>Chưa xử lý bài toán theo cách sử dụng <code>Callback Function</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần chú ý yêu cầu đề bài để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/tuilahieu/nodejs/blob/main/exercise/day9/ex.js">Dương Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+<p>Chưa xử lý bài toán theo cách sử dụng <code>Callback Function</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần chú ý yêu cầu đề bài để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/dungng1321/f8-BackEnd-NodeJS-k1/tree/feature/day-10">Nguyễn Đức Dũng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Góp ý: Việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Khi sử dụng <code>promise</code> việc đặt <code>reject</code> ở sau câu lệnh <code>resolve</code> là không đúng vì <code>promise</code> chỉ trả về <code>resolve</code> hoặc <code>reject</code> khi gặp bất kỳ 1 trong 2 câu lệnh <code>resolve()</code> hoặc <code>reject()</code> sẽ không thực hiện các câu lệnh đằng sau nữa vì lúc đó nó đã có kết quả trả về rồi.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần chú ý đến yêu cầu bài toán (bài 1) để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/blob/main/HW/HW10/hw10.js">Phạm Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Góp ý: việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> thì ở bước <code>.then()</code> thì sau mỗi <code>.then()</code> có thể return về hàm sau đó rồi hàm sau chỉ cần <code>.then</code> tiếp là được vì quy tắc là <code>.then</code> lúc sau sẽ lấy kết quả trả về của <code>.then</code> đằng trước nó làm đối số truyền vào.</p>
+<p>Điều này làm cho code sẽ dễ đọc hơn và đẹp hơn.</p>
+<pre><code class="language-js">openFile()
+  .then((message) =&gt; {
+    console.log(message);
+    return readFile();
+  })
+  .then((message) =&gt; {
+    console.log(message);
+    return closeFile();
+  })
+  .then((message) =&gt; {
+    console.log(message);
+  })
+  .catch((error) =&gt; {
+    console.log(error);
+  });
+</code></pre>
+<p>Ngoài ra cần xử lý thêm trường hợp nếu xảy ra lỗi sẽ thông báo lỗi thì sử dụng <code>.catch</code> như ở trên thì bài làm sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần chú ý hơn đến yêu cầu bài toán để thực hiện theo đúng yêu cầu.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/tuilahieu/nodejs/blob/main/exercise/day10/ex.js">Trần Văn Hiểu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+<p>Chưa xử lý bài toán theo cách sử dụng <code>Callback Function</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt, cần thực hiện đầy đủ yêu cầu bài toán đưa ra (bài 2).</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise/tree/main/Lab10">Nguyễn Minh Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần chú ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi10">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Khi sử dụng <code>promise</code> việc đặt <code>reject</code> ở sau câu lệnh <code>resolve</code> là không đúng vì <code>promise</code> chỉ trả về <code>resolve</code> hoặc <code>reject</code> khi gặp bất kỳ 1 trong 2 câu lệnh <code>resolve()</code> hoặc <code>reject()</code> sẽ không thực hiện các câu lệnh đằng sau nữa vì lúc đó nó đã có kết quả trả về rồi.</p>
+<p>Chưa xử lý bài toán theo cách sử dụng <code>Callback Function</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt cần lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-10/js">Nguyễn Nhất</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Góp ý: việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần lưu ý thực hiện đúng yêu cầu bài toán (bài 1) và lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenducthanh04/f8-backend-k1.git">Nguyễn Thanh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Góp ý: việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần lưu ý thực hiện đúng yêu cầu bài toán (bài 1) và lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi10">Nguyễn Quang Minh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Góp ý: việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+<p>Lưu ý về cách đặt tên biến, nên đặt có ý nghĩa tên biến và tuân thủ quy tắc CamelCase khi đặt tên biến, không sử dụng ký tự <code>_</code> khi đặt tên.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần lưu ý thực hiện đúng yêu cầu bài toán (bài 1) và lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/namdctry/f8-backend-k1/tree/main/btvn/btvn-b10">Nam Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt chỉ cần chú ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day10/js/ex01.js">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm đang chưa hiểu đúng ý của đề bài, hiện tại bài làm chỉ đang check kiểu dữ liệu là <code>number</code> thì mới cộng vào nhưng ý của đề bài là cần ưu tiên chuyển đổi về number trước rồi nếu không chuyển đổi được thì mới báo lỗi.</p>
+<p>Góp ý: việc tính tổng có thể sử dụng <code>reduce</code> cho ngắn gọn.</p>
+<pre><code class="language-js">return args.reduce((sum, arg) =&gt; sum + arg, 0);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên trong cách sử dụng <code>promise</code> nên thêm bước xử lý lỗi nếu có bằng <code>catch</code> sẽ chặt chẽ hơn.</p>
+<pre><code class="language-js">.catch((error) =&gt; {
+  console.error(&quot;An error occurred:&quot;, error);
+})
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần lưu ý thực hiện đúng yêu cầu bài toán (bài 1) và lưu ý một số lỗi nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

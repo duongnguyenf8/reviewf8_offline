@@ -9,7 +9,7 @@
   Có thể sử dụng `forEach` để bài làm ngắn gọn hơn.
 
   ```js
-  var numbers = [5, 2, 4, -10, 8, 9, 3];
+  var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
   var maxValue = numbers[0];
   var minValue = numbers[0];
   var positionMin = numbers[0];
@@ -18,7 +18,8 @@
   numbers.forEach(function (number) {
     maxValue = maxValue < number ? number : maxValue;
     minValue = minValue > number ? number : minValue;
-    number > maxValue ? (positionMax = number) : (positionMin = number);
+    positionMax = numbers.indexOf(maxValue);
+    positionMin = numbers.indexOf(minValue);
   });
 
   console.log(
@@ -123,7 +124,7 @@
   Có thể sử dụng `forEach` để bài làm ngắn gọn hơn.
 
   ```js
-  var numbers = [5, 2, 4, -10, 8, 9, 3];
+  var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
   var maxValue = numbers[0];
   var minValue = numbers[0];
   var positionMin = numbers[0];
@@ -132,7 +133,8 @@
   numbers.forEach(function (number) {
     maxValue = maxValue < number ? number : maxValue;
     minValue = minValue > number ? number : minValue;
-    number > maxValue ? (positionMax = number) : (positionMin = number);
+    positionMax = numbers.indexOf(maxValue);
+    positionMin = numbers.indexOf(minValue);
   });
 
   console.log(
@@ -238,7 +240,7 @@
   Có thể sử dụng `forEach` để bài làm ngắn gọn hơn.
 
   ```js
-  var numbers = [5, 2, 4, -10, 8, 9, 3];
+  var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
   var maxValue = numbers[0];
   var minValue = numbers[0];
   var positionMin = numbers[0];
@@ -247,7 +249,8 @@
   numbers.forEach(function (number) {
     maxValue = maxValue < number ? number : maxValue;
     minValue = minValue > number ? number : minValue;
-    number > maxValue ? (positionMax = number) : (positionMin = number);
+    positionMax = numbers.indexOf(maxValue);
+    positionMin = numbers.indexOf(minValue);
   });
 
   console.log(
@@ -352,7 +355,7 @@
   Có thể sử dụng một vòng `forEach` để bài làm ngắn gọn hơn.
 
   ```js
-  var numbers = [5, 2, 4, -10, 8, 9, 3];
+  var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
   var maxValue = numbers[0];
   var minValue = numbers[0];
   var positionMin = numbers[0];
@@ -361,7 +364,8 @@
   numbers.forEach(function (number) {
     maxValue = maxValue < number ? number : maxValue;
     minValue = minValue > number ? number : minValue;
-    number > maxValue ? (positionMax = number) : (positionMin = number);
+    positionMax = numbers.indexOf(maxValue);
+    positionMin = numbers.indexOf(minValue);
   });
 
   console.log(
@@ -439,7 +443,7 @@
   Có thể sử dụng một vòng `forEach` để bài làm ngắn gọn hơn.
 
   ```js
-  var numbers = [5, 2, 4, -10, 8, 9, 3];
+  var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
   var maxValue = numbers[0];
   var minValue = numbers[0];
   var positionMin = numbers[0];
@@ -448,7 +452,8 @@
   numbers.forEach(function (number) {
     maxValue = maxValue < number ? number : maxValue;
     minValue = minValue > number ? number : minValue;
-    number > maxValue ? (positionMax = number) : (positionMin = number);
+    positionMax = numbers.indexOf(maxValue);
+    positionMin = numbers.indexOf(minValue);
   });
 
   console.log(
@@ -538,30 +543,29 @@
   Có thể tham khảo cách sau đây:
 
   ```js
-  function MaxAndMin(array) {
-    var max;
-    var min;
-    var indexMax = 0;
-    var indexMin = 0;
-    if (array.length > 0) {
-      max = array[0];
-      min = array[0];
-      for (let i = 0; i < array.length; i++) {
-        if (max < array[i]) {
-          max = array[i];
-          indexMax = i;
-        }
-        if (min > array[i]) {
-          min = array[i];
-          indexMin = i;
-        }
-      }
-      console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
-      console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
-    } else {
-      console.log("danh sách rỗng");
-    }
-  }
+  var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
+  var maxValue = numbers[0];
+  var minValue = numbers[0];
+  var positionMin = numbers[0];
+  var positionMax = numbers[0];
+
+  numbers.forEach(function (number) {
+    maxValue = maxValue < number ? number : maxValue;
+    minValue = minValue > number ? number : minValue;
+    positionMax = numbers.indexOf(maxValue);
+    positionMin = numbers.indexOf(minValue);
+  });
+
+  console.log(
+    `
+  Giá trị lớn nhất của mảng là: ${maxValue}
+      - vị trí index: ${positionMax}
+  `,
+    `
+  Giá trị nhỏ nhất của mảng là: ${minValue}
+      - vị trí index: ${positionMin}
+  `
+  );
   ```
 
   ***

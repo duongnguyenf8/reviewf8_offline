@@ -1,0 +1,662 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day8</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên FE K3.</h1>
+<h2><a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Nguyễn Đức Hải</a></h2>
+<pre><code>Sớm nhất*
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Ở giao diện mẫu, padding vào trong của mega menu lớn hơn.</p>
+<p>Ở giao diện mẫu mọi list-item đều căn trái chứ không phải căn giữa.</p>
+<p>Vị trí các list-item không đúng với giao diện mẫu.</p>
+<p>Vì phần menu navbar và mega menu là một phần điều hướng nên nên đặt chung trong một thẻ nav.</p>
+<p>Không nên sử dụng font-weight 700 ở * vì nó sẽ làm cho font bị mất chất, mỗi lần muốn sử dụng thì phải đưa về font-weight mong muốn.</p>
+<p>HTML5 bổ xung thêm một số thẻ bao bọc semantics như <code>header...</code>. Nên sử dụng chúng để tăng khả năng đọc hiểu source code.</p>
+<p>Phần <code>div.logo-img</code> sử dụng max-width nhưng thẻ img không có width 100% nên không có tác dụng.</p>
+<p>Không nên đặt tên class như <code>menu-item-1, menu-item-2...</code> vì nó không nói lên được nội dung của nó, và khi cần thêm một menu-item mới thì phải sửa lại tên class.</p>
+<ul>
+<li>Như trường hợp này là một ví dụ:</li>
+</ul>
+<pre><code class="language-css">.menu-item-1 li:nth-child(4),
+.menu-item-4 li:nth-child(1),
+.menu-item-5 li:nth-child(1),
+.menu-item-5 li:nth-child(5),
+.menu-item-5 li:nth-child(4),
+.menu-item-2 li:nth-child(1),
+.menu-item-2 li:nth-child(3),
+.menu-item-2 li:nth-child(4),
+.menu-item-2 li:nth-child(5),
+.menu-item-2 li:nth-child(8) {
+  opacity: 0;
+}
+</code></pre>
+<ul>
+<li>Nên đặt tên class như sau:</li>
+</ul>
+<pre><code class="language-css">.menu-item li {
+  opacity: 0;
+}
+</code></pre>
+<ul>
+<li>Hơn nữa khi muốn tạo một khoảng trống, không nên cho content vào rồi để opacity: 0 mà nên sử dụng <code>margin</code> hoặc <code>padding</code> để tạo khoảng trống.</li>
+</ul>
+<p>Nên bổ dung hiệu ứng highlight màu cho menu-nav khi hover vào mega menu con của nó.</p>
+<p>Thiếu background nền.</p>
+</li>
+<li>
+<p>[x] <a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Ở HTML5 có thêm các thẻ bao bọc semantics như <code>header, footer, main, section...</code> nên nên sử dụng chúng để tăng khả năng đọc hiểu source code.</p>
+<p>Đang có một chút lỗi về giao diện khiến hiện thanh scroll ngang:</p>
+<p><img src="images/duchainguyen-bai2.png" alt="duchainguyen"></p>
+<p>Không nên sử dụng <code>padding: 10px 0</code> để căn giữa ảnh ở 1 <code>div.logo-car</code> vì nếu resize kích thước div thì có thể sẽ khiến bức ảnh không còn được căn giữa theo chiều dọc.</p>
+<p><img src="images/duchainguyen-bai2-2.png" alt="duchainguyen"></p>
+<ul>
+<li>Các dễ nhất để căn giữa một bức ảnh theo div cha theo chiều dọc là:</li>
+</ul>
+<pre><code class="language-css">.logo-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</code></pre>
+<p>&lt;!-- Hoặc --&gt;</p>
+<pre><code class="language-css">.logo-car {
+  position: relative;
+}
+.logo-car img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</code></pre>
+<p>&lt;!-- Hoặc --&gt;</p>
+<pre><code class="language-css">.logo-car {
+  display: grid;
+  place-items: center;
+}
+</code></pre>
+<p>ID trong 1 trang web chỉ nên sử dụng 1 lần, nên sử dụng class thay thế.</p>
+<p><img src="images/duchainguyen-bai2-3.png" alt="duchainguyen"></p>
+<p>Phần mini cart nên sử dụng thẻ <code>aside</code> để bao bọc.</p>
+<p>Tiêu đề của mini cart không phải là một <code>heading</code>, không nên sử dụng <code>h2</code> mà nên sử dụng <code>p</code> hoặc <code>span</code>.</p>
+<p>Tất cả các heading bên trong đều chỉ là đầu mục, không nên sử dụng <code>heading</code> mà nên sử dụng <code>p</code> hoặc <code>span</code>.</p>
+<p>Hình ảnh của sản phẩm trong giỏ hàng cần một giá trị alt đủ ý nghĩa thích hợp thay vì để trống vì khi hình ảnh không hiển thị thì sẽ không có giá trị nào để thay thế.</p>
+<p>Màu chữ ở các <code>.title</code> bị sai với giao diện mẫu.</p>
+<p>Phần font-weight ở <code>.foot-text span</code> cân đậm hơn.</p>
+<p>Phần hiển thị chữ ở <code>.item-price span</code> sai với giao diện mẫu.</p>
+<p>Các màu chữ ở <code>.counter</code> sai với giao diện mẫu.</p>
+<p>Phần <code>.title-h2 h2</code> cần cho font chữ nhỏ hơn và font-weight đậm hơn.</p>
+<p>Nếu là tiêu đề chính, nên sử dụng một class như <code>.main-title</code> thay vì class <code>.title-h2</code>.</p>
+<p>Phần màu của đường kẻ tại <code>.product::before</code> cần cho nhạt hơn.</p>
+<p>Nên chia rõ hơn các product nên gom nhóm vào một class là <code>.products</code> để có thể xử lý tốt hơn.</p>
+<p>Các phần thông tin phụ như tổng tiền, lưu ý, các nút button nên bao bọc bằng một thẻ <code>footer</code>.</p>
+<p><strong>Ở bài rút gọn</strong>. Hầu hết các lỗi đều giống ở bài chính, chỉ trừ việc không bị hiện thanh scroll ngang.</p>
+<p>Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>[x] <a href="https://duchainguyen.github.io/F8-FE-K3/day-8/deloy.html">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Font chữ ở các phần title đều sai, ở bản mẫu sử dụng một font chữ có chân nhọn.</p>
+<p>Sai chính tả <strong>Read-Mode</strong> thành <strong>Read More</strong>.</p>
+<p>Phần <code>.content</code> thiếu khoảng cách phía dưới.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ có một số lỗi nhỏ về giao diện và sai chính tả. Cần chú ý thêm về việc sử dụng các thẻ bao bọc semantics để tăng khả năng đọc hiểu source code. Nên chú ý thêm vào thẻ meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</li>
+</ul>
+<hr>
+<h1>Tuyết review bài học viên FE K3.</h1>
+<hr>
+<h2><a href="https://tunguyenhd.github.io/FrontEnd-F8-K3/">Nguyễn Khắc Tú</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/Day_8/Bai-1/">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<ul>
+<li>
+<p>Nên dùng thẻ semantic <code>&lt;header&gt;</code> bọc ngoài cùng phần header và dùng <code>&lt;nav&gt;</code> bọc ngoài các nav-item.</p>
+</li>
+<li>
+<p>Ảnh logo cần set thêm kích thước, để nếu là ảnh khác với kích thước bất kì thì sẽ không bị vỡ giao diện. Và thêm dung cho thuộc tính <code>alt</code> của ảnh để tốt cho SEO.</p>
+</li>
+<li>
+<p>Icon mũi tên cạnh nav-item đang to hơn so với design.</p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:uppercase</code> cho những chữ kiểu in hoa và <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>Width của <code>subnav</code> chưa đúng. Cần set lại bằng với width của <code>nav-bar</code>.</p>
+</li>
+<li>
+<p>Thiếu đường kẻ ở giữa 2 <code>megabox-wrap-column</code>.</p>
+</li>
+<li>
+<p>Phần <code>megabox-wrap-column</code> width chưa đúng. Cần set width rộng chiếm trọn phần bên phải còn lại của <code>subnav</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/Day_8/Bai-2/">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<ul>
+<li>
+<p>Phần <code>cart</code> height chưa đúng. Cần set height full màn hình đúng như design.</p>
+</li>
+<li>
+<p>Thiếu icon <code>&quot;x&quot;</code> bên phải ở mỗi <code>cart__item</code>.</p>
+</li>
+<li>
+<p>Ảnh sản phẩm: Chưa có phần màu background sau ảnh. Nên set thêm <code>height / max-height</code>. Vì nếu là ảnh khác có chiều dài dài hơn thì cả <code>cart__item</code> sẽ bị dài ra theo, nhìn sẽ không đồng đều với các <code>cart__item</code> khác.</p>
+</li>
+<li>
+<p>Màu chữ <code>cart__item-price</code> chưa đúng.</p>
+</li>
+<li>
+<p>Dấu <code>+</code>, <code>-</code> ở phần <code>cart__item-quantity</code> có thể click được, nên dùng thẻ <code>button</code> và set kích thước lớn hơn để trải nghiệm của người dùng tốt hơn.</p>
+</li>
+<li>
+<p>border của <code>.cart__item</code> chưa đúng, ở design là border full theo width của <code>cart__body</code>.</p>
+</li>
+<li>
+<p>Nên thêm đường kẻ giữa 2 phần <code>cart__list-item</code> và <code>cart__total</code> nhìn vào có thể dễ phân tách 2 nội dung đó.</p>
+</li>
+<li>
+<p>Font-size của phần <code>cart__total</code> chưa đúng design.</p>
+</li>
+<li>
+<p><code>button</code> chưa đúng font-family. Font-size đang lớn hơn design.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://tunguyenhd.github.io/FrontEnd-F8-K3/Bai_tap/Day_8/Bai-3/">Bài 3</a></p>
+<p>Bài làm tốt*</p>
+<ul>
+<li>
+<p>Sửa lại tên file &quot;index..html --&gt; index.html&quot; để xem được bài deploy trên github page.</p>
+</li>
+<li>
+<p><code>service-item__title</code> không bằng nhau --&gt; cần set thêm height cho ảnh để các ảnh có height bằng nhau.</p>
+<p><img src="images/nguyenkhactu_1.png" alt="Nguyễn Khắc Tú"></p>
+</li>
+<li>
+<p>Phần <code>service-item__dsc</code> chưa đúng màu chữ và line-height.</p>
+</li>
+<li>
+<p><code>button</code> chưa đúng font-family.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm đa số đều tốt, chỉ có một số lỗi nhỏ, chú ý hơn về sử dụng thẻ semantic / non-semantic, set kích thước cho ảnh, font-family button và chú ý tiểu tiết và giao diện mẫu để làm đúng.</li>
+</ul>
+<h2><a href="https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/">Bảo Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/bai1.html">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<ul>
+<li>
+<p>icon mũi tên đang lớn hơn design.</p>
+</li>
+<li>
+<p>Thiếu <code>box-shadow</code> cho phần mega menu.</p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:uppercase</code> cho những chữ kiểu in hoa và <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>Các cột đang không set width. Cần set thêm width / max-width cho các cột trong mega menu, để đảm bảo khi text dài thì width của cột sẽ không bị dài quá mong muốn.</p>
+</li>
+<li>
+<p>Các item trong mega menu chưa ngang hàng với nhau, khoảng cách trên dưới giữa 2 item chưa đều nhau.</p>
+<p><img src="images/baoanh_1.png" alt="Bảo Anh"></p>
+</li>
+<li>
+<p>Các <code>Item Name</code> là link trong mega menu, nên sử dụng thẻ <code>a</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/bai2.html">Bài 2</a></p>
+<p>Bài làm tốt*</p>
+<ul>
+<li>
+<p>Có thể bỏ CSS <code>body{padding:40px}</code> vì không có tác dụng gì trong bài.</p>
+</li>
+<li>
+<p>Thiếu icon <code>&quot;x&quot;</code> bên phải ở mỗi <code>item</code>.</p>
+</li>
+<li>
+<p>Icon <code>&quot;x&quot;</code> ở <code>heading</code> và dấu <code>+</code>, <code>-</code> ở phần <code>num</code> có thể click được, nên dùng thẻ <code>button</code> và set kích thước lớn hơn để trải nghiệm của người dùng tốt hơn.</p>
+</li>
+<li>
+<p>Ảnh sản phẩm: chưa có phần màu background dưới ảnh.</p>
+</li>
+<li>
+<p>Phần <code>.row + span</code> font-size hơi nhỏ.</p>
+</li>
+<li>
+<p>Phần <code>.foot span</code> font-weight chưa đúng, cần đậm hơn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://baoanh2004.github.io/Frontend-Offline-K3/Day-8/bai3.html">Bài 3</a></p>
+<p>Bài làm tốt</p>
+<ul>
+<li>
+<p>Font-family chưa đúng theo yêu cầu là font <code>Roboto</code>.</p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>Cần thêm nội dung cho thuộc tính <code>alt</code> của ảnh để tốt cho SEO.</p>
+</li>
+<li>
+<p>Phần text trong <code>li &gt; p</code> chưa đúng line-height.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day8">Nguyễn Đình Khánh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise1/">Bài 1</a></p>
+<p>Bài làm tốt*</p>
+<ul>
+<li>
+<p>Nên dùng thẻ semantic <code>&lt;header&gt;</code> thay cho <code>div.header</code>, và dùng thẻ <code>&lt;nav&gt;</code> ngoài <code>ul.header-menu</code>.</p>
+</li>
+<li>
+<p>Thêm css <code>object-fit</code> cho ảnh logo, để nếu là ảnh khác với kích thước khác thì ảnh sẽ không bị méo.</p>
+</li>
+<li>
+<p>màu chữ <code>Documentation</code> chưa đúng design. Cần nhạt hơn.</p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:uppercase</code> cho những chữ kiểu in hoa và <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>Các chữ in hoa: có style giống nhau nên đặt tên class giống nhau, và set css theo tên class chung đó, thay vì phải css cho từng cái một. Và phần này đang có font-weight đậm hơn so với design.</p>
+</li>
+<li>
+<p>Phần <code>.menuBox-item1 ul li</code> nên tăng padding lên 1 chút nữa để có khoảng cách giữa 2 item giống với design hơn.</p>
+</li>
+<li>
+<p>Check xóa bỏ code css thừa.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise2/">Bài 2</a></p>
+<p>Bài làm chưa tốt. Cần chú ý design để làm giống hơn.</p>
+<ul>
+<li>
+<p>Phần <code>cart-box</code>: Sai vị trí. Theo design là sát bên phải màn hình. Chiều cao chưa đúng, cần set full màn hình.</p>
+</li>
+<li>
+<p>Phần số ở trên chữ <code>cart-title</code> quá nhỏ.</p>
+</li>
+<li>
+<p>Ảnh: Nên set thêm <code>height/max-height, object-fit</code> Vì nếu là ảnh khác có chiều dài dài hơn thì cả <code>product-item</code> sẽ bị dài ra theo, nhìn sẽ không đồng đều với các <code>product-item</code> khác.</p>
+</li>
+<li>
+<p>Dấu <code>+</code>, <code>-</code>, ở phần <code>quantity</code> và icon dấu <code>x</code> ở mỗi sản phẩm có thể click được, nên dùng thẻ <code>button</code> và set css <code>cursor:pointer</code>, kích thước lớn hơn để trải nghiệm người dùng tốt hơn.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>button</code> chưa đúng font-family, khoảng cách.</p>
+</li>
+<li>
+<p>[x] <a href="https://khanhngoolearn.github.io/F8-homework-fe-k3/day8/exercise3/">Bài 3</a></p>
+<p>Bài làm tốt*</p>
+<ul>
+<li>
+<p>Nên thay thẻ <code>h2</code> bằng thẻ <code>p</code> vì đây là dòng chữ mô tả thêm cho <code>h1</code>. Chứ không phải một tiêu đề.</p>
+</li>
+<li>
+<p>Phần title <code>h3</code> font-size đang nhỏ hơn design.</p>
+</li>
+<li>
+<p>Font-weight của phần <code>.box-info &gt; p</code> đang đậm hơn so với design.</p>
+</li>
+<li>
+<p>Chưa xử lý phần <code>box-item</code> có ít dòng chữ hơn.</p>
+<p><img src="images/nguyendinhkhanh_1.png" alt="Nguyễn Đình Khánh"></p>
+</li>
+<li>
+<p>Cần set thêm css <code>height / max-height</code> cho ảnh, để tránh trường hợp là ảnh khác có kích thước bất kì thì các ảnh vẫn có chiều cao đều nhau.</p>
+</li>
+<li>
+<p><code>button</code> chưa đúng font-family.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn.</li>
+</ul>
+<h2><a href="https://github.com/DoNgocTien17/F8-frontend-k3/tree/main/Day8">Đỗ Ngọc Tiến</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://dongoctien17.github.io/F8-frontend-k3/Day8/Bai1.html">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<ul>
+<li>
+<p>Nên dùng thẻ semantic <code>&lt;header&gt;, &lt;nav&gt;</code> thay vì dùng thẻ <code>div</code>.</p>
+</li>
+<li>
+<p>Phần <code>icon</code> lớn hơn so với design.</p>
+</li>
+<li>
+<p>Nên dùng thẻ <code>a</code> bọc chữ trong <code>menu-content &gt; li</code> vì đây là link trong mega menu.</p>
+</li>
+<li>
+<p>Ảnh: Ảnh logo cần thêm <code>height</code> vì khi là ảnh khác có kích thước bất kì thì vẫn đảm bảo chiều cao ảnh không bị dài quá. Ảnh Background chưa set kích thước, nên với những màn hình nhỏ dưới 1700px, sẽ bị xuất hiện thanh cuộn ngang.</p>
+</li>
+<li>
+<p>Khoảng cách trên dưới chưa giống design. Ở design content sẽ sát đều về 2 phía trên dưới.</p>
+<p><img src="images/dongoctien_1.png" alt="Đỗ Ngọc Tiến"></p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:uppercase</code> cho những chữ kiểu in hoa và <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://dongoctien17.github.io/F8-frontend-k3/Day8/Bai2.html">Bài 2</a></p>
+<p>Bài làm chưa tốt</p>
+<ul>
+<li>
+<p>Phần <code>.container</code> không nên set width là %. Vì sẽ không đảm bảo không đảm bảo các nội dung bên trong sẽ hiển thị đúng khi màn hình to /nhỏ hơn. Nên set width cứng bằng <code>px</code>.</p>
+</li>
+<li>
+<p>Căn lề các nội dung chưa thẳng hàng như design</p>
+<p><img src="images/dongoctien_2.png" alt="Đỗ Ngọc Tiến"></p>
+</li>
+<li>
+<p>Ảnh: Nên set thêm <code>height / max-height</code>. Vì nếu là ảnh khác có chiều dài dài hơn thì cả <code>content</code> sẽ bị dài ra theo.</p>
+</li>
+<li>
+<p>Dấu <code>+</code>, <code>-</code>, ở phần <code>quantity</code> và icon dấu <code>x</code> ở mỗi sản phẩm có thể click được, nên dùng thẻ <code>button</code> và set css <code>cursor:pointer</code>, kích thước lớn hơn để trải nghiệm người dùng tốt hơn.</p>
+</li>
+<li>
+<p>File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.</p>
+</li>
+<li>
+<p>Check xóa code thừa</p>
+<p><img src="images/dongoctien_3.png" alt="Đỗ Ngọc Tiến"></p>
+</li>
+<li>
+<p>Chưa format code.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://dongoctien17.github.io/F8-frontend-k3/Day8/Bai3.html">Bài 3</a></p>
+<p>Bài làm tốt</p>
+<ul>
+<li>
+<p>Không nên set height cố định cho <code>content &gt; p</code></p>
+</li>
+<li>
+<p>Ảnh: chưa set kích thước. Cần thêm nội dung cho thuộc tính <code>alt</code>.</p>
+</li>
+<li>
+<p>Phần <code>&quot;.content &gt; p&quot;</code>: không nên set height cố định. Line-height chưa đúng.</p>
+<p><img src="images/dongoctien_4.png" alt="Đỗ Ngọc Tiến"></p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn.</li>
+</ul>
+<h2><a href="https://github.com/fanbaday/f8-fullstack-offline-K3/blob/main/homework.html">Nguyen Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://fanbaday.github.io/f8-fullstack-offline-K3/day8/ex1/">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<ul>
+<li>
+<p>mega menu vị trí chưa đúng. Bị lệch trái quá nhiều.</p>
+<p><img src="images/nguyentuananh_1.png" alt="Nguyen Tuan Anh"></p>
+</li>
+<li>
+<p>Nên dùng thẻ semantic <code>&lt;header&gt;, &lt;nav&gt;</code> thay vì dùng thẻ <code>div</code>.</p>
+</li>
+<li>
+<p>Phần <code>icon</code> lớn hơn so với design.</p>
+</li>
+<li>
+<p>Check HTML Validate W3C: Thẻ <code>div</code> không được là con trực tiếp của thẻ <code>ul</code>. Có thẻ đóng <code>&lt;/li&gt;</code> mà Không có thẻ mở <code>&lt;li&gt;</code>.</p>
+<p><img src="images/nguyentuananh_5.png" alt="Nguyen Tuan Anh"></p>
+</li>
+<li>
+<p>Nên dùng thẻ <code>a</code> bọc chữ trong <code>menu-elements &gt; li</code> vì đây là link trong mega menu.</p>
+</li>
+<li>
+<p>Ảnh: Ảnh logo cần thêm <code>height</code> vì khi là ảnh khác có kích thước bất kì thì vẫn đảm bảo chiều cao ảnh không bị dài quá.</p>
+</li>
+<li>
+<p>Khoảng cách trên dưới của mega-menu chưa giống design. Ở design content sẽ sát đều về 2 phía trên dưới.</p>
+</li>
+<li>
+<p>Thêm css <code>text-transform:uppercase</code> cho những chữ kiểu in hoa và <code>text-transform:capitalize</code> cho những kiểu chữ viết hoa chữ cái đầu.</p>
+</li>
+<li>
+<p>File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.</p>
+</li>
+<li>
+<p>Xóa ảnh không dùng trong thư mục <code>img</code>.</p>
+</li>
+<li>
+<p>Chưa format code.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://fanbaday.github.io/f8-fullstack-offline-K3/day8/ex2/">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<ul>
+<li>
+<p>Chưa có màu background cho body.</p>
+</li>
+<li>
+<p>Ảnh: Nên set thêm <code>height / max-height</code>. Vì nếu là ảnh khác có chiều dài dài hơn thì cả <code>content</code> sẽ bị dài ra theo.</p>
+</li>
+<li>
+<p>Dấu <code>+</code>, <code>-</code>, ở phần <code>quantity</code> và icon dấu <code>x</code> ở mỗi sản phẩm có thể click được, nên dùng thẻ <code>button</code>.</p>
+</li>
+<li>
+<p>Phần <code>cart-product</code> font-size đang lớn hơn so với design.</p>
+</li>
+<li>
+<p>Phần <code>product-value</code> font-weight cần đậm hơn.</p>
+</li>
+<li>
+<p><code>button</code> chưa đúng font-family.</p>
+</li>
+<li>
+<p>File HTML: Nên để phần link css thư viện lên trên, link css bài tập xuống dưới. Để có thể ghi đè được những css của thư viện nếu cần.</p>
+</li>
+<li>
+<p>Xóa ảnh không dùng trong thư mục <code>img</code>.</p>
+</li>
+<li>
+<p>Check xóa code thừa, comment thừa.</p>
+</li>
+<li>
+<p>Chưa Format code.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://fanbaday.github.io/f8-fullstack-offline-K3/day8/ex3/">Bài 3</a></p>
+<p>Bài làm chưa tốt</p>
+<ul>
+<li>
+<p>Nên dùng thẻ semantic <code>&lt;section&gt;</code> thay cho <code>div.services-section</code></p>
+</li>
+<li>
+<p>Layout chưa đúng. Khi màn hình nhỏ:</p>
+<p><img src="images/nguyentuananh_2.png" alt="Nguyen Tuan Anh"></p>
+<p>Khi màn hình lớn:</p>
+<p><img src="images/nguyentuananh_3.png" alt="Nguyen Tuan Anh"></p>
+</li>
+<li>
+<p>Cả bài dùng Font-family chưa đúng.</p>
+</li>
+<li>
+<p>Chưa xử lý với <code>service</code> có chữ dòng chữ hơn.</p>
+<p><img src="images/nguyentuananh_4.png" alt="Nguyen Tuan Anh"></p>
+</li>
+<li>
+<p>Cần set thêm css <code>height / max-height</code> cho ảnh, để tránh trường hợp là ảnh khác có kích thước bất kì thì các ảnh vẫn có chiều cao đều nhau.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý xem kỹ những tiểu tiết trong design để sử dụng thẻ HTML semantic, non-semantic phù hợp và set style CSS giống với design hơn. Cần check code, format code lần cuối trước khi gửi bài để bài được chỉnh chu hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day8/Baitap">Nguyen Le Quyen (FPL HN)</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1](file:///D:/F8_Office/Review_GIT/F8-FE-K3/NguyenLeQuyen2004/f8-frontend-k3/Day8/Baitap/ex01.html)</p>
+<p>Bài làm rất tốt*</p>
+<p>Chú ý kỹ hơn về <code>font-weight</code> thiết kế bài mẫu</p>
+<p>Các icon như <strong>info</strong> và <strong>search</strong> cần bổ sung action khi <code>hover</code> dùng <code>cursor: pointer</code> để tăng trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/blob/main/Day8/Baitap/ex02.html">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Phần hiển thị số lượng sản phẩm trong giỏ hàng không nên dùng <code>::after</code> sau này tương tác với backend hơi rắc rối. Nên dùng thẻ <code>span</code>.</p>
+<p>Nút xoá sản phẩm cũng không dùng <code>::after</code>, nên dùng <code>span</code> để sau này dễ dàng xử lý sự kiện.</p>
+<p>Phần <strong>product</strong> nên cho vào <code>div</code> là <strong>product-lists</strong> bọc lại và dùng <code>overflow-Y: scroll</code> theo trục Y và đặt max-height để khi người dùng thêm nhiều sản phẩm giúp phần <strong>cart</strong> được gọn gàng hơn.</p>
+<p>Nên đặt tên class đúng ngữ cảnh, tường minh tránh kiểu <strong>box-1</strong> có thể chia thành <strong>box-left</strong>, <strong>box-right</strong>.</p>
+<p>Để ý phần <code>font-family</code> đang dùng là font không chân.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/blob/main/Day8/Baitap/ex03.html">Bài 3</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa đúng với thiết kế bài mẫu.</p>
+<p>Nội dung mô tả trong các div chưa co đều lại.</p>
+<p>Các <code>button</code> đang bị dính sát vào phần nội dung, và không đều nhau.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý kỹ về thiết kế ở bài mẫu, phân tích layout kỹ trước khi làm. Nên xem lại cách đặt tên class tường minh hơn, đúng ngữ cảnh hơn.</li>
+</ul>
+<h2><a href="https://github.com/countduck4819/f8-frontend/tree/main/Day8">Vũ Thành Khang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day8">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Nên hiển thị <strong>MEGA MENU</strong> với nền trắng theo đúng thiết kế.</p>
+<p>Xử lý nút khi <code>hover</code> chưa tốt. Khi <code>hover</code> trỏ xuống phần <strong>MEGA MENU</strong> sẽ bị mất luôn.</p>
+<p>Các icon như <strong>info</strong> và <strong>search</strong> cần bổ sung action khi <code>hover</code> dùng <code>cursor: pointer</code> để tăng trải nghiệm người dùng. Nút <strong>info</strong> đang bị méo</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day8">Bài 2</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Phần <strong>items</strong> không đúng với thiết kế bài mẫu. Không nên dùng <code>background-color</code>.</p>
+<p>Phần <strong>increment</strong> thiết kế sai.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day8">Bài 3</a></p>
+<p>Bài làm tốt</p>
+<p>Chú ý phần hình ảnh không nên để cứng cả <code>width</code> và <code>height</code>. Chỉ nên để cứng 1 trong cái <code>width</code> hoặc <code>height</code>.</p>
+<p>Nên sử dụng <code>display: flex</code> trong các thẻ <code>li</code> để căn chỉnh các item con bên trong, không dùng <code>margin</code> cho nội dung item mà nên dùng <code>padding</code></p>
+<p>Không nên reset CSS <code>text-align: center</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm đa số đều chưa hoàn thiện tốt, chưa đúng với bản mẫu. Cần chú ý chỉn chu hơn vào tiểu tiết và giao diện mẫu để làm đúng.</li>
+</ul>
+<h2><a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8">Gia Bảo Đỗ</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8">Bài 1</a></p>
+<p>Bài làm rất tốt</p>
+<p>Chú ý kỹ hơn về <code>font-weight</code> cho các text theo như thiết kế bài mẫu.</p>
+<p>Chú ý các icon xổ xuống bé hơn xíu như bài mẫu.</p>
+<p>Các icon như <strong>info</strong> và <strong>search</strong> cần bổ sung action khi <code>hover</code> dùng <code>cursor: pointer</code> để tăng trải nghiệm người dùng.</p>
+<p>Chú ý dùng <code>transform: all 0.4s ease;</code> là sai.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần hiển thị số lượng sản phẩm trong giỏ hàng không nên dùng <code>::after</code> sau này tương tác với backend hơi rắc rối. Nên dùng thẻ <code>span</code>. Căn chỉnh lại số lượng ra giữa.</p>
+<p>Chú ý phần <strong>quantity_product</strong> thiết kế chưa giống với bài mẫu. Chưa có action khi <code>hover</code> vào nút tăng giảm, dùng <code>cursor: pointer</code> để tăng trải nghiệm người dùng.</p>
+<p>Phần <strong>products</strong> nên đặt max-height và dùng <code>overflow-Y: scroll</code> theo trục Y để khi người dùng thêm nhiều sản phẩm giúp phần <strong>cart</strong> được gọn gàng hơn.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Day8">Bài 3</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Có ý tưởng chia layout, bố cục các item đúng nhưng chưa sát với thiết kế bài mẫu.</p>
+<p>Code lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Nên chú ý phân tích layout trước khi làm. Cần chú ý chỉn chu hơn vào tiểu tiết và giao diện mẫu để làm đúng.</li>
+</ul>
+<h2><a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8">thuy nguyen</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8">Bài 1</a></p>
+<p>Bài làm rất tốt</p>
+<p>Chú ý kỹ hơn về <code>font-weight</code> cho các text theo như thiết kế bài mẫu.</p>
+<p>Các icon như <strong>info</strong> và <strong>search</strong> cần bổ sung action khi <code>hover</code> dùng <code>cursor: pointer</code> để tăng trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Chú ý các hình ảnh sản phẩm đều nằm trong 1 nền màu.</p>
+<p>Chú ý <code>button</code> add cần đặt <code>background-color</code> theo thiết kế bài mẫu.</p>
+<p>Nên nhóm các <strong>item</strong> vào trong <strong>items</strong> chứ không tách lẻ ra.</p>
+<p>Phần <strong>items</strong> nên đặt max-height và dùng <code>overflow-Y: scroll</code> theo trục Y để khi người dùng thêm nhiều sản phẩm giúp phần <strong>cart</strong> được gọn gàng hơn.</p>
+<p>Chú ý cách đặt class cần đúng ngữ cảnh, tường minh. Ví dụ <strong>items</strong> là số nhiều thì bên trong <strong>items</strong> phải có nhiều <strong>item</strong>.</p>
+<p>Nên thêm sự kiện <code>hover</code> cho các nút xoá sản phẩm <code>cursor: pointer</code> để tăng tính trải nghiệm người dùng.</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day8">Bài 3</a></p>
+<p>Bài làm <strong>KHÔNG TỐT*</strong></p>
+<p>Bài làm chưa đúng với thiết kế mẫu.</p>
+<p>Cần phân tích lại Layout để chia bố cục.</p>
+<p>Code lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm đa số đều hoàn thiện tốt. Nên chú ý phân tích layout trước khi làm. Cần chú ý chỉn chu hơn vào tiểu tiết và giao diện mẫu để làm đúng.</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
