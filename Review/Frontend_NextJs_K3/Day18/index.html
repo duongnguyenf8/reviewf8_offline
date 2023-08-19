@@ -642,4 +642,121 @@ console.log(insertSorted(numbers, element));
 </li>
 </ul>
 <hr>
+<h2><a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/tree/main/javascript/Day_4/js">Hùng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<p>Có thể tham khảo cách làm sau:</p>
+<p>Có thể tham khảo sử dụng <code>forEach</code> để bài làm ngắn gọn hơn.</p>
+<pre><code class="language-js">var numbers = [5, 2, 4, -10, 8, 9, 10, 99, -99, 3];
+var maxValue = numbers[0];
+var minValue = numbers[0];
+var positionMin = numbers[0];
+var positionMax = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+  positionMax = numbers.indexOf(maxValue);
+  positionMin = numbers.indexOf(minValue);
+});
+
+console.log(
+  `
+Giá trị lớn nhất của mảng là: ${maxValue}
+    - vị trí index: ${positionMax}
+`,
+  `
+Giá trị nhỏ nhất của mảng là: ${minValue}
+    - vị trí index: ${positionMin}
+`
+);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt.</p>
+<p>Không cần thiết phải sử dụng biến count</p>
+<p>Có thể tối ưu, viết ngắn gọn và dễ hiểu hơn phần kiểm tra số nguyên tố với <code>filter</code> và hàm <code>isPrime</code> mới áp dụng quy luật <strong>6K+-1</strong></p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (var i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+function getAverage(array) {
+  if (!array.length) return &quot;Không có số nguyên tố&quot;;
+  var sum = array.reduce(function (prev, value) {
+    return prev + value;
+  });
+  return sum / array.length;
+}
+var average = getAverage(array.filter(isPrime));
+console.log(average);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt*</p>
+<p>Tuy nhiên có thể rút ngắn hơn với <code>forEach</code></p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+var finalArr = [];
+
+arr.forEach((val) =&gt; !finalArr.includes(val) &amp;&amp; finalArr.push(val));
+
+console.log(finalArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt*</p>
+<p>Tuy nhiên có thể tối ưu, rút ngắn lại với một số phương thức của mảng</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, tuy nhiên cần xét các trường hợp có thể xảy ra ở đầu vào và nên tìm hiểu thêm về các phương thức của mảng để bài tập làm tốt hơn.</p>
+</li>
+</ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
