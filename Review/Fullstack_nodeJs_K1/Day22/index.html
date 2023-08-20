@@ -1,6 +1,508 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day22</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 22 Lớp K1</h1>
 <h2><a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22">Luu Anh Quan</a></h2>
 <ul>
-<li>[x] [Bài 1]</li>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Mặc dù chỉ cần kiểm tra tất cả phần tử, nếu có 1 phần tử không thể chuyển re số.</p>
+<ul>
+<li>
+<p>Có thể sử dụng <code>NaN</code> như một falsy</p>
+</li>
+<li>
+<p>Có thể sử dụng phương thức <code>every()</code></p>
+</li>
+<li>
+<p>Có thể sử dụng toán tử 3 ngôi kết hợp với <code>arrow function</code>(Học sau)</p>
+</li>
+</ul>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt*</p>
+<p>Chưa kiểm tra đầu vào không thể chuyển thành số</p>
+<pre><code class="language-javascript">var price = &quot;fsdfdsfds&quot;;
+Object.prototype.getCurrency = function (unit) {
+  if (!+this) return &quot;Không phải là số&quot;;
+  var arr = this.toString().split(&quot;&quot;);
+  for (var i = arr.length - 1; i &gt;= 0; i -= 3) {
+    if (i === arr.length - 1) continue;
+    arr[i] += &quot;,&quot;;
+  }
+  return arr.join(&quot;&quot;) + &quot; &quot; + unit;
+};
+
+console.log(price.getCurrency(&quot;đ&quot;));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Chưa rõ ý đồ của dòng code này:</p>
+<pre><code class="language-javascript">var categoriesCopy = [...categories];
+</code></pre>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var categories = &quot;dayKhongPhaiArray&quot;
+function getNestedArr(categories, parentId = 0) {
+  if(!Array.isArray(categories) || categories.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  // code...
+}
+console.log(getNestedArr(categories));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/SerenaHa12/fullstack_nodeJS/blob/main/hoc_javascript/btvn_22/ex04/main.js">Do Ha Chi</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Chưa thể cộng các số thực(Float) vì đang sử dụng <code>parseInt</code></p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt*</p>
+<p>Chưa kiểm tra đầu vào không thể chuyển thành số hoặc không phải kiểu dữ liệu số</p>
+<p>Nên đưa prototype vào Object thay vì String.</p>
+<p>Nên kiểm tra đầu vào có thể parse về số không</p>
+<pre><code class="language-javascript">Object.prototype.getCurrency = function (unit) {
+  if(!+this) return &quot;Not a Number&quot;;
+  var numString = this.toString().replace(/\D/g, &quot;&quot;);
+  var formattedNumber = numString.replace(/\B(?=(\d{3})+(?!\d))/g, &quot;,&quot;);
+  return formattedNumber + &quot; &quot; + unit;
+};
+var price = 12345;
+console.log(price.getCurrency(&quot;đ&quot;));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;
+function buildNestedStructure(array, parent = 0) {
+  if(!Array.isArray(array) || array.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  // code...
+}
+var nestedStructure = buildNestedStructure(data);
+console.log(JSON.stringify(nestedStructure, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Chưa xử lý trường hợp không có initialValue</p>
+<pre><code class="language-js">Array.prototype.reduce2 = function (callback, initialValue) {
+  let result = initialValue !== undefined ? initialValue : this[0];
+  let startIndex = initialValue !== undefined ? 0 : 1;
+  for (let i = startIndex; i &lt; this.length; i++) 
+    result = callback(result, this[i], i, this);
+  return result;
+}
+var numbers = [1, 2, 3, 4, 5];
+var total = numbers.reduce2((a, b) =&gt;  a + b);
+console.log(total); 
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_22/script.js">Phan Trung Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Các số được truyền dưới dạng String cần được parse thử về số, nếu không phải NaN vẫn cần được tính.</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt*</p>
+<p>Output đầu ra phải phân cách là dấu <strong>&quot;,&quot;</strong> để giống với yêu cầu đề bài</p>
+<p>Thay vì viết 2 phương thức, có thể sử dụng chung ở Object và check trường hợp string, number</p>
+<p>Chưa kiểm tra trường hợp NaN ở String</p>
+<p>Có thể tham khảo bài của <a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22">Luu Anh Quan</a> sau khi đã chỉnh sửa.</p>
+<pre><code class="language-javascript">var price = &quot;fsdfdsfds&quot;;
+Object.prototype.getCurrency = function (unit) {
+  if (!+this) return &quot;Không phải là số&quot;;
+  var arr = this.toString().split(&quot;&quot;);
+  for (var i = arr.length - 1; i &gt;= 0; i -= 3) {
+    if (i === arr.length - 1) continue;
+    arr[i] += &quot;,&quot;;
+  }
+  return arr.join(&quot;&quot;) + &quot; &quot; + unit;
+};
+
+console.log(price.getCurrency(&quot;đ&quot;));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;
+function convertToNestedArray(array, parent = 0) {
+  if(!Array.isArray(array) || array.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  // code...
+}
+var nestedArr = convertToNestedArray(data);
+console.log(JSON.stringify(nestedArr, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/blob/main/Day22/main.js">Dương Hiệp</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<p>Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt*</p>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;
+function convertToNestedArray(array, parent = 0) {
+  if(!Array.isArray(array) || array.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  // code...
+}
+var nestedArr = convertToNestedArray(data);
+console.log(JSON.stringify(nestedArr, null, 2));
+</code></pre>
+<p>Các cây không có child không cần phải thêm mảng children để giống yêu cầu đề bài.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/xuananh2212/js_fullstack_k1/blob/main/day22/main.js">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<p>Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm không tốt</p>
+<p>Với yêu cầu đề bài, các số phải phân cách bằng dấu <strong>&quot;,&quot;</strong></p>
+<p>Yêu cầu đề bài là truyền currency vào để làm phần đuôi chứ không phải lấy theo quốc gia.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa xóa các key parent giống yêu cầu đề bài.</p>
+<p>Với parentId mặc định là 0, có thể gán trực tiếp vào tham số của hàm <code>nestedArray</code></p>
+<p>Chưa kiểm tra đầu vào là mảng rỗng.</p>
+<p>Nên đưa phần kiểm tra Array vào trong hàm, vì không phải hàm này sẽ gọi luôn hoặc trên thực tế có thể sẽ không gọi trên cùng 1 file...</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, hơi ẩu, cần đọc và hiểu kỹ yêu cầu đề bài, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi22">Tuấn Phạm</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<p>Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt*</p>
+<p>Với yêu cầu đề bài, các số phải phân cách bằng dấu <strong>&quot;,&quot;</strong></p>
+<p>Có thể tham khảo bài của <a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22">Luu Anh Quan</a> sau khi đã chỉnh sửa.</p>
+<pre><code class="language-javascript">var price = &quot;fsdfdsfds&quot;;
+Object.prototype.getCurrency = function (unit) {
+  if (!+this) return &quot;Không phải là số&quot;;
+  var arr = this.toString().split(&quot;&quot;);
+  for (var i = arr.length - 1; i &gt;= 0; i -= 3) {
+    if (i === arr.length - 1) continue;
+    arr[i] += &quot;,&quot;;
+  }
+  return arr.join(&quot;&quot;) + &quot; &quot; + unit;
+};
+
+console.log(price.getCurrency(&quot;đ&quot;));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Chưa xóa các key parent giống yêu cầu đề bài.</p>
+<p>Chưa kiểm tra đầu vào không phải mảng hoặc là mảng rỗng.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi22">Hoài Nam Đỗ</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Các chuỗi có thể parse về số mà không phải NaN vẫn cần được tính toán.</p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<p>Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm KHÔNG tốt*</p>
+<p>Với yêu cầu đề bài, các số phải phân cách bằng dấu <strong>&quot;,&quot;</strong></p>
+<p>Yêu cầu đề bài là truyền currency vào để làm phần đuôi chứ không phải lấy theo quốc gia.</p>
+<p>Với bài làm này, không thể truyền bất cứ một đuôi nào khác ngoài <code>&quot;đ&quot;</code></p>
+<p>Có thể tham khảo bài của <a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22">Luu Anh Quan</a> sau khi đã chỉnh sửa.</p>
+<pre><code class="language-javascript">var price = &quot;fsdfdsfds&quot;;
+Object.prototype.getCurrency = function (unit) {
+  if (!+this) return &quot;Không phải là số&quot;;
+  var arr = this.toString().split(&quot;&quot;);
+  for (var i = arr.length - 1; i &gt;= 0; i -= 3) {
+    if (i === arr.length - 1) continue;
+    arr[i] += &quot;,&quot;;
+  }
+  return arr.join(&quot;&quot;) + &quot; &quot; + unit;
+};
+
+console.log(price.getCurrency(&quot;đ&quot;));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p><strong>Chưa làm</strong></p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm không tốt</p>
+<p>Chưa đưa vào phương thức của Array, sai yêu cầu đề bài.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm không tốt, cần chú ý thêm vào yêu cầu đề bài, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006.git">Dương Quốc Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Các chuỗi có thể parse về số mà không phải NaN vẫn cần được tính toán.</p>
+<p>Khi gặp lỗi, không phải là console ra mà là trả về một lỗi để có thể kiểm tra được.</p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<p>Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt*</p>
+<p>Với yêu cầu đề bài, các số phải phân cách bằng dấu <strong>&quot;,&quot;</strong> (Cần truyền tham số vào <code>toLocalString</code>)</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa kiểm tra đầu vào không phải mảng hoặc là mảng rỗng.</p>
+<p>Chưa xóa các key parent giống yêu cầu đề bài.</p>
+<p>Với các phần tử không có children, không nên thêm để giống với yêu cầu đề bài.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm không tốt</p>
+<p>Bài làm sai kết quả với trường hợp không có initialValue</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm vào yêu cầu đề bài, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/realguy010895/hunganh-f8-k1-off/blob/main/f8-project/buoi21-22/btvn-b22.js">nguyen hung anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Các chuỗi có thể parse về số mà không phải NaN vẫn cần được tính toán.</p>
+<p>Chưa kiểm tra trường hợp NaN vì NaN vẫn là số và có thể pass qua trường hợp <code>typeof</code></p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm <strong>không</strong> tốt*</p>
+<p>Với yêu cầu đề bài, các số phải phân cách bằng dấu <strong>&quot;,&quot;</strong></p>
+<p>Chưa đúng yêu cầu đề bài, khi truyền <strong>&quot;đ&quot;</strong> như đề bài thì bài làm đang lỗi.</p>
+<p>Với bài tập này cần làm xử lý chuỗi.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Chưa kiểm tra đầu vào không phải mảng hoặc là mảng rỗng.</p>
+<p>Chưa xóa các key parent giống yêu cầu đề bài.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm vào yêu cầu đề bài, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Trungdeptraii/16-08-2023-Le-Van_Trung-Day22/blob/main/js/index.js">Trung Le</a></h2>
+<p><strong>Chú ý format code</strong></p>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Các chuỗi có thể parse về số mà không phải NaN vẫn cần được tính toán.</p>
+<p>Chưa kiểm tra trường hợp NaN vì NaN vẫn là số và không thể kiểm tra bằng cách so sánh.</p>
+<p>Có thể tham khảo cách làm ngắn gọn hơn, sử dụng <code>Arrow Function</code>(Học sau)</p>
+<pre><code class="language-js">var total = (args) =&gt;
+  args.every(Number) ? args.reduce((a, b) =&gt; +a + +b) : &quot;Invalid Data!&quot;;
+console.log(total([9, &quot;2&quot;, &quot;1&quot;, &quot;a&quot;]));
+console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt*</p>
+<p>Với yêu cầu đề bài, các số phải phân cách bằng dấu <strong>&quot;,&quot;</strong></p>
+<p>Nên đưa vào Object và kiểm tra kiểu dữ liệu string, number.</p>
+<p>Có thể tham khảo bài của <a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22">Luu Anh Quan</a> sau khi đã chỉnh sửa.</p>
+<pre><code class="language-javascript">var price = &quot;fsdfdsfds&quot;;
+Object.prototype.getCurrency = function (unit) {
+  if (!+this) return &quot;Không phải là số&quot;;
+  var arr = this.toString().split(&quot;&quot;);
+  for (var i = arr.length - 1; i &gt;= 0; i -= 3) {
+    if (i === arr.length - 1) continue;
+    arr[i] += &quot;,&quot;;
+  }
+  return arr.join(&quot;&quot;) + &quot; &quot; + unit;
+};
+
+console.log(price.getCurrency(&quot;đ&quot;));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt*</p>
+<p>Chưa kiểm tra đầu vào không phải mảng hoặc là mảng rỗng.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm vào yêu cầu đề bài, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
 </ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
