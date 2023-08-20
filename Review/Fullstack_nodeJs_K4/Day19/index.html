@@ -1,0 +1,1148 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day19</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_19">Hoàng Văn Thanh</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tối ưu số lần lặp bằng cách sau:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên cần kiểm tra đầu vào phải là một mảng thì sẽ chặt chẽ hơn.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+var finalArr = [];
+
+arr.forEach((val) =&gt; !finalArr.includes(val) &amp;&amp; finalArr.push(val));
+
+console.log(finalArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt. *</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm rất tốt, chỉ cần lưu ý một số lỗi nhỏ và tối ưu code để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_18">Mạnh Huy</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên bài làm chưa xét đến trường hợp đầu vào là một mảng rỗng. Hiện tại, nếu đầu vào là một mảng rỗng thì sẽ thu được kết quả là <code>Số lớn nhất trong mảng là 0 và là phần tử thứ 1 trong mảng</code> và <code>Số nhỏ nhất trong mảng là 0 và là phần tử thứ 1 trong mảng</code>. Điều này cần xử lý để bài làm chặt chẽ hơn.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tối ưu số lần lặp bằng cách sau:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt. *</p>
+<p>Hiện tại khi chèn vào mảng sau khi sắp xếp thì hiển thị thông báo là <code>Mảng sau khi chèn giá trị 6 vào vị trí undefined là: [6, 2, 3, 4, 5, 9]</code>. Chưa xử lý tốt phần hiển thị vị trí được chèn vào nên đang hiện là <code>undefined</code></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm rất tốt, tuy nhiên cần lưu ý một số trường hợp đặc biệt có thể xảy ra của đầu vào và một số lỗi nhỏ để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/thaiduytien1611cunbeo/NopbaitapF8/tree/main/Day19/js">Thái Duy Tiến</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+<li>
+<p>Các phần tử trong mảng không phải là số nguyên.</p>
+</li>
+</ul>
+<p>Cần xử lý tốt hơn trong hàm thực hiện chức năng kiểm tra một số là số nguyên tố. Có thể tham khảo cách làm sau đây để hoàn thiện hơn:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Có thể tối ưu bằng cách làm sau đây:</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, tuy nhiên cần xét các trường hợp có thể xảy ra ở đầu vào để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_19">Hà Long Việt</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm chưa hiển thị được vị trí của số lớn nhất và số nhỏ nhất trong mảng như yêu cầu của đề bài.</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng. (Hiện tại nếu đầu vào là một mảng rỗng thì kết quả thu được đang là: <code>Số nhỏ nhất: undefined, Số lớn nhất: undefined</code>)</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<p>Lưu ý về cách đặt tên biến nên đặt theo quy tắc camelCase, cụ thể là biến <code>Arr</code> đang được đặt tên không theo quy tắc camelCase.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">function MaxAndMin(array) {
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  if (array.length &gt; 0) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i &lt; array.length; i++) {
+      if (max &lt; array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min &gt; array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log(&quot;danh sách rỗng&quot;);
+  }
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Có thể tối ưu vòng lặp bằng cách sau đây:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt*.</p>
+<p>Tuy nhiên bài làm cần đảm bảo đầu ra thu được vẫn phải là một mảng sau khi loại bỏ các phần tử giống nhau. Hiện tại kết quả thu được đang là một chuỗi: <code>Mảng sau khi xử lý: 0,1,a,5,m,6</code>. Điều này là không đúng với Output của đề bài đưa ra.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+var finalArr = [];
+
+arr.forEach((val) =&gt; !finalArr.includes(val) &amp;&amp; finalArr.push(val));
+
+console.log(finalArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên bài làm cần đảm bảo đầu ra thu được vẫn phải là một mảng sau khi đã sắp xếp và chèn phần tử mới vào mảng. Hiện tại kết quả thu được đang là một chuỗi: <code>Mảng sau khi sắp xếp và chèn: 1,4,5,8,9,10</code>. Điều này là không đúng với Output của đề bài đưa ra.</p>
+<p>Có thể tối ưu bằng cách làm sau đây:</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, tuy nhiên cần thực hiện đầy đủ các yêu cầu của đề bài (bài 1), cần xét các trường hợp có thể xảy ra ở đầu vào, cần lưu ý định dạng của Output theo yêu cầu của đề bài và một số lỗi nhỏ để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/chinam197/nbai19.git">Nguyễn Chi Nam</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt. *</p>
+<p>Cần lưu ý cách đặt tên biến. Cụ thể <code>number</code> là một từ nên không cần phải đặt theo quy tắc camelCase là <code>numBer</code>.</p>
+<p>Hiện tại cách xử lý chưa tối ưu nếu như có nhiều số bằng nhau và các số này có giá trị lớn nhất so với các số còn lại thì đều sẽ in ra bấy nhiêu dòng thông báo giá trị lớn nhất (tương tự với giá trị nhỏ nhất).</p>
+<p>Ví dụ cụ thể: Đầu vào là: <code>let numBer = [11, 2, 2, 3, 12, 3, 44,44,88,88];</code> thì đầu ra thu được sẽ là 4 dòng thông báo như sau:</p>
+<ul>
+<li><code>giá trị min = 2 index :1</code></li>
+<li><code>giá trị min = 2 index :2</code></li>
+<li><code>giá trị max = 88 index :8</code></li>
+<li><code>giá trị max = 88 index :9</code></li>
+</ul>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<p>Chú ý về việc format code.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">function MaxAndMin(array) {
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  if (array.length &gt; 0) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i &lt; array.length; i++) {
+      if (max &lt; array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min &gt; array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log(&quot;danh sách rỗng&quot;);
+  }
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+<li>
+<p>Các phần tử trong mảng không phải là số nguyên. Hiện tại nếu nhập phần tử có giá trị là <code>2.2</code> thì vẫn nhận là số nguyên tố.</p>
+</li>
+</ul>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Đề bài yêu cầu sắp xếp mảng theo thứ tự tăng dần rồi thêm một phần tử vào mảng đã sắp xếp sao cho không làm thay đổi thứ tự tăng dần của mảng chứ không phải thêm phần tử vào cuối mảng rồi lại sắp xếp lại.</p>
+<p>Chú ý trong việc format code.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm còn nhiều vấn đề cần lưu ý, cần xét các trường hợp có thể xảy ra ở đầu vào và lưu ý đọc kỹ yêu cầu đề bài để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/TranCong312002/F8-fullstack-k4/tree/main/Bai_tap_buoi_19">Trần Đức Công</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Bài làm chưa kiểm tra trường hợp đầu vào là mảng rỗng. Hiện tại sẽ thu được kết quả nếu đầu vào là mảng rỗng là: <code>Số lớn nhất trong dãy là: 0 Chỉ số trong mảng là: 0</code>.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Có thể tham khảo cách làm sau đây để tối ưu hơn số lượng vòng lặp xác định số nguyên tố:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt*.</p>
+<p>Tuy nhiên cần lưu ý về định dạng của đầu ra khi lọc các phần tử giống nhau phải giữ nguyên là mảng. Hiện tại kết quả đang là một chuỗi.</p>
+<p>Cần xử lý cả trường hợp trong mảng chứa các kiểu dữ liệu khác chứ không phải chỉ xử lý số nguyên.</p>
+<p>Có thể tham khảo cách làm sau đây để tối ưu hơn:</p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+var finalArr = [];
+
+arr.forEach((val) =&gt; !finalArr.includes(val) &amp;&amp; finalArr.push(val));
+
+console.log(finalArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên cần lưu ý về định dạng của đầu ra sau khi sắp xếp và thêm phần tử phải giữ nguyên là mảng. Hiện tại kết quả đang là một chuỗi.</p>
+<p>Có thể tối ưu bằng cách làm sau đây:</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, tuy nhiên cần lưu ý về định dạng của đầu ra theo đúng yêu cầu của đề bài và một số lỗi nhỏ để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/blob/main/Day-19/js/main.js">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<p>Có thể tham khảo cách làm sau đây ngắn gọn và tối ưu hơn:</p>
+<pre><code class="language-js">function MaxAndMin(array) {
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  if (array.length &gt; 0) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i &lt; array.length; i++) {
+      if (max &lt; array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min &gt; array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log(&quot;danh sách rỗng&quot;);
+  }
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+<li>
+<p>Các phần tử trong mảng không phải là số nguyên.</p>
+</li>
+</ul>
+<p>Cần xử lý tốt hơn trong hàm thực hiện chức năng kiểm tra một số là số nguyên tố. Có thể tham khảo cách làm sau đây để hoàn thiện hơn:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Đề bài yêu cầu sắp xếp mảng theo thứ tự tăng dần rồi thêm phần tử vào mảng sao cho vẫn theo thứ tự tăng dần chứ không phải thêm phần tử rồi sắp xếp.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, tuy nhiên cần xét các trường hợp có thể xảy ra ở đầu vào để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/blob/main/Day_18/js/script.js">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<p>Có thể tham khảo cách làm sau đây ngắn gọn và tối ưu hơn:</p>
+<pre><code class="language-js">function MaxAndMin(array) {
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  if (array.length &gt; 0) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i &lt; array.length; i++) {
+      if (max &lt; array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min &gt; array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log(&quot;danh sách rỗng&quot;);
+  }
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p><strong>Chưa làm</strong></p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt. *</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm rất tốt, tuy nhiên cần xét các trường hợp có thể xảy ra ở đầu vào để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-19">Đặng Khải</a></h2>
+<ul>
+<li>[x] Bài 1: Bài làm rất tốt * .</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt.</p>
+<p>Trong mục tiêu bài này thì không cần thiết tạo ra 1 mảng để lưu số nguyên tố và đếm chúng.
+Đề Xuất.</p>
+<pre><code class="language-javascript">function averagePrime(arr) {
+  try {
+    err(arr, true);
+  } catch (error) {
+    return error.message;
+  }
+  console.log(&quot;Mảng được truyền vào:&quot;, arr);
+  let count = 0,
+    total = 0;
+  arr.forEach(function (value) {
+    if (isPrime(value)) {
+      total += value;
+      count++;
+    }
+  });
+  let average;
+  if (total === 0) {
+    return &quot;Không có số nguyên tố&quot;;
+  } else {
+    average = total / count;
+  }
+  console.log(&quot;Kết quả trung bình các số nguyên tố trong mảng là:&quot;, average);
+  return average;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt *.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 4: Bài làm rất tốt * .</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Tuy nhiên vẫn còn 1 số lỗi nhỏ.</li>
+</ul>
+<h2><a href="https://github.com/suspiciously36/bai-tap-js/tree/main/day-19/js">Tuan Kiet Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt .</p>
+<p>Chưa Kiểm tra mảng có phải mảng số nguyên hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Có thể Tối ưu lại hàm <code>isPrime()</code>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt*.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm rất tốt .</p>
+<p>Đề xuất tối ưu lại hàm <code>insertMoreNum(sortedArr, element)</code>.</p>
+<pre><code class="language-javascript">function insertMoreNum(sortedArr, element) {
+  sortedArr = integerArr.sort((a, b) =&gt; a - b);
+
+  for (var i = 0; i &lt; sortedArr.length; i++) {
+    if (element &lt; sortedArr[i]) {
+      break;
+    }
+  }
+  sortedArr.splice(i, 0, element);
+
+  return sortedArr;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên vẫn còn 1 số lỗi nhỏ.</li>
+</ul>
+<h2><a href="https://github.com/suspiciously36/bai-tap-js/tree/main/day-19/js">Lê Đình Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm tốt .</p>
+<p>Chưa Kiểm tra mảng có phải mảng số nguyên hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Có thể Tối ưu lại hàm <code>isPrime()</code>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 3: Bài làm rất tốt*.</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Bài 4: Bài làm rất tốt * .</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên vẫn còn 1 số lỗi nhỏ.</li>
+</ul>
+<h2><a href="https://dongnguyen318.github.io/Quydong/">Dong Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Chưa Kiểm tra mảng có phải mảng số nguyên hay không.</p>
+<p>Chưa đúng với 1 số trường hợp do biến <code>maxPosition, minPosition</code> chưa được gán giá trị ban đầu.</p>
+<p>Lỗi.</p>
+<p><img src="images/dongnguyen.png" alt="lỗi biến chưa được gán">.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var array = [1, 4, -3, 4, 5, 6];
+var max;
+var min;
+var indexMax = 0;
+var indexMin = 0;
+function isArrayInteger(array) {
+  return array.every((items) =&gt; items % 1 === 0);
+}
+if (Array.isArray(array) &amp;&amp; array.length &gt; 0 &amp;&amp; isArrayInteger(array)) {
+  max = array[0];
+  min = array[0];
+  for (let i = 0; i &lt; array.length; i++) {
+    if (max &lt; array[i]) {
+      max = array[i];
+      indexMax = i;
+    }
+    if (min &gt; array[i]) {
+      min = array[i];
+      indexMin = i;
+    }
+  }
+  console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+  console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+} else {
+  console.log(&quot;đầu vào không hợp lệ&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm tốt *.</p>
+<p>Có thể Tối ưu lại hàm <code>isPrime()</code>.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3: Bài làm tốt.</p>
+<p>Sai đầu ra khi mảng <code>listNumber.length === 0</code> in ra <code>mảng rỗng</code> chứa không phải là <code>Không có phần tử nào trong mảng trùng nhau</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm chưa tốt.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">function sortArray(arr, addElement) {
+  arr.sort((a, b) =&gt; a - b);
+  for (var i = 0; i &lt; arr.length; i++) {
+    if (arr[i] &gt; addElement) {
+      break;
+    }
+  }
+  arr.splice(i, 0, addElement);
+  return arr;
+}
+var array = [1, 2, 5, 4];
+var element = 3;
+console.log(sortArray(array, element));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tạm ổn. cần cẩn thận hơi khi làm bài.</li>
+</ul>
+<h2><a href="https://github.com/Oladayne/f8-fullstack-k98.git">Nguyễn Ngọc Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Chưa Kiểm tra mảng có phải mảng số nguyên hay không.</p>
+<p>Không lên sử dụng hàm trong bài này.</p>
+<p>Đề Xuất Lại.</p>
+<pre><code class="language-javascript">var array = [1, 4, -3, 4, 5, 6];
+var max;
+var min;
+var indexMax = 0;
+var indexMin = 0;
+function isArrayInteger(array) {
+  return array.every((items) =&gt; items % 1 === 0);
+}
+if (Array.isArray(array) &amp;&amp; array.length &gt; 0 &amp;&amp; isArrayInteger(array)) {
+  max = array[0];
+  min = array[0];
+  for (let i = 0; i &lt; array.length; i++) {
+    if (max &lt; array[i]) {
+      max = array[i];
+      indexMax = i;
+    }
+    if (min &gt; array[i]) {
+      min = array[i];
+      indexMin = i;
+    }
+  }
+  console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+  console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+} else {
+  console.log(&quot;đầu vào không hợp lệ&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2: Bài làm chưa tốt.</p>
+<p>Sai yêu cầu đề bài , đề bài là đầu vào là 1 mảng số nguyên tính trung bình các số nguyên tố trong mảng chứa không phải đầu vào là n tìm số nguyên trong khoảng từ [1, n].</p>
+<p>Đề Xuất Lại.</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  return true;
+}
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 6, 4];
+var count = 0;
+var sum = 0;
+if (Array.isArray(array)) {
+  for (let i = 0; i &lt; array.length; i++) {
+    if (isPrime(array[i])) {
+      sum += array[i];
+      count++;
+    }
+  }
+  if (count === 0) {
+    console.log(&quot; không có số nguyên tố &quot;);
+  } else {
+    console.log(`Trung bình các số nguyên tố là : ${sum / count}`);
+  }
+} else {
+  console.log(&quot;đầu vào không hợp lệ&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Sai tên biến <code>aar</code> -&gt; <code>arr</code>.</p>
+<p>Sai trường hợp phần tử trong mảng chứa giá trị 0.</p>
+<p>Lỗi.</p>
+<p><img src="images/nguyenngochung.png" alt="Alt text">.</p>
+<p>Đề Xuất.</p>
+<pre><code class="language-javascript">var arr = [1, 1, 3, -4, 3, 5, 6, 3];
+if (arr.length !== 0) {
+  var result = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+} else {
+  console.log(` Mảng không có phần tử nào!`);
+}
+
+console.log(result);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4: Bài làm chưa tốt.</p>
+<p>Sai đề bài sắp xếp xong rồi mới chèn , chứ không phải chèn xong mới sắp xếp.
+Đề Xuất.</p>
+<pre><code class="language-javascript">function sortArray(arr, addElement) {
+  arr.sort((a, b) =&gt; a - b);
+  for (var i = 0; i &lt; arr.length; i++) {
+    if (arr[i] &gt; addElement) {
+      break;
+    }
+  }
+  arr.splice(i, 0, addElement);
+  return arr;
+}
+var array = [1, 2, 5, 4];
+var element = 3;
+console.log(sortArray(array, element));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. yêu cầu code lại!. Cẩn thận hơi khi làm bài.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/KIENTT99/F8-Fullstack-k4/tree/main/ngay_19">Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Hiện tại kết quả tìm số nhỏ nhất là: <code>Số nhỏ nhất: 1 - index[undefined]</code>. Do ban đầu khi khai báo <code>indexMin</code> không gán giá trị mặc định nên không tìm được index của số nhỏ nhất nếu phần tử đầu tiên trong mảng nhỏ nhất.</p>
+<p>Bài làm chưa kiểm tra một số trường hợp đặc biệt sau:</p>
+<ul>
+<li>
+<p>Đề bài yêu cầu mảng này phải chứa các số nguyên, nên cần kiểm tra mỗi phần tử trong mảng phải là số nguyên.</p>
+</li>
+<li>
+<p>Đầu vào là một mảng rỗng.</p>
+</li>
+<li>
+<p>Đầu vào không phải là mảng.</p>
+</li>
+</ul>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">function MaxAndMin(array) {
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  if (array.length &gt; 0) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i &lt; array.length; i++) {
+      if (max &lt; array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min &gt; array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log(&quot;danh sách rỗng&quot;);
+  }
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt. *</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt*.</p>
+<p>Tuy nhiên bài làm cần đảm bảo đầu ra thu được vẫn phải là một mảng sau khi loại bỏ các phần tử giống nhau. Hiện tại kết quả thu được đang là một chuỗi: <code>Mảng sau khi xử lý: 0,1,a,5,m,6</code>. Điều này là không đúng với Output của đề bài đưa ra.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+var finalArr = [];
+
+arr.forEach((val) =&gt; !finalArr.includes(val) &amp;&amp; finalArr.push(val));
+
+console.log(finalArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Cần xem lại logic xử lý khi thêm phần tử vào mảng sau khi đã được sắp xếp. Hiện tại nếu thêm -2 vào mảng đã được sắp xếp thì không hiển thị được kết quả đúng theo mong muốn của đề bài.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">function insertSorted(numbers, element) {
+  numbers.sort((a, b) =&gt; a - b);
+  for (let i = 0; i &lt; numbers.length; i++) {
+    if (element &lt;= numbers[i]) {
+      numbers.splice(i, 0, element);
+      break;
+    }
+  }
+  return numbers;
+}
+
+var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+console.log(insertSorted(numbers, element));
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, tuy nhiên cần xét các trường hợp có thể xảy ra ở đầu vào và cần xử lý tốt hơn ở bài 4. Ngoài ra, nếu có khó khăn trong quá trình làm bài tập cần đặt câu hỏi để được trợ giúp và hoàn thành bài tập về nhà một cách hoàn chỉnh hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/KIENTT99/F8-Fullstack-k4/tree/main/ngay_19">Vinh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt. *</p>
+<p>Bài làm chưa kiểm tra trường hợp đầu vào là mảng rỗng.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Có thể tham khảo cách làm sau đây để tối ưu vòng lặp hơn:</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1 || n % 1 !== 0) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+var array = [1, 0, 2, 3, 6, 8, 5, 7, 11, 13, 99, 9007199254740881];
+
+console.log(array.filter(isPrime));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt. *</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt. *</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm rất tốt, tuy nhiên cần xét các trường hợp có thể xảy ra ở đầu vào thì sẽ hoàn chỉnh hơn.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day6</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên lớp K1- Backend</h1>
+<p><strong>Note:</strong></p>
+<ul>
+<li><strong>Bài 01</strong></li>
+</ul>
+<p>Cho trước 1 mảng số nguyên, yêu cầu tìm số lớn nhất, nhỏ nhất trong mảng và vị trí</p>
+<ul>
+<li><strong>Bài 02</strong></li>
+</ul>
+<p>Cho trước 1 mảng số nguyên, tính trung bình các số nguyên tố trong mảng. Nếu trong mảng không có số nguyên tố thì hiển thị “Không có số nguyên tố”</p>
+<ul>
+<li><strong>Bài 03</strong></li>
+</ul>
+<p>Cho trước 1 mảng bất kỳ, nếu trong mảng có các phần tử trùng nhau thì chỉ giữa lại 1 (Gọi là lọc trùng). In ra mảng sau khi đã xử lý</p>
+<ul>
+<li><strong>Bài 04</strong></li>
+</ul>
+<p>Cho trước 1 mảng số nguyên và thực hiện các yêu cầu sau</p>
+<p>Sắp xếp mảng theo thứ tự tăng dần</p>
+<p>Chèn thêm 1 số vào bất kỳ vị trí nào trong mảng mà không làm thay đổi thứ tự sắp xếp của mảng</p>
+<ul>
+<li>Ví dụ:</li>
+</ul>
+<pre><code class="language-js">var numbers = [5, 1, 9, 8, 10];
+var element = 4;
+// Kết quả hiển thị:
+[1, 4, 5, 8, 9, 10];
+</code></pre>
+<hr>
+<h2><a href="https://github.com/tuilahieu/nodejs/blob/main/exercise/day6/index.html">Trần Văn Hiểu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên cần kiểm tra điều kiện nếu mảng này là mảng rỗng thì sẽ đưa ra thông báo thích hợp.</p>
+<p>Hiện tại nếu kiểm tra đầu vào là mảng rỗng thì sẽ có thông báo như sau: <code>Số nhỏ nhất trong mảng là undefined và vị trí 0</code> như vậy là vì khởi tạo biến <code>index = 0</code> nên trường hợp này nó luôn trả về index là 0 thì không hợp lý cho lắm.</p>
+<p>Và nếu như mảng có 1 phần tử thì kết quả nhận được cũng không hợp lý. Cần chỉnh sửa và bổ sung.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+<p>Cần kiểm tra số đó có là số nguyên hay không?</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Cần kiểm tra đầu vào đã là mảng hay chưa và đầu vào có phải là mảng rỗng hay không để chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt *</p>
+<p>Cần kiểm tra đầu vào có phải là mảng rỗng hay không để chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, tuy nhiên cần đặc biệt chú ý kiểm tra các trường hợp có thể xảy ra thì bài làm sẽ chặt chẽ hơn</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/blob/main/HW/HW6/hw06.js">Phạm Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa đạt yêu cầu là ngoài việc tìm ra số lớn nhất và nhỏ nhất trong mảng còn phải tìm ra vị trí của chúng nữa.</p>
+<p>Ngoài ra bài làm chưa check một số điều kiện như có là mảng hay không? Mảng có phải là mảng rỗng hay không? Cần bổ sung.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra mảng đầu vào có là mảng hay không?</p>
+<p>Trong hàm kiểm tra số nguyên tố, vòng lặp biến i thì điều kiện đúng phải là <code>i &lt;= Math.sqrt(n)</code>. Vì nếu n là 9 thì cần phải xét đến 3 mới đúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm tốt</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+<p>Nếu phần tử cần chèn vào lớn hơn tất cả các phần tử của mảng thì chưa có xử lý cho trường hợp này.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm cần chú ý vào yêu cầu đề bài để thực hiện đúng theo yêu cầu, cần chú ý để xét hết tất cả các trường hợp có thể xảy ra thì bài làm sẽ chặt chẽ hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-6">Nguyễn Nhất</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p>Tuy nhiên hiện <code>console.log</code> đang là 2 dòng đều ghi <code>số lớn nhất</code> cần sửa lại.</p>
+<p>Nên thêm bước kiểm tra điều kiện đầu vào là một mảng hoặc là mảng rỗng. Hiện tại nếu là mảng rỗng thì nó sẽ hiển thị vị trí index = 0 nên không hợp lý.</p>
+<p>Nếu như mảng có 1 phần tử thì kết quả nhận được cũng không hợp lý. Cần chỉnh sửa và bổ sung.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra mảng đầu vào có là mảng hay không?</p>
+<p>Trong hàm kiểm tra số nguyên tố, vòng lặp biến i thì điều kiện đúng phải là <code>i &lt;= Math.sqrt(n)</code>. Vì nếu n là 9 thì cần phải xét đến 3 mới đúng.</p>
+<p>Khi kiểm tra đầu vào là mảng trống thì hiển thị dòng sau đây <code>Trung bình các số nguyên tố trong mảng là: Không có số nguyên tố</code>. Cần chỉnh sửa lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, chỉ cần chú ý về các trường hợp có thể xảy ra để bài làm thêm chặt chẽ hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day06/js/ex01.js">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên cần kiểm tra xem đầu vào có phải là một mảng hay không? Nếu như mảng có 1 phần tử thì kết quả nhận được không hợp lý. Cần chỉnh sửa và bổ sung.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt</p>
+<p>Phần hàm kiểm tra số nguyên tố cần kiểm tra điều kiện của n &lt; 2 thì sẽ trả về false chứ không phải n &lt; 0.</p>
+<p>Cần kiểm tra đầu vào có phải là mảng hay không?</p>
+<p>Khi kiểm tra đầu vào là mảng trống thì hiển thị dòng sau đây <code>Trung bình các số nguyên tố trong mảng là: Không có số nguyên tố</code>. Cần chỉnh sửa lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt chỉ cần lưu ý một số trường hợp có thể xảy ra để bài làm có thể chặt chẽ hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise/blob/main/Lab06/lab06.js">Nguyễn Minh Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p>Chưa kiểm tra trường hợp mảng đầu vào là mảng trống hoặc không phải là mảng.</p>
+<p>Nếu như mảng có 1 phần tử thì kết quả nhận được cũng không hợp lý. Cần chỉnh sửa và bổ sung.</p>
+<p>Nên khai báo biến <code>index</code> ở phạm vi global để không cần phải khai báo lại mỗi khi khởi tạo 1 function.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+<p>Cần kiểm tra đầu vào có phải là mảng hay không?</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt chỉ cần lưu ý một số trường hợp có thể xảy ra để bài làm có thể chặt chẽ hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVN/BTVNB6">Phạm Văn Bảo</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p>Chưa kiểm tra trường hợp mảng đầu vào là mảng trống và không phải là mảng.</p>
+<p>Nếu như mảng có 1 phần tử thì kết quả nhận được cũng không hợp lý. Cần chỉnh sửa và bổ sung.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt *</p>
+<p>Không nên đặt tên function là integer.</p>
+<p>Cần kiểm tra đầu vào có phải là mảng hay không?</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4:</p>
+<p>Bài làm chưa tốt</p>
+<p>Nên kiểm tra thêm điều kiện đầu vào có là mảng hoặc là mảng trống hay không thì sẽ chặt chẽ hơn.</p>
+<p>Chưa xét đến trường hợp số cần thêm vào lớn hơn tất cả các phần tử trong mảng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt cần lưu ý đến điều kiện kiểm tra tất cả các trường hợp có thể xảy ra.</li>
+</ul>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi6">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>Math.max()</code></strong> và <strong><code>Math.min()</code></strong> để tìm giá trị lớn nhất và nhỏ nhất trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let max = Math.max(...arrInt);
+let min = Math.min(...arrInt);
+</code></pre>
+</li>
+<li>
+<p>Để tìm vị trí của giá trị lớn nhất và nhỏ nhất, có thể sử dụng hàm <strong><code>indexOf()</code></strong>:</p>
+<pre><code class="language-js">let positionMax = arrInt.indexOf(max);
+let positionMin = arrInt.indexOf(min);
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Chưa thực hiện tính trung bình các số nguyên tố trong mảng số nguyên.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>filter()</code></strong> để lọc ra các số nguyên tố trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let arrPrime = numbers.filter((num) =&gt; {
+  for (let i = 2; i &lt;= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return num &gt; 1;
+});
+</code></pre>
+</li>
+<li>
+<p>Có thể sử dụng hàm <strong><code>reduce()</code></strong> để tính tổng các số nguyên tố trong mảng:</p>
+<pre><code class="language-js">let sum = arrPrime.reduce((acc, curr) =&gt; acc + curr, 0);
+</code></pre>
+</li>
+<li>
+<p>Tính trung bình các số nguyên tố trong mảng:</p>
+</li>
+</ul>
+<pre><code class="language-js">let avg = sum / arrPrime.length;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>filter()</code></strong> để lọc các phần tử trùng nhau trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let newNumbers = numbers.filter(
+  (item, index) =&gt; numbers.indexOf(item) === index
+);
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Thực tế chỉ cần sau khi chèn phần tử mới vào mảng, sắp xếp lại mảng là được.</p>
+<p>Chưa trả về vị trí của phần tử mới được chèn vào mảng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *. Tuy nhiên cần chú ý đến các trường hợp có thể xảy ra để bài làm có thể chặt chẽ hơn.</li>
+</ul>
+<h2><a href="https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi6">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>Math.max()</code></strong> và <strong><code>Math.min()</code></strong> để tìm giá trị lớn nhất và nhỏ nhất trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let max = Math.max(...numbers);
+let min = Math.min(...numbers);
+</code></pre>
+</li>
+<li>
+<p>Để tìm vị trí của giá trị lớn nhất và nhỏ nhất, có thể sử dụng hàm <strong><code>indexOf()</code></strong>:</p>
+<pre><code class="language-js">let positionMax = numbers.indexOf(max);
+let positionMin = numbers.indexOf(min);
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>filter()</code></strong> để lọc ra các số nguyên tố trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let arrPrime = arrInt.filter((num) =&gt; {
+  for (let i = 2; i &lt;= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return num &gt; 1;
+});
+</code></pre>
+</li>
+<li>
+<p>Có thể sử dụng hàm <strong><code>reduce()</code></strong> để tính tổng các số nguyên tố trong mảng:</p>
+<pre><code class="language-js">let sum = arrPrime.reduce((acc, curr) =&gt; acc + curr, 0);
+</code></pre>
+</li>
+<li>
+<p>Tính trung bình các số nguyên tố trong mảng:</p>
+</li>
+</ul>
+<pre><code class="language-js">let avg = sum / arrPrime.length;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>filter()</code></strong> để lọc các phần tử trùng nhau trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let arrNew = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<pre><code class="language-js">newNumbers = numbers.sort(function (a, b) {
+  {
+    return a - b;
+  }
+});
+</code></pre>
+<p>Có thể xóa dấu ngoặc ngọn thừa ở trước và sau <code>return</code> để code gọn hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *. Tuy nhiên cần chú ý đến các trường hợp có thể xảy ra để bài làm có thể chặt chẽ hơn.</li>
+</ul>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi6">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Chưa thực hiện tìm vị trí của số lớn nhất và nhỏ nhất trong mảng. Nếu mảng rỗng, đoạn code sẽ gặp lỗi.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>Math.max()</code></strong> và <strong><code>Math.min()</code></strong> để tìm giá trị lớn nhất và nhỏ nhất trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<ul>
+<li>
+<p>Để tìm vị trí của giá trị lớn nhất và nhỏ nhất, có thể sử dụng hàm <strong><code>indexOf()</code></strong>:</p>
+<pre><code class="language-js">let positionMax = array.indexOf(array[array.length - 1]);
+let positionMin = array.indexOf(array[0]);
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Chưa kiểm tra xem mảng có chứa số nguyên tố hay không. Nếu mảng không chứa số nguyên tố, đoạn code sẽ gặp lỗi.</p>
+<p>Trường hợp số 4 vẫn đang bị nhận là số nguyên tố.</p>
+<ul>
+<li>
+<p>Có vẻ do trường hợp này:</p>
+<pre><code class="language-js">for (let index = 2; index &lt; Math.sqrt(x); index++) {
+  /*...*/
+}
+</code></pre>
+<ul>
+<li>Nên sửa lại thành:</li>
+</ul>
+<pre><code class="language-js">for (let index = 2; index &lt;= Math.sqrt(x); index++) {
+  /*...*/
+}
+</code></pre>
+</li>
+</ul>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>filter()</code></strong> để lọc ra các số nguyên tố trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let arrPrime = arr.filter((num) =&gt; {
+  for (let i = 2; i &lt;= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return num &gt; 1;
+});
+</code></pre>
+</li>
+<li>
+<p>Có thể sử dụng hàm <strong><code>reduce()</code></strong> để tính tổng các số nguyên tố trong mảng:</p>
+<pre><code class="language-js">let sum = arrPrime.reduce((acc, curr) =&gt; acc + curr, 0);
+</code></pre>
+</li>
+<li>
+<p>Tính trung bình các số nguyên tố trong mảng:</p>
+</li>
+</ul>
+<pre><code class="language-js">let avg = sum / arrPrime.length;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Có thể tối ưu hơn bằng cách sử dụng hàm <strong><code>filter()</code></strong> để lọc các phần tử trùng nhau trong mảng.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-js">let newArr = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+<p>Đang fix cứng với vị trí cần chèn. Gây ra rất nhiều lỗi.</p>
+<pre><code class="language-js">for (var i in number) {
+  if (number[i] &gt;= 8) break;
+}
+</code></pre>
+<ul>
+<li>Nếu số cần chèn là 2, kết quả sẽ là: <code>[1,  4,  7,  2, 7, 10, 16, 20]</code></li>
+</ul>
+<p>Thực tế chỉ cần sau khi chèn phần tử mới vào mảng, sắp xếp lại mảng là được.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *. Tuy nhiên cần chú ý đến các trường hợp có thể xảy ra để bài làm có thể chặt chẽ hơn.</li>
+</ul>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi6">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa kiểm tra xem mảng có rỗng hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt * Tốt nhất lớp *</li>
+</ul>
+<h2><a href="https://github.com/nguyenducthanh04/f8-backend-k1.git">Thanh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Hàm <strong><code>isNum()</code></strong> chưa đúng hoàn toàn. Vòng lặp <strong>for</strong> nên bắt đầu từ <strong>i = 2</strong> và điều kiện lặp nên là <strong><code>i &lt;= Math.sqrt(n)</code></strong>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *</li>
+</ul>
+<h2><a href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB6">Dương Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tối ưu bằng cách sử dụng một vòng lặp duy nhất:</p>
+<pre><code class="language-js">var Num = [6, 9, -10, 12, 0, 14, 20, -100];
+var findMaxMin = function (arr) {
+  var max = arr[0];
+  var min = arr[0];
+  var maxIndex;
+  var minIndex;
+  for (var i = 0; i &lt;= arr.length - 1; i++) {
+    if (arr[i] &gt;= max) {
+      max = arr[i];
+      maxIndex = i;
+    }
+    if (arr[i] &lt; min) {
+      min = arr[i];
+      minIndex = i;
+    }
+  }
+  return `Số lớn nhất là ${max} tại vị trí thứ ${maxIndex}\nSố nhỏ nhất là ${min} tại vị trí thứ ${minIndex}`;
+};
+console.log(findMaxMin(Num));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng hàm <strong><code>reduce()</code></strong> để tính tổng các số nguyên tố trong mảng:</p>
+<pre><code class="language-js">let sum = Num1.reduce((acc, curr) =&gt; acc + curr, 0);
+</code></pre>
+<ul>
+<li>Tính trung bình các số nguyên tố trong mảng:</li>
+</ul>
+<pre><code class="language-js">let avg = sum / Num1.length;
+</code></pre>
+<p>Lưu ý: Nên đặt tên biến có ý nghĩa hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

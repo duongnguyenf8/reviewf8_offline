@@ -17,8 +17,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
@@ -91,8 +91,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
@@ -166,8 +166,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
@@ -283,8 +283,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
@@ -485,8 +485,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
@@ -621,8 +621,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
@@ -757,43 +757,35 @@
 
 - [x] Bài 2: Bài làm tốt.
 
-      Trong mục tiêu bài này thì không cần thiết tạo ra 1 mảng để lưu số nguyên tố và đếm chúng.
+  Trong mục tiêu bài này thì không cần thiết tạo ra 1 mảng để lưu số nguyên tố và đếm chúng.
+  Đề Xuất.
 
-      Đề Xuất.
-
-      ```javascript
-      function averagePrime(arr) {
-            try {
-                  err(arr, true);
-            } catch (error) {
-                  return error.message;
-            }
-
-            console.log("Mảng được truyền vào:", arr);
-
-            let count = 0,
-                  total = 0;
-
-            arr.forEach(function (value) {
-                  if (isPrime(value)) {
-                  total += value;
-                  count++;
-                  }
-            });
-
-            let average;
-
-            if (total === 0) {
-                  return "Không có số nguyên tố";
-            } else {
-                  average = total / count;
-            }
-
-            console.log("Kết quả trung bình các số nguyên tố trong mảng là:", average);
-
-            return average;
-            }
-      ```
+  ```javascript
+  function averagePrime(arr) {
+    try {
+      err(arr, true);
+    } catch (error) {
+      return error.message;
+    }
+    console.log("Mảng được truyền vào:", arr);
+    let count = 0,
+      total = 0;
+    arr.forEach(function (value) {
+      if (isPrime(value)) {
+        total += value;
+        count++;
+      }
+    });
+    let average;
+    if (total === 0) {
+      return "Không có số nguyên tố";
+    } else {
+      average = total / count;
+    }
+    console.log("Kết quả trung bình các số nguyên tố trong mảng là:", average);
+    return average;
+  }
+  ```
 
 ---
 
@@ -811,27 +803,27 @@
 
 - [x] Bài 1: Bài làm tốt .
 
-      Chưa Kiểm tra mảng có phải mảng số nguyên hay không.
+  Chưa Kiểm tra mảng có phải mảng số nguyên hay không.
 
 ---
 
 - [x] Bài 2: Bài làm tốt \*.
 
-      Có thể Tối ưu lại hàm `isPrime()`.
+  Có thể Tối ưu lại hàm `isPrime()`.
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-      function isPrime(n) {
-      if (n <= 1) return false;
-      if (n <= 3) return true;
-      if (n % 2 === 0 || n % 3 === 0) return false;
-      for (let i = 5; i * i <= n; i += 6) {
+  ```javascript
+  function isPrime(n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (let i = 5; i * i <= n; i += 6) {
       if (n % i === 0 || n % (i + 2) === 0) return false;
-      }
-      return true;
-      }
-      ```
+    }
+    return true;
+  }
+  ```
 
 ---
 
@@ -841,25 +833,21 @@
 
 - [x] Bài 4: Bài làm rất tốt .
 
-        Đề xuất tối ưu lại hàm `insertMoreNum(sortedArr, element)`.
+  Đề xuất tối ưu lại hàm `insertMoreNum(sortedArr, element)`.
 
-        ```javascript
-            function insertMoreNum(sortedArr, element) {
+  ```javascript
+  function insertMoreNum(sortedArr, element) {
+    sortedArr = integerArr.sort((a, b) => a - b);
 
-            sortedArr = integerArr.sort((a, b) => a - b);
-
-            for (var i = 0 ; i < sortedArr.length ; i++) {
-            if (element < sortedArr[i]) {
-            break;
-            }
-            }
-             sortedArr.splice(i, 0, element);
-
-            return sortedArr;
+    for (var i = 0; i < sortedArr.length; i++) {
+      if (element < sortedArr[i]) {
+        break;
       }
+    }
+    sortedArr.splice(i, 0, element);
 
-  ```
-
+    return sortedArr;
+  }
   ```
 
 ---
@@ -870,27 +858,27 @@
 
 - [x] Bài 1: Bài làm tốt .
 
-      Chưa Kiểm tra mảng có phải mảng số nguyên   hay không.
+  Chưa Kiểm tra mảng có phải mảng số nguyên hay không.
 
 ---
 
 - [x] Bài 2: Bài làm tốt \*.
 
-      Có thể Tối ưu lại hàm `isPrime()`.
+  Có thể Tối ưu lại hàm `isPrime()`.
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-      function isPrime(n) {
-      if (n <= 1) return false;
-      if (n <= 3) return true;
-      if (n % 2 === 0 || n % 3 === 0) return false;
-      for (let i = 5; i * i <= n; i += 6) {
+  ```javascript
+  function isPrime(n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (let i = 5; i * i <= n; i += 6) {
       if (n % i === 0 || n % (i + 2) === 0) return false;
-      }
-      return true;
-      }
-      ```
+    }
+    return true;
+  }
+  ```
 
 ---
 
@@ -908,93 +896,92 @@
 
 - [x] Bài 1:
 
-      Chưa Kiểm tra mảng có phải mảng số nguyên  hay không.
+  Chưa Kiểm tra mảng có phải mảng số nguyên hay không.
 
-      Chưa đúng với 1 số trường hợp do  biến `maxPosition, minPosition` chưa được gán giá trị ban đầu.
+  Chưa đúng với 1 số trường hợp do biến `maxPosition, minPosition` chưa được gán giá trị ban đầu.
 
-      Lỗi.
+  Lỗi.
 
-      ![lỗi biến chưa được gán](./imgs/dongnguyen.png).
+  ![lỗi biến chưa được gán](images/dongnguyen.png).
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-             var array = [1, 4, -3, 4, 5, 6];
-            var max;
-            var min;
-            var indexMax = 0;
-            var indexMin = 0;
-            function isArrayInteger(array) {
-            return array.every((items) => items % 1 === 0);
-            }
-            if (Array.isArray(array) && array.length > 0 && isArrayInteger(array)) {
-                  max = array[0];
-                  min = array[0];
-                  for (let i = 0; i < array.length; i++) {
-                  if (max < array[i]) {
-                  max = array[i];
-                  indexMax = i;
-                  }
-                  if (min > array[i]) {
-                  min = array[i];
-                  indexMin = i;
-                  }
-                  }
-                  console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
-                  console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
-            }else{
-            console.log("đầu vào không hợp lệ");
-            }
-
-      ```
+  ```javascript
+  var array = [1, 4, -3, 4, 5, 6];
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  function isArrayInteger(array) {
+    return array.every((items) => items % 1 === 0);
+  }
+  if (Array.isArray(array) && array.length > 0 && isArrayInteger(array)) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i < array.length; i++) {
+      if (max < array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min > array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log("đầu vào không hợp lệ");
+  }
+  ```
 
 ---
 
 - [x] Bài 2: Bài làm tốt \*.
 
-      Có thể Tối ưu lại hàm `isPrime()`.
+  Có thể Tối ưu lại hàm `isPrime()`.
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-      function isPrime(n) {
-      if (n <= 1) return false;
-      if (n <= 3) return true;
-      if (n % 2 === 0 || n % 3 === 0) return false;
-      for (let i = 5; i * i <= n; i += 6) {
+  ```javascript
+  function isPrime(n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (let i = 5; i * i <= n; i += 6) {
       if (n % i === 0 || n % (i + 2) === 0) return false;
-      }
-      return true;
-      }
-      ```
+    }
+    return true;
+  }
+  ```
 
 ---
 
 - [x] Bài 3: Bài làm tốt.
 
-      Sai đầu ra khi mảng `listNumber.length === 0` in ra `mảng rỗng` chứa không phải là `Không có phần tử nào trong mảng trùng nhau`.
+  Sai đầu ra khi mảng `listNumber.length === 0` in ra `mảng rỗng` chứa không phải là `Không có phần tử nào trong mảng trùng nhau`.
 
 ---
 
 - [x] Bài 4: Bài làm chưa tốt.
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-       function sortArray(arr, addElement) {
-            arr.sort((a, b) => a - b);
-            for (var i = 0; i < arr.length ; i++) {
-                  if (arr[i] > addElement) {
-                        break;
-                  }
-            }
-            arr.splice(i, 0, addElement);
-            return arr;
-            }
-      var array = [1,2,5,4];
-      var element = 3;
-      console.log(sortArray(array,element));
-      ```
+  ```javascript
+  function sortArray(arr, addElement) {
+    arr.sort((a, b) => a - b);
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] > addElement) {
+        break;
+      }
+    }
+    arr.splice(i, 0, addElement);
+    return arr;
+  }
+  var array = [1, 2, 5, 4];
+  var element = 3;
+  console.log(sortArray(array, element));
+  ```
 
 ---
 
@@ -1004,129 +991,126 @@
 
 - [x] Bài 1:
 
-      Chưa Kiểm tra mảng có phải mảng số nguyên  hay không.
+  Chưa Kiểm tra mảng có phải mảng số nguyên hay không.
 
-      Không lên sử dụng hàm trong bài này.
+  Không lên sử dụng hàm trong bài này.
 
-      Đề Xuất Lại.
+  Đề Xuất Lại.
 
-      ```javascript
-            var array = [1, 4, -3, 4, 5, 6];
-            var max;
-            var min;
-            var indexMax = 0;
-            var indexMin = 0;
-            function isArrayInteger(array) {
-            return array.every((items) => items % 1 === 0);
-            }
-            if (Array.isArray(array) && array.length > 0 && isArrayInteger(array)) {
-                  max = array[0];
-                  min = array[0];
-                  for (let i = 0; i < array.length; i++) {
-                  if (max < array[i]) {
-                  max = array[i];
-                  indexMax = i;
-                  }
-                  if (min > array[i]) {
-                  min = array[i];
-                  indexMin = i;
-                  }
-                  }
-                  console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
-                  console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
-            }else{
-            console.log("đầu vào không hợp lệ");
-            }
-
-      ```
+  ```javascript
+  var array = [1, 4, -3, 4, 5, 6];
+  var max;
+  var min;
+  var indexMax = 0;
+  var indexMin = 0;
+  function isArrayInteger(array) {
+    return array.every((items) => items % 1 === 0);
+  }
+  if (Array.isArray(array) && array.length > 0 && isArrayInteger(array)) {
+    max = array[0];
+    min = array[0];
+    for (let i = 0; i < array.length; i++) {
+      if (max < array[i]) {
+        max = array[i];
+        indexMax = i;
+      }
+      if (min > array[i]) {
+        min = array[i];
+        indexMin = i;
+      }
+    }
+    console.log(`giá trị max là : ${max} vị trí index ${indexMax}`);
+    console.log(`giá trị min là : ${min} vị trí index ${indexMin}`);
+  } else {
+    console.log("đầu vào không hợp lệ");
+  }
+  ```
 
 ---
 
 - [x] Bài 2: Bài làm chưa tốt.
 
-      Sai yêu cầu đề bài , đề bài là đầu vào là 1 mảng số nguyên tính trung bình các số nguyên tố trong mảng chứa không phải đầu vào là n tìm số nguyên trong khoảng từ [1, n].
+  Sai yêu cầu đề bài , đề bài là đầu vào là 1 mảng số nguyên tính trung bình các số nguyên tố trong mảng chứa không phải đầu vào là n tìm số nguyên trong khoảng từ [1, n].
 
-      Đề Xuất Lại.
+  Đề Xuất Lại.
 
-      ```javascript
-      function isPrime(n) {
-      if (n <= 1) return false;
-      if (n <= 3) return true;
-      if (n % 2 === 0 || n % 3 === 0) return false;
-      for (let i = 5; i * i <= n; i += 6) {
+  ```javascript
+  function isPrime(n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (let i = 5; i * i <= n; i += 6) {
       if (n % i === 0 || n % (i + 2) === 0) return false;
+    }
+    return true;
+  }
+  var array = [1, 2, 3, 4, 5, 6, 7, 8, 6, 4];
+  var count = 0;
+  var sum = 0;
+  if (Array.isArray(array)) {
+    for (let i = 0; i < array.length; i++) {
+      if (isPrime(array[i])) {
+        sum += array[i];
+        count++;
       }
-      return true;
-      }
-      var array = [1, 2, 3, 4, 5, 6, 7, 8, 6, 4];
-      var count = 0;
-      var sum = 0;
-      if (Array.isArray(array)) {
-      for (let i = 0; i < array.length; i++) {
-            if (isPrime(array[i])) {
-            sum += array[i];
-            count++;
-            }
-            }
-            if (count === 0) {
-            console.log(" không có số nguyên tố ");
-            } else {
-            console.log(`Trung bình các số nguyên tố là : ${sum / count}`);
-      }
-      }else{
-      console.log("đầu vào không hợp lệ");
-      }
-
-
-      ```
+    }
+    if (count === 0) {
+      console.log(" không có số nguyên tố ");
+    } else {
+      console.log(`Trung bình các số nguyên tố là : ${sum / count}`);
+    }
+  } else {
+    console.log("đầu vào không hợp lệ");
+  }
+  ```
 
 ---
 
 - [x] Bài 3:
 
-      Sai tên biến `aar` -> `arr`.
+  Sai tên biến `aar` -> `arr`.
 
-      Sai trường hợp phần tử trong mảng chứa giá trị 0.
+  Sai trường hợp phần tử trong mảng chứa giá trị 0.
 
-      Lỗi.
+  Lỗi.
 
-      ![Alt text](./imgs/nguyenngochung.png).
+  ![Alt text](images/nguyenngochung.png).
 
-      Đề Xuất.
+  Đề Xuất.
 
-      ```javascript
-      var arr = [1, 1, 3, -4, 3, 5, 6, 3];
-      if (arr.length !== 0) {
-      var result = arr.filter((item, index) => arr.indexOf(item) === index);
-      } else {
-      console.log(` Mảng không có phần tử nào!`);
-      }
+  ```javascript
+  var arr = [1, 1, 3, -4, 3, 5, 6, 3];
+  if (arr.length !== 0) {
+    var result = arr.filter((item, index) => arr.indexOf(item) === index);
+  } else {
+    console.log(` Mảng không có phần tử nào!`);
+  }
 
-      console.log(result);
-      ```
+  console.log(result);
+  ```
 
 ---
 
 - [x] Bài 4: Bài làm chưa tốt.
 
-      Sai đề bài sắp xếp xong rồi mới chèn , chứ không phải chèn xong mới sắp xếp.
-      Đề Xuất.
+  Sai đề bài sắp xếp xong rồi mới chèn , chứ không phải chèn xong mới sắp xếp.
+  Đề Xuất.
 
-      ```javascript
-       function sortArray(arr, addElement) {
-            arr.sort((a, b) => a - b);
-            for (var i = 0; i < arr.length ; i++) {
-                  if (arr[i] > addElement) {
-                        break;
-                  }
-            }
-            arr.splice(i, 0, addElement);
-            return arr;
-            }
-      var array = [1,2,5,4];
-      var element = 3;
-      console.log(sortArray(array,element));
-      ```
+  ```javascript
+  function sortArray(arr, addElement) {
+    arr.sort((a, b) => a - b);
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] > addElement) {
+        break;
+      }
+    }
+    arr.splice(i, 0, addElement);
+    return arr;
+  }
+  var array = [1, 2, 5, 4];
+  var element = 3;
+  console.log(sortArray(array, element));
+  ```
 
 ---
 
@@ -1256,8 +1240,8 @@
   **Quy luật 6K+-1**:
 
   ```shell
-  5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
-  13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+  5 = 6 * 1 - 1    7 = 6 * 1 + 1    11 = 6 * 1 - 1
+  13 = 6 * 1 + 1    17 = 6 * 3 - 1      19 = 6 * 3 + 1
   ```
 
   Đề xuất sửa thành:
