@@ -49,9 +49,10 @@ console.log(price.getCurrency(&quot;đ&quot;));
 <pre><code class="language-javascript">var categoriesCopy = [...categories];
 </code></pre>
 <p>Chưa kiểm tra đầu vào không phải array:</p>
-<pre><code class="language-javascript">var categories = &quot;dayKhongPhaiArray&quot;
+<pre><code class="language-javascript">var categories = &quot;dayKhongPhaiArray&quot;;
 function getNestedArr(categories, parentId = 0) {
-  if(!Array.isArray(categories) || categories.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  if (!Array.isArray(categories) || categories.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
   // code...
 }
 console.log(getNestedArr(categories));
@@ -87,7 +88,7 @@ console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
 <p>Nên đưa prototype vào Object thay vì String.</p>
 <p>Nên kiểm tra đầu vào có thể parse về số không</p>
 <pre><code class="language-javascript">Object.prototype.getCurrency = function (unit) {
-  if(!+this) return &quot;Not a Number&quot;;
+  if (!+this) return &quot;Not a Number&quot;;
   var numString = this.toString().replace(/\D/g, &quot;&quot;);
   var formattedNumber = numString.replace(/\B(?=(\d{3})+(?!\d))/g, &quot;,&quot;);
   return formattedNumber + &quot; &quot; + unit;
@@ -101,9 +102,10 @@ console.log(price.getCurrency(&quot;đ&quot;));
 <p>[x] [Bài 3]</p>
 <p>Bài làm rất tốt*</p>
 <p>Chưa kiểm tra đầu vào không phải array:</p>
-<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;;
 function buildNestedStructure(array, parent = 0) {
-  if(!Array.isArray(array) || array.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
   // code...
 }
 var nestedStructure = buildNestedStructure(data);
@@ -118,13 +120,13 @@ console.log(JSON.stringify(nestedStructure, null, 2));
 <pre><code class="language-js">Array.prototype.reduce2 = function (callback, initialValue) {
   let result = initialValue !== undefined ? initialValue : this[0];
   let startIndex = initialValue !== undefined ? 0 : 1;
-  for (let i = startIndex; i &lt; this.length; i++) 
+  for (let i = startIndex; i &lt; this.length; i++)
     result = callback(result, this[i], i, this);
   return result;
-}
+};
 var numbers = [1, 2, 3, 4, 5];
-var total = numbers.reduce2((a, b) =&gt;  a + b);
-console.log(total); 
+var total = numbers.reduce2((a, b) =&gt; a + b);
+console.log(total);
 </code></pre>
 <hr>
 </li>
@@ -171,9 +173,10 @@ console.log(price.getCurrency(&quot;đ&quot;));
 <p>[x] [Bài 3]</p>
 <p>Bài làm rất tốt*</p>
 <p>Chưa kiểm tra đầu vào không phải array:</p>
-<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;;
 function convertToNestedArray(array, parent = 0) {
-  if(!Array.isArray(array) || array.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
   // code...
 }
 var nestedArr = convertToNestedArray(data);
@@ -213,9 +216,10 @@ console.log(total([9, &quot;2&quot;, &quot;1&quot;]));
 <p>[x] [Bài 3]</p>
 <p>Bài làm tốt*</p>
 <p>Chưa kiểm tra đầu vào không phải array:</p>
-<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;;
 function convertToNestedArray(array, parent = 0) {
-  if(!Array.isArray(array) || array.length === 0 ) return &quot;Đầu vào không hợp lệ&quot;
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
   // code...
 }
 var nestedArr = convertToNestedArray(data);

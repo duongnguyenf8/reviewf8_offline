@@ -56,12 +56,13 @@
   var categoriesCopy = [...categories];
   ```
 
-  Chưa kiểm tra đầu vào không phải array: 
+  Chưa kiểm tra đầu vào không phải array:
 
   ```javascript
-  var categories = "dayKhongPhaiArray"
+  var categories = "dayKhongPhaiArray";
   function getNestedArr(categories, parentId = 0) {
-    if(!Array.isArray(categories) || categories.length === 0 ) return "Đầu vào không hợp lệ"
+    if (!Array.isArray(categories) || categories.length === 0)
+      return "Đầu vào không hợp lệ";
     // code...
   }
   console.log(getNestedArr(categories));
@@ -72,7 +73,6 @@
 - [x] [Bài 4]
 
   Bài làm rất tốt\*
-
 
   ***
 
@@ -104,11 +104,10 @@
   Nên đưa prototype vào Object thay vì String.
 
   Nên kiểm tra đầu vào có thể parse về số không
-  
 
   ```javascript
   Object.prototype.getCurrency = function (unit) {
-    if(!+this) return "Not a Number";
+    if (!+this) return "Not a Number";
     var numString = this.toString().replace(/\D/g, "");
     var formattedNumber = numString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return formattedNumber + " " + unit;
@@ -123,12 +122,13 @@
 
   Bài làm rất tốt\*
 
-  Chưa kiểm tra đầu vào không phải array: 
+  Chưa kiểm tra đầu vào không phải array:
 
   ```javascript
-  var data = "dayKhongPhaiArray"
+  var data = "dayKhongPhaiArray";
   function buildNestedStructure(array, parent = 0) {
-    if(!Array.isArray(array) || array.length === 0 ) return "Đầu vào không hợp lệ"
+    if (!Array.isArray(array) || array.length === 0)
+      return "Đầu vào không hợp lệ";
     // code...
   }
   var nestedStructure = buildNestedStructure(data);
@@ -147,13 +147,13 @@
   Array.prototype.reduce2 = function (callback, initialValue) {
     let result = initialValue !== undefined ? initialValue : this[0];
     let startIndex = initialValue !== undefined ? 0 : 1;
-    for (let i = startIndex; i < this.length; i++) 
+    for (let i = startIndex; i < this.length; i++)
       result = callback(result, this[i], i, this);
     return result;
-  }
+  };
   var numbers = [1, 2, 3, 4, 5];
-  var total = numbers.reduce2((a, b) =>  a + b);
-  console.log(total); 
+  var total = numbers.reduce2((a, b) => a + b);
+  console.log(total);
   ```
 
   ***
@@ -167,7 +167,6 @@
   Bài làm tốt\*
 
   Các số được truyền dưới dạng String cần được parse thử về số, nếu không phải NaN vẫn cần được tính.
-
 
   ```js
   var total = (args) =>
@@ -189,7 +188,6 @@
   Chưa kiểm tra trường hợp NaN ở String
 
   Có thể tham khảo bài của [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22) sau khi đã chỉnh sửa.
-  
 
   ```javascript
   var price = "fsdfdsfds";
@@ -212,12 +210,13 @@
 
   Bài làm rất tốt\*
 
-  Chưa kiểm tra đầu vào không phải array: 
+  Chưa kiểm tra đầu vào không phải array:
 
   ```javascript
-  var data = "dayKhongPhaiArray"
+  var data = "dayKhongPhaiArray";
   function convertToNestedArray(array, parent = 0) {
-    if(!Array.isArray(array) || array.length === 0 ) return "Đầu vào không hợp lệ"
+    if (!Array.isArray(array) || array.length === 0)
+      return "Đầu vào không hợp lệ";
     // code...
   }
   var nestedArr = convertToNestedArray(data);
@@ -244,7 +243,6 @@
 
   Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.
 
-
   ```js
   var total = (args) =>
     args.every(Number) ? args.reduce((a, b) => +a + +b) : "Invalid Data!";
@@ -258,19 +256,19 @@
 
   Bài làm rất tốt\*
 
-
   ***
 
 - [x] [Bài 3]
 
   Bài làm tốt\*
 
-  Chưa kiểm tra đầu vào không phải array: 
+  Chưa kiểm tra đầu vào không phải array:
 
   ```javascript
-  var data = "dayKhongPhaiArray"
+  var data = "dayKhongPhaiArray";
   function convertToNestedArray(array, parent = 0) {
-    if(!Array.isArray(array) || array.length === 0 ) return "Đầu vào không hợp lệ"
+    if (!Array.isArray(array) || array.length === 0)
+      return "Đầu vào không hợp lệ";
     // code...
   }
   var nestedArr = convertToNestedArray(data);
@@ -299,7 +297,6 @@
 
   Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.
 
-
   ```js
   var total = (args) =>
     args.every(Number) ? args.reduce((a, b) => +a + +b) : "Invalid Data!";
@@ -317,7 +314,6 @@
 
   Yêu cầu đề bài là truyền currency vào để làm phần đuôi chứ không phải lấy theo quốc gia.
 
-
   ***
 
 - [x] [Bài 3]
@@ -328,10 +324,9 @@
 
   Với parentId mặc định là 0, có thể gán trực tiếp vào tham số của hàm `nestedArray`
 
-  Chưa kiểm tra đầu vào là mảng rỗng. 
+  Chưa kiểm tra đầu vào là mảng rỗng.
 
   Nên đưa phần kiểm tra Array vào trong hàm, vì không phải hàm này sẽ gọi luôn hoặc trên thực tế có thể sẽ không gọi trên cùng 1 file...
-
 
   ***
 
@@ -353,7 +348,6 @@
 
   Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.
 
-
   ```js
   var total = (args) =>
     args.every(Number) ? args.reduce((a, b) => +a + +b) : "Invalid Data!";
@@ -369,9 +363,7 @@
 
   Với yêu cầu đề bài, các số phải phân cách bằng dấu **","**
 
-  
   Có thể tham khảo bài của [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22) sau khi đã chỉnh sửa.
-  
 
   ```javascript
   var price = "fsdfdsfds";
@@ -388,7 +380,6 @@
   console.log(price.getCurrency("đ"));
   ```
 
-
   ***
 
 - [x] [Bài 3]
@@ -398,7 +389,6 @@
   Chưa xóa các key parent giống yêu cầu đề bài.
 
   Chưa kiểm tra đầu vào không phải mảng hoặc là mảng rỗng.
-
 
   ***
 
@@ -422,7 +412,6 @@
 
   Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.
 
-
   ```js
   var total = (args) =>
     args.every(Number) ? args.reduce((a, b) => +a + +b) : "Invalid Data!";
@@ -437,13 +426,12 @@
   Bài làm KHÔNG tốt\*
 
   Với yêu cầu đề bài, các số phải phân cách bằng dấu **","**
-  
+
   Yêu cầu đề bài là truyền currency vào để làm phần đuôi chứ không phải lấy theo quốc gia.
 
   Với bài làm này, không thể truyền bất cứ một đuôi nào khác ngoài `"đ"`
-  
+
   Có thể tham khảo bài của [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22) sau khi đã chỉnh sửa.
-  
 
   ```javascript
   var price = "fsdfdsfds";
@@ -460,13 +448,11 @@
   console.log(price.getCurrency("đ"));
   ```
 
-
   ***
 
 - [x] [Bài 3]
 
   **Chưa làm**
-
 
   ***
 
@@ -493,7 +479,6 @@
   Có thể tham khảo cách làm ngắn gọn hơn, sử dụng `Arrow Function`(Học sau)
 
   Nếu đã truyền số Infinity thì có vẻ là cố tình, nên cũng không cần check mà để hàm tính toán tự tính.
-
 
   ```js
   var total = (args) =>
@@ -563,7 +548,8 @@
 
   Chưa đúng yêu cầu đề bài, khi truyền **"đ"** như đề bài thì bài làm đang lỗi.
 
-  Với bài tập này cần làm xử lý chuỗi. 
+  Với bài tập này cần làm xử lý chuỗi.
+
   ***
 
 - [x] [Bài 3]
@@ -586,7 +572,7 @@
 
 ## [Trung Le](https://github.com/Trungdeptraii/16-08-2023-Le-Van_Trung-Day22/blob/main/js/index.js)
 
-  **Chú ý format code**
+**Chú ý format code**
 
 - [x] [Bài 1]
 
@@ -613,10 +599,10 @@
 
   Với yêu cầu đề bài, các số phải phân cách bằng dấu **","**
 
-  Nên đưa vào Object và kiểm tra kiểu dữ liệu string, number. 
+  Nên đưa vào Object và kiểm tra kiểu dữ liệu string, number.
 
   Có thể tham khảo bài của [Luu Anh Quan](https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day22) sau khi đã chỉnh sửa.
-  
+
   ```javascript
   var price = "fsdfdsfds";
   Object.prototype.getCurrency = function (unit) {
