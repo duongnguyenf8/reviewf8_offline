@@ -1,0 +1,821 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day3</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương đánh giá bài học viên</h1>
+<h2><a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">NTiến Đạt</a></h2>
+<pre><code>Sớm nhất.
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Phần icon hơi to hơn bản gốc</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần <code>title</code> chính của <code>section</code> này nên sử dụng thẻ <code>h2</code> để bao bọc.</p>
+<pre><code class="language-html">&lt;header class=&quot;heading&quot;&gt;WHAT OUR CLIENTS SAY&lt;/header&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;header class=&quot;heading&quot;&gt;
+  &lt;h2&gt;WHAT OUR CLIENTS SAY&lt;/h2&gt;
+&lt;/header&gt;
+</code></pre>
+<p>Thẻ <code>article</code> sử dụng để nói về một phần nội dung độc lập có ý nghĩa nhất định, có thể tái sử dụng được. Vì vậy, mỗi<code>article</code> nên có một <code>heading</code> để nói về tiêu đề chính của phần nội dung đó.</p>
+<pre><code class="language-html">&lt;article class=&quot;client-item&quot;&gt;
+  &lt;div class=&quot;client-avt&quot;&gt;
+    &lt;img src=&quot;./assets/img/fox.jpg&quot; alt=&quot;avatar&quot; class=&quot;client-img&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;client-wrap&quot;&gt;
+    &lt;p class=&quot;client-desc&quot;&gt;
+      &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+      nesciunt odit facere in quibusdam harum vitae aliquid ullam eveniet
+      sint.&quot;
+    &lt;/p&gt;
+    &lt;p class=&quot;client-author&quot;&gt;John Doe&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;article class=&quot;client-item&quot;&gt;
+  &lt;div class=&quot;client-avt&quot;&gt;
+    &lt;img src=&quot;./assets/img/fox.jpg&quot; alt=&quot;avatar&quot; class=&quot;client-img&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;client-wrap&quot;&gt;
+    &lt;p class=&quot;client-desc&quot;&gt;
+      &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+      nesciunt odit facere in quibusdam harum vitae aliquid ullam eveniet
+      sint.&quot;
+    &lt;/p&gt;
+    &lt;h3 class=&quot;client-author&quot;&gt;John Doe&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tham khảo thêm bài của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<pre><code class="language-html">&lt;div class=&quot;section-desc&quot;&gt;
+  &lt;p&gt;8th floor CI.Tower&lt;/p&gt;
+  &lt;p&gt;Comiche Road, PO Box 93894&lt;/p&gt;
+  &lt;p&gt;Ab Dhabi, United Arab Emirates&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section-contact&quot;&gt;
+  &lt;p&gt;Tel:&lt;a target=&quot;_blank&quot; href=&quot;tel:+971 2657 2300&quot;&gt;+971 2657 2300&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;Fax:&lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;+971 2657 2323&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;Email:&lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;abc2003@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;ul class=&quot;section-desc&quot;&gt;
+  &lt;li&gt;8th floor CI.Tower&lt;/li&gt;
+  &lt;li&gt;Comiche Road, PO Box 93894&lt;/li&gt;
+  &lt;li&gt;Ab Dhabi, United Arab Emirates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;section-contact&quot;&gt;
+  &lt;li&gt;Tel:&lt;a target=&quot;_blank&quot; href=&quot;tel:+971 2657 2300&quot;&gt;+971 2657 2300&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Fax:&lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;+971 2657 2323&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Email:&lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Ntiendat-2k3/F8-FullStack/tree/main/BT_B3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.</li>
+</ul>
+<h2><a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Sau khi sáng tạo thì xấu quá, không nhìn nổi.</p>
+<p>Đóng thẻ sai:</p>
+<pre><code class="language-html">&lt;p&gt;
+  321 Awesome Street &lt;br /&gt;
+  New York, NY 17022
+&lt;/&quot;cho nay chua co dong&quot;&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Sai font-weight so với bản gốc. Phần content phải nhạt hơn phần tên user.</p>
+<p>Font chữ quá khó đọc.</p>
+<p>Thẻ <code>article</code> sử dụng để nói về một phần nội dung độc lập có ý nghĩa nhất định, có thể tái sử dụng được. Vì vậy, mỗi<code>article</code> nên có một <code>heading</code> để nói về tiêu đề chính của phần nội dung đó.</p>
+<pre><code class="language-html">&lt;heading&gt;Johnathan Doe&lt;/heading&gt;
+</code></pre>
+<p>Không có thẻ nào là <code>heading</code> cả.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h2&gt;Johnathan Doe&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên font chữ quá xấu, không đọc được.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Code không format.</p>
+<p>Phần chữ thông tin không đúng với mẫu. có vẻ font chữ đang đậm hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Font-weight của heading sai. Ở bản mẫu, font-weight ở phần chữ màu đen nhạt hơn phần chữ màu xanh.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng đừng cố sáng tạo, nhìn hơi xấu. Cần chú ý thêm vào cách sử dụng các thẻ sao cho đúng hơn.</li>
+</ul>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần input nhập email nên sử dụng thẻ <code>input</code> với <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng định dạng hay không.</p>
+<pre><code class="language-html">&lt;input type=&quot;text&quot; name=&quot;Your mail&quot; placeholder=&quot; Your Mail&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Chưa rõ phần chia 3 thẻ <code>div</code> bọc vào nhau để làm gì.</p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;img src=&quot;../../Assets/image/token.png&quot; alt=&quot;John Doe&quot; /&gt;
+      &lt;blockquote&gt;
+        &lt;p class=&quot;para quote&quot;&gt;
+          &lt;i
+            &gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+            dignissimos molestias, consequuntur delectus cupiditate sed
+            cumque.&amp;quot;&lt;/i
+          &gt;
+          &lt;br /&gt;
+          &lt;br /&gt;
+          &lt;strong&gt;John Doe&lt;/strong&gt;
+        &lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Phần tên user là một phần khác biệt, không nên bọc chung vào phần thẻ <code>p</code></p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;img src=&quot;../../Assets/image/token.png&quot; alt=&quot;John Doe&quot; /&gt;
+  &lt;blockquote&gt;
+    &lt;p class=&quot;para quote&quot;&gt;
+      &lt;i
+        &gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+        dignissimos molestias, consequuntur delectus cupiditate sed
+        cumque.&amp;quot;&lt;/i
+      &gt;
+    &lt;/p&gt;
+    &lt;h3&gt;John Doe&lt;/h3&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tham khảo bài của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+<p>Thẻ <code>br</code> chỉ được sử dụng để ngắt dòng trong đoạn văn, text. Không được sử dụng để ngắt dòng các phần tử, nếu muốn có thể sử dụng một thẻ block khác như <code>div</code>...</p>
+<pre><code class="language-html">&lt;input type=&quot;radio&quot; name=&quot;info&quot; id=&quot;admin&quot; value=&quot;admin&quot; required /&gt;
+&lt;label for=&quot;admin&quot;&gt; Admin &lt;/label&gt;
+&lt;br /&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Chưa rõ ý đồ của thẻ <code>div</code> ở đây:</p>
+<pre><code class="language-html">&lt;div&gt;&lt;h1&gt;ADS SECURITIES L.L.C.&lt;/h1&gt;&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần text <code>heading</code> trong <code>span</code> có <code>font-weight</code> đậm hơn mới đúng bản gốc.</p>
+<p>Phần className cần đặt cho dễ hiểu hơn : <code>but</code>, <code>but-fixed</code> =&gt; <code>btn</code>, <code>btn-fixed</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>* Lưu ý: Nên đưa các assets riêng cho từng bài vào các folder riêng. Không nên gộp chung vào một folder.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Vũ Thống</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Các thuộc tính này không có giá trị thì không nên cho vào:</p>
+<pre><code class="language-html">&lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+  &lt;option value=&quot;&quot;&gt;--Choose a server--&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+<p>Sai chính tả <code>Enginner</code> =&gt; <code>Engineer</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/pencilbsp/f8_offline/tree/main/CSS/btvn_buoi_03">Bài 5</a></p>
+<p>Bài làm tốt</p>
+<p>Phần title của một section nên sử dụng thẻ <code>heading</code> để bao bọc.</p>
+<pre><code class="language-html">&lt;p class=&quot;title&quot;&gt;Best &lt;strong&gt;Shared Hosting&lt;/strong&gt; Company&lt;/p&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;h2 class=&quot;title&quot;&gt;Best &lt;strong&gt;Shared Hosting&lt;/strong&gt; Company&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>* Sử dụng, chia folder quá tệ, không rõ ràng, không có cấu trúc.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 2</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Mỗi <code>article</code> nên có một <code>heading</code> để nói về tiêu đề chính của phần nội dung đó.</p>
+<pre><code class="language-html">&lt;article class=&quot;feeback-item&quot;&gt;
+  &lt;img src=&quot;./Assets/Images/Anh-giot-nuoc.jpg&quot; alt=&quot;&quot; class=&quot;avatar&quot; /&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;blockquote&gt;
+      &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+      corrupti a eveniet explicabo possimus repellendus? Cupiditate nihil
+      dolor aspernatur quae fugiat.&quot;
+    &lt;/blockquote&gt;
+    &lt;p class=&quot;name&quot;&gt;John Doe&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;article class=&quot;feeback-item&quot;&gt;
+  &lt;img src=&quot;./Assets/Images/Anh-giot-nuoc.jpg&quot; alt=&quot;&quot; class=&quot;avatar&quot; /&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;blockquote&gt;
+      &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+      corrupti a eveniet explicabo possimus repellendus? Cupiditate nihil
+      dolor aspernatur quae fugiat.&quot;
+    &lt;/blockquote&gt;
+    &lt;h3 class=&quot;name&quot;&gt;John Doe&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Mỗi 1 id chỉ được tương ứng với duy nhất một phần tử.</p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;label&gt;
+  &lt;input id=&quot;role&quot; /&gt;
+  Admin
+&lt;/label&gt;
+&lt;label&gt;
+  &lt;input id=&quot;role&quot; /&gt;
+  Engineer
+&lt;/label&gt;
+&lt;label&gt;
+  &lt;input id=&quot;role&quot; /&gt;
+  Manager
+&lt;/label&gt;
+&lt;label&gt;
+  &lt;input id=&quot;role&quot; /&gt;
+  Guest
+&lt;/label&gt;
+...
+&lt;label&gt;
+  &lt;input id=&quot;sign-on&quot; /&gt;
+  Mail
+&lt;/label&gt;
+
+&lt;label&gt;
+  &lt;input id=&quot;sign-on&quot; /&gt;
+  Payroll
+&lt;/label&gt;
+
+&lt;label&gt;
+  &lt;input id=&quot;sign-on&quot; /&gt;
+  Self-service
+&lt;/label&gt;
+</code></pre>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần text này được hiển thị như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<pre><code class="language-html">&lt;p class=&quot;info-contact&quot;&gt;
+  8th floor. CI Tower&lt;br /&gt;Corniche road. PO Box 93894&lt;br /&gt;Abu Dhabi, United
+  Arab Emirates
+&lt;/p&gt;
+&lt;p class=&quot;info-contact&quot;&gt;
+  Tel: +971 2 657 2300&lt;br /&gt;Fax: +971 2 657 2323&lt;br /&gt;Email:
+  &lt;a
+    target=&quot;_blank&quot;
+    href=&quot;mailto:name@ads.securities.com?subject=subject text&quot;
+    &gt;name@ads.securities.com&lt;/a
+  &gt;
+&lt;/p&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;ul class=&quot;info-contact&quot;&gt;
+  &lt;li&gt;8th floor. CI Tower&lt;/li&gt;
+  &lt;li&gt;Corniche road. PO Box 93894&lt;/li&gt;
+  &lt;li&gt;Abu Dhabi, United Arab Emirates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;info-contact&quot;&gt;
+  &lt;li&gt;Tel: +971 2 657 2300&lt;/li&gt;
+  &lt;li&gt;Fax: +971 2 657 2323&lt;/li&gt;
+  &lt;li&gt;
+    Email:
+    &lt;a
+      target=&quot;_blank&quot;
+      href=&quot;mailto:name@ads.securities.com?subject=subject text&quot;
+      &gt;name@ads.securities.com&lt;/a
+    &gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Phần font-size như này rất khó để tính toán: <code>font-size: 65.2%;</code></p>
+<p>Đoạn code CSS hover này không rõ ý đồ:</p>
+</li>
+</ul>
+<pre><code class="language-css">.tab-item.active {
+  background-color: rgb(175, 150, 84);
+  color: white;
+}
+.tab-item.active:hover {
+  background-color: rgb(175, 150, 84);
+  color: white;
+}
+</code></pre>
+<p>Phần hover có transition là <code>0.8</code> quá chậm. Theo <a href="https://lawsofux.com/doherty-threshold/">lawsofux.com</a> thì thời gian tối ưu cho hover là <code>&lt;0.4s</code></p>
+<p>Khi hover thì có hiệu ứng nhưng khi un-hover không có nên bị giật.</p>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/PhiVanDuc/F8-Fullstack-K3/tree/main/Day-3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý đến quy tắc semantic trong HTML tốt hơn để làm cho code dễ đọc hơn.</li>
+</ul>
+<h2><a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Trần Xuân Bách</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Có layout nhưng chia quá xấu, thiếu chỉn chu</p>
+<p>Đã code CSS trong internal thì không nên code ở inline nữa.</p>
+<p>Cần chú ý thêm vào phần meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Cần chú ý thêm vào phần meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+<p>Đã code CSS trong internal thì không nên code ở inline nữa.</p>
+<p>Phần tên user là một phần khác biệt, không nên bọc chung vào phần thẻ <code>p</code></p>
+<pre><code class="language-html">&lt;p style=&quot;color: gray; margin-left: 10px&quot;&gt;
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quidem quia
+  delectus culpa repellendus asperiores libero perspiciatis iure facilis id,
+  nemo, odio natus sit labore! A ad non ut facere iure atque sunt quod eos.
+  Omnis, labore! Vel quos facere odit tempora, illum qui maxime consequuntur
+  ipsam laudantium nihil molestias consequatur porro, asperiores inventore quia
+  cumque fugiat placeat natus aut!
+  &lt;br /&gt;
+  &lt;h3 style=&quot;padding: 6px&quot;&gt;
+    John Bar
+  &lt;/h3&gt;
+&lt;/p&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;p style=&quot;color: gray; margin-left: 10px&quot;&gt;
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quidem quia
+  delectus culpa repellendus asperiores libero perspiciatis iure facilis id,
+  nemo, odio natus sit labore! A ad non ut facere iure atque sunt quod eos.
+  Omnis, labore! Vel quos facere odit tempora, illum qui maxime consequuntur
+  ipsam laudantium nihil molestias consequatur porro, asperiores inventore
+  quia cumque fugiat placeat natus aut!
+&lt;/p&gt;
+&lt;span style=&quot;padding: 6px&quot;&gt;
+  &lt;b&gt;John Bar&lt;/b&gt;
+&lt;/span&gt;
+</code></pre>
+<p>Phần thuộc tính <code>alt</code> trong <code>img</code> sử dụng để mô tả hình ảnh đó là gì. Nên miêu tả tốt, không nên chỉ để là <code>error</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Cần chú ý thêm vào phần meta title vì chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+<p>Nên chú ý thêm vào cách đặt tên className sao cho đúng chuẩn hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Sai layout bản mẫu, các phần thông tin cần cách một khoảng so với lề trái.</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<pre><code class="language-html">&lt;span&gt;
+  &lt;p&gt;8th floor HG Tower&lt;/p&gt;
+  &lt;p&gt;Manta Road, PO Box 99823&lt;/p&gt;
+  &lt;p&gt;Abu Dhabi, United Arab Emirates&lt;/p&gt;
+&lt;/span&gt;
+&lt;span&gt;
+  &lt;p&gt;Tel: +971 23345 2044&lt;/p&gt;
+  &lt;p&gt;Fax: +971 8345 71641&lt;/p&gt;
+  &lt;p&gt;Email &lt;u style=&quot;color: rgb(199, 153, 93)&quot;&gt;ads@sercurities.com&lt;/u&gt;&lt;/p&gt;
+&lt;/span&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;8th floor HG Tower&lt;/li&gt;
+  &lt;li&gt;Manta Road, PO Box 99823&lt;/li&gt;
+  &lt;li&gt;Abu Dhabi, United Arab Emirates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tel: +971 23345 2044&lt;/li&gt;
+  &lt;li&gt;Fax: +971 8345 71641&lt;/li&gt;
+  &lt;li&gt;Email &lt;u style=&quot;color: rgb(199, 153, 93)&quot;&gt;ads@sercurities.com&lt;/u&gt;&lt;/p&gt;
+&lt;/ul&gt;
+</code></pre>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm tốt</p>
+<p>Phần font-weight không chuẩn so với bản gốc. Phần chữ màu đen nhạt hơn phần chữ màu xanh.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý chỉn chu giao diện hơn, không nên ẩu.</li>
+</ul>
+<h2><a href="https://github.com/Dong205/F8-FullstackOffline-K3/tree/main/Day%203">Nguyễn Bá Đông</a></h2>
+<h2><a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Vương Đông</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 1</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Hiện nay, có rất nhiều website đã tách phần <code>CONTACT</code> ra một site riêng. Trong trường hợp đó các thẻ <code>heading</code> nên đẩy lên 1 bậc ưu tiên nữa. <code>h2</code> =&gt; <code>h1</code>, <code>h3</code> =&gt; <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần bảng chưa được căn giữa.</p>
+<p>Có thể sử dụng <code>margin</code> để căn giữa</p>
+<pre><code class="language-css">table {
+  margin: 0 auto;
+}
+</code></pre>
+<p>Không nên nhảy cóc <code>heading</code> từ <code>h1</code> =&gt; <code>h3</code> vì việc làm đó là sai quy tắc semantic trong HTML.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thanh <code>navigation</code> chuyển hướng nên sử dụng thẻ <code>nav</code> thay vì <code>div</code></p>
+<pre><code class="language-html">&lt;div class=&quot;contry-color&quot;&gt;
+  &lt;p&gt;United State&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;London&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Singapore&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;p&gt;Hong Kong&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;United State&lt;/li&gt;
+    &lt;li&gt;London&lt;/li&gt;
+    &lt;li&gt;Singapore&lt;/li&gt;
+    &lt;li&gt;Hong Kong&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<pre><code class="language-html">&lt;div&gt;
+  &lt;p&gt;Tel: +97123456&lt;/p&gt;
+  &lt;p&gt;Fax: +9712345567&lt;/p&gt;
+  &lt;p&gt;Email: &lt;a class=&quot;email-color&quot; href=&quot;#&quot;&gt;abc1234@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tel: +97123456&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fax: +9712345567&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Email: &lt;a class=&quot;email-color&quot; href=&quot;#&quot;&gt;abc1234@gmail.com&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.</li>
+</ul>
+<h2><a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Trần Đình Trọng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Sử dụng thẻ <code>br</code> để ngắt dòng giữa các phần tử, việc đó là không đúng.</p>
+<p>Layout phần thông tin đang bị lệch so với bài mẫu.</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần main chưa căn giữa các phần tử.</p>
+<p>Hình ảnh chưa xử lý để thành hình tròn</p>
+<p>Phần tên user là một phần khác biệt, không nên bọc chung vào phần thẻ <code>p</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 3</a></p>
+<p>Sử dụng sai thẻ form</p>
+<p>Layout đang sai so với bản mẫu</p>
+<p>Có thẻ tham khảo bài bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+<p>Bài này cần làm lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 4</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần thanh <code>navigation</code> chuyển hướng nên sử dụng thẻ <code>nav</code> để bao bọc</p>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/trandinhtrongg/f8_fullstack_k3/tree/main/F8-offline/Day3">Bài 5</a></p>
+<p>Bài làm tốt</p>
+<p>Đường dẫn ảnh đang chưa chính xác</p>
+<pre><code class="language-html">&lt;img src=&quot;./img/img_190x50.png &quot; alt=&quot;&quot; /&gt;
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-html">&lt;img src=&quot;./img/img_190x50.png&quot; alt=&quot;&quot; /&gt;
+</code></pre>
+<p>Phần nút ở dưới là một button, không nên sử dụng <code>ul&gt;li&gt;a</code> để tạo</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.</li>
+</ul>
+<h2><a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Đỗ Tiến Khiêm</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 2</a></p>
+<p>Bài làm tốt *</p>
+<p>Không nên sử dung <code>&lt;br&gt;&lt;br&gt;</code> để cách dòng. việc đó nên sử dụng một thẻ block khác và một chút css để cách dòng.</p>
+<p>Phần này là để tạo một avatar, không phải là một đoạn văn gì. Chỉ nên sử dụng thẻ <code>span</code></p>
+<pre><code class="language-html">&lt;div class=&quot;customer-avatar&quot;&gt;
+  &lt;p&gt;H&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Đặt tên className chưa đúng. <code>.item</code> không phải một tên class đủ tường minh để thể hiện hàng. Thay vào đó, sử dụng <code>.row</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Hơi ẩu. Không có self-test.</p>
+<p>Không có thẻ nào là thẻ <code>Label</code></p>
+<pre><code class="language-html">&lt;label for=&quot;server&quot;&gt;Web server&lt;/label&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Hơi ẩu. Không có self-test.</p>
+<p>Không có thẻ nào là thẻ <code>P</code></p>
+<pre><code class="language-html">&lt;p&gt;
+  8th floor, CI Tower &lt;br /&gt;
+  Comiche Road, PO Box 93894 &lt;br /&gt;
+  Abu Dhabi, United Arab Emỉates
+&lt;/p&gt;
+</code></pre>
+<p>Phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<p>Nên chú ý tới thẻ meta title, chúng rất quan trọng trong SEO và trải nghiệm người dùng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tienkhiemkahp/F8/tree/main/homework/Day-3">Bài 5</a></p>
+<p>Bài làm tốt *</p>
+<p>Phần box màu xanh hiển thị một đoạn text. Nhưng không phải là một một đoạn văn. Nên sử dụng thẻ <code>span</code></p>
+<pre><code class="language-html">&lt;p&gt;190x50&lt;/p&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về các cách sử dụng thẻ đúng chỗ để đảm bảo semantic.</p>
+<p>* Lưu ý: Nên tách các bài tập và file css thành một folder riêng, coi mỗi bài là một project riêng.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Minh Pham</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 1</a></p>
+<p>Bài làm tốt *</p>
+<p>Layout quá xấu so với bản gốc</p>
+<p>Các phần thông tin ở đây được thể hiện như một list. Nên sử dụng <code>ul&gt;li</code></p>
+<p>Hiện nay, có rất nhiều website đã tách phần <code>CONTACT</code> ra một site riêng. Trong trường hợp đó các thẻ <code>heading</code> nên đẩy lên 1 bậc ưu tiên nữa. <code>h2</code> =&gt; <code>h1</code>, <code>h3</code> =&gt; <code>h2</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 2</a></p>
+<p>Bài làm không tốt</p>
+<p>Sai layout hoàn toàn, sai chính tả. Nên làm lại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 3</a></p>
+<p>Bài làm tốt *</p>
+<p>Hơi ẩu. Không có format-code</p>
+<p>Có thể tham khảo câu hỏi của bạn <a href="https://fullstack.edu.vn/fullstack-nodejs/discussions/cach-tao-border-color-cho-the-input-type-radio-hoac-type-checkbox.html">Chi K1</a> để làm phần border cho checkbox và radio.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 4</a></p>
+<p>Bài làm quá ẩu. Làm như không làm.</p>
+<p>Code lại bài này.</p>
+<p>Phần map dài quá khiến cho phần content bị co lại nhiều</p>
+<p>Phần background trên navbar là background của box chứ không phải text.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Minh0314/F8-K3/tree/main/Day3">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Cần chú ý phần text heading có font-weight bé, chỉ có phần trong span là font-weight lớn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà: Bài làm hơi ẩu, cần chú ý đến layout nhiều hơn, chỉn chu hơn. Để hoàn thiện tốt hơn bài tập của mình.</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

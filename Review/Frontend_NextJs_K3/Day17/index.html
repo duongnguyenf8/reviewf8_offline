@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day17</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà lớp K3 - Frontend</h1>
+<h2><a href="https://github.com/countduck4819/f8-frontend/tree/main/Day17">Vũ Thành Khang</a></h2>
+<p><strong>Chưa có github pages</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Không thấy bài</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-17">Nguyễn Đức Hải</a></h2>
+<p><strong>Chưa có github pages</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Thay vì sử dụng setTimeout và đệ quy lại, có thể sử dụng setInterval với mục đích giống nhau và code rõ ràng hơn.</p>
+<p>Thay vì sử dụng style inline cho thẻ span, có thể add class và style bằng css sẽ dễ dàng hơn.</p>
+<p>Bản chất của bài là cắt chuỗi thành 3 phần, phần cần thiết sẽ thêm <code>span.highlight</code> vào.</p>
+<pre><code class="language-html">&lt;style&gt;
+  .highlight {
+    background-color: yellow;
+    color: red;
+    text-shadow: -0.2px -0.2px 0 red, 0.2px -0.2px 0 red, -0.2px 0.2px 0 red, 0.2px
+        0.2px 0 red;
+  }
+&lt;/style&gt;
+&lt;p class=&quot;content&quot;&gt;
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, amet.
+&lt;/p&gt;
+&lt;script&gt;
+  const $ = (tag) =&gt; document.querySelector(tag);
+  const saveContent = $(&quot;.content&quot;).innerText.trim();
+  let content = saveContent.split(&quot; &quot;),
+    i = 0;
+  function resetContent() {
+    $(&quot;.content&quot;).innerHTML = saveContent;
+    i = 0;
+    content = saveContent.split(&quot; &quot;);
+  }
+  function highlightWord() {
+    if (i &gt;= content.length) return resetContent();
+    for (let j = 0; j &lt; i; j++)
+      content[j] = content[j]
+        .replace('&lt;span class=&quot;highlight&quot;&gt;', &quot;&quot;)
+        .replace(&quot;&lt;/span&gt;&quot;, &quot;&quot;);
+    const span = document.createElement(&quot;span&quot;);
+    span.className = &quot;highlight&quot;;
+    span.innerText = content[i];
+    content[i] = span.outerHTML;
+    $(&quot;.content&quot;).innerHTML = content.join(&quot; &quot;);
+    i++;
+  }
+  setInterval(highlightWord, 500);
+&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
