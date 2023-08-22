@@ -163,7 +163,7 @@
 
   Bài làm chưa có gì để đánh giá.
 
-  Bài làm chưa có sự đầu tư vào làm bài tập về nhà. Nếu gặp khó khăn nên đặt câu hỏi để được trợ giúp.
+  Bài làm chưa có sự đầu tư vào làm `bài tập về nhà. Nếu gặp khó khăn nên đặt câu hỏi để được trợ giúp.
 
 ---
 

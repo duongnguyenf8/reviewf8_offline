@@ -1,0 +1,596 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day2</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương test bài học viên Backend NodeJS Day1</h1>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise.git">Nguyễn Minh Hiếu</a></h2>
+<pre><code>Sớm nhất *
+</code></pre>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Lỗi:</p>
+<pre><code class="language-js">total = 15000 + 5 * 13500 + (km - 5) * price;
+</code></pre>
+<p>Đúng phải là <code>4 * 13500</code> vì từ 1km đến 5km là 4km chứ không phải 5km.</p>
+<p>Góp ý</p>
+<ul>
+<li>
+<p>Khai báo biến <code>discount</code> nhưng lại không dùng đến cần tối ưu hơn.</p>
+</li>
+<li>
+<p>Nên check từ km &gt; 0 vì km &lt;= 0 đều tính là không hợp lệ.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Chưa check trường hợp n &lt; 0 và n = 0. Cần kiểm tra kỹ lưỡng các trường hợp.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt *.</p>
+<p>Cần bổ sung điều kiện n &lt;= 0.</p>
+<p>Các phép so sánh nên dùng toán tử <code>===</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tốt, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/MinhTeyer/F8-BackEnd-K1/tree/main/Day-2">Minh Dương</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Vẫn đang hiểu sai yêu cầu đề bài, cần tính theo kiểu cộng dồn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt.</p>
+<p>Nên bổ sung điều kiện n &lt; 0 và n = 0 vào sẽ chặt chẽ hơn.'</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt.</p>
+<p>Chỉ cần lặp đến <code>a / 2</code> là được không cần đến <code>a - 1</code> cần tối ưu hơn vì nếu kiểm tra số to thì có thể tốn nhiều tài nguyên.</p>
+<p>Các phép so sánh nên dùng toán tử <code>===</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/blob/main/HW2/js/hw02.js">Phạm Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt *</p>
+<p>Cần kiểm tra trường hợp n &lt; 0 và n = 0 sẽ thông báo là không hợp lệ còn các trường hợp còn lại sẽ thực hiện yêu cầu bài toán.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] [Bài 2]</li>
+</ul>
+<p>Bài làm rất tốt *</p>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt.</p>
+<p>Chưa kiểm tra điều kiện n &lt; 0 và n = 0.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Chưa kiểm tra trường hợp số nguyên âm và số 0, ngoài ra cần check nếu là số nguyên mới thực hiện còn không là số nguyên sẽ báo không hợp lệ.</p>
+<p>Các phép so sánh nên dùng toán tử <code>===</code> sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tốt, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1">Bao Pham Van</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Phần phép tính km &gt; 120 là tính theo 10% tổng số tiền, vậy cần tách điều kiện <code>else if (km &gt;= 120)</code> ra khỏi các điều kiện khác và được kiểm tra sau khi đã tính toán tổng tiền</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như a &lt; 0, a === 0, a === 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Số nguyên là tập hợp các số tự nhiên, bao gồm cả số dương, số âm và số 0. Số nguyên không thể được biểu diễn dưới dạng phân số hoặc số thập phân, mà chỉ được biểu diễn dưới dạng các con số nguyên từ 0 trở đi và các số âm từ -1 trở đi.</p>
+<p>Số nguyên tố là số tự nhiên lớn hơn 1, không chia hết cho số nguyên dương nào ngoài 1 và chính nó. Nói cách khác, số nguyên tố là những số chỉ có đúng hai ước số là 1 và chính nó. Các số tự nhiên lớn hơn 1 không phải là số nguyên tố được gọi là hợp số.</p>
+<p>Bài làm yêu cầu kiểm tra số nguyên tố chứ không phải là số nguyên. Làm bài sai.</p>
+<p>Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</p>
+<ul>
+<li>Cần cấu trúc lại folder bài tập, tạo folder riêng cho từng bài tập.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi2">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+<p>Chưa có phép kiểm tra số bằng 0 thì sẽ thông báo là không hợp lệ.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như a &lt; 0, a === 0, a === 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<h2><a href="https://github.com/maiduchien23/F8-BE/blob/main/F8_BE/f8_nodejs/homeword/day%202/js/ex01.js">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như a &lt; 0, a === 0, a === 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm chưa tốt, cần chú ý đọc kỹ yêu cầu bài toán và kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</p>
+<p>* Lưu ý, tên folder không nên có dấu cách, nên dùng dấu gạch ngang hoặc dấu gạch dưới thay thế.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/NguyenNhat04/f8-backend-k1/tree/main/day-2">Nguyễn Nhất</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Biến price trong <code>total = kWh * price;</code> chưa được khai báo.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa tính tới các trường hợp đặc biệt như N === 0 &amp;&amp; N === 1 =&gt; N = 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm không tốt</p>
+<p>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</p>
+<p>Điều kiện trong vòng lặp for nên là <code>i &lt;= Math.sqrt(number)</code> thay vì <code>i &lt; Math.sqrt(number)</code> để đảm bảo rằng tất cả các ước số của <code>number</code> đều được kiểm tra.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tốt, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</li>
+</ul>
+<h2><a href="https://github.com/tuilahieu/nodejs/blob/main/exercise/day2/exercise.js">Trần Văn Hiểu</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nếu nhập một giá trị âm cho number, code sẽ bị lặp vô hạn vì điều kiện cloneOfNumber &gt; 0 sẽ luôn đúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Thay vì lặp từ <strong>number - 1 đến 2</strong>, thì có thể lặp từ <strong>2 đến căn bậc hai của number</strong>. Điều này sẽ giúp giảm thời gian chạy của code mà vẫn cho kết quả chính xác.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý kiểm tra chặt chẽ các trường hợp có thể xảy ra của bài toán.</p>
+<p>* Lưu ý:</p>
+<ul>
+<li>
+<p>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</p>
+</li>
+<li>
+<p>Clean code không phải là code ngắn gọn, càng ngắn càng tốt, mà là càng dễ để người khác đọc hiểu nhanh càng tốt, càng dễ bảo trì càng tốt. Như đoạn code trong bài, nếu trên thực tế thì quá khó để hiểu một cách nhanh nhất và thực hiện bảo trì, nâng cấp tốt nhất.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi2">Phương</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Nửa phần trên làm sai công thức nhưng nửa dưới lại đúng công thức =&gt; Kết quả vẫn sai.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tốt, cần chú ý đến đề bài và cách giải quyết bài toán hơn</p>
+<p>* Lưu ý:</p>
+<ul>
+<li>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi2">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng thêm hàm isNaN để kiểm tra dữ liệu nhập vào có phải là số hay không: <code>!Number.isNaN(parseFloat(kWh))</code></p>
+<p>Có thể sử dụng một mảng để lưu giá trị các mức giá và sử dụng vòng lặp để tính toán giá trị cuối cùng, thay vì viết nhiều nhánh if...else như hiện tại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Biến <strong>i</strong> và biến <strong>a</strong> chưa được khai báo bằng bất cứ kiểu nào trong [var, let, const]</p>
+<p>Nên so sánh bằng 3 dấu bằng <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tốt, cần chú ý đến đề bài và cách giải quyết bài toán hơn</p>
+<p>* Lưu ý:</p>
+<ul>
+<li>Tên biến sử dụng cả tiếng Việt lẫn tiếng Anh, điều đó khiến cho code khó đọc và khó hiểu.</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/NgoMinhDuc28112001/f8-exercise-k1/tree/main/bai_tap_buoi_2">Minh Đức Ngô</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng cấu trúc <code>if else if</code> để giảm số lượng câu lệnh <code>if else</code> và tránh các lỗi không mong muốn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng một mảng để lưu giá trị các mức giá và sử dụng vòng lặp để tính toán giá trị cuối cùng, thay vì viết nhiều nhánh if...else như hiện tại.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Các trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt</p>
+<p>Dòng <code>console.log(count);</code> là không cần thiết vì đề bài không yêu cầu in ra.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm rất tốt, cần chú ý để có thể tối ưu code tốt hơn và xem được các trường hợp đặc biệt.</li>
+</ul>
+<h2><a href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB2">Dương Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt</p>
+<p>Nên đặt tên biến là tiếng Anh, nếu không thể thì tạm thời dùng tiếng Việt. Nhưng tiếng gì thì cũng đừng viết tắt quá đà <code>gthua</code> =&gt; <code>giaiThua</code></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Đánh giá: Bài làm tạm ổn, cần chú ý đến yêu cầu đề bài và nghiệp vụ của bài toán để làm bài tốt hơn, cũng như đặt tên biến phù hợp hơn.</li>
+</ul>
+<h2><a href="https://github.com/namdctry/f8-backend-k1.git">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Phần hiển thị giá điện có vẻ không cần thiết.</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nên kiểm tra trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+<p>Có thể thay đổi điều kiện của vòng lặp từ <code>i &lt; n/2 - 1</code> thành <code>i &lt;= Math.sqrt(n)</code> để giảm thời gian chạy của đoạn code</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý đến yêu cầu đề bài và nghiệp vụ của bài toán để làm bài tốt hơn.</p>
+<p>* Lưu ý: Cần cấu trúc lại folder bài tập và trên lớp, code giảng viên riêng để dễ quản lý.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenducthanh04/f8-backend-k1.git">Thanh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Điều kiện <code>1 &lt; soKm &lt;= 5</code> không hoạt động như mong đợi trong JavaScript. Nó sẽ được tính toán như sau: <code>(1 &lt; soKm) &lt;= 5</code>, và kết quả sẽ luôn là <strong>true</strong> bất kể giá trị của <strong>soKm</strong>.</p>
+<p>Không có kiểm tra xem soKm có phải là một số dương hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai tương tự bài 1</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nên kiểm tra trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý đến cú pháp của JS để làm bài tốt hơn.</p>
+<p>* Lưu ý: Cần cấu trúc lại folder bài tập, quá khó hiểu.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/Buoi2">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt</p>
+<p>Đang hiểu sai yêu cầu đề bài, ở đây tính tổng số tiền cần cộng dồn số tiền tính theo từng khoảng km đề bài cho. Cần đọc kỹ bài toán hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt</p>
+<p>Nên đặt tên biến có tính tường minh hơn. Không nên đặt khó hiểu và chung chung như <code>S</code>, <code>A</code>.</p>
+<p>Nên kiểm tra trường hợp số âm thì không có giai thừa.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm không tốt</p>
+<p>Phép so sánh đang sử dụng gán thay vì so sánh.</p>
+<p>Có thể sử dụng phép so sánh <code>===</code> để tránh trường hợp so sánh sai kiểu dữ liệu.</p>
+<p>không nên sử dụng toán tử nhỏ hơn hoặc bằng (&lt;=) thay vì toán tử nhỏ hơn (&lt;) vì chúng ta cũng cần kiểm tra nếu x chia hết cho căn bậc hai của x.</p>
+<p>Vòng lặp for phải ngắt sau khi tìm thấy ước số của x, nếu không nó sẽ tiếp tục ghi thông báo nói rằng x là số nguyên tố ngay cả sau khi tìm thấy ước số.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Đánh giá: Bài làm tạm ổn, cần chú ý đến cú pháp của JS để làm bài tốt hơn.</p>
+<p>* Lưu ý: Cần cấu trúc lại folder bài tập, quá khó hiểu.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

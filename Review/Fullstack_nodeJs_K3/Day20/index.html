@@ -1,0 +1,512 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day20</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổ 20 - Lớp K3</h1>
+<h2><a href="https://github.com/Ntiendat-2k3/F8-js-BTVN/tree/main/BTVN/Buoi20">NTiến Đạt</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Mới chỉ sử dụng vị trí của các phần tử để push vào mảng mới, nếu lệch vị trí thì bài làm sai.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/blob/main/Day_20">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-20-JS">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên với reduce. Có thể viết ngắn gọn hơn.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt*</p>
+<p>Thay vì render ra một HTML mới, các phần giao diện nên được xử lý bằng CSS, chỉ cần add một class cho phần tử cần thay đổi.</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://mrkhoadev.github.io/F8-Fullstack-K3">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên với reduce. Có thể viết ngắn gọn hơn.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt*</p>
+<p>Thay vì render ra một HTML mới, các phần giao diện nên được xử lý bằng CSS, chỉ cần add một class cho phần tử cần thay đổi.</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+<p>Bài làm code rất rối, có thể tách thành các hàm cần thiết, sử dụng khi cần. Không nên viết chung thành 1.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/lekhanhdhpt/F8-Fullstack-K3/tree/main/JS-Day-20">Lê Quốc Khánh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Mới chỉ sử dụng vị trí của các phần tử để push vào mảng mới, nếu lệch vị trí thì bài làm sai.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_20">Vũ Thống</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day20">Trần Xuân Bách</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì lọc lấy các phần tử giao nhau, cần lọc các phần tử trùng.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm quá thủ công khi đang phải viết từng type, chỉ đúng với các type đã được khai báo.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<p>Nên sử dụng className và css để style để đúng mục đích từng file và thuận tiện cho việc chỉnh xửa.</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY20">Vương Đông</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì lọc lấy các phần tử giao nhau, cần lọc các phần tử trùng.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể sử dụng while để bài làm chạy tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý các trường hợp cần kiểm tra trước để bài làm chặt chẽ hơn</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HuuHungg/f8-javascript/blob/main/Day5/ex01.js">Hữu Hưng</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt</p>
+<p>Nên tách thành hàm để thuận tiện cho việc sửa chữa, tái sử dụng nhiều nơi.</p>
+<p>Vì lọc lấy các phần tử giao nhau, cần lọc các phần tử trùng.</p>
+<p>Vì bài tập yêu cầu 2 mảng, cần kiểm tra rõ xem có phải 2 biến <code>arrA</code>, <code>arrB</code> là mảng không.</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Cần sử dụng các phương thức đã học để luyện tập tốt hơn.</p>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm quá thủ công khi đang phải viết từng type, chỉ đúng với các type đã được khai báo.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+</li>
+<li>
+<p>Đánh giá chung bài tập về nhà: Bài làm tốt, cần tối ưu hơn và kiểm tra trước các case đặc biệt, có sự thay đổi.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

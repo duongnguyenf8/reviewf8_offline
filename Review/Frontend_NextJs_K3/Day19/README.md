@@ -6,7 +6,7 @@
 
   Bài làm tốt \*.
 
-  Lưu ý, nếu đưa vào biến nội suy thì sẽ được ép kiểu về chuỗi, vì vậy khi đó sẽ không đúng định dạng là mảng nữa. Cần xử lý về định dạng tốt hơn khi `log` ra kết quả.
+  Lưu ý, nếu đưa vào biến nội suy thì sẽ được ép kiểu về chuỗi, vì vậy khi đó sẽ không đúng định dạng là mảng nữa. Cần xử lý về định dạng tốt hơn khi log ra kết quả.
 
   Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.
 
@@ -28,13 +28,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -87,15 +94,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -137,13 +146,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -194,15 +210,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -292,15 +310,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -313,111 +333,6 @@
 ## [Sơn Trần](https://github.com/sontran2003/f8-fe-k3/tree/main/day19)
 
 **Bài làm giống hệt bài của Nguyễn Đức Hải**
-
-- [x] Bài 1
-
-  Bài làm tốt \*
-
-  Lưu ý, nếu đưa vào biến nội suy thì sẽ được ép kiểu về chuỗi, vì vậy khi đó sẽ không đúng định dạng là mảng nữa. Cần xử lý về định dạng tốt hơn khi `log` ra kết quả.
-
-  Và cần phải kiểm tra điều kiện đầu vào phải là 1 mảng thì mới thực hiện logic tìm phần tử giao nhau.
-
-  Vì khi đưa vào biến nội suy thì sẽ được ép về chuỗi nên khi không có phần tử nào giao nhau thì hiện tại đang không hiển thị ra mảng trống. Cần xử lý tốt hơn các trường hợp này.
-
-  Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.
-
-  Khi có cấu trúc array như này:
-
-  ```js
-  var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
-  var arrB = [5, 2, 6, 7, 1, 3];
-  ```
-
-  Kết quả sẽ là:
-
-  ```shell
-  [1, 3, 2, 5, 3, 6, 1];
-  ```
-
-  Có thể làm bằng filter sẽ dễ dàng kiểm soát và dễ hiểu hơn:
-
-  ```js
-  var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
-  var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
-    if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
-    else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
-  ```
-
-  ***
-
-- [x] Bài 2
-
-  Bài làm rất tốt \*
-
-  Tuy nhiên cần kiểm tra điều kiện đầu vào phải là một mảng rồi mới thực hiện logic thì sẽ hợp lý hơn.
-
-  Lưu ý, nếu đưa vào biến nội suy thì sẽ được ép kiểu về chuỗi, vì vậy khi đó sẽ không đúng định dạng là mảng nữa. Cần xử lý về định dạng tốt hơn khi `log` ra kết quả.
-
-  Có thể sử dụng vòng lặp `while` để chương trình chạy tốt hơn.
-
-  Hoặc có thể tham khảo phương thức `flat` sẽ trả về một mảng mới đã được làm phẳng.
-
-  Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.
-
-  Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị `Infinity`.
-
-  ```js
-  var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
-
-  var result = (function () {
-    if (Array.isArray(arr)) return arr.flat(Infinity);
-    else "arr không phải mảng";
-  })();
-
-  console.log("result", result);
-  ```
-
-  ***
-
-- [x] Bài 3
-
-  Bài làm tốt\*
-
-  Việc khai báo như vậy hơi thủ công.
-
-  Có thể tham khảo một cách khác lấy thẳng type làm value
-
-  ```js
-  var arr = [
-    ["a", 1, true],
-    ["b", 2, false],
-    [null, undefined, function () {}],
-    [[], null, undefined, function () {}],
-  ];
-  const result = (function (arr) {
-    if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
-        if (!acc[type]) acc[type] = [];
-        acc[type].push(item);
-        return acc;
-      }, {});
-    } else return "không phải mảng.";
-  })(arr);
-
-  console.log("result", result);
-  ```
-
-  Cách làm 2 không cho ra kết quả như yêu cầu đề bài.
-
-  ***
-
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chú ý định dạng khi đưa vào biến nội suy và cần xét các trường hợp đặc biệt có thể xảy ra ở đầu vào để bài làm hoàn chỉnh hơn.
 
 ---
 
@@ -451,13 +366,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -508,15 +430,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -556,13 +480,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -611,15 +542,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -661,13 +594,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -716,15 +656,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -747,13 +689,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -798,15 +747,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
@@ -844,13 +795,20 @@
   ```js
   var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
   var arrB = [5, 2, 6, 7, 1, 3];
-  /* Trả về 1 mảng, trong đó có các phần tử trong A và B */
-  var result = (function () {
+
+  function filter(array) {
+    return array.reduce((result, item) => {
+      if (!result.includes(item)) result.push(item);
+      return result;
+    }, []);
+  }
+  function filterIncludes(arrA, arrB) {
     if (Array.isArray(arrA) && Array.isArray(arrB))
-      return [...new Set(arrA.filter((n) => arrB.includes(n)))];
+      return filter(arrA.filter((n) => arrB.includes(n)));
     else return "arrA hoặc arrB không phải mảng";
-  })();
-  console.log(result);
+  }
+
+  console.log(filterIncludes(arrA, arrB));
   ```
 
   ***
@@ -897,15 +855,17 @@
   ];
   const result = (function (arr) {
     if (Array.isArray(arr)) {
-      return arr.flat(Infinity).reduce((acc, item) => {
-        const type = typeof item;
+      var array = arr.flat(Infinity).reduce((acc, item) => {
+        var type = typeof item;
         if (!acc[type]) acc[type] = [];
         acc[type].push(item);
         return acc;
-      }, {});
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
     } else return "không phải mảng.";
   })(arr);
-
   console.log("result", result);
   ```
 
