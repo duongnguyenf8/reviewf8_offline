@@ -1,4 +1,3 @@
-// index.js
 const buildPush = require("./routes");
 const yargs = require("yargs");
 
