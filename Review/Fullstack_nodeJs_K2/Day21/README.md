@@ -37,7 +37,7 @@
 - [x] [Bài 2]
 
   Bài làm tốt \*
-
+``
   Chưa có validate cho các trường của customer.
 
   Nên tách các hành động ra một hàm, ví dụ như `getShortName(name)` để code dễ hiểu hơn.

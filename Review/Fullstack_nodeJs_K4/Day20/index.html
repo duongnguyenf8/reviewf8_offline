@@ -1,0 +1,985 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K4/Day20</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Quân review bài tập về nhà buổi 20 lớp K4</h1>
+<h2><a href="ttps://github.com/HuyNguyen3107/F8_Fullstack_Offline_K4/tree/main/Day_19">Mạnh Huy</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt*</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+];
+const result = (function (arr) {
+  if (Array.isArray(arr)) {
+    var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+    }, []);
+    var result = [];
+    for (var index in array) result.push(array[index]);
+    return result;
+  } else return &quot;không phải mảng.&quot;;
+})(arr);
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần chú ý kiểm tra các trường hợp có thể xảy ra ở bài 1 và có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/thaiduytien1611cunbeo/NopbaitapF8/tree/main/Day20">Thái Duy Tiến</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Cả 2 cách đều sử dụng phương thức <code>reduce</code> để giải quyết nên không có sự khác biệt về 2 cách đang sử dụng.</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt*</p>
+<p>Bài làm chỉ đang kiểm tra các trường hợp <code>number, string, boolean, null</code>. Như vậy nếu như cần phân biệt các kiểu dữ liệu khác thì sẽ không đạt kết quả như mong muốn.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value:</p>
+<pre><code class="language-js">  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm tốt *</p>
+<p><strong>Chưa có link github pages</strong></p>
+<p>Chú ý về việc format code.</p>
+<p>Giao diện chưa xen kẽ như bản mẫu, cần xử lý tốt hơn.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn và cần xử lý giao diện chỉn chu hơn ở bài 4.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/AlbertKhai/f8-fullstack-offline/tree/main/Day-20">Đặng Khải</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *.</p>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *.</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt. *</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Vietha22/f8_fullstack_k4/tree/main/Day_20">Hà Long Việt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể sửa lại như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Thuộc tính alt của một bài viết cần có ý nghĩa, có thể sử dụng heading của bài viết.</p>
+<p>Giao diện nên chỉn chu hơn.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn và chú ý các trường hợp có thể xảy ra ở bài 1 để hoàn thiện hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Huy-Bui4869/f8_fullstack_k4/blob/main/Day_19/js/script.js">Huy Bui</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *.</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt*</p>
+<p>Việc khai báo như vậy quá thủ công.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/YanShu92/F8-Fullstack-K4/tree/main/Day_20">Hoang Van Thanh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể sửa lại như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt*.</p>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt*.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/TranCong312002/F8-fullstack-k4/tree/main/Bai_tap_buoi_20">Trần Đức Công</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể sửa lại như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+var result = arrA.reduce(function (prev, current) {
+  if (arrB.includes(current) &amp;&amp; !prev.includes(current)) prev.push(current);
+  return prev;
+}, []);
+
+console.log(result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt*</p>
+<p>Việc khai báo như vậy quá thủ công. Vì thế các trường hợp khác check đều không tốt.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt*.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hungtuan/f8-fullstack-k4/tree/main/Day-20/js">Nguyễn Hưng Tuân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể sửa lại như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+var result = arrA.reduce(function (prev, current) {
+  if (arrB.includes(current) &amp;&amp; !prev.includes(current)) prev.push(current);
+  return prev;
+}, []);
+
+console.log(result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt*</p>
+<p>Việc khai báo như vậy quá thủ công. Vì thế các trường hợp khác check đều không tốt.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt*</p>
+<p>Cần chú ý đặt lại tên className hợp lý hơn.</p>
+<p>Vì đây là một <strong>bài viết</strong>, thay vì sử dụng className là <code>item</code> thì có thể sử dụng <code>post_item</code>.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Oladayne/f8-fullstack-k98/tree/main/buoi_20">Nguyễn Ngọc Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Chú ý đặt tên biến nên tường minh và dễ hiểu hơn.</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể làm bằng filter sẽ dễ dàng kiểm soát và dễ hiểu hơn:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt.</p>
+<p>Chú ý đặt tên hàm cần tuân theo quy tắc camelCase.</p>
+<p>Xử lý logic vòng lặp chưa tốt trong hàm <code>groupnew</code>:</p>
+<ul>
+<li>
+<p>Việc cho i chạy từ 0 đến độ dài của phần tử thứ nhất của <code>array</code> là không hợp lý vì nếu các phần tử sau của <code>array</code> có độ dài lớn hơn độ dài của phần tử thứ nhất thì sẽ không được lặp và thực hiện logic.</p>
+</li>
+<li>
+<p>Bài làm chỉ đúng nếu fix cứng dữ liệu trong các mảng con theo thứ tự <code>string - number - boolean</code>. Cần xử lý tốt hơn để giải quyết bất kì trường hợp nào có thể xảy ra.</p>
+</li>
+</ul>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *</p>
+<p>Thuộc tính alt của một bài viết cần có ý nghĩa, có thể sử dụng heading của bài viết.</p>
+<p>Vì đây là <strong>một</strong> bài viết, thay vì sử dụng className là <code>item</code> thì có thể sử dụng <code>post_item</code>.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn và cần chú ý xử lý tốt hơn các trường hợp có thể xảy ra ở bài 3.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/chinam197/bai20">Nguyen Chi Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể làm bằng filter sẽ dễ dàng kiểm soát và dễ hiểu hơn:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt.</p>
+<p>Đang hiểu sai ý đề bài, bài làm chỉ đúng khi thứ tự các phần tử đúng như bài tập.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p><strong>Chưa làm</strong></p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý đến các trường hợp có thể xảy ra ở bài 3 và nếu khó khăn trong việc làm bài tập cần đặt câu hỏi để được trợ giúp, và hoàn thiện bài tập hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="dongnguyen318.github.io/Quydong/">Dong Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể làm bằng filter sẽ dễ dàng kiểm soát và dễ hiểu hơn:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+function filter(array) {
+  return array.reduce((result, item) =&gt; {
+    if (!result.includes(item)) result.push(item);
+    return result;
+  }, []);
+}
+function filterIncludes(arrA, arrB) {
+  if (Array.isArray(arrA) &amp;&amp; Array.isArray(arrB))
+    return filter(arrA.filter((n) =&gt; arrB.includes(n)));
+  else return &quot;arrA hoặc arrB không phải mảng&quot;;
+}
+console.log(filterIncludes(arrA, arrB));
+</code></pre>
+<p>Hoặc sử dùng reduce như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+var result = arrA.reduce(function (prev, current) {
+  if (arrB.includes(current) &amp;&amp; !prev.includes(current)) prev.push(current);
+  return prev;
+}, []);
+console.log(result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p><strong>Không thể truy cập được link đến bài 3</strong></p>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p><strong>Chưa hoàn thành</strong></p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+<p>Cần chú ý lại link dẫn đến bài 3 và cần hoàn thiện bài 4, nếu khó khăn trong việc làm bài tập cần đặt câu hỏi để được trợ giúp, và hoàn thiện bài tập hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="ttps://github.com/suspiciously36/bt-b20">Hoang Tuan Kiet</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể sửa lại như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+var result = arrA.reduce(function (prev, current) {
+  if (arrB.includes(current) &amp;&amp; !prev.includes(current)) prev.push(current);
+  return prev;
+}, []);
+
+console.log(result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt.</p>
+<p>Đang hiểu sai ý đề bài, bài làm chỉ đúng khi thứ tự các phần tử đúng như bài tập.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p><strong>Chưa làm</strong></p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn.</p>
+<p>Cần lưu ý bài 3 và hoàn thiện bài 4, nếu khó khăn trong việc làm bài tập cần đặt câu hỏi để được trợ giúp, và hoàn thiện bài tập hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Le-Hung-020903/f8-fullstack-k4/tree/main/Day_20">Lê Đình Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Với giao giữa 2 mảng, không nên có các phần tử trùng nhau.</p>
+<p>Khi có cấu trúc array như này:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+</code></pre>
+<p>Kết quả sẽ là:</p>
+<pre><code class="language-shell">[1, 3, 2, 5, 3, 6, 1];
+</code></pre>
+<p>Có thể sửa lại như sau:</p>
+<pre><code class="language-js">var arrA = [1, 4, 3, 2, 5, 3, 6, 8, 1];
+var arrB = [5, 2, 6, 7, 1, 3];
+
+var result = arrA.reduce(function (prev, current) {
+  if (arrB.includes(current) &amp;&amp; !prev.includes(current)) prev.push(current);
+  return prev;
+}, []);
+
+console.log(result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng vòng lặp <code>while</code> để chương trình chạy tốt hơn.</p>
+<p>Hoặc có thể tham khảo phương thức <code>flat</code> sẽ trả về một mảng mới đã được làm phẳng.</p>
+<p>Tham số truyền vào cho phương thức này là độ sâu tối đa mà nó sẽ làm phẳng mảng.</p>
+<p>Trong trường hợp này, nếu muốn làm phẳng mảng đến cấp độ tối đa nên truyền vào giá trị <code>Infinity</code>.</p>
+<pre><code class="language-js">var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+var result = (function () {
+  if (Array.isArray(arr)) return arr.flat(Infinity);
+  else &quot;arr không phải mảng&quot;;
+})();
+
+console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt.</p>
+<p>Đang hiểu sai ý đề bài, bài làm chỉ đúng khi thứ tự các phần tử đúng như bài tập.</p>
+<p>Có thể tham khảo một cách khác lấy thẳng type làm value</p>
+<pre><code class="language-js">var arr = [
+  [&quot;a&quot;, 1, true],
+  [&quot;b&quot;, 2, false],
+  [null, undefined, function () {}],
+  [[], null, undefined, function () {}],
+  ];
+  const result = (function (arr) {
+  if (Array.isArray(arr)) {
+      var array = arr.flat(Infinity).reduce((acc, item) =&gt; {
+      var type = typeof item;
+      if (!acc[type]) acc[type] = [];
+      acc[type].push(item);
+      return acc;
+      }, []);
+      var result = [];
+      for (var index in array) result.push(array[index]);
+      return result;
+  } else return &quot;không phải mảng.&quot;;
+  })(arr);
+  console.log(&quot;result&quot;, result);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt *.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, có thể sử dụng một số phương thức cho trước hoặc các phương thức đơn giản hơn để làm bài một cách dễ hiểu hơn và cần lưu ý bài 3 để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
