@@ -3,7 +3,8 @@
   "description": "Dương Test Bài học viên",
   "main": "server/server.py",
   "scripts": {
-    "push": "node scripts"
+    "push": "node scripts/push.js",
+    "clone": "node scripts/clone.js"
   },
   "dependencies": {
     "formidable": "^3.5.0",

@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day23</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 23 lớp K1 fullstack</h1>
+<h2><a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day23">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Với các input ở 2 trang, đều có một điểm chung là <strong>email</strong>, <strong>password</strong>, <strong>name</strong>.</p>
+<ul>
+<li>
+<p>Nên sử dụng một hàm chung để viết validate và xử lý các action.</p>
+<p>Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.</p>
+<p>Việc maintain, fix bug cũng dễ dàng hơn.</p>
+</li>
+<li>
+<p>Nên viết một hàm <code>getError</code> để lấy được các message lỗi cần thiết ở một chỗ.</p>
+<p>Để có thể dễ dàng sửa đổi message.</p>
+<p>Để dễ dàng thêm message cho từng case.</p>
+</li>
+<li>
+<p>Nên viết một hàm <code>resetForm</code> thực hiện các action reset và kết hợp với hàm validate, getError.</p>
+<p>Để code ngắn gọn hơn.</p>
+<p>Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.</p>
+</li>
+</ul>
+<p>Với các trường hợp check <code>=== &quot;&quot;</code>, có thể sử dụng falsy để code được ngắn gọn hơn.</p>
+<p>Có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+&lt;/script&gt;
+&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm rất tốt. Đúng yêu cầu đề bài</p>
+<p>Tuy nhiên cần chú ý thêm về vấn đề tối ưu cho việc sửa chữa, nâng cấp.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/pth2003/FullStack_Nodejs_K1/tree/main/BTVN/btvn_buoi_23">Phan Trung Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa check đủ case cần thiết như mật khẩu đủ 6 ký tự, check email đúng...</p>
+<ul>
+<li>Có thể check bằng <code>this.value</code> của input</li>
+</ul>
+<p>Chưa hiện thông báo của tất cả input sau khi blur 1 input bất kỳ lần đầu tiên.</p>
+<ul>
+<li>Có thể sử dụng một vòng lặp để hiển thị tất cả lỗi.</li>
+</ul>
+<p>Chưa có ẩn, hiện mật khẩu.</p>
+<ul>
+<li>
+<p>Có thể thay đổi thuộc tính type của input từ password thành text và ngược lại.</p>
+<hr>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà</p>
+<p>Bài làm chưa tốt</p>
+<p>Bài làm còn thiếu rất nhiều.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
