@@ -1,0 +1,1142 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day16</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 16 Lớp K3-FE</h1>
+<h2><a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Hùng Mạnh</a></h2>
+<p><strong>Sớm nhất*</strong></p>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Để tính giá tiền taxi, cần phải cộng dồn các khoảng lại với nhau.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Các dòng code đang bị lặp, chưa tối ưu và rất khó để đọc hiểu.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0 và là số nguyên!`);
+    return 0;
+  }
+  var totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); /* 50kWh đầu tiên */
+  calculate(50, 1734); /* Từ kWh 51 - 100 */
+  calculate(100, 2014); /* Từ kWh 101 - 200 */
+  calculate(100, 2536); /* Từ kWh 201 - 300 */
+  calculate(100, 2834); /* Từ kWh 301 - 400 */
+  calculate(Infinity, 2927); /* Từ kWh 401 trở đi */
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(12345).toLocaleString()} vnđ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên với các số lớn, bài làm chưa tối ưu với các số rất lớn.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function isPrime(n) {
+  /* Nếu số nhỏ hơn hoặc bằng 1, không phải số nguyên tố */
+  if (n &lt;= 1) return false;
+
+  /* Nếu số nhỏ hơn hoặc bằng 3 &amp;&amp; lớn hơn 1, là số nguyên tố */
+  if (n &lt;= 3) return true;
+
+  /* Kiểm tra trường hợp số chia hết cho 2 hoặc 3 &amp;&amp; lớn hơn 3 */
+  if (n % 2 === 0 || n % 3 === 0) return false;
+
+  /* Bắt đầu kiểm tra từ số 5 và sau đó tăng i lên mỗi lần lặp (6k ± 1) */
+
+  /*
+   * Vì 4 dính điều kiện %2
+   * Từ 3 trở xuống dính điều kiện &lt;=3 &amp;&amp; &gt; 1
+   * ------------------------------------------------------
+   * 6k ± 1 là:
+   * 5 = 6k - 1(k = 1)
+   * 7 = 6k + 1(k = 1)
+   * 11 = 6k - 1(k = 2)
+   * 13 = 6k + 1(k = 2)
+   * 17 = 6k - 1(k = 3)
+   * 19 = 6k + 1(k = 3)
+   * 23 = 6k - 1(k = 4)
+   * 25 không phải số nguyên tố vì lần lặp đầu 25 % 5 đã kiểm tra được.
+   * 29 = 6k - 1(k = 5)
+   * 31 = 6k + 1(k = 5)
+   * 35 = 6k - 1(k = 6)
+   * 37 = 6k + 1(k = 6)
+   * ...
+   */
+
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    /* Kiểm tra n có chia hết cho i hoặc i + 2 không (6k ± 1) */
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  /* Nếu không có trường hợp nào thỏa mãn, số là số nguyên tố */
+  return true;
+}
+
+console.log(&quot;isPrime(9007199254740881)&quot;, isPrime(9007199254740881));
+console.log(
+  &quot;isPrime(Number.MAX_SAFE_INTEGER)&quot;,
+  isPrime(Number.MAX_SAFE_INTEGER)
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_2/js/day2.js">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console. Nên tối ưu code để dễ tái sử dụng, dễ hiểu và chạy tốt hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">thuy nguyen</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Để tính giá tiền taxi, cần phải cộng dồn các khoảng lại với nhau.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 2</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Để tính giá tiền điện, cần phải cộng dồn các khoảng lại với nhau.</p>
+<p>Chưa khai báo <code>toPay</code> nhưng đã sử dụng khiến cho việc code trở nên lỏng lẻo, dễ bị lỗi hơn. Nên sử dụng từ khóa khai báo <code>toPay</code> trước khi sử dụng.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0 và là số nguyên!`);
+    return 0;
+  }
+  var totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); /* 50kWh đầu tiên */
+  calculate(50, 1734); /* Từ kWh 51 - 100 */
+  calculate(100, 2014); /* Từ kWh 101 - 200 */
+  calculate(100, 2536); /* Từ kWh 201 - 300 */
+  calculate(100, 2834); /* Từ kWh 301 - 400 */
+  calculate(Infinity, 2927); /* Từ kWh 401 trở đi */
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(12345).toLocaleString()} vnđ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể sử dụng toán tử <code>+=</code> thay vì viết lại <code>sum</code> để code dễ hiểu hơn trong việc sử dụng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 4</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên với các số lớn, bài làm chưa tối ưu với các số rất lớn.</p>
+<ul>
+<li>Vì đang lặp từ 2 đến n mặc dù không cần thiết, và có thể kiểm tra thêm một vài trường hợp để code có thể giảm số lần lặp.</li>
+</ul>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function isPrime(n) {
+  /* Nếu số nhỏ hơn hoặc bằng 1, không phải số nguyên tố */
+  if (n &lt;= 1) return false;
+
+  /* Nếu số nhỏ hơn hoặc bằng 3 &amp;&amp; lớn hơn 1, là số nguyên tố */
+  if (n &lt;= 3) return true;
+
+  /* Kiểm tra trường hợp số chia hết cho 2 hoặc 3 &amp;&amp; lớn hơn 3 */
+  if (n % 2 === 0 || n % 3 === 0) return false;
+
+  /* Bắt đầu kiểm tra từ số 5 và sau đó tăng i lên mỗi lần lặp (6k ± 1) */
+
+  /*
+   * Vì 4 dính điều kiện %2
+   * Từ 3 trở xuống dính điều kiện &lt;=3 &amp;&amp; &gt; 1
+   * ------------------------------------------------------
+   * 6k ± 1 là:
+   * 5 = 6k - 1(k = 1)
+   * 7 = 6k + 1(k = 1)
+   * 11 = 6k - 1(k = 2)
+   * 13 = 6k + 1(k = 2)
+   * 17 = 6k - 1(k = 3)
+   * 19 = 6k + 1(k = 3)
+   * 23 = 6k - 1(k = 4)
+   * 25 không phải số nguyên tố vì lần lặp đầu 25 % 5 đã kiểm tra được.
+   * 29 = 6k - 1(k = 5)
+   * 31 = 6k + 1(k = 5)
+   * 35 = 6k - 1(k = 6)
+   * 37 = 6k + 1(k = 6)
+   * ...
+   */
+
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    /* Kiểm tra n có chia hết cho i hoặc i + 2 không (6k ± 1) */
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  /* Nếu không có trường hợp nào thỏa mãn, số là số nguyên tố */
+  return true;
+}
+
+console.log(&quot;isPrime(9007199254740881)&quot;, isPrime(9007199254740881));
+console.log(
+  &quot;isPrime(Number.MAX_SAFE_INTEGER)&quot;,
+  isPrime(Number.MAX_SAFE_INTEGER)
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Có thể gán biến <code>sqrt</code> để giá trị là 8 và tối ưu cho việc hiển thị sẽ dễ hơn trong việc resize bàn cờ theo ý muốn.</p>
+<pre><code class="language-html">&lt;style&gt;
+  /* Tạo một container bao bọc board để dễ dàng thay đổi kích thước */
+  .board-container {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    border: 1px solid black; /* Đường viền cho container */
+    width: 80vw; /* Kích thước tổng của bàn cờ. */
+  }
+
+  /* Thay đổi kích thước của ô vuông dựa trên kích thước của board */
+  .square {
+    width: calc(
+      100% / var(--sqrt)
+    ); /* Sử dụng biến CSS để tính toán kích thước */
+    padding-bottom: calc(
+      100% / var(--sqrt)
+    ); /* Đảm bảo ô vuông luôn có tỷ lệ vuông */
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước thực tế */
+  }
+
+  /* Màu nền cho các ô vuông */
+  .black {
+    background-color: #000;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;board-container&quot;&gt;
+  &lt;div id=&quot;board&quot; style=&quot;--sqrt: 16&quot;&gt;&lt;/div&gt;
+  &lt;!-- Sử dụng biến --sqrt để thiết lập kích thước --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  var board = document.getElementById(&quot;board&quot;);
+  const sqrt = parseInt(getComputedStyle(board).getPropertyValue(&quot;--sqrt&quot;)); // Lấy giá trị của --sqrt từ CSS
+  for (var i = 0; i &lt; sqrt; i++) {
+    for (var j = 0; j &lt; sqrt; j++) {
+      var square = document.createElement(&quot;div&quot;);
+      square.className = &quot;square&quot;;
+      board.appendChild(square);
+      if ((i + j) % 2 === 0) {
+        square.classList.add(&quot;black&quot;);
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng các kiến thức đã học để làm bài sẽ giúp luyện tập tốt hơn.</p>
+<p><strong>Ở đây nói về function đệ quy</strong></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, nên tối ưu code để dễ tái sử dụng, dễ hiểu và chạy tốt hơn, dễ dàng scale hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Gia Bảo Đỗ</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Để tính giá tiền taxi, cần phải cộng dồn các khoảng lại với nhau.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Cần chú ý lại về format code.</p>
+<p>Việc viết code như trên rất khó để đọc hiểu và tái sử dụng. Mỗi lần như vậy sẽ phải copy lại từ đầu.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0 và là số nguyên!`);
+    return 0;
+  }
+  var totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); /* 50kWh đầu tiên */
+  calculate(50, 1734); /* Từ kWh 51 - 100 */
+  calculate(100, 2014); /* Từ kWh 101 - 200 */
+  calculate(100, 2536); /* Từ kWh 201 - 300 */
+  calculate(100, 2834); /* Từ kWh 301 - 400 */
+  calculate(Infinity, 2927); /* Từ kWh 401 trở đi */
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(12345).toLocaleString()} vnđ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 3</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Cần chú ý lại về format code.</p>
+<p>Có thể sử dụng toán tử <code>+=</code> thay vì viết lại <code>sum</code> để code dễ hiểu hơn trong việc sử dụng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Trình bày code quá rối và khó hiểu khi viết tất cả vào trong if/else.</p>
+<p>Nên tách thành hàm để dễ dàng xử lý và sử dụng hơn.</p>
+<p>Bài làm chưa tối ưu với các số rất lớn.</p>
+<ul>
+<li>Vì đang lặp từ 2 đến n mặc dù không cần thiết, và có thể kiểm tra thêm một vài trường hợp để code có thể giảm số lần lặp.</li>
+</ul>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function isPrime(n) {
+  /* Nếu số nhỏ hơn hoặc bằng 1, không phải số nguyên tố */
+  if (n &lt;= 1) return false;
+
+  /* Nếu số nhỏ hơn hoặc bằng 3 &amp;&amp; lớn hơn 1, là số nguyên tố */
+  if (n &lt;= 3) return true;
+
+  /* Kiểm tra trường hợp số chia hết cho 2 hoặc 3 &amp;&amp; lớn hơn 3 */
+  if (n % 2 === 0 || n % 3 === 0) return false;
+
+  /* Bắt đầu kiểm tra từ số 5 và sau đó tăng i lên mỗi lần lặp (6k ± 1) */
+
+  /*
+   * Vì 4 dính điều kiện %2
+   * Từ 3 trở xuống dính điều kiện &lt;=3 &amp;&amp; &gt; 1
+   * ------------------------------------------------------
+   * 6k ± 1 là:
+   * 5 = 6k - 1(k = 1)
+   * 7 = 6k + 1(k = 1)
+   * 11 = 6k - 1(k = 2)
+   * 13 = 6k + 1(k = 2)
+   * 17 = 6k - 1(k = 3)
+   * 19 = 6k + 1(k = 3)
+   * 23 = 6k - 1(k = 4)
+   * 25 không phải số nguyên tố vì lần lặp đầu 25 % 5 đã kiểm tra được.
+   * 29 = 6k - 1(k = 5)
+   * 31 = 6k + 1(k = 5)
+   * 35 = 6k - 1(k = 6)
+   * 37 = 6k + 1(k = 6)
+   * ...
+   */
+
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    /* Kiểm tra n có chia hết cho i hoặc i + 2 không (6k ± 1) */
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  /* Nếu không có trường hợp nào thỏa mãn, số là số nguyên tố */
+  return true;
+}
+
+console.log(&quot;isPrime(9007199254740881)&quot;, isPrime(9007199254740881));
+console.log(
+  &quot;isPrime(Number.MAX_SAFE_INTEGER)&quot;,
+  isPrime(Number.MAX_SAFE_INTEGER)
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 5</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 6</a></p>
+<p>Bài làm rất tốt *</p>
+<p>(Giống bài của <a href="https://github.com/tnnhungoc/F8-FE-K3/blob/main/FEK3/Day16_JS/js/homework6.js">thuy nguyen</a>)</p>
+<p>Có thể gán biến <code>sqrt</code> để giá trị là 8 và tối ưu cho việc hiển thị sẽ dễ hơn trong việc resize bàn cờ theo ý muốn.</p>
+<pre><code class="language-html">&lt;style&gt;
+  /* Tạo một container bao bọc board để dễ dàng thay đổi kích thước */
+  .board-container {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    border: 1px solid black; /* Đường viền cho container */
+    width: 80vw; /* Kích thước tổng của bàn cờ. */
+  }
+
+  /* Thay đổi kích thước của ô vuông dựa trên kích thước của board */
+  .square {
+    width: calc(
+      100% / var(--sqrt)
+    ); /* Sử dụng biến CSS để tính toán kích thước */
+    padding-bottom: calc(
+      100% / var(--sqrt)
+    ); /* Đảm bảo ô vuông luôn có tỷ lệ vuông */
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước thực tế */
+  }
+
+  /* Màu nền cho các ô vuông */
+  .black {
+    background-color: #000;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;board-container&quot;&gt;
+  &lt;div id=&quot;board&quot; style=&quot;--sqrt: 16&quot;&gt;&lt;/div&gt;
+  &lt;!-- Sử dụng biến --sqrt để thiết lập kích thước --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  var board = document.getElementById(&quot;board&quot;);
+  const sqrt = parseInt(getComputedStyle(board).getPropertyValue(&quot;--sqrt&quot;)); // Lấy giá trị của --sqrt từ CSS
+  for (var i = 0; i &lt; sqrt; i++) {
+    for (var j = 0; j &lt; sqrt; j++) {
+      var square = document.createElement(&quot;div&quot;);
+      square.className = &quot;square&quot;;
+      board.appendChild(square);
+      if ((i + j) % 2 === 0) {
+        square.classList.add(&quot;black&quot;);
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day16">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt, nên tối ưu code để dễ tái sử dụng, dễ hiểu và chạy tốt hơn, dễ dàng scale hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Vũ Thành Khang</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 1</a></p>
+<p>Bài làm tốt</p>
+<p>Đặt tên function nên là một hành động có ý nghĩa, không nên đặt là <code>a()</code></p>
+<p>Vì dữ liệu là do người dùng nhập vào(prompt). Nên cần kiểm tra dữ liệu đầu vào có phải là số hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Cần chú ý lại về format code.</p>
+<p>Vì dữ liệu là do người dùng nhập vào(prompt). Nên cần kiểm tra dữ liệu đầu vào có phải là số hay không.</p>
+<p>Việc viết code như trên rất khó để đọc hiểu và tái sử dụng. Mỗi lần như vậy sẽ phải copy lại từ đầu.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0 và là số nguyên!`);
+    return 0;
+  }
+  var totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); /* 50kWh đầu tiên */
+  calculate(50, 1734); /* Từ kWh 51 - 100 */
+  calculate(100, 2014); /* Từ kWh 101 - 200 */
+  calculate(100, 2536); /* Từ kWh 201 - 300 */
+  calculate(100, 2834); /* Từ kWh 301 - 400 */
+  calculate(Infinity, 2927); /* Từ kWh 401 trở đi */
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(12345).toLocaleString()} vnđ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 3</a></p>
+<p>Bài làm rất tốt*</p>
+<p>Function nên đặt tên có ý nghĩa và là một hành động, không phải là <code>a()</code></p>
+<p>Vì dữ liệu là do người dùng nhập vào(prompt). Nên cần kiểm tra dữ liệu đầu vào có phải là số hay không.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Tên hàm cần là một hành động, không phải là một danh từ.</p>
+<p>Vì dữ liệu là do người dùng nhập vào(prompt). Nên cần kiểm tra dữ liệu đầu vào có phải là số hay không.</p>
+<p>Bài làm chưa tối ưu với các số rất lớn.</p>
+<ul>
+<li>Vì đang lặp từ 2 đến sqrt(n) mặc dù không cần thiết, và có thể kiểm tra thêm một vài trường hợp để code có thể giảm số lần lặp.</li>
+</ul>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function isPrime(n) {
+  /* Nếu số nhỏ hơn hoặc bằng 1, không phải số nguyên tố */
+  if (n &lt;= 1) return false;
+
+  /* Nếu số nhỏ hơn hoặc bằng 3 &amp;&amp; lớn hơn 1, là số nguyên tố */
+  if (n &lt;= 3) return true;
+
+  /* Kiểm tra trường hợp số chia hết cho 2 hoặc 3 &amp;&amp; lớn hơn 3 */
+  if (n % 2 === 0 || n % 3 === 0) return false;
+
+  /* Bắt đầu kiểm tra từ số 5 và sau đó tăng i lên mỗi lần lặp (6k ± 1) */
+
+  /*
+   * Vì 4 dính điều kiện %2
+   * Từ 3 trở xuống dính điều kiện &lt;=3 &amp;&amp; &gt; 1
+   * ------------------------------------------------------
+   * 6k ± 1 là:
+   * 5 = 6k - 1(k = 1)
+   * 7 = 6k + 1(k = 1)
+   * 11 = 6k - 1(k = 2)
+   * 13 = 6k + 1(k = 2)
+   * 17 = 6k - 1(k = 3)
+   * 19 = 6k + 1(k = 3)
+   * 23 = 6k - 1(k = 4)
+   * 25 không phải số nguyên tố vì lần lặp đầu 25 % 5 đã kiểm tra được.
+   * 29 = 6k - 1(k = 5)
+   * 31 = 6k + 1(k = 5)
+   * 35 = 6k - 1(k = 6)
+   * 37 = 6k + 1(k = 6)
+   * ...
+   */
+
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    /* Kiểm tra n có chia hết cho i hoặc i + 2 không (6k ± 1) */
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  /* Nếu không có trường hợp nào thỏa mãn, số là số nguyên tố */
+  return true;
+}
+
+console.log(&quot;isPrime(9007199254740881)&quot;, isPrime(9007199254740881));
+console.log(
+  &quot;isPrime(Number.MAX_SAFE_INTEGER)&quot;,
+  isPrime(Number.MAX_SAFE_INTEGER)
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 5</a></p>
+<p>Bài làm tốt*</p>
+<p>Vì dữ liệu là do người dùng nhập vào(prompt). Nên cần kiểm tra dữ liệu đầu vào có phải là số hay không.</p>
+<p>Tên function cần viết theo quy tắc camelCase để dễ dàng đọc, phân biệt hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 6</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Nên vẽ đúng với giao diện của bàn cờ vua.</p>
+<p>Có thể gán biến <code>sqrt</code> để giá trị là 8 và tối ưu cho việc hiển thị sẽ dễ hơn trong việc resize bàn cờ theo ý muốn.</p>
+<pre><code class="language-html">&lt;style&gt;
+  /* Tạo một container bao bọc board để dễ dàng thay đổi kích thước */
+  .board-container {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    border: 1px solid black; /* Đường viền cho container */
+    width: 80vw; /* Kích thước tổng của bàn cờ. */
+  }
+
+  /* Thay đổi kích thước của ô vuông dựa trên kích thước của board */
+  .square {
+    width: calc(
+      100% / var(--sqrt)
+    ); /* Sử dụng biến CSS để tính toán kích thước */
+    padding-bottom: calc(
+      100% / var(--sqrt)
+    ); /* Đảm bảo ô vuông luôn có tỷ lệ vuông */
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước thực tế */
+  }
+
+  /* Màu nền cho các ô vuông */
+  .black {
+    background-color: #000;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;board-container&quot;&gt;
+  &lt;div id=&quot;board&quot; style=&quot;--sqrt: 16&quot;&gt;&lt;/div&gt;
+  &lt;!-- Sử dụng biến --sqrt để thiết lập kích thước --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  var board = document.getElementById(&quot;board&quot;);
+  const sqrt = parseInt(getComputedStyle(board).getPropertyValue(&quot;--sqrt&quot;)); // Lấy giá trị của --sqrt từ CSS
+  for (var i = 0; i &lt; sqrt; i++) {
+    for (var j = 0; j &lt; sqrt; j++) {
+      var square = document.createElement(&quot;div&quot;);
+      square.className = &quot;square&quot;;
+      board.appendChild(square);
+      if ((i + j) % 2 === 0) {
+        square.classList.add(&quot;black&quot;);
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/countduck4819/f8-frontend/tree/main/Day16">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Vì dữ liệu là do người dùng nhập vào(prompt). Nên cần kiểm tra dữ liệu đầu vào có phải là số hay không.</p>
+<p>Tên function cần viết theo quy tắc camelCase, là một hành động để dễ dàng đọc, phân biệt hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt,</p>
+<ul>
+<li>
+<p>Nên chú ý tới tên của function để giúp code dễ hiểu hơn.</p>
+</li>
+<li>
+<p>Nên tối ưu code để dễ tái sử dụng, dễ hiểu và chạy tốt hơn, dễ dàng scale hơn.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Nguyen Le Quyen (FPL HN)</a></h2>
+<pre><code>Cần đặt lại cấu trúc folder để dễ dàng đọc, hiểu hơn, khoa học hơn.
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Để tính giá tiền taxi, cần phải cộng dồn các khoảng lại với nhau.</p>
+<p>Cần chú ý lại về format code.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 2</a></p>
+<p>Bài làm tốt</p>
+<p>Việc viết code như trên rất khó để đọc hiểu và tái sử dụng. Mỗi lần như vậy sẽ phải copy lại từ đầu.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0 và là số nguyên!`);
+    return 0;
+  }
+  var totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); /* 50kWh đầu tiên */
+  calculate(50, 1734); /* Từ kWh 51 - 100 */
+  calculate(100, 2014); /* Từ kWh 101 - 200 */
+  calculate(100, 2536); /* Từ kWh 201 - 300 */
+  calculate(100, 2834); /* Từ kWh 301 - 400 */
+  calculate(Infinity, 2927); /* Từ kWh 401 trở đi */
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(12345).toLocaleString()} vnđ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 3</a></p>
+<p>Bài làm rất tốt*</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Cần chú ý lại về format code.</p>
+<p>Bài làm chưa tối ưu với các số rất lớn.</p>
+<ul>
+<li>Vì đang lặp từ 2 đến sqrt(n) mặc dù không cần thiết, và có thể kiểm tra thêm một vài trường hợp để code có thể giảm số lần lặp.</li>
+</ul>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function isPrime(n) {
+  /* Nếu số nhỏ hơn hoặc bằng 1, không phải số nguyên tố */
+  if (n &lt;= 1) return false;
+
+  /* Nếu số nhỏ hơn hoặc bằng 3 &amp;&amp; lớn hơn 1, là số nguyên tố */
+  if (n &lt;= 3) return true;
+
+  /* Kiểm tra trường hợp số chia hết cho 2 hoặc 3 &amp;&amp; lớn hơn 3 */
+  if (n % 2 === 0 || n % 3 === 0) return false;
+
+  /* Bắt đầu kiểm tra từ số 5 và sau đó tăng i lên mỗi lần lặp (6k ± 1) */
+
+  /*
+   * Vì 4 dính điều kiện %2
+   * Từ 3 trở xuống dính điều kiện &lt;=3 &amp;&amp; &gt; 1
+   * ------------------------------------------------------
+   * 6k ± 1 là:
+   * 5 = 6k - 1(k = 1)
+   * 7 = 6k + 1(k = 1)
+   * 11 = 6k - 1(k = 2)
+   * 13 = 6k + 1(k = 2)
+   * 17 = 6k - 1(k = 3)
+   * 19 = 6k + 1(k = 3)
+   * 23 = 6k - 1(k = 4)
+   * 25 không phải số nguyên tố vì lần lặp đầu 25 % 5 đã kiểm tra được.
+   * 29 = 6k - 1(k = 5)
+   * 31 = 6k + 1(k = 5)
+   * 35 = 6k - 1(k = 6)
+   * 37 = 6k + 1(k = 6)
+   * ...
+   */
+
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    /* Kiểm tra n có chia hết cho i hoặc i + 2 không (6k ± 1) */
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  /* Nếu không có trường hợp nào thỏa mãn, số là số nguyên tố */
+  return true;
+}
+
+console.log(&quot;isPrime(9007199254740881)&quot;, isPrime(9007199254740881));
+console.log(
+  &quot;isPrime(Number.MAX_SAFE_INTEGER)&quot;,
+  isPrime(Number.MAX_SAFE_INTEGER)
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 5</a></p>
+<p>Bài làm rất tốt*</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 6</a></p>
+<p>Bài làm rất tốt*</p>
+<p>Nên sử dụng <code>document.write</code> để hiển thị lên trình duyệt thay vì console.</p>
+<p>Có thể sử dụng theo cách này(Tham khảo).</p>
+<pre><code class="language-html">&lt;style&gt;
+  /* Tạo một container bao bọc board để dễ dàng thay đổi kích thước */
+  .board-container {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    border: 1px solid black; /* Đường viền cho container */
+    width: 80vw; /* Kích thước tổng của bàn cờ. */
+  }
+
+  /* Thay đổi kích thước của ô vuông dựa trên kích thước của board */
+  .square {
+    width: calc(
+      100% / var(--sqrt)
+    ); /* Sử dụng biến CSS để tính toán kích thước */
+    padding-bottom: calc(
+      100% / var(--sqrt)
+    ); /* Đảm bảo ô vuông luôn có tỷ lệ vuông */
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước thực tế */
+  }
+
+  /* Màu nền cho các ô vuông */
+  .black {
+    background-color: #000;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;board-container&quot;&gt;
+  &lt;div id=&quot;board&quot; style=&quot;--sqrt: 16&quot;&gt;&lt;/div&gt;
+  &lt;!-- Sử dụng biến --sqrt để thiết lập kích thước --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  var board = document.getElementById(&quot;board&quot;);
+  const sqrt = parseInt(getComputedStyle(board).getPropertyValue(&quot;--sqrt&quot;)); // Lấy giá trị của --sqrt từ CSS
+  for (var i = 0; i &lt; sqrt; i++) {
+    for (var j = 0; j &lt; sqrt; j++) {
+      var square = document.createElement(&quot;div&quot;);
+      square.className = &quot;square&quot;;
+      board.appendChild(square);
+      if ((i + j) % 2 === 0) {
+        square.classList.add(&quot;black&quot;);
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day16">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt,</p>
+<ul>
+<li>Nên tối ưu code để dễ tái sử dụng, dễ hiểu và chạy tốt hơn, dễ dàng scale hơn.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Nguyễn Đức Hải</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 1</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Để tính giá tiền taxi, cần phải cộng dồn các khoảng lại với nhau.</p>
+<p>Function cần đặt tên theo quy tắc camelCase, sử dụng động từ để dễ đọc, dễ hiểu hơn. Đúng quy tắc chung hơn. Nếu được thì sử dụng tiếng anh.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 2</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Function cần đặt tên theo quy tắc camelCase, sử dụng động từ để dễ đọc, dễ hiểu hơn. Đúng quy tắc chung hơn. Nếu được thì sử dụng tiếng anh.
+Để tính giá tiền điện, cần phải cộng dồn các khoảng lại với nhau.</p>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function TotalBill(kWh) {
+  if (kWh &lt;= 0) {
+    console.log(`Số kWh nhập vào phải lớn hơn 0 và là số nguyên!`);
+    return 0;
+  }
+  var totalBill = 0;
+  function calculate(upperLimit, price) {
+    const used_kWh = Math.min(kWh, upperLimit);
+    totalBill += used_kWh * price;
+    kWh -= used_kWh;
+  }
+  calculate(50, 1678); /* 50kWh đầu tiên */
+  calculate(50, 1734); /* Từ kWh 51 - 100 */
+  calculate(100, 2014); /* Từ kWh 101 - 200 */
+  calculate(100, 2536); /* Từ kWh 201 - 300 */
+  calculate(100, 2834); /* Từ kWh 301 - 400 */
+  calculate(Infinity, 2927); /* Từ kWh 401 trở đi */
+  return totalBill;
+}
+console.log(`số tiền phải đóng ${TotalBill(12345).toLocaleString()} vnđ`);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 3</a></p>
+<p>Bài làm rất tốt*</p>
+<p>Function nên đặt tên có ý nghĩa và là một hành động, không phải là <code>a()</code></p>
+<p>Function cần đặt tên theo quy tắc camelCase, sử dụng động từ để dễ đọc, dễ hiểu hơn. Đúng quy tắc chung hơn. Nếu được thì sử dụng tiếng anh.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 4</a></p>
+<p>Bài làm tốt</p>
+<p>Function cần đặt tên theo quy tắc camelCase, sử dụng động từ để dễ đọc, dễ hiểu hơn. Đúng quy tắc chung hơn. Nếu được thì sử dụng tiếng anh.</p>
+<p>Tên biến cần đặt tên theo quy tắc camelCase, sử dụng danh từ để dễ đọc, dễ hiểu hơn. Đúng quy tắc chung hơn. Nếu được thì sử dụng tiếng anh.</p>
+<p>Bài làm chưa tối ưu với các số rất lớn.</p>
+<ul>
+<li>Vì đang lặp từ 2 đến soNT mặc dù không cần thiết, và có thể kiểm tra thêm một vài trường hợp để code có thể giảm số lần lặp.</li>
+</ul>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-js">function isPrime(n) {
+  /* Nếu số nhỏ hơn hoặc bằng 1, không phải số nguyên tố */
+  if (n &lt;= 1) return false;
+
+  /* Nếu số nhỏ hơn hoặc bằng 3 &amp;&amp; lớn hơn 1, là số nguyên tố */
+  if (n &lt;= 3) return true;
+
+  /* Kiểm tra trường hợp số chia hết cho 2 hoặc 3 &amp;&amp; lớn hơn 3 */
+  if (n % 2 === 0 || n % 3 === 0) return false;
+
+  /* Bắt đầu kiểm tra từ số 5 và sau đó tăng i lên mỗi lần lặp (6k ± 1) */
+
+  /*
+   * Vì 4 dính điều kiện %2
+   * Từ 3 trở xuống dính điều kiện &lt;=3 &amp;&amp; &gt; 1
+   * ------------------------------------------------------
+   * 6k ± 1 là:
+   * 5 = 6k - 1(k = 1)
+   * 7 = 6k + 1(k = 1)
+   * 11 = 6k - 1(k = 2)
+   * 13 = 6k + 1(k = 2)
+   * 17 = 6k - 1(k = 3)
+   * 19 = 6k + 1(k = 3)
+   * 23 = 6k - 1(k = 4)
+   * 25 không phải số nguyên tố vì lần lặp đầu 25 % 5 đã kiểm tra được.
+   * 29 = 6k - 1(k = 5)
+   * 31 = 6k + 1(k = 5)
+   * 35 = 6k - 1(k = 6)
+   * 37 = 6k + 1(k = 6)
+   * ...
+   */
+
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    /* Kiểm tra n có chia hết cho i hoặc i + 2 không (6k ± 1) */
+    if (n % i === 0 || n % (i + 2) === 0) return false;
+  }
+  /* Nếu không có trường hợp nào thỏa mãn, số là số nguyên tố */
+  return true;
+}
+
+console.log(&quot;isPrime(9007199254740881)&quot;, isPrime(9007199254740881));
+console.log(
+  &quot;isPrime(Number.MAX_SAFE_INTEGER)&quot;,
+  isPrime(Number.MAX_SAFE_INTEGER)
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 5</a></p>
+<p>Bài làm tốt*</p>
+<p>Nên tách ra thành một function để dễ dàng tái sử dụng hơn.</p>
+<p>Nên hiển thị ra màn hình bằng <code>document.write</code> thay vì <code>console.log</code>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 6</a></p>
+<p>Bài làm chưa tốt</p>
+<p>Nên vẽ đúng với giao diện của bàn cờ vua.</p>
+<pre><code class="language-html">&lt;style&gt;
+  /* Tạo một container bao bọc board để dễ dàng thay đổi kích thước */
+  .board-container {
+    display: inline-block; /* Hiển thị theo chiều ngang */
+    border: 1px solid black; /* Đường viền cho container */
+    width: 80vw; /* Kích thước tổng của bàn cờ. */
+  }
+
+  /* Thay đổi kích thước của ô vuông dựa trên kích thước của board */
+  .square {
+    width: calc(
+      100% / var(--sqrt)
+    ); /* Sử dụng biến CSS để tính toán kích thước */
+    padding-bottom: calc(
+      100% / var(--sqrt)
+    ); /* Đảm bảo ô vuông luôn có tỷ lệ vuông */
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo border không làm thay đổi kích thước thực tế */
+  }
+
+  /* Màu nền cho các ô vuông */
+  .black {
+    background-color: #000;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;board-container&quot;&gt;
+  &lt;div id=&quot;board&quot; style=&quot;--sqrt: 16&quot;&gt;&lt;/div&gt;
+  &lt;!-- Sử dụng biến --sqrt để thiết lập kích thước --&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  var board = document.getElementById(&quot;board&quot;);
+  const sqrt = parseInt(getComputedStyle(board).getPropertyValue(&quot;--sqrt&quot;)); // Lấy giá trị của --sqrt từ CSS
+  for (var i = 0; i &lt; sqrt; i++) {
+    for (var j = 0; j &lt; sqrt; j++) {
+      var square = document.createElement(&quot;div&quot;);
+      square.className = &quot;square&quot;;
+      board.appendChild(square);
+      if ((i + j) % 2 === 0) {
+        square.classList.add(&quot;black&quot;);
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 7</a></p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-16">Bài 8</a></p>
+<p>Bài làm rất tốt *</p>
+<p>Tên function cần viết theo quy tắc camelCase, là một động từ và nên viết tiếng anh dễ dàng đọc, phân biệt hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt,</p>
+<ul>
+<li>
+<p>Nên chú ý tới tên của function để giúp code dễ hiểu hơn.</p>
+</li>
+<li>
+<p>Nên tối ưu code để dễ tái sử dụng, dễ hiểu và chạy tốt hơn, dễ dàng scale hơn.</p>
+</li>
+</ul>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
