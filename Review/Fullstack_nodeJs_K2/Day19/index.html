@@ -1,0 +1,564 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day19</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương Review bài tập về nhà buổi 19 - Lớp K2</h1>
+<h2><a href="https://github.com/phamtiendat18/Fullstack-K2/blob/main/Day_19/js/script.js">Tiến Đạt - K2</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Chưa tìm được vị trí của 2 số.</p>
+<p>Tuy nhiên có thể gộp chung vào 1 vòng lặp để code đỡ rối hơn.</p>
+<p>Cần chú ý lại cách khai báo biến. Với các biến không thay đổi, cần được khai báo bằng <code>const</code> để giúp code chặt chẽ hơn.</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+});
+
+console.log(`Giá trị lớn nhất của mảng là: ${maxValue}`);
+console.log(`Giá trị nhỏ nhất của mảng là: ${minValue}`);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Cần chú ý lại cách khai báo biến. Với các biến không thay đổi, cần được khai báo bằng <code>const</code> để giúp code chặt chẽ hơn.</p>
+<p>Bài làm tốt</p>
+<p>Code quá rối.</p>
+<p>Nên tách thành các hàm khác nhau xử lý các tác vụ khác nhau để code được tốt hơn.</p>
+<p>Ví dụ ở bài thì có 2 hàm là <code>isPrime</code>, <code>getTotal</code>.</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Cần chú ý lại cách khai báo biến. Với các biến không thay đổi, cần được khai báo bằng <code>const</code> để giúp code chặt chẽ hơn.</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Cần chú ý lại cách khai báo biến. Với các biến không thay đổi, cần được khai báo bằng <code>const</code> để giúp code chặt chẽ hơn.</p>
+<p>Bài làm sai yêu cầu.</p>
+<p>Với đề bài là sắp xếp theo thứ tự tăng dần trước, rồi chèn 1 phần tử vào đúng chỗ cần, sao cho thứ tự tăng dần không thay đổi.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt *, tuy nhiên có thể làm tốt hơn với một số vòng lặp khác, tối ưu hơn với một số trường hợp khác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day19_js/ex_02/main.js">Nguyen Thi Tuyet</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên với bài tập này, <code>forEach</code> có thể sẽ làm code đỡ rối hơn.</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+let maxIndex = 0;
+let minIndex = 0;
+
+numbers.forEach(function (number, index) {
+  if (maxValue &lt; number) {
+    maxValue = number;
+    maxIndex = index;
+  }
+  if (minValue &gt; number) {
+    minValue = number;
+    minIndex = index;
+  }
+});
+console.log(
+  `Giá trị lớn nhất của mảng là: ${maxValue} tại vị trí ${maxIndex}`
+);
+console.log(
+  `Giá trị nhỏ nhất của mảng là: ${minValue} tại vị trí ${minIndex}`
+);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Nếu có thể, nên viết tên function và biến bằng tiếng anh để ngắn gọn và đẹp hơn.</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với bài này, có thể code bằng filter sẽ giúp code ngắn gọn và dễ hiểu hơn.</p>
+<pre><code class="language-js">const arr = [9, 42, 2, 16, 9, 2, 9, 22, -6, 4, 16, 4];
+const newArr = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+console.log(newArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm sai yêu cầu.</p>
+<p>Với đề bài là sắp xếp theo thứ tự tăng dần trước, rồi chèn 1 phần tử vào đúng chỗ cần, sao cho thứ tự tăng dần không thay đổi.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt *, tuy nhiên có thể làm tốt hơn với một số vòng lặp khác, tối ưu hơn với một số trường hợp khác.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/homework/day_19">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên chưa tìm được index của phần tử.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với bài này, có thể code bằng filter sẽ giúp code ngắn gọn và dễ hiểu hơn.</p>
+<pre><code class="language-js">const arr = [9, 42, 2, 16, 9, 2, 9, 22, -6, 4, 16, 4];
+const newArr = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+console.log(newArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm tốt*</p>
+<p>Các tên biến chưa được rõ ràng.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt *, tuy nhiên có thể làm tốt hơn với một số vòng lặp khác nhau.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day19">Thế Nguyễn Đại</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Chưa rõ ý đồ khi viết</p>
+<pre><code class="language-js">if (!!arrPrime.length) {
+}
+</code></pre>
+<p>Tối ưu tốt hàm <code>isPrime(number)</code>. Tuy nhiên có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) if (n % i === 0) return false;
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt *</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nvhlam2211/f8-fullstack/tree/main/day-19">Hoàng Lâm</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên có thể tối ưu lại với 1 vòng lặp:</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+});
+
+console.log(`Giá trị lớn nhất của mảng là: ${maxValue}`);
+console.log(`Giá trị nhỏ nhất của mảng là: ${minValue}`);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt*</p>
+<p>Code quá rối.</p>
+<p>Nên tách thành các hàm khác nhau xử lý các tác vụ khác nhau để code được tốt hơn.</p>
+<p>Ví dụ ở bài thì có 2 hàm là <code>isPrime</code>, <code>getTotal</code>.</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên nên sử dụng kiến thức đã học để luyện tập tốt hơn.</p>
+<pre><code class="language-js">const arr = [9, 42, 2, 16, 9, 2, 9, 22, -6, 4, 16, 4];
+const newArr = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+console.log(newArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm sai yêu cầu.</p>
+<p>Với đề bài là sắp xếp theo thứ tự tăng dần trước, rồi chèn 1 phần tử vào đúng chỗ cần, sao cho thứ tự tăng dần không thay đổi.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt*, tuy nhiên với bài 4, cần hiểu rõ đề bài hơn.</p>
+</li>
+</ul>
+<h2><a href="https://ha752002.github.io/f8-fullstack-k2/">Hồng Hà Nguyễn Thị</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt*</p>
+<p>Với tên biến là một array, nên biểu thị rõ, không nên đặt là <code>Prime</code>, có thể là <code>arrayPrime</code>...</p>
+<p>Nên tách thành 2 hàm để việc sử dụng, đọc hiểu được dễ hơn.</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt*</p>
+</li>
+</ul>
+<h2><a href="https://stung16.github.io/ex_f8-fullstack/Day19">Kiều Duy Tùng</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với các biến là hằng số, không thay đổi giá trị, không nên sử dụng <code>let</code>, nên sử dụng <code>const</code> để code được chặt chẽ hơn.</p>
+<p>Tuy nhiên có thể tối ưu lại với 1 vòng lặp:</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+});
+
+console.log(`Giá trị lớn nhất của mảng là: ${maxValue}`);
+console.log(`Giá trị nhỏ nhất của mảng là: ${minValue}`);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm sai yêu cầu.</p>
+<p>Với đề bài là sắp xếp theo thứ tự tăng dần trước, rồi chèn 1 phần tử vào đúng chỗ cần, sao cho thứ tự tăng dần không thay đổi.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt*, tuy nhiên với bài 4, cần hiểu rõ yêu cầu đề bài hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-19">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với các biến là hằng số, không thay đổi giá trị, không nên sử dụng <code>let</code>, nên sử dụng <code>const</code> để code được chặt chẽ hơn.</p>
+<p>Tuy nhiên có thể sử dụng forEach để bài làm đẹp hơn.</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+});
+
+console.log(`Giá trị lớn nhất của mảng là: ${maxValue}`);
+console.log(`Giá trị nhỏ nhất của mảng là: ${minValue}`);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với các biến là hằng số, không thay đổi giá trị, không nên sử dụng <code>let</code>, nên sử dụng <code>const</code> để code được chặt chẽ hơn.</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với các biến là hằng số, không thay đổi giá trị, không nên sử dụng <code>let</code>, nên sử dụng <code>const</code> để code được chặt chẽ hơn.</p>
+<p>Nên sử dụng các kiến thức đã học để luyện tập tốt hơn.</p>
+<pre><code class="language-js">const arr = [9, 42, 2, 16, 9, 2, 9, 22, -6, 4, 16, 4];
+const newArr = arr.filter((item, index) =&gt; arr.indexOf(item) === index);
+console.log(newArr);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt*, tuy nhiên cần chú ý đến độ chặt chẽ khi viết code, nên sử dụng let, const hợp lý.</p>
+</li>
+</ul>
+<h2><a href="https://hieuboss.github.io/F8-fullstack-k2/link/link.html">Duy Hiếu Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên có thể sử dụng forEach để bài làm đẹp hơn.</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+});
+
+console.log(`Giá trị lớn nhất của mảng là: ${maxValue}`);
+console.log(`Giá trị nhỏ nhất của mảng là: ${minValue}`);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt*</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Poyken/Js/blob/main/day19/ex">Nguyễn Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Tuy nhiên có thể gộp chung thành 1 vòng lặp và sử dụng forEach để bài làm đẹp hơn.</p>
+<pre><code class="language-js">const numbers = [5, 2, 4, -10, 8, 9, 3];
+let maxValue = numbers[0];
+let minValue = numbers[0];
+
+numbers.forEach(function (number) {
+  maxValue = maxValue &lt; number ? number : maxValue;
+  minValue = minValue &gt; number ? number : minValue;
+});
+
+console.log(`Giá trị lớn nhất của mảng là: ${maxValue}`);
+console.log(`Giá trị nhỏ nhất của mảng là: ${minValue}`);
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Với cách viết đoạn code check số nguyên tố, với các số to thì code chưa tối ưu.</p>
+<p>Có thể làm tốt hơn quy luật 6K+-1 và lặp từ số nguyên tố 5 trở đi.</p>
+<p><strong>Quy luật 6K+-1</strong>:</p>
+<pre><code class="language-shell">5 = 6 * 1 - 1        7 = 6 * 1 + 1        11 = 6 * 1 - 1
+13 = 6 * 1 + 1        17 = 6 * 3 - 1          19 = 6 * 3 + 1
+</code></pre>
+<p>Đề xuất sửa thành:</p>
+<pre><code class="language-javascript">function isPrime(n) {
+  if (n &lt;= 1) return false;
+  if (n &lt;= 3) return true;
+  if (n % 2 === 0 || n % 3 === 0) return false;
+  for (let i = 5; i * i &lt;= n; i += 6) {
+    if (n % i === 0) return false;
+  }
+
+  return true;
+}
+</code></pre>
+</li>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 4]</p>
+<p>Bài làm sai yêu cầu.</p>
+<p>Với đề bài là sắp xếp theo thứ tự tăng dần trước, rồi chèn 1 phần tử vào đúng chỗ cần, sao cho thứ tự tăng dần không thay đổi.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt*, tuy nhiên với bài 4, cần hiểu rõ yêu cầu đề bài hơn.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

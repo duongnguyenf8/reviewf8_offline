@@ -1,0 +1,205 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day23</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day23">Tiến Đạt - K2</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Để tiện hơn trong việc sử dụng lặp lại nhiều lần <code>document.querySelector</code> có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+&lt;/script&gt;
+&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>Cách xử lý chức năng ẩn hiện password ở cả 2 trang Đăng ký, đăng nhập giống nhau nên có thể viết một hàm <code>toggleEye</code> để thực hiện chức năng đó để:</p>
+<ul>
+<li>
+<p>Code ngắn gọn hơn, không cần phải copy nhiều lần.</p>
+</li>
+<li>
+<p>Code dễ hiểu và dễ dàng tối ưu và phát triển sau này.</p>
+</li>
+</ul>
+<p>Với các input ở 2 trang, đều có một điểm chung là <strong>email</strong>, <strong>password</strong>. Và hiện đang thực hiện thao tác với DOM và việc xác thực chung trong một function.</p>
+<ul>
+<li>Nên sử dụng một hàm chung để viết validate và xử lý các action.</li>
+</ul>
+<p>Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.</p>
+<p>Việc maintain, fix bug cũng dễ dàng hơn.</p>
+<ul>
+<li>Nên viết một hàm <code>getError</code> để lấy được các message lỗi cần thiết ở một chỗ.</li>
+</ul>
+<p>Để có thể dễ dàng sửa đổi message.</p>
+<p>Để dễ dàng thêm message cho từng case.</p>
+<ul>
+<li>Nên viết một hàm <code>resetForm</code> thực hiện các action reset và kết hợp với hàm validate, getError.</li>
+</ul>
+<p>Để code ngắn gọn hơn.</p>
+<p>Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.</p>
+<p>Ở trang đăng ký chưa làm case khi nhập mật khẩu đăng ký thì cần bắt được sự kiện nhập của người dùng và hiển thị ra thông báo <code>Mật khẩu tối thiểu 6 - 20 ký tự </code></p>
+<p>Cần chỉnh chu hơn về giao diện.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+<p>Bài làm tốt. Tuy nhiên chưa xử lý hết case.</p>
+<p>Cần chú ý thêm về vấn đề tối ưu cho việc sửa chữa, nâng cấp.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day23">Bùi Quang Trưởng</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Icon ẩn hiện mật khẩu đang bị ngược so với chức năng và cách hiển thị của icon.</p>
+<p>Với các input ở 2 trang, đều có một điểm chung là <strong>email</strong>, <strong>password</strong>.</p>
+<ul>
+<li>Nên sử dụng một hàm chung để viết validate và xử lý các action.</li>
+</ul>
+<p>Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.</p>
+<p>Việc maintain, fix bug cũng dễ dàng hơn.</p>
+<ul>
+<li>Nên viết một hàm <code>getError</code> để lấy được các message lỗi cần thiết ở một chỗ.</li>
+</ul>
+<p>Để có thể dễ dàng sửa đổi message.</p>
+<p>Để dễ dàng thêm message cho từng case.</p>
+<ul>
+<li>Nên viết một hàm <code>resetForm</code> thực hiện các action reset và kết hợp với hàm validate, getError.</li>
+</ul>
+<p>Để code ngắn gọn hơn.</p>
+<p>Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.</p>
+<p>Để tiện hơn trong việc sử dụng lặp lại nhiều lần <code>document.querySelector</code> có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+&lt;/script&gt;
+&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>Cách xử lý chức năng ẩn hiện password ở cả 2 trang Đăng ký, đăng nhập giống nhau nên có thể viết một hàm <code>toggleEye</code> để thực hiện chức năng đó để:</p>
+<ul>
+<li>
+<p>Code ngắn gọn hơn, không cần phải copy nhiều lần.</p>
+</li>
+<li>
+<p>Code dễ hiểu và dễ dàng tối ưu và phát triển sau này.</p>
+</li>
+</ul>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà</p>
+<p>Bài làm rất tốt. Đúng yêu cầu đề bài</p>
+<p>Tuy nhiên cần chú ý thêm về vấn đề tối ưu cho việc sửa chữa, nâng cấp.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-23">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt</p>
+<p>Chưa hiện thông báo của tất cả input sau khi blur 1 input bất kỳ lần đầu tiên.</p>
+<ul>
+<li>Có thể sử dụng một vòng lặp để hiển thị tất cả lỗi.</li>
+</ul>
+<p>Khi chuyển tab thì cả 2 form đều chưa reset trạng thái của icon thực hiện chức năng ẩn hiển password.</p>
+<p>Giao diện Login:</p>
+<ul>
+<li>Chưa xử lý case để nếu dữ liệu ở Email không hợp lệ và có dữ liệu ở Password.</li>
+</ul>
+<p><img src="images/DoanDuyChinh-1.png" alt="alt"></p>
+<p>Giao diện Register:</p>
+<ul>
+<li>
+<p>Khi gõ ký tự đầu tiên của input Họ và tên thì cần thông báo lỗi của 2 input còn lại.</p>
+</li>
+<li>
+<p>Chưa xử lý case để nếu dữ liệu ở Email không hợp lệ và có dữ liệu ở Password.</p>
+<p>Với các input ở 2 trang, đều có một điểm chung là <strong>email</strong>, <strong>password</strong>.</p>
+</li>
+<li>
+<p>Nên sử dụng một hàm chung để viết validate và xử lý các action.</p>
+</li>
+</ul>
+<p>Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.</p>
+<p>Việc maintain, fix bug cũng dễ dàng hơn.</p>
+<ul>
+<li>Nên viết một hàm <code>getError</code> để lấy được các message lỗi cần thiết ở một chỗ.</li>
+</ul>
+<p>Để có thể dễ dàng sửa đổi message.</p>
+<p>Để dễ dàng thêm message cho từng case.</p>
+<ul>
+<li>Nên viết một hàm <code>resetForm</code> thực hiện các action reset và kết hợp với hàm validate, getError.</li>
+</ul>
+<p>Để code ngắn gọn hơn.</p>
+<p>Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.</p>
+<p>Để tiện hơn trong việc sử dụng lặp lại nhiều lần <code>document.querySelector</code> có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+&lt;/script&gt;
+&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá chung bài tập về nhà</li>
+</ul>
+<p>Bài làm tốt. Tuy nhiên chưa xử lý hết tất cả các case.</p>
+<p>Cần chú ý thêm về vấn đề tối ưu cho việc sửa chữa, nâng cấp.</p>
+<hr>
+<h2><a href="https://github.com/Poyken/Js/tree/main/day22/ex">Nguyễn Văn Đức</a></h2>
+<ul>
+<li>[x] [Bài 1]</li>
+</ul>
+<p>Bài làm rất tốt*</p>
+<p>Thay vì check <code>=== null || === &quot;&quot;</code> có thể sử dụng falsy.</p>
+<p>Có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:</p>
+<pre><code class="language-html">&lt;script&gt;
+  var $ = function (tag) {
+    return document.querySelector(tag);
+  };
+  var $$ = function (allTag) {
+    return document.querySelectorAll(allTag);
+  };
+&lt;/script&gt;
+&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;
+</code></pre>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà</p>
+<p>Bài làm rất tốt*</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day23">Nguyễn Đại Thế</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Icon thực hiện chức năng ẩn, hiện mật khẩu đang không được reset về đúng trạng thái ban đầu.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà</p>
+<p>Bài làm rất tốt.</p>
+<p>Chỉ cần lưu ý lỗi nhỏ ở trên để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

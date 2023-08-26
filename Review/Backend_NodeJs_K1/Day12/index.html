@@ -1,0 +1,859 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day12</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/dungng1321/f8-BackEnd-NodeJS-k1/tree/feature/day-12/day12">Nguyễn Đức Dũng</a></h2>
+<p><strong>Sớm nhất</strong></p>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên chưa xử lý trường hợp nếu chuỗi nhập vào có giá trị là 0 thì cần in ra là <code>0 millisecond</code> sẽ chặt chẽ hơn.</p>
+<p>Đề xuất thêm điều kiện:</p>
+<pre><code class="language-js">if (ms === 0) {
+  return &quot;0 millisecond&quot;;
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm rất tốt. *</p>
+<p>Tuy nhiên cần thông báo lỗi cụ thể và rõ ràng nhất sẽ tốt hơn. Góp ý:</p>
+<pre><code class="language-js">if (isNaN(first.getTime()) || isNaN(second.getTime())) {
+  throw new Error(&quot;Invalid date. Please provide valid date strings.&quot;);
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm rất tốt, chỉ cần lưu ý một số chi tiết nhỏ để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi12">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Tuy nhiên phần kiểm tra điều kiện đầu vào còn thiếu, chưa kiểm tra nếu đầu vào không phải là số.</p>
+<p>Việc check điều kiện <code>time &gt; 0</code> sẽ bị thiếu trường hợp <code>time = 0</code> thì nên đưa ra Output sẽ là <code>0 millisecond.</code></p>
+<p>Hiện tại Output khi nhập đầu vào là 1001 đang là <code>1 second 1 millisecond</code>. Output như vậy không đúng với yêu cầu đề bài khi đề bài yêu cầu giữa các đơn vị cần có dấu phẩy ngăn cách để dễ đọc hơn. Đề xuất thêm dấu phẩy ở cuối các phép cộng chuỗi ngoại trừ đơn vị <code>millisecond</code> thì thêm dấu <code>.</code></p>
+<p>Bài làm đang check từng điều kiện ở trong từng <code>if</code>. Điều này vẫn ra kết quả đúng nhưng sẽ cần check khá nhiều và làm cho code dài, nên tối ưu lại cách làm, có thể tham khảo đoạn code dưới đây:</p>
+<pre><code class="language-js">const convertMsToString = (milliseconds) =&gt; {
+  if (
+    typeof milliseconds !== &quot;number&quot; ||
+    milliseconds &lt; 0 ||
+    !Number.isInteger(milliseconds)
+  ) {
+    return &quot;Invalid input, please provide a positive integer.&quot;;
+  }
+
+  const timeUnits = [
+    { unit: &quot;day&quot;, value: 86400000 },
+    { unit: &quot;hour&quot;, value: 3600000 },
+    { unit: &quot;minute&quot;, value: 60000 },
+    { unit: &quot;second&quot;, value: 1000 },
+    { unit: &quot;millisecond&quot;, value: 1 },
+  ];
+
+  const timeParts = [];
+
+  timeUnits.forEach(({ unit, value }) =&gt; {
+    const time = Math.floor(milliseconds / value);
+    milliseconds %= value;
+
+    if (time !== 0) {
+      timeParts.push(`${time} ${unit}${time !== 1 ? &quot;s&quot; : &quot;&quot;}`);
+    }
+  });
+
+  if (timeParts.length === 0) {
+    return &quot;0 millisecond&quot;;
+  }
+
+  return timeParts.join(&quot;, &quot;);
+};
+
+console.log(convertMsToString(34325055574));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Kết quả đúng với ví dụ của đề bài nhưng chưa kiểm tra điều kiện đầu vào.</p>
+<p>Tham khảo đoạn code dưới đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">function isValidateFormatDate(date) {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(date);
+}
+
+function getDaysBetweenDates(firstDate, secondDate) {
+  if (!isValidateFormatDate(firstDate) || !isValidateFormatDate(secondDate))
+    throw new Error(&quot;Date format must be YYYY-MM-DD&quot;);
+
+  const first = new Date(firstDate);
+  const second = new Date(secondDate);
+
+  if (isNaN(first.getTime()) || isNaN(second.getTime()))
+    throw new Error(&quot;Invalid date&quot;);
+
+  const oneDay = 24 * 60 * 60 * 1000; // ms
+  const diff = Math.abs(first - second);
+  return `Distance between ${firstDate} and ${secondDate} is ${Math.ceil(
+    diff / oneDay
+  )} days`;
+}
+
+console.log(getDaysBetweenDates(&quot;2020-12-01&quot;, &quot;2020-01-22&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, lưu ý kiểm tra đầy đủ các điều kiện của dữ liệu đầu vào có thể xảy ra và cần tối ưu code một cách ngắn gọn hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dangmanh2001/f8_BE_k1/tree/main/Baitapbuoi12">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Cần tuân thủ chặt chẽ Output mà đề bài yêu cầu. Điều này rất quan trọng. Hiện tại Output của cách đang làm là <code>397d,6h,44m,15s,574mls</code> so với Output mà đề bài đưa mẫu là <code>397 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds</code>. Output càng rõ ràng càng dễ hiểu và thuận tiện cho việc sửa đổi và cải thiện sau này.</p>
+<p>Bài làm chưa check kỹ các trường hợp ngoại lệ của đầu vào. Hiện tại bài làm sẽ có kết quả như sau trong trường hợp:</p>
+<pre><code class="language-js">console.log(readTime(-8)); //Output: -8mls.
+</code></pre>
+<p>Việc quan trọng ở bài toán này là xử lý số ít và số nhiều nhưng hiện tại chưa xử lý được vì đã fix cứng đơn vị của các thành phần là <code>d</code>, <code>h</code>, <code>m</code>, <code>s</code>, <code>mls</code>.</p>
+<p>Tham khảo đoạn code dưới đây để sửa đổi và cải thiện bài làm hơn:</p>
+<pre><code class="language-js">const convertMsToString = (milliseconds) =&gt; {
+  if (
+    typeof milliseconds !== &quot;number&quot; ||
+    milliseconds &lt; 0 ||
+    !Number.isInteger(milliseconds)
+  ) {
+    return &quot;Invalid input, please provide a positive integer.&quot;;
+  }
+
+  const timeUnits = [
+    { unit: &quot;day&quot;, value: 86400000 },
+    { unit: &quot;hour&quot;, value: 3600000 },
+    { unit: &quot;minute&quot;, value: 60000 },
+    { unit: &quot;second&quot;, value: 1000 },
+    { unit: &quot;millisecond&quot;, value: 1 },
+  ];
+
+  const timeParts = [];
+
+  timeUnits.forEach(({ unit, value }) =&gt; {
+    const time = Math.floor(milliseconds / value);
+    milliseconds %= value;
+
+    if (time !== 0) {
+      timeParts.push(`${time} ${unit}${time !== 1 ? &quot;s&quot; : &quot;&quot;}`);
+    }
+  });
+
+  if (timeParts.length === 0) {
+    return &quot;0 millisecond&quot;;
+  }
+
+  return timeParts.join(&quot;, &quot;);
+};
+
+console.log(convertMsToString(34325055574));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Kết quả đúng với ví dụ của đề bài nhưng chưa kiểm tra điều kiện đầu vào.</p>
+<p>Tham khảo đoạn code dưới đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">function isValidateFormatDate(date) {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(date);
+}
+
+function getDaysBetweenDates(firstDate, secondDate) {
+  if (!isValidateFormatDate(firstDate) || !isValidateFormatDate(secondDate))
+    throw new Error(&quot;Date format must be YYYY-MM-DD&quot;);
+
+  const first = new Date(firstDate);
+  const second = new Date(secondDate);
+
+  if (isNaN(first.getTime()) || isNaN(second.getTime()))
+    throw new Error(&quot;Invalid date&quot;);
+
+  const oneDay = 24 * 60 * 60 * 1000; // ms
+  const diff = Math.abs(first - second);
+  return `Distance between ${firstDate} and ${secondDate} is ${Math.ceil(
+    diff / oneDay
+  )} days`;
+}
+
+console.log(getDaysBetweenDates(&quot;2020-12-01&quot;, &quot;2020-01-22&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm chưa tốt, cần tuân thủ chuẩn Output mà đề bài đưa ra và kiểm tra đầy đủ các trường hợp đầu vào có thể xảy ra để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW12/js">Phạm Hoàng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm chưa kiểm tra điều kiện đầu vào của <code>milliseconds</code>, sau đây là một số kết quả của cách làm hiện tại:</p>
+<pre><code class="language-js">console.log(convertMilliseconds(-8)); //Output: -1 days, 23 hours, 59 minutes, 59 seconds, 992 milliseconds.
+console.log(convertMilliseconds(0)); //Output: 0 days, 0 hours, 0 minutes, 0 seconds, 0 milliseconds.
+console.log(convertMilliseconds(1001)); //Output: 0 days, 0 hours, 0 minutes, 1 seconds, 1 milliseconds
+console.log(convertMilliseconds(&quot;a&quot;)); //Output: NaN days, NaN hours, NaN minutes, NaN seconds, NaN milliseconds
+</code></pre>
+<p>Đối chiếu các Output trên với Output đề bài đưa ra có một số nhận xét sau đây:</p>
+<ul>
+<li>
+<p>Chưa xử lý số ít, số nhiều. Hiện tại dù giá trị là 1 nhưng đơn vị vẫn thể hiện dạng số nhiều.</p>
+</li>
+<li>
+<p>Chưa xử lý đầu vào là số âm, số 0, đầu vào không phải là số.</p>
+</li>
+<li>
+<p>Nếu giá trị của thành phần nào là 0 thì vẫn đang hiển thị ra nhưng đề bài không cần hiển thị giá trị nào là 0.</p>
+</li>
+</ul>
+<p>Tham khảo đoạn code dưới đây để sửa đổi và hoàn thiện hơn:</p>
+<pre><code class="language-js">const convertMsToString = (milliseconds) =&gt; {
+  if (
+    typeof milliseconds !== &quot;number&quot; ||
+    milliseconds &lt; 0 ||
+    !Number.isInteger(milliseconds)
+  ) {
+    return &quot;Invalid input, please provide a positive integer.&quot;;
+  }
+
+  const timeUnits = [
+    { unit: &quot;day&quot;, value: 86400000 },
+    { unit: &quot;hour&quot;, value: 3600000 },
+    { unit: &quot;minute&quot;, value: 60000 },
+    { unit: &quot;second&quot;, value: 1000 },
+    { unit: &quot;millisecond&quot;, value: 1 },
+  ];
+
+  const timeParts = [];
+
+  timeUnits.forEach(({ unit, value }) =&gt; {
+    const time = Math.floor(milliseconds / value);
+    milliseconds %= value;
+
+    if (time !== 0) {
+      timeParts.push(`${time} ${unit}${time !== 1 ? &quot;s&quot; : &quot;&quot;}`);
+    }
+  });
+
+  if (timeParts.length === 0) {
+    return &quot;0 millisecond&quot;;
+  }
+
+  return timeParts.join(&quot;, &quot;);
+};
+
+console.log(convertMsToString(34325055574));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Kết quả đúng với ví dụ của đề bài nhưng chưa kiểm tra điều kiện đầu vào.</p>
+<p>Tham khảo đoạn code dưới đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">function isValidateFormatDate(date) {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(date);
+}
+
+function getDaysBetweenDates(firstDate, secondDate) {
+  if (!isValidateFormatDate(firstDate) || !isValidateFormatDate(secondDate))
+    throw new Error(&quot;Date format must be YYYY-MM-DD&quot;);
+
+  const first = new Date(firstDate);
+  const second = new Date(secondDate);
+
+  if (isNaN(first.getTime()) || isNaN(second.getTime()))
+    throw new Error(&quot;Invalid date&quot;);
+
+  const oneDay = 24 * 60 * 60 * 1000; // ms
+  const diff = Math.abs(first - second);
+  return `Distance between ${firstDate} and ${secondDate} is ${Math.ceil(
+    diff / oneDay
+  )} days`;
+}
+
+console.log(getDaysBetweenDates(&quot;2020-12-01&quot;, &quot;2020-01-22&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm khá tốt, lưu ý kiểm tra đầy đủ các điều kiện của dữ liệu đầu vào có thể xảy ra để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB12">Dương Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Cần tuân thủ chặt chẽ Output mà đề bài yêu cầu. Điều này rất quan trọng. Hiện tại Output của cách đang làm là <code>397d,6h,44m,15s,574mls</code> so với Output mà đề bài đưa mẫu là <code>397 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds</code>. Output càng rõ ràng càng dễ hiểu và thuận tiện cho việc sửa đổi và cải thiện sau này.</p>
+<p>Bài làm chưa check kỹ các trường hợp ngoại lệ của đầu vào. Hiện tại bài làm sẽ có kết quả như sau trong trường hợp:</p>
+<pre><code class="language-js">console.log(readTime(-8)); //Output: -8mls.
+</code></pre>
+<p>Việc quan trọng ở bài toán này là xử lý số ít và số nhiều nhưng hiện tại chưa xử lý được vì đã fix cứng đơn vị của các thành phần là <code>d</code>, <code>h</code>, <code>m</code>, <code>s</code>, <code>mls</code>.</p>
+<p>Tham khảo đoạn code dưới đây để sửa đổi và cải thiện bài làm hơn:</p>
+<pre><code class="language-js">const convertMsToString = (milliseconds) =&gt; {
+  if (
+    typeof milliseconds !== &quot;number&quot; ||
+    milliseconds &lt; 0 ||
+    !Number.isInteger(milliseconds)
+  ) {
+    return &quot;Invalid input, please provide a positive integer.&quot;;
+  }
+
+  const timeUnits = [
+    { unit: &quot;day&quot;, value: 86400000 },
+    { unit: &quot;hour&quot;, value: 3600000 },
+    { unit: &quot;minute&quot;, value: 60000 },
+    { unit: &quot;second&quot;, value: 1000 },
+    { unit: &quot;millisecond&quot;, value: 1 },
+  ];
+
+  const timeParts = [];
+
+  timeUnits.forEach(({ unit, value }) =&gt; {
+    const time = Math.floor(milliseconds / value);
+    milliseconds %= value;
+
+    if (time !== 0) {
+      timeParts.push(`${time} ${unit}${time !== 1 ? &quot;s&quot; : &quot;&quot;}`);
+    }
+  });
+
+  if (timeParts.length === 0) {
+    return &quot;0 millisecond&quot;;
+  }
+
+  return timeParts.join(&quot;, &quot;);
+};
+
+console.log(convertMsToString(34325055574));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Kết quả đúng với ví dụ của đề bài nhưng chưa kiểm tra điều kiện đầu vào.</p>
+<p>Tham khảo đoạn code dưới đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">function isValidateFormatDate(date) {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(date);
+}
+
+function getDaysBetweenDates(firstDate, secondDate) {
+  if (!isValidateFormatDate(firstDate) || !isValidateFormatDate(secondDate))
+    throw new Error(&quot;Date format must be YYYY-MM-DD&quot;);
+
+  const first = new Date(firstDate);
+  const second = new Date(secondDate);
+
+  if (isNaN(first.getTime()) || isNaN(second.getTime()))
+    throw new Error(&quot;Invalid date&quot;);
+
+  const oneDay = 24 * 60 * 60 * 1000; // ms
+  const diff = Math.abs(first - second);
+  return `Distance between ${firstDate} and ${secondDate} is ${Math.ceil(
+    diff / oneDay
+  )} days`;
+}
+
+console.log(getDaysBetweenDates(&quot;2020-12-01&quot;, &quot;2020-01-22&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p><strong>Chưa làm</strong>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm chưa tốt, cần tuân thủ chuẩn Output mà đề bài đưa ra và kiểm tra đầy đủ các trường hợp đầu vào có thể xảy ra và cần hoàn thành đầy đủ bài tập về nhà. Nếu như gặp khó khăn cần đặt câu hỏi kịp thời để được giải đáp.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-12/src">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt. *</p>
+<p>Tuy nhiên bài làm chưa xét hết các trường hợp của đầu vào. Ví dụ kết quả hiện tại của một số trường hợp đang như sau là không đúng:</p>
+<pre><code class="language-js">console.log(convertMilliseconds(0)); //Output: null.
+console.log(convertMilliseconds(-8)); //Output: null.
+</code></pre>
+<p>Vì vậy cần xét tất cả các trường hợp có thể xảy ra của Input và thông báo lỗi một cách cụ thể nhất chứ không phải lúc nào cũng là <code>null</code>.</p>
+<p>Bài làm đúng về Output nhưng xét quá nhiều <code>if...else</code>, nên tối ưu lại code một cách hiệu quả hơn.</p>
+<p>Có thể tham khảo đoạn code dưới đây để sửa đổi và hoàn thiện hơn:</p>
+<pre><code class="language-js">const convertMsToString = (milliseconds) =&gt; {
+  if (
+    typeof milliseconds !== &quot;number&quot; ||
+    milliseconds &lt; 0 ||
+    !Number.isInteger(milliseconds)
+  ) {
+    return &quot;Invalid input, please provide a positive integer.&quot;;
+  }
+
+  const timeUnits = [
+    { unit: &quot;day&quot;, value: 86400000 },
+    { unit: &quot;hour&quot;, value: 3600000 },
+    { unit: &quot;minute&quot;, value: 60000 },
+    { unit: &quot;second&quot;, value: 1000 },
+    { unit: &quot;millisecond&quot;, value: 1 },
+  ];
+
+  const timeParts = [];
+
+  timeUnits.forEach(({ unit, value }) =&gt; {
+    const time = Math.floor(milliseconds / value);
+    milliseconds %= value;
+
+    if (time !== 0) {
+      timeParts.push(`${time} ${unit}${time !== 1 ? &quot;s&quot; : &quot;&quot;}`);
+    }
+  });
+
+  if (timeParts.length === 0) {
+    return &quot;0 millisecond&quot;;
+  }
+
+  return timeParts.join(&quot;, &quot;);
+};
+
+console.log(convertMsToString(34325055574));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Kết quả đúng với ví dụ của đề bài nhưng chưa kiểm tra điều kiện đầu vào.</p>
+<p>Tham khảo đoạn code dưới đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">function isValidateFormatDate(date) {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(date);
+}
+
+function getDaysBetweenDates(firstDate, secondDate) {
+  if (!isValidateFormatDate(firstDate) || !isValidateFormatDate(secondDate))
+    throw new Error(&quot;Date format must be YYYY-MM-DD&quot;);
+
+  const first = new Date(firstDate);
+  const second = new Date(secondDate);
+
+  if (isNaN(first.getTime()) || isNaN(second.getTime()))
+    throw new Error(&quot;Invalid date&quot;);
+
+  const oneDay = 24 * 60 * 60 * 1000; // ms
+  const diff = Math.abs(first - second);
+  return `Distance between ${firstDate} and ${secondDate} is ${Math.ceil(
+    diff / oneDay
+  )} days`;
+}
+
+console.log(getDaysBetweenDates(&quot;2020-12-01&quot;, &quot;2020-01-22&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt. *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt tuy nhiên cần kiểm tra đầy đủ các trường hợp có thể xảy ra ở đầu vào và cần tối ưu code ngắn gọn để hoàn thiện hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenducthanh04/f8-backend-k1.git">Thanh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Cần tuân thủ chặt chẽ Output mà đề bài yêu cầu. Điều này rất quan trọng. Hiện tại Output của cách đang làm là <code>397d,6h,44m,15s,574mls</code> so với Output mà đề bài đưa mẫu là <code>397 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds</code>. Output càng rõ ràng càng dễ hiểu và thuận tiện cho việc sửa đổi và cải thiện sau này.</p>
+<p>Bài làm chưa check kỹ các trường hợp ngoại lệ của đầu vào. Hiện tại bài làm sẽ có kết quả như sau trong trường hợp:</p>
+<pre><code class="language-js">console.log(convertTime(-8)); //Output: -8mls.
+</code></pre>
+<p>Việc quan trọng ở bài toán này là xử lý số ít và số nhiều nhưng hiện tại chưa xử lý được vì đã fix cứng đơn vị của các thành phần là <code>d</code>, <code>h</code>, <code>m</code>, <code>s</code>, <code>mls</code>.</p>
+<p>Tham khảo đoạn code dưới đây để sửa đổi và cải thiện bài làm hơn:</p>
+<pre><code class="language-js">const convertMsToString = (milliseconds) =&gt; {
+  if (
+    typeof milliseconds !== &quot;number&quot; ||
+    milliseconds &lt; 0 ||
+    !Number.isInteger(milliseconds)
+  ) {
+    return &quot;Invalid input, please provide a positive integer.&quot;;
+  }
+
+  const timeUnits = [
+    { unit: &quot;day&quot;, value: 86400000 },
+    { unit: &quot;hour&quot;, value: 3600000 },
+    { unit: &quot;minute&quot;, value: 60000 },
+    { unit: &quot;second&quot;, value: 1000 },
+    { unit: &quot;millisecond&quot;, value: 1 },
+  ];
+
+  const timeParts = [];
+
+  timeUnits.forEach(({ unit, value }) =&gt; {
+    const time = Math.floor(milliseconds / value);
+    milliseconds %= value;
+
+    if (time !== 0) {
+      timeParts.push(`${time} ${unit}${time !== 1 ? &quot;s&quot; : &quot;&quot;}`);
+    }
+  });
+
+  if (timeParts.length === 0) {
+    return &quot;0 millisecond&quot;;
+  }
+
+  return timeParts.join(&quot;, &quot;);
+};
+
+console.log(convertMsToString(34325055574));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Kết quả đúng với ví dụ của đề bài nhưng chưa kiểm tra điều kiện đầu vào.</p>
+<p>Tham khảo đoạn code dưới đây để hoàn thiện hơn:</p>
+<pre><code class="language-js">function isValidateFormatDate(date) {
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  return regex.test(date);
+}
+
+function getDaysBetweenDates(firstDate, secondDate) {
+  if (!isValidateFormatDate(firstDate) || !isValidateFormatDate(secondDate))
+    throw new Error(&quot;Date format must be YYYY-MM-DD&quot;);
+
+  const first = new Date(firstDate);
+  const second = new Date(secondDate);
+
+  if (isNaN(first.getTime()) || isNaN(second.getTime()))
+    throw new Error(&quot;Invalid date&quot;);
+
+  const oneDay = 24 * 60 * 60 * 1000; // ms
+  const diff = Math.abs(first - second);
+  return `Distance between ${firstDate} and ${secondDate} is ${Math.ceil(
+    diff / oneDay
+  )} days`;
+}
+
+console.log(getDaysBetweenDates(&quot;2020-12-01&quot;, &quot;2020-01-22&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p><strong>Chưa làm</strong>.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm chưa tốt, cần tuân thủ chuẩn Output mà đề bài đưa ra và kiểm tra đầy đủ các trường hợp đầu vào có thể xảy ra và cần hoàn thành đầy đủ bài tập về nhà. Nếu như gặp khó khăn cần đặt câu hỏi kịp thời để được giải đáp.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise/tree/main/Lab12">Hiếu Nguyễn Minh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Tuy nhiên để đoạn dễ đọc hơn, nên thêm một biến để lưu trữ số mili giây còn lại sau mỗi lần chia, thay vì sử dụng tham số milliseconds ban đầu.</p>
+<p>Và nên thêm những điều kiện kiểm tra lỗi cho các tham số đầu vào như:</p>
+<ul>
+<li>
+<p>Nếu milliseconds nhỏ hơn 0 hoặc không phải là số nguyên thì trả về một thông báo lỗi.</p>
+</li>
+<li>
+<p>Nếu result rỗng (tức là milliseconds ban đầu bằng 0) thì trả về chuỗi &quot;0 milliseconds&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Nhưng để hoàn thiện hơn, nên thêm những điều kiện sau để kiểm tra lỗi cho các tham số đầu vào:</p>
+<ul>
+<li>
+<p>Kiểm tra lỗi cho các tham số đầu vào startDate và endDate để đảm bảo chúng là các chuỗi ngày hợp lệ.</p>
+</li>
+<li>
+<p>Kiểm tra để đảm bảo rằng startDate luôn nhỏ hơn hoặc bằng endDate. Hay sử dụng giá trị tuyệt đối để tính toán, để đảm bảo rằng kết quả trả về luôn là một số dương khi người dùng muốn tính khoảng cách thời gian giữa hai ngày mà không quan tâm đến thứ tự của chúng.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt. Và để hoàn thiện hơn nữa nên để ý tới các tham số đầu vào, thêm các điều kiện để kiểm soát lỗi tốt hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/maiduchien23/F8-BE/tree/main/F8_BE/f8_nodejs/homeword/day12">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Nhưng để có thể đoạn dễ đọc hơn, nên thêm một biến để lưu trữ số mili giây còn lại sau mỗi lần chia, thay vì sử dụng tham số milliseconds ban đầu.</p>
+<p>Và nên thêm những điều kiện kiểm tra lỗi cho các tham số đầu vào như:</p>
+<ul>
+<li>
+<p>Nếu milliseconds nhỏ hơn 0 hoặc không phải là số nguyên thì trả về một thông báo lỗi.</p>
+</li>
+<li>
+<p>Nếu result rỗng (tức là milliseconds ban đầu bằng 0) thì trả về chuỗi &quot;0 milliseconds&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Để hoàn thiện hơn, nên thêm những điều kiện sau để kiểm tra lỗi cho các tham số đầu vào:</p>
+<ul>
+<li>
+<p>Kiểm tra lỗi cho các tham số đầu vào startDate và endDate để đảm bảo chúng là các chuỗi ngày hợp lệ.</p>
+</li>
+<li>
+<p>Kiểm tra để đảm bảo rằng startDate luôn nhỏ hơn hoặc bằng endDate. Hay sử dụng giá trị tuyệt đối để tính toán, để đảm bảo rằng kết quả trả về luôn là một số dương khi người dùng muốn tính khoảng cách thời gian giữa hai ngày mà không quan tâm đến thứ tự của chúng.</p>
+</li>
+</ul>
+<p>Ngoài ra, nên sử dụng phương thức Math.floor thay vì Math.ceil để làm tròn kết quả xuống, vì khoảng cách giữa hai ngày được tính bằng số ngày đầy đủ giữa chúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt. Và để hoàn thiện hơn nữa nên để ý tới các tham số đầu vào, thêm các điều kiện để kiểm soát lỗi tốt hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi12">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Để tối ưu code hơn trong bài này ( đỡ phải viết lại nhiều những đoạn lặp lại ) nên áp dụng cách các phương thức <code>reduce</code> hoặc <code>map</code> để xử lí bài toán.</p>
+<p>Và để đoạn code dễ đọc hơn, nên thêm một biến để lưu trữ số mili giây còn lại sau mỗi lần chia, thay vì sử dụng tham số ms ban đầu.</p>
+<p>Nên thêm những điều kiện kiểm tra lỗi cho các tham số đầu vào như:</p>
+<ul>
+<li>
+<p>Nếu ms nhỏ hơn 0 hoặc không phải là số nguyên thì trả về một thông báo lỗi.</p>
+</li>
+<li>
+<p>Nếu result rỗng (tức là ms ban đầu bằng 0) thì trả về chuỗi &quot;0 millisecond&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Nhưng để hoàn thiện hơn, nên thêm những điều kiện sau để kiểm tra lỗi cho các tham số đầu vào:</p>
+<ul>
+<li>
+<p>Kiểm tra lỗi cho các tham số đầu vào startDate và endDate để đảm bảo chúng là các chuỗi ngày hợp lệ.</p>
+</li>
+<li>
+<p>Kiểm tra để đảm bảo rằng startDate luôn nhỏ hơn hoặc bằng endDate. Hay sử dụng giá trị tuyệt đối để tính toán, để đảm bảo rằng kết quả trả về luôn là một số dương khi người dùng muốn tính khoảng cách thời gian giữa hai ngày mà không quan tâm đến thứ tự của chúng.</p>
+</li>
+</ul>
+<p>Ngoài ra, nên sử dụng phương thức Math.floor để làm tròn kết quả xuống, vì khoảng cách giữa hai ngày được tính bằng số ngày đầy đủ giữa chúng.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt. Và để hoàn thiện hơn nữa nên để ý tới các tham số đầu vào, thêm các điều kiện để kiểm soát lỗi tốt hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVN/BTVNB12">Bao Pham Van</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Để tối ưu code hơn trong bài này ( đỡ phải viết lại nhiều những đoạn lặp lại ) nên áp dụng cách các phương thức <code>reduce</code> hoặc <code>map</code> để xử lí bài toán.</p>
+<p>Và để đoạn code dễ đọc hơn, có thể thêm một biến để lưu trữ số mili giây còn lại sau mỗi lần chia, thay vì sử dụng tham số <code>ms</code> ban đầu.</p>
+<p>Nên thêm những điều kiện kiểm tra lỗi cho các tham số đầu vào như:</p>
+<ul>
+<li>
+<p>Nếu <code>ms</code> nhỏ hơn 0 hoặc không phải là số nguyên thì trả về một thông báo lỗi.</p>
+</li>
+<li>
+<p>Nếu <code>result</code> rỗng (tức là <code>ms</code> ban đầu bằng 0) thì trả về chuỗi &quot;0 millisecond&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm tốt.</p>
+<p>Nhưng để hoàn thiện hơn, nên thêm những điều kiện sau để kiểm tra lỗi cho các tham số đầu vào:</p>
+<ul>
+<li>
+<p>Kiểm tra lỗi cho các tham số đầu vào startDate và endDate để đảm bảo chúng là các chuỗi ngày hợp lệ.</p>
+</li>
+<li>
+<p>Kiểm tra để đảm bảo rằng startDate luôn nhỏ hơn hoặc bằng endDate. Hay sử dụng giá trị tuyệt đối để tính toán, để đảm bảo rằng kết quả trả về luôn là một số dương khi người dùng muốn tính khoảng cách thời gian giữa hai ngày mà không quan tâm đến thứ tự của chúng.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm tốt. Và để hoàn thiện hơn nữa nên để ý tới các tham số đầu vào, thêm các điều kiện để kiểm soát lỗi tốt hơn.</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi12">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt.</p>
+<p>Và để đoạn code dễ đọc hơn, có thể thêm một biến để lưu trữ số mili giây còn lại sau mỗi lần chia, thay vì sử dụng tham số <code>duration</code> ban đầu</p>
+<p>Nên thêm những điều kiện kiểm tra lỗi cho các tham số đầu vào như:</p>
+<ul>
+<li>
+<p>Nếu <code>duration</code> nhỏ hơn 0 hoặc không phải là số nguyên thì trả về một thông báo lỗi.</p>
+</li>
+<li>
+<p>Nếu <code>result</code> rỗng (tức là <code>duration</code> ban đầu bằng 0) thì trả về chuỗi &quot;0 millisecond&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 2:</p>
+<p>Bài làm chưa tốt.</p>
+<p>Có một số vấn đề cần được sửa đổi như sau:</p>
+<ul>
+<li>
+<p>Đầu tiên, hai tham số truyền vào nên được định dạng là YYYY-MM-DD để đảm bảo tính tương thích và chính xác khi làm việc với ngày tháng trong JavaScript.</p>
+</li>
+<li>
+<p>Thứ hai, trong hàm calculateDiffDates, hai biến startDate và endDate được truyền vào nhưng lại không được sử dụng. Thay vào đó, hàm sử dụng hai biến startDate và endDate được khai báo bên ngoài hàm. Điều này sẽ gây ra nhầm lẫn và sai sót khi sử dụng hàm. Nên sửa đổi hàm calculateDiffDates để sử dụng hai biến startDate và endDate được truyền vào thay vì hai biến được khai báo bên ngoài hàm.</p>
+</li>
+<li>
+<p>Thứ ba, phép so sánh time1 === NaN &amp;&amp; time2 === NaN không đúng, vì NaN không bằng với chính nó. Để kiểm tra xem một giá trị có phải là NaN hay không, ta nên sử dụng hàm <code>isNaN</code>.</p>
+</li>
+<li>
+<p>Thứ tư, biến milisecDiff được tính bằng cách lấy trị tuyệt đối của hiệu số giây giữa hai ngày, nhưng kết quả trả về lại không được làm tròn, nên sử dụng thêm hàm Math.floor</p>
+</li>
+<li>
+<p>Thứ năm, startDate.getTime() và endDate.getTime() không hoạt động vì startDate và endDate là chuỗi, không phải đối tượng <code>Date</code>. Cần sửa lại thêm toán tử <code>new</code>để khởi tạo một đối tượng Date mới có thể dùng được phương thức getTime().</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Bài 3:</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[x] Đánh giá: Bài làm chưa tốt. Nên cẩn thận hơn khi làm việc với các tham số đầu vào, thêm các điều kiện để kiểm soát lỗi tốt hơn. Cần nắm chắc về cách sử dụng các phương thức và thuộc tính của đối tượng Date để tránh sai sót</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
