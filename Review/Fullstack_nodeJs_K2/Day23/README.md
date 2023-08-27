@@ -26,21 +26,21 @@
 
   - Nên sử dụng một hàm chung để viết validate và xử lý các action.
 
-  Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.
+    - Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.
 
-  Việc maintain, fix bug cũng dễ dàng hơn.
+    - Việc maintain, fix bug cũng dễ dàng hơn.
 
   - Nên viết một hàm `getError` để lấy được các message lỗi cần thiết ở một chỗ.
 
-  Để có thể dễ dàng sửa đổi message.
+    - Để có thể dễ dàng sửa đổi message.
 
-  Để dễ dàng thêm message cho từng case.
+    - Để dễ dàng thêm message cho từng case.
 
   - Nên viết một hàm `resetForm` thực hiện các action reset và kết hợp với hàm validate, getError.
 
-  Để code ngắn gọn hơn.
+    - Để code ngắn gọn hơn.
 
-  Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.
+    - Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.
 
   Ở trang đăng ký chưa làm case khi nhập mật khẩu đăng ký thì cần bắt được sự kiện nhập của người dùng và hiển thị ra thông báo `Mật khẩu tối thiểu 6 - 20 ký tự `
 
@@ -186,29 +186,17 @@ Cần chú ý thêm về vấn đề tối ưu cho việc sửa chữa, nâng c�
 
 - [x] [Bài 1]
 
-Bài làm rất tốt\*
+  Bài làm chưa tốt cả về giao diện lẫn các chức năng cần xây dựng.
 
-Thay vì check `=== null || === ""` có thể sử dụng falsy.
+  Giao diện hiện đang chỉ có chức năng đăng nhập, chưa có đăng ký. Cũng chưa có CSS sao cho giống bản mẫu.
 
-Có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:
-
-```html
-<script>
-  var $ = function (tag) {
-    return document.querySelector(tag);
-  };
-  var $$ = function (allTag) {
-    return document.querySelectorAll(allTag);
-  };
-</script>
-<script src="..."></script>
-```
+  Về các chức năng thì chỉ mới xây dựng được chức năng khi blur vào 1 input bất kỳ thì sẽ thông báo lỗi các input còn lại. Còn các chức năng khác chưa xây dựng được.
 
 ---
 
 - [x] Đánh giá chung bài tập về nhà
 
-  Bài làm rất tốt\*
+  Bài làm chưa tốt. Cần làm lại. \*
 
 ---
 
