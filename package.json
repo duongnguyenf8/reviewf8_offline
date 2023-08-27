@@ -1,7 +1,7 @@
 {
   "name": "tester",
   "description": "Dương Test Bài học viên",
-  "main": "server/server.py",
+  "main": "scripts",
   "scripts": {
     "push": "node scripts"
   },

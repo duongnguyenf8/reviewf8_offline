@@ -24,20 +24,40 @@
 </ul>
 <p>Với các input ở 2 trang, đều có một điểm chung là <strong>email</strong>, <strong>password</strong>. Và hiện đang thực hiện thao tác với DOM và việc xác thực chung trong một function.</p>
 <ul>
-<li>Nên sử dụng một hàm chung để viết validate và xử lý các action.</li>
-</ul>
+<li>
+<p>Nên sử dụng một hàm chung để viết validate và xử lý các action.</p>
+<ul>
+<li>
 <p>Để sử dụng ở nhiều nơi, nhiều file mà chỉ sửa một chỗ.</p>
+</li>
+<li>
 <p>Việc maintain, fix bug cũng dễ dàng hơn.</p>
-<ul>
-<li>Nên viết một hàm <code>getError</code> để lấy được các message lỗi cần thiết ở một chỗ.</li>
+</li>
 </ul>
+</li>
+<li>
+<p>Nên viết một hàm <code>getError</code> để lấy được các message lỗi cần thiết ở một chỗ.</p>
+<ul>
+<li>
 <p>Để có thể dễ dàng sửa đổi message.</p>
+</li>
+<li>
 <p>Để dễ dàng thêm message cho từng case.</p>
-<ul>
-<li>Nên viết một hàm <code>resetForm</code> thực hiện các action reset và kết hợp với hàm validate, getError.</li>
+</li>
 </ul>
+</li>
+<li>
+<p>Nên viết một hàm <code>resetForm</code> thực hiện các action reset và kết hợp với hàm validate, getError.</p>
+<ul>
+<li>
 <p>Để code ngắn gọn hơn.</p>
+</li>
+<li>
 <p>Để có thể xử lý các case ở một nơi mà không cần phải copy nhiều lần.</p>
+</li>
+</ul>
+</li>
+</ul>
 <p>Ở trang đăng ký chưa làm case khi nhập mật khẩu đăng ký thì cần bắt được sự kiện nhập của người dùng và hiển thị ra thông báo <code>Mật khẩu tối thiểu 6 - 20 ký tự </code></p>
 <p>Cần chỉnh chu hơn về giao diện.</p>
 </li>
@@ -164,26 +184,18 @@
 <hr>
 <h2><a href="https://github.com/Poyken/Js/tree/main/day22/ex">Nguyễn Văn Đức</a></h2>
 <ul>
-<li>[x] [Bài 1]</li>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt cả về giao diện lẫn các chức năng cần xây dựng.</p>
+<p>Giao diện hiện đang chỉ có chức năng đăng nhập, chưa có đăng ký. Cũng chưa có CSS sao cho giống bản mẫu.</p>
+<p>Về các chức năng thì chỉ mới xây dựng được chức năng khi blur vào 1 input bất kỳ thì sẽ thông báo lỗi các input còn lại. Còn các chức năng khác chưa xây dựng được.</p>
+</li>
 </ul>
-<p>Bài làm rất tốt*</p>
-<p>Thay vì check <code>=== null || === &quot;&quot;</code> có thể sử dụng falsy.</p>
-<p>Có thể sử dụng một function riêng thay vì phải viết lại nhiều lần, ví dụ:</p>
-<pre><code class="language-html">&lt;script&gt;
-  var $ = function (tag) {
-    return document.querySelector(tag);
-  };
-  var $$ = function (allTag) {
-    return document.querySelectorAll(allTag);
-  };
-&lt;/script&gt;
-&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;
-</code></pre>
 <hr>
 <ul>
 <li>
 <p>[x] Đánh giá chung bài tập về nhà</p>
-<p>Bài làm rất tốt*</p>
+<p>Bài làm chưa tốt. Cần làm lại. *</p>
 </li>
 </ul>
 <hr>
