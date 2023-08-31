@@ -1,0 +1,339 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day21</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h2><a href="https://github.com/Baoanh2004/Frontend-Offline-K3/tree/main/Day-21">Bảo Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Cần đọc lại kiến thức về <code>function</code>. Hiện tại bài làm đang tạo một function có tên là <code>getError</code> với tham số là <code>field</code>. Tham số này sẽ nhận đối số được truyền vào vì thế nên khi gọi <code>getError(&quot;email&quot;)</code> thì giá trị của <code>field</code> chính là <code>email</code>. Vì vậy việc check theo kiểu so sánh <code>===</code> là không cần thiết. Ngoài ra nếu như trong object <code>errors</code> có nhiều đối tượng ở trong thì phải check field bằng tất cả các đối tượng đó như vậy sẽ rất thủ công và không hợp lý.</p>
+<p>Việc truy cập vào thuộc tính đầu tiên của từng đối tượng con trong errors bằng cách fix cứng tên để lấy ra cũng không hợp lý vì nếu muốn thay đổi tên thì phải vào function <code>getError</code> để sửa.</p>
+<p>Cần kiểm tra xem nếu như <code>errors[field]</code> tồn tại thì mới thực hiện logic sẽ chặt chẽ hơn.</p>
+<p>Có thể tham khảo đoạn code sau đây:</p>
+<pre><code class="language-javascript">function getError(field) {
+  if (errors[field]) {
+    for (var key in errors[field]) {
+      return errors[field][key];
+    }
+  } else {
+    return &quot;Not exists errors!&quot;;
+  }
+}
+console.log(getError(&quot;password&quot;));
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt *</p>
+<p>Chưa có validate cho các trường của customer.</p>
+<p>Nên tách các hành động ra một hàm, ví dụ như <code>getShortName(name)</code> để code dễ hiểu hơn.</p>
+<p>Có thể tham khảo cách validate sau đây:</p>
+<pre><code class="language-javascript">const validData = inputArray.every(
+  (customer) =&gt;
+    typeof customer.name === &quot;string&quot; &amp;&amp;
+    customer.name &amp;&amp;
+    typeof customer.age === &quot;number&quot; &amp;&amp;
+    customer.age &gt; 0 &amp;&amp;
+    customer.age % 1 === 0 &amp;&amp;
+    typeof customer.address === &quot;string&quot; &amp;&amp;
+    customer.address
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt *</p>
+<p>Trong hàm <code>dataRegister</code> cần check trường hợp nếu như email đăng ký trùng với người khác thì sẽ thông báo lỗi.</p>
+<p>Khi sử dụng function constructor, thì có thể tạo ra một đối tượng bằng cách sử dụng từ khóa <code>new</code>. Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-javascript">function register(name, password, email) {
+  if (!name || !password || !email) {
+    console.log(&quot;Vui lòng cung cấp đầy đủ thông tin.&quot;);
+    return;
+  }
+
+  const existingUser = registeredUsers.find((user) =&gt; user.email === email);
+  if (existingUser) {
+    console.log(&quot;Người dùng đã tồn tại.&quot;);
+    return;
+  }
+
+  const newUser = new User(name, password, email);
+  newUser.role = &quot;user&quot;;
+  registeredUsers.push(newUser);
+  console.log(&quot;Đăng ký thành công.&quot;);
+  return newUser;
+}
+</code></pre>
+<p>Trong hàm <code>handleLogin</code> việc check điều kiện như vậy là hợp lý nhưng khi có user nào thỏa mãn thì có thể return về user đó luôn vì đang sử dụng phương thức map nên không cần phải tạo ra biến <code>loginData</code>.</p>
+<p>Có thể tham khảo các làm sau đây:</p>
+<pre><code class="language-javascript">function login(email, password) {
+  const user = registeredUsers.find(
+    (user) =&gt; user.email === email &amp;&amp; user.password === password
+  );
+  if (user) {
+    console.log(&quot;Đăng nhập thành công.&quot;);
+    return user;
+  } else {
+    console.log(&quot;Email hoặc mật khẩu không đúng.&quot;);
+    return null;
+  }
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+</li>
+<li>
+<p>Bài làm tốt. Tuy nhiên cần lưu ý việc tối ưu code, trình bày ngắn gọn và một số trường hợp đặc biệt để bài làm hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day21_JS/js">Thúy Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *.</p>
+<p>Tuy nhiên cần kiểm tra xem nếu như <code>errors[field]</code> tồn tại thì mới thực hiện logic sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt *</p>
+<p>Bài làm chưa tạo function constructor.</p>
+<p>Chưa có validate cho các trường của customer.</p>
+<p>Nên tách các hành động ra một hàm, ví dụ như <code>getShortName(name)</code> để code dễ hiểu hơn.</p>
+<p>Có thể tham khảo cách vaildate sau đây:</p>
+<pre><code class="language-javascript">const validData = inputArray.every(
+  (customer) =&gt;
+    typeof customer.name === &quot;string&quot; &amp;&amp;
+    customer.name &amp;&amp;
+    typeof customer.age === &quot;number&quot; &amp;&amp;
+    customer.age &gt; 0 &amp;&amp;
+    customer.age % 1 === 0 &amp;&amp;
+    typeof customer.address === &quot;string&quot; &amp;&amp;
+    customer.address
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm chưa tốt</p>
+<p>Bài làm chưa tạo function constructor.</p>
+<p>Trong hàm <code>handleRegister</code> cần check trường hợp nếu như email đăng ký trùng với người khác thì sẽ thông báo lỗi.</p>
+<p>Khi sử dụng function constructor, thì có thể tạo ra một đối tượng bằng cách sử dụng từ khóa <code>new</code>. Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-javascript">function register(name, password, email) {
+  if (!name || !password || !email) {
+    console.log(&quot;Vui lòng cung cấp đầy đủ thông tin.&quot;);
+    return;
+  }
+
+  const existingUser = registeredUsers.find((user) =&gt; user.email === email);
+  if (existingUser) {
+    console.log(&quot;Người dùng đã tồn tại.&quot;);
+    return;
+  }
+
+  const newUser = new User(name, password, email);
+  newUser.role = &quot;user&quot;;
+  registeredUsers.push(newUser);
+  console.log(&quot;Đăng ký thành công.&quot;);
+  return newUser;
+}
+</code></pre>
+<p>Trong function <code>handleLogin</code> có thể check ngắn gọn như sau:</p>
+<pre><code class="language-javascript">function login(email, password) {
+  const user = registeredUsers.find(
+    (user) =&gt; user.email === email &amp;&amp; user.password === password
+  );
+  if (user) {
+    console.log(&quot;Đăng nhập thành công.&quot;);
+    return user;
+  } else {
+    console.log(&quot;Email hoặc mật khẩu không đúng.&quot;);
+    return null;
+  }
+}
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+</li>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Cần chú ý các trường hợp validate dữ liệu đầu vào và một số lỗi ở bài 3 để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-21/js">Nguyễn Đức Hải</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt *</p>
+<p>Bài làm chưa tạo function constructor.</p>
+<pre><code class="language-javascript">function Customer(name, age, address) {
+  this.name = name;
+  this.age = age;
+  this.address = address;
+}
+</code></pre>
+<p>Chưa có validate cho các trường của customer.</p>
+<p>Nên tách các hành động ra một hàm, ví dụ như <code>getShortName(name)</code> để code dễ hiểu hơn.</p>
+<p>Có thể tham khảo cách vaildate sau đây:</p>
+<pre><code class="language-javascript">const validData = inputArray.every(
+  (customer) =&gt;
+    typeof customer.name === &quot;string&quot; &amp;&amp;
+    customer.name &amp;&amp;
+    typeof customer.age === &quot;number&quot; &amp;&amp;
+    customer.age &gt; 0 &amp;&amp;
+    customer.age % 1 === 0 &amp;&amp;
+    typeof customer.address === &quot;string&quot; &amp;&amp;
+    customer.address
+);
+</code></pre>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Bài làm tốt.*</p>
+<p>Bài làm chưa tạo function constructor.</p>
+<p>Trong hàm <code>handleRegister</code> cần check trường hợp nếu như email đăng ký trùng với người khác thì sẽ thông báo lỗi.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+</li>
+<li>
+<p>Bài làm tốt *.</p>
+</li>
+<li>
+<p>Cần chú ý một số lỗi nhỏ để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/countduck4819/f8-frontend/tree/main/Day21">Vũ Thành Khang</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Tuy nhiên cần kiểm tra xem nếu như <code>errors[field]</code> tồn tại thì mới thực hiện logic sẽ chặt chẽ hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm tốt.</p>
+<p>Chưa có constructor tạo customer.</p>
+<pre><code class="language-javascript">function Customer(name, age, address) {
+  this.name = name;
+  this.age = age;
+  this.address = address;
+}
+</code></pre>
+<p>Cần đặt tên biến có ý nghĩa và tường minh, hiện tại biến có tên <code>bd</code> và <code>bd1</code> gây khó hiểu.</p>
+<p>Không nên đặt tên biến trùng với các từ khóa trong javascript, ví dụ trong bài làm đang có biến tên <code>string</code>.</p>
+<p>Chưa có validate cho các trường của customer.</p>
+<p>Có thể tham khảo cách vaildate sau đây:</p>
+<pre><code class="language-javascript">const validData = inputArray.every(
+  (customer) =&gt;
+    typeof customer.name === &quot;string&quot; &amp;&amp;
+    customer.name &amp;&amp;
+    typeof customer.age === &quot;number&quot; &amp;&amp;
+    customer.age &gt; 0 &amp;&amp;
+    customer.age % 1 === 0 &amp;&amp;
+    typeof customer.address === &quot;string&quot; &amp;&amp;
+    customer.address
+);
+</code></pre>
+<p>Nên tách các hành động ra một hàm, ví dụ như <code>getShortName(name)</code> để code dễ hiểu hơn.</p>
+<p>Đề bài yêu cầu sắp xếp tuổi theo thứ tự tăng dần nên việc làm thêm cách 2 sắp xếp từ lớn đến bé là không cần thiết.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] [Bài 3]</p>
+<p>Chưa có contrustor User.</p>
+<pre><code class="language-javascript">function User(name, password, email) {
+  this.name = name;
+  this.password = password;
+  this.email = email;
+}
+</code></pre>
+<p>Thay vì sử dụng 3 tham số <code>name, so, phone</code> thì có thể thay bằng <code>name, password, email</code> thì bài làm sẽ chặt chẽ và dễ hiểu hơn.</p>
+<p>Trong hàm handleRegister:</p>
+<ul>
+<li>Việc check dữ liệu bằng với undefined là không hợp lý vì nếu người dùng nhập các kiểu dữ liệu falsy khác như <code>null</code>hoặc chuỗi rỗng,... thì sẽ không thể check được các trường hợp đó. Có thể tham khảo các check sau đây:</li>
+</ul>
+<pre><code class="language-javascript">if (!name || !password || !email) {
+  console.log(&quot;Vui lòng cung cấp đầy đủ thông tin.&quot;);
+  return;
+}
+</code></pre>
+<ul>
+<li>
+<p>Sai chính tả khi log, hiện đang ghi là <code>chuyền thiếu dữ liệu</code> đúng phải là <code>truyền thiếu dữ liệu</code></p>
+</li>
+<li>
+<p>Trong hàm này cần xử lý thêm trường hợp bị trùng email thì sẽ cần phải thông báo lỗi khi đăng ký.</p>
+</li>
+</ul>
+<pre><code class="language-javascript">const existingUser = data.find((user) =&gt; user.email === email);
+if (existingUser) {
+  console.log(&quot;Người dùng đã tồn tại.&quot;);
+  return;
+}
+</code></pre>
+<ul>
+<li>Vì không tạo constructor từ đầu nên việc khai báo các dữ liệu trong obj khá thủ công. Nếu như tạo constructor thì chỉ cần ngắn gọn như sau:</li>
+</ul>
+<pre><code class="language-javascript">const newUser = new User(name, password, email);
+newUser.role = &quot;user&quot;;
+registeredUsers.push(newUser);
+console.log(&quot;Đăng ký thành công.&quot;);
+return newUser;
+</code></pre>
+<p>Việc check các trường hợp trả về -1, hoặc undefined nên xử lý luôn trong hàm <code>handleLogin</code> và <code>handleRegister</code> sẽ ngắn gọn và dễ hiểu hơn.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà:</p>
+</li>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Cần chú ý về việc trình bày code, đặt tên biến và một số trường hợp đặc biệt để bài làm hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

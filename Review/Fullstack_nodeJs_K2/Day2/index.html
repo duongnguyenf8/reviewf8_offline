@@ -1,0 +1,1450 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day2</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương đánh giá bài học viên</h1>
+<h2><a href="https://github.com/QuanIce/F8-FullStack-HomeWork/tree/main/Day02">Đỗ Khắc Quân</a></h2>
+<pre><code>Sớm nhất.
+</code></pre>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/QuanIce/F8-FullStack-HomeWork/blob/main/Day02/ex01.html">Bài 1</a></p>
+<ul>
+<li>
+<p>Sai layout khi chia bằng table</p>
+<pre><code class="language-html">&lt;tr&gt;
+  &lt;th&gt;First Name&lt;/th&gt;
+  &lt;td&gt;&lt;input type=&quot;text&quot; placeholder=&quot;First Name&quot; /&gt;&lt;/td&gt;
+  &lt;th&gt;Last Name&lt;/th&gt;
+  &lt;td&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Last Name&quot; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+<ul>
+<li>Việc code như này sẽ khiến <code>&lt;th&gt;</code> và <code>&lt;td&gt;</code> nằm chung một hàng. Điều đó là sai layout</li>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;First Name&lt;/b&gt;&lt;/th&gt;
+  &lt;td&gt;&lt;b&gt;Last Name&lt;/b&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;input type=&quot;text&quot; placeholder=&quot;First Name&quot; /&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;input type=&quot;text&quot; placeholder=&quot;Last Name&quot; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+<li>
+<p>Việc sử dụng style này cho button là thừa và không cần thiết</p>
+<ul>
+<li>.button1 không cần thiết vì có thể dùng chung vào class .button</li>
+</ul>
+<pre><code class="language-css">.button {
+  text-decoration: none;
+  display: inline-block;
+}
+... .button1 {
+  background-color: #008cba;
+}
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-css">.button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #008cba;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/QuanIce/F8-FullStack-HomeWork/blob/main/Day02/ex02.html">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Phần màu aqua là một màu rất sáng. Nếu đi với màu xám nhạt thì sẽ không tạo được sự tương phản, gây khó chịu cho mắt của người dùng. Đề xuất sửa thành màu xanh dương nhạt<pre><code class="language-css">input[type=&quot;button&quot;] {
+  background-color: #008cba;
+}
+</code></pre>
+</li>
+<li>Nếu tất cả input đều border none thì không nên viết lại cho từng input mà nên viết chung cho tất cả input<pre><code class="language-css">input {
+  border: none;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/QuanIce/F8-FullStack-HomeWork/blob/main/Day02/ex03.html">Bài 3</a></p>
+<ul>
+<li>Sai chính tả <code>Forrm</code> -&gt; <code>Form</code></li>
+<li>Phần message là một phần ghi lại lời nhắn và có vùng viết lớn. Không nên sử dụng input với các thuộc tính định dạng size, ... mà nên sử dụng textarea<pre><code class="language-html">&lt;textarea
+  name=&quot;message&quot;
+  id=&quot;message&quot;
+  cols=&quot;30&quot;
+  rows=&quot;10&quot;
+  placeholder=&quot;Message&quot;
+&gt;&lt;/textarea&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/QuanIce/F8-FullStack-HomeWork/blob/main/Day02/ex04.html">Bài 4</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Theo semantic HTML, nên có thẻ h1&gt;h2&gt;h3&gt;... để phân cấp tiêu đề. Vậy nên nếu các tiêu đề cùng cấp đầu tiên thì nên dùng h2 cho tất cả các tiêu đề cùng cấp đó<pre><code class="language-html">&lt;h3&gt;CLIMATE CHANGE&lt;/h3&gt;
+&lt;!-- Sửa lại thành --&gt;
+&lt;h2&gt;CLIMATE CHANGE&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/QuanIce/F8-FullStack-HomeWork/blob/main/Day02/ex05.html">Bài 5</a></p>
+<ul>
+<li>
+<p>Không được sử dụng nhiều thẻ h1 trong một trang web. Vì thẻ h1 là tiêu đề chính của trang web. Nếu có nhiều thẻ h1 thì sẽ không biết được tiêu đề chính của trang web là gì</p>
+<pre><code class="language-html">&lt;h1&gt;About Us&lt;/h1&gt;
+&lt;!-- ... --&gt;
+&lt;h1&gt;Quick Links&lt;/h1&gt;
+&lt;!-- ... --&gt;
+&lt;h1&gt;Follow Us&lt;/h1&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm về cách sử dụng, phân tích các thẻ HTML và các thuộc tính CSS. Cần chú ý thêm về semantic HTML.</li>
+</ul>
+<h2><a href="https://github.com/xanhrii/k2-f8-fullstack-course/tree/master/rii_day02_html">Nguyễn Thị Tuyết</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day02_html/homework_01.html">Bài 1</a>
+<ul>
+<li>Bài làm rất tốt*</li>
+<li>Nếu có thể sử dụng CSS external thì tốt hơn. Cũng nên hạn chế hoặc cố gắng không dùng inline CSS.</li>
+<li>Script cũng nên viết ra file riêng để dễ quản lý hơn.</li>
+<li>Đáng ra tốt hơn nếu có thể chia file và không dùng inline CSS.</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day02_html/homework_02.html">Bài 2</a>
+<ul>
+<li>Bài làm rất tốt*</li>
+<li>Sử dụng inline CSS nên hạn chế.</li>
+<li>Nên chia file CSS ra riêng để dễ quản lý hơn.</li>
+<li>Đáng ra tốt hơn nếu có thể chia file và không dùng inline CSS.
+<ul>
+<li>Có thể viết JS calculate thì tốt hơn.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day02_html/homework_03.html">Bài 3</a>
+<ul>
+<li>Bài làm rất tốt*</li>
+<li>Nên chia file CSS ra riêng để dễ quản lý hơn.</li>
+<li>Đáng ra tốt hơn nếu có thể chia file và không dùng inline CSS.</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day02_html/homework_04.html">Bài 4</a>
+<ul>
+<li>Bài làm rất tốt*</li>
+<li>Nên chia file CSS ra riêng để dễ quản lý hơn.</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/xanhrii/k2-f8-fullstack-course/blob/master/rii_day02_html/homework_05.html">Bài 5</a>
+<ul>
+<li>Bài làm rất tốt*</li>
+<li>Nên chia file CSS ra riêng để dễ quản lý hơn.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên cần coi mỗi bài tập là một dự án, nên đưa ra các file css riêng, các folder img riêng cho từng bài</li>
+</ul>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe1">Bài 1</a>
+<ul>
+<li>Bài làm tốt</li>
+<li>Phần input nhập email nên sử dụng <code>type=&quot;email&quot;</code> để kiểm tra email nhập vào có đúng định dạng hay không<pre><code class="language-html">&lt;input type=&quot;text&quot; placeholder=&quot;john@example.com&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;john@example.com&quot; /&gt;
+</code></pre>
+</li>
+<li>việc sử dụng thẻ <code>&lt;h2&gt;</code> không hoàn toàn sai, nhưng nó không tối ưu trong ngữ cảnh này. Theo nguyên tắc semantic, thẻ <code>&lt;h2&gt;</code> nên được sử dụng để xác định tiêu đề cấp 2 cho một phần tử có ý nghĩa ngữ nghĩa cao hơn.
+<ul>
+<li>Trong form, các mục như &quot;First name&quot;, &quot;Last name&quot;, &quot;Email address&quot;, &quot;City&quot;, &quot;Zip code&quot;, &quot;Address&quot;, &quot;State&quot;, và &quot;Country&quot; là nhãn cho các trường input. Để tăng tính semantic, tốt hơn là sử dụng thẻ <code>&lt;label&gt;</code> để định nghĩa các nhãn này. Các thẻ <code>&lt;label&gt;</code> sẽ gắn kết với các trường input bằng cách sử dụng thuộc tính for và id. Điều này giúp người dùng và các công cụ hỗ trợ hiểu rõ mục đích và quan hệ giữa các phần tử trong form.</li>
+</ul>
+<pre><code class="language-html">&lt;label for=&quot;first-name&quot;&gt;First name&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;first-name&quot; placeholder=&quot;John&quot; /&gt;
+...
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe2">Bài 2</a>
+<ul>
+<li>Bài làm tốt</li>
+<li>Cần chú ý thêm vào thẻ title của trang web vì chúng đóng vai trò rất quan trọng trong SEO, cũng như giúp người dùng biết được trang web đang hiển thị gì<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+</li>
+<li>Sử dụng quá nhiều <code>th</code> một cách bất hợp lý trong bài<pre><code class="language-html">&lt;tr&gt;
+  &lt;th&gt;1&lt;/th&gt;
+  &lt;th&gt;2&lt;/th&gt;
+  &lt;th&gt;3&lt;/th&gt;
+  &lt;th&gt;+&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;th&gt;C&lt;/th&gt;
+  &lt;th&gt;0&lt;/th&gt;
+  &lt;th&gt;=&lt;/th&gt;
+  &lt;th&gt;/&lt;/th&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+<li>Đề xuất sử dụng <code>td</code> thay cho <code>th</code> trong trường hợp này, sau đó sử dụng thẻ <code>b</code> để làm đậm các nút<pre><code class="language-html">&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;+&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;C&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;0&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;=&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;/&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe3">Bài 3</a>
+<ul>
+<li>Bài làm tốt *</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe4">Bài 4</a>
+<ul>
+<li>Bài làm tốt</li>
+<li>Phần icon ở dưới là một icon có thể click vào như một đường dẫn, hay còn gọi là link. Nên sử dụng thẻ <code>&lt;a&gt;</code> để định nghĩa<pre><code class="language-html">&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/&quot; target=&quot;_blank&quot;
+    &gt;&lt;i class=&quot;fa-brands fa-facebook-f&quot;&gt;&lt;/i
+  &gt;&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe5">Bài 5</a></li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý một chút nhỏ về ngữ nghĩa trong html để tăng tính semantic cho trang web, giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web</li>
+</ul>
+<h2><a href="https://github.com/phamtiendat18/Fullstack-K2/tree/main/Day_02">Tiến Đạt - K2</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/phamtiendat18/Fullstack-K2/blob/main/Day_02/ex01.html">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Sắp xếp cấu trúc HTML quá không hợp lý</p>
+<pre><code class="language-html">&lt;td&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;first_name&quot;&gt;
+      &lt;b&gt;First name&lt;/b&gt; &lt;br /&gt;&lt;input type=&quot;text&quot; /&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;email&quot;&gt;
+      &lt;b&gt;Email adress&lt;/b&gt; &lt;br /&gt;&lt;input type=&quot;email&quot; /&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;city&quot;&gt; &lt;b&gt;City&lt;/b&gt; &lt;br /&gt;&lt;input type=&quot;text&quot; /&gt; &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;label for=&quot;zip_code&quot;&gt;
+      &lt;b&gt;ZIP code&lt;/b&gt; &lt;br /&gt;&lt;input type=&quot;text&quot; /&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/td&gt;
+</code></pre>
+<ul>
+<li>Nhóm tất cả vào làm một cột td khiến cho cấu trúc HTML không hợp lý, nên sử dụng thẻ <code>&lt;tr&gt;</code> để tạo ra một hàng mới, sau đó sử dụng thẻ <code>&lt;td&gt;</code> để tạo ra các cột trong hàng đó</li>
+<li>Thẻ <code>br</code> chỉ được dùng để ngắt dòng giữa 2 câu, đoạn văn trong cùng một thẻ. Nên không nên sử dụng nó để ngắt dòng giữa các thẻ khác nhau</li>
+<li>các phần input nên có thêm placeholder để người dùng biết được nên nhập gì vào</li>
+</ul>
+</li>
+<li>
+<p>Phần <code>select/option</code> nên có thêm thuộc tính <code>value</code> hợp lý để khi người dùng chọn thì sẽ trả về giá trị của <code>value</code> đó</p>
+<pre><code class="language-html">&lt;label for=&quot;country&quot;&gt;
+  &lt;b&gt;Country&lt;/b&gt; &lt;br /&gt;
+  &lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;Viet Nam&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Russia&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Laos&lt;/option&gt;
+    &lt;option value=&quot;4&quot;&gt;Cuba&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/label&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;label for=&quot;country&quot;&gt;
+  &lt;b&gt;Country&lt;/b&gt; &lt;br /&gt;
+  &lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;
+    &lt;option value=&quot;Viet Nam&quot;&gt;Viet Nam&lt;/option&gt;
+    &lt;option value=&quot;Russia&quot;&gt;Russia&lt;/option&gt;
+    &lt;option value=&quot;Laos&quot;&gt;Laos&lt;/option&gt;
+    &lt;option value=&quot;Cuba&quot;&gt;Cuba&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/label&gt;
+</code></pre>
+</li>
+<li>
+<p>Việc style cho tất cả các tag như thế này là bất hợp lý, sẽ dễ gây lỗi cho các phần tử khác trong trang</p>
+<pre><code class="language-css">div {
+  margin-bottom: 15px;
+}
+body {
+  background-color: rgb(228, 230, 233);
+}
+input {
+  width: 75%;
+  height: 25px;
+}
+button {
+  width: 15%;
+  height: 35px;
+  background-color: rgb(8, 185, 192);
+  color: #ffff;
+  border: rgb(4, 104, 117);
+  font-size: 11px;
+}
+select {
+  width: 78%;
+  height: 30px;
+}
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng các selector như class, id để style cho các phần tử cụ thể hơn</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/phamtiendat18/Fullstack-K2/blob/main/Day_02/ex02.html">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Phần title trang web là rất quan trọng, nên đặt tên cho phù hợp với nội dung trang web vì nó sẽ giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Calculator&lt;/title&gt;
+</code></pre>
+</li>
+<li>Sử dụng quá nhiều thẻ <code>th</code> trong bài<pre><code class="language-html">&lt;tr&gt;
+  &lt;th&gt;1&lt;/th&gt;
+  &lt;th&gt;2&lt;/th&gt;
+  &lt;th&gt;3&lt;/th&gt;
+  &lt;th&gt;+&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;th&gt;C&lt;/th&gt;
+  &lt;th&gt;0&lt;/th&gt;
+  &lt;th&gt;=&lt;/th&gt;
+  &lt;th&gt;/&lt;/th&gt;
+&lt;/tr&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng <code>td</code> thay cho <code>th</code> trong trường hợp này, sau đó sử dụng thẻ <code>b</code> để làm đậm các nút</li>
+</ul>
+<pre><code class="language-html">&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;+&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;C&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;0&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;=&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;/&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/phamtiendat18/Fullstack-K2/blob/main/Day_02/ex03.html">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm tốt</p>
+</li>
+<li>
+<p>Phần title trang web là rất quan trọng, nên đặt tên cho phù hợp với nội dung trang web vì nó sẽ giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web</p>
+<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Get in touch&lt;/title&gt;
+</code></pre>
+</li>
+<li>
+<p>Sai chính tả ở</p>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;* Emter your email adress&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;* Enter your email address&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/phamtiendat18/Fullstack-K2/blob/main/Day_02/ex04.html">Bài 4</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Phần title trang web là rất quan trọng, nên đặt tên cho phù hợp với nội dung trang web vì nó sẽ giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Article List&lt;/title&gt;
+</code></pre>
+</li>
+<li>Sai chính tả ở<pre><code class="language-html">&lt;h2&gt;ECONOMIC OPORTUNITY&lt;/h2&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;h2&gt;ECONOMIC OPPORTUNITY&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/phamtiendat18/Fullstack-K2/blob/main/Day_02/ex05.html">Bài 5</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Phần title trang web là rất quan trọng, nên đặt tên cho phù hợp với nội dung trang web vì nó sẽ giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;About us&lt;/title&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nên chia các folder riêng cho từng bài để dễ quản lý hơn. Cần chú ý thêm một chút về semantic HTML, giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web</li>
+</ul>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2">Võ Tuấn Duy</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe1">Bài 1</a></p>
+<ul>
+<li>
+<p>Sai cấu trúc thẻ p:</p>
+<pre><code class="language-html">&lt;p&quot;&gt;&lt;b&gt;Email address&lt;/b&gt;&lt;/p&gt;
+&lt;p&quot;&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/p&gt;
+</code></pre>
+<ul>
+<li>Sửa lại thành:</li>
+</ul>
+<pre><code class="language-html">&lt;p&gt;&lt;b&gt;Email address&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/p&gt;
+</code></pre>
+</li>
+<li>
+<p>Thẻ input để nhập email nên có type là email để kiểm tra email nhập vào có đúng định dạng hay không</p>
+<pre><code class="language-html">&lt;input size=&quot;40&quot; type=&quot;text&quot; placeholder=&quot;john@example.com&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input size=&quot;40&quot; type=&quot;email&quot; placeholder=&quot;john@example.com&quot; /&gt;
+</code></pre>
+</li>
+<li>
+<p>Sửa input nhập Country thành một thẻ select cho giống với bản mẫu</p>
+<pre><code class="language-html">&lt;td&gt;
+  &lt;p&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/p&gt;
+  &lt;input size=&quot;40&quot; type=&quot;text&quot; placeholder=&quot;United Kingdom&quot; /&gt;
+&lt;/td&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;td&gt;
+  &lt;p&gt;&lt;b&gt;Country&lt;/b&gt;&lt;/p&gt;
+  &lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;
+    &lt;option value=&quot;Viet Nam&quot;&gt;Viet Nam&lt;/option&gt;
+    &lt;option value=&quot;Russia&quot;&gt;Russia&lt;/option&gt;
+    &lt;option value=&quot;Laos&quot;&gt;Laos&lt;/option&gt;
+    &lt;option value=&quot;Cuba&quot;&gt;Cuba&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/td&gt;
+</code></pre>
+</li>
+<li>
+<p>Không nên sử dụng style inline CSS vì nó sẽ gây khó khăn cho việc quản lý, nên sử dụng CSS external</p>
+<pre><code class="language-html">&lt;div style=&quot;width: 100%; background-color: #dddddd&quot;&gt;
+  ...
+  &lt;div style=&quot;width: 60%; margin-left: 15px&quot;&gt;
+    ...
+    &lt;div style=&quot;margin: 20px&quot;&gt;
+      ...
+      &lt;table style=&quot;margin-left: -5px&quot; cellpadding=&quot;5&quot;&gt;&lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe2">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt.</li>
+<li>Thuộc tính CSS <code>border: 1</code> là không có giá trị, nên sửa lại thành <code>border: 1px</code><pre><code class="language-css">button {
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+  border: 1;
+  border-color: green;
+  cursor: pointer;
+}
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-css">button {
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+  border: 1px solid green;
+  cursor: pointer;
+}
+</code></pre>
+</li>
+<li>Để tuân thủ đúng về HTML5, thuộc tính border trong thẻ table hay bất kỳ thẻ nào đều không được hỗ trợ nữa, nên sử dụng thuộc tính border trong CSS<pre><code class="language-html">&lt;table border=&quot;2&quot;&gt;&lt;/table&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-css">table {
+  border: 2px solid green;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe3">Bài 3</a></p>
+<ul>
+<li>Bài làm tốt.</li>
+<li>Phần css này không rõ ý đồ<pre><code class="language-css">.main {
+  width: 80%;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe4">Bài 4</a></p>
+<ul>
+<li>Bài làm tốt*</li>
+<li>Phần img này ở trong ngữ nghĩa đề bài là một hình ảnh hiển thị một nội dung gì đó liên quan đến bài viết, vậy là hình ảnh này có nghĩa, không thể sử dụng nullAlt được.<pre><code class="language-html">&lt;img
+  src=&quot;https://fastly.picsum.photos/id/404/200/200.jpg?hmac=7TesL9jR4uM2T_rW-vLbBjqvfeR37MJKTYA4TV-giwo&quot;
+  alt=&quot;&quot;
+/&gt;
+</code></pre>
+<ul>
+<li>Có thể sử dụng tiêu đề của bài viết làm alt cho hình ảnh.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-2/exe5">Bài 5</a></p>
+<ul>
+<li>Bài làm rất tốt*</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm một chút về cấu trúc code để bài tập tốt hơn</li>
+</ul>
+<h2><a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day2">Bùi Quang Trưởng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day2/exe01.html">Bài 1</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Các phần title cho các input có thể sử dụng label để link tới các input, điều đó sẽ giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web<pre><code class="language-html">&lt;label for=&quot;first-name&quot;&gt;First name&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;first-name&quot; placeholder=&quot;First name&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day2/exe02.html">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Hình như code na ná từ thằng chatGPT ??? Phong cách code khác hẳn so với bài trước
+<ul>
+<li>Các bài trước không hề gom nhóm code, bài này gom tận 2 thằng div main và calculator</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day2/exe03.html">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day2/exe04.html">Bài 4</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/blob/main/Day2/exe05.html">Bài 5</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt.</li>
+</ul>
+<h2><a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day2">Nguyễn Minh Việt - K2</a></h2>
+<ul>
+<li>
+<p>Nên đặt tên theo số bài để thuận tiện trong việc đánh giá bài làm về nhà!</p>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenminhviettt/f8_fullstack_K2/blob/main/day_02/form_dat_hang.html">Bài 1</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Không nên sử dụng một div rỗng như này:<pre><code class="language-html">&lt;div&gt;&lt;/div&gt;
+&lt;button&gt;SEND ME FREE COFFEE&lt;/button&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px&quot;&gt;
+  &lt;button&gt;SEND ME FREE COFFEE&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+<li>Phần <code>select/option</code> nên có một value để khi người dùng chọn thì sẽ trả về giá trị của <code>value</code> đó<pre><code class="language-html">&lt;option value=&quot;&quot;&gt;United Kingdom&lt;/option&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;option value=&quot;United Kingdom&quot;&gt;United Kingdom&lt;/option&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenminhviettt/f8_fullstack_K2/blob/main/day_02/may_tinh_bo_tui.html">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Sử dụng quá nhiều thẻ <code>th</code> trong bài<pre><code class="language-html">&lt;tr&gt;
+  &lt;th&gt;1&lt;/th&gt;
+  &lt;th&gt;2&lt;/th&gt;
+  &lt;th&gt;3&lt;/th&gt;
+  &lt;th&gt;+&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;th&gt;C&lt;/th&gt;
+  &lt;th&gt;0&lt;/th&gt;
+  &lt;th&gt;=&lt;/th&gt;
+  &lt;th&gt;/&lt;/th&gt;
+&lt;/tr&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng <code>td</code> thay cho <code>th</code> trong trường hợp này, sau đó sử dụng thẻ <code>b</code> để làm đậm các nút</li>
+</ul>
+<pre><code class="language-html">&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;+&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;C&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;0&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;=&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;/&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenminhviettt/f8_fullstack_K2/blob/main/day_02/form_lien_he.html">Bài 3</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Phần textarea vẫn cùng chức năng với các phần input trên. Nếu có thể đưa lên một <code>tr</code> của table thì tốt hơn</li>
+<li>Không nên để thẻ div rỗng như này:<pre><code class="language-html">&lt;div&gt;&lt;/div&gt;
+&lt;button&gt;Send message&lt;/button&gt;
+&lt;span&gt;*Please fill all require form field, thanks!&lt;/span&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;div style=&quot;margin-top: 16px&quot;&gt;
+  &lt;button&gt;Send message&lt;/button&gt;
+  &lt;span&gt;*Please fill all require form field, thanks!&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenminhviettt/f8_fullstack_K2/blob/main/day_02/danh_sach_bai_viet.html">Bài 4</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+<li>Vì đây là một hình ảnh hiển thị một nội dung gì đó liên quan đến bài viết, vậy là hình ảnh này có nghĩa, không thể sử dụng nullAlt được.<pre><code class="language-html">&lt;img
+  src=&quot;https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png&quot;
+  alt=&quot;&quot;
+/&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img
+  src=&quot;https://fastly.picsum.photos/id/404/200/200.jpg?hmac=7TesL9jR4uM2T_rW-vLbBjqvfeR37MJKTYA4TV-giwo&quot;
+  alt=&quot;HEALTH CARE&quot;
+/&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/nguyenminhviettt/f8_fullstack_K2/blob/main/day_02/footer.html">Bài 5</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Các icon không hoạt động đúng</li>
+</ul>
+<pre><code class="language-html">&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;&lt;i class=&quot;fa-brands fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;&lt;i class=&quot;fa-brands fa-google-plus-g&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;&lt;i class=&quot;fa-brands fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#!&quot;&gt;&lt;i class=&quot;fa-brands fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+<ul>
+<li>Sửa lại các icon!</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nên chú ý thêm về các cấu trúc thẻ, cách sử dụng các thẻ trên docs hướng dẫn (icon)...</li>
+</ul>
+<h2><a href="https://github.com/Stung16/ex_f8-fullstack/tree/master/day2">Kiều Duy Tùng</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day2/ex01.html">Bài 1</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Sai chính tả <code>Contry</code> =&gt; <code>Country</code></li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day2/ex02.html">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day2/ex03.html">Bài 3</a></p>
+<ul>
+<li>Phần <code>Please fill..., thanks!</code> phải cùng một hàng với button. Nên sử dụng thẻ <code>span</code> thay vì:<pre><code class="language-html">&lt;p&gt;*Please fill all require form field, thanks!&lt;/p&gt;
+</code></pre>
+</li>
+<li>Thẻ <code>br</code> chỉ được dùng để ngắt dòng giữa 2 câu, đoạn văn trong cùng một thẻ. Nên không nên sử dụng nó để ngắt dòng giữa các thẻ khác nhau<pre><code class="language-html">&lt;textarea
+  placeholder=&quot;*Your message here&quot;
+  name=&quot;message&quot;
+  id=&quot;&quot;
+  cols=&quot;50&quot;
+  rows=&quot;10&quot;
+&gt;&lt;/textarea&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;textarea
+  placeholder=&quot;*Your message here&quot;
+  name=&quot;message&quot;
+  id=&quot;&quot;
+  cols=&quot;50&quot;
+  rows=&quot;10&quot;
+&gt;&lt;/textarea&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day2/ex04.html">Bài 4</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Không nên sử dụng ảnh với src là một dãy mã hóa base64, vì nó sẽ làm tăng kích thước file html, làm giảm tốc độ tải trang web, không tận dụng được cache của trình duyệt<pre><code class="language-html">&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgAB...&quot; alt=&quot;&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Stung16/ex_f8-fullstack/blob/master/day2/ex05.html">Bài 5</a></p>
+<ul>
+<li>Viết sai cấu trúc làm cho các đường dẫn đáng ra được hiển thị nhưng lại không:<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;/a&gt;Home&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;/a&gt;Service&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;/a&gt;Apppointment&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;Service&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;Apppointment&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+<li>Các icon như bản mẫu phải là một đường dẫn:</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-brands fa-facebook&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-brands fa-google-plus-g&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-brands fa-twitter&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;fa-brands fa-square-instagram&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa-brands fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa-brands fa-google-plus-g&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fa-brands fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;#&quot;
+      &gt;&lt;i class=&quot;fa-brands fa-square-instagram&quot;&gt;&lt;/i
+    &gt;&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý thêm một chút về ngữ nghĩa trong html để tăng tính semantic cho trang web, giúp cho người dùng và các công cụ tìm kiếm hiểu rõ hơn về trang web, cần chú ý thêm về cấu trúc các thẻ để tránh một số lỗi không mong muốn.</li>
+</ul>
+<h2><a href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/tree/main/Day_2">Việt Hoàngg</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_2/index1.html">Bài 1</a>
+<ul>
+<li>Sai cấu trúc thẻ body. Thiếu thẻ đóng của body.</li>
+<li>Không nên viết thẻ style vào body vì nó sẽ làm cho code không rõ ràng, khó quản lý.</li>
+<li>Nên format lại code, sử dụng các thẻ đóng đúng cách.</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_2/index2.html">Bài 2</a>
+<ul>
+<li>Sử dụng quá nhiều thẻ th trong bài<pre><code class="language-html">&lt;tr&gt;
+  &lt;th&gt;1&lt;/th&gt;
+  &lt;th&gt;2&lt;/th&gt;
+  &lt;th&gt;3&lt;/th&gt;
+  &lt;th&gt;+&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;th&gt;C&lt;/th&gt;
+  &lt;th&gt;0&lt;/th&gt;
+  &lt;th&gt;=&lt;/th&gt;
+  &lt;th&gt;/&lt;/th&gt;
+&lt;/tr&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dụng <code>td</code> thay cho <code>th</code> trong trường hợp này, sau đó sử dụng thẻ <code>b</code> để làm đậm các nút</li>
+</ul>
+<pre><code class="language-html">&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;+&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+...
+&lt;tr&gt;
+  &lt;td&gt;&lt;b&gt;C&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;0&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;=&lt;/b&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;/&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+<ul>
+<li>Các đoạn code không có format. Nên format lại code để dễ quản lý.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_2/index3.html">Bài 3</a>
+<ul>
+<li>Các thẻ br không nên để ngắt dòng giữa các thẻ khác nhau<pre><code class="language-html">&lt;input type=&quot;your_email address&quot; placeholder=&quot;*Enter your email address&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;input type=&quot;your_subject&quot; placeholder=&quot;*Enter your subject&quot; /&gt; &lt;br /&gt;
+&lt;br /&gt;
+</code></pre>
+<ul>
+<li>Các đoạn code không có format. Nên format lại code để dễ quản lý.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_2/index4.html">Bài 4</a>
+<ul>
+<li>Không nên đặt tên file, folder chứa các ký tự đặc biệt hay dấu cách, vì nó sẽ gây khó khăn cho việc quản lý, dễ gây lỗi cho các phần tử khác trong trang<pre><code class="language-html">&lt;img src=&quot;./image/f8-icon.18cd71cfcfa33566a22b (1).png&quot; alt=&quot;&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img src=&quot;./image/f8-icon.png&quot; alt=&quot;&quot; /&gt;
+</code></pre>
+</li>
+<li>Các thẻ inline <code>b</code> không được bao bọc thẻ <code>p</code> vì điều đó là sai semantic<pre><code class="language-html">&lt;b&gt;&lt;p&gt;COMPREHESIVE IMMIGRATION REFORM&lt;/p&gt;&lt;/b&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;p&gt;&lt;b&gt;COMPREHESIVE IMMIGRATION REFORM&lt;/b&gt;&lt;/p&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/BuiVietHoang2211/f8-fullstack-k2/blob/main/Day_2/index5.html">Bài 5</a>
+<ul>
+<li>2 class này cùng chung một style. Nên gom nhóm lại:<pre><code class="language-css">.size-text2 {
+  font-size: 25px;
+}
+.size-text3 {
+  font-size: 25px;
+}
+</code></pre>
+</li>
+<li>Sai chính tả tại:</li>
+</ul>
+<pre><code class="language-html">&lt;p&gt;Coppy right Hoc Web Chuan All right Reserved&lt;/p&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;p&gt;Copy right Hoc Web Chuan All right Reserved&lt;/p&gt;
+</code></pre>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm tốt, nên chú ý thêm về các cấu trúc thẻ, cách sử dụng các thẻ, chú ý nhiều hơn về semantic</li>
+</ul>
+<h2><a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day2">Nguyễn Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day2/cau1">Bài 1</a></p>
+<ul>
+<li>Thẻ <code>br</code> chỉ được dùng để ngắt dòng giữa 2 câu, đoạn văn trong cùng một thẻ. Nên không nên sử dụng nó để ngắt dòng giữa các thẻ khác nhau<pre><code class="language-html">&lt;/p&gt;
+&lt;br /&gt;
+&lt;table&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dùng thẻ <code>div</code> để gom nhóm các thẻ lại với nhau</li>
+</ul>
+</li>
+<li>Không nên để value mặc định cho các thẻ input, điều đó khiến UX không tốt, người dùng sẽ phải xóa đi các value mặc định đó<pre><code class="language-html">&lt;td&gt;
+  &lt;input
+    type=&quot;text&quot;
+    value=&quot;London&quot;
+    style=&quot;height: 30px; width: 250px; margin-bottom: 20px&quot;
+  /&gt;
+&lt;/td&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;td&gt;
+  &lt;input
+    type=&quot;text&quot;
+    placeholder=&quot;London&quot;
+    style=&quot;height: 30px; width: 250px; margin-bottom: 20px&quot;
+  /&gt;
+&lt;/td&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day2/cau2">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Vì các phần cột đã có border, không cần thiết phải style border cho thẻ <code>table</code> nữa<pre><code class="language-css">table {
+ ...
+  border: 1px solid green;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day2/cau3">Bài 3</a></p>
+<ul>
+<li>Tất cả phần sau đây đều sai về semantic.
+<ul>
+<li>Thẻ <code>br</code>, thẻ <code>p</code>.</li>
+</ul>
+<pre><code class="language-html">&lt;br /&gt;
+&lt;br /&gt;
+&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;*Enter your subject&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;textarea
+  name=&quot;&quot;
+  id=&quot;&quot;
+  cols=&quot;60&quot;
+  rows=&quot;10&quot;
+  placeholder=&quot;* Your message here&quot;
+&gt;&lt;/textarea&gt;
+&lt;br /&gt;
+&lt;button type=&quot;button&quot;&gt;Send message&lt;/button&gt;* Please fill all require form
+field, thanks!
+&lt;p&gt;&lt;/p&gt;
+</code></pre>
+<ul>
+<li>Code lại.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day2/cau4">Bài 4</a></p>
+<ul>
+<li>Thẻ <code>br</code> chỉ được dùng để ngắt dòng giữa 2 câu, đoạn văn trong cùng một thẻ. Nên không nên sử dụng nó để ngắt dòng giữa các thẻ khác nhau<pre><code class="language-html">&lt;li&gt;
+  &lt;img src=&quot;...&quot; alt=&quot;&quot; width=&quot;...&quot; height=&quot;...&quot; /&gt;
+  &lt;br /&gt;
+  ...
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/li&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sử dùng thẻ <code>div</code> để gom nhóm các thẻ lại với nhau như một block.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/Poyken/f8-fullstack-k2/tree/main/day2/cau5">Bài 5</a></p>
+<ul>
+<li>
+<p>Sai hoàn toàn những gì đã được học về semantic trong thẻ heading.</p>
+<ul>
+<li>Có rất nhiều thẻ <code>h1</code> trong một trang web. Điều đó sẽ làm cho trang web không có semantic, không tốt cho SEO. Khiến cho người dùng và các công cụ tìm kiếm không hiểu được nội dung của trang web.</li>
+</ul>
+<pre><code class="language-html">&lt;h1&gt;About us&lt;/h1&gt;
+&lt;h1&gt;Quick Links&lt;/h1&gt;
+&lt;h1&gt;Follow Us&lt;/h1&gt;
+</code></pre>
+</li>
+<li>
+<p>Phần icons ở đây hoạt động như một link, nên sử dụng thẻ <code>a</code> để bao bọc các icon đó</p>
+<pre><code class="language-html">&lt;li&gt;&lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&quot;fab fa-google-plus-g&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-google-plus-g&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+  &lt;a target=&quot;_blank&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm không tốt, yêu cầu code lại, sửa lại các lỗi sai và nộp lại lần nữa trước buổi học sau. Cần chú ý rất nhiều vào semantic các thẻ. Cần chú ý thêm về giao diện mẫu để biết các chức năng chính xác cần phải làm.</li>
+</ul>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/Day%202">Thế Nguyễn Đại</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/daithehh04/fullstack/blob/main/Day%202/exercise-1.html">Bài 1</a>
+<ul>
+<li>Bài làm tốt</li>
+<li>Các phần width hơi to hơn so với bản mẫu</li>
+<li>Thiếu phần button.</li>
+<li>Cần quan tâm vào thẻ title của trang web chứ không nên để là Document vì nó sẽ làm cho người dùng và các công cụ tìm kiếm không hiểu được nội dung của trang web.<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Form&lt;/title&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/daithehh04/fullstack/blob/main/Day%202/exercise-2.html">Bài 2</a>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Cần quan tâm vào thẻ title của trang web chứ không nên để là Document vì nó sẽ làm cho người dùng và các công cụ tìm kiếm không hiểu được nội dung của trang web.<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Calculator&lt;/title&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/daithehh04/fullstack/blob/main/Day%202/exercise-3.html">Bài 3</a>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Cần quan tâm vào thẻ title của trang web chứ không nên để là Document vì nó sẽ làm cho người dùng và các công cụ tìm kiếm không hiểu được nội dung của trang web.<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Form&lt;/title&gt;
+</code></pre>
+</li>
+<li>Phần input nhập email nên sử dụng type là email để kiểm tra người dùng nhập đúng định dạng email hay không<pre><code class="language-html">&lt;input type=&quot;text&quot; placeholder=&quot;* Enter your email address&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input type=&quot;email&quot; placeholder=&quot;* Enter your email address&quot; /&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/daithehh04/fullstack/blob/main/Day%202/exercise-4.html">Bài 4</a>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Cần quan tâm vào thẻ title của trang web chứ không nên để là Document vì nó sẽ làm cho người dùng và các công cụ tìm kiếm không hiểu được nội dung của trang web.<pre><code class="language-html">&lt;title&gt;Document&lt;/title&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;title&gt;Blog&lt;/title&gt;
+</code></pre>
+</li>
+<li>Vì đây là một danh sách bài viết, phần alt của hình ảnh nên có nghĩa, không nên để trống<pre><code class="language-html">&lt;img
+  src=&quot;https://fastly.picsum.photos/id/404/200/200.jpg?hmac=7TesL9jR4uM2T_rW-vLbBjqvfeR37MJKTYA4TV-giwo&quot;
+  alt=&quot;&quot;
+/&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;img
+  src=&quot;https://fastly.picsum.photos/id/404/200/200.jpg?hmac=7TesL9jR4uM2T_rW-vLbBjqvfeR37MJKTYA4TV-giwo&quot;
+  alt=&quot;HEALTH CARE&quot;
+/&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/daithehh04/fullstack/blob/main/Day%202/exercise-5.html">Bài 5</a>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Không được để tên file, folder chứa ký tự đặc biệt, dấu cách. Vì nó sẽ gây khó khăn cho việc quản lý, dễ gây lỗi cho các phần tử khác trong trang. Cần chú ý thêm về thẻ title.</li>
+</ul>
+<h2><a href="https://github.com/nvhlam2211/f8-fullstack/tree/main/day-2">10634</a></h2>
+<ul>
+<li>[x] <a href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-2/bai1.html">Bài 1</a>
+<ul>
+<li>Code mới được update, không đủ thời gian review. Xin phép xem lại bài em sau nhé!</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-2/bai2.html">Bài 2</a>
+<ul>
+<li>Code mới được update, không đủ thời gian review. Xin phép xem lại bài em sau nhé!</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-2/bai3.html">Bài 3</a>
+<ul>
+<li>Code mới được update, không đủ thời gian review. Xin phép xem lại bài em sau nhé!</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-2/bai4.html">Bài 4</a>
+<ul>
+<li>Code mới được update, không đủ thời gian review. Xin phép xem lại bài em sau nhé!</li>
+</ul>
+</li>
+<li>[x] <a href="https://github.com/nvhlam2211/f8-fullstack/blob/main/day-2/bai5.html">Bài 5</a></li>
+</ul>
+<ul>
+<li>
+<p>Đánh giá chung bài tập về nhà:</p>
+<ol>
+<li>
+<p>Nếu không đổi tên, không review nữa.</p>
+<p>1.1 Tên cần thiết để đánh giá đúng trình độ và để có thể hướng dẫn, quan tâm phù hợp</p>
+<p>1.2 Tên cần thiết để điểm danh những người đã nộp bài</p>
+</li>
+<li>
+<p>Gửi link github/folder chứ không phải gửi link commit</p>
+<p>2.1 Link commit không thể xem được code</p>
+<p>2.2 Link commit không thể xem được thời gian nộp bài</p>
+<p>2.3 Link: https://github.com/nvhlam2211/f8-fullstack/commit/20fcdf971b999b866b1057a88c8a99196422393f rất dài, rất khó đọc.</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2><a href="https://github.com/HieuBoss/F8-fullstack-k2/tree/main/html/lesson2">Duy Hiếu Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex1.html">Bài 1</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Nên thêm padding-left vào input để UX tốt hơn.</li>
+<li>Thuộc tính for trong label nhận vào một input với id tương ứng. Không nên để for bừa bãi mà không có input nào sử dụng id đó. Điều đó sẽ gây ra lỗi khi click vào label.<pre><code class="language-html">&lt;td&gt;&lt;label class=&quot;label&quot; for=&quot;email&quot;&gt;Email address&lt;/label&gt;&lt;/td&gt;
+&lt;input
+  class=&quot;table_input_left&quot;
+  type=&quot;email&quot;
+  placeholder=&quot;John@example.com&quot;
+/&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;td&gt;&lt;label class=&quot;label&quot; for=&quot;email&quot;&gt;Email address&lt;/label&gt;&lt;/td&gt;
+&lt;input
+  class=&quot;table_input_left&quot;
+  type=&quot;email&quot;
+  placeholder=&quot;John@example.com&quot;
+  id=&quot;email&quot;
+/&gt;
+</code></pre>
+</li>
+<li>Phần value option nên có ý nghĩa để khi người dùng chọn thì sẽ trả về giá trị của value đó<pre><code class="language-html">&lt;option value=&quot;1&quot;&gt;United Kingdom&lt;/option&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;option value=&quot;United Kingdom&quot;&gt;United Kingdom&lt;/option&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex2.html">Bài 2</a></p>
+<ul>
+<li>Bài làm tốt *</li>
+<li>Phần button để trong form nếu không có chức năng gì ngoài bấm thì nên để là type=&quot;button&quot;. Nếu không, type mặc định sẽ là submit, tất cả các button không có type ở trong form đều submit là sai. Vì điều đó sẽ khiến mỗi lần click button là một lần submit.</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex3.html">Bài 3</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex4.html">Bài 4</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex5.html">Bài 5</a></p>
+<ul>
+<li>
+<p>3 thẻ heading này chung tầng ý nghĩa, tuy nhiên lại đang để 2 thẻ heading khác nhau</p>
+<pre><code class="language-html">&lt;h3&gt;About us&lt;/h3&gt;
+&lt;h2&gt;Quick Link&lt;/h2&gt;
+&lt;h2&gt;Follow us&lt;/h2&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý một chút nhỏ ở semantic, chức năng các thẻ thường dùng.</li>
+</ul>
+<h2><a href="https://github.com/HieuBoss/F8-fullstack-k2/tree/main/html/lesson2">Hồng Hà Nguyễn Thị</a></h2>
+<ul>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex1.html">Bài 1</a></p>
+<ul>
+<li>
+<p>Bài làm tốt *</p>
+</li>
+<li>
+<p>Phần css có 2 style cho 1 class, nên viết chung vào 1 style</p>
+<pre><code class="language-css">.form__order-option {
+  width: 92%;
+  height: 35px;
+}
+
+.form__order-option {
+  padding-left: 5px;
+}
+</code></pre>
+</li>
+<li>
+<p>Phần thẻ select sử dụng 2 class nhưng ở các style, thuộc tính ghi đè lẫn nhau mà không có một style riêng nào</p>
+<pre><code class="language-html">&lt;style&gt;
+  .form__order-input {
+    width: 89%;
+    height: 29px;
+  }
+
+  .form__order-option {
+    width: 92%;
+    height: 35px;
+  }
+&lt;/style&gt;
+&lt;select class=&quot;form__order-input form__order-option&quot;&gt;
+  &lt;option value=&quot;1&quot;&gt;VietNam&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;France&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;America&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+</li>
+<li>
+<p>Code không có format lại, nhìn hơi cẩu thả.</p>
+<pre><code class="language-html">&lt;pre&gt;
+  &lt;!-- Code begin --&gt;
+  &lt;!-- Ln 90 --&gt;
+  &lt;p class=&quot;form__wrap-text&quot;&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolorem  deserunt
+            blanditiis animi,
+            expedita incidunt aperiam, voluptates vitae quod nemo voluptatum molestiae, dolorenumquam.   Nesciunt
+            quibusdam dolorum expedita cupiditate a.
+        &lt;/p&gt;
+  
+  &lt;!-- Ln 140 --&gt;
+                &lt;td colspan=&quot;2&quot;&gt;&lt;button type=&quot;submit&quot; class=&quot;form_btn-submit&quot;&gt;SEND ME FREE COFFEE&lt;/button&gt;&lt;/td&gt;
+
+  &lt;!-- Code end --&gt;
+&lt;/pre&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex2.html">Bài 2</a></p>
+<ul>
+<li>Bài làm rất tốt *</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex3.html">Bài 3</a></p>
+<ul>
+<li>
+<p>Bài làm rất tốt *</p>
+</li>
+<li>
+<p>Sai chính tả <code>tounch</code> =&gt; <code>touch</code></p>
+</li>
+<li>
+<p>Phần css này không cần thiết thêm !important</p>
+<pre><code class="language-css">.site-btn:hover {
+  background-color: #ffb100 !important;
+}
+</code></pre>
+</li>
+<li>
+<p>input có type mặc định là text. Vì vậy ở phần input nhập email cần sửa thành type là email để kiểm tra người dùng nhập đúng định dạng email hay không</p>
+<pre><code class="language-html">&lt;input class=&quot;site-input&quot; placeholder=&quot;* Enter your full email&quot; /&gt;
+</code></pre>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-html">&lt;input
+  class=&quot;site-input&quot;
+  type=&quot;email&quot;
+  placeholder=&quot;* Enter your full email&quot;
+/&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex4.html">Bài 4</a></p>
+<ul>
+<li>Bài làm tốt</li>
+<li>Mặc dù bài làm rất tốt nhưng có tận 2 thẻ đóng body</li>
+</ul>
+<pre><code class="language-html">  &lt;/body&gt;
+  &lt;/body&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] <a href="https://github.com/HieuBoss/F8-fullstack-k2/blob/main/html/lesson2/ex5.html">Bài 5</a></p>
+<ul>
+<li>Sử dụng đường dẫn <code>#!</code> || <code>#</code> thì được. Nhưng không được dùng <code>!#</code> vì nó sẽ làm cho trang web không hoạt động được<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;!#&quot; class=&quot;link&quot; target=&quot;_blank&quot;&gt;
+  &lt;i class=&quot;fa-brands fa-twitter&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+</li>
+<li>Không nên sử dụng hash là chữ in hoa, điều đó sẽ khiến url rất xấu.<pre><code class="language-html">&lt;a target=&quot;_blank&quot; href=&quot;#Appointment&quot;&gt;&lt;/a&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý một chút nhỏ ở semantic, chức năng các thẻ thường dùng.</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
