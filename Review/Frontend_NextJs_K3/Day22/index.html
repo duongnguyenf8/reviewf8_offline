@@ -1,0 +1,413 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Frontend_NextJs_K3/Day22</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Quân review bài tập về nhà buổi 22 Lớp FE-K3</h1>
+<h2><a href="https://github.com/duchainguyen/F8-FE-K3/tree/main/day-22/js">Nguyễn Đức Hải</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Chú ý tên của mảng đề bài cho là <code>categories</code> chứ không phải là <code>Arr</code>.</p>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var categories = &quot;dayKhongPhaiArray&quot;;
+function findChildren(categories, parentId = 0) {
+  if (!Array.isArray(categories) || categories.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
+  // code...
+}
+console.log(findChildren(Arr));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên chỉ cần khởi tạo phương thức <code>reduce2()</code> một lần là có thể dùng được phương thức này ở bất cứ đâu trong file đã khởi tạo, nên không cần khởi tạo lần thứ 2 để dùng.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/khanhngoolearn/F8-homework-fe-k3/tree/main/day22">Nguyễn Đình Khánh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Output hiện tại của bài làm chưa đáp ứng với yêu cầu đề bài, cụ thể:</p>
+<ul>
+<li>
+<p>Khi xác định được đối tượng con thì khi push vào đối tương cha cần phải xóa đối tượng con ở ngoài. Hiện tại bài làm vẫn để các đối tượng con ở ngoài.</p>
+</li>
+<li>
+<p>Với các đối tượng không có đối tượng con cần xóa <code>children</code> vì lúc này <code>children</code> là một mảng rỗng.</p>
+</li>
+</ul>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var inputArray = &quot;dayKhongPhaiArray&quot;;
+function buildNestedStructure(array, parent = 0) {
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
+  // code...
+}
+var nestedStructure = buildNestedStructure(inputArray);
+console.log(JSON.stringify(nestedStructure, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Chú ý cách đặt tên, đề bài yêu cầu đặt tên phương thức mới là <code>reduce2</code>.</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần đọc kỹ output ở bài 1 để tuân thủ theo yêu cầu đề bài từ đó hoàn thiện bài làm hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/tnnhungoc/F8-FE-K3/tree/main/FEK3/Day22_JS">thuy nguyen</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Tuy nhiên có một số góp ý cho bài làm như sau:</p>
+<ul>
+<li>
+<p>Với các đối tượng không có đối tượng con cần xóa <code>children</code> vì lúc này <code>children</code> là một mảng rỗng để giống với output của đề bài đưa ra.</p>
+</li>
+<li>
+<p>Chú ý cách đặt tên biến, nên đặt tên biến tường minh, có ý nghĩa, giúp cho việc đọc code dễ hiểu hơn. Hiện tại, bài làm có 3 biến có tên là <code>e</code>, <code>g</code>, <code>o</code>. Việc đặt tên như vậy gây khó khăn cho việc đọc hiểu code.</p>
+</li>
+</ul>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var data = &quot;dayKhongPhaiArray&quot;;
+function convertToNestedArray(array, parent = 0) {
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
+  // code...
+}
+var nestedArr = convertToNestedArray(data);
+console.log(JSON.stringify(nestedArr, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Bài làm có vẻ chưa hiểu yêu cầu của đề bài. Hiện tại bài làm đang xây dựng một phương thức có tên là <code>reduce2</code> nhưng chỉ phục vụ cho việc tính tổng các phần tử trong mảng đã cho.</p>
+<p>Yêu cầu của đề bài là xây dựng một phương thức có tên là <code>reduce2</code> với các chức năng giống với phương thức <code>reduce()</code> trong mảng để áp dụng cho tất cả các trường hợp chứ không phải chỉ áp dụng cho một trường hợp riêng lẻ nào đó.</p>
+<p>Để làm được, cần hiểu rõ phương thức <code>reduce()</code> có các tham số nào và luồng hoạt động của phương thức này như thế nào. Từ đó, vận dụng các kiến thức được học để xây dựng phương thức <code>reduce2()</code> theo yêu cầu đề bài.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-javascript">Array.prototype.reduce2 = function (callback, initialValue) {
+  if (!this.length) {
+    return `Invalid Input!`;
+  }
+
+  var result = initialValue !== undefined ? initialValue : this[0];
+  var startIndex = initialValue !== undefined ? 0 : 1;
+  for (let i = startIndex; i &lt; this.length; i++) {
+    result = callback(result, this[i]);
+  }
+  return result;
+};
+
+var arr = [1, 2, 3, 4];
+var result = arr.reduce2((pre, current) =&gt; {
+  return pre + current;
+}, 0);
+
+console.log(result); //Output: 10
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần đọc kỹ output đề bài đưa ra để hoàn thiện bài 1 hơn, lưu ý về yêu cầu bài 2 tránh hiểu sai yêu cầu đề bài và cần hoàn thiện lại bài 2.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Baoanh2004/Frontend-Offline-K3/blob/main/Day-22/main.js">Bảo Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*.</p>
+<p>Tuy nhiên, Output của bài làm hiện tại chưa bỏ thuộc tính <code>parent</code> của các đối tượng như Output của đề bài. Cần sửa lại để hoàn thiện hơn.</p>
+<p>Chưa kiểm tra đầu vào không phải array:</p>
+<pre><code class="language-javascript">var arr = &quot;dayKhongPhaiArray&quot;;
+function handleNested(array, parent = 0) {
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
+  // code...
+}
+var nestedArr = handleNested(arr);
+console.log(JSON.stringify(nestedArr, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/countduck4819/f8-frontend/tree/main/Day22">Vũ Thành Khang</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*.</p>
+<p>Cần chú ý về việc đặt tên function cần tuân theo quy tắc cameCase và cần tường minh và có ý nghĩa, hiện tại bài làm có tên function là <code>th</code> gây khó hiểu cho việc đọc code.</p>
+<p>Chưa kiểm tra đầu vào không phải array. Có thể tham khảo cách kiểm tra sau đây:</p>
+<pre><code class="language-javascript">var arr = &quot;dayKhongPhaiArray&quot;;
+function handleNested(array, parent = 0) {
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
+  // code...
+}
+var nestedArr = handleNested(arr);
+console.log(JSON.stringify(nestedArr, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần lưu ý việc đặt tên để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/NguyenLeQuyen2004/f8-frontend-k3/tree/main/Day22-baitap">Nguyễn Lệ Quyên</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai chính tả <code>length</code>.</p>
+<p>Hiện tại bài làm đang có output không đúng với yêu cầu đề bài.</p>
+<pre><code class="language-javascript">for (let i = 0; i &lt; arr_lenght; i++) {
+  // 1 mang co' do dai` la` 3 vi` o tren co 3
+  // 1. id: 11,
+  // 2. name: &quot;Chuyên mục 2.2.2&quot;,
+  // 3. parent: 5,
+  newArray[i] = [];
+}
+</code></pre>
+<p>Ở đoạn code trên, nếu như theo comment đang ghi là mảng này có độ dài là 3 thì không chính xác vì <code>arr_length</code> ở trên khai báo là độ dài của array thì đang có độ dài là 11.</p>
+<p>Nếu như chưa hiểu yêu cầu bài làm, có thể <strong>đặt câu hỏi hoặc liên hệ trợ giảng</strong> để được trợ giúp hoàn thiện bài tập về nhà hơn.</p>
+<p>Có thể tham khảo các bài làm được nhận xét là <code>Bài làm rất tốt</code> để hiểu cách làm hơn.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Vì bài làm đang gán mặc định <code>bienDem</code> có giá trị là 0 nên khi truyền vào giá trị khởi tạo là một số khác 0 thì nếu như theo đúng phương thức <code>reduce()</code> đã được học, lúc đó <code>bienDem</code> cần lấy giá trị khởi tạo đó. Nhưng bài làm chưa xử lý trường hợp này.</p>
+<p>Nên đặt tên biến bằng Tiếng Anh.</p>
+<p>Có thể tham khảo cách làm sau đây để hoàn thiện hơn:</p>
+<pre><code class="language-javascript">Array.prototype.reduce2 = function (callback, initialValue) {
+  if (!this.length) {
+    return `Invalid Input!`;
+  }
+
+  var result = initialValue !== undefined ? initialValue : this[0];
+  var startIndex = initialValue !== undefined ? 0 : 1;
+  for (let i = startIndex; i &lt; this.length; i++) {
+    result = callback(result, this[i]);
+  }
+  return result;
+};
+
+var arr = [1, 2, 3, 4];
+var result = arr.reduce2((pre, current) =&gt; {
+  return pre + current;
+}, 10);
+
+console.log(result); //Output: 20
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần đọc kỹ yêu cầu đề bài và chú ý output của đề bài đưa ra ở bài 1, ngoài ra cần chú ý hơn khi xây dựng phương thức <code>reduce2()</code> ở bài 2 để hoàn thiện hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/truongmanhhung58/F8-FrontEnd-k3/blob/main/javascript/Day_8/js/main.js">Hùng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Output của bài làm hiện tại không đúng với Output của đề bài đưa ra.</p>
+<p>Lý do là vì đặt trùng tên biến <code>children</code> nên khi thực hiện việc push vào mảng <code>children</code> thì lúc đó sẽ làm cho đầu ra không như mong muốn.</p>
+<p>Sửa lại:</p>
+<pre><code class="language-javascript">function findChildren(parentId) {
+  var children = [];
+  for (var i = 0; i &lt; arr.length; i++) {
+    if (arr[i].parent === parentId) {
+      var child = {
+        id: arr[i].id,
+        name: arr[i].name,
+      };
+      child.children = findChildren(arr[i].id);
+      children.push(child);
+    }
+  }
+  return children.length &gt; 0 ? children : undefined;
+}
+</code></pre>
+<p>Chưa kiểm tra đầu vào không phải array. Có thể tham khảo cách kiểm tra sau đây:</p>
+<pre><code class="language-javascript">var arr = &quot;dayKhongPhaiArray&quot;;
+function handleNested(array, parent = 0) {
+  if (!Array.isArray(array) || array.length === 0)
+    return &quot;Đầu vào không hợp lệ&quot;;
+  // code...
+}
+var nestedArr = handleNested(arr);
+console.log(JSON.stringify(nestedArr, null, 2));
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Ở trong phương thức <code>reduce2()</code> trong bài làm đang có vấn đề trong việc khai báo 2 lần một biến <code>i</code> vì thế nên các biến i ở ngoài vòng lặp sẽ không được sử dụng. Làm cho logic không đúng và i luôn bắt đầu từ 1. Điều này làm cho khi có giá trị khởi tạo nó sẽ luôn bỏ qua phần tử đầu tiên của mảng, làm cho kết quả không đúng.</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-javascript">Array.prototype.reduce2 = function (callback, initialValue) {
+  if (!this.length) {
+    return `Invalid Input!`;
+  }
+
+  var result = initialValue !== undefined ? initialValue : this[0];
+  var startIndex = initialValue !== undefined ? 0 : 1;
+  for (let i = startIndex; i &lt; this.length; i++) {
+    result = callback(result, this[i]);
+  }
+  return result;
+};
+
+var arr = [1, 2, 3, 4];
+var result = arr.reduce2((pre, current) =&gt; {
+  return pre + current;
+}, 10);
+
+console.log(result); //Output: 20
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý thêm vào yêu cầu đề bài, cần kiểm tra thêm các điều kiện để tránh lỗi và đảm bảo đầu ra chính xác.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dogiaba/F8-Fe-K3/tree/main/Javascript/Day22">Đỗ Gia Bảo</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt. *</p>
+<p>Nên kiểm tra <code>categories</code> là một mảng để chắc chắn sử dụng được phương thức <code>forEach()</code></p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm chưa tốt.</p>
+<p>Ở trong phương thức <code>reduce2()</code> trong bài làm đang có vấn đề trong việc khai báo 2 lần một biến <code>i</code> vì thế nên các biến i ở ngoài vòng lặp sẽ không được sử dụng. Làm cho logic không đúng và i luôn bắt đầu từ 1. Điều này làm cho khi có giá trị khởi tạo nó sẽ luôn bỏ qua phần tử đầu tiên của mảng, dẫn đến kết quả không đúng.</p>
+<p>Sửa lại: Không khai báo và gán giá trị cho biến i trong vòng lặp</p>
+<p>Có thể tham khảo cách làm sau đây:</p>
+<pre><code class="language-javascript">Array.prototype.reduce2 = function (callback, initialValue) {
+  if (!this.length) {
+    return `Invalid Input!`;
+  }
+
+  var result = initialValue !== undefined ? initialValue : this[0];
+  var startIndex = initialValue !== undefined ? 0 : 1;
+  for (let i = startIndex; i &lt; this.length; i++) {
+    result = callback(result, this[i]);
+  }
+  return result;
+};
+
+var arr = [1, 2, 3, 4];
+var result = arr.reduce2((pre, current) =&gt; {
+  return pre + current;
+}, 10);
+
+console.log(result); //Output: 20
+</code></pre>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần chú ý cách xây dựng một phương thức giống với phương thức <code>reduce()</code> trong mảng ở bài 2 để hoàn thiện hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/saiduii/F8-FE-K3/tree/main/Day-22">Duy</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p><strong>Chưa hoàn thành</strong></p>
+<p>Nếu gặp khó khăn nên <strong>đặt câu hỏi hoặc liên hệ trợ giảng</strong> để được trợ giúp hoàn thiện bài tập về nhà.</p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần hoàn thiện bài 1.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/hainvsp9x/f8-feoffline-k3/tree/main/javascript/day-22">Nguyen Van Hai</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Nên kiểm tra <code>categories</code> là một mảng để chắc chắn sử dụng được phương thức <code>forEach()</code></p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý kiểm tra điều kiện của đầu vào để tránh lỗi trong các trường hợp đặc biệt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/tunguyenhd/FrontEnd-F8-K3/tree/main/Bai_tap/javascript/Day_22">Nguyễn Khắc Tú</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Nên kiểm tra <code>array</code> là một mảng để chắc chắn sử dụng được phương thức <code>forEach()</code></p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý kiểm tra điều kiện của đầu vào để tránh lỗi trong các trường hợp đặc biệt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/fanbaday/f8-fullstack-offline-K3/tree/main/day22">Nguyen Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt*</p>
+<p>Nên kiểm tra <code>array</code> là một mảng để chắc chắn sử dụng được phương thức <code>forEach()</code></p>
+<hr>
+</li>
+<li>
+<p>[x] [Bài 2]</p>
+<p>Bài làm rất tốt*</p>
+<hr>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, chỉ cần chú ý kiểm tra điều kiện của đầu vào để tránh lỗi trong các trường hợp đặc biệt.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
