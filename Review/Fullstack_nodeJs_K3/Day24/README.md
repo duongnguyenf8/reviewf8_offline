@@ -1,4 +1,4 @@
-# Quân review bài học viên lớp K1-Fullstack
+# Quân review bài học viên lớp K3-Fullstack
 
 ## [Nguyễn Quang Cường](https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_24)
 
