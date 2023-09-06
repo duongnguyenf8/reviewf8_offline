@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day26</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 26 Lớp K1</h1>
+<h2><a href="https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day26/index.html">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Khi ở video ở các theme chưa load xong hoặc khi hover các icon chưa được nổi bật.</p>
+<ul>
+<li>
+<p>Có thể xử lý bằng cách: Thay lại màu của btn khi hover</p>
+</li>
+<li>
+<p>Thay đổi màu <code>.dashboard</code> để khi đang load các video không bị khó nhìn. Hiện đang để màu trắng <code>#fff</code></p>
+</li>
+</ul>
+<p>Các nút bấm không cần thiết phải bôi đen, nên sử dụng:</p>
+<pre><code class="language-css">.control .btn {
+  user-select: none;
+}
+</code></pre>
+<p>Để người dùng khi bấm các nút nhanh quá không bị bôi đen.</p>
+<p>Khi next nhanh, các bài cuối sẽ khiến scroll làm bôi đen nhiều phần, có thể xử lý bằng cách sau khi phát nhạc mới scroll đến.</p>
+<p>Trong khoảng 30s đầu khi phát 1 bài hát mới, nút bấm đang bị lệch so với thanh progress 1 khoảng bằng <code>translateX 50%</code></p>
+<p>Khi dừng nhạc, next bài nên reset time và progressBar luôn để tránh user bị hiểu nhầm ý rằng sẽ phát tiếp bài nhạc mới ở giây đó.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần chú ý thêm các phần nhỏ để user cảm thấy dễ dùng hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day26/index.html">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm rất tốt *</p>
+<p>Khi chưa load xong thumb và ảnh các bài hát, có thể thêm 1 placeholder bằng CSS để không bị trống rỗng.</p>
+<p>Tính năng Random bài hát chưa được tốt.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần chú ý thêm các phần nhỏ để user cảm thấy dễ dùng hơn.</p>
+<p>Có thể phát triển thêm chức năng Random.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://duonghiep416.github.io/clone-zingmp3/">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] [Bài 1]</p>
+<p>Bài làm tốt *</p>
+<p>Khi bấm vào trong chấm tròn, đang bị load lại bài hát từ đầu.</p>
+<p>Khi dừng nhạc, next bài nên reset time và progressBar luôn để tránh user bị hiểu nhầm ý rằng sẽ phát tiếp bài nhạc mới ở giây đó.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên chưa xử lý một số lỗi nhỏ khiến trải nghiệm của user không được tốt.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
