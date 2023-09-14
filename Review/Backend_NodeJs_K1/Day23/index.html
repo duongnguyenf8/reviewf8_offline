@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day23</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi23">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Trường hợp đã nhập email nhưng chưa nhập mật khẩu thì chỉ cần thông báo <code>Vui lòng nhập mật khẩu</code>. Ngược lại trường hợp đã nhập mật khẩu nhưng chưa nhập email thì chỉ cần thông báo <code>Vui lòng nhập email</code></p>
+<p>Lỗi khi đăng nhập 1 email không có trong database rồi sửa url về trang chủ vẫn vào được.</p>
+<p>Khi nhập sai tài khoản mật khẩu các giá trị đã nhập vẫn phải hiển thị(Không được biến mất).</p>
+<p>Trường email, password trong model <code>Customer</code> nên để not null. Trường email trong model <code>Customer</code> nên để unique.</p>
+<p>Khi tìm thông tin trong database thì chỉ cần dùng <code>findOne</code> tìm theo email(Email lúc này đặt là <code>unique</code> thì trong database sẽ không bị trùng email) rồi check thông tin người dùng nhập với thông tin trong database. Nếu dùng <code>findAll</code> khi database có nhiều user thì sẽ xử lý rất lâu. Có thể làm như sau:</p>
+<pre><code class="language-Javascript">  const customer = await customer.findOne({where: { email: 'tda.ducanh@gmail.com' }});
+
+  //Nếu customer tồn tại thì check thông tin người dùng nhập với customer, ngược lại nếu không tồn tại thì trả về thông báo lỗi
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại các case bị lỗi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW23">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Lần đầu vào trang đăng nhập không được hiện lỗi ở ô input. Khi người dùng ấn <code>Login</code> có lỗi thì mới được phép hiện</p>
+<p>Cần validate email đã nhập, nếu không phải là email thì thông báo lỗi.</p>
+<p>Phải đăng nhập mới được phép vào trang chủ. Hiện tại không đăng nhập vẫn vào được trang chủ</p>
+<p>Khi nhập sai tài khoản mật khẩu các giá trị đã nhập vẫn phải hiển thị(Không được biến mất).</p>
+<p>Khi người dùng không nhập thông tin gì mà ấn <code>Login</code> thì cần thông báo thông báo lỗi <code>Vui lòng nhập đầy đủ thông tin</code></p>
+<p>Trường email, password trong model <code>Customer</code> nên để not null. Trường email trong model <code>Customer</code> nên để unique.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại validate form và các case bị lỗi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi23">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Nên tách biệt model <code>Customer</code> ra 1 file riêng, không nên viết chung vào file controller(Mô hình MVC)</p>
+<p>Trường hợp đã nhập email nhưng chưa nhập mật khẩu thì cần thông báo <code>Vui lòng nhập mật khẩu</code></p>
+<p>Cần validate email đã nhập, nếu không phải là email thì thông báo lỗi.</p>
+<p>Khi nhập sai tài khoản mật khẩu các giá trị đã nhập vẫn phải hiển thị(Không được biến mất).</p>
+<p>Trường email, password trong model <code>Customer</code> nên để not null. Trường email trong model <code>Customer</code> nên để unique.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần validate form và sửa lại các case bị lỗi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi23">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Thiếu case mật khẩu chưa mã hóa MD5.</p>
+<p>Ấn <code>Đăng nhập</code> bị lỗi.</p>
+<p>Khi tìm thông tin trong database thì chỉ cần dùng <code>findOne</code> tìm theo email(Email lúc này đặt <code>unique</code> thì trong database sẽ không bị trùng email) rồi check thông tin người dùng nhập với thông tin trong database. Nếu dùng <code>findAll</code> khi database có nhiều user thì sẽ xử lý rất lâu. Có thể làm như sau:</p>
+<pre><code class="language-Javascript">  const user = await User.findOne({where: { email: 'admin@gmail.com' }});
+
+  //Nếu user tồn tại thì check thông tin người dùng nhập với user, ngược lại nếu không tồn tại thì trả về thông báo lỗi
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại lỗi khi ấn <code>Đăng nhập</code> và các case bị lỗi.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-23">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Khi nhập sai tài khoản mật khẩu các giá trị đã nhập vẫn phải hiển thị(Không được biến mất).</p>
+<p>Trường hợp chưa nhập thông tin tài khoản mật khẩu khi ấn <code>Đăng nhập</code> phải xóa thông báo lỗi trước đó nếu có. Ví dụ: đăng nhập bằng tài khoản/mật khẩu không chính xác sau đó xóa hết tài khoản mật khẩu đã nhập rồi ấn <code>Đăng nhập</code> thì thông báo lỗi sai tài khoản/mật khẩu vẫn hiển thị.(Phải xóa thông báo lỗi hoặc thay bằng thông báo lỗi <code>Vui lòng nhập đầy đủ tài khoản mật khẩu</code> )</p>
+<p>Trường email, password trong model <code>User</code> nên để not null. Trường email trong model <code>User</code> nên để unique.</p>
+<p>Khi tìm thông tin trong database thì chỉ cần dùng <code>findOne</code> tìm theo email(Email lúc này đặt <code>unique</code> thì trong database sẽ không bị trùng email) rồi check thông tin người dùng nhập với thông tin trong database. Nếu dùng <code>findAll</code> khi database có nhiều user thì sẽ xử lý rất lâu. Có thể làm như sau:</p>
+<pre><code class="language-Javascript">  const user = await User.findOne({where: { email: 'admin@gmail.com' }});
+
+  //Nếu user tồn tại thì check thông tin người dùng nhập với user, ngược lại nếu không tồn tại thì trả về thông báo lỗi
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần sửa lại case khi nhập sai tài khoản mật khẩu thì vẫn phải hiển thị tài khoản mật khẩu đã nhập.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
