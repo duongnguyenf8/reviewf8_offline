@@ -1,0 +1,236 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day30</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 30 - Lớp K2</h1>
+<h2><a href="https://phamtiendat18.github.io/Fullstack-K2/Day_30/index.html">Tiến Đạt - K2</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Khi load trang, có thể focus luôn vào <code>.content</code> để việc sử dụng thuận tiện hơn</p>
+<p>Khi bấm hoặc bật các action in nghiêng, in đậm, gạch chân... Nên hiển thị active để user biết mình đang được sử dụng.</p>
+<p>Khi bấm New, chưa reset màu về mặc định.</p>
+<p>Chưa xuất được file PDF có nội dung, khi xuất ra trắng trang.</p>
+<p>Có thể do đoạn code lưu content của PDF chưa đúng, có thể thử như này</p>
+<pre><code class="language-js">html2pdf(content).save(filename);
+</code></pre>
+<p>Không nên check các field select bằng innerText, vừa không đảm bảo an toàn, nếu phải sửa các text đó thì sẽ sửa hết mọi chỗ trong file JS, có thể sử dụng ID hoặc như ở trong bài có className đang được phân biệt rõ, có thể sử dụng.</p>
+<p>Thay vì đặt tên button chuyển theme là node, có thể sử dụng themeBtn để tường minh hơn, dễ hiểu hơn.</p>
+<p>Đoạn code này xử lý hơi cồng kềnh:</p>
+<pre><code class="language-js">btnActions.forEach(function (btnAction) {
+  btnAction.addEventListener('click', function (e) {
+    if (this.className === 'align-left') {
+      document.execCommand('justifyLeft');
+    }
+    if (this.className === 'align-center') {
+      document.execCommand('justifyCenter');
+    }
+    if (this.className === 'align-right') {
+      document.execCommand('justifyRight');
+    }
+    if (e.target.innerText === 'b') {
+      document.execCommand('bold');
+    }
+    if (e.target.innerText === 'u') {
+      document.execCommand('underline');
+    }
+    if (e.target.innerText === 'i') {
+      document.execCommand('italic');
+    }
+  });
+});
+</code></pre>
+<p>Thay vì thế, nếu mỗi btnAction trong <strong>btnActionList</strong> này có một className hay id khác nhau, thì nên đặt trùng với execCommand, sau đó sử dụng nó làm execCommand luôn, không cần phải rẽ nhánh ở đây.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên việc xử lý JS chưa có tính scale, nếu cần mở rộng hoặc sửa đổi dự án sẽ rất mệt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://duychinh.github.io/f8-fullstack-KS2/Day-30/index.html">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Nên tắt spellcheck của <code>#content</code> đi để đỡ bị gạch chân đỏ ở dưới. <code>spellcheck=&quot;false&quot;</code></p>
+<p>Khi bấm New, chưa reset màu, định dạng về mặc định.</p>
+<p>Khi bấm tải PDF, hiện đang tải 1 lần 2 file <code>ten_file.pdf</code> và 1 file có tên <strong>file.pdf</strong></p>
+<p>Không nên check các field select bằng innerText, vừa không đảm bảo an toàn, nếu phải sửa các text đó thì sẽ sửa hết mọi chỗ trong file JS, có thể sử dụng ID hoặc như ở trong bài có className đang được phân biệt rõ, có thể sử dụng.</p>
+<p>Do chưa reset về giá trị mặc định, bài làm chỉ đúng ở lần đầu, sau khi reset, các button được highlight nhưng không sử dụng được, và do chỉ add, remove class, lần thứ 2 sẽ bị ngược chức năng, khi button không được active thì mới sử dụng được tính năng.</p>
+<p>Ở đoạn code này:</p>
+<pre><code class="language-js">if (
+  btn.id === 'justifyFull' ||
+  btn.id === 'justifyLeft' ||
+  btn.id === 'justifyRight' ||
+  btn.id === 'justifyCenter'
+) {
+  for (var i = 0; i &lt; btnJustifys.length; i++) {
+    btnJustifys[i].classList.remove('active');
+  }
+}
+</code></pre>
+<p>Thay vì phải xử lý thủ công từng trường hợp rồi lại xóa hết, có thể lặp 1 lần là xong:</p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-js">btnJustifys.forEach(function (btn) {
+  btn.classList.remove('active');
+});
+</code></pre>
+<p>Sai chính tả <code>btnJustifys</code> =&gt; <code>btnJustifyList</code></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên việc self test vẫn chưa đủ các case, khiến cho bài làm chưa được tốt nếu sử dụng lâu dài.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://okazakitruong.github.io/BQTruong-F8-K2-Offline/Day30/ex01.html">Bùi Quang Trưởng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p><strong>Usage feature:</strong></p>
+<p>Khi load trang, có thể focus luôn vào <code>.content</code> để việc sử dụng thuận tiện hơn</p>
+<p>Nên tắt spellcheck của <code>#content</code> đi để đỡ bị gạch chân đỏ ở dưới. <code>spellcheck=&quot;false&quot;</code></p>
+<p>Khi bấm hoặc bật các action in nghiêng, in đậm, gạch chân... Nên hiển thị active để user biết mình đang được sử dụng.</p>
+<p><strong>New feature:</strong></p>
+<p>Khi bấm New, chưa reset màu về mặc định.</p>
+<p><strong>Paste feature:</strong></p>
+<p>Khi paste từ một nguồn ngoài vào, đang bị giữ lại định dạng background, color,...</p>
+<p>Có thể lắng nghe sự kiện paste, chặn nguồn mặc định và chỉ lấy text thuần để đưa vào:</p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-js">let divEditable = document.querySelector('#content');
+divEditable.addEventListener('paste', function (e) {
+  e.preventDefault();
+  let text = e.clipboardData.getData('text/plain');
+  document.execCommand('insertHTML', false, text);
+});
+</code></pre>
+<p><strong>PDF and TXT feature:</strong></p>
+<p>Khi xuất file PDF, đang bị dính định dạng border, box-shadow...</p>
+<p>Nên xử lý để lấy format của text, không lấy của cả div.</p>
+<p><strong>Code format:</strong></p>
+<p>Đoạn code này đang thừa, tính năng của nó không rõ ràng</p>
+<pre><code class="language-js">const changeColorDropDownSelect = function (dropdownList) {
+  if (dropdownList.classList.contains('dropdown--active')) {
+    dropdownSelect.style.background = '#5f9ea0';
+  } else {
+    dropdownSelect.style.background = '#7fffd4';
+  }
+};
+document.body.addEventListener('click', function () {
+  dropdownList.classList.remove('dropdown--active');
+  changeColorDropDownSelect(dropdownList);
+});
+dropdownSelect.addEventListener('click', function (e) {
+  e.stopPropagation();
+  dropdownList.classList.toggle('dropdown--active');
+  changeColorDropDownSelect(dropdownList);
+});
+</code></pre>
+<p>Như ở trong code, sẽ hiểu là remove class rồi thay đổi style dựa theo class, vậy có thể sử dụng CSS để làm, như vậy HTML inline style sẽ không có, code sẽ đẹp hơn, đễ đọc hơn trong JS.</p>
+<p>Với 3 nút <strong>somethingNotColor-option</strong>, có thể query all và sử dụng forEach lặp, lấy chính class để làm command, như vậy nếu thêm một nút, chỉ việc thêm bên HTML.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên việc xử lý JS sẽ phải xử lý thêm nếu muốn scale dự án.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://okazakitruong.github.io/BQTruong-F8-K2-Offline/Day30/ex01.html">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p><strong>Chưa có link github</strong></p>
+<p><strong>Usage feature:</strong></p>
+<p>Khi load trang, có thể focus luôn vào <code>.content</code> để việc sử dụng thuận tiện hơn</p>
+<p>Nên tắt spellcheck của <code>#content</code> đi để đỡ bị gạch chân đỏ ở dưới. <code>spellcheck=&quot;false&quot;</code></p>
+<p>Khi bấm hoặc bật các action in nghiêng, in đậm, gạch chân... Nên hiển thị active để user biết mình đang được sử dụng.</p>
+<p><strong>New feature:</strong></p>
+<p>Khi bấm New, chưa reset màu về mặc định.</p>
+<p><strong>Paste feature:</strong></p>
+<p>Khi paste từ một nguồn ngoài vào, đang bị giữ lại định dạng background, color,...</p>
+<p>Có thể lắng nghe sự kiện paste, chặn nguồn mặc định và chỉ lấy text thuần để đưa vào:</p>
+<ul>
+<li>Đề xuất sửa thành:</li>
+</ul>
+<pre><code class="language-js">let divEditable = document.querySelector('#content');
+divEditable.addEventListener('paste', function (e) {
+  e.preventDefault();
+  let text = e.clipboardData.getData('text/plain');
+  document.execCommand('insertHTML', false, text);
+});
+</code></pre>
+<p>Do chưa xử lý định dạng với paste, các dòng text sẽ bị tràn khỏi khung.</p>
+<p><strong>PDF and TXT feature:</strong></p>
+<p>Khi xuất file PDF, việc sử dụng xuất ảnh là không hợp lý với các trình đọc màn hình, hoặc muốn chỉnh sửa.</p>
+<p><strong>Code format:</strong></p>
+<p>Sai chính tả <strong>botlBtn</strong> =&gt; <strong>boldBtn</strong></p>
+<p>Các phần button action nên sử dụng một vòng lặp chung với một dấu hiệu riêng</p>
+<p>Ví dụ:</p>
+<pre><code class="language-html">&lt;button class=&quot;action-btn&quot; data-exec=&quot;bold&quot;&gt;&lt;b&gt;B&lt;/b&gt;&lt;/button&gt;
+&lt;button class=&quot;action-btn&quot; data-exec=&quot;underline&quot;&gt;&lt;u&gt;i&lt;/u&gt;&lt;/button&gt;
+&lt;button class=&quot;action-btn&quot; data-exec=&quot;italic&quot;&gt;&lt;i&gt;i&lt;/i&gt;&lt;/button&gt;
+</code></pre>
+<p>Như vậy sẽ dễ lặp qua, nếu muốn sử dụng thêm các button mới chỉ cần thêm HTML.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên việc xử lý JS sẽ phải xử lý thêm nếu muốn scale dự án.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Stung16/ex_f8-fullstack/tree/master/Day30">Kiều Duy Tùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>New feature:</strong></p>
+<p>Khi bấm New, chưa reset màu về mặc định.</p>
+<p>Khi bấm New nên focus luôn vào ô nhập text</p>
+<p>Do chưa reset về giá trị mặc định, bài làm chỉ đúng ở lần đầu, sau khi reset, các button được active nhưng không sử dụng được, và do chỉ add, remove class, lần thứ 2 sẽ bị ngược chức năng, khi button không được active thì mới sử dụng được tính năng</p>
+<p><strong>Usage feature:</strong></p>
+<p>Dropdown menu click mở ra được nhưng không đóng được bằng cách bấm ra ngoài</p>
+<p>Khi paste từ một nguồn ngoài vào, đang bị giữ lại định dạng background, color,...</p>
+<p>Có thể lắng nghe sự kiện paste, chặn nguồn mặc định và chỉ lấy text thuần để đưa vào</p>
+<p><strong>PDF and TXT feature:</strong></p>
+<p>Không tải được file txt và pdf</p>
+<p><strong>Code format:</strong></p>
+<p>Format code chưa tốt, có các khoảng cách lớn trong src code, các dầu <code>=</code> khi gán không có khoảng cách</p>
+<p>Các dấu <code>{}</code> khi đóng, mở chưa đồng nhất về khoảng trắng</p>
+<p>Các phần code</p>
+<pre><code class="language-js">document.querySelector('.index-char').innerText = 'some thing...';
+document.querySelector('.index-word').innerText = 'some thing...';
+</code></pre>
+<p>Đang bị lặp lại rất nhiều, có thể tách thành 1 hàm để truyền tham số, như vậy sẽ dễ dàng sửa đổi hơn.</p>
+<p>Các phần button action nên sử dụng một vòng lặp chung với một dấu hiệu riêng</p>
+<p>Ví dụ:</p>
+<pre><code class="language-html">&lt;button class=&quot;action-btn&quot; data-exec=&quot;bold&quot;&gt;&lt;b&gt;B&lt;/b&gt;&lt;/button&gt;
+&lt;button class=&quot;action-btn&quot; data-exec=&quot;underline&quot;&gt;&lt;u&gt;i&lt;/u&gt;&lt;/button&gt;
+&lt;button class=&quot;action-btn&quot; data-exec=&quot;italic&quot;&gt;&lt;i&gt;i&lt;/i&gt;&lt;/button&gt;
+</code></pre>
+<p>Như vậy sẽ dễ lặp qua, nếu muốn sử dụng thêm các button mới chỉ cần thêm HTML.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại lỗi click dropdown menu, thêm chức năng tải file txt, pdf và thêm các tính năng chưa có tại New file, format và tối ưu lại code sao cho dễ dàng đọc hiểu, scale dự án hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day30">Thế Nguyễn Đại</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt *</p>
+<p><strong>New feature:</strong></p>
+<p>Khi bấm New, chưa reset màu về mặc định.</p>
+<p>Khi bấm New nên focus luôn vào ô nhập text</p>
+<p>Do chưa reset về giá trị mặc định, bài làm chỉ đúng ở lần đầu, sau khi reset, các button được active nhưng không sử dụng được, và do chỉ add, remove class, lần thứ 2 sẽ bị ngược chức năng, khi button không được active thì mới sử dụng được tính năng</p>
+<p><strong>Usage feature:</strong></p>
+<p>Số ký tự đếm không chính xác. Trường hợp nhập <code>Nguyễn Đại Thế</code>, lúc nhập ký tự <code>Đ</code> số ký tự đếm được tăng từ 6 lên 8 và nhập <code>T</code> số ký tự đếm được tăng từ 10 lên 12</p>
+<p>Chưa loại bỏ khoảng cách khi đếm số ký tự. Trường hợp ấn nhiều dấu cách rồi nhập từ thì số ký tự vẫn tính số dấu cách</p>
+<p>Nên để scroll trong form nhập nội dung thay vì scroll toàn trang khi nội dung nhập quá dài</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Cần sửa lại đếm số ký tự, số từ và các case lỗi khi new file</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

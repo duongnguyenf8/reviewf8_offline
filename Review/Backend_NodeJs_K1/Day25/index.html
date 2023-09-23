@@ -1,0 +1,140 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day25</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi25">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Khi chọn trạng thái và ấn tìm kiếm thì value trong ô select trạng thái vẫn phải giữ nguyên trạng thái đã chọn, không được đổi về <code>Tất cả trạng thái</code></p>
+<p>Khi nhập từ khóa tìm kiếm và ấn tìm kiếm thì value trong ô input vẫn phải giữ nguyên giá trị đã nhập, không được đổi về trống</p>
+<p>Thiếu confirm khi sửa và xóa khách hàng</p>
+<p>Trong form thêm mới khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Thời gian sau khi thêm mới bị invalid</p>
+<p>Trường <code>Tỉnh/Thành phố</code> bắt buộc phải chọn mới cho phép thêm mới</p>
+<p>Khi chọn <code>Tỉnh/Thành phố</code> rồi ấn thêm mới khách hàng, trường <code>province_id</code> trong database bị <code>NULL</code>(Do model <code>customer</code> thiếu field <code>province_id</code> nên khi thêm mới field <code>province_id</code> sẽ không được insert vào table)</p>
+<p>Thiếu field <code>Tỉnh/Thành phố</code>, <code>password</code> trong form sửa</p>
+<p>Không nên cho phép sửa <code>email</code> trong form sửa</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm các confirm khi sửa và xóa, cập nhật lại field <code>province_id</code> trong model <code>customer</code> và sửa các case lỗi</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-25">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Trong form sửa khi nhập lỗi ô email không cần hiển thị message error <code>Vui lòng nhập đầy đủ thông tin</code></p>
+<p>Trong form thêm mới và sửa khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Thiếu confirm khi sửa và xóa khách hàng</p>
+<p>Trường <code>Mật khẩu</code> trong form sửa không hiện mật khẩu đã mã hóa(Có thể để trống để không bị lộ mật khẩu)</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm confirm khi sửa và xóa khách hàng và sửa lại các case lỗi</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/namdctry/backend-F8-btvn/tree/main/btvn-b25">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Trong form thêm mới khi thông tin nhập bị lỗi định dạng không cần hiển thị message error <code>Vui lòng nhập đầy đủ thông tin</code>, chỉ cần hiển thị lỗi của thông tin đã nhập</p>
+<p>Trong form thêm mới và sửa khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Thiếu confirm khi sửa và xóa khách hàng</p>
+<p>Trong form sửa khi giữ nguyên <code>email</code> bị lỗi email đã tồn tại</p>
+<p>Trong form sửa khi giữ nguyên <code>mật khẩu</code> bị lỗi <code>Mật khẩu yếu</code></p>
+<p>Trường <code>Mật khẩu</code> trong form sửa không hiện mật khẩu đã mã hóa(Có thể để trống để không bị lộ mật khẩu)</p>
+<p>Khi sửa mật khẩu, mật khẩu chưa được mã hóa trước khi insert dữ liệu vào database</p>
+<p>Không nên cho phép sửa <code>email</code> trong form sửa</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm confirm khi sửa và xóa khách hàng và sửa lại các case lỗi trong form sửa và xóa</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/dungng1321/NodeJS-Offline-Exercise/tree/main/day25">Đức Dũng Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Trong form thêm mới khi thông tin nhập bị lỗi định dạng không cần hiển thị message error <code>Vui lòng nhập đầy đủ thông tin</code>, chỉ cần hiển thị lỗi của thông tin đã nhập</p>
+<p>Trong form thêm mới và sửa khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Trường <code>mật khẩu</code> trong form thêm nên validate kĩ hơn nữa(Validate thêm: minLength,minNumber,minSymbols,minUppercase)</p>
+<p>Thiếu confirm khi sửa và xóa khách hàng</p>
+<p>Trường <code>Tỉnh/Thành phố</code> trong form thêm bắt buộc phải nhập mới được phép thêm mới</p>
+<p>Khi chọn <code>Tỉnh/Thành phố</code> rồi ấn thêm mới khách hàng, trường <code>province_id</code> trong database bị <code>NULL</code>(Do model <code>customer</code> thiếu field <code>province_id</code> nên khi thêm mới field <code>province_id</code> sẽ không được insert vào table)</p>
+<p>Thiếu field <code>Tỉnh/Thành phố</code>, <code>password</code> trong form sửa</p>
+<p>Không nên cho phép sửa <code>email</code> trong form sửa</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm confirm khi sửa và xóa khách hàng và sửa lại các case lỗi trong form sửa và xóa</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/maiduchien23/F8-BE/tree/main/F8_BE/f8_javascript/homeword/day25">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Trong form thêm mới khi thông tin nhập bị lỗi định dạng không cần hiển thị message error <code>Vui lòng nhập đầy đủ thông tin</code>, chỉ cần hiển thị lỗi của thông tin đã nhập</p>
+<p>Trong form thêm mới và sửa khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Thiếu confirm và message khi sửa và xóa khách hàng</p>
+<p>Trường <code>Tỉnh/Thành phố</code> trong form thêm bắt buộc phải nhập mới được phép thêm mới</p>
+<p>Khi chọn <code>Tỉnh/Thành phố</code> rồi ấn thêm mới khách hàng, trường <code>province_id</code> trong database bị <code>NULL</code>(Do model <code>customer</code> thiếu field <code>province_id</code> nên khi thêm mới field <code>province_id</code> sẽ không được insert vào table)</p>
+<p>Thiếu field <code>Tỉnh/Thành phố</code>, <code>password</code> trong form sửa</p>
+<p>Không nên cho phép sửa <code>email</code> trong form sửa</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm confirm khi sửa và xóa khách hàng và sửa lại các case lỗi trong form sửa và xóa</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dangmanh2001/F8-BE-k1/tree/main/Baitapbuoi25">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Trong form thêm mới khi thông tin nhập bị lỗi định dạng không cần hiển thị message error <code>Vui lòng nhập đầy đủ thông tin</code>, chỉ cần hiển thị lỗi của thông tin đã nhập</p>
+<p>Trong form thêm mới và sửa khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Thiếu confirm khi sửa và xóa khách hàng</p>
+<p>Khi ấn sửa phải hiển thị thông tin khách hàng vào form sửa</p>
+<p>Message lỗi <code>Vui lòng nhập đầy đủ thông tin</code> trong form sửa nên chuyển sang màu đỏ để dễ phân biệt</p>
+<p>Trường <code>Tỉnh/Thành phố</code> trong form thêm bắt buộc phải nhập mới được phép thêm mới</p>
+<p>Khi chọn <code>Tỉnh/Thành phố</code> rồi ấn thêm mới khách hàng, trường <code>province_id</code> trong database bị <code>NULL</code>(Do model <code>customer</code> thiếu field <code>province_id</code> nên khi thêm mới field <code>province_id</code> sẽ không được insert vào table)</p>
+<p>Thiếu field <code>Tỉnh/Thành phố</code>, <code>password</code> trong form sửa</p>
+<p>Không nên cho phép sửa <code>email</code> trong form sửa</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm confirm khi sửa và xóa khách hàng và sửa lại các case lỗi trong form sửa và xóa</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi25">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Không có trang thêm mới khách hàng</p>
+<p>Không sửa được thông tin khách hàng(Ấn lưu bị lỗi 404)</p>
+<p>Không xóa được khách hàng(Ấn xóa bị lỗi 404)</p>
+<p>Các field trong database không giống yêu cầu đề bài</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm trang thêm mới khách hàng và sửa lại các case xóa, sửa thông tin khách hàng</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW25">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Cần validate trường <code>Tỉnh/Thành phố</code>, bắt buộc phải chọn mới được thêm mới.</p>
+<p>Trong form thêm mới khi thông tin nhập bị lỗi định dạng không cần hiển thị message error <code>Vui lòng nhập đầy đủ thông tin</code>, chỉ cần hiển thị lỗi của thông tin đã nhập</p>
+<p>Trong form thêm mới và sửa khách hàng, trường hợp thông tin nhập bị lỗi thì báo lỗi và vẫn phải giữ nguyên thông tin đã nhập ở các ô</p>
+<p>Thiếu confirm khi sửa và xóa khách hàng</p>
+<p>Trường <code>Mật khẩu</code> trong form sửa không hiện mật khẩu đã mã hóa(Có thể để trống để không bị lộ mật khẩu)</p>
+<p>Lỗi: Khi vào form sửa, trường hợp chưa sửa ô thông tin nào và ấn lưu thì bị lỗi <code>Mật khẩu không đủ mạnh</code></p>
+<p>Ô select trong form sửa không cần để option <code>Chọn tỉnh/thành phố</code></p>
+<p>Không nên cho phép sửa <code>email</code> trong form sửa</p>
+<p>Trong <code>CustomerController</code> chỗ xử lý delete khách hàng biến <code>confirmation</code> không cần thiết</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần thêm confirm sửa và xóa, sửa lại các case bị lỗi trong form sửa, thêm mới</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
