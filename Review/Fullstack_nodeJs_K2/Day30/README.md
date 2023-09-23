@@ -6,52 +6,38 @@
 
   Bài làm tốt\*
 
-  Khi load trang, có thể focus luôn vào `.content` để việc sử dụng thuận tiện hơn
+  Khi bấm hoặc bật các action in nghiêng, in đậm, gạch chân... Nên hiển thị các button đã active để user biết mình đang được sử dụng.
 
-  Khi bấm hoặc bật các action in nghiêng, in đậm, gạch chân... Nên hiển thị active để user biết mình đang được sử dụng.
+  Khi bấm new, nên focus vào lại `.content` để user có thể sử dụng luôn.
 
-  Khi bấm New, chưa reset màu về mặc định.
+  Khi bấm new, nên reset tên file trong `.file-name`.
 
   Chưa xuất được file PDF có nội dung, khi xuất ra trắng trang.
 
-  Có thể do đoạn code lưu content của PDF chưa đúng, có thể thử như này
+  Khi xuất file PDF, việc sử dụng xuất ảnh là không hợp lý với các trình đọc màn hình, hoặc muốn chỉnh sửa.
+
+  Các đoạn code này thường được sử dụng rất nhiều(Khoảng 3 lần trong bài hiện tại), nên tách thành hàm để có thể dễ dàng sử dụng hơn:
 
   ```js
-  html2pdf(content).save(filename);
+  word.innerText = 'Số từ: 0';
+  char.innerText = 'Số ký tự: 0';
   ```
 
-  Không nên check các field select bằng innerText, vừa không đảm bảo an toàn, nếu phải sửa các text đó thì sẽ sửa hết mọi chỗ trong file JS, có thể sử dụng ID hoặc như ở trong bài có className đang được phân biệt rõ, có thể sử dụng.
+  - Đề xuất sửa thành:
+
+  ```js
+  function handleUpdateValue(
+    wordCount = 0,
+    charCount = 0,
+    colorValue = 'black'
+  ) {
+    word.innerText = 'Số từ: ' + wordCount;
+    char.innerText = 'Số ký tự: ' + charCount;
+    inputColor.value = colorValue;
+  }
+  ```
 
   Thay vì đặt tên button chuyển theme là node, có thể sử dụng themeBtn để tường minh hơn, dễ hiểu hơn.
-
-  Đoạn code này xử lý hơi cồng kềnh:
-
-  ```js
-  btnActions.forEach(function (btnAction) {
-    btnAction.addEventListener('click', function (e) {
-      if (this.className === 'align-left') {
-        document.execCommand('justifyLeft');
-      }
-      if (this.className === 'align-center') {
-        document.execCommand('justifyCenter');
-      }
-      if (this.className === 'align-right') {
-        document.execCommand('justifyRight');
-      }
-      if (e.target.innerText === 'b') {
-        document.execCommand('bold');
-      }
-      if (e.target.innerText === 'u') {
-        document.execCommand('underline');
-      }
-      if (e.target.innerText === 'i') {
-        document.execCommand('italic');
-      }
-    });
-  });
-  ```
-
-  Thay vì thế, nếu mỗi btnAction trong **btnActionList** này có một className hay id khác nhau, thì nên đặt trùng với execCommand, sau đó sử dụng nó làm execCommand luôn, không cần phải rẽ nhánh ở đây.
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên việc xử lý JS chưa có tính scale, nếu cần mở rộng hoặc sửa đổi dự án sẽ rất mệt.
 
