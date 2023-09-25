@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day26</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi26">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Thiếu checkbox chọn tất cả khách hàng</p>
+<p>Khi chưa check khách hàng nào thì button <code>Xoá đã chọn</code> nên bị disabled hoặc bị ẩn đi(Không cho phép xóa khi chưa check khách hàng nào). Lúc nào check khách hàng thì lại hiện button</p>
+<p>Không nên để value của attribute <code>name</code> trong thẻ input checkbox là email. Thay vì đó nên để là id của khách hàng</p>
+<p>Đoạn xử nếu điều kiện if <code>value.toString().includes(&quot;Xóa&quot;)</code> đúng không hợp lý. Nên thay đoạn xử lý thành đoạn thông báo lỗi và nên xóa khách hàng theo id. Có thể thay như sau:</p>
+<pre><code class="language-Javascript">if (!value.toString().includes(&quot;on&quot;)) {
+    req.flash(&quot;msgDelete&quot;, &quot;Có lỗi. Vui lòng thử lại&quot;);
+
+    res.redirect(&quot;/customers&quot;);
+  } else {
+    const customer = db.Customer;
+    const customerDelete = await customer.destroy({
+      where: {
+        email: data,
+      },
+    });
+    req.flash(&quot;msgDelete&quot;, &quot;Xóa thành công&quot;);
+
+    res.redirect(&quot;/customers&quot;);
+  }
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần bổ sung check tất cả khách hàng và thay value attribute <code>name</code> trong thẻ input thành id, xử lý xóa theo id</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-26">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Khi tất cả khách hàng trong trang hiện tại được check thì checkbox tất cả cũng phải check</p>
+<p>Khi chưa check khách hàng nào thì button <code>Xoá đã chọn</code> nên bị disabled hoặc bị ẩn đi(Không cho phép xóa khi chưa check khách hàng nào). Lúc nào check khách hàng thì lại hiện button</p>
+<p>Khi ấn chọn tất cả và ấn xóa, mảng id gửi lên luôn luôn có phần tử <code>on</code> ở vị trí đầu tiên, nên xóa <code>on</code> rồi truyền mảng đã xóa <code>on</code> vào thì sẽ không cần dùng vòng lặp nữa. Có thể làm như sau:</p>
+<pre><code class="language-Javascript">  const { checkDelete } = req.body;
+  let listId
+  if(checkDelete[0] === 'on') {
+      listId = checkDelete.slice(1)
+  } else {
+      listId = checkDelete
+  }
+  const customer = await Customer;
+  if (checkDelete) {
+      customer.destroy({
+        where: {
+          id: listId,
+        },
+        force: true,
+      });
+    req.flash(&quot;success&quot;, &quot;Xóa thành công&quot;);
+    res.redirect(&quot;/customers&quot;);
+  } else {
+    req.flash(&quot;msg&quot;, &quot;Bạn hãy chọn tích vào ô muốn xóa&quot;);
+    res.redirect(&quot;/customers&quot;);
+  }
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần sửa lại checkbox khi check tất cả khách hàng</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Dangmanh2001/F8-BE-k1/tree/main/Baitapbuoi26">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Khi click checkbox all tất cả checkbox của khách hàng chưa check</p>
+<p>Khi tất cả khách hàng trong trang hiện tại được check thì checkbox tất cả cũng phải check</p>
+<p>Khi check all rồi ấn xóa thì tất cả khách hàng chưa được xóa</p>
+<p>Khi chưa check khách hàng nào thì button <code>Xoá đã chọn</code> nên bị disabled hoặc bị ẩn đi(Không cho phép xóa khi chưa check khách hàng nào). Lúc nào check khách hàng thì lại hiện button</p>
+<p>Nếu dùng điều kiện <code>values[0] === 'on'</code> thì bên trong không cần phải check điều kiện <code>values.join(&quot;&quot;).includes(&quot;Xóa&quot;)</code> vì điều kiện này sẽ không bao giờ xảy ra. Trường hợp else nên xử lý thông báo lỗi, không nên xử lý xóa kể cả điều kiện <code>values[0] === 'on'</code> đúng hay sai. Có thể tham khảo đoạn xử lý dưới:</p>
+<pre><code class="language-Javascript">if (values[0] === &quot;on&quot;) {
+    const customer = db.Customer;
+    const customerDelete = await customer.destroy({
+      where: {
+        id: data,
+      },
+    });
+
+    req.flash(&quot;msgD&quot;, &quot;Xóa thành công&quot;);
+
+    res.redirect(&quot;/customers&quot;);
+  } else {
+    req.flash(&quot;msgD&quot;, &quot;Có lỗi. Vui lòng thử lại&quot;);
+
+    res.redirect(&quot;/customers&quot;);
+  }
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý thêm checkbox all và xử lý trường hợp khi tất cả khách hàng trong trang hiện tại được check thì checkbox tất cả cũng phải check</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW26">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Khi click checkbox all tất cả checkbox của khách hàng chưa check nên trường hợp ấn check all rồi ấn xóa sẽ gửi lên giá trị <code>undefined</code> -&gt; ấn xóa bị lỗi</p>
+<p>Khi tất cả khách hàng trong trang hiện tại được check thì checkbox tất cả cũng phải check</p>
+<p>Chưa check khách hàng nào, ấn xóa đã chọn bị lỗi</p>
+<p>Khi chưa check khách hàng nào thì button <code>Xoá đã chọn</code> nên bị disabled hoặc bị ẩn đi(Không cho phép xóa khi chưa check khách hàng nào). Lúc nào check khách hàng thì lại hiện button</p>
+<p>Thiếu confirm khi ấn xóa đã chọn</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại phần check all, thêm confirm khi ấn xóa</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVNB26">Bao Pham Van</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Nên xóa bớt file model customer không dùng</p>
+<p>Khi vào url <code>/</code>, <code>/customers</code>,... bị lỗi view, không xem được trang</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại lỗi view khi vào trang</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/namdctry/backend-F8-btvn/tree/main/btvn-b26">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Sửa lại <code>province_id</code> trong seeder customer, <code>province_id</code> hiện tại không khớp với province seeder nên khi run seed bị lỗi</p>
+<p>Khi click checkbox all tất cả checkbox của khách hàng chưa check</p>
+<p>Khi tất cả khách hàng trong trang hiện tại được check thì checkbox tất cả cũng phải check</p>
+<p>Khi chưa check khách hàng nào thì button <code>Xoá đã chọn</code> nên bị disabled hoặc bị ẩn đi(Không cho phép xóa khi chưa check khách hàng nào). Lúc nào check khách hàng thì lại hiện button</p>
+<p>Khi check nhiều khách hàng rồi ấn xóa nhưng chỉ xóa 1 khách hàng trong số khách hàng đã chọn. Do khi xóa dùng operator <code>[Op.in]</code>. Có thể thay thế như sau:</p>
+<pre><code class="language-Javascript">  const idsToDelete = req.body.selectedItems ?? null;
+
+  if (idsToDelete) {
+    await Customer.destroy({
+      where: {
+        id: idsToDelete,
+      },
+      force: false,
+    });
+    req.flash(&quot;msg&quot;, &quot;Xóa thành công&quot;);
+  } else {
+    req.flash(&quot;msg&quot;, &quot;Vui lòng chọn kahchs hàng&quot;);
+  }
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại phần check all, phần operator khi xóa</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
