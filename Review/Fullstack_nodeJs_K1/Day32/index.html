@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day32</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 32 - Lớp K1</h1>
+<h2><a href="https://github.com/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day32">Lưu Anh Quân</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p><strong>Usage feature:</strong></p>
+<p>Bài làm rất tốt *</p>
+<p>Chỉ re-render đúng textNode liên quan</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm tốt *</p>
+<p>Có thể xây dựng một component gần như hoàn chỉnh</p>
+<p><strong>Hidden feature:</strong></p>
+<p>Tuy nhiên, nếu có nhiều biến count được hiển thị, chỉ biến count đầu tiên được cập nhật, các biến count khác không được cập nhật hay hiển thị số.</p>
+<p>Chỉ có thể tạo được counter, các components khác không thể được sử dụng hay render ra giá trị theo data</p>
+<p><strong>Code format:</strong></p>
+<p>Code rất tốt, có comment đầy đủ và tên biến hợp lý, tuy nhiên:</p>
+<pre><code class="language-js">if (name === 'counter-app') {
+  this.data = options.data();
+  this.textNode = []; // Khai báo mảng textNode để lưu các textNode sử dụng this.data.count
+  this.bindEventHandlers(shadow);
+  this.render();
+}
+</code></pre>
+<p>Vì đoạn code này, chỉ có thể sử dụng được để tạo counter.</p>
+<pre><code class="language-js">if (countContent === undefined) {
+  // lần đầu(Khó khăn)
+  const shadow = this.shadowRoot;
+  const countSpan = shadow.querySelector('h2');
+  const countText = countSpan.textContent;
+  const splitText = countText.split(/({{ count }})/);
+  countSpan.innerHTML = '';
+  splitText.forEach((text, i) =&gt; {
+    if (i !== 1) countSpan.append(document.createTextNode(text));
+    else {
+      const textNode = document.createTextNode(this.data.count);
+      countSpan.append(textNode);
+      this.textNode = textNode;
+    }
+  });
+} else {
+  this.textNode.textContent = countContent; // lần 2 trở đi
+}
+</code></pre>
+<p>Có thể vì đoạn code này và các đoạn code liên quan, không thể cập nhật hay hiển thị nhiều count hoặc không thể lấy tên biến khác count được. <strong>Cả đoạn title cũng không thể lấy tên khác</strong></p>
+<p>H2 đầu tiên phải là {{ count }} nếu không thì không thể hiển thị count được.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, đúng trong trường hợp này, tuy nhiên chưa thể scale hay tái sử dụng cho nhiều component khác. Có thể tham khảo bài chữa bài hoặc bài của <a href="https://github.com/duongnguyenf8/code_fullstack-exercise32/blob/main/customElement.js">Duong</a></p>
+</li>
+</ul>
+<h2><a href="https://github.com/xuananh2212/js-fullstack/tree/main/day32">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p><strong>Usage feature:</strong></p>
+<p>Bài làm rất tốt *</p>
+<p>Chỉ re-render đúng textNode liên quan</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm tốt *</p>
+<p>Có thể xây dựng một component gần như hoàn chỉnh</p>
+<p>Có thể phát triển thêm để có thể sử dụng nhiều event, nhiều code cùng 1 lúc</p>
+<p><strong>Code format:</strong></p>
+<p>Code rất tốt, có comment đầy đủ và tên biến hợp lý, tuy nhiên vì đang sử dụng biến window, các component nếu trùng tên biến sẽ hoạt động không đúng, các phần hiển thị bị ghi đè sẽ thành undefined.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, đúng trong trường hợp này, tuy nhiên chưa thể scale hay tái sử dụng cho nhiều component khác. Có thể tham khảo bài chữa bài hoặc bài của <a href="https://github.com/duongnguyenf8/code_fullstack-exercise32/blob/main/customElement.js">Duong</a></p>
+</li>
+</ul>
+<h2><a href="https://ha752002.github.io/f8-fullstack-k2/">Hồng Hà Nguyễn Thị</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p><strong>Usage feature:</strong></p>
+<p>Bài làm tốt</p>
+<p>Hiện đang re-render cả một element.</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm chưa tốt</p>
+<p>Đang fix cứng quá nhiều code, component chưa được hoàn chỉnh.</p>
+<p><strong>Code format:</strong></p>
+<p>Các đoạn code đang được fix cứng trong điều kiện thuận lợi nhất, bài làm sẽ không đúng nếu sửa text, sửa tên component,...</p>
+<pre><code class="language-js"> updateCountDisplay() {
+const shadow = this.shadowRoot;
+var h1 = shadow.querySelector('h1');
+var h2 = shadow.querySelector('h2');
+h1.textContent = this.data.title;
+h2.textContent = `Đã đếm ${this.data.count} lần`;
+}
+</code></pre>
+<pre><code class="language-js">const shadow = this.shadowRoot;
+const buttons = shadow.querySelectorAll('button');
+</code></pre>
+<pre><code class="language-js">if (tagName === 'counter-app') {
+  this.updateCountDisplay();
+}
+</code></pre>
+<p>Cần hoàn thiện tốt hơn để bài làm có thể dùng được ở mọi tình huống.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa,chỉ đúng trong trường hợp này, tuy nhiên chưa thể scale hay tái sử dụng cho nhiều component khác. Có thể tham khảo bài chữa bài hoặc bài của <a href="https://github.com/duongnguyenf8/code_fullstack-exercise32/blob/main/customElement.js">Duong</a></p>
+</li>
+</ul>
+<h2><a href="https://github.com/taminhquang13/F8_Fullstack/tree/main/BT32">Minh Quang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p><strong>Usage feature:</strong></p>
+<p>Bài làm chưa tốt</p>
+<p>Hiện đang re-render tất cả element.</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm chưa tốt</p>
+<p>Đang fix cứng quá nhiều code, component chưa được hoàn chỉnh.</p>
+<p><strong>Code format:</strong></p>
+<p>Các đoạn code đang được fix cứng trong điều kiện thuận lợi nhất, bài làm sẽ không đúng nếu sửa text, sửa tên component,...</p>
+<p>Cần hoàn thiện tốt hơn để bài làm có thể dùng được ở mọi tình huống.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt,chỉ đúng trong trường hợp này, tuy nhiên chưa thể scale hay tái sử dụng cho nhiều component khác. Có thể tham khảo bài chữa bài hoặc bài của <a href="https://github.com/duongnguyenf8/code_fullstack-exercise32/blob/main/customElement.js">Duong</a></p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

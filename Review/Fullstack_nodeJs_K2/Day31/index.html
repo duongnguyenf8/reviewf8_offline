@@ -1,0 +1,173 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day31</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k2-fullstack</h1>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-31">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p><strong>Usage feature:</strong></p>
+<p>Trải nghiệm người dùng khi sử dụng rất tốt</p>
+<p><strong>Action feature:</strong></p>
+<p>Khi user click vào button, có thể sử dụng <code>window.open</code> với thuộc tính <code>&quot;_blank&quot;</code> để user được bật một tab khác, như vậy sẽ dễ dàng giữ chân user quay lại trang hơn.</p>
+<p><strong>Hidden feature:</strong></p>
+<p>Bài làm có sử dụng visibilitychange, tuy nhiên khi sử dụng 2 tab khác nhau ở dạng chia đôi màn hình thì sự kiện window.onfocus sẽ giúp số ngừng đếm khi không focus vào tab đó.</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format:</strong></p>
+<p>format code, phong cách code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="http://phamtiendat18.github.io/Fullstack-K2">Tiến Đạt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt *</p>
+<p><strong>Usage feature:</strong></p>
+<p>Trải nghiệm người dùng khi sử dụng rất tốt</p>
+<p><strong>Action feature:</strong></p>
+<p>Khi user click vào button, có thể sử dụng <code>window.open</code> với thuộc tính <code>&quot;_blank&quot;</code> để user được bật một tab khác, như vậy sẽ dễ dàng giữ chân user quay lại trang hơn.</p>
+<p><strong>Hidden feature:</strong></p>
+<p>Bài làm có sử dụng visibilitychange, tuy nhiên khi sử dụng 2 tab khác nhau ở dạng chia đôi màn hình thì sự kiện window.onfocus sẽ giúp số ngừng đếm khi không focus vào tab đó.</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format:</strong></p>
+<p>format code, phong cách code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/homework/day_31">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt</p>
+<p><strong>Usage feature:</strong></p>
+<p>sử dụng một IIFE để tính ra frame của trang web ngay khi load trang, nếu như trong lúc load trang mà frame giảm do giật lag thì sẽ khiến số dếm đếm nhanh hơn nhiều lần.</p>
+<p><strong>Action feature:</strong></p>
+<p>Khi user click vào button, có thể sử dụng <code>window.open</code> với thuộc tính <code>&quot;_blank&quot;</code> để user được bật một tab khác, như vậy sẽ dễ dàng giữ chân user quay lại trang hơn.</p>
+<p><strong>Hidden feature:</strong></p>
+<p>Có thể sử dụng thêm event <code>visibilitychange</code> và <code>window.onfocus</code> để bắt thêm sự kiện user đang focus vào màn hình khác để dừng số đếm</p>
+<pre><code class="language-js">document.addEventListener('visibilitychange', function () {
+  if (document.visibilityState === 'hidden') {
+    console.log('Tab không còn hiển thị');
+  } else {
+    console.log('Tab đang hiển thị');
+  }
+});
+</code></pre>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format:</strong></p>
+<p>format code, phong cách code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://okazakitruong.github.io/BQTruong-F8-K2-Offline/Day31/index.html">Bùi Quang Trưởng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage feature</strong></p>
+<p>Trải nghiệm người dùng rất tốt</p>
+<p><strong>Action feature</strong></p>
+<p>Khi click <code>getLink</code> nên dùng <code>window.open()</code> với parameter là <code>_blank</code> để mở 1 tab mới</p>
+<p><strong>Hidden feature</strong></p>
+<p>Có thể sử dụng thêm event visibilitychange và <code>window.onfocus</code> để bắt thêm sự kiện user đang focus vào màn hình khác để dừng số đếm. Có thể tham khảo cách sau:</p>
+<pre><code class="language-Javascript">  document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'hidden') {
+          console.log('Tab không còn hiển thị');
+      } else {
+          console.log('Tab đang hiển thị');
+      }
+  });
+</code></pre>
+<p><strong>Special feature</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format</strong></p>
+<p>format code, phong cách code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day31">Thế Nguyễn Đại</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage feature</strong></p>
+<p>Trải nghiệm người dùng rất tốt</p>
+<p><strong>Action feature</strong></p>
+<p>Làm chức năng click Get link open 1 new tab rất tốt</p>
+<p><strong>Hidden feature</strong></p>
+<p>Có thể sử dụng thêm event visibilitychange và window.onfocus để bắt thêm sự kiện user đang focus vào màn hình khác để dừng số đếm. Có thể tham khảo cách sau:</p>
+<pre><code class="language-Javascript">  document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'hidden') {
+          console.log('Tab không còn hiển thị');
+      } else {
+          console.log('Tab đang hiển thị');
+      }
+  });
+</code></pre>
+<p><strong>Special feature</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format</strong></p>
+<p>Nên gọi hàm <code>handleCounter()</code> lần đầu trong event DOMContentLoaded. Để các dom load xong thì mới bắt đầu chạy. Có thể tham khảo như sau:</p>
+<pre><code class="language-Javascript">  document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {
+      console.log(&quot;DOM Loaded&quot;);
+      handleCounter()
+  });
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/Stung16/ex_f8-fullstack/tree/master/Day31">Kiều Duy Tùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage feature</strong></p>
+<p>Trải nghiệm người dùng rất tốt</p>
+<p><strong>Action feature</strong></p>
+<p>Khi click <code>Get Link</code> nên dùng window.open() với parameter là <code>_blank</code> để mở 1 tab mới</p>
+<p><strong>Hidden feature</strong></p>
+<p>Có thể sử dụng thêm event visibilitychange và window.onfocus để bắt thêm sự kiện user đang focus vào màn hình khác để dừng số đếm. Có thể tham khảo cách sau:</p>
+<pre><code class="language-Javascript">  document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'hidden') {
+          console.log('Tab không còn hiển thị');
+      } else {
+          console.log('Tab đang hiển thị');
+      }
+  });
+</code></pre>
+<p><strong>Special feature</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format</strong></p>
+<p>format code, phong cách code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://nguyenjs6868.github.io/f8k2FullkBtvn/Day_31/index.html">Nguyên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm không tốt, chức năng chính của bài là khi rời khỏi trang ngừng đếm số vẫn chưa hoàn thiện</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm không tốt</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
