@@ -5,10 +5,10 @@
 <p>[x] Bài 1:</p>
 <p><strong>Usage Feature</strong></p>
 <p>Khi dùng tài khoản admin xóa bớt 1 customer thì có 1 customer không hiện nội dung cột <code>Người Thêm</code></p>
-<p>Danh sách khách hàng của admin, cột <code>Người thêm</code> phải lấy thông tin user tương ứng với customer. Nếu để là <code>userAdd[id-1]</code> khi thêm nhiều customer thì sẽ không lấy ra được thông tin user tương ứng (Có thể sử dụng <code>Eager Loading</code>)</p>
+<p>Danh sách khách hàng của admin, cột <code>Người thêm</code> phải lấy thông tin user tương ứng với customer. Nếu để là <code>userAdd[id-1]</code> khi thêm nhiều customer thì sẽ không lấy ra được thông tin user tương ứng (Có thể sử dụng <code>associate</code>)</p>
 <p><strong>Format Code</strong></p>
 <p>Role của user lưu vào session nên đặt tường minh hơn. Có thể đặt là <code>ADMIN/USER</code></p>
-<p>Khi truy vấn tất cả khách hàng trong trang admin có thể sử dụng <code>Eager Loading</code> thay vì truy vấn lấy tất cả khách hàng rồi lấy tất cả user. Đoạn truy vấn lấy tất cả khách hàng có thể làm như sau:</p>
+<p>Khi truy vấn tất cả khách hàng trong trang admin có thể sử dụng <code>associate</code> thay vì truy vấn lấy tất cả khách hàng rồi lấy tất cả user. Đoạn truy vấn lấy tất cả khách hàng có thể làm như sau:</p>
 <pre><code class="language-Javascript">  const customers = await customer.findAll({
     order: [[&quot;id&quot;, &quot;DESC&quot;]],
     where: filters,

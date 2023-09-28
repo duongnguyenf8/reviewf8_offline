@@ -8,13 +8,13 @@
 
   Khi dùng tài khoản admin xóa bớt 1 customer thì có 1 customer không hiện nội dung cột `Người Thêm`
 
-  Danh sách khách hàng của admin, cột `Người thêm` phải lấy thông tin user tương ứng với customer. Nếu để là `userAdd[id-1]` khi thêm nhiều customer thì sẽ không lấy ra được thông tin user tương ứng (Có thể sử dụng `Eager Loading`)
+  Danh sách khách hàng của admin, cột `Người thêm` phải lấy thông tin user tương ứng với customer. Nếu để là `userAdd[id-1]` khi thêm nhiều customer thì sẽ không lấy ra được thông tin user tương ứng (Có thể sử dụng `associate`)
 
   **Format Code**
 
   Role của user lưu vào session nên đặt tường minh hơn. Có thể đặt là `ADMIN/USER`
 
-  Khi truy vấn tất cả khách hàng trong trang admin có thể sử dụng `Eager Loading` thay vì truy vấn lấy tất cả khách hàng rồi lấy tất cả user. Đoạn truy vấn lấy tất cả khách hàng có thể làm như sau:
+  Khi truy vấn tất cả khách hàng trong trang admin có thể sử dụng `associate` thay vì truy vấn lấy tất cả khách hàng rồi lấy tất cả user. Đoạn truy vấn lấy tất cả khách hàng có thể làm như sau:
 
   ```Javascript
     const customers = await customer.findAll({
