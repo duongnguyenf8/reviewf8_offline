@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day31</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 31 - Lớp K3</h1>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-31-JS">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt *</p>
+<p><strong>Action feature</strong></p>
+<p>Sau khi đếm về 0, vẫn tiếp tục re-render</p>
+<p><strong>Hidden feature:</strong></p>
+<p>Bài làm có sử dụng <code>visibilitychange</code>, tuy nhiên khi sử dụng 2 tab khác nhau ở dạng chia đôi màn hình thì sự kiện <code>window.onfocus</code> sẽ giúp số ngừng đếm khi không focus vào tab đó.</p>
+<p><strong>Special feature:</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format:</strong></p>
+<pre><code class="language-js">window.addEventListener('load', () =&gt; {
+  handleVisibilitychange();
+});
+document.addEventListener('visibilitychange', handleVisibilitychange);
+</code></pre>
+<p>Ở phần code này, 2 đoạn code đều như nhau, không cần thiết phải viết khác biệt nhau tránh làm code trở nên rối hoặc khó hiểu.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_31">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Special feature:</strong></p>
+<p>Chức năng chính của bài làm tốt</p>
+<p>Tuy nhiên đang ẩn btn dựa theo HTML với thuộc tính disabled, nếu inspect lên và xóa thuộc tính disabled thì vẫn có thể chuyển trang được.</p>
+<p><strong>Hidden feature:</strong></p>
+<p>Bài làm có sử dụng <code>visibilitychange</code>, tuy nhiên khi sử dụng 2 tab khác nhau ở dạng chia đôi màn hình thì sự kiện <code>window.onfocus</code> sẽ giúp số ngừng đếm khi không focus vào tab đó.</p>
+<p><strong>Code format:</strong></p>
+<pre><code class="language-js">btnLink.addEventListener('click', function () {
+  window.location.href = 'https://www.youtube.com/';
+});
+</code></pre>
+<p>Ở phần code này, thay vì để ở ngoài, cho vào trong hàm <code>updateCountDown</code> để check nếu <code>countDown === 0</code> thì mới gán.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt Tuy nhiên thiếu case theo đề bài.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_31">Vũ Văn Thống</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p><strong>Special feature:</strong></p>
+<p>Chức năng chính của bài làm tốt</p>
+<p>Tuy nhiên khi đợi quá thời gian hiển thị ở ngoài, lúc vào lại trang số sẽ đứng im</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt *</p>
+</li>
+</ul>
+<h2><a href="https://github.com/mrkhoadev/F8-Fullstack-K3/tree/main/Day31">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action feature</strong></p>
+<p>Các số đang bị re-render quá nhiều.</p>
+<p><strong>Special feature:</strong></p>
+<p>Chức năng chính của bài làm tốt</p>
+<p>Tuy nhiên khi đợi quá thời gian hiển thị ở ngoài, lúc vào lại trang số sẽ đứng im</p>
+<p><strong>Code format:</strong></p>
+<p>Chưa rõ ý đồ của block code lớn nhất trong bài.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt *</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
