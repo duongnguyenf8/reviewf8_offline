@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day32</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k2-fullstack</h1>
+<h2><a href="https://okazakitruong.github.io/BQTruong-F8-K2-Offline/Day32/index.html">Bùi Quang Trưởng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage feature</strong></p>
+<p>Chức năng tăng, giảm <code>count</code>, thay đổi <code>title</code> dùng rất tốt</p>
+<p>Xử lý cập nhật <code>title</code>, <code>count</code> rất tốt</p>
+<p><strong>Special feature</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format</strong></p>
+<p>Format code, phong cách code rất tốt</p>
+<p>Có thể sử dụng <code>eval()</code> để xử lý tăng, giảm count, khi đó sẽ không cần xử lý thủ công và có thể xử dụng cho nhiều event khác. Có thể tham khảo cách sử dụng <code>eval()</code> sau:</p>
+<pre><code class="language-Javascript">
+  handleEvent(eventDoing) {
+
+    if (eventDoing.match(/[\s]*(title)[\s]*=/)) {
+      this.titleNode.textContent = eventDoing.match(
+        /[\s]*(title)[\s]*=[\s]*'(?&lt;title&gt;.+?)'[\s]*/
+      ).groups.title;
+      return
+    }
+
+    if(eventDoing) {
+      let count = this.counterNode.textContent;
+      eval(new String(eventDoing))    //Thực thi tăng count nếu eventDoing = count++, ngược lại sẽ giảm count nếu eventDoing = count--
+      this.counterNode.textContent = count;     //Cập nhật lại count
+    }
+
+  }
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day32">Thế Nguyễn Đại</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage feature</strong></p>
+<p>Chức năng tăng, giảm <code>count</code>, thay đổi <code>title</code> dùng rất tốt</p>
+<p><strong>Special feature</strong></p>
+<p>Bài làm rất tốt tính năng chính của bài</p>
+<p><strong>Code format</strong></p>
+<p>Format code, phong cách code rất tốt</p>
+<p>Có thể dùng <code>createTextNode()</code> để khởi tạo <code>count</code> sau đó khi xử lý sự kiện tăng, giảm cập nhật lại data trong textNode thì sẽ tối ưu việc render. Lúc này sẽ chỉ render lại data trong textNode, không phải render lại cả thẻ span. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-Javascript">  const countNumber = templateNode.querySelector(&quot;.count&quot;);
+  let countNode = document.createTextNode(count)
+  countNumber.append(countNode)
+
+</code></pre>
+<p>Có thể sử dụng <code>eval()</code> để xử lý tăng, giảm count, khi đó sẽ không cần xử lý thủ công và có thể xử dụng cho nhiều event khác. Có thể tham khảo cách sử dụng <code>eval()</code> sau:</p>
+<pre><code class="language-Javascript">
+  btn.addEventListener(btnEvent, () =&gt; {
+    if(btnAttribute) {
+      if (btnAttribute.includes(&quot;title=&quot;)) {
+        const contentTitle = btnAttribute.split(&quot;title=&quot;);
+        h1.innerText = contentTitle[1];
+      } else {
+        let count = this.countNode.textContent;
+        eval(new String(btnAttribute))    //Thực thi tăng count nếu btnAttribute = count++, ngược lại sẽ giảm count nếu btnAttribute = count--
+        this.countNode.textContent = count;     //Cập nhật lại count
+      }
+    }
+  });
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
