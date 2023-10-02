@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day28</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/dungng1321/NodeJS-Offline-Exercise/tree/main/day28">Đức Dũng Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng gửi mail xác thực tài khoản dùng rất tốt</p>
+<p><strong>Send mail Feature</strong></p>
+<p>Tính năng gửi mail xác thực tài khoản dùng rất tốt</p>
+<p><strong>Format code</strong></p>
+<p>Nên chuyển phần tạo token và hàm verify token vào file common.js trong utils, khi cần dùng sẽ import(Giúp code clean hơn)</p>
+<p>Trong phần verify token, sau khi lấy ra cái id nên check id thỏa mãn thì mới tìm kiếm có user tồn tại trong database hay không. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-Javascript">
+  const { token } = req.params;
+  const { id } = jwt.verify(token, process.env.JWT_SECRET);
+
+  if(!id) {   //Nếu id không hợp lệ thì chuyển về trang login
+    req.flash(&quot;msg&quot;, message.error.accountActivated);
+    return res.redirect(&quot;/auth/login&quot;);
+  }
+
+  // find user by id
+  const user = await userModel.findOne({ where: { id } });
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi28">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Tính năng gửi mail xác thực tài khoản dùng tốt</p>
+<p><strong>Send mail Feature</strong></p>
+<p>Link xác thực gửi về mail khi bấm vào xác thực thành công thì cần hiển thị thông báo xác thực thành công</p>
+<p>Mã token gửi về mail mỗi lần đăng ký phải tạo 1 mã token khác nhau. Có thể tạo bằng id của user. Không được để cùng 1 mã token rồi lưu email vào session. Có thể tham khảo thư viện jsonwebtoken theo cách làm sau:</p>
+<pre><code class="language-Javascript">
+  //Có thể tạo phần này trong folder utils, khi dùng thì import vào
+
+  const jwt = require('jsonwebtoken');
+
+  //Tạo mã token theo id
+  const token = jwt.sign({ id: &quot;user_id&quot; }, 'secret',{ expiresIn: '1h' });
+  //Phần { id: &quot;user_id&quot; } được gọi là payload, chứa thông tin mã hóa, thông tin dùng để kiểm tra
+  //token khi xác thực tài khoản. 'secret' là mã bí mật khi tạo token, mã này là cố định, nên để vào
+  //file .env(có thể đặt mã này tùy ý). expiresIn là thời hạn hết token, ở đây sau 1h token sẽ hết hạn
+
+  //Xác thực token(dùng khi verify tài khoản)
+  const decoded = jwt.verify(token, 'secret')
+  //Mã token khi user gửi lên khi verify tài khoản
+
+</code></pre>
+<p>Khi login nếu tài khoản chưa kích hoạt thì phải xử lý gửi link kích hoạt tài khoản luôn cho người dùng</p>
+<p><strong>Format code</strong></p>
+<p>Các mã như <code>clientId, CLIENT_SECRET, REDIRECT_URI,REFRESH_TOKEN</code> nên để trong file env, tránh bị lộ</p>
+<p>Mọi thông tin config trong phần gửi mail nên để trong file .env, để tránh bị lộ</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần thêm phần gửi link xác thực khi tài khoản đăng nhập chưa kích hoạt, chuyển tất cả thông tin xác thực gửi mail vào file .env</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-28">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Tính năng gửi mail xác thực tài khoản dùng tốt</p>
+<p><strong>Send mail Feature</strong></p>
+<p>Mã token gửi về mail nên để thời gian hết hạn token. Có thể tham khảo thư viện jsonwebtoken theo cách làm sau:</p>
+<pre><code class="language-Javascript">
+  //Có thể tạo phần này trong folder utils, khi dùng thì import vào
+
+  const jwt = require('jsonwebtoken');
+
+  //Tạo mã token theo id
+  const token = jwt.sign(req.body, secret,{ expiresIn: '1h' });
+  //expiresIn là thời hạn hết token, ở đây sau 1h token sẽ hết hạn
+
+  //Xác thực token(dùng khi verify tài khoản)
+  const decoded = jwt.verify(token, secret)
+  //Mã token khi user gửi lên khi verify tài khoản
+
+</code></pre>
+<p>Khi login nếu tài khoản chưa kích hoạt thì phải xử lý gửi link kích hoạt tài khoản luôn cho người dùng</p>
+<p>Phần active tài khoản nên check data lúc verify token hợp lệ thì mới tìm kiếm user trong database. Có thể tham khảo như sau:</p>
+<pre><code class="language-Javascript">
+  const { token } = req.params;
+  if(!token) {
+    req.flash(&quot;msg&quot;, &quot;Token không hợp lệ&quot;);
+    return res.redirect(&quot;/auth/login&quot;);
+  }
+  const data = jwt.verify(token, secret);
+  if(!data) {
+    req.flash(&quot;msg&quot;, &quot;Token không hợp lệ&quot;);
+    return res.redirect(&quot;/auth/login&quot;);
+  }
+  const user = await User.findOne({
+    where: { email: data.email },
+  });
+  if(!user) {
+    req.flash(&quot;msg&quot;, &quot;User không tồn tại&quot;);
+    return res.redirect(&quot;/auth/login&quot;);
+  }
+  User.update({ status: 1}, {
+    where: {
+      id: user.dataValues.id,
+    },
+  });
+  req.session.login = true;
+  req.session.userLogin = user.dataValues;
+  res.redirect(&quot;/auth/login&quot;);
+
+</code></pre>
+<p><strong>Format code</strong></p>
+<p>Mọi thông tin config trong phần gửi mail nên để trong file .env, để tránh bị lộ</p>
+<p>Phần tạo mã token có thể tạo trong folder utils, lúc nào dùng thì import.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên phần active tài khoản cần check trước khi verify token và lấy user từ database</p>
+</li>
+</ul>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW27">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Tính năng gửi mail xác thực tài khoản dùng rất tốt</p>
+<p><strong>Send mail Feature</strong></p>
+<p>Khi login nếu tài khoản chưa kích hoạt thì phải xử lý gửi link kích hoạt tài khoản luôn cho người dùng</p>
+<p>Phần verify tài khoản nên check data lúc verify token hợp lệ thì mới cập nhật status user trong database. Có thể tham khảo như sau:</p>
+<pre><code class="language-Javascript">
+  try {
+    const token = req.query.token;
+    if(!token) {
+      req.flash(&quot;msg&quot;, &quot;invalid token&quot;);
+      return res.redirect(&quot;/&quot;);
+    }
+    const decoded = jwt.verify(token, &quot;afuzzycat&quot;);
+    if(!decoded) {
+      req.flash(&quot;msg&quot;, &quot;invalid token&quot;);
+      return res.redirect(&quot;/&quot;);
+    }
+    const customer = await User;
+    await User.update(
+      { status: 1 },
+      {
+        where: {
+          email: decoded.email,
+        },
+      }
+    );
+    const customerInfo = await customer.findOne({
+      where: { email: decoded.email },
+    });
+    res.cookie(&quot;auth&quot;, &quot;logged&quot;);
+    req.session.role = customerInfo.role;
+    req.session.userId = customerInfo.id;
+    req.flash(&quot;msg&quot;, &quot;Tài khoản kích hoạt thành công&quot;);
+    res.redirect(&quot;/customers&quot;);
+  } catch (error) {
+    req.flash(&quot;msg&quot;, &quot;invalid token&quot;);
+    res.redirect(&quot;/&quot;);
+  }
+
+</code></pre>
+<p><strong>Format code</strong></p>
+<p>Mã secret tạo token nên để trong file .env</p>
+<p>Mật khẩu chưa mã hóa</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
