@@ -3,7 +3,7 @@
   "description": "Dương Test Bài học viên",
   "main": "scripts",
   "scripts": {
-    "push": "node scripts"
+    "push": "node scripts/index.js"
   },
   "dependencies": {
     "formidable": "^3.5.0",
