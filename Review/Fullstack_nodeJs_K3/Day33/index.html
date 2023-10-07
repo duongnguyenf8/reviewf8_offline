@@ -1,0 +1,206 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day33</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k3-fullstack</h1>
+<h2><a href="https://github.com/bach0128/f8-fullstack-k3/tree/main/Day33">Trần Xuân Bách</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Các tính năng của bài trải nghiệm rất tốt</p>
+<p><strong>Hidden feature</strong></p>
+<p>Xử lý rất tốt khi sử dụng trình duyệt Edge</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng của bài hoạt động tốt trên trình duyệt Edge</p>
+<p><strong>Format code</strong></p>
+<p>Các đoạn code xử lý lời nói quá thủ công. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-Javascript">  textVoice = textVoice.toLowerCase()
+  if(textVoice.includes(&quot;chỉ đường&quot;) || textVoice.includes(&quot;tới&quot;) || textVoice.includes(&quot;đường tới&quot;)) {
+    const newVoice = textVoice
+      .replace(&quot;chỉ đường&quot;, &quot;&quot;)     //Thay thế tất cả từ 'chỉ đường' trong chuỗi thành &quot;&quot;
+      .replace(&quot;tới&quot;, &quot;&quot;)           //Thay thế tất cả từ 'tới' trong chuỗi thành &quot;&quot;
+      .replace(&quot;đường tới&quot;, &quot;&quot;)     //Thay thế tất cả từ 'đường tới' trong chuỗi thành &quot;&quot;
+      .trim();
+
+    const url = `https://www.google.com/maps/search/${newVoice}`;
+    window.open(url.trim());
+  }
+
+  //Các phần mở bài hát zingmp3 và xem video youtube xử lý tương tự như trên.
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần sửa lại logic xử lý phần chỉ đường, nghe nhạc, xem video.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_33">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Các tính năng của bài trải nghiệm rất tốt</p>
+<p><strong>Hidden feature</strong></p>
+<p>Xử lý rất tốt khi sử dụng trình duyệt Edge</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng của bài hoạt động tốt trên trình duyệt Edge</p>
+<p><strong>Format code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_33">Vũ Thống</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Các tính năng của bài trải nghiệm rất tốt</p>
+<p>Khi người dùng nói xong nên hiển thị nội dung mà người dùng nói lên trên màn hình rồi mới chuyển hướng đến link</p>
+<p><strong>Hidden feature</strong></p>
+<p>Xử lý rất tốt khi sử dụng trình duyệt Edge</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng của bài hoạt động tốt trên trình duyệt Edge</p>
+<p><strong>Format code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/HuuHungg/js-2/tree/main/Day17">Hữu Hưng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Tính năng tìm đường, mở bài hát, mở video không hoạt động</p>
+<p>Khi người dùng nói xong nên hiển thị nội dung mà người dùng nói lên trên màn hình rồi mới chuyển hướng đến link</p>
+<p><strong>Hidden feature</strong></p>
+<p>Xử lý nhận diện giọng nói tốt khi sử dụng trình duyệt Edge</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng tìm đường, mở bài hát, mở video của bài không hoạt động</p>
+<p><strong>Format code</strong></p>
+<p>Case <code>google maps</code> nên xét thêm case để người dùng sử dụng tốt hơn. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-Javascript">
+const newVoice = command.toLowerCase()
+
+switch (newVoice) {
+  case &quot;google&quot;:
+    showSuccessMessage();
+    window.open(&quot;https://www.google.com&quot;, &quot;_blank&quot;);
+    break;
+  case &quot;facebook&quot;:
+    showSuccessMessage();
+    window.open(&quot;https://www.facebook.com&quot;, &quot;_blank&quot;);
+    break;
+  case &quot;youtube&quot;:
+    showSuccessMessage();
+    window.open(&quot;https://www.youtube.com&quot;, &quot;_blank&quot;);
+    break;
+  case &quot;google maps&quot;:
+  case &quot;bản đồ&quot;:
+  case &quot;maps&quot;:
+    showSuccessMessage();
+    window.open(&quot;https://maps.google.com&quot;, &quot;_blank&quot;);
+    break;
+  case &quot;google drive&quot;:
+    showSuccessMessage();
+    window.open(&quot;https://drive.google.com&quot;, &quot;_blank&quot;);
+    break;
+  default:
+    alert(&quot;Không thực hiện được yêu cầu&quot;);
+  }
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần bổ sung các tính năng tìm đường, mở bài hát, mở video.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/DongVuong/f8-fullstack-k3/tree/main/DAY33">Vương Đông</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Chưa sử dụng được tính năng mở bài hát và mở video youtube</p>
+<p><strong>Hidden feature</strong></p>
+<p>Trong trình duyệt edge, sau mỗi từ, câu đều được thêm dấu câu vì vậy bài làm sẽ trở nên sai và không thực hiện được.</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng bài làm chưa hoạt động tốt trên trình duyệt edge.</p>
+<p><strong>Format code</strong></p>
+<p>Phần gọi API bị sai nên khi sử dụng trình duyệt Edge, đoạn voice bị thêm dấu chấm cuối câu. Có thể chỉnh lại như sau:</p>
+<pre><code class="language-Javascript">  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+</code></pre>
+<p>Case chỉ đường xử lý hơi thủ công. Nên check nội dung nói có chứa các từ <code>chỉ đường, tới, đường tới</code> rồi xử lý redirect. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-Javascript">
+  const newText = text.toLowerCase()
+  if(newText.includes(&quot;chỉ đường&quot;) || newText.includes(&quot;tới&quot;) || newText.includes(&quot;đường tới&quot;)) {
+    const newVoice = newText
+      .replace(&quot;chỉ đường&quot;, &quot;&quot;)     //Thay thế tất cả từ 'chỉ đường' trong chuỗi thành &quot;&quot;
+      .replace(&quot;tới&quot;, &quot;&quot;)           //Thay thế tất cả từ 'tới' trong chuỗi thành &quot;&quot;
+      .replace(&quot;đường tới&quot;, &quot;&quot;)     //Thay thế tất cả từ 'đường tới' trong chuỗi thành &quot;&quot;
+      .trim();
+
+    const url = `https://www.google.com/maps/search/${newVoice}`;
+    window.open(url.trim());
+  }
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý thêm các case mở bài hát, mở video youtube và xử lý khi sử dụng trình duyệt Edge.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://mrkhoadev.github.io/F8-Fullstack-K3/">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*.</p>
+<p><strong>Usage feature:</strong>
+so
+Các tính năng của bài trải nghiệm rất tốt</p>
+<p><strong>Hidden feature</strong></p>
+<p>Xử lý rất tốt khi sử dụng trình duyệt Edge</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng của bài hoạt động tốt trên trình duyệt Edge</p>
+<p><strong>Format code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-33-JS">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Các tính năng của bài trải nghiệm tốt</p>
+<p><strong>Hidden feature</strong></p>
+<p>Trong trình duyệt edge, sau mỗi từ, câu đều được thêm dấu câu và viết hoa vào, vì vậy bài làm sẽ trở nên sai và không thực hiện được.</p>
+<p><strong>Special Feature</strong></p>
+<p>Tính năng bài làm chưa hoạt động tốt trên trình duyệt edge.</p>
+<p><strong>Format code</strong></p>
+<p>Lỗi trình duyệt Egde do đoạn sau bị thiếu:</p>
+<pre><code class="language-Javascript">  const recognition = new SpeechRecognition();
+
+  //Chuyển thành như sau:
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
