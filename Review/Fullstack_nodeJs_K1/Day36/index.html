@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day36</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Duong Review bài tập về nhà buổi 36 - Lớp K1</h1>
+<h2><a href="https://xuananh2212.github.io/js-fullstack/day36/">Nguyễn Xuân Tuấn Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p><strong>Action features</strong></p>
+<p>Bài làm tốt</p>
+<p>Thiếu một số case trong đều bài như:</p>
+<p>Không có random đổi chỗ thứ tự câu trả lời qua mỗi lượt</p>
+<p>Không có random đổi chỗ thứ tự đáp án của mỗi câu qua mỗi lượt</p>
+<p><strong>Code format</strong></p>
+<p>Render cả phần <code>data-correct</code> lên UI là không tốt, không khác gì việc nhắc bài cho user.</p>
+<p>Các function không phải hàm tạo không nên viết hoa tránh gây nhầm lẫn cho các function khác</p>
+<ul>
+<li><code>RenderHtml()</code> ở trong <code>renderUI.js</code></li>
+<li><code>RenderCorrectBottom()</code> ở trong <code>renderUI.js</code></li>
+</ul>
+<p>Phần endpoint fetching đang xấu và gây khó hiểu: <code>/questions/?</code></p>
+<p>Phần check đáp án đúng 1 là nên xử lý ở phía server, nếu không ở đây mình sẽ xử lý trong vòng lặp để check xem id của đáp án chọn có trùng id đáp án đúng không hoặc check <code>answer.correct</code> có true không.</p>
+<p>Chưa rõ ý đồ gán biến ở các đoạn code dạng như này mặc dù chỉ gọi 1 lần:</p>
+<pre><code class="language-javascript">const get = getQuestions();
+get.then(({ data, response }) =&gt; {
+  //...
+});
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chạy tốt, tuy nhiên phần code vẫn nên cải thiện nhiều(Hơi ẩu)</p>
+</li>
+</ul>
+<h2><a href="https://duonghiep416.github.io/duonghiep_f8_fullstack/Day36/">Dương Hiệp</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p><strong>Action features</strong></p>
+<p>Bài làm tốt</p>
+<p>Thiếu một số case trong đều bài như:</p>
+<p>Không có random đổi chỗ thứ tự câu trả lời qua mỗi lượt</p>
+<p>Không có random đổi chỗ thứ tự đáp án của mỗi câu qua mỗi lượt</p>
+<p>Chưa tính điểm theo timeline, trả lời khi gần hết giờ và khi còn nhiều thời gian là như nhau.</p>
+<p>Khi gần hết giờ đã chuyển câu.</p>
+<p>Khi gần hết giờ mà chọn đáp án thì bị chuyển 2 trang.</p>
+<p><strong>Code format</strong></p>
+<p>Nên thiết kế lại phần DB, thayy vì đáp án đúng phải viết content đầy đủ thì có thể chỉ cần viết index của đáp án đúng.</p>
+<p>Chưa rõ ý đồ gán func ở 2 func này mặc dù chỉ gọi 1 lần:</p>
+<pre><code class="language-javascript">animate();
+renderQuestion();
+</code></pre>
+<p>Các function dạng action có thể tách ra thành 1 file code khác rồi khi cần/cái nào cần thì gọi sang file main và sử dụng, như vậy sẽ dễ dàng đọc, sửa code hơn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chạy tốt, tuy nhiên phần code vẫn nên cải thiện nhiều(Hơi <strong>loằng ngoằng</strong>)</p>
+</li>
+</ul>
+<h2><a href="https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day36/index.html">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Action features</strong></p>
+<p>Bài làm tốt</p>
+<p>Thiếu một số case trong đều bài như:</p>
+<p>Chưa tính điểm theo timeline, trả lời khi gần hết giờ và khi còn nhiều thời gian là như nhau.</p>
+<p>Khi click nhiều lần, data gửi lên liên tục, không có loading hay disabled khiến cho bài làm bị sai.</p>
+<p><strong>Code format</strong></p>
+<p>Code formatrất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm code tốt, tuy nhiên cần chú ý làm thêm đủ các chức năng.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

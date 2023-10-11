@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day34</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k3-fullstack</h1>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/Day_34">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Chức năng thêm, sửa, xóa task người dùng sử dụng rất tốt</p>
+<p>Chức năng hoàn thành task người dùng sử dụng tốt</p>
+<p>Chưa dùng được chức năng tìm kiếm task</p>
+<p><strong>Hidden feature</strong></p>
+<p>Khi ấn xóa task cần phải có confirm trước khi xóa. Tránh trường hợp người dùng ấn nhầm</p>
+<p>Khi nội dung task quá dài, chưa xử lý tràn nội dung form chứa task</p>
+<p>Khi thêm task nội dung quá dài rồi ấn xóa, sửa thì id bị <code>undefined</code></p>
+<p><strong>Special Feature</strong></p>
+<p>Khi thao tác thêm, sửa, xóa dữ liệu cập nhật database chính xác</p>
+<p>Đã xử lý XSS</p>
+<p>Xử lý số lần fetch api rất tốt</p>
+<p><strong>Format code</strong></p>
+<p>Nên tách phần fetch api ra 1 file riêng để bóc tách code. Khi dùng sẽ import vào để dùng</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần làm thêm chức năng tìm kiếm, modal confirm xóa và xử lý khi nội dung task quá dài</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://mrkhoadev.github.io/F8-Fullstack-K3/">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Chức năng thêm, sửa, xóa lần đầu vào website dùng tốt nhưng khi thêm mới 1 task, ấn xóa thì modal confirm xóa bị hiện 2 lần.</p>
+<p>Khi thêm mới và ấn sửa thì thông tin hiển thị trên form sửa không chính xác</p>
+<p>Chưa dùng được chức năng tìm kiếm task</p>
+<p>Khi ấn hoàn thành task, icon hoàn thành nên chuyển sang màu xanh cho người dùng dễ phần biệt</p>
+<p><strong>Hidden feature</strong></p>
+<p>Số lần fetch api chạy quá nhiều lần</p>
+<p>Khi ấn sửa không cần fetch api lấy tất cả user</p>
+<p>Ấn xóa nhưng lại fetch api lấy tất cả user</p>
+<p><strong>Special Feature</strong></p>
+<p>Đã xử lý XSS</p>
+<p>Khi thao tác thêm, sửa, xóa dữ liệu cập nhật database chính xác</p>
+<p><strong>Format code</strong></p>
+<p>Không nên truyền hàm <code>postData</code> vào làm tham số của 1 hàm khác</p>
+<p>Khi thêm mới 1 task rồi ấn xóa thì modal xóa hiện lên 2 lần là do ban đầu vào website button xóa đã được thêm sự kiện click, sau khi thêm mới lại được thêm 1 lần nữa cho nên khi ấn xóa thì sẽ chạy 2 sự kiện click và modal xóa hiện 2 lần. Lý do bị thêm sự kiện click là do đoạn code trong hàm <code>handleSubmit</code>:</p>
+<pre><code class="language-Javascript">
+  if (id === undefined) {
+    await data(value);
+    await handleAddData();
+    hasClicked = false;
+    handleTaskBoxBtn();         //Hàm này được gọi cho nên sẽ thêm sự kiện click vào các button xóa 1 lần nữa
+  }
+
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại phần xóa task sau khi thêm 1 task và giảm thiểu số lần fetch api</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-34-JS">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Usage feature:</strong></p>
+<p>Chức năng thêm, sửa, xóa task người dùng sử dụng rất tốt</p>
+<p>Chức năng hoàn thành task người dùng sử dụng tốt</p>
+<p>Chưa dùng được chức năng tìm kiếm task</p>
+<p><strong>Hidden feature</strong></p>
+<p>Khi ấn thêm task không nhất thiết phải hiện alert để thông báo</p>
+<p>Khi ấn xóa cần có confirm trước khi xóa. Tránh trường hợp người dùng ấn nhầm</p>
+<p>Xử lý số lần fetch api rất tốt</p>
+<p><strong>Special Feature</strong></p>
+<p>Đã xử lý XSS</p>
+<p>Khi thao tác thêm, sửa, xóa dữ liệu cập nhật database chính xác</p>
+<p><strong>Format code</strong></p>
+<p>Nên tách phần fetch api ra 1 file riêng để bóc tách code. Khi dùng sẽ import vào để dùng</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần làm thêm chức năng tìm kiếm task, thêm modal confirm khi ấn xóa</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
