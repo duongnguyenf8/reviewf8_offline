@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day31</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVNB31">Bao Pham Van</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng được nhưng chưa lưu được thông tin người dùng khi đăng nhập</p>
+<p>Chức năng đăng nhập bằng github sử dụng được nhưng chưa lưu được thông tin người dùng khi đăng nhập</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Chưa lưu được thông tin tài khoản đăng nhập vào database khi đăng nhập bằng facebook, github</p>
+<p><strong>Special Feature</strong></p>
+<p>Chưa lấy được thông tin email khi đăng nhập bằng facebook để lưu vào cơ sở dữ liệu. Cần cấu hình lại passport-facebook như sau:</p>
+<pre><code class="language-javascript">const FacebookStrategy = require('passport-facebook');
+module.exports = new FacebookStrategy(
+  {
+    clientID: process.env.FACEBOOK_CLIENT_ID,
+    clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+    callbackURL: process.env.FACEBOOK_CALLBACK_URL,
+    enableProof: true,
+    profileFields: ['email'],
+  },
+  function (accessToken, refreshToken, profile, cb) {
+    console.log('Facebook Profile: ', profile);
+    //Xử lý kiểm tra email với cơ sở dữ liệu. Nếu tồn tại thì cho đăng nhập, chưa tồn tại thì thêm mới
+    return cb(null, profile);
+  }
+);
+</code></pre>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý lại lấy thông tin và lưu vào cơ sở dữ liệu khi đăng nhập bằng facebook, github</p>
+</li>
+</ul>
+<h2><a href="https://github.com/dungng1321/NodeJS-Offline-Exercise/tree/main/day31">Đức Dũng Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng tốt</p>
+<p>Chức năng đăng nhập bằng github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu được thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github, facebook</p>
+<p><strong>Special Feature</strong></p>
+<p>Chưa xử lý lấy thông tin email khi đăng nhập bằng facebook. Có thể thay đoạn cấu hình thành đoạn sau để lấy được email:</p>
+<pre><code class="language-javascript">new FacebookStrategy(
+  {
+    clientID: process.env.FACEBOOK_APP_ID,
+    clientSecret: process.env.FACEBOOK_APP_SECRET,
+    callbackURL: process.env.FACEBOOK_CALLBACK_URL,
+    profileFields: ['email'], //Thay scope-&gt;profileFields
+  },
+  {
+    //Xử lý dữ liệu với database
+  }
+);
+</code></pre>
+<p>Xử lý rất tốt thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xử lý lại phần lấy email khi đăng nhập bằng facebook</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-31">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng rất tốt</p>
+<p>Chức năng đăng nhập bằng github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu được thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github, facebook</p>
+<p><strong>Special Feature</strong></p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng facebook để lưu vào cơ sở dữ liệu</p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/maiduchien23/F8-BE/tree/main/F8_BE/f8_javascript/homeword/day31">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng rất tốt</p>
+<p>Chức năng đăng nhập bằng mạng xã hội github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu được thông tin tài khoản đăng nhập vào database khi đăng nhập bằng facebook</p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github</p>
+<p><strong>Special Feature</strong></p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng facebook để lưu vào cơ sở dữ liệu</p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi31">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng rất tốt</p>
+<p>Chức năng đăng nhập bằng mạng xã hội github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng facebook</p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github</p>
+<p><strong>Special Feature</strong></p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng facebook để lưu vào cơ sở dữ liệu</p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW31">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng rất tốt</p>
+<p>Chức năng đăng nhập bằng mạng xã hội github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng facebook</p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github</p>
+<p><strong>Special Feature</strong></p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng facebook nhưng chưa xử lý lưu vào cơ sở dữ liệu</p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt tuy nhiên cần xử lý lưu email khi đăng nhập bằng facebook</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Kpa02/F8_Backend/tree/main/BaiTapB31">Dương Trung Kiên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng rất tốt</p>
+<p>Chức năng đăng nhập bằng github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu được thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github, facebook</p>
+<p><strong>Special Feature</strong></p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng facebook để lưu vào cơ sở dữ liệu</p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github để lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2><a href="https://github.com/namdctry/backend-F8-btvn/tree/main/btvn-31">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng đăng nhập bằng mạng xã hội facebook sử dụng rất tốt</p>
+<p>Chức năng đăng nhập bằng mạng xã hội github sử dụng rất tốt</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng facebook</p>
+<p>Đã xử lý lưu thông tin tài khoản đăng nhập vào database khi đăng nhập bằng github</p>
+<p><strong>Special Feature</strong></p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng facebook nhưng chưa xử lý lưu vào cơ sở dữ liệu</p>
+<p>Xử lý rất tốt lấy thông tin email khi đăng nhập bằng github nhưng chưa xử lý lưu vào cơ sở dữ liệu</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý lưu email vào database khi đăng nhập github, facebook</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
