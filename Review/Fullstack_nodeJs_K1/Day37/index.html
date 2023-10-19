@@ -1,0 +1,278 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day37</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 37 - Lớp K1</h1>
+<h2><a href="https://duonghiep416.github.io/duonghiep_f8_fullstack/Day37/">Dương Hiệp</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Khi vào trang, check profile, nếu không được thì gọi refresh, nếu refresh không được thì phải xóa localStorage đi
+tuy nhiên trong bài chưa xử lý xóa LocalStorage đi.</p>
+</li>
+<li>
+<p>Trước khi check profile, phải xem có accessToken không, nếu không có thì xử lý out ra đăng nhập lại.
+Tuy nhiên trong bài vẫn đang giữ lại token ở localStorage</p>
+</li>
+<li>
+<p>Khi cấp lại accessToken đồng thời cso cấp lại refreshToken tuy nhiên không lưu refreshToken mới mà chỉ lưu lại accessToken mới, khiến cho khi refreshToken cũ hết hạn thì đăng xuất luôn, không giữ được phiên.</p>
+</li>
+<li>
+<p>Khi post bài, đang lấy accessToken cũ, trước khi post nên check xem còn auth không, nếu không thì cấp lại access mới sau đó lấy access mới để post bài</p>
+</li>
+<li>
+<p>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, không hiển thị login hay register.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>
+<p>Khi vào trang login, chưa rõ mục đích khi check authentication</p>
+</li>
+<li>
+<p>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://xuananh2212.github.io/js-fullstack/day37">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, hiển thị tên user là undefined.
+Sau lần này, không xử lý logout nên lần tiếp theo dù bị văng đăng xuất rồi nhưng bị lưu token, phải thêm lần nữa mới xóa</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+</li>
+<li>
+<p>Ở trang login chưa check đủ 8 ký tự mật khẩu như ở bên register</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>Khi post bài, render lại cả trang nên đang bị trắng trang trong 1 lúc đến khi data trả về.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://xuananh2212.github.io/js-fullstack/day37">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, hiển thị tên user là undefined.
+Sau lần này, không xử lý logout nên lần tiếp theo dù bị văng đăng xuất rồi nhưng bị lưu token, phải thêm lần nữa mới xóa</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+</li>
+<li>
+<p>Ở trang login chưa check đủ 8 ký tự mật khẩu như ở bên register</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>
+<p>Khi post bài, render lại cả trang nên đang bị trắng trang trong 1 lúc đến khi data trả về.</p>
+</li>
+<li>
+<p>Chưa xử lý break-word khiến cho giao diện bị vỡ.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://ha752002.github.io/f8-fullstack-k2/Ex_Javascript/day37/">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Khi vào trang, check profile, nếu không được thì gọi refresh, nếu refresh không được thì phải xóa localStorage đi
+tuy nhiên trong bài chưa xử lý xóa LocalStorage đi.</p>
+</li>
+<li>
+<p>Trước khi check profile, phải xem có accessToken không, nếu không có thì xử lý out ra đăng nhập lại.
+Tuy nhiên trong bài vẫn đang giữ lại token ở localStorage</p>
+</li>
+<li>
+<p>Khi cấp lại accessToken đồng thời cso cấp lại refreshToken tuy nhiên không lưu refreshToken mới mà chỉ lưu lại accessToken mới, khiến cho khi refreshToken cũ hết hạn thì đăng xuất luôn, không giữ được phiên.</p>
+</li>
+<li>
+<p>Khi post bài, đang lấy accessToken cũ, trước khi post nên check xem còn auth không, nếu không thì cấp lại access mới sau đó lấy access mới để post bài</p>
+</li>
+<li>
+<p>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, không hiển thị login hay register.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://trungdeptraii.github.io/Le_Van_Trung_Day37/">Le Van Trung</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<p>Chưa checkAuth khi mới vào trang hoặc mới post bài.</p>
+</li>
+</ul>
+<h2><a href="https://phamtuan162.github.io/phamtuan-nodejs-01/Buoi37">Pham Tuan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Khi vào trang, check profile, nếu không được thì gọi refresh, nếu refresh không được thì phải xóa localStorage đi
+tuy nhiên trong bài chưa xử lý xóa LocalStorage đi.</p>
+</li>
+<li>
+<p>Khi cấp lại accessToken đồng thời có cấp lại refreshToken tuy nhiên không lưu refreshToken mới mà chỉ lưu lại accessToken mới, khiến cho khi refreshToken cũ hết hạn thì đăng xuất luôn, không giữ được phiên.</p>
+</li>
+<li>
+<p>Khi post bài, đang lấy accessToken cũ, trước khi post nên check xem còn auth không, nếu không thì cấp lại access mới sau đó lấy access mới để post bài</p>
+</li>
+<li>
+<p>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, không hiển thị login hay register.
+Bị call lại rất rất rất nhiều lần.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>
+<p>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</p>
+</li>
+<li>
+<p>Nên xử lý để sau khi đăng ký, khi đăng nhập lưu lại được email và sử dụng email đó, user chỉ cần nhập lại mật khẩu để confirm</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://oaihman25.github.io/btvn/day37/index.html">Do Hoai Nam</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Chưa đính kèm header Authorization lên các req cần thiết</p>
+</li>
+<li>
+<p>Chưa xử lý tốt khi bấm register xong quay lại login thì bấm register vẫn bị submit.</p>
+</li>
+<li>
+<p>Có một request /blogId không rõ là gì.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+</li>
+<li>
+<p>Chưa xử lý width của input, khiến cho bị giật.</p>
+</li>
+<li>
+<p>Chưa xử lý tốt style, các style input rất khó đọc.</p>
+</li>
+<li>
+<p>Chưa thông báo lỗi cho user khi đăng nhập, đăng ký bị sai.</p>
+</li>
+<li>
+<p>Chưa xử lý disabled khiến cho user bấm rất nhiều lần vào login</p>
+<p><strong>Các case chưa tốt</strong></p>
+<p>Thiếu Tất cả các case!</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://anhquan2211.github.io/F8-OFFLINE/f8-offline-day37/index.html">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Khi vào trang, check profile, nếu không được thì gọi refresh, nếu refresh không được thì phải xóa localStorage đi
+tuy nhiên trong bài chưa xử lý xóa LocalStorage đi.</p>
+</li>
+<li>
+<p>Trước khi check profile, phải xem có accessToken không, nếu không có thì xử lý out ra đăng nhập lại.
+Tuy nhiên trong bài vẫn đang giữ lại token ở localStorage</p>
+</li>
+<li>
+<p>Khi cấp lại accessToken đồng thời cso cấp lại refreshToken tuy nhiên không lưu refreshToken mới mà chỉ lưu lại accessToken mới, khiến cho khi refreshToken cũ hết hạn thì đăng xuất luôn, không giữ được phiên.</p>
+</li>
+<li>
+<p>Khi post bài, đang lấy accessToken cũ, trước khi post nên check xem còn auth không, nếu không thì cấp lại access mới sau đó lấy access mới để post bài</p>
+</li>
+<li>
+<p>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, không hiển thị login hay register.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy hết các bài viết, chỉ lấy được 10 bài đầu
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>
+<p>Khi vào trang login, chưa rõ mục đích khi check authentication</p>
+</li>
+<li>
+<p>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

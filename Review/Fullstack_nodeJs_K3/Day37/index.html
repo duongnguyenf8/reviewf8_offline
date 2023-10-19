@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day37</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 37 - Lớp K3</h1>
+<h2><a href="https://cuonggold2408.github.io/Fullxinach_K3/Day_37/">Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Khi vào trang, check profile, nếu không được thì gọi refresh, nếu refresh không được thì phải xóa localStorage đi
+tuy nhiên trong bài chưa xử lý xóa LocalStorage đi.</p>
+</li>
+<li>
+<p>Trước khi check profile, phải xem có accessToken không, nếu không có thì xử lý out ra đăng nhập lại.
+Tuy nhiên trong bài vẫn đang giữ lại token ở localStorage</p>
+</li>
+<li>
+<p>Khi cấp lại accessToken đồng thời cso cấp lại refreshToken tuy nhiên không lưu refreshToken mới mà chỉ lưu lại accessToken mới, khiến cho khi refreshToken cũ hết hạn thì đăng xuất luôn, không giữ được phiên.</p>
+</li>
+<li>
+<p>Khi post bài, đang lấy accessToken cũ, sau khi post, nếu 401 thì xử lý lấy accessToken và refreshToken mới rồi post lại</p>
+</li>
+<li>
+<p>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, không hiển thị login hay register.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy các bài viết
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://dongvuong.github.io/f8-fullstack-k3/DAY37/index.html">Vương Trí Đông</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy các bài viết
+Áp dụng infinity scroll trong bài cũ.</p>
+</li>
+<li>
+<p>Chưa validate bài viết lỗi, khi bài viết lỗi mặc định là gọi lại refresh chứ không kiểm tra mã lỗi có phải 401 không khiến cho khi post bài viết lỗi thì liên tục bị gọi lại</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://phivanduc.github.io/Offline-F8-K3/Day-37-JS">Phí văn đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<ul>
+<li>
+<p>Khi vào trang, check profile, nếu không được thì gọi refresh, nếu refresh không được thì phải xóa localStorage đi
+tuy nhiên trong bài chưa xử lý xóa LocalStorage đi.</p>
+</li>
+<li>
+<p>Trước khi check profile, phải xem có accessToken không, nếu không có thì xử lý out ra đăng nhập lại.
+Tuy nhiên trong bài vẫn đang giữ lại token ở localStorage</p>
+</li>
+<li>
+<p>Khi cấp lại accessToken đồng thời có cấp lại refreshToken tuy nhiên không lưu refreshToken mới mà chỉ lưu lại accessToken mới, khiến cho khi refreshToken cũ hết hạn thì đăng xuất luôn, không giữ được phiên.</p>
+</li>
+<li>
+<p>Khi post bài, đang lấy accessToken cũ, sau khi post, nếu 401 thì xử lý lấy accessToken và refreshToken mới rồi post lại</p>
+</li>
+<li>
+<p>Khi post bài trong đúng lúc refresh hết, xử lý để đăng xuất ra và có thông báo đăng nhập lại
+Như trong bài sau khi post bài mà refresh hết hạn thì lỗi luôn, không hiển thị login hay register.</p>
+</li>
+</ul>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa xử lý lấy các bài viết
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://huuhungg.github.io/js-2/Day22/">Nguyễn Hữu Hưng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p><strong>Các case còn sai</strong></p>
+<p>Chưa hoàn thiện các case liên quan đến authen</p>
+<p><strong>Các case còn thiếu</strong></p>
+<ul>
+<li>
+<p>Chưa có validate ở phía client. Không nhập form hoặc sai định dạng đều post được và không có thông báo lỗi cho user</p>
+</li>
+<li>
+<p>Chưa xử lý lấy các bài viết
+Áp dụng infinity scroll trong bài cũ.</p>
+<p><strong>Các case chưa tốt</strong></p>
+<ul>
+<li>Xử lý chưa tốt ở đoạn cấp lại access và refresh mới.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

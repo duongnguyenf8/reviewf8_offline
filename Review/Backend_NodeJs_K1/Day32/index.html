@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day32</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi32">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng thêm mới role sử dụng tốt.</p>
+<p>Chức năng sửa role sử dụng tốt.</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Khi thiết lập role, trường hợp người dùng chưa chọn quyền đã thông báo lỗi nhưng vẫn thêm vào cơ sở dữ liệu. Có thể chuyển đoạn tạo mới dữ liệu role vào trong if sẽ tránh được lỗi:</p>
+<pre><code class="language-javascript">if (typeof permission === 'string') {
+  const newRole = await Role.create({ name: role });
+  await newRole.addPermission(
+    await Permission.findOne({
+      where: {
+        value: permission,
+      },
+    })
+  );
+  req.flash('success', 'Thêm thành công');
+  res.redirect('/role');
+} else if (permission?.length) {
+  const newRole = await Role.create({ name: role });
+  for (let i = 0; i &lt; permission.length; i++) {
+    await newRole.addPermission(
+      await Permission.findOne({
+        where: {
+          value: permission[i],
+        },
+      })
+    );
+  }
+  req.flash('success', 'Thêm thành công');
+  res.redirect('/role');
+} else {
+  req.flash('error', 'Vui lòng chọn quyền');
+  res.redirect('/role/add');
+}
+</code></pre>
+<p><strong>Special Feature</strong></p>
+<p>Khi thêm mới, sửa role xử lý thêm mới, cập nhật dữ liệu ở bảng trung gian role_permission rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-32">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng thêm mới role sử dụng tốt.</p>
+<p>Chức năng sửa role sử dụng tốt.</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Khi người dùng sửa role xong thì nên redirect về trang danh sách các role. Đoạn redirect có thể chuyển sang redirect trang list:</p>
+<pre><code class="language-javascript">//Xử lý update permission của role
+res.redirect('/role');
+</code></pre>
+<p>Module là <code>Quản lý user</code>, không phải là tên role. Đang bị nhầm 2 khái niệm này.</p>
+<p><strong>Special Feature</strong></p>
+<p>Khi thêm mới, sửa role xử lý thêm mới, cập nhật dữ liệu ở bảng trung gian role_permission rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Dangmanh2001/F8-BE-k1/tree/main/Baitapbuoi32">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Usage Feature</strong></p>
+<p>Chức năng thêm mới role sử dụng tốt.</p>
+<p>Chức năng sửa role sử dụng tốt.</p>
+<p><strong>Hidden Feature</strong></p>
+<p>Khi thêm mới 1 role, trường hợp người dùng chỉ nhập tên role, không chọn quyền và ấn lưu thì bị lỗi. Do giá trị <code>permission</code> bị <code>undefined</code> nên khi tìm các bản ghi trong bảng <code>permission</code> sẽ bị lỗi. Nên check <code>permission</code> hợp lệ trước rồi mới thao tác với database:</p>
+<pre><code class="language-javascript">if (permission) {
+  const Permissions = await model.Permission.findAll({
+    where: { value: permission },
+  });
+  console.log(Permissions);
+  if (Permissions?.length) {
+    for (let i = 0; i &lt; Permissions.length; i++) {
+      await Role.addPermission(Permissions[i]);
+    }
+  }
+  req.flash('msg', 'Thêm thành công');
+  res.redirect('/users');
+}
+</code></pre>
+<p>Trước khi thao tác database cần validate dữ liệu hợp lệ thì mới xử lý, tránh trường hợp người dùng nhập dữ liệu lỗi thì chường trình sẽ bị lỗi.</p>
+<p><strong>Special Feature</strong></p>
+<p>Khi thêm mới, sửa role xử lý thêm mới, cập nhật dữ liệu ở bảng trung gian role_permission rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Format code tốt.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xử lý validate dữ liệu trước khi thao tác với database để tránh bị lỗi.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
