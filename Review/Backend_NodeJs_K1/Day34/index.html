@@ -1,0 +1,344 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day34</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi34">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p><code>PermissionMiddleware</code> đang viết giống theo kiểu 1 hàm lấy tất cả các quyền. Nên viết theo kiểu middleware check người dùng có quyền truy cập hay không ở trong <code>PermissionMiddleware</code> luôn. Ví dụ như sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PermissionMiddleware('users.read'));
+
+//Middleware PermissionMiddleware.js
+const PermissionMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      req.flash('err', 'Không có quyền');
+      res.redirect('/');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên nên sửa lại middleware <code>PermissionMiddleware</code> cho đúng kiểu.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi34">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Đoạn kiểm tra quyền để ẩn hiện module quản lý người dùng, role trong file layout.ejs nên check typeof của biến !== &quot;undefined&quot; thì mới sử dụng. Có thể sửa thành như sau:</p>
+<pre><code class="language-html">&lt;ul class=&quot;nav flex-column&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Trang chủ&lt;/a&gt;&lt;/li&gt;
+
+  &lt;% if(typeof roleNames !== &quot;undefined&quot; &amp;&amp; roleNames.includes(&quot;super admin&quot;))
+  { %&gt;
+  &lt;li&gt;&lt;a href=&quot;/users&quot;&gt;Quản lý người dùng&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/role&quot;&gt;Quản lý Role&lt;/a&gt;&lt;/li&gt;
+  &lt;% } else if(typeof permissionList !== &quot;undefined&quot; &amp;&amp;
+  permissionList.includes(&quot;read&quot;)) {%&gt;
+  &lt;li&gt;&lt;a href=&quot;/users&quot;&gt;Danh sách người dùng&lt;/a&gt;&lt;/li&gt;
+  &lt;% } %&gt;
+  &lt;a href=&quot;/auth/logout&quot;&gt;Đăng xuất&lt;/a&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Middleware <code>PermissionMiddleware</code> mới chỉ dùng để check quyền đọc được, các quyền khác chưa check được cho nên khi người dùng không có quyền, chỉ cần sửa url là vào được các routes sửa, xóa users, roles,...</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần check thêm các quyền add, update, delete.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Dangmanh2001/F8-BE-k1/tree/main/Baitapbuoi34">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt.</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p><code>PermissionMiddleware</code> đang viết giống theo kiểu 1 hàm lấy tất cả các quyền. Nên viết theo kiểu middleware check người dùng có quyền truy cập hay không ở trong <code>PermissionMiddleware</code> luôn. Ví dụ như sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PermissionMiddleware('users.read'));
+
+//Middleware PermissionMiddleware.js
+const PermissionMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      req.flash('err', 'Không có quyền');
+      res.redirect('/');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+<p>Phần phân quyền người dùng thì phải check quyền update chứ không phải quyền read. Phần edit và delete role thì chỉ cần kiểm tra quyền update và delete, không nhất thiết phải kiểm tra quyền read(bị thừa).</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa lại middleware <code>PermissionMiddleware</code> cho đúng kiểu và check các quyền đúng.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/HW/HW34">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt</p>
+<p>Chưa xử lý ấn hiện module, action khi vào trang chủ. Nên xử lý ẩn các module quản lý người dùng, role đối với người dùng không có quyền.</p>
+<p><strong>Format Code</strong></p>
+<p>Nên gộp các middleware check create, delete, update, read lại với nhau thành 1 file. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PermissionMiddleware('users.read'));
+
+//Middleware PermissionMiddleware.js
+const PermissionMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      req.flash('err', 'Không có quyền');
+      res.redirect('/');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xử lý ẩn hiện module, action khi vào trang chủ và nên gộp các file middleware lại với nhau.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-34">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng rất tốt.</p>
+<p>Chưa xử lý kiểm tra quyền ở route roles.</p>
+<p><strong>Format Code</strong></p>
+<p>Nên gộp các middleware check add, delete, edit, read lại với nhau thành 1 function. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PermissionMiddleware('users.read'));
+
+//Middleware PermissionMiddleware.js
+const PermissionMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      res.redirect('/users');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xử lý thêm kiểm tra quyền ở route role.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise/tree/main/Lab34">Hiếu Nguyễn Minh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng rất tốt.</p>
+<p>Chưa xử lý kiểm tra quyền ở route roles.</p>
+<p><strong>Format Code</strong></p>
+<p>Nên gộp các middleware check haveAdd, haveDelete, haveEdit, haveRead lại với nhau thành 1 function. Có thể tham khảo đoạn sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PermissionMiddleware('users.read'));
+
+//Middleware PermissionMiddleware.js
+const PermissionMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      res.redirect('/users');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xử lý thêm kiểm tra quyền ở route role.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi34">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chưa xử lý chức năng kiểm tra quyền người dùng.</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p><code>RoleMiddleware</code> đang viết giống theo kiểu 1 hàm lấy tất cả các quyền. Nên viết theo kiểu middleware check người dùng có quyền truy cập hay không ở trong <code>RoleMiddleware</code> luôn. Ví dụ như sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', RoleMiddleware('users.read'));
+
+//Middleware RoleMiddleware.js
+const RoleMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      req.flash('err', 'Không có quyền');
+      res.redirect('/');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý kiểm tra quyền người dùng ở các route role, user.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/baodepzai01/f8-back-end-k1/tree/main/BTVNB34">Bao Pham Van</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng mới xử lý quyền thêm, đọc. Còn thiếu quyền sửa, xóa.</p>
+<p>Chưa xử lý ẩn hiện module, action tương ứng với vai trò người dùng.</p>
+<p><strong>Format Code</strong></p>
+<p><code>CheckPermissionMiddleware</code> cần xử lý thêm quyền delete, update. Quyền read đang xử lý sai. Có thể sửa thành sau:</p>
+<pre><code class="language-javascript">module.exports = {
+  read: async function (req, res, next) {
+    const permissions = await roleuser(req);
+    if (!permissions.includes('users.read')) {
+      res.redirect('/users');
+      return;
+    }
+    next();
+  },
+};
+</code></pre>
+<p>Đoạn logic trong <code>if(req.user)</code> không để làm gì cả(đang bị thừa).</p>
+<p>Route role chưa xử lý kiểm tra quyền người dùng.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý thêm kiểm tra quyền người dùng và xử lý ẩn hiện module, action và xử lý lại quyền read.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/namdctry/backend-F8-btvn/tree/main/btvn-b34">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý rất tốt ở route role. Tuy nhiên chưa xử lý kiểm tra quyền người dùng ở route user.</p>
+<p>Chưa xử lý ẩn hiện module, action tương ứng với vai trò người dùng.</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt.</p>
+<p>Route user chưa xử lý kiểm tra quyền người dùng. Nếu không kiểm tra quyền thì khi người dùng thay đổi url là có thể truy cập được vào trang edit và thay đổi thông tin.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần xử lý thêm ẩn hiện module, action và xử lý thêm kiểm tra quyền trong route user.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/maiduchien23/F8-BE/tree/main/F8_BE/f8_javascript/homeword/day34">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chức năng kiểm tra quyền người dùng xử lý tốt ở route role. Tuy nhiên chưa xử lý kiểm tra quyền người dùng ở route user.</p>
+<p>Chưa xử lý ẩn hiện module, action tương ứng với vai trò người dùng.</p>
+<p><strong>Format Code</strong></p>
+<p><code>PermissionMiddleware</code> đang viết giống theo kiểu 1 hàm lấy tất cả các quyền. Nên viết theo kiểu middleware check người dùng có quyền truy cập hay không ở trong <code>PermissionMiddleware</code> luôn. Ví dụ như sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PermissionMiddleware('users.read'));
+
+//Middleware PermissionMiddleware.js
+const PermissionMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      req.flash('err', 'Không có quyền');
+      res.redirect('/');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý thêm kiểm tra quyền người dùng ở route user, xử lý ẩn hiện module, action và viết lại middleware cho đúng.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenducthanh04/f8-backend-k1/tree/main/BTVN_Day34">Thanh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Chức năng phân quyền sử dụng rất tốt.</p>
+<p>Chưa xử lý chức năng kiểm tra quyền người dùng.</p>
+<p>Xử lý ẩn hiện module, action tương ứng với vai trò người dùng tốt.</p>
+<p><strong>Format Code</strong></p>
+<p><code>PerMiddleware</code> đang viết giống theo kiểu 1 hàm lấy tất cả các quyền. Nên viết theo kiểu middleware check người dùng có quyền truy cập hay không ở trong <code>PerMiddleware</code> luôn. Ví dụ như sau:</p>
+<pre><code class="language-javascript">//Route user.js
+router.get('/', PerMiddleware('users.read'));
+
+//Middleware PerMiddleware.js
+const PerMiddleware = (permissions) =&gt; {
+  return (req, res, next) =&gt; {
+    //Xử lý lấy quyền của user
+    if (!userPermissions?.includes(permissions)) {
+      req.flash('err', 'Không có quyền');
+      res.redirect('/');
+      return;
+    } else {
+      next();
+    }
+  };
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý chức năng kiểm tra quyền người dùng và viết lại middleware cho đúng.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
