@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day38</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 38 - Lớp K2</h1>
+<h2><a href="https://daithehh04.github.io/fullstack/day37/exercise-1.html">Nguyễn Đại Thế</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Case refreshToken xử lý rất tốt *</p>
+<p>Khi không nhập thời gian, không post được bài lên.</p>
+<p><strong>Code format</strong></p>
+<p>Nên sử dụng code thuần để tạo ra một datePicker sẽ giúp luyện tập code tốt hơn</p>
+<p>Phần code này nên tách ra thành một đoạn function truyền vào date, như thế sẽ giúp tái sử dụng tốt hơn</p>
+<pre><code class="language-javascript">// time create blog
+const createTime = blog.createdAt;
+const currentTime = new Date();
+const createdAt = new Date(createTime);
+const timeDifference = currentTime - createdAt;
+const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+const hoursDifference = Math.floor(
+  (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+);
+const minutesDifference = Math.floor(
+  (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+);
+function formatTimeDifference(days, hours, minutes) {
+  let result = '';
+  if (days &gt; 0) {
+    result += days + ' day' + (days &gt; 1 ? 's' : '') + ' ';
+  }
+  if (hours &gt; 0) {
+    result += hours + ' hour' + (hours &gt; 1 ? 's' : '') + ' ';
+  }
+  if (minutes &gt; 0) {
+    result += minutes + ' minute' + (minutes &gt; 1 ? 's' : '') + ' ';
+  }
+  if (result === '') {
+    return 'just now';
+  }
+  return result + 'ago';
+}
+const timeBlog = formatTimeDifference(
+  daysDifference,
+  hoursDifference,
+  minutesDifference
+);
+const dateOfBlog = `${createdAt.getDate()} / ${
+  createdAt.getMonth() + 1
+} / ${createdAt.getFullYear()} | 
+${createdAt.getHours()}:${
+  createdAt.getMinutes() &lt; 10
+    ? '0' + createdAt.getMinutes()
+    : createdAt.getMinutes()
+}`;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên cần tối ưu code tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://apeiron.id.vn/homework/day_38/">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt *</p>
+<p>Case refreshToken xử lý chưa tốt *</p>
+<p>Khi mới vào trang, mặc dù đã đăng nhập nhưng không có một request check authentication</p>
+<p>Khi nhập thời gian quá khứ đều bị post lên</p>
+<p><strong>Code format</strong></p>
+<p>Code có sự phân tách và tái sử dụng tốt.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần thêm một lượt check profile khi vào trang để dễ dàng kiểm soát hơn.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

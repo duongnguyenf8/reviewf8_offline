@@ -46,15 +46,13 @@
 
   Bài làm tốt\*
 
-  Các bài đăng chưa hiển thị được thời gian dạng: "Một phút trước, vài ngày trước,..."
-
   **Code format**
 
   Nên tách phần xử lý html ra thành một file khác để dễ quản lý, sửa đổi hơn
 
   Khi lưu localStorage, chỉ nên lưu các thành phần chính như object Token, không nên lưu cả data bao gồm status... Khiến cho việc lấy khó khăn hơn.
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên chưa đủ case theo yêu cầu
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt
 
 ## [Phí Văn Đức](https://phivanduc.github.io/Offline-F8-K3/Day-37-JS)
 
