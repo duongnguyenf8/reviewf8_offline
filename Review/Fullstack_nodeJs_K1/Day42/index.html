@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day42</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 42 - Lớp K1</h1>
+<h2><a href="https://github.dev/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day41">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt*</p>
+<p>Các phần xử lý debounce rất tốt.</p>
+<p>Chưa xử lý tốt các phần Unauthorize với status 401</p>
+<p>Các url fetching(GET) có phần <code>apiKey=null</code> và đã truyền <code>X-Api-Key</code> vào headers</p>
+<ul>
+<li>Trường hợp bị null là khi vừa đăng nhập(Lần đầu), thêm todo, sau đó tìm kiếm.</li>
+</ul>
+<p>Khi đăng nhập lần đầu(Hoặc xoá localStorage) và đăng nhập lại, chưa get lại todo</p>
+<p>Khi input tìm kiếm đang có value, mà post thêm 1 todo thì hiển thị bài đó vào kèm với list todo đã tìm kiếm.</p>
+<p>Việc đưa apiKey vào url không có ý nghĩa gì, vì yêu cầu của API là phải đưa vào <code>X-Api-Key</code> ở headers</p>
+<p><strong>Code format</strong></p>
+<p>Các file code chia folder rất tốt.</p>
+<p>Thay vì sử dụng CDN để sử dụng toastify thì nên sử dụng package toastify được cài đặt. Và tìm hiểu về các custom css của nó.</p>
+<p>Phần class trong <code>TodoInput.jsx</code> không cần thiết phải đưa <code>todo-item-only</code> vào phần tính toán toán tử 3 ngôi:</p>
+<pre><code class="language-jsx"> className={`${
+    todoItem.isCompleted ? &quot;line-through todo-item-only&quot; : &quot;todo-item-only&quot;
+  }`}
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên các case nhỏ cần được chỉn chu hơn. Các phần xử lý trong code rất tốt, tuy nhiên cần được xử lý lại theo hướng package thay vì theo hướng vanillaJS</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/ha752002/f8-fullstack-k2/tree/main/Ex_ReactJs/day41">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Chưa sử dụng form ở phần input khiến cho việc thêm todo khó khăn hơn.</p>
+<p>Chưa validate email ở phía client</p>
+<p>Style input chưa tốt, có vẻ width của input hơi ngắn.</p>
+<p>Khi 401, chưa xoá apiKey cũ đi.</p>
+<p>Khi vào trang, chưa check xem có đăng nhập hay có 401 không, hiển thị chào mừng luôn mặc dù chưa đăng nhập.</p>
+<p><strong>Code format</strong></p>
+<p>Các đoạn code chưa chia folder hợp lý.</p>
+<p>Các tên file trong folder Component chưa hợp lý:</p>
+<ul>
+<li>
+<p>Folder Loading sử dụng tên file là Loading.jsx</p>
+</li>
+<li>
+<p>Folder todoItem sử dụng tên file là index.jsx (Tên folder chứa Component nên viết hoa chữ đầu để dễ phân biệt)</p>
+</li>
+<li>
+<p>Phần main.js ở folder todoItem nên tách ra, đưa vào folder helpers.</p>
+</li>
+</ul>
+<p>Tất cả các file main.js đều sai mục đích, nên tách thành helpers, và có rất nhiều hàm trùng lặp chưa tái sử dụng, nếu tách thành helpers thì dễ dàng tái sử dụng hơn.</p>
+<p>Xử lý chưa tốt phần loading, nếu không loading thì các element phục vụ cho loading vẫn ở trong trang.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên các đoạn code cần chú ý hơn để tối ưu tốt hơn. Một số lỗi logic khi 401 và khi login chưa tốt lắm.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

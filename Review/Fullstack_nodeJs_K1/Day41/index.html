@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day41</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 41</h1>
+<h2><a href="https://dist-oz4kxj5r6-serenaha12.vercel.app/home">Đỗ Hà Chi</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa xử lý rewrite URL</p>
+<p>Chưa xử lý Loading</p>
+<p>Khi đã đăng nhập, không lưu lại trạng thái khiến cho reload thì phải đăng nhập lại từ đầu</p>
+<p>Chưa sử dụng thẻ form khiến cho phải bấm vào button mới có thể add task</p>
+<p>Ở trang Login chưa sử dụng thẻ form nhưng bắt sự kiện enter, như vậy quá thủ công và không cần thiết, khiến code rối hơn nhiều</p>
+<p><strong>Chưa xử lý case EDIT</strong></p>
+<p>Khi xoá, call lại API nhưng render giao diện là chưa có todo.</p>
+<p><strong>Code format</strong></p>
+<p>File <code>apiConfig.jsx</code> không return về một JSX nào, nên sửa thành <code>apiConfig.js</code> để đỡ nhầm lẫn với các file components</p>
+<p>Thay vì việc lúc nào vào trang chủ cũng là login:</p>
+<pre><code class="language-jsx">&lt;Router&gt;
+  &lt;Routes&gt;
+    &lt;Route path='/' element={&lt;Login /&gt;} /&gt;
+    &lt;Route path='/home' element={&lt;HomePage /&gt;} /&gt;
+  &lt;/Routes&gt;
+&lt;/Router&gt;
+</code></pre>
+<p>Nên xử lý để vào trang chủ là trang Home, nếu chưa đăng nhập thì mới redirect về Login</p>
+<p>Các đoạn code trong <code>Home.jsx</code> quá rối, nên tách thành các component con để tránh việc rối code</p>
+<p>Quá lạm dụng state khi sử dụng:</p>
+<pre><code class="language-jsx">const [newTask, setNewTask] = useState('');
+</code></pre>
+<p>Phần này là không cần thiết khi có thể push lại vào <code>setTasks</code></p>
+<pre><code class="language-jsx">const [alertOpen, setAlertOpen] = useState(false);
+const [alertSeverity, setAlertSeverity] = useState('error');
+const [alertMessage, setAlertMessage] = useState('');
+</code></pre>
+<p>Thay vì tạo 3 state không cần thiết, chỉ cần sử dụng 1 state:</p>
+<pre><code class="language-jsx">const [alert, setAlert] = useState('');
+</code></pre>
+<p>Sau đó xử lý các phần Severity ở tham số của gọi hàm, phần Open là không cần thiết.</p>
+<p>Đoạn này trong file: <code>Login.jsx</code> cũng không cần sử dụng các state, mặc dù có sẵn ở component khác, tuy nhiên lại tách ra:</p>
+<pre><code class="language-jsx">const [openAlert, setOpenAlert] = useState(false);
+const [alertSeverity, setAlertSeverity] = useState('success');
+const [alertMessage, setAlertMessage] = useState('');
+</code></pre>
+<p>Đoạn code này trong <code>Login.jsx</code>:</p>
+<pre><code class="language-jsx">setTimeout(() =&gt; {
+  setOpenAlert(true);
+  // setLoading(true);
+  navigate('/home');
+}, 2000);
+</code></pre>
+<p>Đang thực hiện một cách không hợp lý việc hiển thị thông báo sau đó navigate, thay vào đó nên sử dụng state chung ở cha.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa đủ case, bài làm chưa tốt với các phần xử lý action ngừoi dùng, các đoạn code xử lý chưa tốt và lạm dụng nhiều state.</p>
+</li>
+</ul>
+<h2><a href="https://duonghiep-f8-fullstack-day41.vercel.app">Dương Hiệp</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Loading chưa bao phủ toàn bộ màn hình, khiến cho việc bấm các button vẫn có thể hoạt động</p>
+<p>Đang bị call 2 request get todos</p>
+<p>Sau mỗi lượt hành động với todos, đều call lại một lần get todos khiến cho ứng dụng rất chậm</p>
+<p>Thay vì các todo được thêm lên đầu thì đang thêm xuống cuối khiến cho UX chưa tốt, chưa thuận tiện cho User</p>
+<p><strong>Code format</strong></p>
+<p>Các đoạn state trong 1 component TodoItem là quá nhiều:</p>
+<pre><code class="language-jsx">  showEditButton: true,
+  isCompleted: this.props.isCompleted,
+  prevIsCompleted: this.props.isCompleted
+  contentInput: this.props.value,
+  prevContentInput: this.props.value,
+</code></pre>
+<p>Nên sử dụng object để giảm state tránh gây rối code</p>
+<p>Phần code ở return của component TodoItem nên tách ra thành các component nhỏ hơn để đỡ bị rối</p>
+<p>Nên tránh sử dụng props children như ở Button, vì props children được sử dụng theo một mục đích khác.</p>
+<p>Phần <code>config.js</code> đang sử dụng một số key không tồn tại và chưa bao giờ sử dụng:</p>
+<pre><code class="language-js">export const config = {
+  SERVER_API: 'https://api-todo-ebon.vercel.app/api/v1',
+  SERVER_AUTH_API: 'https://api-auth-two.vercel.app/auth',
+  PAGE_LIMIT: 3,
+};
+</code></pre>
+<p>Trong <code>script.js</code> sử dụng dom thật để hành động, tuy nhiên, với loading để lại sẽ bị nặng DOM, cũng không thể chắc chắn là có loading ở trong bài.</p>
+<p>Ở trong <code>App.js</code>, mặc định là hiển thị Loading là không hay lắm.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên các đoạn code cần được chỉn chu hơn.</p>
+</li>
+</ul>
+<h2><a href="https://f8-fullstack-k1-day41.vercel.app">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa xử lý Loading</p>
+<p>Khi đã đăng nhập, cố tình trở lại trang login nhưng chưa bị redirect lại về trang home</p>
+<p>Khi đang ở trang login, cố tình nhập sai email nhưng không có validate, gọi thẳng tới get todos</p>
+<p>Khi trở lại trang login, cố tình nhập sai email nhưng không xoá dữ liệu cũ đi khiến khi vào trang home vẫn call dữ liệu của user cũ.</p>
+<p>Sau mỗi lượt update, reload lại thì value đều ra: todoValue</p>
+<p>Xử lý escape và entities chưa tốt: <code>&amp;lt;h1&amp;gt;hello&amp;lt;&amp;#x2F;h1&amp;gt;</code></p>
+<p><strong>Code format</strong></p>
+<p>Ở các page, các file: <code>Home.js</code>, <code>Login.js</code> khiến chức năng bên trong của nó khó hiểu, dễ gây hiểu nhầm thay vào đó nên sử dụng cái tên khác, không viết hoa chữ cái đầu.</p>
+<p>Thay vì việc lúc nào vào trang chủ cũng là login:</p>
+<pre><code class="language-jsx">&lt;Router&gt;
+  &lt;Routes&gt;
+    &lt;Route path='/' element={&lt;Login /&gt;} /&gt;
+    &lt;Route path='/home' element={&lt;HomePage /&gt;} /&gt;
+  &lt;/Routes&gt;
+&lt;/Router&gt;
+</code></pre>
+<p>Nên xử lý để vào trang chủ là trang Home, nếu chưa đăng nhập thì mới redirect về Login</p>
+<p>Phần state visible khiến cho Loading lúc nào cũng được gọi thay vì việc xử lý nếu <code>visible === true</code> thì mới gọi</p>
+<p>Do dòng này trong file: <code>components/todoitem</code>:</p>
+<pre><code class="language-jsx">let todoContent = { todo: 'todoValue' };
+</code></pre>
+<p>Khiến cho lúc nào cũng post lên là <code>todoValue</code></p>
+<p>Các state ở <code>todoitem</code> quá nhiều khiến nó bị rối</p>
+<pre><code class="language-jsx">const [isEditing, setIsEditing] = useState(false);
+const [todoValue, setTodoValue] = useState(todo.todo);
+let [visible, setIsVisible] = useState(false);
+let [currentTodoValue, setCurrentTodoValue] = useState(todo.todo);
+</code></pre>
+<p>Khi sử dụng file <code>index.jsx</code> thì folder của component nên viết hoa đúng định dạng của Component để đỡ bị nhầm lẫn</p>
+<p>Nên sử dụng đồng nhất, ở Component Loading thì lại không sử dụng file index.</p>
+<p>State không nên được thay thế bằng cách gán lại giá trị, không nên sử dụng let:</p>
+<pre><code class="language-jsx">let [todoContent, setTodoContent] = useState('');
+let [ListTodo, setListTodo] = useState([]);
+let [visible, setIsVisible] = useState(false);
+</code></pre>
+<p>Phần todoContent khiến cho việc re-render lại rất nhiều lần, thay vì đó chỉ khi submit, lấy giá trị trong submit để post, nếu thành công thì đưa vào setListTodo</p>
+<p>Trong tất cả các trang đều sử dụng visible, nên tách ra, sử dụng một state chung và một component chung để giảm thiểu re-render, các component thừa không sử dụng</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, chưa lưu lại được phiên đăng nhập, bài làm sử dụng quá nhiều state không cần thiết cũng như code phân tách, tối ưu chưa tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/xuananh2212/js-fullstack/tree/main/day41">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Code format</strong></p>
+<p>Các function ở App có quá nhiều, việc sử dụng gây khó khăn khi phải truyền qua props nhưng ngoài state loading thì không thêm một hành động nào, nên tách ra thành các helper riêng, khi cần thì import và chỉ cần truyền hàm setLoading</p>
+<p>Nên validate Email trước khi gửi lên server, thay vì sử dụng replace @, nên sử dụng urlEncode để replace được các trường hợp khác.</p>
+<pre><code class="language-js">var emailPath = email.replace(/@/g, '%40');
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần xử lý phân tách code rõ ràng hơn, xử lý validate phía client trước để đảm bảo tốc độ cũng như an toàn cho server.</p>
+</li>
+</ul>
+<h2><a href="https://f8-offline-day41.vercel.app">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Khi nhập email, chưa có loading.</p>
+<p><strong>Code format</strong></p>
+<p>Ở trong <code>pages/index</code>, đoạn code trong useEffect quas dài khiến cho nó đang bị rối giữa các nhánh ifelse, nên tách ra thành một ít hàm riêng để có thể tái sử dụng, và giúp code ngắn gọn hơn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, cần xử lý phân tách code rõ ràng hơn.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
