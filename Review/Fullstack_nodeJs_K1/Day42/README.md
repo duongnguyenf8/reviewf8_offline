@@ -69,3 +69,61 @@
   Xử lý chưa tốt phần loading, nếu không loading thì các element phục vụ cho loading vẫn ở trong trang.
 
 - [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên các đoạn code cần chú ý hơn để tối ưu tốt hơn. Một số lỗi logic khi 401 và khi login chưa tốt lắm.
+
+## [Dương Hiệp](https://github.dev/duonghiep416/duonghiep_f8_fullstack/tree/main/Day41-TodoList-React)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Chưa có validate email ở phía client
+
+  Khi email nhập sai hoặc không hợp lệ, vẫn thực hiện call data và map ra, chưa thực hiện check data trả về khiến lỗi trắng trang.
+
+  Các loading khi không sử dụng tới vẫn được hiển thị ở DOM.
+
+  Khi input tìm kiếm đang có value, mà post thêm 1 todo thì hiển thị bài đó vào kèm với list todo đã tìm kiếm.
+
+  **Code format**
+
+  Ở file `script.js` vẫn đang sử dụng querySelector khiến code hơi thủ công và có thể sẽ không hoạt dộng đúng(tốt)
+
+  File validateUser có thể chưa hoạt động tốt khiến trắng trang
+
+  Các đoạn code logic trong TodoItem đang check hơi thủ công với SUCCESS và FAILED
+
+  Button đang sử dụng props children ở TodoItem là không tốt, gây khó hiểu và không đúng chuẩn, có thể sử dụng thẻ đóng mở để thay thế thẻ Button tự đóng
+
+  Các đoạn xử lý ở các file component đang hơi trùng lặp như(getTodo, addTodo...) nên tách ra thành 1 folder helper để xử lý riêng.
+
+  Chưa rõ phần state todoDataCopy :)?
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, chưa xử lý các case lỗi đặc biệt khiến ứng dụng có thể sẽ bị trắng trang.
+
+## [Nguyen Xuan Tuan Anh](https://github.dev/xuananh2212/js-fullstack/tree/main/day41/todo-list)
+
+- [x] Bài 1
+
+  Bài làm rất tốt\*
+
+  Khi nhập input và bấm tìm kiếm, chưa lấy value ra để tìm kiếm mà phải gõ lại
+
+  **Code format**
+
+  Chưa rõ ý đồ của các function này:
+
+  ```js
+  const handleStateUpdateTodos = (listTodo) => {
+    setTodos(listTodo);
+  };
+  const handleStateUpdateLoading = (value) => {
+    setIsLoading(value);
+  };
+  const handleStateUpdateEditTodo = (id) => {
+    setEditTodo(id);
+  };
+  ```
+
+  Các loading khi không sử dụng vẫn để lại ở DOM
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên các đoạn code chia file cần tối ưu lại một chút vì hơi thừa.

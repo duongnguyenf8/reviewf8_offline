@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day41</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 41 - Lớp K2</h1>
+<h2><a href="https://github.com/NguyenJs6868/f8k2FullkBtvn/blob/main/Day_41_TodoAppReact/todo-app-react-js">Nguyên</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p><strong>Bài làm không tốt</strong></p>
+<p>Chưa có link demo bài làm</p>
+<p>Chưa hoàn thiện, khi clone về lỗi luôn đường dẫn của Button</p>
+<p>Chưa có tương tác Api</p>
+<p>Chưa hoàn thiện chức năng thêm, sửa, xoá</p>
+<p>Trong code vẫn còn lỗi logic(Báo đỏ tuy nhiên chưa sửa)</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm không tốt, chưa hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/NguyenJs6868/f8k2FullkBtvn/blob/main/Day_41_TodoAppReact/todo-app-react-js">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p><strong>Bài làm tốt</strong></p>
+<p>Chưa validate Email trước khi gửi lên server, khi không nhập gì, hay nhập sai định dạng, bỏ nhập... đều gửi dữ liệu lên server.</p>
+<p>Chưa validate input khi nhập, nếu không nhập gì vẫn được gửi lên server, có thông báo lỗi và code trả về tuy nhiên không hiển thị message lên cho user.</p>
+<p>Chỉ lưu mỗi email user, không lưu apiKey khiến cho mỗi lần vào là lấy email get lại apiKey mới, điều đó là không đúng, sẽ không bảo mật.</p>
+<p>Không bỏ loading đi khi gặp lỗi khiến cho user không thể thao tác được bất cứ gì.</p>
+<p>Sau mỗi lần thêm todo, không thêm bên phía client mà call lại một lần nữa khiến cho response về rất chậm.</p>
+<p>Chưa làm chức năng isCompleted cho todo.</p>
+<p>Khi có bất kỳ lỗi nào(không riêng lỗi 401) đều xoá email của người dùng và yêu cầu nhập lại. Điều đó là không tốt cho trải nghiệm.</p>
+<p><strong>Code format</strong></p>
+<p>Folder server để ngoài root sẽ gây khó hiểu và nhầm lẫn với một src dự án backend để chạy kèm với src chính. Thay vì thế nên đưa vào src để hiểu là tương tác với server, nên đổi tên khác như helper để dễ hiểu hơn</p>
+<p>Không thấy props isLoading được truyền vào App, code như vậy là không chặt chẽ và sẽ có tể gây ra lỗi.</p>
+<p>Trong git dang sử dụng localStorage, tuy nhiên khi lên bản product đang sử dụng cookie.</p>
+<p>Component FormTodo không cần phải sử dụng thẻ đủ(hơi xấu)</p>
+<pre><code class="language-xml">&lt;FormTodo data={data} handleLoading={this.handleLoading}&gt;&lt;/FormTodo&gt;
+</code></pre>
+<p>Đoạn code này chưa có trường hợp else để xử lý các lỗi ngoại lệ hoặc các lỗi như không post thành công, vì thế nên chưa xoá được loading</p>
+<pre><code class="language-js">handleSubmit = async (e) =&gt; {
+  e.preventDefault();
+  this.state.handleLoading(true);
+  const { response, data } = await client.post('/todos', {
+    todo: e.target[0].value,
+  });
+  const message = data.message;
+  if (response.ok) {
+    // Nếu post thành công
+    e.target[0].value = null;
+    const { response, data } = await client.get('/todos');
+    this.setState(
+      {
+        data: data.data.listTodo,
+      },
+      this.state.handleLoading(false)
+    );
+    alert(message);
+  }
+};
+</code></pre>
+<p>Chưa rõ logic gọi set lại loading ở ngay trong this.setState:</p>
+<pre><code class="language-js">this.setState(
+  {
+    data: this.state.data.filter(({ _id }) =&gt; _id !== todoDiv.id),
+  },
+  this.state.handleLoading(false)
+);
+</code></pre>
+<p>Chưa rõ đoạn tạo ra rất nhiều state như này để làm gì:</p>
+<pre><code class="language-js">this.state = {
+  id: this.props._id,
+  todo: this.props.todo,
+  isCompleted: this.props.isCompleted,
+  isEditForm: false,
+  createdAt: this.props.createdAt,
+  originalContent: this.props.todo,
+  handleDelete: this.props.handleDelete,
+  handleLoading: this.props.handleLoading,
+};
+</code></pre>
+<p>Nên sửa các đoạn logic querySelector, e.target.nodeName về hướng của react.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, các case chưa xử lý tốt, các đoạn code vẫn dang hơi tạm bợ, thủ công và chưa đi đúng tư duy React.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

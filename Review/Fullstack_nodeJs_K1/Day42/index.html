@@ -57,4 +57,49 @@
 <p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên các đoạn code cần chú ý hơn để tối ưu tốt hơn. Một số lỗi logic khi 401 và khi login chưa tốt lắm.</p>
 </li>
 </ul>
+<h2><a href="https://github.dev/duonghiep416/duonghiep_f8_fullstack/tree/main/Day41-TodoList-React">Dương Hiệp</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Chưa có validate email ở phía client</p>
+<p>Khi email nhập sai hoặc không hợp lệ, vẫn thực hiện call data và map ra, chưa thực hiện check data trả về khiến lỗi trắng trang.</p>
+<p>Các loading khi không sử dụng tới vẫn được hiển thị ở DOM.</p>
+<p>Khi input tìm kiếm đang có value, mà post thêm 1 todo thì hiển thị bài đó vào kèm với list todo đã tìm kiếm.</p>
+<p><strong>Code format</strong></p>
+<p>Ở file <code>script.js</code> vẫn đang sử dụng querySelector khiến code hơi thủ công và có thể sẽ không hoạt dộng đúng(tốt)</p>
+<p>File validateUser có thể chưa hoạt động tốt khiến trắng trang</p>
+<p>Các đoạn code logic trong TodoItem đang check hơi thủ công với SUCCESS và FAILED</p>
+<p>Button đang sử dụng props children ở TodoItem là không tốt, gây khó hiểu và không đúng chuẩn, có thể sử dụng thẻ đóng mở để thay thế thẻ Button tự đóng</p>
+<p>Các đoạn xử lý ở các file component đang hơi trùng lặp như(getTodo, addTodo...) nên tách ra thành 1 folder helper để xử lý riêng.</p>
+<p>Chưa rõ phần state todoDataCopy :)?</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, chưa xử lý các case lỗi đặc biệt khiến ứng dụng có thể sẽ bị trắng trang.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/xuananh2212/js-fullstack/tree/main/day41/todo-list">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt*</p>
+<p>Khi nhập input và bấm tìm kiếm, chưa lấy value ra để tìm kiếm mà phải gõ lại</p>
+<p><strong>Code format</strong></p>
+<p>Chưa rõ ý đồ của các function này:</p>
+<pre><code class="language-js">const handleStateUpdateTodos = (listTodo) =&gt; {
+  setTodos(listTodo);
+};
+const handleStateUpdateLoading = (value) =&gt; {
+  setIsLoading(value);
+};
+const handleStateUpdateEditTodo = (id) =&gt; {
+  setEditTodo(id);
+};
+</code></pre>
+<p>Các loading khi không sử dụng vẫn để lại ở DOM</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, tuy nhiên các đoạn code chia file cần tối ưu lại một chút vì hơi thừa.</p>
+</li>
+</ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
