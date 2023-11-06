@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day42</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k3-fullstack</h1>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-39-JS">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Call api todos quá nhiều lần. Khi call api thêm, sửa trả về thành công thì không cần phải call api lấy todos nữa mà cập nhật cái todo mới thêm, sửa vào mảng todo list hiện tại.</p>
+<p>Cần validate email khi nhập email để lấy API key.</p>
+<p>Chưa thông báo chào người dùng, thay vào đó là thông báo lấy API Key thành công.</p>
+<p><strong>Format code</strong></p>
+<p>Format code tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần validate email trước khi gửi lên, loại bỏ những lần call api không cần thiết.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://mrkhoadev.github.io/F8-Fullstack-K3/">Đỗ Văn Khoa 👌</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Call api todos quá nhiều lần. Khi call api thêm, sửa, xóa trả về thành công thì không cần phải call api lấy todos nữa mà cập nhật cái todo mới thêm, sửa, xóa vào mảng todo list hiện tại.</p>
+<p>Khi ấn sửa và sửa tên todo rồi ấn thoát thì tên todo không reset về như cũ, vẫn để nguyên giá trị sửa mặc dù không ấn lưu.</p>
+<p>Chưa validate tốt email.</p>
+<p><strong>Format code</strong></p>
+<p>State error, success sau hơi bị thừa, có thể sử dụng message trực tiếp luôn:</p>
+<pre><code class="language-javascript">this.state = {
+  success: (text) =&gt; {
+    text = text.split('@')[0];
+    return this.state.usersEmailCookie
+      ? `Chào mừng &lt;span&gt;${text}&lt;/span&gt; đến với TodoList :D`
+      : '';
+  },
+  error: 'Hãy nhập email để có thể sử dụng TodoList',
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xử lý lại validate email cho tốt hơn, giảm số lần call api todos không cần thiết và fix lỗi khi ấn thoát.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/todo-app">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Khi nhập email để lấy apikey, chưa cần biết lấy thành công hay không, cứ get todo(Mặc dù không có apikey).</p>
+<p>API key cũ bị 401 cũng không xoá, vẫn lưu lại trong storage.</p>
+<p>Sau mỗi request delete đều gọi lại get todo, res trả về chậm.</p>
+<p>Khi xóa todo cần confirm.</p>
+<p>Khi sửa nên làm thêm khi người dùng nhập nội dung sửa ấn enter sẽ cập nhật lại todo.</p>
+<p><strong>Format code</strong></p>
+<p>Các đoạn cấu hình toastify nên viết thành 1 constant và khi sử dụng thì import vào, có thể tham khảo cách sau:</p>
+<pre><code class="language-javascript">const configToast = {
+  position: 'top-right',
+  autoClose: 3000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: 'dark',
+};
+
+//Khi sử dụng
+toast.success('Cập nhật thành công', configToast);
+toast.error('Cập nhật thất bại', configToast);
+toast.error('Cập nhật thất bại', { ...configToast, autoClose: 5000 }); // Trường hợp muốn đổi autoClose thành 5000
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần xóa api key cũ trong localstorage khi bị 401, giảm số lần call api không cần thiết, nên làm thêm confirm kh xóa.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_40">Vũ Thống ✅</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Không nên sử dụng input type email.</p>
+<p>Khi bật sửa lên, sửa xong nhưng không update thì khi thoát ra, value không reset về ban đầu.</p>
+<p>Chưa cho confirm khi xoá.</p>
+<p>Trường hợp ấn thêm mà input chưa có nội dung thì button disable, nhưng lúc sau nhập nội dung vào vẫn không loại bỏ disable -&gt; không thêm todo được(Chỉ reload lại mới thêm được).</p>
+<p><strong>Format code</strong></p>
+<p>Format code rất tốt.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần reset value khi ấn thoát và lỗi disable button.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/pencilbsp/f8_offline/tree/main/BTVN/btvn_buoi_40">Nguyễn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Không có form nhập email để lấy api key.</p>
+<p>Chưa validate input thêm todo.</p>
+<p>Không có checkbox complete ở todo.</p>
+<p>Call api todos quá nhiều lần. Khi call api thêm trả về thành công thì không cần phải call api lấy todos nữa mà cập nhật cái todo mới thêm vào mảng todo list hiện tại.</p>
+<p><strong>Format code</strong></p>
+<p>Các đoạn cấu hình toastify nên viết thành 1 constant và khi sử dụng thì import vào, có thể tham khảo cách sau:</p>
+<pre><code class="language-javascript">const configToast = {
+  position: 'top-right',
+  autoClose: 3000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: 'dark',
+};
+
+//Khi sử dụng
+toast.success('Cập nhật thành công', configToast);
+toast.error('Cập nhật thất bại', configToast);
+toast.error('Cập nhật thất bại', { ...configToast, autoClose: 5000 }); // Trường hợp muốn đổi autoClose thành 5000
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần làm form nhập email lấy api key, validate input thêm todo, checkbox complete ở todo, giảm thiểu số lần call api.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
