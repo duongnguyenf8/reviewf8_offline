@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Backend_NodeJs_K1/Day38</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp BE-k1</h1>
+<h2><a href="https://github.com/phuongnd168/back-end-f8/tree/main/Buoi38">Phương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user rất tốt.</p>
+<p>Áp dụng cache file xử lý get user rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Đoạn check cookies nên viết luôn trong controller:</p>
+<pre><code class="language-javascript">const cookies = req.cookies.users;
+if (cookies) {
+  //Xử lý lấy dữ liệu từ file cache và trả về người dùng
+} else {
+  // Xử lý lấy dữ liệu từ database
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/hiusnguyen201/F8-Exercise/tree/main/Lab38">Hiếu Nguyễn Minh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user rất tốt.</p>
+<p>Áp dụng cache file xử lý get user rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Format code rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Dangmanh2001/F8-BE-k1/tree/main/Baitapbuoi38">Đào Đăng Mạnh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user rất tốt.</p>
+<p>Áp dụng cache file xử lý get user rất tốt. Tuy nhiên khi set cookies không nên để name là uuid, uuid nên để thành value. Name của cookies nên để tên tường minh để có thể lấy ra dễ dàng.</p>
+<p><strong>Format Code</strong></p>
+<p>Đoạn tạo file cache và lưu, lấy dữ liệu nên để try catch để có thể bắt lỗi trường hợp không mong muốn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên nên xử lý lại đoạn set cookies.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/wex-alacrity/F8_BE_QuangMinh/tree/main/buoi38">Quang Minh Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Khi get user lần đầu không trả về danh sách users.</p>
+<p>Lần đầu get user không lưu được cookies -&gt; Từ lần sau get users đều lỗi, không chạy vào đoạn đọc file.</p>
+<p>Đường dẫn lưu dữ liệu, lấy dữ liệu từ file không được để đường dẫn tuyệt đối.</p>
+<p>Nếu tồn tại cookies thì phải lấy dữ liệu có file là value của cookies đó, hiện tại mỗi lần lấy hay lưu đều là 1 uuid mới.</p>
+<p><strong>Format Code</strong></p>
+<p>Đoạn tạo file cache và lưu, lấy dữ liệu nên để try catch để có thể bắt lỗi trường hợp không mong muốn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần sửa đường dẫn lưu, lấy dữ liệu, xử lý lại lưu cookies và lấy cookies.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/palkma-byte/f8-backend-k1/tree/main/express_cache">Pham Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user rất tốt.</p>
+<p>Áp dụng cache file xử lý get user. Tuy nhiên khi get user lần đầu sau khi lưu vào redis thì trả về thông tin user cho client luôn, để như hiện tại thì sau khi lưu vào redis lại lấy dữ liệu users từ redis ra trả về.</p>
+<p><strong>Format Code</strong></p>
+<p>Nên để đoạn thao tác với database và redis vào trong try catch để có thể bắt lỗi trường hợp không mong muốn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần trả về thông tin users sau khi lưu vào redis ở lần get user đầu tiên.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/nguyenkhai1311/be-nodejs-k1/tree/main/Day-38">Khải Nguyễn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user rất tốt.</p>
+<p>Áp dụng cache file xử lý get user rất tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Nên thêm đoạn tạo folder cache trong controller nếu folder không tồn tại:</p>
+<pre><code class="language-javascript">if (!fs.existsSync('./cache')) {
+  fs.mkdirSync('./cache');
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/maiduchien23/F8-BE/tree/main/F8_BE/f8_javascript/homeword/day38">Mai Đức Hiền</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user tốt.</p>
+<p>Áp dụng cache xử lý get user tốt.</p>
+<p><strong>Format Code</strong></p>
+<p>Hàm getUsersFromDB có mỗi đoạn lấy tất cả user từ database thì không nhất thiết phải viết hàm riêng, có thể lấy tất cả user từ database trong getUsers luôn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/ducanhtranptit/F8_Homework/tree/main/Buoi38">Duc Anh Tran</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm chưa tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Sai yêu cầu đề bài.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt. Cần làm đúng yêu cầu bài làm.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/namdctry/backend-F8-btvn/tree/main/btvn-b38">Nam Nguyen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p><strong>Action Feature</strong></p>
+<p>Xử lý hiển thị danh sách user tốt.</p>
+<p>Áp dụng cache file xử lý get user tốt.</p>
+<p>File lưu cache nên để đuôi .json.</p>
+<p><strong>Format Code</strong></p>
+<p>Nên thêm đoạn tạo folder cache trong controller nếu folder không tồn tại:</p>
+<pre><code class="language-javascript">if (!fs.existsSync('./cache')) {
+  fs.mkdirSync('./cache');
+}
+</code></pre>
+<p><code>fs.readFileSync()</code> không cần phải await.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần chỉnh lại đuôi file lưu dữ liệu.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
