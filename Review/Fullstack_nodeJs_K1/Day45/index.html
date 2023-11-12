@@ -1,0 +1,169 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day45</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 45 - Lớp K1</h1>
+<h2><a href="https://github.dev/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day45">Luu Anh Quan</a></h2>
+<ul>
+<li>[x] Bài 1: Bài làm rất tốt</li>
+</ul>
+<h2><a href="https://github.dev/duonghiep416/duonghiep_f8_fullstack/tree/main/Day45-Game-Number">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Nên tắt auto complete đi để nút tăng, giảm không bị dính vào các list suggest.</p>
+<p>Nên sử dụng tính toán để đưa ra số MAX_TURN động để việc thay đổi config sẽ dễ dàng hơn</p>
+<pre><code class="language-js">const config = {
+  MIN_NUMBER: 1,
+  MAX_NUMBER: 99,
+  MAX_TURN: 7,
+};
+export default config;
+</code></pre>
+<p>Trong case <code>history/add</code> nên lấy correctAnswerer từ state thay vì phải truyền lại từ trong payload.</p>
+<pre><code class="language-js">case 'history/add':
+const dataHistory = [
+  {
+    id: state.history.length + 1,
+    answers: action.payload.dataAnswers,
+    correctAnswer: action.payload.randomNumber
+  },
+  ...state.history
+]
+saveDataInBrowser('history', dataHistory)
+return {
+  ...state,
+  history: dataHistory
+}
+</code></pre>
+<p>Chưa rõ việc tách thành hàm ở phần này:</p>
+<pre><code class="language-js">function saveDataInBrowser(type, data) {
+  localStorage.setItem(type, JSON.stringify(data));
+}
+export default saveDataInBrowser;
+</code></pre>
+<p>Hầu hết các file hiện tại trong helper chỉ để dùng cho form, nên tách ra thành util của form</p>
+<p>Ở file ProgressBar không cần thiết phải sử dụng ref, chỉ cần sử dụng style width là được.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Các chức năng code rất tốt, tuy nhiên các phần code format thì nên xem lại.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/ha752002/f8-fullstack-k1/tree/main/Ex_ReactJs/day45">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu case:</p>
+<ul>
+<li>Khi chưa focus vào input, không thể submit, xoá...</li>
+<li>Chưa làm case scroll table</li>
+<li>Khi xong màn chơi, chưa thể Enter để vào màn chơi mới.</li>
+</ul>
+<p>Khi nhập số, sử dụng mũi tên để thay đổi giá trị, đang set lên dispatch làm cho re-render toàn trang, mặc dù không sử dụng số làm gì cả, chỉ lúc submit mới cần.</p>
+<p>Khi vào trang bị render 2 lần</p>
+<p>Khi submit... đều render 2 lần</p>
+<p>Khi keydown bắt vào sự kiện submit nhưng sau đó nếu keyup lại nhận thêm một submit nữa.</p>
+<p>Sử dụng debounce khi submit làm cho cảm giác thay đổi UI đang bị chậm, bị lag.</p>
+<p>Chưa rõ lý do cho useCallback và _debounce ở trong handleSubmit</p>
+<p>Có thể tối ưu lại đoạn code này không cần dùng toán tử 3 ngôi:</p>
+<pre><code class="language-js">{
+  !props.isOutOfTurn ? (
+    &lt;input
+      onChange={(e) =&gt; {
+        props.onChange(e.target.value);
+      }}
+      onKeyDown={(e) =&gt; {
+        props.onkeyDownInput(e.key);
+      }}
+      className={clsx(Styles.custom_input)}
+      value={props.value}
+      type='text'
+      autoComplete='off'
+      name='number'
+      placeholder='Thử một số'
+      id='number'
+      ref={inputRef}
+    /&gt;
+  ) : (
+    &lt;&gt;&lt;/&gt;
+  );
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, các case xử lý chưa tốt, còn thiếu nhiều, quá lợi dụng state, globalState và ref.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/xuananh2212/js-fullstack/tree/main/day45">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm không tốt</p>
+<p>Chưa xử lý xoá các ký tự đặc biệt, chữ trong input</p>
+<p>Các mũi tên chỉ hoạt động khi focus vào input, như thế là không đúng.</p>
+<p>Chưa có scroll bảng.</p>
+<p>Các đoạn text, chính tả, viết hoa, thường chưa chỉn chu.</p>
+<p><strong>Code format</strong></p>
+<p>Các đoạn code rất khó hiểu, thủ công và chưa chỉn chu.</p>
+<p>Chưa rõ chức năng của đoạn code này:</p>
+<pre><code class="language-js">const handleKeyDown = (e) =&gt; {
+  ['e', 'E', '+', '-'].includes(e.key) &amp;&amp; e.preventDefault();
+};
+</code></pre>
+<p>Phần code này nên lấy số từ config thay vì để cứng số 99</p>
+<pre><code class="language-js">const numberRandom = useRef(Math.floor(Math.random() * 99) + 1);
+
+// Đây nữa
+
+const {
+  state: { remaining },
+} = useSelector();
+return (
+  &lt;&gt;
+    &lt;h2 className='title'&gt;Chào mừng bạn đến với trò chơi đoán số&lt;/h2&gt;
+    &lt;span className='remaining'&gt;
+      số lần còn lại:{' '}
+      &lt;span className='number'&gt; {`${remaining}/${MAX_TIME}`}&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;p className='desc'&gt;Bạn Cần tìm kiếm một số từ 1 đến 99&lt;/p&gt;
+  &lt;/&gt;
+);
+</code></pre>
+</li>
+</ul>
+<h2><a href="https://github.dev/HieuBoss/F8-fullstack-k2/tree/main/react_bt/lesson6">Nguyen Duy Hieu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm không tốt</p>
+<p>Chưa xử lý một case nào.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/QuocAnh-bit/F8_fullstack_006/tree/main/react">Duong Quoc Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm không tốt</p>
+<p>Trừ giao diện sáng, tối.</p>
+<p>Chưa xử lý một case nào.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/QuocAnh-bit/F8_fullstack_006/tree/main/react">Phạm Tuấn</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt.</p>
+<p><strong>Code format</strong></p>
+<p>Ở phần này nên sử dụng dữ liệu động thay vì fix cứng 99</p>
+<pre><code class="language-js">&lt;Heading as='h2' {...commonHeadingStyles} color='primary.600'&gt;
+  Bạn cần tìm kiếm một số từ 1 đến 99
+&lt;/Heading&gt;
+</code></pre>
+</li>
+</ul>
+<h2><a href="https://github.dev/pth2003/FullStack_Nodejs_K1/tree/main/BTVN/React/btvn_buoi_45">Phan Trung Hiếu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm không tốt</p>
+<p>Chưa hoàn thiện một case nào.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

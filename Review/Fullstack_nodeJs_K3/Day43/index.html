@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day43</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k3-fullstack</h1>
+<h2><a href="https://github.com/PhiVanDuc/Offline-F8-K3/tree/main/Day-39-JS">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Chưa validate ô input tìm kiếm. Nếu chưa nhập gì thì không được phép tìm kiếm.</p>
+<p>Xử lý tìm kiếm, auto tìm kiếm rất tốt.</p>
+<p>Khi bị 401 chưa xóa apiKey trong localstorage.</p>
+<p><strong>Format code</strong></p>
+<p>Time debounce nên để thấp hơn, nếu để cao người dùng tưởng web chậm, trải nghiệm không tốt, có thể để khoảng 300-500 miliseconds.</p>
+<p>Hàm <code>updateTodosFromSearch</code> chỉ TodoForm sử dụng nên để bên TodoForm, không nên truyền quá nhiều props để code đỡ bị rối.</p>
+<p>Phần debounce nên tạo 1 folder hook và đặt trong đó để có thể sử dụng nhiều lần.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần validate ô tìm kiếm và xử lý xóa apiKey khi bị lỗi 401.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/cuonggold2408/Fullxinach_K3/tree/main/todo-app">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Khi nhập tìm kiếm rồi ấn giữ delete hết các ký tự, cái list todo cuối cùng hiển thị không đúng.</p>
+<p>Xử lý tìm kiếm, auto tìm kiếm rất tốt.</p>
+<p><strong>Format code</strong></p>
+<p>Phần debouce nên tạo 1 folder hook và viết trong đây.</p>
+<p>Tham số callback truyền vào debounce nên viết ra 1 hàm riêng rồi truyền vào, viết cả logic xử lý như hiện tại nhìn rất rối.</p>
+<p>Tham số của toastify nên viết ra 1 object dùng chung cho tất cả, tránh việc viết lại nhiều lần những tham số trùng nhau. Về sau có thể dễ dàng chỉnh sửa hơn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên sửa lỗi khi ấn giữ delete hết các ký tự.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://mrkhoadev.github.io/F8-Fullstack-K3/">Đỗ Văn Khoa 👌</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*.</p>
+<p><strong>Action feature:</strong></p>
+<p>Khi ấn tìm kiếm để loại bỏ chức năng tìm kiếm vẫn call api để tìm kiếm.</p>
+<p>Xử lý tìm kiếm, auto tìm kiếm rất tốt.</p>
+<p><strong>Format code</strong></p>
+<p>File <code>HtmlScript</code> nên để trong folder helper thì đúng kiểu hơn.</p>
+<p>Nếu muốn sử dụng toán tử 3 ngôi để thêm class thì có thể làm theo cách sau:</p>
+<pre><code class="language-jsx">&lt;button
+  className={`search-btn${isSearch ? ' active' : ''}`}
+  onClick={handleClick}&gt;
+  Tìm kiếm
+&lt;/button&gt;
+</code></pre>
+<p>Phần debounce nên tạo 1 folder hook và đặt trong đó để có thể sử dụng nhiều lần.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần sửa lỗi khi ấn tìm kiếm để loại bỏ chức năng tìm kiếm.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

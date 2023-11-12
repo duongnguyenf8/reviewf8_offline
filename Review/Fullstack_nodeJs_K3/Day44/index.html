@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day44</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 43 - Lớp K3</h1>
+<h2><a href="https://github.dev/cuonggold2408/Fullxinach_K3/tree/main/shop">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Trước mỗi req post lên luôn có một req lấy profile trong khi order đã trả về 401.</p>
+<p>Khi post lên bị 401 thì xử lý cấp lại apikey mới để post lên thay vì không làm gì như trong bài.</p>
+<p>Chưa trừ số lượng trong productList, khi order xong số lượng vẫn như cũ.</p>
+<p>Phần lazy image chưa tốt lắm, chưa có width ban đầu khiến cho kích thước ảnh bị giật.</p>
+<p><strong>Code format</strong></p>
+<p>Các đoạn code format rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/PhiVanDuc/Offline-F8-K3/tree/main/Day-40-React">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài làm rất tốt</p>
+<p>Khi vào trang bị giật một chút phần form đăng nhập.</p>
+<p>Khi post lên bị 401 thì xử lý cấp lại apikey mới để post lên thay vì gọi lại profile và product như ở bài.</p>
+<p>Chưa trừ số lượng trong productList, khi order xong số lượng vẫn như cũ.</p>
+<p><strong>Code format</strong></p>
+<p>Code rất tốt.</p>
+<p>Phần code displayNotify hơi dài dòng</p>
+<pre><code class="language-js">import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const displayNotify = (condition, content) =&gt; {
+  if (condition === 'success') {
+    return toast.success(`${content}`, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
+  } else if (condition === 'warning') {
+    return toast.warn(`${content}`, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
+  } else if (condition === 'error') {
+    return toast.error(`${content}`, {
+      position: 'top-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
+  }
+};
+
+export default displayNotify;
+</code></pre>
+<p>Thay vì thế có thể sử dụng: <code>toast[type](msg, options)</code></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
