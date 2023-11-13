@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K3/Day45</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 45 - Lớp K3</h1>
+<h2><a href="https://github.dev/mrkhoadev/F8-Fullstack-K3/tree/main/Day44">Đỗ Văn Khoa</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Chưa deploy lên vercel nên khi đăng xuất chuyển hướng bị 404.</p>
+<p>Khi đăng nhập bằng facebook, git thì không lấy được email nhưng không xử lý mà bị trắng thông tin, nên đưa một placeholder vào để đỡ trống.</p>
+<p><strong>Code format</strong></p>
+<p>Các phần gọi handle có vẻ đang hơi rườm rà:</p>
+<pre><code class="language-js">onClick={() =&gt; loginWithPopup()}
+&lt;form onSubmit={(e) =&gt; handleSubmit(e, user.name)}&gt;
+&lt;!-- ... --&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Các phần token, Id nên đưa vào .env để bảo mật tốt hơn, tránh bị tấn công không đáng có:</p>
+<pre><code class="language-js"> domain=&quot;dev-zbpg0fkytxvd7t84.us.auth0.com&quot;
+ clientId=&quot;8NuA1nZPNifsqXcvifwjGa4ytxCdB1Qj&quot;
+&lt;!-- ... --&gt;
+const serviceId = 'service_76c7sa7';
+const templateId = 'template_uevja1s';
+const userId = '36YVM9HzQD8FDBkBz';
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/cuonggold2408/Fullxinach_K3/tree/main/auth_emailjs">Nguyễn Quang Cường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa gửi được email cho user.</p>
+<p>Chưa xử lý account facebook</p>
+<p><strong>Code format</strong></p>
+<p>Các phần gọi handle có vẻ đang hơi rườm rà:</p>
+<pre><code class="language-js">onClick={() =&gt; loginWithPopup()}
+</code></pre>
+<p>Các phần token, Id nên đưa vào .env để bảo mật tốt hơn, tránh bị tấn công không đáng có:</p>
+<pre><code class="language-js">domain=&quot;dev-6gv5qqezjjoewmoq.us.auth0.com&quot;
+clientId=&quot;1tNzDO3X3Nvxd5d4TOawtBatQwrM6tUe&quot;
+&lt;!-- ... --&gt;
+const serviceId = &quot;service_yp7xsuq&quot;;
+const templateId = &quot;template_h8aanvs&quot;;
+const publicKey = &quot;xy73vGYRwb07g7q6J&quot;;
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý hơn vào các case còn thiếu.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/PhiVanDuc/Offline-F8-K3/tree/main/Day-41-React">Phí Văn Đức</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa gửi được email cho user.</p>
+<p>Chưa deploy lên vercel</p>
+<p>Khi đăng nhập bằng facebook, git thì không lấy được email nhưng không xử lý mà bị trắng thông tin, nên đưa một placeholder vào để đỡ trống.</p>
+<p><strong>Code format</strong></p>
+<p>Các phần gọi handle có vẻ đang hơi rườm rà:</p>
+<pre><code class="language-js">onClick={() =&gt; loginWithPopup()}
+</code></pre>
+<p>Các phần token, Id nên đưa vào .env để bảo mật tốt hơn, tránh bị tấn công không đáng có:</p>
+<pre><code class="language-js">domain=&quot;dev-jf8qdkhyv3d2q1ia.jp.auth0.com&quot;
+clientId=&quot;NVigip6KXrTFjE9FYqmGjdk9cfxvpRiT&quot;
+&lt;!-- ... --&gt;
+emailjs.send('service_ufasi8f', 'template_402vh2n', info, 'kpB-ZhiQNbQMAeBnw')
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, cần chú ý hơn.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
