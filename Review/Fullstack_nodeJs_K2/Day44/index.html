@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day44</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 44 - Lớp K2</h1>
+<h2><a href="https://github.dev/daithehh04/fullstack/tree/main/day44/login-auth">Nguyễn Đại Thế</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa gửi được email cho user.</p>
+<p><strong>Code format</strong></p>
+<p>Không cần thiết phải viết một cách rườm rà như này:</p>
+<pre><code class="language-js">onClick={() =&gt; loginWithPopup()}
+</code></pre>
+<p>Trong useAuth0 có loading, có thể sử dụng nó để đỡ phải create một state:</p>
+<pre><code class="language-js">const LogoutButton = () =&gt; {
+  const { logout, isAuthenticated } = useAuth0();
+  const [loading, setLoading] = useState(false);
+  const handleLogOut = () =&gt; {
+    setLoading(true);
+    logout({ logoutParams: { returnTo: window.location.origin } });
+  };
+  return (
+    &lt;&gt;
+      {isAuthenticated &amp;&amp; (
+        &lt;button className='btn' onClick={handleLogOut}&gt;
+          Sign Out
+        &lt;/button&gt;
+      )}
+      {loading &amp;&amp; &lt;Loading /&gt;}
+    &lt;/&gt;
+  );
+};
+</code></pre>
+</li>
+</ul>
+<h2><a href="https://github.com/Apeiron2/F8-fullstack-K2/tree/main/homework/day_44">Vũ Đức Tài</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa bật login với popup.</p>
+<p>Khi gửi email, chưa có loading khiến user có thể spam nhiều lần.</p>
+<p><strong>Code format</strong></p>
+<p>Có thể sử dụng loading ở trong useAuth0 để đỡ phải làm rườm rà ở đây:</p>
+<pre><code class="language-js">import Loading from './components/Loading';
+import Login from './components/Login';
+import { useSelector } from './core/hook';
+
+function App() {
+  const { isLoading } = useSelector();
+  return &lt;&gt;{isLoading ? &lt;Loading /&gt; : &lt;Login /&gt;}&lt;/&gt;;
+}
+
+export default App;
+</code></pre>
+<p>Bài này cũng chưa cần thiết phải sử dụng đến context.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
