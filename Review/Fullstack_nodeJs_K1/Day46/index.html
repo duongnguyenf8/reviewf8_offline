@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day46</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 46 - Lớp K1</h1>
+<h2><a href="https://github.dev/xuananh2212/js-fullstack/tree/main/day46/shop2">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa check trường hợp nhập page số âm</p>
+<p>Khi cố tình nhập đường dẫn đến page lớn hơn maxPage, không tự redirect về mà ở trang đó, không call được product</p>
+<p>Khi notFoundPage, nên xử lý để redirect về Home hoặc nên có nút cho user bấm về trang chủ.</p>
+<p>Không nên báo nhiều toast quá khiến cho UI bị rối, nếu product đã có trong cart rồi chỉ cần hiển thị một cách nhỏ nhỏ ở phía góc là được.</p>
+<p>Khi xoá nên có confirm.</p>
+<p>Trang detail nên có thêm phần slug để url thân thiện hơn(Friendly URL)</p>
+<p><strong>Code format</strong></p>
+<p>Các đoạn logic boolean có thể sử dụng truthy luôn:
+https://f8-offline-day46.vercel.app/detail/name~may-tinh-mitsubishi/6551a7297f15f9c0a42d1e70</p>
+<pre><code class="language-js">  {
+      [styles.hidden]: carts.length === 0 ? true : false
+  }
+</code></pre>
+<p>Các phần store redux rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/duonghiep416/duonghiep_f8_fullstack/tree/main/Day46-Shopping-Cart">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Khi cố tình nhập đường dẫn đến page lớn hơn maxPage, không tự redirect về mà ở trang đó, không call được product</p>
+<p>Không vào được trang notFound do để route * trên đầu, vì vậy tất cả đều đi vào trang &quot;/:page&quot;</p>
+<p>Khi không nhập đúng đường dẫn thì sẽ call NaN, ở trường hợp này data vẫn trả về nhưng nếu không thì bài bị lỗi.</p>
+<p>Không nên báo nhiều toast quá khiến cho UI bị rối, nếu product đã có trong cart rồi chỉ cần hiển thị một cách nhỏ nhỏ ở phía góc là được.</p>
+<p>Trang detail nên có thêm phần slug để url thân thiện hơn(Friendly URL)</p>
+<p>Khi xoá nên có confirm.</p>
+<p><strong>Code format</strong></p>
+<p>Khi sang trang, không nên scroll smooth sẽ gây rối mắt cho user:</p>
+<pre><code class="language-js">document.documentElement.scroll({
+  top: 0,
+  behavior: 'smooth',
+});
+</code></pre>
+<p>Nên tách store, reducer, actions ra thành các file riêng biệt để dễ quản lý hơn.</p>
+<p>Nếu productsCart không phải đúng dạng JSON thì bài làm sẽ bị lỗi:</p>
+<pre><code class="language-js">const initState = {
+  productsCart: localStorage.getItem('productsCart')
+    ? JSON.parse(localStorage.getItem('productsCart'))
+    : [],
+  loading: false,
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, chưa viết, phân tách tốt phần store của redux</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/ha752002/f8-fullstack-k1/tree/main/Ex_ReactJs/day46">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa check trường hợp nhập page số âm</p>
+<p>Khi bấm vào logo để về trang chủ, chưa chuyển lại số trang ở nav phân trang.</p>
+<p>Khi cố tình nhập đường dẫn đến page lớn hơn maxPage, không tự redirect về mà ở trang đó, không call được product</p>
+<p>Khi không nhập đúng đường dẫn ở /home/ không redirect về hoặc sang notFound, ở trường hợp này data vẫn trả về nhưng nếu không thì bài bị lỗi.</p>
+<p>Khi notFoundPage, nên xử lý để redirect về Home hoặc nên có nút cho user bấm về trang chủ.</p>
+<p>Không nên báo nhiều toast quá khiến cho UI bị rối, nếu product đã có trong cart rồi chỉ cần hiển thị một cách nhỏ nhỏ ở phía góc là được.</p>
+<p>Khi bấm quá sản phẩm vẫn có thể bấm cộng tiếp được mặc dù quantity &lt;= 0</p>
+<p>Khi xoá sản phẩm chưa có confirm</p>
+<p>Khi ở cart chưa thể sang trang detail.</p>
+<p>Khi ở cart mà bấm go home thì bị load lại trang.</p>
+<p><strong>Code format</strong></p>
+<p>Khi loading product không hiển thị component Loading mà là chữ loading.</p>
+<p>Bản thân NavLink đã là thẻ a, không cần bọc thẻ a ở ngoài.</p>
+<p>Phần slug này nên tách thành một function để khi sử dụng ở nhiều nơi sẽ tiện lợi và đồng bộ hơn:</p>
+<pre><code class="language-js">`/detail/${removeAccents(product.name).replaceAll(' ', '-')}/${product._id}`;
+</code></pre>
+<p>Các thành phần của redux khởi tạo và sử dụng rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/react/btnvn_46/shop_2">Duong Quoc Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa có rewrite URL khiến cho khi reload thì bị 404: <strong>Đã fix</strong></p>
+<p>Chưa xử lý các trang 404</p>
+<p>Không nên báo nhiều toast quá khiến cho UI bị rối, nếu product đã có trong cart rồi chỉ cần hiển thị một cách nhỏ nhỏ ở phía góc là được.</p>
+<p>Khi bấm quá sản phẩm vẫn có thể bấm cộng tiếp được mặc dù quantity &lt;= 0</p>
+<p>Chưa có phân trang</p>
+<p>Các case khác không test được vì chưa rewrite URL nên chỉ có thể nhìn code để đoán.</p>
+<p><strong>Code format</strong></p>
+<p>Chưa dùng action creator khiến nếu mỗi lần càn thay đổi thì sẽ rất mệt.</p>
+<p>Nên chia các phần page thành folder pages, thay vì để trong components.</p>
+<p>Các case liên quan đến phân trang chưa làm.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/anhquan2211/F8-OFFLINE/tree/main/f8-offline-day46">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa check trường hợp nhập số âm. <strong>Đã fix</strong></p>
+<p>Vì lưu detail vào localStorage để sử dụng ở trang detail thay vì fetching nên khi vào thẳng link sẽ bị lỗi.</p>
+<p><strong>Code format</strong></p>
+<p>Vì sử dụng JSON.parse khi sử dụng get từ localStorage ra luôn, nếu như không phải JSON thì sẽ trắng trang:</p>
+<pre><code class="language-js">const INIT_STATE = {
+  carts: JSON.parse(localStorage.getItem('cart')) || [],
+};
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt* Tuy nhiên có một số case đặc biệt thì xử lý chưa được tốt.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
