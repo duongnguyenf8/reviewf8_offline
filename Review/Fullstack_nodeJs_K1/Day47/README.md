@@ -41,3 +41,19 @@
   Chưa kéo được task
 
   Chưa lưu được vị trí columns khi kéo, reload
+
+## Chưa nộp bài tập
+
+- Đỗ Hoài Nam
+
+- Lê Văn Trung
+
+- Tạ Minh Quang
+
+- Nguyễn Trung Nam
+
+- Bùi Quang Bình
+
+- Nguyễn Hùng Anh
+
+- Nguyễn Duy Hiếu
