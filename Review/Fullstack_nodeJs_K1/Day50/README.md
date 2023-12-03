@@ -1,5 +1,16 @@
 # Dương review bài tập về nhà buổi 50 - Lớp K1
 
+## CHưa nộp bài tập
+
+- Đỗ Hoài Nam
+- Đỗ Hà Chi
+- Lê Văn Trung
+- Tạ Minh Quang
+- Nguyễn Trung Nam
+- Nguyễn Duy An
+- Bùi Quang Bình
+- Nguyễn Duy Hiếu
+
 ## [Nguyễn Xuân Tuấn Anh](https://github.com/xuananh2212/js-fullstack/tree/main/day50/shop3)
 
 - [x] Bài 1
