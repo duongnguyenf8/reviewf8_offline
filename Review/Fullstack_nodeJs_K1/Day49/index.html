@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day49</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 49 - Lớp K1</h1>
+<h2><a href="https://duonghiep-f8-fullstack.vercel.app/detail/1">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Chưa hiển thị hình ảnh ở homepage.</p>
+<p>Các page chưa có sự đầu tư về giao diện.</p>
+<p>Mỗi lần sang trang đang bị reload lại</p>
+<ul>
+<li>
+<p>Nếu dùng Link của NextUI nên thêm một attr là <code>as</code> để có thể sử dụng Link của Next với UI của NextUI:</p>
+<pre><code class="language-jsx">import {Link} from '@nextui-org/react'
+import Link as NextLink from 'next/link'
+&lt;Link
+  as={NextLink}
+  color='success'
+  href={pathDetail}
+  underline='hover'
+  &gt;
+  &lt;h2&gt;{title}&lt;/h2&gt;
+&lt;/Link&gt;
+</code></pre>
+</li>
+</ul>
+<p>Nếu vào một detail không có thật, id sai thì đang bị lỗi. Thay vì xử lý thì đang không handle lỗi.</p>
+<p>Nên cho thêm slug vào trước link để thể hiện một friendly url.</p>
+<pre><code class="language-ts">function removeAccent(str: string) {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace('đ', 'd')
+    .replace('Đ', 'D');
+}
+export default function slug(str: string, id?: string | number) {
+  str = removeAccents(str);
+  str = str
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+  if (id) {
+    str += `~${id}`;
+  }
+  return str;
+}
+export function getSlugId(str: string) {
+  const splitSlug = str.split('~');
+  return splitSlug[splitSlug.length - 1];
+}
+</code></pre>
+<p>Khi vào một đường dẫn không có, chưa hiển thị trang 404</p>
+<p>Nên thêm cả Image của Next vào as của Image trong NextUI để có thể tận dụng cache của Next tốt hơn.</p>
+<ul>
+<li>
+<p>Ví dụ:</p>
+<pre><code class="language-tsx">import { Image } from '@nextui-org/react';
+import NextImage from 'next/image';
+export default function Image({ title }: { [key: string]: string }) {
+  return (
+    &lt;Image as={NextImage} alt={title} src={src} width={400} height={400} /&gt;
+  );
+}
+</code></pre>
+</li>
+</ul>
+<p>Khi tìm kiếm nếu không trả về kết quả nên trả về tất cả hoặc thông báo là không có.</p>
+</li>
+</ul>
+<h2><a href="https://f8-fullstack-k1.vercel.app/">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Các page chưa có sự đầu tư về giao diện.</p>
+<p>Nếu vào một detail không có thật, id sai thì đang bị lỗi. Thay vì xử lý thì đang không handle lỗi.</p>
+<p>Nên cho thêm slug vào trước link để thể hiện một friendly url.</p>
+<pre><code class="language-ts">function removeAccent(str: string) {
+  return str
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace('đ', 'd')
+    .replace('Đ', 'D');
+}
+export default function slug(str: string, id?: string | number) {
+  str = removeAccents(str);
+  str = str
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+  if (id) {
+    str += `~${id}`;
+  }
+  return str;
+}
+export function getSlugId(str: string) {
+  const splitSlug = str.split('~');
+  return splitSlug[splitSlug.length - 1];
+}
+</code></pre>
+<p>Khi vào một product không có, chưa hiển thị trang 404</p>
+</li>
+</ul>
+<h2><a href="https://travel-xi-tan.vercel.app/">Phan Trung Hieu</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Các animate quá chậm, quá nhiều khiến nó rất rối mắt.</p>
+<p>Ngoài trang Home ra thì chưa làm gì cả.</p>
+</li>
+</ul>
+<h2><a href="https://js-fullstack-phi.vercel.app/library">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Chưa đầu tư vào giao diện</p>
+<p>Chưa có trang detail.</p>
+<p>Trang thanh toán gần như chưa làm, Không phải là một bài làm hoàn chỉnh.</p>
+<p>Chưa có trang 404.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa đủ chỉn chu.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

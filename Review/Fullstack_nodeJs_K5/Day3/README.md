@@ -1,20 +1,5 @@
 # Dương review bài tập về nhà buổi 3 - Lớp K5
 
-**Chưa nộp bài tập:**
-
-- Lưu Ngọc Dương
-
-**Nộp muộn:**
-
-- Trần Thế Vĩ
-- Nguyễn Văn Thắng
-- Viên Đình Cường
-- Đào Quang Hùng
-- Bùi Minh Chí
-- Nguyễn Ngọc Minh
-- Nguyễn Tuấn Hùng
-- Lê Tùng Dương
-
 ## [Nguyen Tien Dat](https://tiendat211294.github.io/f8_offline_k5/buoi-3/)
 
 - [x] Bài 1
@@ -646,3 +631,408 @@
   - Ở bản mẫu, các từ khác có font bình thường, chỉ các từ được highlight màu khác mới có độ đậm khác.
 
   Không thể chắc chắn ở trường hợp này bấm vào button sẽ hiện ra modal hay thực hiện action nào, không nên bọc thẻ a ở ngoài như vậy.
+
+## [Nguyễn Văn Thắng](https://nvthang391.github.io/F8-FSK5/Day_3/bai1.html)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Các phần nhập liệu(Input, Textarea) thiếu padding như bản mẫu.
+  Các phần nhập liệu(Input, Textarea) đều chưa đủ độ dài như bản mẫu.
+  Các phần nhập liệu(Input, Textarea) chưa đồng nhất về độ dài như bản mẫu.
+
+  Phần email nên được thêm thẻ a với thuộc tính href="mailto:email" thì sẽ tốt hơn
+  Phần số điện thoại nên được thêm thẻ a với thuộc tính href="tel:so_dien_thoai" thì sẽ tốt hơn:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    info@companyname.com
+  </td>
+  ```
+
+  Đề xuất đổi thành:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    <a href="mailto:info@companyname.com">info@companyname.com</a>
+  </td>
+  ```
+
+  Phần textarea chưa đặt name nên khi post form chưa thể lấy được
+
+- [x] Bài 2
+
+  Bài làm tốt\*
+
+  Thay vì sử dụng thẻ p, ở đây là trích dẫn một câu nói, nên được thay bằng thẻ `q` để hợp lý hơn, nó sẽ tự động đưa thêm 2 dấu "
+
+  ```html
+  <q> Đây là một quote </q>
+  ```
+
+  Vì img là hình ảnh đại diện cho avatar của khách hàng, nên đưa alt là tên khách hàng thay vì để trống
+
+  Không nên sử dụng br để xuống dòng thủ công sẽ gây cứng nhắc và khó trong quá trình code, nên sử dụng width để co lại.
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Có thể style cho border của input, select màu xanh để giống bản mẫu hơn.
+
+  Các phần label ở phía bên trái cũng nên trỏ tới id của input phía bên phải thay vì để `for=""`
+
+  Các phần width của "Please specify your role" xử lý chưa được tốt, không thẳng hàng với checkbox ở dưới.
+
+  **Sai** semantics, đang sử dụng thẻ br để tạo khoảng cách giữa 2 div.
+
+- [x] Bài 4
+
+  Bài làm tốt \*
+
+  Các phần số điện thoại, email nên gắn thẻ a phù hợp thay vì không sử dụng hoặc thẻ a sai ý nghĩa.
+
+  Phần thông tin liên hệ được thể hiện là một list, nên sử dụng ul, li thay cho thẻ p
+
+  Phần nav ở trên thể hiện là một thanh điều hướng, nên sử dụng thẻ nav để bao bọc.
+
+  Phần thông tin liên hệ được thể hiện là một list, nên sử dụng ul, li thay cho thẻ p
+
+- [x] Bài 5
+
+  Bài làm rất tốt \*
+
+## [Lê Tùng Dương](view-source:https://duong1801.github.io/f8-fullstack-k5/Day-3/ex01.html)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Phần email nên được thêm thẻ a với thuộc tính href="mailto:email" thì sẽ tốt hơn
+  Phần số điện thoại nên được thêm thẻ a với thuộc tính href="tel:so_dien_thoai" thì sẽ tốt hơn:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    info@companyname.com
+  </td>
+  ```
+
+  Đề xuất đổi thành:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    <a href="mailto:info@companyname.com">info@companyname.com</a>
+  </td>
+  ```
+
+  Sai semantics: Thẻ section được sử dụng để thể hiện một phần lớn của trang web, không được sử dụng 2 thẻ section trùng nhau
+
+  Phần `.info-detail` không được thể hiện như một đoạn văn, không nên sử dụng thẻ p, thay vào đó nên sử dụng div
+
+- [x] Bài 2
+
+  Bài làm tốt\*
+
+  Thay vì sử dụng thẻ p, ở đây là trích dẫn một câu nói, nên được thay bằng thẻ `q` để hợp lý hơn, nó sẽ tự động đưa thêm 2 dấu "
+
+  ```html
+  <q> Đây là một quote </q>
+  ```
+
+  Vì img là hình ảnh đại diện cho avatar của khách hàng, nên đưa alt là tên khách hàng thay vì để trống
+
+  Hình ảnh không hợp lý, hình ảnh trong bài mẫu sử dụng hình tròn và nằm ở trên thay vì cao full như trong bài
+
+- [x] Bài 3
+
+  Bài làm chưa tốt
+
+  Sai giao diện so với bài mẫu.
+
+  Có thể style cho border của input, select màu xanh để giống bản mẫu hơn.
+
+  Các phần label ở phía bên trái cũng nên trỏ tới id của input phía bên phải thay vì để `for=""`
+
+  Nên format lại code ở `.sign-on`
+
+  Các thẻ select nên đưa name vào để có thể nhận được khi submit form
+
+- [x] Bài 4
+
+  Bài làm tốt \*
+
+  Sai giao diện mẫu, ở bài mẫu có phần map dài hơn.
+
+  Các phần số điện thoại, email nên gắn thẻ a phù hợp thay vì không sử dụng hoặc thẻ a sai ý nghĩa.
+
+  Phần thông tin liên hệ được thể hiện là một list, nên sử dụng ul, li thay cho thẻ p
+
+  Phần đường dẫn chưa đúng màu so với bản mẫu
+
+- [x] Bài 5
+
+  Bài làm rất tốt \*
+
+  Không thể chắc chắn ở trường hợp này bấm vào button sẽ hiện ra modal hay thực hiện action nào, không nên bọc thẻ a ở ngoài như vậy.
+
+## [Bùi Minh Chí](view-source:https://ronbanh549.github.io/f8-fullstack-k5/Day-3/bai1.html)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Phần email nên được thêm thẻ a với thuộc tính href="mailto:email" thì sẽ tốt hơn
+  Phần số điện thoại nên được thêm thẻ a với thuộc tính href="tel:so_dien_thoai" thì sẽ tốt hơn:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    info@companyname.com
+  </td>
+  ```
+
+  Đề xuất đổi thành:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    <a href="mailto:info@companyname.com">info@companyname.com</a>
+  </td>
+  ```
+
+- [x] Bài 2
+
+  Bài làm tốt\*
+
+  Nên tách style ra thành một file riêng, để tránh rối code.
+
+  Thay vì sử dụng thẻ p, ở đây là trích dẫn một câu nói, nên được thay bằng thẻ `q` để hợp lý hơn, nó sẽ tự động đưa thêm 2 dấu "
+
+  ```html
+  <q> Đây là một quote </q>
+  ```
+
+  Vì img là hình ảnh đại diện cho avatar của khách hàng, nên đưa alt là tên khách hàng thay vì để trống
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Có thể style cho border của input, select màu xanh để giống bản mẫu hơn.
+
+  Các phần label ở phía bên trái cũng nên trỏ tới id của input phía bên phải thay vì để `for=""`
+
+  Các thẻ select nên đưa name vào để có thể nhận được khi submit form
+
+  Nên format lại code ở `.sign-on` và `.role`
+
+- [x] Bài 4
+
+  Bài làm tốt \*
+
+  Sai giao diện mẫu, ở bài mẫu có phần map dài hơn.
+
+  Các phần số điện thoại, email nên gắn thẻ a phù hợp thay vì không sử dụng hoặc thẻ a sai ý nghĩa.
+
+  Phần thông tin liên hệ được thể hiện là một list, nên sử dụng ul, li thay cho thẻ p
+
+  Phần đường dẫn chưa đúng màu so với bản mẫu
+
+- [x] Bài 5
+
+  Bài làm tốt \*
+
+  Thẻ p được sử dụng để thể hiện một đoạn văn, không được sử dụng để hiển thị một đoạn text không có ý nghĩa như ở `.box-size`
+
+  Phần text title chưa đúng với bản mẫu, bản mẫu có độ dày của text không được highlight bé hơn.
+
+  Không thể chắc chắn ở trường hợp này bấm vào button sẽ hiện ra modal hay thực hiện action nào, không nên bọc thẻ a ở ngoài như vậy.
+
+## [Viên Đình Cường](view-source:https://vdcsk8.github.io/f8-fullstack-FSK5-B3/ex1.html)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Phần email nên được thêm thẻ a với thuộc tính href="mailto:email" thì sẽ tốt hơn
+  Phần số điện thoại nên được thêm thẻ a với thuộc tính href="tel:so_dien_thoai" thì sẽ tốt hơn:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    info@companyname.com
+  </td>
+  ```
+
+  Đề xuất đổi thành:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    <a href="mailto:info@companyname.com">info@companyname.com</a>
+  </td>
+  ```
+
+- [x] Bài 2
+
+  Bài làm tốt\*
+
+  Thay vì đặt thêm 1 div class là row, thêm luôn 1 class vào `.feedback-list`
+
+  Thay vì sử dụng thẻ p, ở đây là trích dẫn một câu nói, nên được thay bằng thẻ `q` để hợp lý hơn, nó sẽ tự động đưa thêm 2 dấu "
+
+  ```html
+  <q> Đây là một quote </q>
+  ```
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Phần input của **City of Employment** nên đưa thêm name vào để khi submit form có thể lấy được.
+
+  Có thể style cho border của input, select màu xanh để giống bản mẫu hơn.
+
+  Các thẻ select nên đưa name vào để có thể nhận được khi submit form
+
+  Nên format lại code ở `.Please` và `.single`
+
+- [x] Bài 4
+
+  Bài làm tốt
+
+  Phần nav phía trên được sử dụng như một thanh điều hướng, cần được bọc một thẻ nav thay vì để trống như trong bài
+
+  Các phần số điện thoại, email nên gắn thẻ a phù hợp thay vì không sử dụng hoặc thẻ a sai ý nghĩa.
+
+  Phần thông tin liên hệ được thể hiện là một list, nên sử dụng ul, li thay cho thẻ p
+
+- [x] Bài 5
+
+  Bài làm tốt \*
+
+  Phần text title chưa đúng với bản mẫu, bản mẫu có độ dày của text không được highlight bé hơn.
+
+  Không thể chắc chắn ở trường hợp này bấm vào button sẽ hiện ra modal hay thực hiện action nào, không nên bọc thẻ a ở ngoài như vậy.
+
+## [Nguyễn Tuấn Hùng](view-source:https://vdcsk8.github.io/f8-fullstack-FSK5-B3/ex1.html)
+
+- [x] Bài 1
+
+  Bài làm rất tốt
+
+  Phần name của các field nên đồng nhất hơn về viết hoa, viết thường.
+
+  Các phần field thiếu padding như trong bản mẫu.
+
+- [x] Bài 2
+
+  Bài làm không tốt
+
+  Sử dụng đường dẫn ảnh là absolute khiến ảnh không được hiển thị vì sai đường dẫn.
+
+  Các phần tên của user không phải là một tiêu đề, không nên sử dụng thẻ heading
+
+  Thay vì sử dụng thẻ p, ở đây là trích dẫn một câu nói, nên được thay bằng thẻ `q` để hợp lý hơn, nó sẽ tự động đưa thêm 2 dấu "
+
+  ```html
+  <q> Đây là một quote </q>
+  ```
+
+- [x] Bài 3
+
+  Bài làm tốt\*
+
+  Có thể style cho border của input, select màu xanh để giống bản mẫu hơn.
+
+  Các button đang sai vị trí so với bản mẫu.
+
+- [x] Bài 4
+
+  Bài làm rất tốt
+
+- [x] Bài 5
+
+  Bài làm tốt \*
+
+  Không thể chắc chắn ở trường hợp này bấm vào button sẽ hiện ra modal hay thực hiện action nào, không nên bọc thẻ a ở ngoài như vậy.
+
+## [Trần Thế Vĩ](view-source:https://tranthevink.github.io/f8_fullstack_k5/Homework/day3/unit1-contact-us.html)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Phần email nên được thêm thẻ a với thuộc tính href="mailto:email" thì sẽ tốt hơn
+  Phần số điện thoại nên được thêm thẻ a với thuộc tính href="tel:so_dien_thoai" thì sẽ tốt hơn:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    info@companyname.com
+  </td>
+  ```
+
+  Đề xuất đổi thành:
+
+  ```html
+  <td>
+    <i class="far fa-envelope"></i>
+    <a href="mailto:info@companyname.com">info@companyname.com</a>
+  </td>
+  ```
+
+  Phần textarea thay vì sử dụng default value nên sử dụng placeholder để khi người dùng nhập không cần phải xoá đi.
+
+  Các field thiếu phần padding như trong bài mẫu.
+
+- [x] Bài 2
+
+  Bài làm tốt\*
+
+  Thay vì đặt thêm 1 div class là row, thêm luôn 1 class vào `.feedback-list`
+
+  Thay vì sử dụng thẻ p, ở đây là trích dẫn một câu nói, nên được thay bằng thẻ `q` để hợp lý hơn, nó sẽ tự động đưa thêm 2 dấu "
+
+  ```html
+  <q> Đây là một quote </q>
+  ```
+
+  Bọc quá nhiều div không cần thiết.
+
+  Thẻ p được sử dụng để thể hiện một đoạn văn, không nên viết ở phần tên user vì nó không phải một đoạn văn.
+
+  Phần alt của hình ảnh được sử dụng để mô tả cho hình ảnh, nên viết tên người dùng thay vì để " h image "
+
+  Nên format lại các phần class, có các khoảng cách không cần thiết.
+
+  Vì hình ảnh không có tỷ lệ vuông, nếu sử dụng border-radius 50% sẽ bị méo, thay vì đó có thể sử dụng 99px
+
+- [x] Bài 3
+
+  Bài làm tốt\*
+
+  Có thể style cho border của input, select màu xanh để giống bản mẫu hơn.
+
+  Nên format lại code
+
+- [x] Bài 4
+
+  Bài làm tốt
+
+  Các phần số điện thoại, email nên gắn thẻ a phù hợp thay vì không sử dụng hoặc thẻ a sai ý nghĩa.
+
+  Phần thông tin liên hệ được thể hiện là một list, nên sử dụng ul, li thay cho thẻ p
+
+  Các phần link sai màu so với bản mẫu.
+
+- [x] Bài 5
+
+  Bài làm tốt \*
+
+  Phần text title chưa đúng với bản mẫu, bản mẫu có độ dày của text không được highlight bé hơn.
