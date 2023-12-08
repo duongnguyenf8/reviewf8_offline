@@ -1,5 +1,22 @@
 # Dương review bài tập về nhà buổi 6 - Lớp K5
 
+## Nộp muộn
+
+- Trần Thế Vĩ (1p)
+- Bùi Minh Chí (3p)
+- Nguyễn Tiến Đạt (1h18p)
+- Lưu Ngọc Dương (Gần 3 tiếng)
+- Lê Đức Anh (3 tiếng)
+- Đinh Việt Hùng (3 tiếng rưỡi)
+- Nguyễn Ngọc Minh (Rất muộn)
+- Trần Quốc Việt (Rất muộn)
+
+## Chưa làm bài tập về nhà
+
+- Viên Đình Cường
+
+- Đào Quang Hùng
+
 ## [Nguyễn Văn Thắng](https://nvthang391.github.io/F8-FSK5/Day_6/bai1.html)
 
 - [x] Bài 1
