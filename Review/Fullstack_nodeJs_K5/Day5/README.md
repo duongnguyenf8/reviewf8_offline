@@ -22,6 +22,34 @@
 
 - Lê Tùng Dương(Repo trắng, không thấy bài 5)
 
+## [Lê Tùng Dương](https://duong1801.github.io/f8-fullstack-k5/Day-5/ex01.html)
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Form hơi dài so với bản mẫu, ở một trang web thực tế cũng hiếm có một form dài như vậy
+
+  Cần style lại background của thẻ select, đang sai màu so với bản mẫu.
+
+  Hiện đang để default value của text-area nên khi gõ phải xoá text cũ đi, và màu chữ rất mờ.
+
+  Phần checkbox, button chưa căn đều 2 bên so với các input, textarea
+
+- [x] Bài 2
+
+  Bài làm tốt
+
+  Bài làm có phần text sử dụng 1), 2)... Nên sử dụng thẻ ol để thể hiện list có thứ tự.
+
+  Vì đây là một section, có thể bọc section ra ngoài cùng, các box là các article
+
+- [x] Bài 3
+
+  Bài làm rất tốt
+
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, có chỉn chu tuy nhiên cần chú ý làm đẹp giao diện hơn nữa.
+
 ## [Nguyễn Ngọc Minh](https://minhhnguyenn.github.io/F8_Fullstack_BTVN/Btvnbuoi5/baitap1.html)
 
 - [x] Bài 1

@@ -1,0 +1,239 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K5/Day6</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 6 - Lớp K5</h1>
+<h2><a href="https://nvthang391.github.io/F8-FSK5/Day_6/bai1.html">Nguyễn Văn Thắng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu case hover vào thì hiển thị menu con</p>
+<p>Sai semantics:</p>
+<ul>
+<li>Thẻ button là một thẻ inline, không được bọc thẻ div.</li>
+</ul>
+<pre><code class="language-html">&lt;style&gt;
+  @import url(&quot;https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap&quot;);↩
+&lt;/style&gt;
+</code></pre>
+<p>Không cần thiết phải viết 1 thẻ style chỉ để import font, có thể viết vào file css bên dưới hoặc dùng thẻ link import của google</p>
+<pre><code class="language-html">&lt;script↩
+    src=&quot;https://kit.fontawesome.com/e954a9031e.js&quot;↩
+    crossorigin=&quot;anonymous&quot;
+&gt;&lt;/script&gt;
+</code></pre>
+<p>Với các bài nhỏ, không nên import bộ kit, nó sẽ gây nặng dự án. Thay vào đó ở bài chỉ cần icon font nên import 1 file font css là đủ.</p>
+<p>Các đoạn CSS này không cần thiết phải viết, có thể gộp chung vào solid:</p>
+<pre><code class="language-css">.fa-house-chimney,
+.fa-star,
+.fa-newspaper,
+.fa-briefcase,
+.fa-pen-to-square,
+.fa-phone {
+  font-size: 16px;
+}
+.fa-house-chimney,
+.fa-star,
+.fa-newspaper,
+.fa-briefcase,
+.fa-phone {
+  left: 12px;
+}
+</code></pre>
+<p>Không nên fix cứng width các nav như trong bài, nếu như có thay đổi text sẽ bị xuống dòng.</p>
+<p>Phần trống không cần thiết phải là một empty btn, thay vào đó có thể chia 2 khổ và flex justify-between hoặc position 1 item bên phải</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Vì sử dụng border nên sẽ bị đẩy vào trong.</p>
+<ul>
+<li>Có thể sử dụng outline thì sẽ không bị.</li>
+</ul>
+<p>Thiếu bóng màu ở dưới các icon như bản mẫu.</p>
+<p>Phần chữ <code>Learn More</code> không chỉ là text, ở đó thể hiện một đường dẫn, nên sử dụng thẻ a để thể hiện nó.</p>
+<pre><code class="language-html">&lt;style&gt;
+  @import url(&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap&quot;);↩
+&lt;/style&gt;
+</code></pre>
+<p>Không cần thiết phải viết 1 thẻ style chỉ để import font, có thể viết vào file css bên dưới hoặc dùng thẻ link import của google</p>
+<p>Không nên chia first row, second row, vì sẽ khó quản lý và khó responsive cho nhiều thiết bị, thay vào đó nên dùng flex kết hợp với flex-wrap thì hợp lý hơn.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Vì đây là một site login hoàn chỉnh, <strong><code>Login to your account</code></strong> nên là thẻ H1.</p>
+<p>Các thẻ a khi hover vào đang bị font-weight đậm làm bị nhảy chữ, có thể tìm hiểu tip-trick sử dụng text-shadow làm đậm.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, có chỉn chu, tuy nhiên các phần CSS nên được tối giản hơn nữa.</p>
+</li>
+</ul>
+<h2><a href="https://hunghiro.github.io/F8-fullstack-k5/F8-FT-k5/BVN%20no.6/">Nguyễn Tuấn Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai font: Sử dụng đường dẫn absolute nên khi deploy đang bị sai đường dẫn.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai font: Sử dụng đường dẫn absolute nên khi deploy đang bị sai đường dẫn.</p>
+<p>Phần chữ <code>Learn More</code> không phải là tiêu đề, ở đó thể hiện một đường dẫn, nên sử dụng thẻ a để thể hiện nó.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai font: Sử dụng đường dẫn absolute nên khi deploy đang bị sai đường dẫn.</p>
+<p>Font-size của tiêu đề <strong><code>Login to your account</code></strong> quá to so với bản mẫu.</p>
+<p>Vì đây là một site login hoàn chỉnh, <strong><code>Login to your account</code></strong> nên là thẻ H1.</p>
+<p>Checkbox chưa có kích thước to như bản mẫu.</p>
+<p>Form chỉ nên bọc ở nơi cần thiết, không cần thiết phải bọc vào cả tiêu đề chính</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm không tốt, vẫn còn chưa chỉn chu khi deploy xong chưa test lại. Folder vẫn chưa cấu trúc lại, chưa đổi tên.</p>
+</li>
+</ul>
+<h2><a href="https://nhat0712.github.io/f8-FS-OL/Day%206/bai3">Nguyễn Đức Nhật</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu case hover vào thì hiển thị menu con</p>
+<p>Khi bật sang một nav khác thì cần tắt child-nav cũ đi.</p>
+<ul>
+<li>Có thể làm điều này bằng sự kiện focus.</li>
+</ul>
+<p>Với các bài nhỏ, không nên import bộ kit, nó sẽ gây nặng dự án. Thay vào đó ở bài chỉ cần icon font nên import 1 file font css là đủ.</p>
+<p>Không nên đặt tên font khác đi, gây sự nhầm lẫn và khó dùng, nên dùng đúng tên của nó.</p>
+<p>Nên định nghĩa font ở trước khi sử dụng, như trong bài, html sử dụng nhưng ở dưới mới định nghĩa.</p>
+<pre><code class="language-css">html {
+  font-family: san;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: san;
+  src: url(./fonts/static/OpenSans-Light.ttf);
+}
+</code></pre>
+<p>Mũi tên tam giác của bài đang bị lệch so với bản mẫu.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Với các bài nhỏ, không nên import bộ kit, nó sẽ gây nặng dự án. Thay vào đó ở bài chỉ cần icon font nên import 1 file font css là đủ.</p>
+<p>Phần chữ <code>Learn More</code> không chỉ là text, ở đó thể hiện một đường dẫn, nên sử dụng thẻ a để thể hiện nó.</p>
+<p>Với bài này không cần chia table nhiều quá sẽ rất rối, mỗi box là một cột và 3 cột một hàng là được, nếu có thể, tìm hiểu flex-box thì bài này sẽ đơn giản hơn</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Tiêu đề chưa đủ đậm như bản mẫu.</p>
+<p>Box hiển thị đang quá bé so với tỷ lệ nhìn.</p>
+<p>Chưa có border-radius các cạnh</p>
+<p>Vì đây là một site login hoàn chỉnh, <strong><code>Login to your account</code></strong> nên là thẻ H1.</p>
+<p>Checkbox chưa có kích thước to như bản mẫu.</p>
+<p>Form chỉ nên bọc ở nơi cần thiết, không cần thiết phải bọc vào cả tiêu đề chính</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa chỉn chu các chi tiết nhỏ khiến bài làm chưa được hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="https://kzau1612.github.io/FSK5/day_6/BT1.html">Ngo Hoang Kim</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu mũi tên tam giác của bài.</p>
+<p>Phần style chính của bài phải để dưới cùng để độ ưu tiên cao hơn, dễ dàng để tinh chỉnh hơn.</p>
+<p>Thay vì phải có 1 div để cách top 50px có thể cách bằng nav luôn</p>
+<ul>
+<li>Không nên sử dụng bộ chọn tag-selector với trường hợp này vì chỉ dùng 1 lần, và cách này dễ bị conflict với các thẻ khác.</li>
+</ul>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Thiếu bóng màu ở dưới các icon như bản mẫu.</p>
+<p>Không nên chia 2 row, vì sẽ khó quản lý và khó responsive cho nhiều thiết bị, thay vào đó nên dùng flex kết hợp với flex-wrap thì hợp lý hơn.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Tiêu đề chưa đủ đậm như bản mẫu.</p>
+<p>Vì đây là một site login hoàn chỉnh, <strong><code>Login to your account</code></strong> nên là thẻ H1.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa chỉn chu các chi tiết nhỏ khiến bài làm chưa được hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="https://truongtn04.github.io/f8-fullstack-k5/day06/ex01.html">Trịnh Nam Trường</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Import rất nhiều font mặc dù không dùng gây nặng cho bài.</p>
+<p>Nên reset box-sizing: border-box để các element có thể dễ dàng sử dụng, tính toán styling hơn.</p>
+<p>Sai background so với bản mẫu, bản mẫu khi hover sử dụng background màu xanh không phải đỏ.</p>
+<p>Mũi tên tam giác của bài đang bị lệch so với bản mẫu.</p>
+<p>Phần style chính của bài phải để dưới cùng để độ ưu tiên cao hơn, dễ dàng để tinh chỉnh hơn.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Vì sử dụng border nên sẽ bị đẩy vào trong.</p>
+<ul>
+<li>Có thể sử dụng outline thì sẽ không bị.</li>
+</ul>
+<p>class item dùng chung nên để tên là <code>.box</code> hoặc <code>.item</code> để <code>.item1</code> sẽ gây khó hiểu khi đọc và tái sử dụng code.</p>
+<p>Phần style chính của bài phải để dưới cùng để độ ưu tiên cao hơn, dễ dàng để tinh chỉnh hơn.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Thiếu box-shadow ở icon giữa box.</p>
+<p>Tiêu đề chưa đủ đậm như bản mẫu.</p>
+<p>Vì đây là một site login hoàn chỉnh, <strong><code>Login to your account</code></strong> nên là thẻ H1.</p>
+<p>Thiếu background ở ngoài.</p>
+<p>Checkbox chưa có kích thước to như bản mẫu.</p>
+<p>Icon logo chưa đúng tỷ lệ, ở bản mẫu là một hình <strong>vuông</strong></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa chỉn chu các chi tiết nhỏ khiến bài làm chưa được hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="https://duong1801.github.io/f8-fullstack-k5/Day-6/ex01.html">Lê Tùng Dương</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Chưa thể hover được vào các element trong menu con.</p>
+<p>Mũi tên tam giác của bài đang bị lệch so với bản mẫu.</p>
+<p>Phần style chính của bài phải để dưới cùng để độ ưu tiên cao hơn, dễ dàng để tinh chỉnh hơn.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>class item dùng chung nên để tên là <code>.box</code> hoặc <code>.item</code> để <code>.item1</code> sẽ gây khó hiểu khi đọc và tái sử dụng code.</p>
+<p>Phần style chính của bài phải để dưới cùng để độ ưu tiên cao hơn, dễ dàng để tinh chỉnh hơn.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu icon giữa box.</p>
+<p>Tiêu đề chưa đủ đậm, to như bản mẫu.</p>
+<p>Vì đây là một site login hoàn chỉnh, <strong><code>Login to your account</code></strong> nên là thẻ H1.</p>
+<p>Thiếu background ở ngoài(Có link ảnh, tuy nhiên bị lỗi)</p>
+<p>Checkbox chưa có kích thước to như bản mẫu.</p>
+<p>Box chưa đúng tỷ lệ so với bản mẫu.</p>
+<p>Icon logo social ở phía dưới chưa đúng tỷ lệ, ở bản mẫu là một hình <strong>vuông</strong></p>
+<p>Thiếu box-shadow so với bản mẫu khiến cho form bị chìm.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên chưa chỉn chu các chi tiết nhỏ khiến bài làm chưa được hoàn thiện.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
