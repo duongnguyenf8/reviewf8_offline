@@ -1,5 +1,27 @@
 # Dương review bài tập về nhà buổi 8 - lớp K5
 
+## Chưa làm bài tập
+
+- Đinh Việt Hùng
+
+- Trần Thế Vĩ
+
+## Nộp muộn
+
+- Lưu Ngọc Dương
+
+- Viên Đình Cường
+
+- Đào Quang Hùng
+
+- Trịnh Nam Trường
+
+## Bài làm chưa hoàn thiện
+
+- Nguyễn Đức Nhật: Bài 3 chưa có.
+
+- Bùi Minh Chí: Bài 1 chưa làm.
+
 ## [Ngo Hoang Kim](https://kzau1612.github.io/FSK5/day_8/ex01.html)
 
 - [x] Bài 1
@@ -611,6 +633,8 @@
 
   Bài làm tốt
 
+  Sai font chữ của các heading, các heading sử dụng một font chữ có chân.
+
   Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,...
 
   Font chữ hơi bé so với một khung nhìn chính, các phần text nhỏ có thể đặt ở footer như @copy,... nhưng ở đây là một đoạn text cần người dùng đọc, có thể tăng lên 16px sẽ tốt hơn.
@@ -679,6 +703,6 @@
 
   Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,...
 
-  Font chữ hơi bé so với một khung nhìn chính, các phần text nhỏ có thể đặt ở footer như @copy,... nhưng ở đây là một đoạn text cần người dùng đọc, có thể tăng lên 16px sẽ tốt hơn.
+  Phần chữ content hơi nhạt, có thể tăng lên một chút như `#747474`, tham khảo các [color wheel](https://coolors.co/contrast-checker) để dễ dàng chọn màu hơn
 
-- [x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý và chỉn chu hơn một chút thì bài làm hoàn thiện.
+- [x] Đánh giá chung bài tập về nhà: Bài làm tốt(trừ bài 1), tuy nhiên cần chú ý và chỉn chu hơn một chút thì bài làm hoàn thiện.
