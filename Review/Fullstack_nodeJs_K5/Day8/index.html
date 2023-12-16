@@ -1,0 +1,562 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K5/Day8</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 8 - lớp K5</h1>
+<h2><a href="https://kzau1612.github.io/FSK5/day_8/ex01.html">Ngo Hoang Kim</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Không hover vào được các menu con</p>
+<p>Thẻ nav để thể hiện các thanh điều hướng, logo không phải một thanh điều hướng mà do khi sử dụng, người dùng có xu hướng bấm vào logo để về trang chủ, nhưng nó không phải là một nav, chỉ bọc nav ở list navigation bên trái.</p>
+<p>Vì mỗi nav khi hover lại ra một mega menu khác nhau, không nên dùng chung menu ở ngoài mà nên xử lý các menu con để trong nav cha. Điều này dễ dàng kiểm soát và fix luôn được lỗi không hover được menu con.</p>
+<p>Sai semantics: Trong bài các list không phải các tiêu đề nên không nên sử dụng heading ở đây. Chỉ cần sử dụng các ul, li và các text in đậm là được.</p>
+<p>Các phần CSS tuy còn hơi thủ công nhưng cơ bản là rất tốt.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt.</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, rất chỉn chu(Trừ bài 1), cần phân tích các nghiệp vụ thực tế vào bài để làm tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://tiendat211294.github.io/f8_offline_k5/buoi-8/bai-1.html">Nguyen Tien Dat</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Icon logo chưa giống bản mẫu. Có thể tìm kiếm trên mạng một hình gần giống, như vậy sẽ giúp bài tập có chút chỉn chu hơn.</p>
+<p>Với các menu, user chuộng việc hover hiển thị menu con hơn, vì trong mắt user, nếu bấm vào một menu thì sẽ chuyển hướng.</p>
+<p>Với từng khung menu con, có thể thấy nó chung ý nghĩa là 1 list chỉ là xếp 2 hoặc nhiều cột hơn, nên xử lý 1 ul và khi quá chiều dài thì sẽ ngắt cột, xử dụng thuộc tính <code>flex-wrap</code>.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt.</p>
+<p>Không nên sử dụng các ảnh base64 vì nó sẽ làm xấu và khó kiểm xoát HTML, hơn nữa nó sẽ làm ảnh nặng hơn một chút khoảng 30-33%, không tái sử dụng được cache của trình duyệt nên nó sẽ load lâu hơn.</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Khi hover, các nút bị giảm opacity quá mức, nó không mang lại hiệu ứng sáng mà giống hơn với hiệu ứng disabled, như vậy khiến user khó lựa chọn bấm hơn. Chỉ nên giảm một chút xuống .85 hoặc .8 là quá đủ.</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+<p>Việc fix cứng height của thẻ p chỉ đúng ở trường hợp này, nếu mô tả dài hơn thì chưa chắc. Nên xử lý cắt các đoạn text dài, phần height của <code>.option</code> mới cần fix cứng sau đó căng các element trong ra đầu cuối, như vậy button lúc nào cũng ở cuối.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, rất chỉn chu(Trừ bài 1), cần phân tích các nghiệp vụ thực tế vào bài để làm tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://tiendat211294.github.io/f8_offline_k5/buoi-8/bai-1.html">Nguyễn Tuấn Hùng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Thẻ nav để thể hiện các thanh điều hướng, logo không phải một thanh điều hướng mà do khi sử dụng, người dùng có xu hướng bấm vào logo để về trang chủ, nhưng nó không phải là một nav, chỉ bọc nav ở list navigation bên trái.</p>
+<p>Với các menu to như mega menu, nên xử lý ẩn, khi nào hover mới hiển thị vì nó quá to và chiếm diện tích, ngoài ra nếu muốn điều hướng user không phải cuộn lên đầu để điều hướng.</p>
+<p>Sai semantics: Trong bài các list không phải các tiêu đề nên không nên sử dụng heading ở đây. Chỉ cần sử dụng các ul, li và các text in đậm là được.</p>
+<ul>
+<li>Bài làm tốt, có chỉn chu tuy nhiên cần phân tích nghiệp vụ tốt nữa.</li>
+</ul>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt:
+<strong>Method của form không có cái nào là dialog!</strong></p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Khi hover, cần thay đổi button một chút để user nhận ra sự thay đổi, không phải ai cũng hiểu được nó.</p>
+<p>Các nút tăng, giảm, số bé hơn bản mẫu.</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+<p>Các hình ảnh không hợp với services. Nên sử dụng ảnh khác.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, nhưng quá tập chung vào phần nổi css, nên tập chung làm người dùng để hiểu hơn về bài tập</p>
+</li>
+</ul>
+<h2><a href="https://minhhnguyenn.github.io/F8_Fullstack_BTVN/Btvnbuoi8/megamenu.html">Nguyễn Ngọc Minh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Chưa có border-radius phần mega menu như bản mẫu</p>
+<p>Phần navigation nên sử dụng thẻ nav để thể hiện thay vì div.</p>
+<p>Sai semantics: Trong bài các list không phải các tiêu đề nên không nên sử dụng heading ở đây. Chỉ cần sử dụng các ul, li và các text in đậm là được.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Trong bài có 2 button, nên phân tích xem đâu là button cần người dùng bấm vào hơn, đưa nó thành màu primary từ đầu(màu xanh)</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Font chữ quá bé so với bản mẫu.</p>
+<ul>
+<li>Với máy tính nên để font chữ khoảng 13-14px là nhỏ nhất</li>
+<li>Với điện thoại khoảng 11-12px là nhỏ nhất</li>
+</ul>
+<p>Không nên để bản máy tính là 12px, rất khó nhìn.</p>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt. Chỉ cần chú ý thêm một chút là hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="https://nhat0712.github.io/f8-FS-OL/Day%208/bai1">Nguyễn Đức Nhật</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p><strong>Các tên folder không nên sử dụng có dấu cách, ký tự đặc biệt, viết hoa viết thường không có quy tắc, nó khiến đường dẫn xấu và có thể sai sót khi import, sử dụng...</strong></p>
+<p>Với các menu to như mega menu, nên xử lý ẩn, khi nào hover mới hiển thị vì nó quá to và chiếm diện tích, ngoài ra nếu muốn điều hướng user không phải cuộn lên đầu để điều hướng.</p>
+<ul>
+<li>Bài làm tốt, có chỉn chu tuy nhiên cần phân tích nghiệp vụ tốt nữa.</li>
+</ul>
+<p>Với các label để input bên trong, không cần dùng for nữa, nên xóa đi.</p>
+<p>Không nên fix cứng số cột sẽ rất khó thay đổi, thay vì thế nên xử lý bằng ul-li để đúng hơn, fix chiều cao và sử dụng <code>flex-wrap</code> để ngắt cột khi cần.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p><strong>Các tên folder không nên sử dụng có dấu cách, ký tự đặc biệt, viết hoa viết thường không có quy tắc, nó khiến đường dẫn xấu và có thể sai sót khi import, sử dụng...</strong></p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>CSS báo lỗi: <code>padding: o;</code> Invalid value =&gt; <code>padding: 0px;</code></p>
+<p>Khi hover, cần thay đổi button một chút để user nhận ra sự thay đổi, không phải ai cũng hiểu được nó.</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3: Sai đường dẫn, tìm chính xác thì 404</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm chưa tốt, chưa chỉn chu từ tên folder, bài 3 không có. Xem github chưa có</p>
+</li>
+</ul>
+<h2><a href="https://nvthang391.github.io/F8-FSK5/Day_8/bai1.html">Nguyen Van Thang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Cần chỉn chu hơn vào tiêu đề, không phải lúc nào cũng là Document</p>
+<p>Bài làm tốt</p>
+<p>Với các menu, user chuộng việc hover hiển thị menu con hơn, vì trong mắt user, nếu bấm vào một menu thì sẽ chuyển hướng.</p>
+<p>Với từng khung menu con, có thể thấy nó chung ý nghĩa là 1 list chỉ là xếp 2 hoặc nhiều cột hơn, nên xử lý 1 ul và khi quá chiều dài thì sẽ ngắt cột, xử dụng thuộc tính <code>flex-wrap</code>.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Cần chỉn chu hơn vào tiêu đề, không phải lúc nào cũng là Document</p>
+<p>Bài làm tốt.</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Khi hover, cần thay đổi button một chút để user nhận ra sự thay đổi, không phải ai cũng hiểu được nó.</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Cần chỉn chu hơn vào tiêu đề, không phải lúc nào cũng là Document</p>
+<p>Bài làm tốt</p>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+<p>Chưa rõ về chức năng của odd, even trong bài. Nếu chỉ position relative thì đưa hết vào <code>.item</code> còn các button sau khi absolute cũng chưa có chức năng gì mới.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt, có sự đầu tư vào bài tập. Cần phát huy và <strong>chú ý vào thẻ title</strong> để hiểu hơn về bài tập.</p>
+</li>
+</ul>
+<h2><a href="https://tranquocviet111122.github.io/f8-fullstack-fsk5/Day-8/html/Bai1/bai1.html">Tran Quoc Viet</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Không nên đưa h1 vào trong header trừ trường hợp bất khả kháng, header như này sẽ được tái sử dụng ở rất nhiều page khác nhau, nếu như sử dụng h1 ở header thì tiêu đề chính của trang sẽ là gì.</p>
+<p>Với các menu to như mega menu, nên xử lý ẩn, khi nào hover mới hiển thị vì nó quá to và chiếm diện tích, ngoài ra nếu muốn điều hướng user không phải cuộn lên đầu để điều hướng.</p>
+<ul>
+<li>Bài làm tốt, có chỉn chu tuy nhiên cần phân tích nghiệp vụ tốt nữa.</li>
+</ul>
+<p>Với từng khung menu con, có thể thấy nó chung ý nghĩa là 1 list chỉ là xếp 2 hoặc nhiều cột hơn, nên xử lý 1 ul và khi quá chiều dài thì sẽ ngắt cột, xử dụng thuộc tính <code>flex-wrap</code>.</p>
+<p>Đang xử lý quá thủ công với các khoảng trống, bài làm chưa được tốt về cách phân tích giao diện, nếu như sửa một chút, bài này chắc chắn phải xây lại từ đầu.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt.</p>
+<p>Không cần phải sử dụng tới 1 class <code>.body</code>, và với phần cart hoặc cả trang web thì nên rộng 100vw, chứ không co lại 80%.</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Khi hover, cần thay đổi button một chút để user nhận ra sự thay đổi, không phải ai cũng hiểu được nó.</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p><strong>Bài làm không tốt</strong></p>
+<p>Sai hầu hết semantics, thay vì sử dụng thẻ p, ở bài sử dụng <code>.item-p</code>, thay vì button, trong bài sử dụng <code>.item-btn</code>.</p>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+<p>Với các hình ảnh nên có alt hợp lý, với trường hợp này, có thể sẽ là tiêu đề của service đó.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm không tốt, đa số chưa đúng về semantics, làm có phần hơi chắp vá, cần làm cố gắng hơn ở các bài tới.</p>
+</li>
+</ul>
+<h2><a href="https://ducanhprogram.github.io/f8-fullstack-k5/Day-8/Bai1.html">Lê Đức Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Thiếu borer-radius menu con giống bản mẫu.</p>
+<p>Không hover vào được các menu con</p>
+<p>Với header của trang web nên sử dụng thẻ header để bao bọc ở ngoài vì không phải header chỉ có nav, có thể còn tìm kiếm, còn cart, còn logo, đăng nhập, đăng ký,... Có thể tham khảo header của shopee để hiểu hơn.</p>
+<p>Thẻ nav để thể hiện các thanh điều hướng, logo không phải một thanh điều hướng mà do khi sử dụng, người dùng có xu hướng bấm vào logo để về trang chủ, nhưng nó không phải là một nav, chỉ bọc nav ở list navigation bên trái.</p>
+<p>Sai semantics: Trong bài, logo đang là h2, vậy nó đang bổ nghĩa cho gì của tiêu đề chính, header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header</p>
+<p>Không sử dụng table để chia layout. Table giúp thể hiện một bảng liệt kê, không phải sử dụng để chia layout.</p>
+<p>Các font có thể sử dụng google font hoặc tốt nhất là tải font về, tuy nhiên nên đưa sang 1 file css khác, tách ra thì sẽ tốt hơn, dễ nhìn và kiểm soát, sửa lỗi hơn.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt.</p>
+<p>Số 4 trong heading bị lệch.</p>
+<p>Tiêu đề của cart có thể là h2 trong trường hợp là trang shop, tuy nhiên h3 thì chưa bổ nghĩa cho h2 nào trong bài.</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Trong bài có 2 button, nên phân tích xem đâu là button cần người dùng bấm vào hơn, đưa nó thành màu primary từ đầu(màu xanh)</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: space-between;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: space-between;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-between</code> như sau:</p>
+<pre><code class="language-css">.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,...</p>
+<p>Bài làm đang sử dụng padding fix cứng để căn giữa thẻ p và text bên trong, như vậy là không được tốt. Thay vì thế nên flex thẻ cha để căn giữa thẻ p và <code>text-align: center</code> để căn text bên trong.</p>
+<p>Class cho 1 item không nên sử dụng số nhiều: <code>.services-items</code> =&gt; <code>.services-item</code></p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy hơi chắp vá nếu có thể nên sửa lại để học cách viết tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="https://duong1801.github.io/f8-fullstack-k5/Day-8/ex01.html">Lê Tung Duong</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Sai semantics: Trong bài, cách tiêu đề của menu đang là h3, nó đang không bổ nghĩa cho gì của tiêu đề chính, header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header</p>
+<p>Với từng khung menu con, có thể thấy nó chung ý nghĩa là 1 list chỉ là xếp 2 hoặc nhiều cột hơn, nên xử lý 1 ul và khi quá chiều dài thì sẽ ngắt cột, xử dụng thuộc tính <code>flex-wrap</code>.</p>
+<p>Nên đưa css của bài xuống dưới cùng để đảm bảo được ghi đè tất cả các thư viện trên, dễ custom hơn chỉnh sửa hơn.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt.</p>
+<p>Số 4 trong heading bị lệch.</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Trong bài có 2 button, nên phân tích xem đâu là button cần người dùng bấm vào hơn, đưa nó thành màu primary từ đầu(màu xanh)</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-center</code> như sau:</p>
+<pre><code class="language-css">.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,...</p>
+<p>Font chữ hơi bé so với một khung nhìn chính, các phần text nhỏ có thể đặt ở footer như @copy,... nhưng ở đây là một đoạn text cần người dùng đọc, có thể tăng lên 16px sẽ tốt hơn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý và chỉn chu hơn một chút thì bài làm hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="https://ronbanh549.github.io/f8-fullstack-k5/Day-8/bai2.html">Bùi Minh Chí</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1 =&gt; Chưa làm</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt.</p>
+<p>Số 4 trong heading bị lệch.</p>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,...</p>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+<p>Cần chú ý hơn vào cách viết tắt, không phải ai cũng sẽ hiểu được nó ví dụ:</p>
+<pre><code class="language-css">.products__qty
+</code></pre>
+<p>Rõ ràng nó chưa thể hiện là quantity mà ở trong có một span mới thể hiện quantity.</p>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+<pre><code class="language-css">.class {
+  display: flex;
+  justify-content: space-between;
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  display: flex;
+  justify-content: space-between;
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+<p>Nên tách nó thành 1 class chung như: <code>.flex-between</code> như sau:</p>
+<pre><code class="language-css">.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.class {
+  /*thuoc tinh 1: abc*/
+  /*thuoc tinh 2: def*/
+}
+.class2 {
+  /*thuoc tinh 1: ghi*/
+  /*thuoc tinh 2: qka*/
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,...</p>
+<p>Font chữ hơi bé so với một khung nhìn chính, các phần text nhỏ có thể đặt ở footer như @copy,... nhưng ở đây là một đoạn text cần người dùng đọc, có thể tăng lên 16px sẽ tốt hơn.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt, tuy nhiên cần chú ý và chỉn chu hơn một chút thì bài làm hoàn thiện.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

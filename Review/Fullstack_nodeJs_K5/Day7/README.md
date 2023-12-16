@@ -9,12 +9,8 @@
 
 - Đinh Việt Hùng
 - Trần Thế Vĩ
-- Nguyễn Văn Thắng
-- Lê Đức Anh
 - Đào Quang Hùng
-- Bùi Minh Chí
 - Nguyễn Ngọc Minh
-- Nguyễn Tuấn Hùng
 
 ## [Nguyen Tien Dat](view-source:https://tiendat211294.github.io/f8_offline_k5/buoi-7/bai-1.html)
 
@@ -29,11 +25,13 @@
   ```html
   <link
     href="https://fonts.googleapis.com/css2?family=Asap&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="CSS/bai-1.css" />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
   ```
 
   - Đề xuất sửa thành:
@@ -41,10 +39,12 @@
     ```html
     <link
       href="https://fonts.googleapis.com/css2?family=Asap&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="CSS/bai-1.css" />
     ```
 
@@ -55,7 +55,8 @@
   ```html
   <link
     href="https://fonts.googleapis.com/css2?family=Asap&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+  />
   ```
 
   Thay vì sử dụng margin thì nên sử dụng position để có thể dễ dàng style và tính toán hơn
@@ -102,13 +103,15 @@
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/BT1.css" />
     ```
@@ -118,7 +121,8 @@
   ```html
   <link
     href="https://fonts.googleapis.com/css2?family=Asap&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+  />
   ```
 
   Thay vì sử dụng margin thì nên sử dụng position để có thể dễ dàng style và tính toán hơn
@@ -137,13 +141,15 @@
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/BT2.css" />
     ```
@@ -164,13 +170,15 @@
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/BT3.css" />
     ```
@@ -196,12 +204,14 @@
     ```html
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="bai1.css" />
     ```
@@ -234,13 +244,15 @@
     <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/BT3.css" />
     ```
@@ -305,7 +317,8 @@ Không nên đặt tên folder viết có chứa các ký tự đặc biệt là
   <link rel="stylesheet" href="CSS/bai-1.css" />
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
   ```
 
   - Đề xuất sửa thành:
@@ -313,7 +326,8 @@ Không nên đặt tên folder viết có chứa các ký tự đặc biệt là
     ```html
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="CSS/bai-1.css" />
     ```
 
@@ -354,7 +368,8 @@ Không nên đặt tên folder viết có chứa các ký tự đặc biệt là
   ```html
   <link
     href="https://fonts.googleapis.com/css2?family=Asap&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+  />
   ```
 
 - [x] Bài 2
@@ -390,3 +405,143 @@ Không nên đặt tên folder viết có chứa các ký tự đặc biệt là
   Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.
 
 - [x] Đánh giá chung bài tập về nhà: Các bài làm tốt, tuy nhiên cần chú ý sử dụng thẻ, cấu trúc HTML tốt hơn.
+
+## [Nguyễn Tuấn Hùng](view-source:https://duongluu9898.github.io/f8-duongluu-fullstack-k5/day7/html/baitap1.html)
+
+Không nên đặt các tên folder có chứa ký tự đặc biệt, viết hoa viết thường lộn xộn gây khó hiểu và gây xấu url
+
+- [x] Bài 1
+
+  Bài làm tốt
+
+  Font chữ quá nhỏ, thông thường với máy tính khoảng 13-14px là tối thiểu, còn với điện thoại là khoảng 11-12.
+
+  Hơi lạm dụng flex với `.price` chỉ cần padding trên dưới rồi text-align center là đủ.
+
+- [x] Bài 2
+
+  Bài làm tốt
+
+  Trong style có đoạn cần sửa lại:
+
+  ```css
+  width: 100%px;
+  ```
+
+  Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Các item được thể hiện là một phần điều hướng, nên sử dụng thẻ nav bọc vào.
+
+  Không nên đặt thẻ div bọc button có class là btn, làm như vậy sẽ dễ bị nhầm với các class button khác vì thường button sẽ đặt class là btn
+
+  Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.
+
+- [x] Đánh giá chung bài tập về nhà: Các bài làm tốt, tuy nhiên cần chú ý sử dụng thẻ, cấu trúc HTML tốt hơn.
+
+## [Nguyễn Văn Thắng](view-source:https://nvthang391.github.io/F8-FSK5/Day_7/bai1.html)
+
+- [x] Bài 1
+
+  Bài làm tốt\*
+
+  Cần chú ý hơn vào thẻ title của trang web, không phải lúc nào cũng là Document
+
+  Phần `.info-location` là một địa chỉ, sẽ tốt hơn nếu sử dụng thẻ a và link google map
+
+  Thay vì sử dụng thẻ img, ở đây nên sử dụng background thì hợp lý hơn
+
+- [x] Bài 2
+
+  Bài làm tốt
+
+  Phần quan trọng nhất: Tên nhà thầu nên được đưa vào heading, cụ thể trong bài có thể là H1
+
+  Thay vì sử dụng thẻ img, ở đây nên sử dụng background thì hợp lý hơn
+
+  Phần 3 item ở dưới được thể hiện là một thành phần chuyển trang, nên sử dụng thẻ nav thay vì ul.
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Các item được thể hiện là một phần điều hướng, nên sử dụng thẻ nav bọc vào.
+
+  Đã sử dụng before để làm filter rồi, nên xóa div filter đi.
+
+- [x] Đánh giá chung bài tập về nhà: Các bài làm tốt, chỉ cần chú ý thêm chút semantics và viết html có quy tắc hơn.
+
+## [Lê Đức Anh](view-source:https://ducanhprogram.github.io/f8-fullstack-k5/Day-7/Bai1.html)
+
+- [x] Bài 1
+
+  Bài làm tốt\*
+
+  Phần thông tin không phải 2 đoạn văn mà là 2, nên sử dụng 1 thẻ p với thẻ br
+
+  Phần `.price` mới là phần cần position, nếu chỉ position phần span ở trong thì tức là phần `.price` không cần thiết. Có thể relative bằng `.box`
+
+  Không nên căng background-size 100vw 100vh khiến ảnh bị méo.
+
+- [x] Bài 2
+
+  Bài làm tốt
+
+  Avatar của `div.image` thiếu border-radius như trong bản mẫu.
+
+  Phần quan trọng nhất: Tên nhà thầu nên được đưa vào heading, cụ thể trong bài có thể là H1
+
+  Phần 3 item ở dưới được thể hiện là một thành phần chuyển trang, nên sử dụng thẻ nav thay vì ul. Và cũng không nên để class là product, nó không mang ý nghĩa như vậy.
+
+  Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Thiếu border-radius như trong bản mẫu
+
+  Khi hover hiển thị hơi lệch, xấu.
+
+  Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.
+
+- [x] Đánh giá chung bài tập về nhà: Các bài làm ở mức làm được, tuy có làm đủ các case nhưng nếu chỉn chu theo bản mẫu hơn nữa thì bài làm hoàn thiện.
+
+## [Bùi Minh Chí](view-source:https://ronbanh549.github.io/f8-fullstack-k5/Day-7/bai1.html)
+
+- [x] Bài 1
+
+  Bài làm tốt\*
+
+  Phần tên của dự án là một phần quan trọng, có thể sẽ là h1 hoặc h2 chứ không phải div.
+
+  Phần thông tin không phải 2 đoạn văn mà là 2, nên sử dụng 1 thẻ p với thẻ br
+
+  Phần `.modal__address--position` không phải là một đoạn văn, nếu đúng nên sử dụng thẻ a với đường dẫn, có thể là google map.
+
+- [x] Bài 2
+
+  Bài làm tốt
+
+  Phần `.profile__content-info` không phải một tập hợp nhiều đoạn văn, nó mang hướng giới thiệu nhiều hơn, có thể dùng span với ul li là đủ.
+
+  Phần avatar nên có alt là tên của thì tốt hơn.
+
+  Phần quan trọng nhất: Tên nhà thầu nên được đưa vào heading, cụ thể trong bài có thể là H1
+
+  Phần 3 item ở dưới được thể hiện là một thành phần chuyển trang, nên sử dụng thẻ nav thay vì div với class là `.profile__nav`
+
+  Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.
+
+- [x] Bài 3
+
+  Bài làm tốt
+
+  Phần style nên đưa xuống dưới để đảm bảo ghi đè và có thể dễ dàng custom style của thư viện hơn.
+
+  Các item button được thể hiện là một phần điều hướng, nên sử dụng thẻ nav bọc vào.
+
+- [x] Đánh giá chung bài tập về nhà: Các bài làm ở mức làm được, tuy có làm đủ các case nhưng nếu chỉn chu theo bản mẫu hơn nữa thì bài làm hoàn thiện.

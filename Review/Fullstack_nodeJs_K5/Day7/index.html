@@ -8,12 +8,8 @@
 <ul>
 <li>Đinh Việt Hùng</li>
 <li>Trần Thế Vĩ</li>
-<li>Nguyễn Văn Thắng</li>
-<li>Lê Đức Anh</li>
 <li>Đào Quang Hùng</li>
-<li>Bùi Minh Chí</li>
 <li>Nguyễn Ngọc Minh</li>
-<li>Nguyễn Tuấn Hùng</li>
 </ul>
 <h2><a href="view-source:https://tiendat211294.github.io/f8_offline_k5/buoi-7/bai-1.html">Nguyen Tien Dat</a></h2>
 <ul>
@@ -24,21 +20,25 @@
 <p>Không nên để style của dự án ở trên gây khó khăn cho việc ghi đè các CSS của thư viện import. Nên để xuống cuối:</p>
 <pre><code class="language-html">&lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/bai-1.css&quot; /&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 </code></pre>
 <ul>
 <li>
 <p>Đề xuất sửa thành:</p>
 <pre><code class="language-html">&lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/bai-1.css&quot; /&gt;
 </code></pre>
 </li>
@@ -47,7 +47,8 @@
 <p>Trong CSS có đoạn import font chữ từ trong folder dự án, nhưng trong HTML vẫn để thẻ link google font của một font khác gây sự không đồng nhất, khó kiểm soát, nên sử dụng 1 loại.</p>
 <pre><code class="language-html">&lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 </code></pre>
 <p>Thay vì sử dụng margin thì nên sử dụng position để có thể dễ dàng style và tính toán hơn</p>
 </li>
@@ -84,13 +85,15 @@
 <pre><code class="language-html">&lt;!-- font awesome --&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 &lt;!-- google font --&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
 &lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/BT1.css&quot; /&gt;
 </code></pre>
@@ -99,7 +102,8 @@
 <p>Trong CSS có đoạn import font chữ từ trong folder dự án, nhưng trong HTML vẫn để thẻ link google font của một font khác gây sự không đồng nhất, khó kiểm soát, nên sử dụng 1 loại.</p>
 <pre><code class="language-html">&lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 </code></pre>
 <p>Thay vì sử dụng margin thì nên sử dụng position để có thể dễ dàng style và tính toán hơn</p>
 <p>Trong bài sử dụng icon đã download về nhưng lại sử dụng thêm link cdn ở ngoài cho fontawesome, mặc dù không dùng đến, gây nặng dự án và không cần thiết.</p>
@@ -114,13 +118,15 @@
 <pre><code class="language-html">&lt;!-- font awesome --&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 &lt;!-- google font --&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
 &lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/BT2.css&quot; /&gt;
 </code></pre>
@@ -139,13 +145,15 @@
 <pre><code class="language-html">&lt;!-- font awesome --&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 &lt;!-- google font --&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
 &lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/BT3.css&quot; /&gt;
 </code></pre>
@@ -170,12 +178,14 @@
 <p>Đề xuất sửa thành:</p>
 <pre><code class="language-html">&lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css&quot;
+/&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
 &lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;bai1.css&quot; /&gt;
 </code></pre>
@@ -202,13 +212,15 @@
 <pre><code class="language-html">&lt;!-- font awesome --&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 &lt;!-- google font --&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
 &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
 &lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,600;0,700;1,300&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/BT3.css&quot; /&gt;
 </code></pre>
@@ -261,14 +273,16 @@
 <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/bai-1.css&quot; /&gt;
 &lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 </code></pre>
 <ul>
 <li>
 <p>Đề xuất sửa thành:</p>
 <pre><code class="language-html">&lt;link
   rel=&quot;stylesheet&quot;
-  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot; /&gt;
+  href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css&quot;
+/&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;CSS/bai-1.css&quot; /&gt;
 </code></pre>
 </li>
@@ -302,7 +316,8 @@
 <p>Trong CSS có đoạn import font chữ từ trong folder dự án, nhưng trong HTML vẫn để thẻ link google font của một font khác gây sự không đồng nhất, khó kiểm soát, nên sử dụng 1 loại.</p>
 <pre><code class="language-html">&lt;link
   href=&quot;https://fonts.googleapis.com/css2?family=Asap&amp;display=swap&quot;
-  rel=&quot;stylesheet&quot; /&gt;
+  rel=&quot;stylesheet&quot;
+/&gt;
 </code></pre>
 </li>
 <li>
@@ -327,6 +342,116 @@
 </li>
 <li>
 <p>[x] Đánh giá chung bài tập về nhà: Các bài làm tốt, tuy nhiên cần chú ý sử dụng thẻ, cấu trúc HTML tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="view-source:https://duongluu9898.github.io/f8-duongluu-fullstack-k5/day7/html/baitap1.html">Nguyễn Tuấn Hùng</a></h2>
+<p>Không nên đặt các tên folder có chứa ký tự đặc biệt, viết hoa viết thường lộn xộn gây khó hiểu và gây xấu url</p>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Font chữ quá nhỏ, thông thường với máy tính khoảng 13-14px là tối thiểu, còn với điện thoại là khoảng 11-12.</p>
+<p>Hơi lạm dụng flex với <code>.price</code> chỉ cần padding trên dưới rồi text-align center là đủ.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Trong style có đoạn cần sửa lại:</p>
+<pre><code class="language-css">width: 100%px;
+</code></pre>
+<p>Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Các item được thể hiện là một phần điều hướng, nên sử dụng thẻ nav bọc vào.</p>
+<p>Không nên đặt thẻ div bọc button có class là btn, làm như vậy sẽ dễ bị nhầm với các class button khác vì thường button sẽ đặt class là btn</p>
+<p>Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Các bài làm tốt, tuy nhiên cần chú ý sử dụng thẻ, cấu trúc HTML tốt hơn.</p>
+</li>
+</ul>
+<h2><a href="view-source:https://nvthang391.github.io/F8-FSK5/Day_7/bai1.html">Nguyễn Văn Thắng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Cần chú ý hơn vào thẻ title của trang web, không phải lúc nào cũng là Document</p>
+<p>Phần <code>.info-location</code> là một địa chỉ, sẽ tốt hơn nếu sử dụng thẻ a và link google map</p>
+<p>Thay vì sử dụng thẻ img, ở đây nên sử dụng background thì hợp lý hơn</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Phần quan trọng nhất: Tên nhà thầu nên được đưa vào heading, cụ thể trong bài có thể là H1</p>
+<p>Thay vì sử dụng thẻ img, ở đây nên sử dụng background thì hợp lý hơn</p>
+<p>Phần 3 item ở dưới được thể hiện là một thành phần chuyển trang, nên sử dụng thẻ nav thay vì ul.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Các item được thể hiện là một phần điều hướng, nên sử dụng thẻ nav bọc vào.</p>
+<p>Đã sử dụng before để làm filter rồi, nên xóa div filter đi.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Các bài làm tốt, chỉ cần chú ý thêm chút semantics và viết html có quy tắc hơn.</p>
+</li>
+</ul>
+<h2><a href="view-source:https://ducanhprogram.github.io/f8-fullstack-k5/Day-7/Bai1.html">Lê Đức Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Phần thông tin không phải 2 đoạn văn mà là 2, nên sử dụng 1 thẻ p với thẻ br</p>
+<p>Phần <code>.price</code> mới là phần cần position, nếu chỉ position phần span ở trong thì tức là phần <code>.price</code> không cần thiết. Có thể relative bằng <code>.box</code></p>
+<p>Không nên căng background-size 100vw 100vh khiến ảnh bị méo.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Avatar của <code>div.image</code> thiếu border-radius như trong bản mẫu.</p>
+<p>Phần quan trọng nhất: Tên nhà thầu nên được đưa vào heading, cụ thể trong bài có thể là H1</p>
+<p>Phần 3 item ở dưới được thể hiện là một thành phần chuyển trang, nên sử dụng thẻ nav thay vì ul. Và cũng không nên để class là product, nó không mang ý nghĩa như vậy.</p>
+<p>Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Thiếu border-radius như trong bản mẫu</p>
+<p>Khi hover hiển thị hơi lệch, xấu.</p>
+<p>Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Các bài làm ở mức làm được, tuy có làm đủ các case nhưng nếu chỉn chu theo bản mẫu hơn nữa thì bài làm hoàn thiện.</p>
+</li>
+</ul>
+<h2><a href="view-source:https://ronbanh549.github.io/f8-fullstack-k5/Day-7/bai1.html">Bùi Minh Chí</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt*</p>
+<p>Phần tên của dự án là một phần quan trọng, có thể sẽ là h1 hoặc h2 chứ không phải div.</p>
+<p>Phần thông tin không phải 2 đoạn văn mà là 2, nên sử dụng 1 thẻ p với thẻ br</p>
+<p>Phần <code>.modal__address--position</code> không phải là một đoạn văn, nếu đúng nên sử dụng thẻ a với đường dẫn, có thể là google map.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm tốt</p>
+<p>Phần <code>.profile__content-info</code> không phải một tập hợp nhiều đoạn văn, nó mang hướng giới thiệu nhiều hơn, có thể dùng span với ul li là đủ.</p>
+<p>Phần avatar nên có alt là tên của thì tốt hơn.</p>
+<p>Phần quan trọng nhất: Tên nhà thầu nên được đưa vào heading, cụ thể trong bài có thể là H1</p>
+<p>Phần 3 item ở dưới được thể hiện là một thành phần chuyển trang, nên sử dụng thẻ nav thay vì div với class là <code>.profile__nav</code></p>
+<p>Đối với các layout có chữ hiển thị trên ảnh, nên có một bóng mờ, overlay để phủ lên, như vậy sẽ giúp chữ dễ đọc hơn, an toàn hơn khi bị thay ảnh khác.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Phần style nên đưa xuống dưới để đảm bảo ghi đè và có thể dễ dàng custom style của thư viện hơn.</p>
+<p>Các item button được thể hiện là một phần điều hướng, nên sử dụng thẻ nav bọc vào.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Các bài làm ở mức làm được, tuy có làm đủ các case nhưng nếu chỉn chu theo bản mẫu hơn nữa thì bài làm hoàn thiện.</p>
 </li>
 </ul>
 <script src="../../../assets/js/pages.js" defer></script></body></html>
