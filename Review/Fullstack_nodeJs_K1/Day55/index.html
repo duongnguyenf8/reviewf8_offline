@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day55</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 55 - Lớp K1</h1>
+<h2><a href="https://github.com/xuananh2212/db/tree/main/day55">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Nên ignore .env đi để tránh bị lỗi biến môi trường ở các môi trường khác</p>
+<p>Không nên sử dụng link delete là GET, đúng ra nên sử dụng method <strong>DELETE</strong></p>
+<ul>
+<li>
+<p>Chưa lấy next ra nhưng đã gọi</p>
+<pre><code class="language-js">//users.controllers.js:87
+delete: async (req, res) =&gt; {
+    const { id } = req.params;
+    const user = await userModel.inforUser(id);
+    if (!user.length) {
+          return next(createError(404));
+    }
+    res.render('users/delete');
+},
+</code></pre>
+</li>
+<li>
+<p>Vì <code>id</code> đã để auto increment, có thể sử dụng sắp xếp cả theo id.</p>
+<pre><code class="language-js">return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
+</code></pre>
+</li>
+<li>
+<p>Trong phần sửa, validate giống hệt phần thêm nên không sửa được:</p>
+<pre><code class="language-js">.test(
+  'unique',
+  'email đã được sử dụng bởi user khác',
+  async (value) =&gt; {
+    return await userModel.checkEmailWhenEdit(id, value);
+  }
+),
+</code></pre>
+</li>
+<li>
+<p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/anhquan2211/backend-fullstack-K1-F8/tree/main/day55">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<ul>
+<li>
+<p>Vì <code>id</code> đã để auto increment, có thể sử dụng sắp xếp cả theo id.</p>
+<pre><code class="language-js">return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
+</code></pre>
+</li>
+<li>
+<p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/nodejs/nodejs02">Duong Quoc Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Nên ignore .env đi để tránh bị lỗi biến môi trường ở các môi trường khác</p>
+<p>Chưa check unique khi sửa email của user, nhiều user có thể sử dụng một email.</p>
+<p>Chưa validate email khi sửa</p>
+<ul>
+<li>
+<p>Vì <code>id</code> đã để auto increment, có thể sử dụng sắp xếp cả theo id.</p>
+<pre><code class="language-js">return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
+</code></pre>
+</li>
+<li>
+<p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/Trungdeptraii/Bai_55_Le_Van_Trung.git">Le Van Trung</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Nên ignore .env đi để tránh bị lỗi biến môi trường ở các môi trường khác</p>
+<p>Không nên sử dụng link delete là GET, đúng ra nên sử dụng method <strong>DELETE</strong></p>
+<ul>
+<li>
+<p>Trong phần sửa, validate giống hệt phần thêm nên không sửa được:</p>
+<pre><code class="language-js">.test(
+  'unique',
+  'email đã được sử dụng bởi user khác',
+  async (value) =&gt; {
+    return await userModel.checkEmailWhenEdit(id, value);
+  }
+),
+</code></pre>
+</li>
+<li>
+<p>Vì <code>id</code> đã để auto increment, có thể sử dụng sắp xếp cả theo id.</p>
+<pre><code class="language-js">return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
+</code></pre>
+</li>
+<li>
+<p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day55">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Xóa chưa có confirm</p>
+<ul>
+<li>
+<p>Vì <code>id</code> đã để auto increment, có thể sử dụng sắp xếp cả theo id, updated_at.</p>
+<pre><code class="language-js">return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
+</code></pre>
+</li>
+<li>
+<p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a href="https://github.com/ha752002/NodeJs_learning/tree/main/day_55">Nguyen THi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Xóa chưa có confirm</p>
+<p>Không nên sử dụng link delete là GET, đúng ra nên sử dụng method <strong>DELETE</strong></p>
+<ul>
+<li>
+<p>Vì <code>id</code> đã để auto increment, có thể sử dụng sắp xếp cả theo id, updated_at.</p>
+<pre><code class="language-js">return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
+</code></pre>
+</li>
+<li>
+<p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
+</li>
+</ul>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
