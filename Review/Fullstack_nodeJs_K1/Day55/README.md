@@ -28,18 +28,6 @@
     return sql`SELECT * FROM users ${filter} ORDER BY created_at DESC`;
     ```
 
-  - Trong phần sửa, validate giống hệt phần thêm nên không sửa được:
-
-    ```js
-    .test(
-      'unique',
-      'email đã được sử dụng bởi user khác',
-      async (value) => {
-        return await userModel.checkEmailWhenEdit(id, value);
-      }
-    ),
-    ```
-
   - Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.
 
 ## [Luu Anh Quan](https://github.com/anhquan2211/backend-fullstack-K1-F8/tree/main/day55)

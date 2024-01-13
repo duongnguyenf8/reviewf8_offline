@@ -1,0 +1,466 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K6/Day3</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 3 - Lớp K6</h1>
+<h2><a href="view-source:https://viethoang-mai.github.io/Ex-Fullstack-K6/Day_03/Ex05.html#!">Mai Viet Hoang</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai font chữ, font chữ trong bản mẫu sử dụng là font chữ không chân</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không nên sử dụng 2 section lồng nhau như này, có thể sử dụng thẻ header thay thế</p>
+<pre><code class="language-html">&lt;section class=&quot;contact&quot;&gt;
+	&lt;section class=&quot;header&quot;&gt;
+		&lt;h1&gt;CONTACT US&lt;/h1&gt;
+		&lt;div
+			style=&quot;width: 70px;height: 3px;background: #ffbb42;margin-top: -15px;&quot;
+		&gt;&lt;/div&gt;
+	&lt;/section&gt;
+&lt;/section&gt;
+
+&lt;!-- Ở dưới còn 2 section nữa --&gt;
+</code></pre>
+<p>Trong input HTML, không có type mail</p>
+<pre><code class="language-html">&lt;input type=&quot;mail&quot; name=&quot;email&quot; placeholder=&quot;Your email&quot; /&gt;
+</code></pre>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;div class=&quot;item&quot;&gt;
+	&lt;i class=&quot;fa-regular fa-envelope&quot;&gt;&lt;/i&gt;
+	&lt;p&gt;info@companyname.com&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;div class=&quot;item&quot;&gt;
+	&lt;i class=&quot;fa-solid fa-phone&quot;&gt;&lt;/i&gt;
+	&lt;p&gt;+84 977 662 113&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không nên sử dụng 2 section lồng nhau như này, có thể sử dụng thẻ header thay thế</p>
+<pre><code class="language-html">&lt;section class=&quot;header&quot;&gt;
+	&lt;h1&gt;WHAT OUR CLIENTS SAY&lt;/h1&gt;
+&lt;/section&gt;
+
+&lt;!-- Ở dưới còn nhiều section lồng nhau nữa --&gt;
+</code></pre>
+<p>Phần username không phải là một đoạn văn hay mang ý nghĩa đoạn văn, nên sử dụng span thay vì o</p>
+<pre><code class="language-html">&lt;p class=&quot;name&quot;&gt;John Doe&lt;/p&gt;
+</code></pre>
+<p>Trong blockquote có thể sử dụng thẻ <code>q</code> cho mỗi quote để có sẵn 2 dấu quote và mang ý nghĩa là 1 quote</p>
+<pre><code class="language-html">&lt;blockquote&gt;
+	&amp;quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+	fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+	cupiditate?&amp;quot;
+&lt;/blockquote&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Không nên đặt className là <code>btn</code> khi làm div gom nhóm các button, tránh gây nhầm lẫn với 1 button</p>
+<pre><code class="language-html">&lt;div class=&quot;btn&quot;&gt;
+	&lt;button&gt;Login&lt;/button&gt;
+	&lt;button type=&quot;reset&quot;&gt;Reset&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Không nên sử dụng name của field viết hoa</p>
+<pre><code class="language-html">&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;Sign-on&quot; /&gt;Payroll&lt;/label&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm chưa tốt</p>
+<p>Với layout của bài, 1 tab chỉ hiển thị 1 content duy nhất, các content có cùng tầng ý nghĩa. Vì vậy heading không thể là <code>h1</code></p>
+<pre><code class="language-html">&lt;h1 class=&quot;heading&quot;&gt;ADS SECURITIES L.L.C.&lt;/h1&gt;
+</code></pre>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không nên sử dụng 2 section lồng nhau như này, có thể sử dụng thẻ header thay thế</p>
+<p>Phần địa chỉ là cùng 1 đoạn. Không phải là nhiều thẻ <code>p</code>, nếu muốn xuống dòng, nên sử dụng thẻ <code>br</code></p>
+<pre><code class="language-html">&lt;div class=&quot;address&quot;&gt;
+	&lt;p&gt;8th floor. C1 Tower&lt;/p&gt;
+	&lt;p&gt;Corniche Road. PO Box 93894&lt;/p&gt;
+	&lt;p&gt;Abu Dhabi. United Arab Emirates&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;div&gt;Email: &lt;a href=&quot;#!&quot;&gt;vhm@gmail.com&lt;/a&gt;&lt;/div&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;div&gt;Tell: +971 2 654 2300&lt;/div&gt;
+&lt;div&gt;Fax: +971 2 654 2323&lt;/div&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Phần box trên cùng giống với một placeholder để hình ảnh logo hơn là button, nên sử dụng div thay vì thẻ <code>&lt;button&gt;</code></p>
+<pre><code class="language-html">&lt;button class=&quot;btn&quot;&gt;
+	&lt;a href=&quot;#!&quot;&gt;190 x 50&lt;/a&gt;
+&lt;/button&gt;
+</code></pre>
+<p>Nên bọc thẻ a ra ngoài, nếu sử dụng thẻ a ở trong thì phải bấm vào text mới có thể chuyển hướng</p>
+<pre><code class="language-html">&lt;button class=&quot;btn&quot;&gt;
+	&lt;a href=&quot;#!&quot;&gt;View Plans&lt;/a&gt;
+&lt;/button&gt;
+</code></pre>
+</li>
+</ul>
+<h2><a href="https://phanvanahai1995.github.io/Execite3/Bai%201/index.html!">Phan Van Hai</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Font chữ quá nhỏ, thông thường với máy tính nên sử dụng font từ 14px, với điện thoai là từ 12-13px.</p>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;span&gt; info@companyname.com&lt;/span&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;span&gt;+1 800 123 1234&lt;/span&gt;
+</code></pre>
+<p>Không cần thiết phải bọc form vào toàn bộ phần content bên trái, chỉ nên bọc vào các phần tử cần bọc như input, button, bỏ qua heading.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt</p>
+<p>Phần username không phải là một đoạn văn hay mang ý nghĩa đoạn văn, nên sử dụng span thay vì o</p>
+<pre><code class="language-html">&lt;p class=&quot;name&quot;&gt;John Doe&lt;/p&gt;
+</code></pre>
+<p>Trong đoạn content có thể sử dụng thẻ <code>q</code> cho mỗi quote để có sẵn 2 dấu quote và mang ý nghĩa là 1 quote</p>
+<pre><code class="language-html">&lt;p class=&quot;content&quot;&gt;
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste quis
+	molestias, odit alias est ut. Voluptatibus nostrum labore necessitatibus
+	neque? Ullam, nam.
+&lt;/p&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Các thuộc tính không sử dụng như: <code>id=&quot;&quot;</code> nên xóa đi, thuộc tính id bắt buộc phải có giá trị</p>
+<p>Button để reset nên sử dụng type reset. Mặc định là submit</p>
+<p>Có thể styled cho border của input, select cho giống bản mẫu hơn</p>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm chưa tốt</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Các nội dung trong tab thông tin không phải là 1 list, chúng không có cùng 1 ý nghĩa mà đều bổ nghĩa cho tiêu đề</p>
+<pre><code class="language-html">&lt;ul&gt;&lt;/ul&gt;
+	&lt;li&gt;&lt;h3 class=&quot;heading&quot;&gt;ADS SECURITIES L.L.C&lt;/h3&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;8th floor.CI Tower&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Comiche fload.PO Box 93894&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Abu Dhabi. United Arab Emirates&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Tel:+971 2 657 2300&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Fax:+971 2 657 2323&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;address&quot;&gt;
+			Email:
+   &lt;a href=&quot;#!&quot; class=&quot;email&quot;&gt;fullstack.edu@gmail.com&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Phần địa chỉ là cùng 1 đoạn. Không phải là nhiều thẻ <code>li&gt;div</code>, nếu muốn xuống dòng, nên sử dụng thẻ <code>br</code></p>
+<pre><code class="language-html">&lt;li&gt;&lt;div class=&quot;address&quot;&gt;8th floor.CI Tower&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Comiche fload.PO Box 93894&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Abu Dhabi. United Arab Emirates&lt;/div&gt;&lt;/li&gt;
+</code></pre>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;li&gt;
+	&lt;div class=&quot;address&quot;&gt;
+		Email:
+		&lt;a href=&quot;#!&quot; class=&quot;email&quot;&gt;fullstack.edu@gmail.com&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/li&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Tel:+971 2 657 2300&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Fax:+971 2 657 2323&lt;/div&gt;&lt;/li&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Bài làm rất tốt.</p>
+</li>
+</ul>
+<h2><a href="https://vinhtran202.github.io/hoccode/Day-3/bai-tap-form-lien-he/">Tran Quang Vinh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai font chữ, font chữ trong bản mẫu sử dụng là font chữ không chân</p>
+<p>Chiều dài của textarea không đồng nhất với các input khác</p>
+<p>Các input, textarea,... (field nhập liệu) nên có một chút padding để chữ không bị dính vào viền</p>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;p&gt;&lt;i class=&quot;bi bi-envelope&quot;&gt; &lt;/i&gt; &amp;nbsp; Info@companyname.com&lt;/p&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;/i&gt; &amp;nbsp; +1 800 123 1234&lt;/p&gt;
+</code></pre>
+<p>Phần field bên phải được thể hiện là một form nhập liệu, nên bọc thẻ form vào.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không nên sử dụng 2 section lồng nhau như này, có thể sử dụng thẻ header thay thế</p>
+<pre><code class="language-html">&lt;section class=&quot;title&quot;&gt;
+	&lt;h1&gt;WHAT OUR CLIENTS SAY&lt;/h1&gt;
+	&lt;hr /&gt;
+&lt;/section&gt;
+
+&lt;!-- Ở dưới còn nhiều section lồng nhau nữa --&gt;
+</code></pre>
+<p>Phần username không phải là một đoạn văn hay mang ý nghĩa đoạn văn, nên sử dụng span thay vì o</p>
+<pre><code class="language-html">&lt;p class=&quot;name&quot;&gt;John Doe&lt;/p&gt;
+</code></pre>
+<p>Trong blockquote có thể sử dụng thẻ <code>q</code> cho mỗi quote để có sẵn 2 dấu quote và mang ý nghĩa là 1 quote</p>
+<pre><code class="language-html">&lt;blockquote&gt;
+	&amp;quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+	fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+	cupiditate?&amp;quot;
+&lt;/blockquote&gt;
+</code></pre>
+<p><em>Nên bật toggle word wrap trong vscode lên để code dễ hơn (ALT + Z)</em></p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm tốt</p>
+<p>Không cần phải dùng div để ngắt các dòng, có thể sử dụng style cho label là display block</p>
+<pre><code class="language-html">&lt;div&gt;&lt;/div&gt;
+</code></pre>
+<p>Khi login cần submit form, button nên sử dụng type submit thay vì type button</p>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm chưa tốt</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Các nội dung trong tab thông tin không phải là 1 list, chúng không có cùng 1 ý nghĩa mà đều bổ nghĩa cho tiêu đề</p>
+<pre><code class="language-html">&lt;ul&gt;&lt;/ul&gt;
+	&lt;li&gt;&lt;h3 class=&quot;heading&quot;&gt;ADS SECURITIES L.L.C&lt;/h3&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;8th floor.CI Tower&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Comiche fload.PO Box 93894&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Abu Dhabi. United Arab Emirates&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Tel:+971 2 657 2300&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Fax:+971 2 657 2323&lt;/div&gt;&lt;/li&gt;
+	&lt;li&gt;
+		&lt;div class=&quot;address&quot;&gt;
+			Email:
+   &lt;a href=&quot;#!&quot; class=&quot;email&quot;&gt;contact@fullstack.edu.vn&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Phần địa chỉ là cùng 1 đoạn. Không phải là nhiều thẻ <code>li&gt;div</code>, nếu muốn xuống dòng, nên sử dụng thẻ <code>br</code></p>
+<pre><code class="language-html">&lt;li&gt;&lt;div class=&quot;address&quot;&gt;8th floor.CI Tower&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Comiche fload.PO Box 93894&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Abu Dhabi. United Arab Emirates&lt;/div&gt;&lt;/li&gt;
+</code></pre>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;li&gt;
+	&lt;div class=&quot;address&quot;&gt;
+		Email:
+		&lt;a href=&quot;#!&quot; class=&quot;email&quot;&gt;fullstack.edu@gmail.com&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/li&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Tel:+971 2 657 2300&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Fax:+971 2 657 2323&lt;/div&gt;&lt;/li&gt;
+</code></pre>
+<p>Style chưa tốt</p>
+<p>Chưa có active tab</p>
+<p>Bài làm rất giống của <a href="view-source:https://phanvanahai1995.github.io/Execite3/Bai%204/">phan van hai</a></p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Phần heading chưa đúng font chữ so với bản mẫu, bản mẫu heading có fontweight nhỏ, chỉ ở chữ màu xanh mới có fontweight đậm.</p>
+</li>
+</ul>
+<h2><a href="view-source:https://yenpham103.github.io/f8_fullstack_k6_btvn/Day3/ex01/ex01.html">Pham Xuan Yen</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Sai font chữ, font chữ trong bản mẫu sử dụng là font chữ không chân</p>
+<p>Chiều dài của textarea không đồng nhất với các input khác</p>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;div class=&quot;email_info&quot;&gt;info@gmail.com&lt;/div&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;
+&lt;div class=&quot;tel_info&quot;&gt;+1 800 123 1234&lt;/div&gt;
+</code></pre>
+<p>Các tiêu đề nên sử dụng thẻ heading, không phải thẻ p</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Hình ảnh hơi to so với bản mẫu</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không phải để thể hiện 1 cột trong 1 phần trang web.</p>
+<p>Phần username không phải là một đoạn văn hay mang ý nghĩa đoạn văn, nên sử dụng span thay vì o</p>
+<pre><code class="language-html">&lt;p class=&quot;name&quot;&gt;John Doe&lt;/p&gt;
+</code></pre>
+<p>Trong blockquote có thể sử dụng thẻ <code>q</code> cho mỗi quote để có sẵn 2 dấu quote và mang ý nghĩa là 1 quote</p>
+<pre><code class="language-html">&lt;blockquote&gt;
+	&amp;quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+	fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+	cupiditate?&amp;quot;
+&lt;/blockquote&gt;
+</code></pre>
+<p><em>Nên format lại code</em></p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm chưa tốt</p>
+<p>Thay vì sử dụng div class là &quot;nav&quot;, nên sử dụng thẻ nav để đúng semantics hơn.</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Phần địa chỉ là cùng 1 đoạn. Không phải là nhiều thẻ <code>p</code>, nếu muốn xuống dòng, nên sử dụng thẻ <code>br</code></p>
+<pre><code class="language-html">&lt;p&gt;8th floor. C1 Tower&lt;/p&gt;
+&lt;p&gt;Corniche Road. PO Box 93894&lt;/p&gt;
+&lt;p&gt;Abu Dhabi. United Arab Emirates&lt;/p&gt;
+</code></pre>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;p&gt;&lt;a href=&quot;#&quot;&gt;vhm@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;!-- Thiếu chữ Email --&gt;
+</code></pre>
+<p>Giao diện phần email chưa giống bản mẫu</p>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Tel:+971 2 657 2300&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div class=&quot;address&quot;&gt;Fax:+971 2 657 2323&lt;/div&gt;&lt;/li&gt;
+</code></pre>
+<p>Chưa có active tab</p>
+<p>Bài làm rất giống của <a href="https://viethoang-mai.github.io/Ex-Fullstack-K6/Day_03/Ex04.html">Mai Viet Hoang</a></p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Tiêu đề nên sử dụng heading chứ không phải thẻ p class title</p>
+<p>Phần box trên cùng giống với một placeholder để hình ảnh logo hơn là button, nên sử dụng div thay vì thẻ <code>&lt;button&gt;</code></p>
+<pre><code class="language-html">&lt;button class=&quot;btn&quot;&gt;
+	&lt;a href=&quot;#!&quot;&gt;190 x 50&lt;/a&gt;
+&lt;/button&gt;
+</code></pre>
+</li>
+</ul>
+<h2><a href="https://vandar1011.github.io/F8_FullStack_k6/Day-3/ex01.html">Nguyễn Văn Đạt</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm không tốt</p>
+<p>Sai hoàn toàn giao diện bản mẫu</p>
+<p>Các font chữ quá nhỏ gây khó nhìn</p>
+<ul>
+<li>
+<p>Với điện thoại, các font chữ có thể từ 12-13px trở lên.</p>
+</li>
+<li>
+<p>Với máy tính, laptop, tablet nên từ 14 trở lên.</p>
+</li>
+</ul>
+<p>Các input nên có thêm một chút padding để dễ viết hơn, tránh bị chữ sát với viền trái</p>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;span&gt;infor@companyname.com&lt;/span&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;span&gt;+1 800 123 1234&lt;/span&gt;
+</code></pre>
+<p>Phần link file css nên để dưới sau khi link các thư viện CSS để đảm bảo việc ghi đè và tránh bị conflict giữa các file css</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không nên sử dụng 2 section lồng nhau như này, có thể sử dụng thẻ header thay thế</p>
+<pre><code class="language-html">&lt;section class=&quot;containet&quot;&gt;
+	...
+	&lt;section class=&quot;contact-inf&quot;&gt;
+		&lt;h2&gt;Contact Info&lt;/h2&gt;
+		...
+	&lt;/section&gt;
+	...
+	&lt;section class=&quot;book-appointment&quot;&gt;...&lt;/section&gt;
+&lt;/section&gt;
+
+&lt;!-- Ở dưới còn 2 section nữa --&gt;
+</code></pre>
+<p>Form trong bài không cần thiết bọc tất cả các phần tử, chỉ nên bọc ở các field cần thiết, có thể bỏ qua thẻ h2 trong bài.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm chưa tốt</p>
+<p>Thanh <code>.heading1-center::before</code> hơi lệch</p>
+<p>Do chưa reset margin của body, <code>section.reviewer</code> đang bị thừa ra ngoài khiến hiện cuộn ngang</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không phải để thể hiện 1 cột trong 1 phần trang web.</p>
+<p>Phần username không phải là một đoạn văn hay mang ý nghĩa đoạn văn, nên sử dụng span thay vì o</p>
+<pre><code class="language-html">&lt;p class=&quot;name&quot;&gt;John Doe&lt;/p&gt;
+</code></pre>
+<p>Trong blockquote có thể sử dụng thẻ <code>q</code> cho mỗi quote để có sẵn 2 dấu quote và mang ý nghĩa là 1 quote</p>
+<pre><code class="language-html">&lt;blockquote&gt;
+	&amp;quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+	fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+	cupiditate?&amp;quot;
+&lt;/blockquote&gt;
+</code></pre>
+<p>Thẻ img trong bài thể hiện avatar của một user, nên sử dụng thuộc tính alt một cách hợp lý hơn, đưa tên user vào làm alt của img</p>
+<pre><code class="language-html">&lt;div class=&quot;box-image&quot;&gt;
+	&lt;img src=&quot;assets/images/avt.jpg&quot; alt=&quot;&quot; class=&quot;image&quot; /&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Nên đặt class một cách hợp lý hơn nữa, <code>items</code>, <code>item</code> không mang ý nghĩa cụ thể, nếu như có nhiều section thì class sẽ rất khó hiểu.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm chưa tốt</p>
+<p>Background của bài sai hoàn toàn so với bản mẫu</p>
+<p>Màu chữ bị chìm so với background, hơi khó nhìn</p>
+<p>Các button styled khác với bản mẫu</p>
+<p>Nên style border màu xanh cho các input để giống hơn với bản mẫu</p>
+<p>Thuộc tính name trong form nên có giá trị để khi submit form có thể dễ dàng lấy được.</p>
+<p>Button để submit form nên sử dụng type là submit thay vì button</p>
+<pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;btn-login&quot;&gt;Login&lt;/button&gt;
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm chưa tốt</p>
+<p>Thay vì sử dụng div class là &quot;nav-wrap&quot;, nên sử dụng thẻ nav để đúng semantics hơn.</p>
+<p>Trong bản mẫu sử dụng font chữ không chân.</p>
+<p>Thẻ <code>&lt;section&gt;</code> được sử dụng để định rõ một phần nội dung riêng biệt trên trang web. Không nên sử dụng 2 section lồng nhau.</p>
+<p>Các nội dung trong tab thông tin không phải là 1 list, chúng không có cùng 1 ý nghĩa mà đều bổ nghĩa cho tiêu đề</p>
+<pre><code class="language-html">&lt;ul&gt;
+	&lt;li class=&quot;content-map&quot;&gt;8th floor.CI Tower&lt;/li&gt;
+	&lt;li class=&quot;content-map&quot;&gt;Comiche fload.PO Box 93894&lt;/li&gt;
+	&lt;li class=&quot;content-map&quot;&gt;Abu Dhabi. United Arab Emirates&lt;/li&gt;
+	&lt;li class=&quot;content-map&quot;&gt;Tel:+971 2 657 2300&lt;/li&gt;
+	&lt;li class=&quot;content-map&quot;&gt;Fax:+971 2 657 2323&lt;/li&gt;
+	&lt;li class=&quot;content-map&quot;&gt;
+		Email:
+		&lt;a href=&quot;#!&quot; class=&quot;email&quot;&gt;fullstack.edu@gmail.com&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Phần địa chỉ là cùng 1 đoạn. Không phải là nhiều thẻ <code>p</code>, nếu muốn xuống dòng, nên sử dụng thẻ <code>br</code></p>
+<pre><code class="language-html">&lt;li class=&quot;content-map&quot;&gt;8th floor.CI Tower&lt;/li&gt;
+&lt;li class=&quot;content-map&quot;&gt;Comiche fload.PO Box 93894&lt;/li&gt;
+&lt;li class=&quot;content-map&quot;&gt;Abu Dhabi. United Arab Emirates&lt;/li&gt;
+</code></pre>
+<p>Các phần mail có thể sử dụng thẻ a với href=&quot;mailto:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;a href=&quot;#!&quot; class=&quot;email&quot;&gt;fullstack.edu@gmail.com&lt;/a&gt;
+</code></pre>
+<p>Các phần số điện thoại có thể sử dụng thẻ a với href=&quot;tel:&quot; để dễ dàng trong việc sử dụng hơn.</p>
+<pre><code class="language-html">&lt;li class=&quot;content-map&quot;&gt;Tel:+971 2 657 2300&lt;/li&gt;
+&lt;li class=&quot;content-map&quot;&gt;Fax:+971 2 657 2323&lt;/li&gt;
+</code></pre>
+<p>Chưa có active tab</p>
+<p>Khi hover, active màu background của nav chưa giống bản mẫu.</p>
+<p>Màu link gmail chưa giống bản mẫu.</p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Bài làm chưa tốt</p>
+<p>Style của heading không giống với bản mẫu, phần text ngoài có fontweight nhạt, chỉ có phần trong span là đậm</p>
+<pre><code class="language-html">&lt;h2 class=&quot;heading2&quot;&gt;Best &lt;span&gt;Shared Hosting&lt;/span&gt; Company&lt;/h2&gt;
+</code></pre>
+<p>Màu của các button, placeholder image không giống bản mẫu</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

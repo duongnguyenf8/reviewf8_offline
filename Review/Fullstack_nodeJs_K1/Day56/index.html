@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day56</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà lớp K1</h1>
+<h2><a href="https://github.com/QuocAnh-bit/F8_fullstack_006/tree/main/nodejs/AuthNodejs">Duong Quoc Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Ở trong migrations sử dụng tên cột là createdAt, updatedAt, nhưng trong model gọi ra là created_at, updated_at, nên đang bị lỗi, không gọi được.</p>
+<pre><code class="language-js">{
+  createdAt: {
+    allowNull: false,
+    type: Sequelize.DATE
+  },
+  updatedAt: {
+    allowNull: false,
+    type: Sequelize.DATE
+  }
+}
+</code></pre>
+<p>Không đăng ký được vì đang lỗi phần model</p>
+<p>Đặt tên cho bảng là Users, nhưng trong model đặt tên table là users, nên không query được</p>
+<p>Đường dẫn không hợp lý:</p>
+<pre><code>http://localhost:3000/login/register
+</code></pre>
+<p>Có thể đổi thành:</p>
+<pre><code>http://localhost:3000/auth/login
+http://localhost:3000/auth/register
+</code></pre>
+<p>Sau khi sửa file model user thì chạy bình thường:</p>
+<pre><code class="language-js">{
+  sequelize,
+  modelName: 'User',
+  // tableName: 'users',
+  // createdAt: &quot;created_at&quot;,
+  // updatedAt: &quot;updated_at&quot;,
+}
+</code></pre>
+</li>
+</ul>
+<h2><a href="https://github.com/xuananh2212/back_end/tree/main/day56">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Ở trong migrations sử dụng tên cột là createdAt, updatedAt, nhưng trong model gọi ra là created_at, updated_at, nên đang bị lỗi, không gọi được.</p>
+<pre><code class="language-js">{
+  createdAt: {
+    allowNull: false,
+    type: Sequelize.DATE
+  },
+  updatedAt: {
+    allowNull: false,
+    type: Sequelize.DATE
+  }
+}
+</code></pre>
+<p>Không đăng ký được vì đang lỗi phần model</p>
+<p>Đặt tên cho bảng là Users, nhưng trong model đặt tên table là users, nên không query được</p>
+<p>Nên có 1 file .env.example để dễ dàng viết file env hơn.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/duonghiep416/duonghiep_f8_fullstack/tree/main/Day56">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đặt tên cho bảng là Users, nhưng trong model đặt tên table là users, nên không query được</p>
+<p>Chưa lưu được trạng thái đăng nhập, nên reload lại là mất. Khi đăng nhập rồi, vào lại trang đăng nhập thì vẫn vào được.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/ha752002/NodeJs_learning/tree/main/day_56">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Không nên tách mỗi 1 route là 1 file, nếu như nhiều route lên thì rất rối</p>
+<p>Khi đăng nhập rồi, vào lại trang đăng nhập thì vẫn vào được.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/anhquan2211/backend-fullstack-K1-F8/tree/main/day56">Luu Anh Quan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đặt tên cho bảng là Users, nhưng trong model đặt tên table là users, nên không query được</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

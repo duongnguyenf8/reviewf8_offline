@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K1/Day57</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Duong review bai tap ve nha buoi 57 lop K1</h1>
+<h2><a href="https://github.dev/xuananh2212/back_end/tree/main/day56/auth">Nguyen Xuan Tuan Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Phần JWT chỉ cần để các thông tin ít giá trị và ngắn để JWT nhẹ và bảo mật hơn</p>
+<ul>
+<li>Có thể để mỗi user_id là đủ.</li>
+</ul>
+<p>Phần check 8 ký tự có thể check .length :v</p>
+<pre><code class="language-js">.matches(/.{8,}$/, 'mật khẩu ít nhất 8 kí tự')
+</code></pre>
+<p>Khi logout, có thể xử lý thêm Đưa token vào blacklist: để ngăn chặn kẻ tấn công sử dụng token đó để truy cập vào tài khoản của người dùng</p>
+<p>Đoạn mật khẩu nên validate thêm một vài trường hợp nữa để tăng bảo mật cho mật khẩu.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/duonghiep416/duonghiep_f8_fullstack/tree/main/Day57">Duong Hiep</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Khi sign up, mặc định status là false, nhưng khi đăng nhập, lại query các account có status là true, nên không đăng nhập được.</p>
+<p>Nên style lại hoặc dùng bootstrap để giao diện đỡ đẹp hơn.</p>
+<p>Chưa có link chuyển sang trang đăng ký</p>
+<p>Nên sử dụng layout để có thể dễ dàng kế thừa, code ít hơn.</p>
+<p>Khi logout, có thể xử lý thêm Đưa token vào blacklist: để ngăn chặn kẻ tấn công sử dụng token đó để truy cập vào tài khoản của người dùng</p>
+<p>Đoạn mật khẩu nên validate thêm một vài trường hợp nữa để tăng bảo mật cho mật khẩu.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/Trungdeptraii/Bai_57_Le_Van_Trung">Le Van Trung</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Đăng ký nên cho người dùng nhập lại mật khẩu, việc nhập mật khẩu 1 lần rất dễ bị quên.</p>
+<p>Thông báo đăng ký thành công thì nên là alert-success, và nên hiển thị trang login để người dùng nhập.</p>
+<p>Chưa validate mật khẩu.</p>
+<p>Khi sign up, mặc định status là false, nhưng khi đăng nhập, lại query các account có status là true, nên không đăng nhập được.</p>
+<p>Khi đăng nhập rồi, vào trang đăng nhập vẫn được.</p>
+<p>Lưu tên vào cookie, tuy nhiên chỉ lưu khi đăng nhập chứ không phải mỗi lần reload, nên có thẻ sửa tên,... ở trong cookie mà reload vẫn còn.</p>
+<p>Chỉ check là token có hay không, nếu giả một token thì vẫn login được.</p>
+</li>
+</ul>
+<h2><a href="https://github.com/ha752002/NodeJs_learning/tree/main/day_57">Nguyen Thi Hong Ha</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm chưa tốt</p>
+<p>Chỉ lưu user-id để check đăng nhập, nếu biết được user-id của user khác thì có thể đăng nhập vào account của user khác. Nên mã hóa JWT nó lại và verify.</p>
+<p>Khi sign up, mặc định status là false, nhưng khi đăng nhập, lại query các account có status là true, nên không đăng nhập được.</p>
+<p>Khi đăng nhập rồi, vào trang đăng nhập vẫn được.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/QuocAnh-bit/F8_fullstack_006/tree/main/nodejs/AuthNodejs">Duong Quoc Anh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+<p>Đoạn mật khẩu nên validate thêm một vài trường hợp nữa để tăng bảo mật cho mật khẩu.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/phamtuan162/phamtuan-nodejs-01/tree/main/Buoi56">Pham Tuan</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+<p>Đoạn mật khẩu nên validate thêm một vài trường hợp nữa để tăng bảo mật cho mật khẩu.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/SerenaHa12/fullstack_nodeJS/tree/main/sequelizeORM/btvn_62">Do Ha Chi</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Push 2 cái node_module lên</p>
+<p>Làm chưa đúng yêu cầu, yêu cầu đề bài sử dụng nodejs, express, server-side</p>
+<ul>
+<li>Bài tập sử dụng react(Không server-side)</li>
+</ul>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

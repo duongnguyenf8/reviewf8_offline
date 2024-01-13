@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day57</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 57 - Lớp K2</h1>
+<h2><a href="https://github.dev/phamtiendat18/Fullstack-K2/tree/main/day56">Pham Tien Dat</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+<p>Đoạn mật khẩu nên validate thêm một vài trường hợp nữa để tăng bảo mật cho mật khẩu.</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/phamtiendat18/Fullstack-K2/tree/main/day56">Nguyen Dai The</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm rất tốt</p>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/phamtiendat18/Fullstack-K2/tree/main/day56">Doan Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Đoạn regex này quá khó để đăng ký một tài khoản mới, khiến user đăng ký một tài khoản khó hơn.</p>
+<pre><code class="language-js">.required(&quot;Please enter password!&quot;).matches(/^[a-zA-Z0-9]*[a-zA-Z][a-zA-Z0-9]*$/, 'Password must contain at least one letter'),
+</code></pre>
+<p>Đoạn code này gặp lỗi can not setHeader:</p>
+<pre><code class="language-js">index: (req, res) =&gt; {
+const username = req.session.username;
+if (req.session.logIn) {
+  // res.render('index', { username }); Thiếu return nên chạy cả render lẫn redirect
+  return res.render('index', { username });
+}
+return res.redirect('/signin');
+},
+</code></pre>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/phamtiendat18/Fullstack-K2/tree/main/day56">Kieu Duy Tung</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Đặt tên cột là <code>delete_at</code>, không hợp lý vì chưa xóa làm sao có <code>&quot;at&quot;</code></p>
+<p>Đoạn code này gặp lỗi can not setHeader:</p>
+<pre><code class="language-js">index: async (req, res) =&gt; {
+const login = req.session.login;
+if (!login) {
+   // res.redirect('/login'); Thiếu return nên chạy cả redirect lẫn render
+  res.redirect('/login');
+}
+const infor = req.session.username; // Sai chính tả
+ // res.render('index', { infor }); Thiếu return nên chạy cả redirect lẫn render
+res.render('index', { infor });
+},
+</code></pre>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+</li>
+</ul>
+<h2><a href="https://github.dev/phamtiendat18/Fullstack-K2/tree/main/day56">Bui Quang Truong</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Bài làm tốt</p>
+<p>Chưa ignore node_modules</p>
+<p>Sai link bài tập, gửi link bài 55</p>
+<p>Đặt tên cột là <code>delete_at</code>, không hợp lý vì chưa xóa làm sao có <code>&quot;at&quot;</code></p>
+<p>Các cột này thêm prefix <code>user_</code> hơi thừa</p>
+<pre><code class="language-js">email: DataTypes.STRING,
+password: DataTypes.STRING,
+</code></pre>
+<p>Lưu thông tin vào session, nếu đóng trình duyệt mở lại sẽ bị đăng xuất. Tùy từng nghiệp vụ mới nên làm như vậy</p>
+<p>Đoạn mật khẩu nên validate thêm một vài trường hợp nữa để tăng bảo mật cho mật khẩu.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

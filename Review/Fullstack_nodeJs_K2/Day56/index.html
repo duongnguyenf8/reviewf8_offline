@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K2/Day56</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Nam review bài học viên lớp k2-fullstack</h1>
+<h2><a href="https://github.com/DuyChinh/f8-fullstack-KS2/tree/main/Day-56-SigninNodejs">Đoàn Duy Chinh</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm tốt*</p>
+<p>Field password vẫn để type=text.</p>
+<p>Khi đăng ký xong nên chuyển hướng về trang đăng nhập trước để người dùng nhập lại thông tin đăng nhập.</p>
+<p>Field password nên validate kĩ hơn(Độ dài tối thiểu 6-8 ký tự, chữ in hoa, ký tự đặc biệt,...).</p>
+<p>Khi email chưa đăng ký cần thông báo <code>Tài khoản không tồn tại</code>.</p>
+<p>Phần lấy user ở handleLogin nên dùng findOne:</p>
+<pre><code class="language-javascript">const users = await User.findAll({
+	where: filters,
+});
+
+// Nên dùng
+const user = await User.findOne({
+	where: filters,
+});
+</code></pre>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm tốt. Tuy nhiên cần sửa lại phần validate để bài làm hoàn chỉnh hơn.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/daithehh04/fullstack/tree/main/day56">Thế Nguyễn Đại</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p>Field password nên validate kĩ hơn(Độ dài tối thiểu 6-8 ký tự, chữ in hoa, ký tự đặc biệt,...).</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<hr>
+<h2><a href="https://github.com/OkazakiTruong/BQTruong-F8-K2-Offline/tree/main/Day56">Bùi Quang Trưởng</a></h2>
+<ul>
+<li>
+<p>[x] Bài 1:</p>
+<p>Bài làm rất tốt*</p>
+<p>Field password nên validate kĩ hơn(Độ dài tối thiểu 6-8 ký tự, chữ in hoa, ký tự đặc biệt,...).</p>
+</li>
+<li>
+<p>[x] Đánh giá chung bài tập về nhà: Bài làm rất tốt.</p>
+</li>
+</ul>
+<hr>
+<script src="../../../assets/js/pages.js" defer></script></body></html>

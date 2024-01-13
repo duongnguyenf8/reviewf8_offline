@@ -25,17 +25,6 @@ delete: async (req, res) =&gt; {
 </code></pre>
 </li>
 <li>
-<p>Trong phần sửa, validate giống hệt phần thêm nên không sửa được:</p>
-<pre><code class="language-js">.test(
-  'unique',
-  'email đã được sử dụng bởi user khác',
-  async (value) =&gt; {
-    return await userModel.checkEmailWhenEdit(id, value);
-  }
-),
-</code></pre>
-</li>
-<li>
 <p>Nên đưa id của user vào session không nên hiển thị ra đường link, tránh lỗi bảo mật không đáng có.</p>
 </li>
 </ul>
