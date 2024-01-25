@@ -1,0 +1,534 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K6/Day8</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Huy review bài tập về nhà buổi 8 - Lớp Fullstack K6</h1>
+<h2><a href="https://phanvanahai1995.github.io/exercise8/">Phan Van Hai</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm rất tốt</strong></p>
+<ul>
+<li>
+<p>Sai semantics: Trong bài, cách tiêu đề của menu đang là h2, nó đang không bổ nghĩa cho gì của tiêu đề chính, header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Shopping Cart Mini trong bản mẫu hiển thị ở bên phải trong khi bài làm đang hiển thị bên trái.</p>
+</li>
+<li>
+<p>Ở phần dưới đây giữa dấu cộng và dấu trừ là số và nó thể hiện số lượng sản phẩm đó có trong giỏ hàng chứ không phải vạch ngăn cách dấu cộng và dấu trừ:</p>
+<ul>
+<li>Bài làm:</li>
+</ul>
+<p><img src="./images/phanvanhai1.png" alt=""></p>
+<pre><code class="language-html">&lt;div class=&quot;btn-action&quot;&gt;
+	&lt;button class=&quot;btn-calculation&quot;&gt;-&lt;/button&gt;
+	&lt;span class=&quot;btn-calculation__separate&quot;&gt;&lt;/span&gt;
+	&lt;button class=&quot;btn-calculation&quot;&gt;+&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</li>
+<li>
+<p><code>font-weight</code> của một số thẻ đang nhỏ hơn so với bản mẫu</p>
+</li>
+<li>
+<p>Nội dung của thẻ <code>button</code> có <code>class</code> <strong>btn-cart__add</strong> đang là <strong>Add Cart</strong> trong khi ở bản mẫu là <strong>Add To Cart</strong></p>
+</li>
+<li>
+<p>Màu của thẻ có <code>class</code> <strong>title-heading</strong> đang không giống với bản mẫu.</p>
+</li>
+<li>
+<p>Icon ở phần <strong>cart-bottom</strong> đang không giống so với bản mẫu có thể tìm hiểu <a href="https://fontawesome.com/">Font Awesome</a> để tìm và sử dụng icon giống với bản mẫu nhất có thể.</p>
+</li>
+<li>
+<p>Số lượng sản phẩm trong giỏ hàng ở bản mẫu đang là 4 sản phẩm trong khi bài làm chỉ có 2 sản phẩm.</p>
+</li>
+<li>
+<p>Thẻ <code>img</code> nằm trong thẻ <code>div</code> có <code>class</code> là <strong>product</strong> nên được bọc trong thẻ <code>a</code> để khi người dùng click vào có thể chuyển đến trang xem chi tiết sản phẩm đó.</p>
+</li>
+<li>
+<p>[x] Bài 3:</p>
+</li>
+</ul>
+<p><strong>Bài làm rất tốt</strong></p>
+<ul>
+<li>
+<p><code>font-size</code> của các thẻ có <code>class</code> là <strong>desc</strong>, <strong>service__item--heading</strong>, <strong>service__item--desc</strong>, và <strong>service__item--link</strong> đều đang to hơn so với bản mẫu một chút.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: Bài làm khá tốt, cần chỉnh chu hơn, chú ý đến senmatic và quan sát kỹ bản mẫu để tránh làm nhầm hoặc bỏ sót các chi tiết.</p>
+</li>
+</ul>
+<h2><a href="https://ducanhprogram.github.io/f8-fullstack-k6/Day-8">Le Duc Anh</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Giao diện sai hoàn toàn so với bản mẫu.</p>
+</li>
+<li>
+<p>Đây là phẩn <strong>header</strong> của một trang web vì thế nên bọc toàn bộ phần này trong thẻ <code>header</code>.</p>
+</li>
+<li>
+<p>Thẻ nav để thể hiện các thanh điều hướng, logo không phải một thanh điều hướng mà do khi sử dụng, người dùng có xu hướng bấm vào logo để về trang chủ, nhưng nó không phải là một nav, chỉ bọc nav ở list navigation bên trái.</p>
+</li>
+<li>
+<p>Sai semantics: Trong bài, logo đang là h2, vậy nó đang bổ nghĩa cho gì của tiêu đề chính, header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>Thiếu borer-radius menu con giống bản mẫu.</p>
+</li>
+<li>
+<p>Mega menu thiếu phần <strong>STYLEGUIDE</strong></p>
+</li>
+<li>
+<p>Bài làm đang chia Mega menu thành các cột tuy nhiên tên <code>class</code> của thẻ đại diện cho từng cột lại là <strong>row</strong> điều này dễ gây nhầm lầm cho người đọc code.</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Số 4 trong heading bị lệch.</p>
+</li>
+<li>
+<p><code>background-color</code> của heading không giống với bản mẫu</p>
+</li>
+<li>
+<p>Tiêu đề của cart có thể là h2 trong trường hợp là trang shop, tuy nhiên h3 thì chưa bổ nghĩa cho h2 nào trong bài.</p>
+</li>
+<li>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của sản phẩm làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi,…</p>
+</li>
+<li>
+<p>Trong bài có 2 button, nên phân tích xem đâu là button cần người dùng bấm vào hơn, đưa nó thành màu primary từ đầu(màu xanh).</p>
+</li>
+<li>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+</li>
+<li>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+</li>
+</ul>
+<pre><code class="language-css">.class {
+	display: flex;
+	justify-content: space-between;
+	/*thuoc tinh 1: abc*/
+	/*thuoc tinh 2: def*/
+}
+</code></pre>
+<ul>
+<li>Nên tách nó thành 1 class chung như: <code>.flex-between</code> như sau:</li>
+</ul>
+<pre><code class="language-css">.flex-between {
+	display: flex;
+	justify-content: space-between;
+}
+.class {
+	/*thuoc tinh 1: abc*/
+	/*thuoc tinh 2: def*/
+}
+</code></pre>
+<ul>
+<li>
+<p>Thẻ <code>label</code> nằm trong trong thẻ <code>div</code> có <code>class</code> <strong>header-cart</strong> đang là hình elip trong khi ở bản mẫu là hình tròn</p>
+</li>
+<li>
+<p>Số lượng sản phẩm trong giỏ hàng ở bản mẫu đang là 4 sản phẩm trong khi bài làm chỉ có 3 sản phẩm.</p>
+</li>
+<li>
+<p><code>font-weight</code> của một số thẻ đang nhỏ hơn so với bản mẫu</p>
+</li>
+<li>
+<p>Một số phần mà người dùng có thể click vào được nên thêm thuộc tính <code>cursor: pointer</code>.</p>
+</li>
+<li>
+<p>Nên thêm thuộc tính <code>align-items: center</code> vào thẻ có <code>class</code> là <strong>status-info</strong> để căn giữa theo chiều dọc phần giá và tăng giảm số lượng sản phẩm.</p>
+</li>
+<li>
+<p>[x] Bài 3:</p>
+</li>
+</ul>
+<p><strong>Bài làm tốt</strong></p>
+<ul>
+<li>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+</li>
+<li>
+<p>Đây chỉ là một <code>section</code> của trang web vì vậy không nên sử dụng thẻ <code>h1</code> chứ title của <code>section</code> vì nó không phải là tiêu đề chính của một trang mà thay vào đó nên sử dụng thẻ <code>h2</code>, tương tự nên thay <code>h2</code> chứa tên của tên của các dịch vụ thành thẻ <code>h3</code>.</p>
+</li>
+<li>
+<p>Thẻ <code>p</code> tăng line-height: 1.4rem.</p>
+</li>
+<li>
+<p>Không lên đặt <code>height</code> cho <code>.service-item</code> vì khi tăng nội dung thẻ <code>p</code> nên sẽ bị vỡ giao diện.</p>
+</li>
+<li>
+<p>Thẻ <code>div</code> có <code>class</code> <strong>item-service</strong> thứ 5 đang có nội dung bên trong bị lệch so với các thẻ khác là do chiều cao của thẻ <code>img</code> nằm trong nó đang thấp hơn thẻ <code>img</code> trong nằm trong các thẻ còn lại có <code>class</code> <strong>item-service</strong>.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: Bài làm chưa tốt, cần chỉnh chu hơn trong việc làm bài tập về nhà, chú ý đến senmatic, cách đặt tên các <code>class</code> và làm giống nhất có thể giao diện mà đề bài yêu cầu.</p>
+</li>
+</ul>
+<h2><a href="https://viethoang-mai.github.io/Ex-Fullstack-K6/Day_08">Mai Viet Hoang</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm rất tốt</strong></p>
+<ul>
+<li>
+<p>Không nên sử dụng thẻ <code>h3</code> trong header vì header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Bài làm rất tốt</strong></p>
+<ul>
+<li>
+<p>Số lượng sản phẩm trong giỏ hàng ở bản mẫu đang là 4 sản phẩm trong khi bài làm chỉ có 3 sản phẩm.</p>
+</li>
+<li>
+<p>Trong phần CSS có một số màu giống nhau hoặc gần tương tự, nên đặt biến để có thể dễ dàng tái sử dụng và sửa chữa.</p>
+</li>
+<li>
+<p>Với các item có nhiều thuộc tính giống nhau ví dụ như:</p>
+</li>
+</ul>
+<pre><code class="language-css">.class {
+	display: flex;
+	justify-content: space-between;
+	/*thuoc tinh 1: abc*/
+	/*thuoc tinh 2: def*/
+}
+.class2 {
+	display: flex;
+	justify-content: space-between;
+	/*thuoc tinh 1: ghi*/
+	/*thuoc tinh 2: qka*/
+}
+</code></pre>
+<ul>
+<li>Nên tách nó thành 1 class chung như: <code>.flex-between</code> như sau:</li>
+</ul>
+<pre><code class="language-css">.flex-between {
+	display: flex;
+	justify-content: space-between;
+}
+.class {
+	/*thuoc tinh 1: abc*/
+	/*thuoc tinh 2: def*/
+}
+.class2 {
+	/*thuoc tinh 1: ghi*/
+	/*thuoc tinh 2: qka*/
+}
+</code></pre>
+<ul>
+<li>[x] Bài 3:</li>
+</ul>
+<p><strong>Bài làm rất tốt</strong></p>
+<ul>
+<li>
+<p>Các hình ảnh không hợp với services. Nên sử dụng ảnh khác.</p>
+</li>
+<li>
+<p>Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,…</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: Bài làm rất tốt, chỉ cần điều chỉnh một số lỗi nhỏ để hoàn thiện hơn.</p>
+</li>
+</ul>
+<h2><a href="https://maisonis95.github.io/f8_fullstack_k6/">Trinh Thai Son</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Sai font chữ</p>
+</li>
+<li>
+<p>Vì đây là phần <strong>header</strong> của một trang vì vậy nên bọc toàn bộ phần này trong thẻ <code>header</code></p>
+</li>
+<li>
+<p>Phần điều hướng trong <code>header</code> nên được bọc trong thẻ <code>nav</code></p>
+</li>
+<li>
+<p>Không nên sử dụng thẻ <code>h4</code> trong header vì header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>Giao diện đang bị lệch rất nhiều so với bản mẫu</p>
+</li>
+<li>
+<p>Giao diện Mega Menu đang sai hoàn toàn so với bản mẫu</p>
+</li>
+<li>
+<p>Người dùng phải di chuyển con trỏ chuột thật nhanh từ phần điều hướng xuống phần Mega Menu thì mới hover vào được Mega Menu</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Chưa làm</strong></p>
+<ul>
+<li>[x] Bài 3:</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Sai font chữ</p>
+</li>
+<li>
+<p>Đây chỉ là một <code>section</code> của trang web vì vậy không nên sử dụng thẻ <code>h1</code> chứ title của <code>section</code> vì nó không phải là tiêu đề chính của một trang mà thay vào đó nên sử dụng thẻ <code>h2</code></p>
+</li>
+<li>
+<p>Giao diện sai hoàn toàn so với bản mẫu</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: <strong>Bài làm chưa tốt</strong></p>
+</li>
+</ul>
+<h2><a href="https://vandar1011.github.io/F8_FullStack_k6/">Nguyen Van Dat</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Các thẻ <code>span</code> nằm trong thẻ <code>li</code> có <code>class</code> là <code>item-nav</code> nên được thay bằng thẻ <code>a</code> vì đây là phần điều hướng nên người dùng có thể click vào đó để chuyển hướng sang trang khác.</p>
+</li>
+<li>
+<p>Không nên sử dụng thẻ <code>h3</code> trong header vì header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>Logo và các icon thông tin hay tìm kiếm đang hơi bé so với bản mẫu</p>
+</li>
+<li>
+<p>Không hover vào được Mega Menu</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Số 4 ở phần header đang to hơn so với bản mẫu</p>
+</li>
+<li>
+<p>Vị trí của các thành phần trong phần header của giỏ hàng đang không được cân đối do phần header trong bài làm gồm 3 thẻ đứng ngang hàng với nhau rồi sau đó dùng thuộc tính <code>position</code> để căn chỉnh vị trí, nên đặt tiêu đề và nút thoát nằm trong cùng một thẻ <code>div</code> rồi sau đó sử dụng thuộc tính <code>display: flex</code> cùng một vài thuộc tính khác để căn chỉnh.</p>
+</li>
+<li>
+<p>Số lượng sản phẩm trong giỏ hàng ở bản mẫu đang là 4 sản phẩm trong khi bài làm chỉ có 2 sản phẩm.</p>
+</li>
+<li>
+<p>Thẻ <code>img</code> nằm trong thẻ <code>div</code> có <code>class</code> là <strong>product</strong> nên được bọc trong thẻ <code>a</code> để khi người dùng click vào có thể chuyển đến trang xem chi tiết sản phẩm đó.</p>
+</li>
+<li>
+<p>Các sản phẩm có trong giỏ hàng chưa được căn giữa.</p>
+</li>
+<li>
+<p><code>font-size</code> của một số thẻ đang nhỏ hơn so với bản mẫu</p>
+</li>
+<li>
+<p>Phần tăng giảm số lượng của một sản phẩm trong giỏ hàng các dấu cộng và dấu trừ nên được đặt trong thẻ <code>button</code> vì nó có chức năng tăng hoặc giảm số lượng sản phẩm khi người dùng click vào thay vì sử dụng các phần tử giả để tạo ra</p>
+</li>
+<li>
+<p>[x] Bài 3:</p>
+</li>
+</ul>
+<p><strong>Bài làm tốt</strong></p>
+<ul>
+<li>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+</li>
+<li>
+<p>Các thẻ có <code>class</code> là <strong>description-item</strong> nên được thay bằng thẻ <code>p</code> vì nội dung ở đây là một đoạn văn.</p>
+</li>
+<li>
+<p><code>font-size</code> của tiêu đề chính đang nhỏ hơn so với bản mẫu.</p>
+</li>
+<li>
+<p>Thẻ <code>p</code> tăng <code>line-height: 1.4rem</code>.</p>
+</li>
+<li>
+<p>Thẻ <code>button</code> đang có kích thước hơi nhỏ so với bản mẫu và nên thêm thuộc tính <code>cursor: pointer</code> để người dùng có cảm giác có thể click vào được.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: Bài làm chưa tốt, cần chình chu hơn và chú ý hơn đến senmatic.</p>
+</li>
+</ul>
+<h2><a href="https://yenpham103.github.io/f8_fullstack_k6_btvn/Day8">Pham Xuan Yen</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Icon logo chưa giống bản mẫu. Có thể tìm kiếm trên mạng một hình gần giống, như vậy sẽ giúp bài tập có chút chỉn chu hơn.</p>
+</li>
+<li>
+<p>Vì đây là phần <strong>header</strong> của một trang vì vậy nên bọc toàn bộ phần này trong thẻ <code>header</code></p>
+</li>
+<li>
+<p>Thẻ nav để thể hiện các thanh điều hướng, logo không phải một thanh điều hướng mà do khi sử dụng, người dùng có xu hướng bấm vào logo để về trang chủ, nhưng nó không phải là một nav</p>
+</li>
+<li>
+<p>Mega Menu ở đây là một menu con và chỉ khi hover vào một trong các thẻ <code>li</code> cụ thể trong trường hợp này là thẻ <code>li</code> chứa thẻ <code>a</code> có nội dung là <strong>Documentation</strong> thì Mega Menu mới hiện ra</p>
+</li>
+<li>
+<p>Không nên sử dụng thẻ <code>h2</code> trong header vì header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>Thẻ <code>p</code> <strong>chỉ được dùng để thể hiện một đoạn văn bản</strong> vì thế không sử dụng thẻ <code>p</code> cho các nội dung của Mega Menu trong trường hợp này, thay vào đó sử dụng thẻ <code>a</code> để khi người dùng click vào có thể chuyển hướng đến trang mong muốn.</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Thẻ <code>p</code> <strong>chỉ được dùng để thể hiện một đoạn văn bản</strong>, trong trường hợp này không dùng thẻ <code>p</code> để chứa tiêu đề của giỏ hàng</p>
+</li>
+<li>
+<p><code>background-color</code> của header đậm hơn so với bản mẫu</p>
+</li>
+<li>
+<p>Bài làm đang sửa dụng thẻ <code>p</code> <strong>một cách bừa bãi</strong></p>
+</li>
+<li>
+<p>Phần alt của một hình ảnh sản phẩm nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,…</p>
+</li>
+<li>
+<p>Chưa có nút xóa sản phẩm</p>
+</li>
+<li>
+<p>Ở phần dưới đây giữa dấu cộng và dấu trừ là số và nó thể hiện số lượng sản phẩm đó có trong giỏ hàng chứ không phải vạch ngăn cách dấu cộng và dấu trừ</p>
+</li>
+<li>
+<p>Số lượng sản phẩm trong giỏ hàng ở bản mẫu đang là 4 sản phẩm trong khi bài làm chỉ có 3 sản phẩm.</p>
+</li>
+<li>
+<p>Các phần từ thẻ <code>button</code> có <code>class</code> <strong>view-cart</strong> trở xuống hoàn toàn không xuất hiện trên màn hình</p>
+</li>
+<li>
+<p>Giao diện phần hiển thị danh sách sản phẩm chưa giống với bản mẫu</p>
+</li>
+<li>
+<p>[x] Bài 3:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Sai font chữ của các heading, các heading sử dụng một font chữ có chân.</p>
+</li>
+<li>
+<p><code>font-size</code> của tiêu đề chính đang nhỏ hơn so với bản mẫu</p>
+</li>
+<li>
+<p>Nội dung của thẻ <code>p</code> có <code>class</code> là <strong>title</strong> đang không giống với bản mẫu</p>
+</li>
+<li>
+<p>Phần alt của một hình ảnh service nên sử dụng tên của service làm alt để dễ dàng đọc hiểu hơn, ví dụ như lúc ảnh lỗi, để bot đọc,…</p>
+</li>
+<li>
+<p>Các hình ảnh không hợp với services. Nên sử dụng ảnh khác.</p>
+</li>
+<li>
+<p>Tên của các service không giống với bản mẫu</p>
+</li>
+<li>
+<p>Thẻ <code>p</code> tăng <code>line-height: 1.4rem</code>.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: <strong>Bài làm chưa tốt</strong>, sử dụng thẻ <code>p</code> một các bừa bãi, chưa chỉnh chu cần dành nhiều thời gian hơn cho bài tập về nhà và cần ôn lại về senmatic.</p>
+</li>
+</ul>
+<h2><a href="https://vinhtran202.github.io/hoccode/homework/Day-8/">Tran Quang Vinh</a></h2>
+<ul>
+<li>[x] Bài 1:</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Giao diện sai hoàn toàn so với bản mẫu</p>
+</li>
+<li>
+<p>Icon logo chưa giống bản mẫu. Có thể tìm kiếm trên mạng một hình gần giống, như vậy sẽ giúp bài tập có chút chỉn chu hơn.</p>
+</li>
+<li>
+<p>Vì đây là phần <strong>header</strong> của một trang vì vậy nên bọc toàn bộ phần này trong thẻ <code>header</code></p>
+</li>
+<li>
+<p>Thẻ <code>nav</code> để thể hiện các thanh điều hướng, logo không phải một thanh điều hướng mà do khi sử dụng, người dùng có xu hướng bấm vào logo để về trang chủ, nhưng nó không phải là một nav</p>
+</li>
+<li>
+<p>Không nên sử dụng thẻ <code>h1</code> trong header vì header chỉ nhằm mục đích tiện lợi hơn cho user trong việc sử dụng, mang tính thương hiệu. Không có ý nghĩa nhiều trong semantics, cố gắng không sử dụng tới heading trong header.</p>
+</li>
+<li>
+<p>[x] Bài 2:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Giao diện sai hoàn toàn so với bản mẫu</p>
+</li>
+<li>
+<p>[x] Bài 3:</p>
+</li>
+</ul>
+<p><strong>Bài làm chưa tốt</strong></p>
+<ul>
+<li>
+<p>Đây chỉ là một <code>section</code> của trang web vì vậy không nên sử dụng thẻ <code>h1</code> chứ title của <code>section</code> vì nó không phải là tiêu đề chính của một trang mà thay vào đó nên sử dụng thẻ <code>h2</code></p>
+</li>
+<li>
+<p>Tên các dịch vụ có thể đặt trong thẻ <code>h3</code> để bỏ nghĩa cho tiêu đề của <code>section</code></p>
+</li>
+<li>
+<p>Phần mô tả dịch vụ có thể được đặt trong thẻ <code>p</code> vì đây là một đoạn văn bản</p>
+</li>
+<li>
+<p>Sai font so với bản mẫu</p>
+</li>
+<li>
+<p>Tiêu đề chính và phần mô tả ở dưới đang hơi sát nhau</p>
+</li>
+<li>
+<p>Tên của các dịch vụ đang giống nhau và không giống với bản mẫu về mặt <code>css</code></p>
+</li>
+<li>
+<p>Thẻ <code>div</code> chưa phần mô tả dịch vụ tăng <code>line-height: 1.4rem</code>.</p>
+</li>
+<li>
+<p>Thêm thuộc tính <code>cursor: pointer</code> vào các thẻ <code>button</code> để người dùng có cảm giác có thể click vào được</p>
+</li>
+<li>
+<p><code>css</code> để set font chữ trong bài làm sai cú pháp vì thế font Roboto không được áp dụng:</p>
+</li>
+</ul>
+<pre><code class="language-css">body {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        font-family: font-family: &quot;Roboto&quot;, sans-serif;
+    }
+</code></pre>
+<ul>
+<li>
+<p>Không lên đặt height cho <code>.cart-first</code> vì khi tăng nội dung thẻ <code>p</code> nên sẽ bị vỡ giao diện.</p>
+</li>
+<li>
+<p>[x] Đánh giá chung: <strong>Bài làm chưa tốt</strong>, chưa chỉnh chu cần dành nhiều thời gian hơn cho bài tập về nhà và cần ôn lại về senmatic.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
