@@ -122,7 +122,7 @@
 
   Nên validate trường hợp này theo điều kiện placeholder có tồn tại không.
 
-## [Nguyễn Văn Đạt](https://vandar1011.github.io/F8_FullStack_k6)
+## [Nguyễn Văn Đạt](https://vandar1011.github.io/F8_FullStack_k6thức)
 
 - [x] Bài 1
 
