@@ -1,0 +1,221 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" /><title>Fullstack_nodeJs_K6/Day17</title><link rel="stylesheet" href="../../../assets/css/style.css" /></head><body><h1>Dương review bài tập về nhà buổi 18 - Lớp K6</h1>
+<h2>[Phan Van Hai]</h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đề bài yêu cầu <strong>hoán vị 2 số</strong>, vì vậy cần chắc chắn nó là 2 số trước khi thực hiện đổi chỗ.</p>
+</li>
+<li>
+<p>[x] Bài 2: Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Nên tách message ra một biến khác, để có thể dễ đổi hơn</p>
+<p>Nên sử dụng 1 biến <code>max</code> để gán là số lớn nhất, sẽ đỡ rối code hơn.</p>
+<pre><code class="language-js">var a = 10,
+	b = 20000,
+	c = '10',
+	max = a,
+	checkTypes = true;
+
+if (!+a || !+b || !+c) {
+	checkTypes = false;
+}
+
+if (checkTypes) {
+	if (b &gt; max) {
+		max = b;
+	}
+	if (c &gt; max) {
+		max = c;
+	}
+} else {
+	max = 'Dữ liệu 0 hợp lệ.';
+}
+console.log(max);
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Vẫn nên kiểm tra nó là số trước.</p>
+<p>Số 0 trái dấu với cả âm lẫn dương, nên tách trường hợp riêng.</p>
+<p>Vế đầu kiểm tra không cần thiết.</p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Đây không phải sắp xếp, đây chỉ là console.log theo thứ tự.</p>
+</li>
+</ul>
+<h2>[Pham Xuan Yen]</h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đề bài yêu cầu <strong>hoán vị 2 số</strong>, vì vậy cần chắc chắn nó là 2 số trước khi thực hiện đổi chỗ.</p>
+<p>Vì nếu là chuỗi, sử dụng cộng trước thì sẽ thành số khác.</p>
+</li>
+<li>
+<p>[x] Bài 2: Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Nên tách message ra một biến khác, để có thể dễ đổi hơn</p>
+<p>Nên sử dụng 1 biến <code>max</code> để gán là số lớn nhất, sẽ đỡ rối code hơn.</p>
+<pre><code class="language-js">var a = 10,
+	b = 20000,
+	c = '10',
+	max = a,
+	checkTypes = true;
+
+if (!+a || !+b || !+c) {
+	checkTypes = false;
+}
+
+if (checkTypes) {
+	if (b &gt; max) {
+		max = b;
+	}
+	if (c &gt; max) {
+		max = c;
+	}
+	document.write(`&lt;h2&gt;${max} là số lớn nhất&lt;/h2&gt;`);
+} else {
+	document.write(`&lt;h2&gt;Dữ liệu 0 hợp lệ&lt;/h2&gt;`);
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Vẫn nên kiểm tra nó là số trước.</p>
+<p>Số 0 trái dấu với cả âm lẫn dương, nên tách trường hợp riêng.</p>
+<p>Nếu như trong bài. 2 số âm là ngược dấu. Nên kiểm tra bằng cách nhân 2 số với nhau, nếu là âm thì là ngược dấu (Trừ trường hợp chỉ có 1 trong 2 là 0 cũng là trái dấu)</p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Bài làm rất tốt</p>
+</li>
+</ul>
+<h2>[Le Duc Anh]</h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đề bài yêu cầu <strong>hoán vị 2 số</strong>, vì vậy cần chắc chắn nó là 2 số trước khi thực hiện đổi chỗ.</p>
+<p>Vì nếu là chuỗi, sử dụng cộng trước thì sẽ thành số khác.</p>
+</li>
+<li>
+<p>[x] Bài 2: Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p><strong>Lưu ý:</strong> Không làm cách thứ 2, quá khó hiểu cho 1 đoạn code thực tế.</p>
+<p>Nên tách message ra một biến khác, để có thể dễ đổi hơn</p>
+<p>Nên sử dụng 1 biến <code>max</code> để gán là số lớn nhất, sẽ đỡ rối code hơn.</p>
+<pre><code class="language-js">var a = 10,
+	b = 20000,
+	c = '10',
+	max = a,
+	checkTypes = true;
+
+if (!+a || !+b || !+c) {
+	checkTypes = false;
+}
+
+if (checkTypes) {
+	if (b &gt; max) {
+		max = b;
+	}
+	if (c &gt; max) {
+		max = c;
+	}
+	document.write(`&lt;h2&gt;${max} là số lớn nhất&lt;/h2&gt;`);
+} else {
+	document.write(`&lt;h2&gt;Dữ liệu 0 hợp lệ&lt;/h2&gt;`);
+}
+</code></pre>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Vẫn nên kiểm tra nó là số trước.</p>
+<p>Số 0 trái dấu với cả âm lẫn dương, nên tách trường hợp riêng.</p>
+<p>Nên kiểm tra bằng cách nhân 2 số với nhau, nếu là âm thì là ngược dấu (Trừ trường hợp chỉ có 1 trong 2 là 0 cũng là trái dấu)</p>
+<p>Đoạn logic rẽ nhánh quá ngoằn nghoèo.</p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Đây không phải sắp xếp, đây chỉ là console.log theo thứ tự.</p>
+</li>
+</ul>
+<h2>[Mai Viet Hoang]</h2>
+<ul>
+<li>
+<p>[x] Bài 1: Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 2: Bài làm sai :(( Nhân chia trước, cộng trừ sau, nhóm ngoặc làm sai kết quả.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt</p>
+<p>Nhưng vẫn nên kiểm tra nó là số trước.</p>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Bài làm rất tốt</p>
+<p>Vẫn nên kiểm tra nó là số trước.</p>
+</li>
+<li>
+<p>[x] Bài 5: Bài làm rất tốt</p>
+</li>
+</ul>
+<h2>[Nguyen Manh Dung]</h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đề bài yêu cầu <strong>hoán vị 2 số</strong>, vì vậy cần chắc chắn nó là 2 số trước khi thực hiện đổi chỗ.</p>
+<p>Vì nếu là chuỗi, sử dụng cộng trước thì sẽ thành số khác.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Nên kiểm tra nó là số trước, nếu không, khi cộng sẽ bị sai.</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Vẫn nên kiểm tra nó là số trước.</p>
+<p>Số 0 trái dấu với cả âm lẫn dương, nên tách trường hợp riêng.</p>
+<p>Nên kiểm tra bằng cách nhân 2 số với nhau, nếu là âm thì là ngược dấu (Trừ trường hợp chỉ có 1 trong 2 là 0 cũng là trái dấu)</p>
+<p>Đoạn logic rẽ nhánh quá ngoằn nghoèo.</p>
+</li>
+<li>
+<p>[x] Bài 5</p>
+<p>Bài làm rất tốt. Nhưng nên kiểm tra nó là số trước.</p>
+</li>
+</ul>
+<h2>[Nguyen The Tuan]</h2>
+<ul>
+<li>
+<p>[x] Bài 1</p>
+<p>Đề bài yêu cầu <strong>hoán vị 2 số</strong>, vì vậy cần chắc chắn nó là 2 số trước khi thực hiện đổi chỗ.</p>
+<p>Vì nếu là chuỗi, sử dụng cộng trước thì sẽ thành số khác.</p>
+</li>
+<li>
+<p>[x] Bài 2</p>
+<p>Bài làm rất tốt</p>
+</li>
+<li>
+<p>[x] Bài 3</p>
+<p>Bài làm rất tốt</p>
+<p>Bài làm hơi giống bài của <strong>Nguyen Manh Dung</strong></p>
+</li>
+<li>
+<p>[x] Bài 4</p>
+<p>Số 0 trái dấu với cả âm lẫn dương, nên tách trường hợp riêng.</p>
+<p>Nên kiểm tra bằng cách nhân 2 số với nhau, nếu là âm thì là ngược dấu (Trừ trường hợp chỉ có 1 trong 2 là 0 cũng là trái dấu)</p>
+</li>
+<li>
+<p>[x] Bài 5: Đây không phải sắp xếp, đây chỉ là console.log theo thứ tự.</p>
+</li>
+</ul>
+<script src="../../../assets/js/pages.js" defer></script></body></html>
